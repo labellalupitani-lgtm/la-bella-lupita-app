@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import {writeFileSync} from 'node:fs'
+import {writeFileSync,mkdirSync} from 'node:fs'
 import {preparar} from './soporte.mjs'
 const t=await preparar(),{db,request,id,staff}=t,resultados=[]
 const caso=async(nombre,fn)=>{await fn();resultados.push({nombre,correcto:true});console.log('PASA '+nombre)}
@@ -67,4 +67,4 @@ try{
   const columnas=(await db.query("SELECT column_name FROM information_schema.columns WHERE table_name='club_tiempo' ORDER BY ordinal_position")).rows.map(r=>r.column_name)
   assert.deepEqual(columnas,['id','dia','operacion','resultado','entrada','dispositivo','milisegundos'])
  })
-}finally{writeFileSync('entregables/mejoras-mi-club-2026-10-09/segunda-etapa/evidencia/servidor.json',JSON.stringify({resultados},null,2));await t.close()}
+}finally{mkdirSync('entregables/mejoras-mi-club-2026-10-09/segunda-etapa/evidencia',{recursive:true});writeFileSync('entregables/mejoras-mi-club-2026-10-09/segunda-etapa/evidencia/servidor.json',JSON.stringify({resultados},null,2));await t.close()}
