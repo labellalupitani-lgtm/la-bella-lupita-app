@@ -63,6 +63,12 @@ concurrencia tienen requisitos adicionales; revisá cada script antes de ejecuta
 En particular, `test:mi-club:concurrencia` utiliza conexiones reales configuradas en
 archivos locales y no forma parte del recorrido sin Neon.
 
+El 25 de octubre de 2026 se comprobó esta entrega desde un clon local independiente:
+`npm ci`, `npm run build` y `npm test` terminaron correctamente. También se inició
+la vista previa sin archivos de credenciales y se verificó el selector de cliente
+y propietario. Se corrigió la creación de la carpeta de resultados de una prueba
+para que no dependiera de archivos de la computadora original.
+
 ## Estado y continuidad
 
 Esta entrega a GitHub se preparó el **25 de octubre de 2026**. Las fuentes actuales
