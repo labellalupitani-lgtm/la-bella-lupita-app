@@ -1,0 +1,47 @@
+
+> club-lupita@0.1.0 prebuild
+> node scripts/proteger-braces.mjs && npm run guardian
+
+Protección braces verificada: parser y tres recorridos limitados a 128 niveles.
+
+> club-lupita@0.1.0 guardian
+> node scripts/pruebas-guardian.mjs && node scripts/iconos.mjs && node scripts/guardian-tokens.mjs
+
+pruebas del guardián: 18 reglas vivas, 10 sondas ajenas, 11 alias cazados, cero falsos positivos
+iconos: 42 en uso, todos presentes
+guardián: limpio · 14 colores, 6 radios y 2 familias son todo lo que el código puede usar
+
+> club-lupita@0.1.0 build
+> tsc -b && vite build
+
+vite v6.4.3 building for production...
+transforming...
+✓ 91 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                  0.78 kB │ gzip:  0.44 kB
+dist/assets/work-sans-vietnamese-wght-normal-BKsN3ITN.woff2     11.80 kB
+dist/assets/libre-caslon-text-latin-400-normal-WtjoQ5sB.woff    21.40 kB
+dist/assets/libre-caslon-text-latin-700-normal-B3n-DWsl.woff    21.54 kB
+dist/assets/libre-caslon-text-latin-400-italic-C1OAqZ6C.woff    24.46 kB
+dist/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2   24.97 kB
+dist/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2   25.26 kB
+dist/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2   28.02 kB
+dist/assets/work-sans-latin-ext-wght-normal-B5dZ8C4S.woff2      35.72 kB
+dist/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2          50.32 kB
+dist/assets/ClubReserva-BOWa6MpO.css                             5.22 kB │ gzip:  1.60 kB
+dist/assets/Pedir-CEsD4KkF.css                                   7.64 kB │ gzip:  2.05 kB
+dist/assets/Personal-Cp3qbJMc.css                               14.64 kB │ gzip:  3.34 kB
+dist/assets/principal-DfC-SxY6.css                              62.59 kB │ gzip: 12.97 kB
+dist/assets/compras-B4C9q532.js                                  0.28 kB │ gzip:  0.20 kB
+dist/assets/Tienda-NXlrknQC.js                                   6.21 kB │ gzip:  2.59 kB
+dist/assets/MisCompras-CMwNmp6o.js                               7.30 kB │ gzip:  2.83 kB
+dist/assets/web-vitals-BCfelkM5.js                               8.24 kB │ gzip:  3.18 kB
+dist/assets/Kit-DtYxMfq3.js                                      9.23 kB │ gzip:  3.49 kB
+dist/assets/Perfil-C3dXHBtY.js                                  10.61 kB │ gzip:  3.71 kB
+dist/assets/Reservar-BNjEOp_c.js                                11.05 kB │ gzip:  4.21 kB
+dist/assets/Club-Db0aRTK1.js                                    13.68 kB │ gzip:  4.75 kB
+dist/assets/Pedir-9XSa4W-l.js                                   24.09 kB │ gzip:  8.38 kB
+dist/assets/Personal-BdCvTQyg.js                                82.61 kB │ gzip: 23.12 kB
+dist/assets/principal-BfmVA98F.js                              250.08 kB │ gzip: 77.92 kB
+✓ built in 1.26s

@@ -1,0 +1,818 @@
+{
+  "fecha": "2026-10-09T03:20:40.637Z",
+  "motor": "154.0.4258.62",
+  "results": [
+    {
+      "id": "01-diseno-responsive",
+      "estado": "COMPROBADO",
+      "detail": [
+        {
+          "width": 1440,
+          "geometry": {
+            "viewport": 1440,
+            "scrollWidth": 1440,
+            "height": 1144,
+            "main": {
+              "x": 224,
+              "y": 79,
+              "width": 1216,
+              "height": 1064.96875,
+              "top": 79,
+              "right": 1440,
+              "bottom": 1143.96875,
+              "left": 224
+            },
+            "edit": {
+              "x": 260,
+              "y": 839.1875,
+              "width": 558,
+              "height": 48.390625,
+              "top": 839.1875,
+              "right": 818,
+              "bottom": 887.578125,
+              "left": 260
+            },
+            "logout": {
+              "x": 260,
+              "y": 983.96875,
+              "width": 440,
+              "height": 48,
+              "top": 983.96875,
+              "right": 700,
+              "bottom": 1031.96875,
+              "left": 260
+            }
+          },
+          "violations": []
+        },
+        {
+          "width": 768,
+          "geometry": {
+            "viewport": 768,
+            "scrollWidth": 768,
+            "height": 1931,
+            "main": {
+              "x": 0,
+              "y": 140,
+              "width": 768,
+              "height": 1791.03125,
+              "top": 140,
+              "right": 768,
+              "bottom": 1931.03125,
+              "left": 0
+            },
+            "edit": {
+              "x": 20,
+              "y": 1258.484375,
+              "width": 728,
+              "height": 48.390625,
+              "top": 1258.484375,
+              "right": 748,
+              "bottom": 1306.875,
+              "left": 20
+            },
+            "logout": {
+              "x": 20,
+              "y": 1771.03125,
+              "width": 440,
+              "height": 48,
+              "top": 1771.03125,
+              "right": 460,
+              "bottom": 1819.03125,
+              "left": 20
+            }
+          },
+          "violations": []
+        },
+        {
+          "width": 390,
+          "geometry": {
+            "viewport": 390,
+            "scrollWidth": 390,
+            "height": 1987,
+            "main": {
+              "x": 0,
+              "y": 140,
+              "width": 390,
+              "height": 1847.421875,
+              "top": 140,
+              "right": 390,
+              "bottom": 1987.421875,
+              "left": 0
+            },
+            "edit": {
+              "x": 20,
+              "y": 1314.875,
+              "width": 350,
+              "height": 48.390625,
+              "top": 1314.875,
+              "right": 370,
+              "bottom": 1363.265625,
+              "left": 20
+            },
+            "logout": {
+              "x": 20,
+              "y": 1827.421875,
+              "width": 350,
+              "height": 48,
+              "top": 1827.421875,
+              "right": 370,
+              "bottom": 1875.421875,
+              "left": 20
+            }
+          },
+          "violations": []
+        },
+        {
+          "width": 320,
+          "geometry": {
+            "viewport": 320,
+            "scrollWidth": 320,
+            "height": 2146,
+            "main": {
+              "x": 0,
+              "y": 194,
+              "width": 320,
+              "height": 1951.71875,
+              "top": 194,
+              "right": 320,
+              "bottom": 2145.71875,
+              "left": 0
+            },
+            "edit": {
+              "x": 16,
+              "y": 1473.171875,
+              "width": 288,
+              "height": 48.390625,
+              "top": 1473.171875,
+              "right": 304,
+              "bottom": 1521.5625,
+              "left": 16
+            },
+            "logout": {
+              "x": 16,
+              "y": 1985.71875,
+              "width": 288,
+              "height": 48,
+              "top": 1985.71875,
+              "right": 304,
+              "bottom": 2033.71875,
+              "left": 16
+            }
+          },
+          "violations": []
+        }
+      ]
+    },
+    {
+      "id": "02-borrador-descartado",
+      "estado": "COMPROBADO",
+      "detail": {
+        "borradorPerdido": true,
+        "nombreAlReabrir": "Cliente de auditoría"
+      }
+    },
+    {
+      "id": "03-guardado-y-reapertura",
+      "estado": "COMPROBADO",
+      "detail": {
+        "borradorViejoTrasGuardar": "Cliente de auditoría",
+        "segundoGuardadoRevirtioNombre": true,
+        "final": {
+          "nombre": "Cliente de auditoría",
+          "bebida": "Chocolate"
+        }
+      }
+    },
+    {
+      "id": "04-guardado-refresco-fallido",
+      "estado": "COMPROBADO",
+      "detail": {
+        "servidor": "Guardado correcto en servidor",
+        "pantalla": "Cliente de auditoría",
+        "avisoGlobal": [
+          "No pudimos actualizar tu cuenta. Fallo sintético al consultar cuenta El saldo y los datos que ves corresponden a la última consulta disponible."
+        ],
+        "confirmacionGuardado": true
+      }
+    },
+    {
+      "id": "05-guardado-espera-catalogo",
+      "estado": "COMPROBADO",
+      "detail": {
+        "cuentaYaGuardadaYLeida": true,
+        "esperabaCatalogo": true
+      }
+    },
+    {
+      "id": "06-error-servidor",
+      "estado": "COMPROBADO",
+      "detail": {
+        "mensaje": "El cumpleaños debe ser una fecha válida que no esté en el futuro.",
+        "campos": [
+          {
+            "type": "text",
+            "invalid": null,
+            "describedby": null,
+            "max": null
+          },
+          {
+            "type": "text",
+            "invalid": null,
+            "describedby": null,
+            "max": null
+          },
+          {
+            "type": "text",
+            "invalid": null,
+            "describedby": null,
+            "max": null
+          },
+          {
+            "type": "date",
+            "invalid": null,
+            "describedby": null,
+            "max": null
+          }
+        ],
+        "geometry": {
+          "viewport": 390,
+          "scrollWidth": 390,
+          "height": 1987,
+          "main": {
+            "x": 0,
+            "y": -777,
+            "width": 390,
+            "height": 1847.421875,
+            "top": -777,
+            "right": 390,
+            "bottom": 1070.421875,
+            "left": 0
+          },
+          "edit": {
+            "x": 20,
+            "y": 397.875,
+            "width": 350,
+            "height": 48.390625,
+            "top": 397.875,
+            "right": 370,
+            "bottom": 446.265625,
+            "left": 20
+          },
+          "logout": {
+            "x": 20,
+            "y": 910.421875,
+            "width": 350,
+            "height": 48,
+            "top": 910.421875,
+            "right": 370,
+            "bottom": 958.421875,
+            "left": 20
+          }
+        },
+        "violations": []
+      }
+    },
+    {
+      "id": "07-nombre-largo",
+      "estado": "COMPROBADO",
+      "detail": {
+        "geometry": {
+          "viewport": 320,
+          "scrollWidth": 2632,
+          "height": 2251,
+          "main": {
+            "x": 0,
+            "y": 194,
+            "width": 320,
+            "height": 2056.515625,
+            "top": 194,
+            "right": 320,
+            "bottom": 2250.515625,
+            "left": 0
+          },
+          "edit": {
+            "x": 16,
+            "y": 1577.96875,
+            "width": 288,
+            "height": 48.390625,
+            "top": 1577.96875,
+            "right": 304,
+            "bottom": 1626.359375,
+            "left": 16
+          },
+          "logout": {
+            "x": 16,
+            "y": 2090.515625,
+            "width": 288,
+            "height": 48,
+            "top": 2090.515625,
+            "right": 304,
+            "bottom": 2138.515625,
+            "left": 16
+          }
+        },
+        "violations": []
+      }
+    },
+    {
+      "id": "08-historial",
+      "estado": "COMPROBADO",
+      "detail": {
+        "geometry": {
+          "viewport": 390,
+          "scrollWidth": 390,
+          "height": 1987,
+          "main": {
+            "x": 0,
+            "y": -1003,
+            "width": 390,
+            "height": 1847.421875,
+            "top": -1003,
+            "right": 390,
+            "bottom": 844.421875,
+            "left": 0
+          },
+          "edit": {
+            "x": 20,
+            "y": 171.875,
+            "width": 350,
+            "height": 48.390625,
+            "top": 171.875,
+            "right": 370,
+            "bottom": 220.265625,
+            "left": 20
+          },
+          "logout": {
+            "x": 20,
+            "y": 684.421875,
+            "width": 350,
+            "height": 48,
+            "top": 684.421875,
+            "right": 370,
+            "bottom": 732.421875,
+            "left": 20
+          }
+        },
+        "violations": []
+      }
+    },
+    {
+      "id": "09-clipboard-error",
+      "estado": "COMPROBADO",
+      "detail": {
+        "fallback": "No pudimos copiarlo Podés compartir este enlace: 127.0.0.1:54093"
+      }
+    },
+    {
+      "id": "10-fechas-dos-zonas",
+      "estado": "COMPROBADO",
+      "detail": {
+        "zona": "Europe/Madrid",
+        "resumen": "Fecha límite sintética\n9 oct\n+C$ 1",
+        "detalle": "Fecha límite sintética\n\n8 oct 2026, 8:00 p. m.\n\nC$ 1"
+      }
+    },
+    {
+      "id": "11-cierre-de-sesion",
+      "estado": "COMPROBADO",
+      "detail": {
+        "saleEnDosPestanas": true,
+        "tokenReutilizableTrasCerrar": true,
+        "statusToken": 200
+      }
+    }
+  ],
+  "screens": [
+    {
+      "id": "perfil-1440",
+      "geometry": {
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "height": 1144,
+        "main": {
+          "x": 224,
+          "y": 79,
+          "width": 1216,
+          "height": 1064.96875,
+          "top": 79,
+          "right": 1440,
+          "bottom": 1143.96875,
+          "left": 224
+        },
+        "edit": {
+          "x": 260,
+          "y": 839.1875,
+          "width": 558,
+          "height": 48.390625,
+          "top": 839.1875,
+          "right": 818,
+          "bottom": 887.578125,
+          "left": 260
+        },
+        "logout": {
+          "x": 260,
+          "y": 983.96875,
+          "width": 440,
+          "height": 48,
+          "top": 983.96875,
+          "right": 700,
+          "bottom": 1031.96875,
+          "left": 260
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "perfil-768",
+      "geometry": {
+        "viewport": 768,
+        "scrollWidth": 768,
+        "height": 1931,
+        "main": {
+          "x": 0,
+          "y": 140,
+          "width": 768,
+          "height": 1791.03125,
+          "top": 140,
+          "right": 768,
+          "bottom": 1931.03125,
+          "left": 0
+        },
+        "edit": {
+          "x": 20,
+          "y": 1258.484375,
+          "width": 728,
+          "height": 48.390625,
+          "top": 1258.484375,
+          "right": 748,
+          "bottom": 1306.875,
+          "left": 20
+        },
+        "logout": {
+          "x": 20,
+          "y": 1771.03125,
+          "width": 440,
+          "height": 48,
+          "top": 1771.03125,
+          "right": 460,
+          "bottom": 1819.03125,
+          "left": 20
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "perfil-390",
+      "geometry": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "height": 1987,
+        "main": {
+          "x": 0,
+          "y": 140,
+          "width": 390,
+          "height": 1847.421875,
+          "top": 140,
+          "right": 390,
+          "bottom": 1987.421875,
+          "left": 0
+        },
+        "edit": {
+          "x": 20,
+          "y": 1314.875,
+          "width": 350,
+          "height": 48.390625,
+          "top": 1314.875,
+          "right": 370,
+          "bottom": 1363.265625,
+          "left": 20
+        },
+        "logout": {
+          "x": 20,
+          "y": 1827.421875,
+          "width": 350,
+          "height": 48,
+          "top": 1827.421875,
+          "right": 370,
+          "bottom": 1875.421875,
+          "left": 20
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "perfil-320",
+      "geometry": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "height": 2146,
+        "main": {
+          "x": 0,
+          "y": 194,
+          "width": 320,
+          "height": 1951.71875,
+          "top": 194,
+          "right": 320,
+          "bottom": 2145.71875,
+          "left": 0
+        },
+        "edit": {
+          "x": 16,
+          "y": 1473.171875,
+          "width": 288,
+          "height": 48.390625,
+          "top": 1473.171875,
+          "right": 304,
+          "bottom": 1521.5625,
+          "left": 16
+        },
+        "logout": {
+          "x": 16,
+          "y": 1985.71875,
+          "width": 288,
+          "height": 48,
+          "top": 1985.71875,
+          "right": 304,
+          "bottom": 2033.71875,
+          "left": 16
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "guardado-reapertura-borrador-antiguo",
+      "geometry": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "height": 1987,
+        "main": {
+          "x": 0,
+          "y": -777,
+          "width": 390,
+          "height": 1847.421875,
+          "top": -777,
+          "right": 390,
+          "bottom": 1070.421875,
+          "left": 0
+        },
+        "edit": {
+          "x": 20,
+          "y": 397.875,
+          "width": 350,
+          "height": 48.390625,
+          "top": 397.875,
+          "right": 370,
+          "bottom": 446.265625,
+          "left": 20
+        },
+        "logout": {
+          "x": 20,
+          "y": 910.421875,
+          "width": 350,
+          "height": 48,
+          "top": 910.421875,
+          "right": 370,
+          "bottom": 958.421875,
+          "left": 20
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "guardado-con-datos-antiguos",
+      "geometry": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "height": 2178,
+        "main": {
+          "x": 0,
+          "y": -776.609375,
+          "width": 390,
+          "height": 1877.421875,
+          "top": -776.609375,
+          "right": 390,
+          "bottom": 1100.8125,
+          "left": 0
+        },
+        "edit": {
+          "x": 20,
+          "y": 398.265625,
+          "width": 350,
+          "height": 48.390625,
+          "top": 398.265625,
+          "right": 370,
+          "bottom": 446.65625,
+          "left": 20
+        },
+        "logout": {
+          "x": 20,
+          "y": 940.8125,
+          "width": 350,
+          "height": 48,
+          "top": 940.8125,
+          "right": 370,
+          "bottom": 988.8125,
+          "left": 20
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "formulario-error-fecha",
+      "geometry": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "height": 1987,
+        "main": {
+          "x": 0,
+          "y": -777,
+          "width": 390,
+          "height": 1847.421875,
+          "top": -777,
+          "right": 390,
+          "bottom": 1070.421875,
+          "left": 0
+        },
+        "edit": {
+          "x": 20,
+          "y": 397.875,
+          "width": 350,
+          "height": 48.390625,
+          "top": 397.875,
+          "right": 370,
+          "bottom": 446.265625,
+          "left": 20
+        },
+        "logout": {
+          "x": 20,
+          "y": 910.421875,
+          "width": 350,
+          "height": 48,
+          "top": 910.421875,
+          "right": 370,
+          "bottom": 958.421875,
+          "left": 20
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "perfil-nombre-largo-320",
+      "geometry": {
+        "viewport": 320,
+        "scrollWidth": 2632,
+        "height": 2251,
+        "main": {
+          "x": 0,
+          "y": 194,
+          "width": 320,
+          "height": 2056.515625,
+          "top": 194,
+          "right": 320,
+          "bottom": 2250.515625,
+          "left": 0
+        },
+        "edit": {
+          "x": 16,
+          "y": 1577.96875,
+          "width": 288,
+          "height": 48.390625,
+          "top": 1577.96875,
+          "right": 304,
+          "bottom": 1626.359375,
+          "left": 16
+        },
+        "logout": {
+          "x": 16,
+          "y": 2090.515625,
+          "width": 288,
+          "height": 48,
+          "top": 2090.515625,
+          "right": 304,
+          "bottom": 2138.515625,
+          "left": 16
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "actividad",
+      "geometry": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "height": 1987,
+        "main": {
+          "x": 0,
+          "y": -1003,
+          "width": 390,
+          "height": 1847.421875,
+          "top": -1003,
+          "right": 390,
+          "bottom": 844.421875,
+          "left": 0
+        },
+        "edit": {
+          "x": 20,
+          "y": 171.875,
+          "width": 350,
+          "height": 48.390625,
+          "top": 171.875,
+          "right": 370,
+          "bottom": 220.265625,
+          "left": 20
+        },
+        "logout": {
+          "x": 20,
+          "y": 684.421875,
+          "width": 350,
+          "height": 48,
+          "top": 684.421875,
+          "right": 370,
+          "bottom": 732.421875,
+          "left": 20
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "actividad-vacia",
+      "geometry": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "height": 1987,
+        "main": {
+          "x": 0,
+          "y": -1003,
+          "width": 390,
+          "height": 1847.421875,
+          "top": -1003,
+          "right": 390,
+          "bottom": 844.421875,
+          "left": 0
+        },
+        "edit": {
+          "x": 20,
+          "y": 171.875,
+          "width": 350,
+          "height": 48.390625,
+          "top": 171.875,
+          "right": 370,
+          "bottom": 220.265625,
+          "left": 20
+        },
+        "logout": {
+          "x": 20,
+          "y": 684.421875,
+          "width": 350,
+          "height": 48,
+          "top": 684.421875,
+          "right": 370,
+          "bottom": 732.421875,
+          "left": 20
+        }
+      },
+      "violations": []
+    },
+    {
+      "id": "actividad-zona-madrid",
+      "geometry": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "height": 2056,
+        "main": {
+          "x": 0,
+          "y": -1072,
+          "width": 390,
+          "height": 1916.015625,
+          "top": -1072,
+          "right": 390,
+          "bottom": 844.015625,
+          "left": 0
+        },
+        "edit": {
+          "x": 20,
+          "y": 102.875,
+          "width": 350,
+          "height": 48.390625,
+          "top": 102.875,
+          "right": 370,
+          "bottom": 151.265625,
+          "left": 20
+        },
+        "logout": {
+          "x": 20,
+          "y": 684.015625,
+          "width": 350,
+          "height": 48,
+          "top": 684.015625,
+          "right": 370,
+          "bottom": 732.015625,
+          "left": 20
+        }
+      },
+      "violations": []
+    }
+  ],
+  "errors": []
+}

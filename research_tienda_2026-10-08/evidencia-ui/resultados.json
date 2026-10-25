@@ -1,0 +1,507 @@
+{
+  "alcance": "Frontend recompilado actual; Worker actual; PostgreSQL PGlite sintético, peticiones externas bloqueadas. Los casos OBSERVADO pueden reproducir defectos, no indican aprobación del producto.",
+  "resultados": [
+    {
+      "id": "base-320",
+      "estado": "OBSERVADO",
+      "ancho": 320,
+      "scroll": 320,
+      "titulo": "Club Lupita — La Bella Lupita",
+      "ctaY": 1011.703125,
+      "imagenesProducto": 0,
+      "h1": 1,
+      "recursos": [
+        {
+          "nombre": "/fuentes/material-symbols-subset.woff2",
+          "bytes": 8724,
+          "duracion": 14.099999994039536
+        },
+        {
+          "nombre": "/assets/principal-Cfxl5pt5.js",
+          "bytes": 415380,
+          "duracion": 15.099999994039536
+        },
+        {
+          "nombre": "/assets/principal-C3oGQIwt.css",
+          "bytes": 74231,
+          "duracion": 16.30000001192093
+        },
+        {
+          "nombre": "/api/yo",
+          "bytes": 1693,
+          "duracion": 51.79999998211861
+        },
+        {
+          "nombre": "/api/catalogo",
+          "bytes": 972,
+          "duracion": 59.19999998807907
+        },
+        {
+          "nombre": "/api/cupos",
+          "bytes": 420,
+          "duracion": 64.10000002384186
+        },
+        {
+          "nombre": "/favicon.ico",
+          "bytes": 0,
+          "duracion": 39.599999994039536
+        },
+        {
+          "nombre": "/brand/v3/logo-original.png",
+          "bytes": 147857,
+          "duracion": 9.5
+        },
+        {
+          "nombre": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "bytes": 50616,
+          "duracion": 10.400000005960464
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "bytes": 25272,
+          "duracion": 9.400000005960464
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "bytes": 25560,
+          "duracion": 11.099999994039536
+        }
+      ],
+      "axeViolaciones": [],
+      "axeIncompletos": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "base-390",
+      "estado": "OBSERVADO",
+      "ancho": 390,
+      "scroll": 390,
+      "titulo": "Club Lupita — La Bella Lupita",
+      "ctaY": 889.53125,
+      "imagenesProducto": 0,
+      "h1": 1,
+      "recursos": [
+        {
+          "nombre": "/fuentes/material-symbols-subset.woff2",
+          "bytes": 8724,
+          "duracion": 11.699999988079071
+        },
+        {
+          "nombre": "/assets/principal-Cfxl5pt5.js",
+          "bytes": 415380,
+          "duracion": 14.5
+        },
+        {
+          "nombre": "/assets/principal-C3oGQIwt.css",
+          "bytes": 74231,
+          "duracion": 16.5
+        },
+        {
+          "nombre": "/api/yo",
+          "bytes": 1693,
+          "duracion": 27.5
+        },
+        {
+          "nombre": "/api/catalogo",
+          "bytes": 972,
+          "duracion": 30
+        },
+        {
+          "nombre": "/api/cupos",
+          "bytes": 420,
+          "duracion": 32.80000001192093
+        },
+        {
+          "nombre": "/favicon.ico",
+          "bytes": 0,
+          "duracion": 15
+        },
+        {
+          "nombre": "/brand/v3/logo-original.png",
+          "bytes": 147857,
+          "duracion": 4.300000011920929
+        },
+        {
+          "nombre": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "bytes": 50616,
+          "duracion": 36.099999994039536
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "bytes": 25272,
+          "duracion": 34.400000005960464
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "bytes": 25560,
+          "duracion": 35.30000001192093
+        }
+      ],
+      "axeViolaciones": [],
+      "axeIncompletos": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "base-768",
+      "estado": "OBSERVADO",
+      "ancho": 768,
+      "scroll": 768,
+      "titulo": "Club Lupita — La Bella Lupita",
+      "ctaY": 682.3125,
+      "imagenesProducto": 0,
+      "h1": 1,
+      "recursos": [
+        {
+          "nombre": "/fuentes/material-symbols-subset.woff2",
+          "bytes": 8724,
+          "duracion": 10.299999982118607
+        },
+        {
+          "nombre": "/assets/principal-Cfxl5pt5.js",
+          "bytes": 415380,
+          "duracion": 10.900000005960464
+        },
+        {
+          "nombre": "/assets/principal-C3oGQIwt.css",
+          "bytes": 74231,
+          "duracion": 11.900000005960464
+        },
+        {
+          "nombre": "/api/yo",
+          "bytes": 1693,
+          "duracion": 21.400000005960464
+        },
+        {
+          "nombre": "/api/catalogo",
+          "bytes": 972,
+          "duracion": 23.399999976158142
+        },
+        {
+          "nombre": "/api/cupos",
+          "bytes": 420,
+          "duracion": 26.69999998807907
+        },
+        {
+          "nombre": "/favicon.ico",
+          "bytes": 0,
+          "duracion": 6.0999999940395355
+        },
+        {
+          "nombre": "/brand/v3/logo-original.png",
+          "bytes": 147857,
+          "duracion": 4.9000000059604645
+        },
+        {
+          "nombre": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "bytes": 50616,
+          "duracion": 35.900000005960464
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "bytes": 25272,
+          "duracion": 33.900000005960464
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "bytes": 25560,
+          "duracion": 34.70000001788139
+        }
+      ],
+      "axeViolaciones": [],
+      "axeIncompletos": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "base-1024",
+      "estado": "OBSERVADO",
+      "ancho": 1024,
+      "scroll": 1024,
+      "titulo": "Club Lupita — La Bella Lupita",
+      "ctaY": 494.125,
+      "imagenesProducto": 0,
+      "h1": 1,
+      "recursos": [
+        {
+          "nombre": "/fuentes/material-symbols-subset.woff2",
+          "bytes": 8724,
+          "duracion": 11.599999994039536
+        },
+        {
+          "nombre": "/assets/principal-Cfxl5pt5.js",
+          "bytes": 415380,
+          "duracion": 12.200000017881393
+        },
+        {
+          "nombre": "/assets/principal-C3oGQIwt.css",
+          "bytes": 74231,
+          "duracion": 12.800000011920929
+        },
+        {
+          "nombre": "/api/yo",
+          "bytes": 1693,
+          "duracion": 20.19999998807907
+        },
+        {
+          "nombre": "/api/catalogo",
+          "bytes": 972,
+          "duracion": 20.30000001192093
+        },
+        {
+          "nombre": "/api/cupos",
+          "bytes": 420,
+          "duracion": 20.399999976158142
+        },
+        {
+          "nombre": "/favicon.ico",
+          "bytes": 0,
+          "duracion": 14.699999988079071
+        },
+        {
+          "nombre": "/brand/v3/logo-original.png",
+          "bytes": 147857,
+          "duracion": 3
+        },
+        {
+          "nombre": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "bytes": 50616,
+          "duracion": 36.5
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "bytes": 25272,
+          "duracion": 35.099999994039536
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "bytes": 25560,
+          "duracion": 35.70000001788139
+        }
+      ],
+      "axeViolaciones": [],
+      "axeIncompletos": []
+    },
+    {
+      "id": "base-1440",
+      "estado": "OBSERVADO",
+      "ancho": 1440,
+      "scroll": 1440,
+      "titulo": "Club Lupita — La Bella Lupita",
+      "ctaY": 387.578125,
+      "imagenesProducto": 0,
+      "h1": 1,
+      "recursos": [
+        {
+          "nombre": "/fuentes/material-symbols-subset.woff2",
+          "bytes": 8724,
+          "duracion": 13
+        },
+        {
+          "nombre": "/assets/principal-Cfxl5pt5.js",
+          "bytes": 415380,
+          "duracion": 15.400000005960464
+        },
+        {
+          "nombre": "/assets/principal-C3oGQIwt.css",
+          "bytes": 74231,
+          "duracion": 16.099999994039536
+        },
+        {
+          "nombre": "/api/yo",
+          "bytes": 1693,
+          "duracion": 23.700000017881393
+        },
+        {
+          "nombre": "/api/catalogo",
+          "bytes": 972,
+          "duracion": 25.599999994039536
+        },
+        {
+          "nombre": "/api/cupos",
+          "bytes": 420,
+          "duracion": 28.69999998807907
+        },
+        {
+          "nombre": "/favicon.ico",
+          "bytes": 0,
+          "duracion": 13.699999988079071
+        },
+        {
+          "nombre": "/brand/v3/logo-original.png",
+          "bytes": 147857,
+          "duracion": 3.2999999821186066
+        },
+        {
+          "nombre": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "bytes": 50616,
+          "duracion": 46.099999994039536
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "bytes": 25272,
+          "duracion": 45.099999994039536
+        },
+        {
+          "nombre": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "bytes": 25560,
+          "duracion": 45.900000005960464
+        }
+      ],
+      "axeViolaciones": [],
+      "axeIncompletos": []
+    },
+    {
+      "id": "modal-teclado",
+      "estado": "OBSERVADO",
+      "focoInicial": {
+        "tag": "BUTTON",
+        "texto": "Cerrar close",
+        "disabled": false
+      },
+      "pasos": [
+        {
+          "tag": "BUTTON",
+          "texto": "Sí, cobrá C$ 890",
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "texto": "Mejor no",
+          "disabled": false
+        },
+        {
+          "tag": "BODY",
+          "texto": "Ir al contenidoEL CLUB DE LA CASAhomeIniciolocal_cafeCartastorefrontTiendamilitary_techMi ClubpersonPerfilevent_seat Res"
+        },
+        {
+          "tag": "BUTTON",
+          "texto": "Cerrar close",
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "texto": "Sí, cobrá C$ 890",
+          "disabled": false
+        },
+        {
+          "tag": "BUTTON",
+          "texto": "Mejor no",
+          "disabled": false
+        }
+      ],
+      "focoCierre": {
+        "tag": "BUTTON",
+        "texto": "Apartar la mía",
+        "disabled": false
+      },
+      "axeViolaciones": []
+    },
+    {
+      "id": "saldo-insuficiente",
+      "estado": "OBSERVADO",
+      "destino": "http://127.0.0.1:58120/",
+      "abreRecarga": false,
+      "textoDestino": "BIENVENIDA A TU MESA\n\nUn buen día\nempieza aquí\nPara empezar\nel día\n\nElegí tu desayuno\nDisfrutá la pausa\n\nExplorar la carta\ntakeout_dining\nPedí para llevar\nevent_seat\nReservá mesa\nstorefront\nTienda de la finca\nworkspace_premium\nCLUB LUPITA\naccount_balance_wallet\nTu cuenta de casa\n\nC$ 0\n\nSaldo disponible para disfrutar\n\nadd\nRecargá\nqr_code_scanner\nMostrá tu pase\nLA BELLA LUPITA\nHECHO PARA VOS\nredeem\nTu tanda de café\n\nVolver tiene sus recompensas\n\n8/ 9\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\nredeem\n\nTe falta 1 para tu bebida de cortesía\n\nDE LA COCINA DE CASA\n\nAlgo rico para acompañar\nVer la carta\narrow_forward\narrow_forward\nRisotto de Gallo Pinto\nC$ 280\nBrunch\narrow_forward\nDulce Tentación\nC$ 320\nBrunch\nHACÉ TIEMPO PARA VOS\nTu mesa te espera\nEncontrá tu rincón\narrow_forward\nPasa en la casa\nlocal_fire_department\nQUEDAN 150 DE 150\nReserva de Cosecha\n\nPagás hoy y la retirás recién tostada, en temporada\n\nReservá la tuya\narrow_forward\nevent_seat\n12 DE 12 CUPOS\nMesa del Tostador\n\nTres lotes, una mesa larga, doce sillas y el tostador contando\n\nVer y apartar\narrow_forward\nLa Bella Lupita · Bistró & Café\nDe nuestra finca, con cariño"
+    },
+    {
+      "id": "agotado",
+      "estado": "OBSERVADO",
+      "botonesCompra": 0
+    },
+    {
+      "id": "catalogo-cargando",
+      "estado": "OBSERVADO",
+      "falsoErrorDuranteCarga": true,
+      "texto": "Actualizando el catálogo…\n\nCULTIVADO POR LA FAMILIA DESDE 1971\n\nEl café que se toma acá es el que baja de la finca\n\nNo compramos grano de nadie Lo que está en la taza y lo que está en la bolsa salieron de la misma ladera, en Matagalpa, el mismo año\n\nReserva de Cosecha\nwarning\nNo pudimos abrir tu cuenta\n\nPuede ser la señal o puede ser la casa Tu tanda y tu saldo están a salvo del otro lado\n\nLa bolsa de cada mes\nlocal_cafe\nViene con la Mesa Fundadora\n\nLa casa no vende suscripción de café por su cuenta: los 250 g del mes son uno de los cinco beneficios de la Mesa Fundadora\n\nmilitary_tech\nVer la Mesa Fundadora\nEncargos grandes\nredeem\nCajas de regalo\nSe arman a mano y se cotizan una por una\narrow_forward\nstorefront\nPedidos para oficina\nGrano molido o en bolsa, con entrega en Managua\narrow_forward\n\nLos dos se cierran por WhatsApp, con una persona del otro lado Es más lento que un botón y sale mejor\n\ninfo\n\nEsta tienda enseña sólo lo que la casa puede cobrarte hoy y entregarte de verdad El catálogo de mostrador —los lotes sueltos, el pack portátil— se compra en la barra, donde alguien te lo puede moler como lo tomás"
+    },
+    {
+      "id": "catalogo-error-recuperacion",
+      "estado": "OBSERVADO",
+      "reintentoRecupera": true
+    },
+    {
+      "id": "catalogo-malformado",
+      "estado": "OBSERVADO",
+      "contieneNaN": true,
+      "texto": "CULTIVADO POR LA FAMILIA DESDE 1971\n\nEl café que se toma acá es el que baja de la finca\n\nNo compramos grano de nadie Lo que está en la taza y lo que está en la bolsa salieron de la misma ladera, en Matagalpa, el mismo año\n\nReserva de Cosecha\n\nDEL LOTE DE LA FINCA · 250 G\n\nTu bolsa lleva un número\nNo hay dos iguales\nC$ NaN\n\nPagás hoy y la retirás recién tostada cuando entre la temporada El número que te toque queda escrito en la bolsa y en tu cuenta\n\nlocal_fire_department\nQUEDAN DE\nApartar la míaVer mi cuenta y recargar\n\nTe faltan C$ NaN en la Cuenta de Casa Recargá en el mostrador\n\nLa bolsa de cada mes\nlocal_cafe\nViene con la Mesa Fundadora\n\nLa casa no vende suscripción de café por su cuenta: los 250 g del mes son uno de los cinco beneficios de la Mesa Fundadora\n\nmilitary_tech\nVer la Mesa Fundadora\nEncargos grandes\nredeem\nCajas de regalo\nSe arman a mano y se cotizan una por una\narrow_forward\nstorefront\nPedidos para oficina\nGrano molido o en bolsa, con entrega en Managua\narrow_forward\n\nLos dos se cierran por WhatsApp, con una persona del otro lado Es más lento que un botón y sale mejor\n\ninfo\n\nEsta tienda enseña sólo lo que la casa puede cobrarte hoy y entregarte de verdad El catálogo de mostrador —los lotes sueltos, el pack portátil— se compra en la barra, donde alguien te lo puede moler como lo tomás"
+    },
+    {
+      "id": "motor-firefox",
+      "estado": "OBSERVADO",
+      "version": "155.0",
+      "abreYCierra": true,
+      "focoCierre": {
+        "tag": "BUTTON",
+        "texto": "Apartar la mía",
+        "disabled": false
+      }
+    },
+    {
+      "id": "motor-webkit",
+      "estado": "OBSERVADO",
+      "version": "26.6",
+      "abreYCierra": true,
+      "focoCierre": {
+        "tag": "MAIN",
+        "texto": "Cultivado por la familia desde 1971El café que se toma acá es el que baja de la fincaNo compramos grano de nadie Lo que "
+      }
+    },
+    {
+      "id": "rechazo-compra-foco",
+      "estado": "OBSERVADO",
+      "dialogoCierraAntesDeRespuesta": true,
+      "focoPendiente": {
+        "tag": "BUTTON",
+        "texto": "Sí, cobrá C$ 890",
+        "disabled": true
+      },
+      "focoRechazo": {
+        "tag": "BODY",
+        "texto": "Ir al contenidoEL CLUB DE LA CASAhomeIniciolocal_cafeCartastorefrontTiendamilitary_techMi ClubpersonPerfilevent_seat Res"
+      }
+    },
+    {
+      "id": "exito-compra-malformado",
+      "estado": "OBSERVADO",
+      "aceptaExitoSinNumero": true
+    },
+    {
+      "id": "compra-real-local-posventa",
+      "estado": "OBSERVADO",
+      "toast": [
+        "Es tuya la bolsa 001 Se fueron C$ 890 y te quedan C$ 9,010"
+      ],
+      "enlacesComprasEnTienda": 0,
+      "historial": "Tus pedidos, mesas y experiencias, siempre a mano Actualizá para consultar el último estado\n\nActualizar\nReserva de Cosecha · bolsa 1\n\nRegistrado: 8 oct 2026, 9:19 p. m.\n\nPendiente de entrega en la casa\n\nImporte: C$ 890\n\nComprobante: bolsa:87537549-d220-48a9-bcea-639c62e9b1c6\n\nAvisos y ayuda de la casa\nActualizar avisos\n¿Necesitás cambiar una reserva o revisar una compra?\n\nIncluí el número de tu pedido o comprobante La solicitud queda para el equipo de la casa; no cambia ni cancela tu compra automáticamente\n\nEnviar solicitud a la casa"
+    },
+    {
+      "id": "respuesta-perdida-saldo-exacto",
+      "estado": "OBSERVADO",
+      "cobros": 1,
+      "compras": 1,
+      "pendientesLocalStorage": 1,
+      "ctaBloqueadoTrasRecargar": true,
+      "texto": "CULTIVADO POR LA FAMILIA DESDE 1971\n\nEl café que se toma acá es el que baja de la finca\n\nNo compramos grano de nadie Lo que está en la taza y lo que está en la bolsa salieron de la misma ladera, en Matagalpa, el mismo año\n\nReserva de Cosecha\n\nDEL LOTE DE LA FINCA · 250 G\n\nTu bolsa lleva un número\nNo hay dos iguales\nC$ 890\n\nPagás hoy y la retirás recién tostada cuando entre la temporada El número que te toque queda escrito en la bolsa y en tu cuenta\n\nlocal_fire_department\nQUEDAN 149 DE 150\nApartar la míaVer mi cuenta y recargar\n\nTe faltan C$ 890 en la Cuenta de Casa Recargá en el mostrador\n\nLa bolsa de cada mes\nlocal_cafe\nViene con la Mesa Fundadora\n\nLa casa no vende suscripción de café por su cuenta: los 250 g del mes son uno de los cinco beneficios de la Mesa Fundadora\n\nmilitary_tech\nVer la Mesa Fundadora\nEncargos grandes\nredeem\nCajas de regalo\nSe arman a mano y se cotizan una por una\narrow_forward\nstorefront\nPedidos para oficina\nGrano molido o en bolsa, con entrega en Managua\narrow_forward\n\nLos dos se cierran por WhatsApp, con una persona del otro lado Es más lento que un botón y sale mejor\n\ninfo\n\nEsta tienda enseña sólo lo que la casa puede cobrarte hoy y entregarte de verdad El catálogo de mostrador —los lotes sueltos, el pack portátil— se compra en la barra, donde alguien te lo puede moler como lo tomás"
+    },
+    {
+      "id": "exito-anterior-error-nuevo",
+      "estado": "OBSERVADO",
+      "mensajeExitoAnterior": [
+        "Es tuya la bolsa 001 Se fueron C$ 890 y te quedan C$ 9,010"
+      ],
+      "nuevoRechazoVisible": true
+    },
+    {
+      "id": "precio-en-pantalla-vs-cobrado",
+      "estado": "OBSERVADO",
+      "confirmacion": "Sí, cobrá C$ 890",
+      "resultado": [
+        "Es tuya la bolsa 002 Se fueron C$ 990 y te quedan C$ 8,020"
+      ],
+      "reconfirmacionDe990": false
+    }
+  ],
+  "errores": []
+}

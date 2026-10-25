@@ -1,0 +1,251 @@
+{
+  "results": [
+    {
+      "name": "Entrada: teléfono, alta deshabilitada y acceso demo",
+      "status": "PASA",
+      "detail": "El alta real no está habilitada"
+    },
+    {
+      "name": "Navegación: pestañas, tarjetas y accesos rápidos",
+      "status": "PASA"
+    },
+    {
+      "name": "Carta completa: filtros, detalles y dos formas de agregar cada producto",
+      "status": "PASA",
+      "detail": {
+        "productos": 73
+      }
+    },
+    {
+      "name": "Carrito: aumentar, reducir y vaciar todas las líneas",
+      "status": "PASA",
+      "detail": {
+        "lineas": 73
+      }
+    },
+    {
+      "name": "Club: alta de membresía, ambos beneficios y control de renovación",
+      "status": "PASA"
+    }
+  ],
+  "touches": 399,
+  "errors": [],
+  "responses": [
+    {
+      "path": "/api/yo",
+      "status": 401
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/codigo",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/entrar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/membresia/apartar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/beneficio/bolsa_mes",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/beneficio/bebida_dia",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/membresia/cancelar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/membresia/renovacion",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/membresia/cancelar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    }
+  ]
+}

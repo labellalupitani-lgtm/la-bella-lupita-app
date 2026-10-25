@@ -1,0 +1,23 @@
+MATRIZ_LECTURAS 132
+PASA Matriz de lecturas: cinco perfiles e invitado, 22 rutas por identidad
+MATRIZ_ESCRITURAS_DENEGADAS 60
+PASA Matriz de escrituras prohibidas y escalada de privilegios
+PASA Sesiones ausentes, vencidas y firma alterada no abren operaciones
+PASA IDOR: cliente no modifica reserva ni aviso ajenos y no cobra a otro teléfono
+PASA Cocina respeta transiciones; bandejas no incluyen teléfonos, correo, saldo ni hashes
+PASA Aislamiento demo/real: escrituras del propietario y empleado, cierre ante base demo ausente
+{"evento":"error_api","codigo":"22003","id":"f0118790-2a2d-40e4-a878-efa19999d33b"}
+FALLA Identificador de aviso fuera de bigint se rechaza sin error interno: ID numérico desbordado: HTTP 500
+{"evento":"error_api","codigo":"22021","id":"89d0ccb6-0bd1-44c9-b155-ddf5adef102f"}
+FALLA Nombre de empleado con NUL se valida antes de escribir en PostgreSQL: Entrada inválida del propietario: HTTP 500
+
+500 !== 422
+
+PASA Revocación por rol y baja impide reutilizar las sesiones anteriores
+{"evento":"error_api","codigo":"22008","id":"7d270edd-2485-4f2d-94c2-ddb2b7c2deb7"}
+FALLA Fechas imposibles de ocupación devuelven 4xx en vez de error interno: 2026-02-31: HTTP 500
+FALLA Cupos públicos excluyen membresías vencidas aun antes del mantenimiento: Una plaza vencida sin autorrenovación no debe anunciarse ocupada
+
+99 !== 100
+
+AUDITORIA_PERFILES_API {"grupos":11,"pasan":7,"fallan":4,"resultados":[{"nombre":"Matriz de lecturas: cinco perfiles e invitado, 22 rutas por identidad","estado":"PASA"},{"nombre":"Matriz de escrituras prohibidas y escalada de privilegios","estado":"PASA"},{"nombre":"Sesiones ausentes, vencidas y firma alterada no abren operaciones","estado":"PASA"},{"nombre":"IDOR: cliente no modifica reserva ni aviso ajenos y no cobra a otro teléfono","estado":"PASA"},{"nombre":"Cocina respeta transiciones; bandejas no incluyen teléfonos, correo, saldo ni hashes","estado":"PASA"},{"nombre":"Aislamiento demo/real: escrituras del propietario y empleado, cierre ante base demo ausente","estado":"PASA"},{"nombre":"Identificador de aviso fuera de bigint se rechaza sin error interno","estado":"FALLA","detalle":"ID numérico desbordado: HTTP 500"},{"nombre":"Nombre de empleado con NUL se valida antes de escribir en PostgreSQL","estado":"FALLA","detalle":"Entrada inválida del propietario: HTTP 500\n\n500 !== 422\n"},{"nombre":"Revocación por rol y baja impide reutilizar las sesiones anteriores","estado":"PASA"},{"nombre":"Fechas imposibles de ocupación devuelven 4xx en vez de error interno","estado":"FALLA","detalle":"2026-02-31: HTTP 500"},{"nombre":"Cupos públicos excluyen membresías vencidas aun antes del mantenimiento","estado":"FALLA","detalle":"Una plaza vencida sin autorrenovación no debe anunciarse ocupada\n\n99 !== 100\n"}]}

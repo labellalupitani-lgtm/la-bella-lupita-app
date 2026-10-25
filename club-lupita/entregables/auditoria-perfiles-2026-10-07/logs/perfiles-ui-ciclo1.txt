@@ -1,0 +1,128 @@
+PASA propietario: ingreso real y menú permitido
+PASA propietario: Resumen 1440px
+PASA propietario: Pedidos 1440px
+FALLO propietario: Caja 1440px: Violaciones axe: color-contrast
++ actual - expected
+
++ [
++   {
++     help: 'Elements must meet minimum color contrast ratio thresholds',
++     id: 'color-contrast',
++     impact: 'serious',
++     nodes: [
++       {
++         summary: 'Fix any of the 
+PASA propietario: Entregas 1440px
+PASA propietario: Agenda 1440px
+PASA propietario: Atención 1440px
+PASA propietario: Informes 1440px
+PASA propietario: Clientes 1440px
+PASA propietario: Equipo y permisos 1440px
+PASA propietario: Cuenta y seguridad 1440px
+PASA propietario: Resumen 390px
+PASA propietario: Pedidos 390px
+PASA propietario: Caja 390px
+PASA propietario: Entregas 390px
+PASA propietario: Agenda 390px
+PASA propietario: Atención 390px
+PASA propietario: Informes 390px
+PASA propietario: Clientes 390px
+PASA propietario: Equipo y permisos 390px
+PASA propietario: Cuenta y seguridad 390px
+PASA propietario: ancho límite 320
+PASA propietario: ancho límite 768
+PASA propietario: enlace directo, recarga e historial
+PASA encargado: ingreso real y menú permitido
+PASA encargado: Resumen 1440px
+PASA encargado: Pedidos 1440px
+FALLO encargado: Caja 1440px: Violaciones axe: color-contrast
++ actual - expected
+
++ [
++   {
++     help: 'Elements must meet minimum color contrast ratio thresholds',
++     id: 'color-contrast',
++     impact: 'serious',
++     nodes: [
++       {
++         summary: 'Fix any of the 
+PASA encargado: Entregas 1440px
+PASA encargado: Agenda 1440px
+PASA encargado: Atención 1440px
+PASA encargado: Informes 1440px
+PASA encargado: Clientes 1440px
+PASA encargado: Equipo y permisos 1440px
+PASA encargado: Cuenta y seguridad 1440px
+PASA encargado: Resumen 390px
+PASA encargado: Pedidos 390px
+PASA encargado: Caja 390px
+PASA encargado: Entregas 390px
+PASA encargado: Agenda 390px
+PASA encargado: Atención 390px
+PASA encargado: Informes 390px
+PASA encargado: Clientes 390px
+PASA encargado: Equipo y permisos 390px
+PASA encargado: Cuenta y seguridad 390px
+PASA encargado: ancho límite 320
+PASA encargado: ancho límite 768
+PASA encargado: enlace directo, recarga e historial
+PASA caja: ingreso real y menú permitido
+PASA caja: Pedidos 1440px
+FALLO caja: Caja 1440px: Violaciones axe: color-contrast
++ actual - expected
+
++ [
++   {
++     help: 'Elements must meet minimum color contrast ratio thresholds',
++     id: 'color-contrast',
++     impact: 'serious',
++     nodes: [
++       {
++         summary: 'Fix any of the 
+PASA caja: Entregas 1440px
+PASA caja: Agenda 1440px
+PASA caja: Atención 1440px
+PASA caja: Cuenta y seguridad 1440px
+PASA caja: Pedidos 390px
+PASA caja: Caja 390px
+PASA caja: Entregas 390px
+PASA caja: Agenda 390px
+PASA caja: Atención 390px
+PASA caja: Cuenta y seguridad 390px
+PASA caja: ancho límite 320
+PASA caja: ancho límite 768
+PASA caja: enlace directo, recarga e historial
+PASA cocina: ingreso real y menú permitido
+PASA cocina: Pedidos 1440px
+PASA cocina: Cuenta y seguridad 1440px
+PASA cocina: Pedidos 390px
+PASA cocina: Cuenta y seguridad 390px
+PASA cocina: ancho límite 320
+PASA cocina: ancho límite 768
+PASA cocina: enlace directo, recarga e historial
+PASA cliente: / 1440px
+PASA cliente: /pedir 1440px
+PASA cliente: /tienda 1440px
+PASA cliente: /club 1440px
+PASA cliente: /perfil 1440px
+PASA cliente: /compras 1440px
+PASA cliente: /reservar 1440px
+PASA cliente: / 390px
+PASA cliente: /pedir 390px
+PASA cliente: /tienda 390px
+PASA cliente: /club 390px
+PASA cliente: /perfil 390px
+PASA cliente: /compras 390px
+PASA cliente: /reservar 390px
+PASA cliente: su sesión no abre panel del equipo
+PASA flujo: cliente paga, caja acepta, cocina prepara, caja entrega
+PASA caja: recarga con confirmación y saldo persistente
+PASA encargado: ficha de cliente e historial, exportación CSV
+PASA caja: responder atención y cliente consulta respuesta
+PASA propietario: modal equipo, teclado y retorno del foco
+PASA cocina: red caída, aviso y recuperación
+PASA cocina: sesión revocada vuelve a ingreso y elimina token
+PASA caja: temporal obliga cambio, cierra sesión y nueva clave funciona
+PASA propietario: cierre sin conexión borra acceso del panel
+PASA todos los perfiles: sin excepciones JavaScript
+{"total":97,"aprobados":94,"fallos":3,"pantallas":83}

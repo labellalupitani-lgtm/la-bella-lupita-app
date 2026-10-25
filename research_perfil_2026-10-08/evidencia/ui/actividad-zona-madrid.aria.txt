@@ -1,0 +1,108 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa"
+- banner:
+  - button "Volver"
+  - heading "Tu perfil" [level=1]
+- main:
+  - heading "Cliente de auditoría" [level=2]
+  - paragraph: en la casa desde octubre de 2026
+  - text: Nivel actual Siguiente Gente de la Casa Barista
+  - progressbar "510 puntos"
+  - paragraph: 490 pts más y subís de nivel
+  - heading "Traé a alguien a la mesa" [level=3]
+  - paragraph: Compartí el enlace del Club para que conozcan la casa y sus beneficios
+  - button "Copiar enlace del Club"
+  - region "Tu perfil de la casa":
+    - heading "Tu perfil de la casa" [level=3]
+    - text: Tu bebida de siempre Café con leche Alergias Ninguna anotada Tu cumpleaños 14 de septiembre Cómo recargás En caja, con efectivo o con tarjeta Avisos por WhatsApp Consultá tus preferencias en la barra
+    - paragraph: Mantené tus preferencias al día para tu próxima visita
+    - button "Editar mi perfil"
+  - region "Tu cuenta de casa":
+    - heading "Tu cuenta de casa" [level=3]
+    - list:
+      - listitem: Historial para puntos 9 oct −C$ 100
+      - listitem: Fecha límite sintética 9 oct +C$ 1
+      - listitem: Saldo sintético 7 oct +C$ 10,000
+    - button "Ver toda mi actividad"
+    - dialog "Tu actividad":
+      - button "Cerrar panel": Cerrar
+      - heading "Tu actividad" [level=2]
+      - paragraph: El dinero paga tus compras Los puntos indican tu nivel Los sellos completan tu tanda
+      - group "Filtrar actividad":
+        - button "Todo" [pressed]
+        - button "Dinero"
+        - button "Puntos"
+        - button "Sellos"
+        - button "Canjes"
+      - list "Movimientos de tu cuenta":
+        - listitem:
+          - paragraph: Mesa Fundadora
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 500 pts
+        - listitem:
+          - paragraph: Historial para puntos
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 10 pts
+        - listitem:
+          - paragraph: Prueba
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 1 sello
+        - listitem:
+          - paragraph: Prueba
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 1 sello
+        - listitem:
+          - paragraph: Prueba
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 1 sello
+        - listitem:
+          - paragraph: Prueba
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 1 sello
+        - listitem:
+          - paragraph: Prueba
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 1 sello
+        - listitem:
+          - paragraph: Prueba
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 1 sello
+        - listitem:
+          - paragraph: Prueba
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 1 sello
+        - listitem:
+          - paragraph: Prueba
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: 1 sello
+        - listitem:
+          - paragraph: Historial para puntos
+          - paragraph: 8 oct 2026, 9:20 p. m.
+          - text: −C$ 100
+        - listitem:
+          - paragraph: Fecha límite sintética
+          - paragraph: 8 oct 2026, 8:00 p. m.
+          - text: C$ 1
+        - listitem:
+          - paragraph: Saldo sintético
+          - paragraph: 6 oct 2026, 9:20 p. m.
+          - text: C$ 10,000
+    - button "Mis compras y reservas"
+  - button "Volver a la casa"
+  - button "Cerrar sesión"
+- navigation "Secciones de Club Lupita":
+  - list:
+    - listitem:
+      - button "Inicio"
+    - listitem:
+      - button "Pedir"
+    - listitem:
+      - button "Tienda"
+    - listitem:
+      - button "Club"
+    - listitem:
+      - button "Perfil"

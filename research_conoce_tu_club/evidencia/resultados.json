@@ -1,0 +1,3087 @@
+{
+  "fecha": "2026-10-09T03:19:44.748Z",
+  "alcance": "Producción: solo GET/HEAD anónimos. Cuenta y estados: aplicación compilada actual y Worker/SQL aislados; variaciones UI simuladas explícitamente.",
+  "publico": [
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 1440,
+      "height": 960,
+      "scrollWidth": 1440,
+      "scrollHeight": 960,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Tres generacionesUna taza"
+        },
+        {
+          "tag": "H2",
+          "text": "Tu lugar en Club Lupita"
+        }
+      ],
+      "links": [],
+      "invitation": null,
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 197
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 17535,
+          "decoded": 73931,
+          "duration": 198
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 133842,
+          "decoded": 415080,
+          "duration": 253
+        },
+        {
+          "name": "/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920",
+          "type": "script",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 219
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 353,
+          "decoded": 53,
+          "duration": 90
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 586,
+          "decoded": 542,
+          "duration": 205
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 428,
+          "decoded": 186,
+          "duration": 252
+        },
+        {
+          "name": "/cdn-cgi/rum",
+          "type": "xmlhttprequest",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 17
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 14
+        },
+        {
+          "name": "/api/capacidades",
+          "type": "fetch",
+          "transfer": 386,
+          "decoded": 91,
+          "duration": 66
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 149
+        },
+        {
+          "name": "/images/latte-logo-mesa-960.webp",
+          "type": "img",
+          "transfer": 35030,
+          "decoded": 34730,
+          "duration": 113
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 152
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 137
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 142
+        }
+      ],
+      "axe": [],
+      "name": "publico-club-1440"
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 986,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Tres generacionesUna taza"
+        },
+        {
+          "tag": "H2",
+          "text": "Tu lugar en Club Lupita"
+        }
+      ],
+      "links": [],
+      "invitation": null,
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 197
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 17535,
+          "decoded": 73931,
+          "duration": 198
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 133842,
+          "decoded": 415080,
+          "duration": 253
+        },
+        {
+          "name": "/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920",
+          "type": "script",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 219
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 353,
+          "decoded": 53,
+          "duration": 90
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 586,
+          "decoded": 542,
+          "duration": 205
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 428,
+          "decoded": 186,
+          "duration": 252
+        },
+        {
+          "name": "/cdn-cgi/rum",
+          "type": "xmlhttprequest",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 17
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 14
+        },
+        {
+          "name": "/api/capacidades",
+          "type": "fetch",
+          "transfer": 386,
+          "decoded": 91,
+          "duration": 66
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 149
+        },
+        {
+          "name": "/images/latte-logo-mesa-960.webp",
+          "type": "img",
+          "transfer": 35030,
+          "decoded": 34730,
+          "duration": 113
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 152
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 137
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 142
+        }
+      ],
+      "axe": [],
+      "name": "publico-club-390"
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200,
+      "body": {
+        "experiencias": [],
+        "bolsa": {
+          "precio": 89000,
+          "quedan": 150,
+          "total": 150,
+          "generacion": 6
+        },
+        "membresia": {
+          "cuota": 95000,
+          "total": 100
+        },
+        "zonas": [
+          {
+            "id": "terraza",
+            "nombre": "La terraza",
+            "aforo": 10,
+            "deposito": 0,
+            "icono": "balcony"
+          },
+          {
+            "id": "ventanal",
+            "nombre": "El ventanal",
+            "aforo": 6,
+            "deposito": 0,
+            "icono": "window"
+          },
+          {
+            "id": "barra",
+            "nombre": "La barra",
+            "aforo": 8,
+            "deposito": 0,
+            "icono": "countertops"
+          },
+          {
+            "id": "bistro",
+            "nombre": "El bistró",
+            "aforo": 12,
+            "deposito": 0,
+            "icono": "restaurant"
+          },
+          {
+            "id": "vip",
+            "nombre": "El Salón VIP",
+            "aforo": 1,
+            "deposito": 50000,
+            "icono": "diamond"
+          }
+        ]
+      }
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200,
+      "body": {
+        "sociosFundadores": 100,
+        "bolsasReserva": 150,
+        "mesaTostador": 12,
+        "experiencias": {
+          "mesa-tostador": {
+            "cupos": 12,
+            "libres": 12
+          },
+          "finca": {
+            "cupos": 20,
+            "libres": 20
+          },
+          "cacao": {
+            "cupos": 16,
+            "libres": 16
+          }
+        }
+      }
+    }
+  ],
+  "local": [
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 1440,
+      "height": 960,
+      "scrollWidth": 1440,
+      "scrollHeight": 1778,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": true,
+        "display": "block",
+        "x": 18,
+        "y": 609.15625,
+        "width": 187,
+        "height": 249.46875,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 10
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 15
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 14
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1788,
+          "decoded": 1488,
+          "duration": 27
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 31
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 35
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 9
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 3
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 5
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 47
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 43
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 44
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 45
+        }
+      ],
+      "axe": [],
+      "name": "socio-1440",
+      "simulated": false
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 1776,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "none",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 16
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 18
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 19
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1788,
+          "decoded": 1488,
+          "duration": 35
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 38
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 41
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 19
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 6
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 8
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 55
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 51
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 52
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 53
+        }
+      ],
+      "axe": [],
+      "name": "socio-1366",
+      "simulated": false
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 900,
+      "height": 900,
+      "scrollWidth": 900,
+      "scrollHeight": 2864,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": true,
+        "display": "block",
+        "x": 18,
+        "y": 592.375,
+        "width": 187,
+        "height": 249.46875,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 11
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 13
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 14
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1788,
+          "decoded": 1488,
+          "duration": 30
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 32
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 34
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 15
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 6
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 7
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 61
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 58
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 59
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 60
+        }
+      ],
+      "axe": [],
+      "name": "socio-900",
+      "simulated": false
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 899,
+      "height": 900,
+      "scrollWidth": 899,
+      "scrollHeight": 2900,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 10
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 14
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 13
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1788,
+          "decoded": 1488,
+          "duration": 22
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 22
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 23
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 14
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 5
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 6
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 51
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 46
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 47
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 47
+        }
+      ],
+      "axe": [],
+      "name": "socio-899",
+      "simulated": false
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollHeight": 2885,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 9
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 12
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 9
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1788,
+          "decoded": 1488,
+          "duration": 23
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 25
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 27
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 12
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 5
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 6
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 44
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 40
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 41
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 43
+        }
+      ],
+      "axe": [],
+      "name": "socio-768",
+      "simulated": false
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 3222,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 13
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 16
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 15
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1788,
+          "decoded": 1488,
+          "duration": 20
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 21
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 22
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 2
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 4
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 5
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 52
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 48
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 49
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 50
+        }
+      ],
+      "axe": [],
+      "name": "socio-390",
+      "simulated": false
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 320,
+      "height": 740,
+      "scrollWidth": 320,
+      "scrollHeight": 3522,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 11
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 13
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 12
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1788,
+          "decoded": 1488,
+          "duration": 20
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 22
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 25
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 6
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 4
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 4
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 47
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 43
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 44
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 46
+        }
+      ],
+      "axe": [],
+      "name": "socio-320",
+      "simulated": false
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 1440,
+      "height": 960,
+      "scrollWidth": 1440,
+      "scrollHeight": 1503,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H2",
+          "text": "Cien personas, y una silla que siempre está"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": true,
+        "display": "block",
+        "x": 18,
+        "y": 609.15625,
+        "width": 187,
+        "height": 249.46875,
+        "inViewport": true
+      },
+      "membershipButton": {
+        "text": "Tomar una plaza — C$ 950/mes",
+        "disabled": false,
+        "y": 1145.78125,
+        "height": 48
+      },
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 9
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 12
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 11
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1694,
+          "decoded": 1394,
+          "duration": 12
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 17
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 20
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 12
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 6
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 7
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 43
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 39
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 40
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 42
+        }
+      ],
+      "axe": [],
+      "name": "gratuito-1440",
+      "simulated": true,
+      "sameRouteClick": {
+        "url": "/club",
+        "dialogCount": 0,
+        "focus": "Conocé tu club arrow_forward"
+      },
+      "escapeClosed": true,
+      "navigationFocus": {
+        "tag": "MAIN",
+        "id": "contenido",
+        "title": "Club Lupita — La Bella Lupita"
+      }
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 1440,
+      "height": 960,
+      "scrollWidth": 1440,
+      "scrollHeight": 1503,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H2",
+          "text": "Cien personas, y una silla que siempre está"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        },
+        {
+          "tag": "H2",
+          "text": "Una plaza en la Mesa Fundadora"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": true,
+        "display": "block",
+        "x": 18,
+        "y": 609.15625,
+        "width": 187,
+        "height": 249.46875,
+        "inViewport": true
+      },
+      "membershipButton": {
+        "text": "Tomar una plaza — C$ 950/mes",
+        "disabled": false,
+        "y": 602.78125,
+        "height": 48
+      },
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 9
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 12
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 11
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1694,
+          "decoded": 1394,
+          "duration": 12
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 17
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 20
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 12
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 6
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 7
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 43
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 39
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 40
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 42
+        }
+      ],
+      "axe": [],
+      "name": "confirmacion-plaza"
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 2780,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H2",
+          "text": "Cien personas, y una silla que siempre está"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": {
+        "text": "Tomar una plaza — C$ 950/mes",
+        "disabled": false,
+        "y": 1919.53125,
+        "height": 48
+      },
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 11
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 11
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 11
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1694,
+          "decoded": 1394,
+          "duration": 15
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 20
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 22
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 14
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 3
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 4
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 42
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 39
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 40
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 40
+        }
+      ],
+      "axe": [],
+      "name": "gratuito-390",
+      "simulated": true
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 2788,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H2",
+          "text": "Cien personas, y una silla que siempre está"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": {
+        "text": "Tomar una plaza — C$ 950/mes",
+        "disabled": true,
+        "y": 1919.53125,
+        "height": 48.390625
+      },
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 11
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 13
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 13
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1684,
+          "decoded": 1384,
+          "duration": 4
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 17
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 17
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 15
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 14
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 15
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 44
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 39
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 40
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 41
+        }
+      ],
+      "axe": [],
+      "name": "sin-saldo-390",
+      "simulated": true
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 2784,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H2",
+          "text": "Cien personas, y una silla que siempre está"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 14
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 16
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 15
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1694,
+          "decoded": 1394,
+          "duration": 15
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 21
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 418,
+          "decoded": 118,
+          "duration": 16
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 15
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 4
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 6
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 51
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 45
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 47
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 46
+        }
+      ],
+      "axe": [],
+      "name": "sin-cupos-390",
+      "simulated": true
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 3273,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 10
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 11
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 12
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1787,
+          "decoded": 1487,
+          "duration": 14
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 17
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 20
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 14
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 4
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 5
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 42
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 38
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 39
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 41
+        }
+      ],
+      "axe": [],
+      "name": "en-gracia-390",
+      "simulated": true
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 3263,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Una bebidate está esperando"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H3",
+          "text": "Lo tuyo de este mes"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": null,
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 19
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 20
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 20
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1133,
+          "decoded": 833,
+          "duration": 20
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 24
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 27
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 8
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 10
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 11
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 47
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 42
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 44
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 45
+        }
+      ],
+      "axe": [],
+      "name": "premio-390",
+      "simulated": true
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 3181,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H2",
+          "text": "Cien personas, y una silla que siempre está"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": {
+        "text": "Tomar una plaza — C$ 950/mes",
+        "disabled": false,
+        "y": 2088.03125,
+        "height": 92.78125
+      },
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 11
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 12
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 12
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1694,
+          "decoded": 1394,
+          "duration": 13
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 18
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 20
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 13
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 3
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 4
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 42
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 39
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 39
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 40
+        }
+      ],
+      "axe": [],
+      "name": "texto200-390",
+      "simulated": true
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 2802,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H2",
+          "text": "Cien personas, y una silla que siempre está"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H3",
+          "text": "Este mes no abrimos ninguna"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": {
+        "text": "Tomar una plaza — C$ 950/mes",
+        "disabled": false,
+        "y": 1919.53125,
+        "height": 48
+      },
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 8
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 9
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 9
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1694,
+          "decoded": 1394,
+          "duration": 14
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 842,
+          "decoded": 542,
+          "duration": 14
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 17
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 13
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 3
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 4
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 39
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 35
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 36
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 36
+        }
+      ],
+      "axe": [],
+      "name": "sin-experiencias-390",
+      "simulated": true
+    },
+    {
+      "url": "/club",
+      "title": "Club Lupita — La Bella Lupita",
+      "width": 320,
+      "height": 225,
+      "scrollWidth": 320,
+      "scrollHeight": 2910,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Club"
+        },
+        {
+          "tag": "H2",
+          "text": "El gustode volver"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu próxima bebidaempieza aquí"
+        },
+        {
+          "tag": "H3",
+          "text": "La próxima se acerca"
+        },
+        {
+          "tag": "H2",
+          "text": "Cien personas, y una silla que siempre está"
+        },
+        {
+          "tag": "H3",
+          "text": "Experiencias de la casa"
+        },
+        {
+          "tag": "H4",
+          "text": "Experiencia de prueba"
+        },
+        {
+          "tag": "H3",
+          "text": "Tu mesa"
+        },
+        {
+          "tag": "H4",
+          "text": "Apartá dónde te sentás"
+        }
+      ],
+      "links": [
+        {
+          "text": "Ir al contenido",
+          "href": "#contenido"
+        }
+      ],
+      "invitation": {
+        "visible": false,
+        "display": "block",
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "inViewport": true
+      },
+      "membershipButton": {
+        "text": "Tomar una plaza — C$ 950/mes",
+        "disabled": false,
+        "y": 2010.953125,
+        "height": 68.78125
+      },
+      "resources": [
+        {
+          "name": "/fuentes/material-symbols-subset.woff2",
+          "type": "link",
+          "transfer": 8724,
+          "decoded": 8424,
+          "duration": 9
+        },
+        {
+          "name": "/assets/principal-Cfxl5pt5.js",
+          "type": "script",
+          "transfer": 415380,
+          "decoded": 415080,
+          "duration": 10
+        },
+        {
+          "name": "/assets/principal-C3oGQIwt.css",
+          "type": "link",
+          "transfer": 74231,
+          "decoded": 73931,
+          "duration": 10
+        },
+        {
+          "name": "/api/yo",
+          "type": "fetch",
+          "transfer": 1694,
+          "decoded": 1394,
+          "duration": 12
+        },
+        {
+          "name": "/api/catalogo",
+          "type": "fetch",
+          "transfer": 971,
+          "decoded": 671,
+          "duration": 16
+        },
+        {
+          "name": "/api/cupos",
+          "type": "fetch",
+          "transfer": 419,
+          "decoded": 119,
+          "duration": 19
+        },
+        {
+          "name": "/favicon.ico",
+          "type": "other",
+          "transfer": 0,
+          "decoded": 0,
+          "duration": 11
+        },
+        {
+          "name": "/brand/v3/logo-original.png",
+          "type": "img",
+          "transfer": 147857,
+          "decoded": 147557,
+          "duration": 5
+        },
+        {
+          "name": "/brand/v3/retrato-original.png",
+          "type": "img",
+          "transfer": 133242,
+          "decoded": 132942,
+          "duration": 5
+        },
+        {
+          "name": "/assets/work-sans-latin-wght-normal-Bl-S9Xys.woff2",
+          "type": "css",
+          "transfer": 50616,
+          "decoded": 50316,
+          "duration": 42
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+          "type": "css",
+          "transfer": 25272,
+          "decoded": 24972,
+          "duration": 37
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-400-italic-snTzlHlN.woff2",
+          "type": "css",
+          "transfer": 28320,
+          "decoded": 28020,
+          "duration": 38
+        },
+        {
+          "name": "/assets/libre-caslon-text-latin-700-normal-D1WVYPaO.woff2",
+          "type": "css",
+          "transfer": 25560,
+          "decoded": 25260,
+          "duration": 40
+        }
+      ],
+      "axe": [],
+      "name": "reflujo400-320",
+      "simulated": true
+    }
+  ],
+  "errors": [],
+  "browser": "154.0.4258.62",
+  "publicAssets": [
+    "/assets/principal-Cfxl5pt5.js",
+    "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920"
+  ],
+  "completed": true
+}

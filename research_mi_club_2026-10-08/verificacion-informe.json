@@ -1,0 +1,19 @@
+{
+  "linksLocalesValidos": true,
+  "filters": true,
+  "findings": 28,
+  "p1": 7,
+  "details": 28,
+  "geometry": [
+    {
+      "viewport": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": 390,
+      "scrollWidth": 390
+    }
+  ],
+  "broken": [],
+  "errors": []
+}

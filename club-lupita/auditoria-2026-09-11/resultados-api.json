@@ -1,0 +1,147 @@
+[
+  {
+    "name": "unauthenticated-account",
+    "status": 401,
+    "body": {
+      "error": "Se cerró tu sesión por seguridad. Entrá otra vez con tu WhatsApp y seguís donde ibas."
+    }
+  },
+  {
+    "name": "member-cannot-recharge",
+    "status": 403,
+    "body": {
+      "error": "La recarga se hace en el mostrador, con efectivo o con tarjeta."
+    }
+  },
+  {
+    "name": "member-cannot-stamp",
+    "status": 403,
+    "body": {
+      "error": "Los sellos los pone la barra. Mostrá tu código en el mostrador."
+    }
+  },
+  {
+    "name": "staff-cannot-charge-member",
+    "status": 404,
+    "body": {
+      "error": "No encontramos esa cuenta."
+    }
+  },
+  {
+    "name": "expired-membership-benefit",
+    "status": 200,
+    "body": {
+      "clase": "bebida_dia",
+      "ventana": "2026-09-11"
+    }
+  },
+  {
+    "name": "ninth-stamp",
+    "status": 200,
+    "body": {
+      "sellos": 9,
+      "nuevo": 9,
+      "cerrada": true
+    }
+  },
+  {
+    "name": "account-after-ninth-stamp",
+    "status": 200,
+    "body": {
+      "visibleStamps": 0,
+      "redeemedCycles": 0,
+      "voucher": null
+    }
+  },
+  {
+    "name": "voucher-first-issue",
+    "status": 200,
+    "body": {
+      "codigo": "RZF289SC",
+      "vence": 90
+    }
+  },
+  {
+    "name": "expired-voucher-reissue",
+    "status": 409,
+    "body": {
+      "error": "Todavía no hay tanda cerrada. Te faltan sellos para la décima."
+    }
+  },
+  {
+    "name": "valid-new-reservation",
+    "status": 500,
+    "body": {
+      "error": "Algo se nos quemó del lado de la cocina. No es culpa tuya. Ya lo estamos viendo."
+    }
+  },
+  {
+    "name": "reservation-postgres-error",
+    "code": "0A000",
+    "error": "FOR UPDATE is not allowed with aggregate functions"
+  },
+  {
+    "name": "membership-cancel",
+    "status": 200,
+    "body": {
+      "cancelada": true,
+      "numero": 1,
+      "hasta": "2026-09-10T16:48:20.921Z"
+    }
+  },
+  {
+    "name": "membership-after-cancel",
+    "body": {
+      "numero": 1,
+      "estado": "activa",
+      "hasta": "2026-09-10T16:48:20.921Z"
+    }
+  },
+  {
+    "name": "recharge-original",
+    "status": 200,
+    "body": {
+      "monto": 20000,
+      "bono": 0,
+      "saldo": {
+        "pagado": 1020000,
+        "bono": 0,
+        "total": 1020000
+      }
+    }
+  },
+  {
+    "name": "recharge-same-ref-different-amount",
+    "status": 200,
+    "body": {
+      "monto": 200000,
+      "bono": 24000,
+      "saldo": {
+        "pagado": 1020000,
+        "bono": 24000,
+        "total": 1044000
+      }
+    }
+  },
+  {
+    "name": "recharge-persisted",
+    "body": [
+      {
+        "monto": 20000,
+        "tipo": "recarga",
+        "ref_externa": "audit-recharge-ref"
+      },
+      {
+        "monto": 24000,
+        "tipo": "bono",
+        "ref_externa": "audit-recharge-ref:bono"
+      }
+    ]
+  },
+  {
+    "name": "points-migration",
+    "applied": false,
+    "code": "42804",
+    "error": "column \"origen_id\" is of type uuid but expression is of type bigint"
+  }
+]

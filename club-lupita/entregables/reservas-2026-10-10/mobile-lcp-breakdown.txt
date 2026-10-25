@@ -1,0 +1,61 @@
+Emulating network conditions: Slow 4G
+Default navigation timeout set to 100000 ms
+Emulating viewport: {"deviceScaleFactor":3,"isMobile":true,"hasTouch":true,"isLandscape":false,"width":390,"height":844}
+Emulating CPU throttling: 4x slowdown
+## Insight Title: LCP breakdown
+
+## Insight Summary:
+This insight is used to analyze the time spent that contributed to the final LCP time and identify which of the 4 subparts (or 2 if there was no LCP resource) are contributing most to the delay in rendering the LCP element.
+
+## Detailed analysis:
+The Largest Contentful Paint (LCP) time for this navigation was 2,695 ms.
+The LCP element (IMG, nodeId: 359) is an image fetched from https://app.labellalupita.com/images/terraza-atardecer-960.webp (eventKey: s-8929, ts: 37392185687).
+## LCP resource network request: https://app.labellalupita.com/images/terraza-atardecer-960.webp
+eventKey: s-8929
+Timings:
+- Queued at: 2,052 ms
+- Request sent at: 2,052 ms
+- Download complete at: 2,681 ms
+- Main thread processing completed at: 2,682 ms
+Durations:
+- Download time: 0.1 ms
+- Main thread processing time: 1 ms
+- Total duration: 630 ms
+Initiator: https://app.labellalupita.com/assets/principal-BBvLVwFo.js
+Redirects: no redirects
+Status code: 304
+MIME Type: image/webp
+Protocol: h3
+Initial priority: Low
+Final priority: High
+Render-blocking: No
+From a service worker: No
+Initiators (root request to the request that directly loaded this one): https://app.labellalupita.com/reservar, https://app.labellalupita.com/assets/principal-BBvLVwFo.js
+Response headers
+- cf-cache-status: <redacted>
+- etag: <redacted>
+- report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ofuh%2F5yowAjINAGb3wtcOtDpDQqMuH8c2dgyKjC%2FyXo4xnPCYv0lMTGlYV1%2BunYAfE09jwN4DViH94CE%2F86O7juqj3GjBV6LWaATlSLbKETKIzfqJKoUeY%2FDIgOTcoUGR9cUk3Hz6FzVL0X9D2NISJRRR2M%3D"}]}
+- x-content-type-options: nosniff
+- alt-svc: h3=":443"; ma=86400
+- server-timing: <redacted>
+- date: Sun, 11 Oct 2026 03:25:17 GMT
+- content-type: image/webp
+- priority: <redacted>
+- x-frame-options: DENY
+- strict-transport-security: max-age=31536000
+- content-security-policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'
+- cache-control: public, max-age=0, must-revalidate
+
+We can break this time down into the 4 subparts that combine to make the LCP time:
+
+- Time to first byte: 72 ms (2.7% of total LCP time)
+- Resource load delay: 1,980 ms (73.5% of total LCP time)
+- Resource load duration: 629 ms (23.3% of total LCP time)
+- Element render delay: 14 ms (0.5% of total LCP time)
+
+## Estimated savings: none
+
+## External resources:
+- https://developer.chrome.com/docs/performance/insights/lcp-breakdown
+- https://web.dev/articles/lcp
+- https://web.dev/articles/optimize-lcp

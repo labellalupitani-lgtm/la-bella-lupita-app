@@ -1,0 +1,136 @@
+{
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "ms": 1861,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "strict-transport-security": null,
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null
+      },
+      "assetScripts": [
+        "/assets/principal-BQ_bCH-F.js"
+      ],
+      "title": "Club Lupita — La Bella Lupita"
+    },
+    {
+      "path": "/personal",
+      "status": 200,
+      "ms": 280,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "strict-transport-security": null,
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null
+      },
+      "assetScripts": [
+        "/assets/principal-BQ_bCH-F.js"
+      ],
+      "title": "Club Lupita — La Bella Lupita"
+    },
+    {
+      "path": "/api/capacidades",
+      "status": 200,
+      "ms": 407,
+      "headers": {
+        "content-type": "application/json",
+        "cache-control": "no-store",
+        "strict-transport-security": null,
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null
+      },
+      "body": {
+        "accesoCorreo": true,
+        "accesoPersonal": false,
+        "canal": "correo electrónico",
+        "operacion": true
+      }
+    },
+    {
+      "path": "/api/operacion/clientes",
+      "status": 401,
+      "ms": 349,
+      "headers": {
+        "content-type": "application/json",
+        "cache-control": null,
+        "strict-transport-security": null,
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null
+      },
+      "body": {
+        "error": "Se cerró tu sesión por seguridad. Entrá otra vez con tu WhatsApp y seguís donde ibas."
+      }
+    },
+    {
+      "path": "/api/personal/yo",
+      "status": 401,
+      "ms": 1246,
+      "headers": {
+        "content-type": "application/json",
+        "cache-control": null,
+        "strict-transport-security": null,
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null
+      },
+      "body": {
+        "error": "Se cerró tu sesión por seguridad. Entrá otra vez con tu WhatsApp y seguís donde ibas."
+      }
+    },
+    {
+      "path": "/api/yo",
+      "status": 401,
+      "ms": 257,
+      "headers": {
+        "content-type": "application/json",
+        "cache-control": null,
+        "strict-transport-security": null,
+        "content-security-policy": null,
+        "x-content-type-options": null,
+        "referrer-policy": null
+      },
+      "body": {
+        "error": "Se cerró tu sesión por seguridad. Entrá otra vez con tu WhatsApp y seguís donde ibas."
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "clientes-1440",
+      "path": "/",
+      "width": 1440,
+      "violations": [],
+      "overflow": false
+    },
+    {
+      "name": "equipo-1440",
+      "path": "/personal",
+      "width": 1440,
+      "violations": [],
+      "overflow": false
+    },
+    {
+      "name": "clientes-390",
+      "path": "/",
+      "width": 390,
+      "violations": [],
+      "overflow": false
+    },
+    {
+      "name": "equipo-390",
+      "path": "/personal",
+      "width": 390,
+      "violations": [],
+      "overflow": false
+    }
+  ],
+  "consoleErrors": []
+}

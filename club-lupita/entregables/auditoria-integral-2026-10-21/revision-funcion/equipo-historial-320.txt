@@ -1,0 +1,78 @@
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- region "Propuesta de operación del equipo":
+  - text: LA BELLA LUPITA Equipo · propuesta local
+  - paragraph: SERVICIO EN CURSO
+  - heading "Pedidos del turno" [level=1]
+  - paragraph:
+    - text: 24 en curso
+    - strong: 8 superan 15 min
+  - text: Vista del equipo
+  - combobox "Vista del equipo":
+    - option "Caja" [selected]
+    - option "Cocina"
+    - option "Encargado"
+  - navigation "Filtrar pedidos por estado":
+    - button "En curso 24"
+    - button "Por aceptar 6"
+    - button "Cocina 13"
+    - button "Listos 5"
+    - button "Historial 2" [pressed]
+  - paragraph: Más antiguos primero · 2 resultados
+  - button "Buscar y filtrar"
+  - status: "Historial: 2 pedidos."
+  - article "#25 Cancelado":
+    - heading "#25 Cancelado" [level=2]
+    - paragraph: Cliente sintético 25
+    - strong: 26 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - strong: "Motivo de cancelación:"
+      - text: "Cliente cambió de planes. Devolución simulada: C$480."
+    - paragraph:
+      - text: Total
+      - strong: C$480
+  - article "#24 Entregado":
+    - heading "#24 Entregado" [level=2]
+    - paragraph: Cliente sintético 24
+    - strong: 25 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+  - paragraph: "Datos de prueba · Última revisión: 08:28 p. m."
+  - button "Actualizar bandeja"
+  - group:
+    - text: Escenarios de prueba
+    - paragraph: Prototipo con 26 pedidos sintéticos. Los cambios viven en esta pantalla; no contacta clientes ni modifica la aplicación.
+    - text: Próxima operación
+    - combobox "Próxima operación":
+      - option "Respuesta correcta" [selected]
+      - option "Error antes de guardar"
+      - option "Respuesta perdida después de guardar"
+    - button "Ver búsqueda vacía"
+    - button "Restablecer turno"
+    - paragraph:
+      - text: "Operaciones registradas en esta prueba:"
+      - status: "4"
+      - text: . El resultado incierto se consulta sin repetir la operación.

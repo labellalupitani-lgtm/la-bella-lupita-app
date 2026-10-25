@@ -1,0 +1,684 @@
+L A PL ANTILL A Y LOS 3 PROMPTS DEL VÍDEO
+
+
+
+
+              Guía del
+
+
+
+             Prompt
+Para que la inteligencia artificial no se conforme
+             con su primera versión
+
+
+TAREA      MÉTODO        LISTÓN      ENTREGABLE
+
+
+
+
+                  Xavier Mitjana
+CONTENIDO
+
+
+
+Guía del Gauntlet Prompt
+
+      Antes de empezar                                                                               3
+
+
+
+01    Qué es un Gauntlet Prompt                                                                      4
+
+
+
+02    Por qué funciona                                                                               5
+
+
+
+03    Las cuatro cajas de un buen prompt                                                             6
+
+
+
+04    La plantilla para copiar                                                                       9
+
+
+
+05    Los tres prompts del vídeo                                                                    11
+
+
+
+06    Consejos para que te salga bien                                                               17
+
+
+
+
+     Los prompts, listos para copiar. Junto a esta guía tienes cada prompt en un archivo de texto
+     (carpeta prompts): copiar desde un PDF a veces rompe los saltos de línea.
+INTRODUCCIÓN
+
+
+
+Antes de empezar
+Seguro que te ha pasado. Le pides algo a la inteligencia artificial, te devuelve un resultado correcto pero
+mejorable, y lo das por bueno. No porque sea lo que querías, sino porque pedirle que lo corrija otra vez,
+y otra, cansa.
+
+En el vídeo te enseñé tres proyectos hechos con la misma inteligencia artificial y el mismo encargo: un
+modelo 3D, un cuadro de mando en una hoja de cálculo y una web completa. La versión A de cada uno
+es lo que obtienes normalmente: un 5. La versión B es lo que pasa cuando no dejas que la IA se
+conforme: un 10. Y mi esfuerzo fue el mismo en los dos casos: escribir una sola instrucción y darle a
+Enter.
+
+
+
+
+La diferencia está en unas pocas líneas del prompt. Esta guía te explica cuáles son, por qué funcionan y
+cómo escribirlas para tus propias tareas. Y al final tienes los tres prompts completos del vídeo, listos
+para copiar.
+
+No necesitas saber programar. Funciona en ChatGPT, en Gemini, en Claude y en cualquier otra IA.
+Donde más brilla es en sus modos de agente (Codex, Gemini Spark, Claude Code y similares), porque
+pueden trabajar un buen rato seguido, probar lo que hacen y revisarlo sin que tú estés delante.
+
+Empecemos por entender qué es.
+                   CAPÍTULO 1
+
+
+
+                   Qué es un Gauntlet Prompt
+
+En inglés, gauntlet es una prueba muy dura que hay que superar: una prueba de fuego. Un Gauntlet
+Prompt es justo eso, una instrucción que hace pasar el trabajo de la inteligencia artificial por una
+prueba de fuego muy exigente, una y otra vez, hasta que la supera.
+
+En la práctica, le pides tres cosas que normalmente no le pides:
+
+ 1   Que no te entregue la primera versión. Que trabaje en bucle: hace, revisa, corrige y vuelve a
+     empezar.
+
+ 2   Que el trabajo lo revise un árbitro. Otra IA, o la misma con otro papel, cuya única misión es
+     encontrar fallos.
+
+ 3   Que sepa cuándo ha terminado. Un listón concreto que el trabajo tiene que superar para darlo
+     por bueno.
+
+
+
+
+Así dejas de ser la única persona que juzga el trabajo de la IA. Pones el criterio una vez y la revisión
+pasa a ser automática.
+
+La idea no es mía. En julio de 2026, Matt Shumer enseñó Claude of Duty, un juego de disparos para el
+navegador al estilo Call of Duty que Claude, la IA de Anthropic, programó a partir de un encargo de tres
+párrafos: unas 55.000 líneas de código. El secreto no estaba en el encargo, sino en lo que pasó
+después: horas de trabajo en bucle, con un crítico muy exigente que le hacía rehacer cada parte. Él lo
+bautizó como Gauntlet Loop, y de ahí viene el nombre de este método.
+
+
+
+       ACCIÓN AHORA
+
+   Piensa en la última vez que aceptaste un resultado de la IA «porque ya estaba bien». Apúntalo:
+   va a ser tu primera prueba.
+
+
+
+
+                    CAPÍTULO 2
+
+
+
+                    Por qué funciona
+
+Por dos motivos muy sencillos.
+
+
+
+La IA no se cansa. Tú, sí
+Andrej Karpathy, uno de los fundadores de OpenAI, lo dijo este verano: nadie en su sano juicio
+dedicaría tanto tiempo a algo así, pero la IA tiene toda la resistencia y la paciencia del mundo.
+
+Revisar es lo que más nos cuesta. ¿Cuántas veces has aceptado la primera respuesta porque corregir
+otra vez te daba pereza? La IA, en cambio, tiene toda la paciencia del mundo: puede rehacer el trabajo
+diez veces con el mismo cuidado que la primera. El truco es aprovechar esa paciencia justo para lo que
+a ti te cansa: revisar.
+
+
+
+La IA es mala jueza de su propio trabajo
+Si le preguntas a una IA si lo que acaba de hacer está bien, lo más probable es que te diga que sí.
+Anthropic, la empresa que creó Claude, lo publicó en marzo de 2026: cuando una IA evalúa su propio
+trabajo, tiende a darlo por bueno aunque sea mediocre. Y comprobaron que funciona mucho mejor
+separar a quien hace el trabajo de quien lo revisa.
+
+La solución es separar los papeles: que una haga el trabajo y otra lo revise con un criterio estricto. Por
+eso el árbitro no debe haber participado en el trabajo que revisa.
+Cuando juntas las dos cosas, una IA que no se cansa de rehacer y un revisor que no se conforma, el
+resultado cambia por completo. Alexandr Wang, director de inteligencia artificial de Meta, contó este
+verano que había visto casos en los que un sistema de agentes, con el bucle y la forma de evaluar
+adecuados, rendía más que un equipo de cien ingenieros.
+
+Esas dos piezas, el bucle y la forma de evaluar, son justo lo que vas a escribir en el prompt.
+
+
+
+
+                   CAPÍTULO 3
+
+
+                   Las cuatro cajas de un buen
+                   prompt
+
+Todo el método cabe en un único prompt, y ese prompt se ordena en cuatro cajas. Cada caja responde
+a una pregunta.
+Caja 1 · La tarea: ¿qué quieres?
+Es el encargo de siempre: lo que le pedirías a la IA aunque no conocieras este método. De hecho, la
+versión A de los ejemplos solo tenía esta caja.
+
+Mi consejo: cuanto más concreta, mejor. Responde a tres preguntas: qué es, para quién es y qué tiene
+que entregar. Por ejemplo: «Diseña y desarrolla un proyecto web completo para FridgeFlow, una app
+que crea recetas y menús semanales con los alimentos que el usuario ya tiene».
+
+
+
+Caja 2 · El método: ¿cómo trabaja?
+Aquí empieza lo nuevo. Hay tres frases clave:
+
+    «De forma autónoma». Que no se pare a preguntarte cada dos pasos: que decida y siga. Y si algo
+    es ambiguo, que lo decida y lo deje anotado.
+
+    «Trabaja en loop: planifica, construye, prueba, revisa, corrige y repite». Esto evita que te
+    entregue lo primero que hace: la obliga a dar vueltas a su propio trabajo.
+
+    «Usa un árbitro que emplee técnicas adversariales para auditar y criticar el trabajo hecho».
+    «Adversarial» suena técnico, pero significa algo muy sencillo: que busque fallos como si quisiera
+    tumbar el trabajo. Es el revisor que tú ya no tienes que ser.
+
+Sin esta caja, la IA hace lo de siempre: completa el encargo y te entrega la primera versión.
+
+
+
+Caja 3 · El listón: ¿cuándo está terminado?
+Si la IA trabaja en bucle, necesita saber cuándo parar. Eso es el listón: el nivel que tiene que alcanzar el
+trabajo. Es lo que usa el árbitro para decidir si algo pasa o no pasa.
+Sin listón, el bucle no sabe cuándo parar. Y con un listón bajo, se para enseguida.
+
+En el prompt de la web, el listón es «hasta conseguir una experiencia pulida, original y digna de
+Awwwards». Awwwards es una organización que premia las mejores webs del mundo: le estoy diciendo
+con qué tiene que compararse.
+
+Mi consejo:
+
+    Mejor una referencia concreta que un adjetivo: «al nivel de esta web» funciona mejor que «bonita».
+
+    Y mejor todavía, una lista de requisitos que se puedan comprobar: «cada cifra coincide con su
+    documento», «la web se abre sin instalar nada». Lo que se puede comprobar, el árbitro lo puede
+    verificar.
+
+
+
+Caja 4 · El entregable: ¿qué recibo?
+Las restricciones y el formato: lo que no se discute. Por ejemplo, «no uses placeholders ni te detengas
+en un prototipo» (los placeholders son los huecos de relleno, tipo «imagen aquí») o «entrega una
+carpeta con todos los archivos, de forma que la web funcione en cualquier navegador simplemente
+abriéndola».
+
+¿Por qué separarla del listón? Porque el listón es opinable («que sea bonito» se puede discutir) y el
+entregable no. Y porque ayuda a tener por un lado qué quieres y por otro cómo quieres recibirlo.
+       ACCIÓN AHORA
+
+   Coge un prompt que uses a menudo y marca con cuatro colores qué parte es tarea, método,
+   listón y entregable. Lo normal es que solo tengas la primera.
+
+
+
+
+                      CAPÍTULO 4
+
+
+
+                      La plantilla para copiar
+
+Dos versiones. Empieza por la corta y, cuando veas cómo trabaja, pasa a la completa.
+
+
+
+Versión corta: el párrafo que se añade al final
+Coge tu prompt de siempre y añádele esto al final. Es lo mínimo que convierte cualquier encargo en un
+Gauntlet Prompt.
+
+
+  Plantilla corta                                                                    Para copiar: prompts/plantilla-corta.txt
+
+
+
+     M É TO D O
+
+
+   Trabaja en loop: planifica, haz el trabajo, revísalo, corrige y repite. No me entregues la primera versión.
+
+
+   Usa un árbitro que emplee técnicas adversariales para auditar y criticar el trabajo hecho: que no haya
+   participado en hacerlo y que busque fallos a propósito, como si quisiera tumbarlo. Sigue mejorando hasta que
+   lo dé por bueno.
+
+
+     L I STÓ N
+
+
+   El listón: [el nivel que tiene que alcanzar; mejor con una referencia concreta, «al nivel de…»].
+
+
+     ENTREGABLE
+
+
+   Al final, resúmeme la revisión del árbitro: cuántas rondas hizo, qué rechazó y qué se corrigió.
+
+
+
+
+Versión completa: las cuatro cajas
+Rellena lo que va entre corchetes.
+Plantilla completa                                                            Para copiar: prompts/plantilla-completa.txt
+
+
+
+  TA R E A
+
+
+[Qué quieres que haga, en una o dos frases]. Es para [quién lo va a usar] y tiene que incluir [las piezas: …].
+
+
+  M É TO D O
+
+
+Trabaja de forma autónoma: no te pares a preguntarme. Si algo es ambiguo, decide tú y déjalo anotado.
+
+
+Trabaja en loop: planifica, construye, prueba, revisa, corrige y repite. No me entregues la primera versión.
+
+
+Usa un árbitro que emplee técnicas adversariales para auditar y criticar el trabajo hecho: que no haya
+participado en construirlo y que busque fallos a propósito, como si quisiera tumbarlo. Sigue mejorando hasta
+que lo dé por bueno.
+
+
+  L I STÓ N
+
+
+El listón: [el nivel que tiene que alcanzar, con una referencia concreta: «al nivel de…», «que lo firmaría sin tocar
+una coma…»].
+
+
+El árbitro no puede dar el trabajo por terminado hasta comprobar, uno por uno, estos puntos:
+- [Algo que se pueda comprobar: «cada cifra coincide con su documento original»]
+- [Otro: «la web se abre y funciona sin instalar nada»]
+- [Otro: «no queda ningún hueco de relleno ni ningún texto de ejemplo»]
+
+
+  ENTREGABLE
+
+
+Entrégame [el formato: un documento, una hoja de cálculo, una carpeta con todos los archivos…]. [Las
+restricciones que no se discuten: «sin placeholders», «en castellano», «que funcione sin instalar nada»…].
+
+
+Al final, resume la revisión del árbitro: cuántas rondas hizo, qué rechazó y qué se corrigió.
+            ACCIÓN AHORA
+
+   Añade la versión corta a ese prompt que marcaste antes y lánzalo. Compara el resultado con el
+   que obtenías hasta ahora.
+
+
+
+
+                           CAPÍTULO 5
+
+
+
+                           Los tres prompts del vídeo
+
+Aquí tienes los tres prompts tal y como los usé. Cada parte lleva el color de su caja, y las marcadas con
+«Lo que añade el Gauntlet» son las que no tenía la versión A: el resto es idéntico.
+
+ TA R E A     M É TO D O     L I STÓ N   ENTREGABLE   LO Q U E A Ñ A D E E L G AU N T L E T
+
+
+
+
+Prompt 1 · De fotos a modelo 3D
+Para qué sirve: recrear un objeto real a partir de unas fotos. Lo hice con ChatGPT (Codex), pasándole
+cinco fotos de una grapadora que tengo en casa.
+
+Qué cambió: la versión normal hizo una grapadora más plana, más alargada y con menos detalle en la
+base. Con el Gauntlet, el resultado es prácticamente idéntico a la real.
+Cómo adaptarlo: cambia el objeto y las piezas que describes. Lo que no debes tocar es la parte del
+crítico: tiene prohibido elogiar y está obligado a decir qué está mal, en qué foto se ve y cómo debería
+ser.
+
+
+   Prompt 1 · De fotos a modelo 3D                                                      Para copiar: prompts/1-grapadora-3d.txt
+
+
+
+        TA R E A
+
+
+       Te adjunto 5 fotos de una grapadora desde distintos ángulos (superior, inferior, frontal, lateral y perspectiva).
+       Crea un modelo 3D fiel de este objeto en Three.js, en un único archivo HTML que pueda abrir en el navegador.
+
+
+        ENTREGABLE
+
+
+       Requisitos del modelo:
+       - Geometría hecha con código (sin archivos externos): tapa superior naranja curvada con el hueco ovalado del
+       pulgar, base gris con borde inferior naranja, cargador metálico cromado y placa metálica circular en la base.
+       - Respeta proporciones, colores y materiales de las fotos (plástico mate naranja y gris, metal brillante).
+       - OrbitControls para rotar y hacer zoom, iluminación suave con sombras, fondo neutro y Three.js desde CDN.
+
+
+        M É TO D O   LO Q U E A Ñ A D E E L G AU N T L E T
+
+
+       Proceso de trabajo: 2 rondas con dos roles.
+       CONSTRUCTOR: escribe o corrige el modelo.
+       CRÍTICO ADVERSARIAL: su único objetivo es encontrar fallos. Compara el modelo con las fotos pieza a pieza y
+       lista entre 5 y 8 errores concretos y medibles (proporciones, curvaturas, posición de piezas, colores, materiales,
+       piezas que faltan), ordenados por gravedad. Prohibido elogiar y prohibido críticas vagas como "podría ser más
+       realista": cada fallo debe decir qué está mal, en qué foto se ve y cómo debería ser.
+       Ronda 1: el Constructor describe las piezas que ve en las fotos y crea la versión 1. El Crítico la revisa.
+       Ronda 2: el Constructor corrige todos los fallos señalados, explica qué ha cambiado y entrega la versión final. El
+       Crítico hace una última comprobación y confirma qué fallos se han resuelto y cuáles siguen pendientes.
+       Si puedes ejecutar el código y hacer capturas del render, el Crítico debe basarse en las capturas comparadas
+       con las fotos, no solo en leer el código. Si puedes usar subagentes, que el Crítico sea un agente separado que
+       no vea el razonamiento del Constructor.
+
+
+        ENTREGABLE         LO Q U E A Ñ A D E E L G AU N T L E T
+
+
+       Entrega al final: el HTML definitivo completo, un resumen breve de lo corregido y la lista de fallos pendientes, si
+       queda alguno.
+
+
+
+
+Prompt 2 · Ordenar una carpeta y sacar un cuadro de mando
+Para qué sirve: convertir una carpeta de documentos desordenados (facturas, presupuestos,
+propuestas, transcripciones de llamadas) en una hoja de cálculo con fórmulas y en un informe que se
+lee en cinco minutos. Lo hice con Gemini (Gemini Spark).
+
+Qué cambió: le pedí a otra IA, Claude, que hiciera de juez imparcial de las dos versiones. La normal
+sacó un 5,5 y la del Gauntlet un 6,9. Los errores graves bajaron de 4 a 1. La versión B procesó bien los
+41 documentos de la carpeta, mientras que la A se dejó por el camino un tercio y llegó a contar como
+gastos los salarios que pedían unos currículums.
+
+
+
+
+Cómo adaptarlo: la clave está en la lista de comprobaciones del árbitro, al final. Cada punto es algo que
+se puede verificar uno a uno. Para escribir la tuya, pregúntate: ¿qué revisaría yo si tuviera tiempo?
+
+
+   Prompt 2 · Cuadro de mando e informe                                      Para copiar: prompts/2-cuadro-de-mando.txt
+
+
+
+     TA R E A
+
+
+    Tienes acceso a mi Google Drive, a Google Docs y a Google Sheets.
+
+
+    En Drive hay una carpeta llamada "Pendientes". Dentro está todo lo que se ha ido acumulando en mi estudio
+    durante el último mes y medio, sin ningún orden. Los nombres de archivo no sirven para nada: hay cosas
+    llamadas "escaneo_004", "Documento sin título (2)" o "FINAL_final_v3". No te fíes del nombre. Abre cada
+    documento y mira lo que hay dentro, hasta el último.
+
+
+    Hoy es 17 de agosto de 2026.
+
+
+    Quiero dos entregables, y quiero que se hablen entre ellos.
+
+
+     ENTREGABLE
+
+
+
+    ENTREGABLE 1 — Hoja de cálculo: "Cuadro de mando — Cabo Norte"
+
+
+
+    Créala en la raíz de mi Drive con CINCO pestañas:
+
+
+     Panel
+    La portada. Arriba del todo, en la celda B1, pon la etiqueta "Fecha de referencia" y en B2 la fecha 17/08/2026
+como fecha de verdad, no como texto. TODO lo que dependa del tiempo en el resto del libro debe calcularse a
+partir de esa celda, para que yo pueda cambiarla y ver cómo se actualiza todo.
+
+
+Debajo, una fila de indicadores calculados CON FÓRMULAS que apunten a las otras pestañas: total pendiente
+de pagar a proveedores, importe vencido, número de acciones vencidas, número de acciones que vencen en los
+próximos 7 días, importe total del pipeline comercial abierto, y número de documentos que requieren acción.
+
+
+Debajo, un pequeño resumen por tipo de documento (tipo + recuento + importe), también con fórmulas.
+
+
+ Documentos
+Una fila por cada documento de la carpeta. Columnas: Nombre comprensible en castellano · Archivo original ·
+Tipo · Entidad · Fecha · Importe · Moneda · Estado · Requiere acción · Enlace a Drive · Resumen de 2 o 3 líneas.
+
+
+El importe va como NÚMERO, no como texto, y sin el símbolo del euro dentro de la celda: el euro se pone con
+formato de celda. Si un documento no lleva importe, deja la celda vacía; no pongas cero.
+
+
+Si de un documento no puedes saber la fecha, déjala vacía. No te la inventes.
+
+
+ Acciones
+Aquí está el trabajo de verdad. Una fila por cada cosa que alguien tenga que hacer, DEDUCIDA de leer los
+documentos. Casi ninguna está escrita como tarea en ningún sitio: tienes que sacarla tú.
+
+
+Columnas: Acción · Responsable · Entidad · Fecha límite · Días restantes · Estado · Prioridad · Importe en juego
+· Documento de origen.
+
+
+"Días restantes" es una fórmula que resta la fecha límite menos la celda Panel!B2. "Estado" es otra fórmula que
+devuelve VENCIDA, ESTA SEMANA o EN PLAZO según ese número. No escribas los resultados a mano: si
+cambio la fecha del Panel, esta pestaña tiene que cambiar sola.
+
+
+ Dinero
+Tres bloques, cada uno con su total calculado:
+1. Facturas de proveedor recibidas, con su estado de pago y cuáles están vencidas.
+2. Propuestas y presupuestos enviados a clientes: el pipeline abierto, con su fecha de caducidad y los días que
+le quedan.
+3. Gastos recurrentes de software y servicios, con la fecha de renovación de cada uno.
+
+
+ Equipo
+Una fila por persona del estudio. Columnas: Nombre · Rol · Clientes que lleva · Ausente desde · Ausente hasta ·
+¿Está hoy? · Acciones asignadas · Acciones vencidas.
+
+
+"¿Está hoy?" y los dos recuentos son fórmulas, comparando contra Panel!B2 y contando en la pestaña Acciones.
+
+
+Reglas para toda la hoja:
+- ESCRIBE FÓRMULAS, NO RESULTADOS. Si pones el número calculado a mano, la hoja queda muerta y no me
+sirve. Usa SUMAR.SI.CONJUNTO, CONTAR.SI.CONJUNTO, BUSCARV o lo que necesites, pero que sean fórmulas
+reales.
+- Encabezados en negrita y fila inmovilizada.
+- Formato de moneda en las columnas de importe y formato de fecha en las de fecha.
+- Formato condicional: fondo rojo suave en las filas cuyo estado sea VENCIDA y ámbar en las de ESTA SEMANA.
+ENTREGABLE 2 — Documento: "Informe ejecutivo — semana del 17 de agosto"
+
+
+
+Un Google Doc escrito para que lo lea una persona, no una máquina. Con títulos de verdad (usa los estilos de
+encabezado, que quiero el índice lateral), párrafos en prosa y tablas solo donde hagan falta. Nada de listas de
+42 elementos: para eso está la hoja.
+
+
+Estructura:
+1. Qué había en esa carpeta. Cuatro o cinco líneas. Cuántos documentos, de qué tipos, qué periodo cubren y en
+qué estado está la casa.
+2. Lo que hay que hacer esta semana. Entre cinco y ocho acciones concretas, cada una con responsable, fecha y
+el dinero que hay en juego. Ordenadas por urgencia real, no por tamaño.
+3. Contradicciones e incoherencias entre documentos. Esta es la sección que más me importa. Busca
+activamente los casos en los que un documento dice una cosa y otro dice la contraria, o en los que dos
+documentos juntos revelan un problema que ninguno de los dos cuenta por separado. Por cada hallazgo: qué
+has visto, en qué documentos, y qué implica en euros o en días.
+4. Riesgos de fondo. Lo que no es urgente esta semana pero puede costar caro: concentración de clientes,
+rentabilidad por cuenta, huecos de cobertura del equipo, cosas que nadie lleva.
+5. Lo que he descartado y por qué. Los documentos que no aportan nada, en dos líneas.
+
+
+Al final del documento, enlaza la hoja de cálculo que acabas de crear con su URL real, para que pueda saltar del
+informe al detalle.
+
+
+ M É TO D O
+
+
+Las categorías de documento las decides tú: no te doy la lista, dedúcelas de lo que encuentres. Si algo es ruido,
+márcalo como descartado y explica por qué en lugar de forzarlo dentro de una categoría útil. Si un documento
+contradice a otro o está obsoleto, dilo.
+
+
+Trabaja hasta el final sin pararte a preguntarme. Si algo es ambiguo, decide tú y déjalo anotado. Cuando acabes,
+pásame las dos URLs.
+
+
+ M É TO D O    LO Q U E A Ñ A D E E L G AU N T L E T
+
+
+
+
+CÓMO QUIERO QUE TRABAJES
+
+
+
+Trabaja en loop: planifica, construye los dos entregables, revisa, corrige y repite. No me entregues la primera
+versión.
+
+
+Usa un árbitro que emplee técnicas adversariales para auditar y criticar el trabajo hecho: que no haya
+participado en construirlo y que busque fallos a propósito, como si quisiera tumbarlo. Sigue mejorando hasta
+que lo dé por bueno.
+
+
+ L I STÓ N    LO Q U E A Ñ A D E E L G AU N T L E T
+
+
+El listón: una hoja y un informe que firmaría sin tocar una coma el director financiero más exigente que
+conozcas. Cada cifra tiene que poder rastrearse hasta su documento, y el informe tiene que detectar problemas
+que yo no habría visto leyendo la carpeta.
+
+
+El árbitro no puede dar el trabajo por terminado hasta comprobar, uno por uno, estos puntos:
+    - Ha abierto todos los documentos de la carpeta y no falta ninguno en la pestaña Documentos.
+    - Cada importe y cada fecha coinciden con el documento original. Ninguno es inventado ni está redondeado.
+    - Cambia Panel!B2 a otra fecha y comprueba que Acciones, Dinero, Equipo y los indicadores del Panel cambian
+    solos. Si algo no se mueve, es un número escrito a mano: corrígelo.
+    - Los totales del Panel cuadran con los de Dinero y Documentos.
+    - Cada contradicción del informe cita los documentos implicados y cuantifica su impacto en euros o en días.
+    - El informe usa estilos de encabezado y el enlace del final abre la hoja correcta.
+    - Antes de entregar, Panel!B2 vuelve a ser 17/08/2026.
+
+
+     ENTREGABLE          LO Q U E A Ñ A D E E L G AU N T L E T
+
+
+    En tu respuesta final, además de las dos URLs, resume la revisión del árbitro: cuántas rondas hizo, qué rechazó
+    y qué se corrigió.
+
+
+
+
+Prompt 3 · Una web completa con textos, imágenes y vídeo
+Para qué sirve: un proyecto que mezcla diseño, funcionalidad, textos persuasivos, imágenes y vídeo. Lo
+hice con Claude Code.
+
+Qué cambió: la versión normal fue un prototipo correcto pero plano: el vídeo de la portada no se
+reproducía y los textos describían en lugar de convencer. La del Gauntlet fue un producto terminado:
+textos con intención, recetas con modo cocina, un logo animado y todo funcionando.
+
+
+
+
+Cómo adaptarlo: cambia FridgeFlow por tu proyecto y las herramientas por las que tengas (en el
+prompt uso Magnific para las imágenes y Seedance 2 para el vídeo). Fíjate en que todo el método cabe
+en tres frases del primer párrafo.
+Prompt 3 · Web de FridgeFlow                                                    Para copiar: prompts/3-web-fridgeflow.txt
+
+
+
+  TA R E A
+
+
+Diseña y desarrolla de forma autónoma un proyecto web completo para FridgeFlow, una app que crea recetas y
+menús semanales con los alimentos que el usuario ya tiene. Crea tantas páginas como sean necesarias y
+ trabaja en loop: planifica, construye, prueba, revisa el diseño y la funcionalidad, corrige y repite hasta
+ conseguir una experiencia pulida, original y digna de Awwwards . Usa un árbitro que emplee técnicas
+ adversariales para auditar y criticar el trabajo hecho y seguir mejorando hasta que lo dé por bueno.
+
+
+ El diseño debe ser funcional, pero incluir interacciones y elementos visuales poco convencionales que aporten
+valor real. Todos los textos deben tener calidad de copywriter profesional. Usa el MCP de Magnific para crear
+las imágenes necesarias, genera un vídeo en loop para el hero y un spot de 15 segundos con Seedance 2
+utilizando la skill disponible para escribir el prompt.
+
+
+ No uses placeholders ni te detengas en un prototipo. Entrega una carpeta final con todos los archivos HTML,
+ CSS y JavaScript, junto con las imágenes, vídeos, fuentes y demás assets necesarios, de forma que la web
+ pueda abrirse y funcionar de manera agnóstica en cualquier navegador simplemente abriendo los archivos
+ HTML.
+
+
+
+
+    ACCIÓN AHORA
+
+Elige el prompt que más se parezca a algo que haces a menudo, cámbiale la tarea por la tuya y
+lánzalo tal cual.
+
+
+
+
+                  CAPÍTULO 6
+
+
+
+                  Consejos para que te salga bien
+
+ Úsalo cuando el resultado importa. Para una respuesta rápida no hace falta. Para un documento,
+ una hoja de cálculo, una web o cualquier trabajo que antes revisabas tú tres veces, sí.
+
+ Cuenta con que tarda más. Dar vueltas al trabajo lleva su tiempo y gasta más uso de tu plan. Es el
+ precio de no tener que revisarlo tú.
+
+ Mejor en modo agente. Funciona en un chat normal, pero rinde más en los modos de agente, que
+ pueden trabajar mucho rato seguido, abrir lo que crean y probarlo.
+
+ Pide un árbitro aparte. Si tu herramienta lo permite, pide que el árbitro sea un agente separado
+ que no vea el razonamiento de quien hizo el trabajo. Así no se deja convencer.
+
+ Que el árbitro mire el resultado, no las intenciones. Las capturas, la web abierta, las cifras
+ comparadas con el documento original.
+Controla el tiempo con las rondas. «Dos rondas», como en la grapadora, o «hasta que lo dé por
+bueno», como en la web.
+
+Pide siempre el resumen de la revisión. Cuántas rondas hizo el árbitro, qué rechazó y qué se
+corrigió. En un minuto sabes si te puedes fiar.
+
+Tú sigues siendo el último filtro. El Gauntlet te ahorra las diez vueltas de revisión, no la última
+mirada.
+

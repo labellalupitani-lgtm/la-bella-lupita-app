@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Club Lupita - Sellos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c0c9c1",
+                        "on-secondary-fixed-variant": "#614000",
+                        "on-primary-container": "#a2d4b6",
+                        "surface-bright": "#fcf9f2",
+                        "surface": "#fcf9f2",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1c1c18",
+                        "tertiary": "#57351d",
+                        "secondary-container": "#ffc15f",
+                        "on-primary-fixed": "#002112",
+                        "inverse-surface": "#31312c",
+                        "surface-variant": "#e5e2db",
+                        "secondary-fixed": "#ffddb0",
+                        "tertiary-fixed-dim": "#efbc9b",
+                        "inverse-primary": "#a0d2b3",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f6f3ec",
+                        "surface-container-highest": "#e5e2db",
+                        "outline": "#717972",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#bbeecf",
+                        "surface-dim": "#dcdad3",
+                        "on-tertiary-fixed": "#2f1502",
+                        "on-surface-variant": "#414943",
+                        "tertiary-fixed": "#ffdcc6",
+                        "primary": "#16452f",
+                        "inverse-on-surface": "#f3f0e9",
+                        "primary-container": "#2f5d45",
+                        "surface-tint": "#39684f",
+                        "on-background": "#1c1c18",
+                        "on-primary-fixed-variant": "#214f38",
+                        "on-secondary": "#ffffff",
+                        "background": "#fcf9f2",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#a0d2b3",
+                        "on-tertiary-container": "#f1bf9d",
+                        "on-tertiary-fixed-variant": "#623f25",
+                        "on-secondary-fixed": "#281800",
+                        "on-secondary-container": "#754e00",
+                        "surface-container": "#f1eee7",
+                        "secondary-fixed-dim": "#f9bc5a",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#ebe8e1",
+                        "secondary": "#805600",
+                        "tertiary-container": "#714c32",
+                        "honey-gold": "#C08A2D",
+                        "coffee-roast": "#5C3A21",
+                        "espresso-dark": "#221E17"
+                    },
+                    "fontFamily": {
+                        "headline": ["Libre Caslon Text", "serif"],
+                        "display": ["Libre Caslon Text", "serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .stamp-slot {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .stamp-filled {
+            background-color: #fff9eb;
+            color: #C08A2D;
+            border: 2px solid #C08A2D;
+        }
+        .stamp-empty {
+            border: 2px dashed #e5e2db;
+            color: #dcdad3;
+        }
+        body {
+            background-color: #F6F3EC;
+            padding-bottom: 80px; /* Space for bottom nav */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-surface antialiased bg-background">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-background flex justify-between items-center px-6 py-4 max-w-screen-xl mx-auto md:hidden shadow-sm">
+<button class="text-primary hover:bg-surface-container-high p-2 rounded-full transition-colors active:scale-95">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline text-2xl font-bold text-primary tracking-tight">Tus sellos</h1>
+<div class="w-10"></div> <!-- Spacer for center alignment -->
+</header>
+<!-- Main Content Area -->
+<main class="pt-20 px-4 md:px-6 md:pt-8 max-w-lg mx-auto md:max-w-screen-xl w-full flex flex-col gap-6">
+<!-- Stamp Card -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-container">
+<h2 class="font-label text-xs uppercase tracking-[0.2em] font-bold text-honey-gold text-center mb-6">Tarjeta de sellos</h2>
+<!-- Grid of 10 slots -->
+<div class="grid grid-cols-5 gap-3 md:gap-4 mb-8 justify-items-center">
+<!-- 7 filled slots -->
+<div class="stamp-slot stamp-filled"><span class="material-symbols-outlined text-2xl" data-icon="coffee_maker">coffee_maker</span></div>
+<div class="stamp-slot stamp-filled"><span class="material-symbols-outlined text-2xl" data-icon="coffee_maker">coffee_maker</span></div>
+<div class="stamp-slot stamp-filled"><span class="material-symbols-outlined text-2xl" data-icon="coffee_maker">coffee_maker</span></div>
+<div class="stamp-slot stamp-filled"><span class="material-symbols-outlined text-2xl" data-icon="coffee_maker">coffee_maker</span></div>
+<div class="stamp-slot stamp-filled"><span class="material-symbols-outlined text-2xl" data-icon="coffee_maker">coffee_maker</span></div>
+<div class="stamp-slot stamp-filled"><span class="material-symbols-outlined text-2xl" data-icon="coffee_maker">coffee_maker</span></div>
+<div class="stamp-slot stamp-filled"><span class="material-symbols-outlined text-2xl" data-icon="coffee_maker">coffee_maker</span></div>
+<!-- 3 empty slots -->
+<div class="stamp-slot stamp-empty"><span class="material-symbols-outlined text-xl opacity-50" data-icon="local_cafe">local_cafe</span></div>
+<div class="stamp-slot stamp-empty"><span class="material-symbols-outlined text-xl opacity-50" data-icon="local_cafe">local_cafe</span></div>
+<div class="stamp-slot stamp-empty"><span class="material-symbols-outlined text-xl opacity-50" data-icon="local_cafe">local_cafe</span></div>
+</div>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-2">
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-honey-gold h-2.5 rounded-full" style="width: 70%"></div>
+</div>
+<p class="text-sm font-medium text-center text-on-surface-variant mt-2">
+                    Te faltan 3 para tu bebida de cortesía ☕
+                </p>
+</div>
+</section>
+<!-- Digital Membership / QR Card -->
+<section class="bg-espresso-dark text-surface-container-lowest rounded-2xl p-6 relative overflow-hidden shadow-md border border-honey-gold/30">
+<!-- Subtle Texture/Pattern Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#F6F3EC 1px, transparent 1px); background-size: 16px 16px;"></div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="flex justify-between w-full mb-6 items-start">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-honey-gold/80 mb-1">Amiga de la casa</p>
+<p class="font-body font-bold text-lg text-surface-bright">MARÍA F.</p>
+</div>
+<div class="text-right">
+<p class="font-label text-[10px] uppercase tracking-widest text-honey-gold/80 mb-1">Socia</p>
+<p class="font-body font-bold text-lg text-surface-bright">#037</p>
+</div>
+</div>
+<!-- Fake QR Code Frame -->
+<div class="bg-surface-container-lowest p-3 rounded-xl border-2 border-honey-gold mb-4 inline-block shadow-lg">
+<!-- Placeholder for actual QR image -->
+<div class="w-32 h-32 md:w-40 md:h-40 bg-gray-200 relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A clean, high-contrast, black and white QR code image on a pristine white background. The QR code should look scannable and precise, fitting perfectly within a square frame. Studio lighting, sharp edges, digital aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwUmMKHEDRh1SygpvC1m7-0Zdi37nn6_Ak3j6iEY99939H72tt8cprxFpiXfJ0BOC0MafuO2_HX8UxRlRDr1TSegtA-QyDGFXi7NwBi3rRhYy-PbPVSWqgBrxPSoLl_p8S-zW1YJSghHXq4iWE02e0mGTLEJF0Y-x_Ei7h5Fjy0TrpzjhfX50ndCctV40vx12J06zZVkQ1KQGXc6JZrjWeFA2FAoeKfbKuRZ3agGuojNWY807ovuEBwEzoSIefKJAONfsS1ip8FQg"/>
+</div>
+</div>
+<p class="text-sm text-center text-honey-gold font-medium max-w-[200px] leading-tight">
+                    Mostrá este código en caja para sellar y canjear
+                </p>
+</div>
+</section>
+<!-- Recent Activity List -->
+<section class="mb-6">
+<h3 class="font-headline text-xl font-bold text-on-surface mb-4">Movimientos recientes</h3>
+<div class="flex flex-col gap-3">
+<!-- Activity Item 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center justify-between border border-surface-container-high/50">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-coffee-roast">
+<span class="material-symbols-outlined" data-icon="local_cafe">local_cafe</span>
+</div>
+<div>
+<p class="font-medium text-sm text-on-surface">Capuchino</p>
+<p class="text-xs text-on-surface-variant mt-0.5">Hoy</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-bold text-honey-gold text-sm">+1 sello</p>
+</div>
+</div>
+<!-- Activity Item 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center justify-between border border-surface-container-high/50">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-coffee-roast">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</div>
+<div>
+<p class="font-medium text-sm text-on-surface">Bolsa de la finca 250 g</p>
+<p class="text-xs text-on-surface-variant mt-0.5">Ayer</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-bold text-primary text-sm">+120 pts</p>
+</div>
+</div>
+<!-- Activity Item 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center justify-between border border-surface-container-high/50">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-honey-gold/20 flex items-center justify-center text-honey-gold">
+<span class="material-symbols-outlined" data-icon="redeem">redeem</span>
+</div>
+<div>
+<p class="font-medium text-sm text-on-surface">Bebida de cortesía canjeada 🎉</p>
+<p class="text-xs text-on-surface-variant mt-0.5">12 ago</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-bold text-error text-sm">-10 sellos</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe z-50 md:hidden bg-surface-container-lowest rounded-t-xl shadow-[0_-4px_12px_0_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant/70 active:scale-90 transition-transform duration-200 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary transition-colors" data-icon="home">home</span>
+<span class="font-label text-[11px] uppercase tracking-widest font-medium">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/70 active:scale-90 transition-transform duration-200 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary transition-colors" data-icon="local_cafe">local_cafe</span>
+<span class="font-label text-[11px] uppercase tracking-widest font-medium">Pedir</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/70 active:scale-90 transition-transform duration-200 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary transition-colors" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label text-[11px] uppercase tracking-widest font-medium">Tienda</span>
+</a>
+<!-- Active Tab -->
+<a class="flex flex-col items-center justify-center text-primary bg-primary-container/20 rounded-xl px-3 py-1 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1 text-primary" data-icon="military_tech">military_tech</span>
+<span class="font-label text-[11px] uppercase tracking-widest font-bold text-primary">Club</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/70 active:scale-90 transition-transform duration-200 group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:text-primary transition-colors" data-icon="person">person</span>
+<span class="font-label text-[11px] uppercase tracking-widest font-medium">Perfil</span>
+</a>
+</nav>
+<!-- Desktop Navigation Cluster (Hidden on Mobile) -->
+<div class="hidden md:flex fixed top-0 w-full z-40 bg-surface-container-lowest border-b border-surface-container py-4 px-8 justify-between items-center shadow-sm">
+<h1 class="font-headline text-2xl font-bold text-primary">Casa Lupita</h1>
+<div class="flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Pedir</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Tienda</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Club</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+                Perfil
+            </a>
+</div>
+</div>
+</body></html>

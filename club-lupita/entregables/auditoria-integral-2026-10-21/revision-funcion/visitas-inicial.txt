@@ -1,0 +1,176 @@
+Demo local · Datos simulados · Sin cobros ni envíos
+Resumen
+Carta
+Visitas
+Equipo
+Saltar a la propuesta
+
+LA BELLA LUPITA / TU VISITA · DEMO
+
+Nos vemos en la casa.
+
+Elegí cuándo venís. Encontramos un rincón para tu grupo.
+
+01
+Cuándo y con quién
+Fecha
+Personas
+1 persona
+2 personas
+3 personas
+4 personas
+5 personas
+6 personas
+7 personas
+8 personas
+9 personas
+10 personas
+11 personas
+12 personas
+Duración
+1 hora
+2 horas
+3 horas
+4 horas
+5 horas
+6 horas
+
+sábado, 24 de octubre · Hora de Managua
+
+02
+Tu rincón, a tu hora
+Zona
+Terraza · Sin anticipo
+Ventanal · Sin anticipo
+Barra · Sin anticipo
+Bistró · Sin anticipo
+Salón VIP · C$ 500 de anticipo
+
+Conocé el espacio en la foto. Reserva sin anticipo.
+
+Horarios en Terraza
+Disponibilidad de prueba
+Elegí un horario
+10:00 a. m.
+11:00 a. m.
+12:00 p. m.
+1:00 p. m.
+3:00 p. m.
+4:00 p. m.
+5:00 p. m.
+6:00 p. m.
+
+La disponibilidad se confirma al reservar. Las condiciones de accesibilidad de cada zona deben confirmarse con la casa.
+
+Revisar mi visita
+LA TERRAZA DE LA CASA
+Hay tiempo
+para un café.
+
+Imagen del activo existente de la terraza. Ilustra ese espacio; no representa las otras zonas.
+
+TU PRÓXIMA PAUSA
+
+Terraza
+sábado, 24 de octubre
+Elegí una hora · 2 horas
+2 personas · Hora de Managua
+Reserva sin anticipo
+C$ 0
+Escenarios de prueba
+
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- banner:
+  - paragraph: LA BELLA LUPITA / TU VISITA · DEMO
+  - heading "Nos vemos en la casa." [level=1]
+  - paragraph: Elegí cuándo venís. Encontramos un rincón para tu grupo.
+- main "Preparación y estado de tu visita":
+  - region "Cuándo y con quién":
+    - text: "01"
+    - heading "Cuándo y con quién" [level=2]
+    - text: Fecha
+    - textbox "Fecha": 2026-10-24
+    - text: Personas
+    - combobox "Personas":
+      - option "1 persona"
+      - option "2 personas" [selected]
+      - option "3 personas"
+      - option "4 personas"
+      - option "5 personas"
+      - option "6 personas"
+      - option "7 personas"
+      - option "8 personas"
+      - option "9 personas"
+      - option "10 personas"
+      - option "11 personas"
+      - option "12 personas"
+    - text: Duración
+    - combobox "Duración":
+      - option "1 hora"
+      - option "2 horas" [selected]
+      - option "3 horas"
+      - option "4 horas"
+      - option "5 horas"
+      - option "6 horas"
+    - paragraph: sábado, 24 de octubre · Hora de Managua
+  - region "Tu rincón, a tu hora":
+    - text: "02"
+    - heading "Tu rincón, a tu hora" [level=2]
+    - text: Zona
+    - combobox "Zona":
+      - option "Terraza · Sin anticipo" [selected]
+      - option "Ventanal · Sin anticipo"
+      - option "Barra · Sin anticipo"
+      - option "Bistró · Sin anticipo"
+      - option "Salón VIP · C$ 500 de anticipo"
+    - paragraph:
+      - text: Conocé el espacio en la foto.
+      - strong: Reserva sin anticipo.
+    - heading "Horarios en Terraza" [level=3]
+    - text: Disponibilidad de prueba
+    - group "Elegí un horario":
+      - text: Elegí un horario
+      - radio "10:00 a. m."
+      - text: 10:00 a. m.
+      - radio "11:00 a. m."
+      - text: 11:00 a. m.
+      - radio "12:00 p. m."
+      - text: 12:00 p. m.
+      - radio "1:00 p. m."
+      - text: 1:00 p. m.
+      - radio "3:00 p. m."
+      - text: 3:00 p. m.
+      - radio "4:00 p. m."
+      - text: 4:00 p. m.
+      - radio "5:00 p. m."
+      - text: 5:00 p. m.
+      - radio "6:00 p. m."
+      - text: 6:00 p. m.
+    - paragraph: La disponibilidad se confirma al reservar. Las condiciones de accesibilidad de cada zona deben confirmarse con la casa.
+  - button "Revisar mi visita"
+- complementary "Tu visita y el espacio de la casa":
+  - figure "LA TERRAZA DE LA CASA Hay tiempo para un café.":
+    - img "Mesas y sillones en la terraza de La Bella Lupita, entre palmeras al atardecer"
+    - text: LA TERRAZA DE LA CASA
+    - strong: Hay tiempo para un café.
+  - paragraph: Imagen del activo existente de la terraza. Ilustra ese espacio; no representa las otras zonas.
+  - paragraph: TU PRÓXIMA PAUSA
+  - strong: Terraza
+  - text: sábado, 24 de octubre Elegí una hora · 2 horas 2 personas · Hora de Managua Reserva sin anticipo
+  - strong: C$ 0
+- group: Escenarios de prueba

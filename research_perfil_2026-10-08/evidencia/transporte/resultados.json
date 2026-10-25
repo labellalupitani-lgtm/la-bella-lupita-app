@@ -1,0 +1,77 @@
+{
+  "entorno": "cliente compilado en memoria, transporte simulado sin red",
+  "results": [
+    {
+      "nombre": "Importes enteros, centavos, negativos y límites de recarga",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "401 perfil por api limpia cliente y preserva almacenamiento del equipo",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "401 compras por operacion limpia cliente",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "401 de personal no elimina cliente",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "Sesión de equipo por cookie envía credenciales y CSRF sin Bearer del cliente",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "401 de cookie de equipo emite solo su evento y conserva cliente",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "Respuesta antigua del equipo no repuebla datos de otra persona",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "401 antiguo del equipo no invalida a la siguiente persona",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "403 y 500 conservan cliente; fallo de autenticación no revoca sesión existente",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "401 retrasado de cuenta anterior no cierra la cuenta nueva",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "Cambiar cuenta mientras se lee el cuerpo de un 401 descarta el resultado anterior",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "200 retrasado de compras no aplica datos de la cuenta anterior",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "Respuesta de escritura perdida se considera incierta",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "JSON roto al escribir no se confirma como éxito",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "Respuesta incompleta o error 500 al escribir conserva el resultado incierto",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "Timeout de consulta recuperable y timeout de escritura incierto",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "Cancelación externa de lectura no revoca una sesión válida",
+      "estado": "APROBADO"
+    },
+    {
+      "nombre": "Cancelación externa de escritura conserva la incertidumbre del resultado",
+      "estado": "APROBADO"
+    }
+  ]
+}

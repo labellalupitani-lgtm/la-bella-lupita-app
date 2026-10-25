@@ -1,0 +1,261 @@
+[
+  {
+    "name": "signup-disabled",
+    "disabled": true
+  },
+  {
+    "name": "viewport",
+    "path": "/",
+    "width": 360,
+    "scrollWidth": 360,
+    "brokenImages": [],
+    "h1": 0
+  },
+  {
+    "name": "viewport",
+    "path": "/pedir",
+    "width": 360,
+    "scrollWidth": 360,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/tienda",
+    "width": 360,
+    "scrollWidth": 360,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/club",
+    "width": 360,
+    "scrollWidth": 360,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/perfil",
+    "width": 360,
+    "scrollWidth": 360,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/reservar",
+    "width": 360,
+    "scrollWidth": 360,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/kit",
+    "width": 360,
+    "scrollWidth": 360,
+    "brokenImages": [],
+    "h1": 2
+  },
+  {
+    "name": "viewport",
+    "path": "/",
+    "width": 390,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "h1": 0
+  },
+  {
+    "name": "axe",
+    "path": "/",
+    "violations": []
+  },
+  {
+    "name": "viewport",
+    "path": "/pedir",
+    "width": 390,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "axe",
+    "path": "/pedir",
+    "violations": []
+  },
+  {
+    "name": "viewport",
+    "path": "/tienda",
+    "width": 390,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "axe",
+    "path": "/tienda",
+    "violations": []
+  },
+  {
+    "name": "viewport",
+    "path": "/club",
+    "width": 390,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "axe",
+    "path": "/club",
+    "violations": []
+  },
+  {
+    "name": "viewport",
+    "path": "/perfil",
+    "width": 390,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "axe",
+    "path": "/perfil",
+    "violations": []
+  },
+  {
+    "name": "viewport",
+    "path": "/reservar",
+    "width": 390,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "axe",
+    "path": "/reservar",
+    "violations": []
+  },
+  {
+    "name": "viewport",
+    "path": "/kit",
+    "width": 390,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "h1": 2
+  },
+  {
+    "name": "axe",
+    "path": "/kit",
+    "violations": []
+  },
+  {
+    "name": "viewport",
+    "path": "/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "h1": 0
+  },
+  {
+    "name": "viewport",
+    "path": "/pedir",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/tienda",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/club",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/perfil",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/reservar",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "h1": 1
+  },
+  {
+    "name": "viewport",
+    "path": "/kit",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "h1": 2
+  },
+  {
+    "name": "birthday",
+    "expected": "14 de septiembre",
+    "visible": "13 de septiembre · el regalo se activa una semana antes"
+  },
+  {
+    "name": "cancel-membership-control",
+    "count": 0
+  },
+  {
+    "name": "dialog-escape",
+    "visible": 0,
+    "focus": "Apartar la mía"
+  },
+  {
+    "name": "purchase-lost-response-navigation",
+    "differentRefs": true,
+    "refs": [
+      "a50a01c5-a0dd-40b7-8d25-15d7f21e9e24",
+      "8355c5b2-1488-48da-91df-4691fe1c33c5"
+    ],
+    "charges": [
+      {
+        "id": 10,
+        "monto": -89000,
+        "tipo": "consumo",
+        "concepto": "Reserva de Cosecha · bolsa 006",
+        "creado": "2026-09-11T16:51:57.174Z"
+      },
+      {
+        "id": 9,
+        "monto": -89000,
+        "tipo": "consumo",
+        "concepto": "Reserva de Cosecha · bolsa 005",
+        "creado": "2026-09-11T16:51:56.979Z"
+      }
+    ]
+  },
+  {
+    "name": "logout-offline",
+    "stillShowsAccount": true,
+    "tokenRemoved": true
+  },
+  {
+    "name": "malformed-200",
+    "mainCount": 0,
+    "body": "Ir al contenido\nhome\nINICIO\nlocal_cafe\nPEDIR\nstorefront\nTIENDA\nmilitary_tech\nCLUB\nperson\nPERFIL"
+  },
+  {
+    "name": "page-errors",
+    "errors": []
+  }
+]

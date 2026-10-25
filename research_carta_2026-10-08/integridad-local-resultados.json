@@ -1,0 +1,114 @@
+{
+  "entorno": "PGlite en memoria; fetch externo bloqueado; sin secretos ni producción",
+  "resultados": [
+    {
+      "caso": "Cookie de equipo y Bearer de cliente coexistentes",
+      "clasificacion": "CONTROL_CORRECTO",
+      "evidencia": {
+        "lectura": 200,
+        "cobro": 200,
+        "cuentaCorrecta": true
+      }
+    },
+    {
+      "caso": "Rechaza cantidad 0",
+      "clasificacion": "CONTROL_CORRECTO",
+      "evidencia": {
+        "status": 400,
+        "error": "La cantidad de Latte no nos cuadra."
+      }
+    },
+    {
+      "caso": "Rechaza cantidad -1",
+      "clasificacion": "CONTROL_CORRECTO",
+      "evidencia": {
+        "status": 400,
+        "error": "La cantidad de Latte no nos cuadra."
+      }
+    },
+    {
+      "caso": "Rechaza cantidad 1.5",
+      "clasificacion": "CONTROL_CORRECTO",
+      "evidencia": {
+        "status": 400,
+        "error": "La cantidad de Latte no nos cuadra."
+      }
+    },
+    {
+      "caso": "Rechaza cantidad 21",
+      "clasificacion": "CONTROL_CORRECTO",
+      "evidencia": {
+        "status": 400,
+        "error": "La cantidad de Latte no nos cuadra."
+      }
+    },
+    {
+      "caso": "Rechaza cantidad \"2\"",
+      "clasificacion": "CONTROL_CORRECTO",
+      "evidencia": {
+        "status": 400,
+        "error": "La cantidad de Latte no nos cuadra."
+      }
+    },
+    {
+      "caso": "Tope de 20 se aplica a cada línea, admite 800 unidades del mismo producto",
+      "clasificacion": "HALLAZGO_REPRODUCIDO",
+      "evidencia": {
+        "status": 200,
+        "lineas": 40,
+        "unidades": 800,
+        "totalCentavos": 4800000
+      }
+    },
+    {
+      "caso": "Reintento idéntico con catálogo estable",
+      "clasificacion": "CONTROL_CORRECTO",
+      "evidencia": {
+        "status": 200,
+        "repetido": true,
+        "mismoPedido": true
+      }
+    },
+    {
+      "caso": "Cliente abierto con precio anterior; servidor cobra precio nuevo sin reconfirmación",
+      "clasificacion": "HALLAZGO_REPRODUCIDO",
+      "evidencia": {
+        "status": 200,
+        "precioClienteSimulado": 9500,
+        "cobrado": 10500
+      }
+    },
+    {
+      "caso": "Reintento de cobro confirmado tras cambio de precio",
+      "clasificacion": "HALLAZGO_REPRODUCIDO",
+      "evidencia": {
+        "status": 409,
+        "error": "Esa referencia pertenece a otra operación."
+      }
+    },
+    {
+      "caso": "Reintento de cobro confirmado tras cambio de nombre",
+      "clasificacion": "HALLAZGO_REPRODUCIDO",
+      "evidencia": {
+        "status": 409,
+        "error": "Esa referencia pertenece a otra operación."
+      }
+    },
+    {
+      "caso": "Reintento de cobro confirmado tras retirar producto",
+      "clasificacion": "HALLAZGO_REPRODUCIDO",
+      "evidencia": {
+        "status": 422,
+        "error": "«latte» no está en la carta de hoy."
+      }
+    },
+    {
+      "caso": "Reintentos bloqueados no duplican el cargo automáticamente",
+      "clasificacion": "CONTROL_CORRECTO",
+      "evidencia": {
+        "pedidos": 1,
+        "cargos": 1
+      }
+    }
+  ]
+}

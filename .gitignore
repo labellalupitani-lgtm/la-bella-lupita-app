@@ -1,0 +1,64 @@
+# Entregables: conservar documentación y manuales; las fuentes vigentes están
+# en club-lupita/src. Las capturas, volcados y builds históricos quedan locales.
+/entregables/**/*
+!/entregables/**/
+!/entregables/**/*.md
+!/entregables/**/*.txt
+!/entregables/**/*.pdf
+!/entregables/**/*.pptx
+/club-lupita/entregables/**/*
+!/club-lupita/entregables/**/
+!/club-lupita/entregables/**/*.md
+!/club-lupita/entregables/**/*.txt
+!/club-lupita/entregables/**/*.pdf
+!/club-lupita/entregables/**/*.pptx
+
+# Dependencias, compilaciones y cachés reproducibles
+node_modules/
+dist/
+.wrangler/
+.test-output/
+*.tsbuildinfo
+coverage/
+.DS_Store
+Thumbs.db
+
+# Credenciales, configuraciones privadas y respaldos de datos
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.local
+*.local/
+*.pem
+*.key
+*.p12
+*.pfx
+*.har
+*.log
+datos-privados/
+.claude/
+
+# Material de trabajo regenerable y copias históricas de fuentes/binarios
+respaldo*/
+backup/
+antes/
+release/
+version-publicada/
+compilacion/
+*.zip
+*.tgz
+*.tar.gz
+/.manual-pptx-2026-10-12/
+/.pptx-build/
+/club-lupita/entregables/**/worker/
+/club-lupita/entregables/**/worker-ensayo/
+/club-lupita/entregables/**/tipos/package/
+**/referencias/package/
+**/integridad/package/
+
+# Resultados de pruebas: conservar informes, no sesiones ni volcados de datos
+playwright-report/
+test-results/

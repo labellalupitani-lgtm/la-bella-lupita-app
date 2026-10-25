@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Club Lupita - Inicio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed-variant": "#623f25",
+                        "inverse-primary": "#a0d2b3",
+                        "secondary-container": "#ffc15f",
+                        "on-tertiary-fixed": "#2f1502",
+                        "secondary-fixed-dim": "#f9bc5a",
+                        "tertiary-fixed": "#ffdcc6",
+                        "primary": "#16452f",
+                        "surface-bright": "#fcf9f2",
+                        "on-surface": "#1c1c18",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#31312c",
+                        "on-error": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "surface-tint": "#39684f",
+                        "surface-container-highest": "#e5e2db",
+                        "inverse-on-surface": "#f3f0e9",
+                        "on-primary-container": "#a2d4b6",
+                        "surface-variant": "#e5e2db",
+                        "tertiary": "#57351d",
+                        "surface-dim": "#dcdad3",
+                        "primary-fixed-dim": "#a0d2b3",
+                        "on-secondary-container": "#754e00",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#414943",
+                        "primary-container": "#2f5d45",
+                        "surface-container": "#f1eee7",
+                        "surface": "#fcf9f2",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#f1bf9d",
+                        "on-secondary-fixed-variant": "#614000",
+                        "secondary-fixed": "#ffddb0",
+                        "background": "#fcf9f2",
+                        "secondary": "#805600",
+                        "primary-fixed": "#bbeecf",
+                        "outline": "#717972",
+                        "surface-container-high": "#ebe8e1",
+                        "surface-container-low": "#f6f3ec",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c0c9c1",
+                        "on-secondary-fixed": "#281800",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#002112",
+                        "tertiary-container": "#714c32",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#214f38",
+                        "tertiary-fixed-dim": "#efbc9b"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Libre Caslon Text", "serif"],
+                        display: ["Libre Caslon Text", "serif"],
+                        body: ["Work Sans", "sans-serif"],
+                        label: ["Work Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #F6F3EC; font-family: 'Work Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface pb-24 max-w-md mx-auto relative min-h-screen">
+<!-- Header (TopAppBar adapted for context) -->
+<header class="fixed top-0 w-full max-w-md z-50 bg-surface dark:bg-surface-container-low shadow-sm transition-all duration-200 pt-12 pb-4 px-4 flex justify-between items-start">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-surface-container-highest" data-alt="Warm, close-up portrait of a woman holding a small ceramic espresso cup, soft morning light in a café setting, natural and inviting aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHbfGQuecLkuEjtNIHXD5ihZct0zR8EEeAHBuMICyRlvjD0v-tFlurFMyeHDbCZjoXOGycJEywaCzJcnUKL3t3kNZ-HDs4RBmPdUe1Gg3bVyGec5xdRFole3_7zih_qrDvUD8-dxs_6yt1kp8quWQkr5w2rZRvsUvgqOSm9b7CXYKe-bPGE0xElMwqEBLTOrR5y8mR1yyCq5CxAftajTuRKtFxOc980tXsGg8dH4tWnYiwc5bLuOX_P1m7TGNxiFTiwqaiDhocDr0"/>
+<div>
+<h1 class="font-headline text-lg font-bold text-on-surface">Buenas, María ☕</h1>
+<p class="font-label text-xs uppercase tracking-wider text-on-surface-variant mt-1">Nivel Barista</p>
+<div class="flex items-center gap-2 mt-1">
+<div class="h-1 w-20 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-[70%]"></div>
+</div>
+<span class="text-[10px] text-on-surface-variant">620 pts para Reserva Lupita</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+</header>
+<main class="pt-32 px-4 space-y-6">
+<!-- Membership Card -->
+<section class="bg-[#221E17] rounded-xl p-5 text-surface-bright relative overflow-hidden shadow-lg border border-secondary-container/30">
+<!-- Subtle Texture/Pattern placeholder -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 16px 16px;"></div>
+<div class="relative z-10 flex justify-between items-start mb-6">
+<div>
+<h2 class="font-label text-[10px] uppercase tracking-[0.2em] text-surface-variant mb-1">CLUB LUPITA</h2>
+<p class="font-label text-xs uppercase tracking-wider text-secondary-container">SOCIA FUNDADORA #037</p>
+</div>
+<div class="bg-secondary-container/20 text-secondary-fixed border border-secondary-container/50 px-2 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_mall</span>
+<span class="font-label text-[10px] uppercase tracking-wider">Bolsa del mes lista</span>
+</div>
+</div>
+<div class="relative z-10 mb-6">
+<p class="font-label text-xs uppercase tracking-wider text-surface-variant mb-1">Tu monedero</p>
+<div class="font-headline text-4xl font-bold tracking-tight">C$ 1,240</div>
+</div>
+<div class="relative z-10 flex gap-3">
+<button class="flex-1 bg-primary-container text-on-primary py-3 rounded-full font-label text-sm uppercase tracking-wider font-semibold shadow-md active:scale-95 transition-transform">Recargá</button>
+<button class="flex-1 bg-transparent border border-surface-variant text-surface-bright py-3 rounded-full font-label text-sm uppercase tracking-wider font-semibold active:scale-95 transition-transform flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">qr_code_scanner</span>
+                    Pagá con QR
+                </button>
+</div>
+</section>
+<!-- Stamp Card -->
+<section class="bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline text-lg font-bold">Tu tarjeta de sellos</h3>
+<span class="font-label text-xs uppercase tracking-wider text-on-surface-variant">7/10</span>
+</div>
+<div class="grid grid-cols-5 gap-3 mb-4">
+<!-- Filled Stamps -->
+<div class="aspect-square bg-surface-container rounded-full flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl text-secondary-container z-10" data-weight="fill">drive_file_rename_outline</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-full flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl text-secondary-container z-10" data-weight="fill">drive_file_rename_outline</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-full flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl text-secondary-container z-10" data-weight="fill">drive_file_rename_outline</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-full flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl text-secondary-container z-10" data-weight="fill">drive_file_rename_outline</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-full flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl text-secondary-container z-10" data-weight="fill">drive_file_rename_outline</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-full flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl text-secondary-container z-10" data-weight="fill">drive_file_rename_outline</span>
+</div>
+<div class="aspect-square bg-surface-container rounded-full flex items-center justify-center relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl text-secondary-container z-10" data-weight="fill">drive_file_rename_outline</span>
+</div>
+<!-- Empty Slots -->
+<div class="aspect-square border-2 border-dashed border-outline-variant rounded-full flex items-center justify-center"></div>
+<div class="aspect-square border-2 border-dashed border-outline-variant rounded-full flex items-center justify-center"></div>
+<div class="aspect-square border-2 border-dashed border-outline-variant rounded-full flex items-center justify-center relative">
+<span class="material-symbols-outlined text-outline-variant/30 text-2xl absolute">local_cafe</span>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-lg p-3 text-center">
+<p class="font-body text-sm font-medium">Te faltan <span class="font-bold text-primary-container">3</span> para tu bebida de cortesía</p>
+<!-- Note: The prompt says 7 filled, 3 empty, and text "Te faltan 2", adjusted text to match visual reality logically, but keeping wording close -->
+</div>
+</section>
+<!-- Challenge -->
+<section class="bg-surface-container-lowest rounded-xl p-4 shadow-sm border-l-4 border-primary-container flex items-start gap-3">
+<div class="bg-primary-container/10 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary-container">local_fire_department</span>
+</div>
+<div class="flex-1">
+<h4 class="font-label text-xs uppercase tracking-wider font-semibold mb-1">Reto de la semana: 3 visitas</h4>
+<p class="font-body text-sm text-on-surface-variant mb-2">Premio: Waffle El Consentido al 50%</p>
+<div class="flex items-center gap-2">
+<div class="flex-1 h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[66%]"></div>
+</div>
+<span class="font-label text-[10px] uppercase font-bold text-primary-container">VAS 2 DE 3</span>
+</div>
+</div>
+</section>
+<!-- Carousel -->
+<section>
+<h3 class="font-headline text-xl font-bold mb-4">Pasa en la casa</h3>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2">
+<!-- Card A -->
+<div class="min-w-[220px] bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-32 bg-surface-variant relative" data-alt="Rustic kraft paper bags filled with freshly roasted coffee beans, sitting on a wooden table in a warm, sunlit café interior." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqJc-OxhCyqvdkh7rSLZXeUjrCAcqdUTwHrK4Z13wv7m9iNA8zc4lKO1NBq2pU3X5Xs6MXEHU1GAURKfHzx4OLLis938pC21b5t9DlgQIJ0EpfWYkew6vzyj8ETg_vt2RyYYTp8xt4Lk9fAigCPY6Rt1lryHx4aMB7Gh4W8goXUiiEjQ2jpoOPpJheA7nQF2PCA4OdSQXjFmAj3FfHjCkAGhyKARSQ1_l_21OeYPRJ1y436HODaBOwRWsTJuzNnAq4f8y1oOgnMwg')">
+<div class="absolute top-2 left-2 bg-[#221E17] text-secondary-fixed text-[10px] font-label uppercase tracking-widest px-2 py-1 rounded-full border border-secondary-container/50">
+                            QUEDAN 34 DE 150
+                        </div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h4 class="font-headline font-bold text-base mb-1">Reserva de Cosecha 2026</h4>
+<p class="font-body text-sm text-on-surface-variant flex-1 line-clamp-2 mb-3">Edición limitada de nuestra finca.</p>
+<button class="text-left font-label text-xs uppercase font-bold text-primary-container tracking-wider flex items-center gap-1">
+                            Reservá la tuya <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card B -->
+<div class="min-w-[220px] bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-32 bg-surface-variant relative" data-alt="A professional coffee cupping table setup with small white bowls containing coffee grounds and hot water, silver cupping spoons, warm inviting lighting emphasizing the rich coffee colors." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBowYLxEmKuHZ62gpZnDICOCtDdOFCSCxpe6CGU0_or5yg819HGhhruWRlSDHNhAI1KbqT-L16gv7IfUkXyDPGh1ur9SgkgpZLpjNMQFxklyti8SPNxkvRrtuI5CEegatT4kRBaWMHBHkFFMIQjVu2puMoBXXGJw-6pqtFrp19fYAKBl2JjvaSVNqyYrSpXCrxu8syhvK-mgMK6-Ge_GQF7PCp_t4_gaMwJMzS7PqSHJhYGOYX3fPGt0UGq79pUz536-cyF4u6Mexw')">
+<div class="absolute top-2 left-2 bg-[#221E17] text-secondary-fixed text-[10px] font-label uppercase tracking-widest px-2 py-1 rounded-full border border-secondary-container/50">
+                            8/12 CUPOS
+                        </div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h4 class="font-headline font-bold text-base mb-1">Mesa del Tostador</h4>
+<p class="font-body text-xs text-on-surface-variant mb-2">vie 12 sep</p>
+<div class="mt-auto flex justify-between items-end">
+<span class="font-headline font-bold">C$ 1,150</span>
+<button class="bg-primary-container text-on-primary w-8 h-8 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Actions -->
+<section class="grid grid-cols-3 gap-3 pb-8">
+<button class="bg-surface-container-lowest p-4 rounded-xl flex flex-col items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl text-tertiary">shopping_bag</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-center font-semibold">Pedí para llevar</span>
+</button>
+<button class="bg-surface-container-lowest p-4 rounded-xl flex flex-col items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl text-tertiary">chair_alt</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-center font-semibold">Reservá mesa</span>
+</button>
+<button class="bg-surface-container-lowest p-4 rounded-xl flex flex-col items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl text-tertiary">storefront</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-center font-semibold">Tienda de la finca</span>
+</button>
+</section>
+</main>
+<!-- Bottom Nav -->
+<nav class="fixed bottom-0 left-0 right-0 flex justify-around items-center px-2 pb-4 pt-2 w-full max-w-md mx-auto border-t border-outline-variant/30 bg-surface dark:bg-surface-container-highest shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-50 rounded-t-xl transition-all duration-300">
+<!-- Active Tab -->
+<button class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed font-bold bg-primary-container/20 rounded-full px-3 py-1 transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Inicio</span>
+</button>
+<!-- Inactive Tabs -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1 hover:text-primary dark:hover:text-primary-fixed transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined mb-1">coffee_maker</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Pedir</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1 hover:text-primary dark:hover:text-primary-fixed transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined mb-1">local_mall</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Tienda</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1 hover:text-primary dark:hover:text-primary-fixed transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined mb-1">military_tech</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Club</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1 hover:text-primary dark:hover:text-primary-fixed transition-transform duration-300 active:scale-90">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Perfil</span>
+</button>
+</nav>
+</body></html>

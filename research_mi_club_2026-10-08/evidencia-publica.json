@@ -1,0 +1,57 @@
+{
+  "observadoUTC": "2026-10-09T03:20:14.946Z",
+  "metodo": "GET publico sin sesion",
+  "/club": {
+    "status": 200,
+    "headers": {
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-security-policy": "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+      "content-type": "text/html",
+      "etag": "W/\"af4604ec4ceec7974b3a29cccc41011c\"",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "strict-transport-security": "max-age=31536000",
+      "x-content-type-options": "nosniff"
+    },
+    "body": "<!doctype html>\n<html lang=\"es-NI\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />\n    <meta name=\"theme-color\" content=\"#53291E\" />\n    <title>Club Lupita — La Bella Lupita</title>\n    <meta\n      name=\"description\"\n      content=\"El club de La Bella Lupita: tu tanda de sellos, el monedero, la tienda de la finca y la mesa lista para vos.\"\n    />\n    <link rel=\"preload\" href=\"/fuentes/material-symbols-subset.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\n    <script type=\"module\" crossorigin src=\"/assets/principal-Cfxl5pt5.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/principal-C3oGQIwt.css\">\n  </head>\n  <body>\n    <div id=\"root\"></div>\n  </body>\n</html>\n"
+  },
+  "/api/catalogo": {
+    "status": 200,
+    "headers": {
+      "cache-control": "no-store",
+      "content-security-policy": "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+      "content-type": "application/json",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "strict-transport-security": "max-age=31536000",
+      "x-content-type-options": "nosniff"
+    },
+    "body": "{\"experiencias\":[],\"bolsa\":{\"precio\":89000,\"quedan\":150,\"total\":150,\"generacion\":6},\"membresia\":{\"cuota\":95000,\"total\":100},\"zonas\":[{\"id\":\"terraza\",\"nombre\":\"La terraza\",\"aforo\":10,\"deposito\":0,\"icono\":\"balcony\"},{\"id\":\"ventanal\",\"nombre\":\"El ventanal\",\"aforo\":6,\"deposito\":0,\"icono\":\"window\"},{\"id\":\"barra\",\"nombre\":\"La barra\",\"aforo\":8,\"deposito\":0,\"icono\":\"countertops\"},{\"id\":\"bistro\",\"nombre\":\"El bistró\",\"aforo\":12,\"deposito\":0,\"icono\":\"restaurant\"},{\"id\":\"vip\",\"nombre\":\"El Salón VIP\",\"aforo\":1,\"deposito\":50000,\"icono\":\"diamond\"}]}"
+  },
+  "/api/cupos": {
+    "status": 200,
+    "headers": {
+      "cache-control": "no-store",
+      "content-security-policy": "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+      "content-type": "application/json",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "strict-transport-security": "max-age=31536000",
+      "x-content-type-options": "nosniff"
+    },
+    "body": "{\"sociosFundadores\":100,\"bolsasReserva\":150,\"mesaTostador\":12,\"experiencias\":{\"mesa-tostador\":{\"cupos\":12,\"libres\":12},\"finca\":{\"cupos\":20,\"libres\":20},\"cacao\":{\"cupos\":16,\"libres\":16}}}"
+  },
+  "assets": [
+    {
+      "path": "/assets/principal-Cfxl5pt5.js",
+      "status": 200,
+      "bytes": 415080,
+      "sha256": "ef9810f90e45b6535c2831590b886140f9b138a67367402298ff65e0237c723a",
+      "igualALocal": true
+    },
+    {
+      "path": "/assets/principal-C3oGQIwt.css",
+      "status": 200,
+      "bytes": 73931,
+      "sha256": "60585a18d8e12446ed5bd6ecb14675fab2e99c4a0d8a66016f0b8a9df668f88c",
+      "igualALocal": true
+    }
+  ]
+}

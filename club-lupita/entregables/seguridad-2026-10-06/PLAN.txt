@@ -1,0 +1,57 @@
+CUENTA Y SEGURIDAD — PLAN DE EJECUCIÓN
+6 de octubre de 2026
+
+1. Respaldo de código y esquema; migración aditiva ensayada sobre datos aislados.
+2. Cambio de clave propia con validación de clave actual, nueva y confirmación.
+3. Restablecimiento por propietario: mismo usuario e historial, clave temporal de
+   24 horas mostrada una sola vez, cambio obligatorio al ingresar.
+4. Versión de credencial en sesiones: cambiar/restablecer invalida todas las
+   sesiones anteriores del acceso, sin afectar las de los demás usuarios.
+5. Pruebas de roles, sesión antigua, concurrencia, límites de intentos y UI.
+6. Respaldo remoto, migración, despliegue y comprobaciones publicadas de lectura.
+
+DECISIONES
+- El propietario utiliza una única clave para real y demo. Se cambia desde real.
+- Los empleados de real y demo conservan sus bases de datos separadas.
+- La clave inicial del propietario sigue vigente hasta que el propietario la cambie.
+- Las claves nuevas se guardan mediante bcrypt, sal aleatoria y prehash HMAC con
+  secreto del servidor. Nunca se almacenan ni registran en claro.
+- Se admiten frases de 15 a 128 caracteres, con espacios y Unicode.
+- El propietario confirma su propia clave al restablecer un acceso.
+- La revocación se comprueba en cada petición autenticada. Una petición ya
+  autorizada y en curso puede finalizar; nuevas peticiones se rechazan.
+- Las pruebas que cambian claves se realizan en bases aisladas. Se publica la
+  capacidad sin cambiar la clave real del propietario ni del equipo.
+
+ESTADO: los seis pasos completados. Migración 017 aplicada en real y demo; publicación verificada.
+
+VALIDACIÓN COMPLETADA
+- Nueve suites: regresión, cuenta, operación, correo, Resend, auditoría, saldo,
+  panel y seguridad. Todas pasan.
+- Compilación TypeScript/Vite, guardián de diseño y wrangler dry-run correctos.
+- Navegador: propietario, cocina, acceso temporal, sesión revocada y demo;
+  móvil de 320 y 390 px sin desbordamiento horizontal.
+- Neon aislado: migración repetible; claves y saldos conservados. Cambio,
+  restablecimiento, concurrencia y revocación probados con claves sintéticas.
+
+OPERACIÓN Y RECUPERACIÓN
+- La clave del propietario es única para real y demo; solo se cambia en real.
+- Cambiar una clave requiere la clave actual. Si el propietario la olvida,
+  la recuperación sigue requiriendo intervención técnica verificada.
+- No rotar SESION_SECRETO sin un procedimiento de migración: también protege
+  las huellas de las claves. Se conserva durante esta publicación.
+- Tras el primer cambio de clave, NO volver al Worker anterior completo: no
+  reconoce las nuevas credenciales ni su revocación. Si se revierte la interfaz,
+  conservar el nuevo módulo de autenticación y la migración 017.
+- El cierre de sesiones significa rechazo en la siguiente petición. Las
+  solicitudes que ya estaban autorizadas pueden terminar.
+- La prueba remota usa una rama temporal propia, eliminada al finalizar.
+  Los respaldos previos de real y demo se conservan en Neon.
+
+PUBLICACIÓN
+- URL: https://app.labellalupita.com/personal?seccion=seguridad
+- Versión: 2ed12865-2b31-4545-a084-ec4db1716860
+- Verificación: 2026-10-07T03:44:06.008Z
+- Las claves existentes permanecen vigentes. Ningún saldo, pedido o usuario
+  de negocio se modificó como parte de las pruebas.
+- Evidencias: verificacion-publicada.json y verificacion-interfaz.json.

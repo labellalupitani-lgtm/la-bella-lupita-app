@@ -1,0 +1,78 @@
+ACCESO DEL EQUIPO — IMPLEMENTACIÓN Y PUBLICACIÓN
+8 de octubre de 2026 · La Bella Lupita
+
+Resultado
+La implementación prevista en PLAN.txt está publicada en https://app.labellalupita.com/personal.
+La activación de las identidades reales queda a cargo de cada persona. No se crearon propietarios, contraseñas ni autenticadores reales en su nombre.
+
+Versión publicada: 63af0ad0-33f4-4ab1-bd36-06284b2c46c0, con 100% del tráfico.
+Versión anterior: 144530db-b68b-4f0a-b3a3-b45ce04ca034.
+Migración aplicada: db/020_acceso_equipo.sql, en operación real y capacitación.
+
+Qué se resolvió
+1. Identidad: una cuenta por persona, incluidos varios propietarios. El rol se comprueba en el servidor. Ya no existe el selector «Acceso del propietario» ni una identidad propietaria compartida para operar.
+2. Sesiones: identificadores aleatorios, almacenados por huella en el servidor; cookie Secure, HttpOnly, SameSite=Strict y prefijo __Host; validación de origen y protección CSRF. El token de acceso del equipo no se entrega a JavaScript.
+3. Cierre y revocación: cierre de la sesión actual, de otro dispositivo y de todas las sesiones propias. Cambio de clave, recuperación, desactivación y cambio de permisos revocan las sesiones correspondientes. Las pestañas sincronizan el cierre.
+4. Dispositivos compartidos: bloqueo manual y tras cinco minutos sin interacción; duración máxima de ocho horas. En dispositivos personales, bloqueo tras treinta minutos y duración máxima de doce horas. Las consultas automáticas no mantienen activa una sesión ausente. Cambiar de persona exige cerrar la sesión anterior.
+5. Segundo factor: TOTP obligatorio para propietarios y encargados; disponible para caja y cocina. El secreto se cifra, el código usado no se puede reutilizar y el alta tiene vencimiento. Los cambios privilegiados requieren una confirmación de identidad de los últimos cinco minutos.
+6. Recuperación: códigos aleatorios de un uso, guardados por huella. Recuperar una cuenta cierra sesiones, invalida invitaciones y códigos anteriores, y exige configurar de nuevo el autenticador. Renovar una invitación no permite saltarse un autenticador existente.
+7. Altas: invitaciones individuales de 24 horas y un solo uso. Cada persona elige su propia contraseña; el propietario no la conoce. Se protege al último propietario activo que ya completó contraseña y MFA, también frente a cambios concurrentes.
+8. Intentos: los aciertos no cuentan como fallos. Hay demoras progresivas por cuenta y un límite separado de tráfico por IP. No se impone un bloqueo permanente de la cuenta propietaria.
+9. Entornos: operación real por defecto; capacitación mediante entrada explícita y base separada. Una configuración inválida no permite recurrir silenciosamente a la base real. Las cuentas de ambos entornos son independientes.
+10. Registro: actividad de autenticación, recuperación y cambios de acceso visible en Seguridad. Cada persona ve sus eventos; los propietarios pueden ver los del negocio.
+11. Navegador y legado: se conservan las cabeceras defensivas de la otra implementación. Las API administrativas antiguas devuelven 410 y /legado.html redirige al acceso nuevo. Los tokens administrativos anteriores ya no autorizan operaciones.
+12. Contraseñas: entre 15 y 128 caracteres Unicode, confirmación y rechazo de ciertos patrones previsibles. Se conservan el pegado y el autocompletado. La verificación usa primitivas del runtime y comparaciones seguras.
+13. Experiencia: «Usuario» y «Contraseña», mostrar/ocultar contraseña, recuperación e invitación visibles y formulario prioritario en móvil. Se conservan los destinos y permisos de caja y cocina.
+
+Integración y datos conservados
+Se incorporaron los cambios del otro chat en transporte HTTP, separación de sesiones de clientes, permisos y minimización de datos de cocina, validaciones, cabeceras, cron y dependencias. No se reemplazó esa implementación por una copia anterior.
+La migración fue aditiva. Las comprobaciones de integridad conservaron empleados, sus credenciales existentes, clientes, movimientos e importes. No se cargaron personas de prueba en las bases real o de capacitación.
+El cron continúa en «17 * * * *».
+
+Los nuevos ajustes separan la configuración de credenciales del equipo de la firma de clientes y añaden una clave exclusiva para cifrar MFA. Para preservar las credenciales existentes, PERSONAL_CREDENCIAL_SECRETO se inicializó con el material anterior de SESION_SECRETO. Es separación de configuración, todavía no independencia del material criptográfico. No debe rotarse unilateralmente: hace falta una migración o restablecimiento coordinado de las credenciales. La compatibilidad con huellas antiguas se mantiene hasta el cambio de contraseña.
+
+Validación realizada
+- 17 grupos de comprobaciones aprobados: regresión, cuenta de cliente, operación, correo, Resend, auditoría, saldo cronológico, panel, acceso del equipo, clientes del equipo, correcciones del servidor y cliente, cabeceras, guardián, tipos, compilación y ensayo de despliegue del Worker.
+- Ensayo PostgreSQL/Neon en copia aislada: consumo concurrente de invitación, protección del último propietario, cambio concurrente de contraseña y recuperación de un solo uso.
+- Runtime real de Workers sobre esa copia: cookies, invitación, contraseña, QR SVG, TOTP, recuperación y revocación.
+- Navegador con datos sintéticos: caja, bloqueo/desbloqueo, cierre sincronizado entre pestañas, desafío MFA del propietario, navegación según rol y lista del equipo. Comprobaciones móviles a 390 × 844 y 360 × 640; sin desbordamiento horizontal y botón de ingreso visible en la pantalla inicial de 360 × 640.
+- Después de publicar: 16 verificaciones públicas aprobadas; páginas, API, rutas retiradas, estado de transición y coincidencia SHA-256 de cuatro activos JS/CSS. También se verificaron versión desplegada, bindings y cron.
+- La pantalla pública final carga sin errores ni advertencias de consola. Captura: evidencia/acceso-publicado.png.
+
+Estas pruebas no equivalen a una certificación de seguridad ni a una auditoría externa. No se volvió a ejecutar toda la antigua batería de UI de múltiples motores, cuyos guiones utilizaban el acceso anterior. La comprobación de cuentas reales requiere la activación humana.
+
+Puesta en uso pendiente
+1. Activar al primer propietario en operación real usando la clave anterior una sola vez. Seguir GUIA-DE-ACTIVACION.txt.
+2. Invitar y activar al menos a un segundo propietario; cada uno registra su autenticador y guarda sus códigos.
+3. Revisar los empleados existentes. Sus usuarios/credenciales se conservaron; renovar invitaciones para sustituir las claves antiguas conocidas o compartidas. Encargados deben completar MFA para operar.
+4. Ensayar con las personas reales el ingreso, el bloqueo, el cambio de operador y una recuperación controlada antes de depender exclusivamente del nuevo flujo.
+5. Si se usa capacitación, activar sus cuentas por separado. La clave antigua deja de servir para iniciar propietarios adicionales en un entorno una vez completada su transición.
+
+Alcance y mejoras que siguen pendientes
+- Se eligió contraseña + TOTP. Passkeys, llaves físicas y PIN dentro de una estación registrada quedaron como alternativas opcionales en el plan, no están implementados. El nombre de dispositivo es una etiqueta; no acredita una estación administrada.
+- Hay códigos de recuperación y renovación de invitaciones, pero no recuperación automática por correo ni un procedimiento de emergencia ejecutado para la pérdida simultánea de MFA y códigos de todos los propietarios. Ese caso necesita soporte técnico e identificación del negocio; no hay una puerta pública que desactive MFA con la clave antigua.
+- Hay eventos consultables, pero no alertas automáticas de accesos anómalos ni notificación automática al afectado por cambios de permisos. La política de retención y purga de estos registros todavía debe definirse.
+- El rechazo de contraseñas previsibles usa una lista y patrones limitados; no consulta un corpus de contraseñas filtradas.
+- Se conserva el hostname workers.dev con los mismos controles del Worker. No se creó un subdominio exclusivo para personal.
+- La activación nominal, la renovación de las credenciales antiguas y la separación efectiva del material secreto son pasos operativos pendientes; no deben confundirse con una migración ya terminada de todas las personas.
+
+Respaldos y recuperación técnica
+Neon real: br-morning-star-ayndxw1e, copia de br-summer-mouse-ayz6fugt.
+Neon capacitación: br-broad-lab-ayscljhn, copia de br-raspy-unit-aysf7jmq.
+Se conservaron ambos respaldos. La rama antigua «ensayo-auditoria-1790992577144» se eliminó con autorización explícita del usuario. La nueva rama temporal de ensayo también se eliminó al terminar las pruebas.
+El respaldo original de archivos está en respaldo/. La copia congelada de la versión publicada está en version-publicada/ y se coteja con evidencia/manifiesto.json. La evidencia no incluye secretos de despliegue.
+
+No ejecutar un rollback automático a la versión anterior después de activar propietarios. El código antiguo reabriría el acceso compartido y no entiende plenamente el nuevo rol propietario. La migración aditiva tampoco desaparece al volver de Worker. Ante una incidencia, conservar datos y registros y preferir una corrección sobre esta versión. Una reversión de emergencia exige revisar la compatibilidad de roles y autenticación y verificar de nuevo cron y bindings; no restaurar la base completa sobre movimientos recientes.
+Conservar protegidos los archivos locales de configuración de infraestructura y las claves remotas. No copiar .local, .dev.vars ni .env.deploy a una entrega pública. El archivo temporal de carga de secretos se retiró al cerrar la entrega.
+
+Evidencia y reproducción
+evidencia/verificacion-final.json: resultados de los 17 grupos y sus logs vecinos.
+evidencia/neon.json: concurrencia en copia aislada.
+evidencia/runtime.json: ejecución en Workers.
+evidencia/verificacion-publica.json: comprobaciones de la publicación.
+evidencia/publicacion.json: versión, respaldos e integridad de migración.
+evidencia/manifiesto.json: hashes de los 380 archivos de código/configuración/activos congelados.
+evidencia/copia-publicada.json: cotejo de la copia de entrega.
+scripts/verificar-acceso-equipo.mjs: comprobaciones locales.
+scripts/verificar-publicacion-acceso.mjs: verificaciones públicas; requiere la configuración privada local.
+No volver a ejecutar scripts de publicación o migración para consultar el estado.

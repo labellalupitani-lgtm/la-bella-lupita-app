@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tienda de la finca - Casa Lupita</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#a0d2b3",
+                        "surface-container": "#f1eee7",
+                        "primary-container": "#2f5d45",
+                        "tertiary-container": "#714c32",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#ffdcc6",
+                        "on-surface": "#1c1c18",
+                        "on-secondary-fixed": "#281800",
+                        "primary-fixed": "#bbeecf",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#f1bf9d",
+                        "secondary": "#805600",
+                        "primary-fixed-dim": "#a0d2b3",
+                        "tertiary-fixed-dim": "#efbc9b",
+                        "surface-container-low": "#f6f3ec",
+                        "surface-bright": "#fcf9f2",
+                        "on-secondary-fixed-variant": "#614000",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c0c9c1",
+                        "surface-tint": "#39684f",
+                        "on-secondary-container": "#754e00",
+                        "inverse-surface": "#31312c",
+                        "surface": "#fcf9f2",
+                        "secondary-fixed": "#ffddb0",
+                        "surface-variant": "#e5e2db",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f3f0e9",
+                        "tertiary": "#57351d",
+                        "surface-dim": "#dcdad3",
+                        "surface-container-highest": "#e5e2db",
+                        "surface-container-high": "#ebe8e1",
+                        "secondary-container": "#ffc15f",
+                        "on-tertiary-fixed-variant": "#623f25",
+                        "on-surface-variant": "#414943",
+                        "on-primary": "#ffffff",
+                        "outline": "#717972",
+                        "primary": "#16452f",
+                        "background": "#fcf9f2",
+                        "on-primary-fixed-variant": "#214f38",
+                        "secondary-fixed-dim": "#f9bc5a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2f1502",
+                        "on-primary-fixed": "#002112",
+                        "on-background": "#1c1c18",
+                        "on-primary-container": "#a2d4b6",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Libre Caslon Text", "serif"],
+                        "display": ["Libre Caslon Text", "serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #f6f3ec; /* Porcelana */
+            color: #221E17; /* Espresso */
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, h5, h6, .font-headline {
+            font-family: 'Libre Caslon Text', serif;
+        }
+        .text-oro {
+            color: #C08A2D;
+        }
+        .bg-oro {
+            background-color: #C08A2D;
+        }
+        .border-oro {
+            border-color: #C08A2D;
+        }
+        .text-verde {
+            color: #2F5D45;
+        }
+        .bg-verde {
+            background-color: #2F5D45;
+        }
+        .text-cafe {
+            color: #5C3A21;
+        }
+        .bg-cafe {
+            background-color: #5C3A21;
+        }
+        .text-espresso {
+            color: #221E17;
+        }
+        .bg-espresso {
+            background-color: #221E17;
+        }
+        /* Hide scrollbar for clean horizontal scrolling */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="pb-24">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim docked full-width top-0 sticky z-40 transition-shadow">
+<div class="flex flex-col justify-center px-6 py-4 w-full max-w-3xl mx-auto">
+<div class="flex items-center justify-between">
+<button class="text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity active:scale-95 duration-150 p-2 -ml-2 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/20">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<div class="flex-1 text-center">
+<h1 class="font-headline text-headline-sm text-on-surface font-bold">Tienda de la finca</h1>
+<p class="font-body text-[11px] uppercase tracking-widest text-on-surface-variant font-medium mt-1">Cultivado por nuestra familia desde 1971</p>
+</div>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</div>
+</div>
+</header>
+<main class="max-w-3xl mx-auto px-4 md:px-6 py-6 space-y-10">
+<!-- Banner Destacado -->
+<section class="relative rounded-2xl overflow-hidden border border-[#C08A2D]/30 shadow-sm bg-white group cursor-pointer hover:shadow-md transition-shadow">
+<div class="aspect-[16/9] md:aspect-[21/9] relative overflow-hidden bg-surface-container">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLthMi4dfnqrBumSQvp1E2P97ry4plH2fCTHW0RbdD6QZ9IuD2ncdTrFP1_1-4sZP826JHQSizAb_2hXoba-FT9L5nliXscHGLMf24z7u44oJe2_c8qLL5SHhU7r39xGaPDwVCto5k6I34HImhL4wILZr9pT7EbzPOySvmi8NYCHjC5h5yc2b2R6lxZ5Vft3pwHEd0x4d5zCKwWot6Lab-57RgWbdcLm0v8VG9K-IPjZUmXbvPyIAKtnWGM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-espresso/80 via-espresso/40 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-6 text-on-tertiary">
+<div class="inline-flex items-center px-2.5 py-1 mb-3 rounded-full border border-[#C08A2D] bg-[#221E17]/60 backdrop-blur-sm">
+<span class="font-label text-[10px] uppercase tracking-widest font-bold text-[#C08A2D]">QUEDAN 34 DE 150</span>
+</div>
+<h2 class="font-headline text-2xl md:text-3xl font-bold mb-2 text-white">Reserva de Cosecha 2026 · bolsas numeradas</h2>
+<p class="font-body text-sm md:text-base text-white/90 mb-4 font-medium">Pagás hoy, la retirás recién tostada en temporada.</p>
+<button class="inline-flex items-center font-body text-sm font-semibold text-[#C08A2D] hover:text-white transition-colors group/btn">
+                    Reservá la tuya 
+                    <span class="material-symbols-outlined ml-1 text-base group-hover/btn:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Sección 'Nuestro café' -->
+<section>
+<div class="flex items-baseline justify-between mb-6">
+<h2 class="font-headline text-xl text-espresso font-bold">Nuestro café</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Product 1 -->
+<div class="bg-white rounded-xl p-4 flex gap-4 border border-surface-variant/50 hover:shadow-sm transition-shadow cursor-pointer">
+<div class="w-24 h-24 rounded-lg bg-surface-container overflow-hidden flex-shrink-0 relative">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtSNDyYLZHNdCymsymhiYqIBjIm7Emm6lN_DFipd7IxbqnLLvk8NxI85PFIURhzVUp5XWk3iA3fDQA8FtvmG0ipt6PZXOoCSz9hwzGHG6BaPw787H1lI3SsbgXvM3IZNYS_hO-M3P9FFeUNMBWxDbAey1KSTTrL1N6FQxb1ko8oudQzPy15MvQEEKrLB3YHL-BAyORHc_d-43olbsNrAs5GzkXvA33OEO55dkRCNcVj8GKDogrbK28irw"/>
+</div>
+<div class="flex flex-col justify-between flex-1 py-1">
+<div>
+<h3 class="font-headline text-base font-bold text-espresso leading-tight mb-1">Lote 04 El Aguacatal · 250 g</h3>
+<div class="flex flex-wrap gap-2 mb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-espresso font-label text-[10px] uppercase tracking-wide font-medium">PANELA</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-espresso font-label text-[10px] uppercase tracking-wide font-medium">NARANJA</span>
+</div>
+</div>
+<div class="font-body font-semibold text-espresso">C$ 380</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-xl p-4 flex gap-4 border border-surface-variant/50 hover:shadow-sm transition-shadow cursor-pointer">
+<div class="w-24 h-24 rounded-lg bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center relative">
+<!-- Using placeholder image as requested when DATA:IMAGE is not provided, with data-alt -->
+<img class="w-full h-full object-cover" data-alt="A warm, overhead shot of a classic 500g kraft paper coffee bag resting on a textured wooden table next to scattered roasted espresso beans. The lighting is soft and natural, emphasizing the artisanal, premium quality of the product within the Casa Lupita brand style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeA5LsdBZFHjnL4kyLXRXHCE1-8l7IKeT7nlf9Zt7VjnD5GbiZKbDFOcJFUkH2_mxBJ4Kqwd6Gq6IEN_MKDyltv8h6IVNiwwGejlv6a5Eskcd6PAU6HA1fdzZB0uZPcxezlVw_kIZehItua-jQjvqQS574Bkcvgsdc5BSFxS1T59iPzcqYD8Ll2UodnAc1BvZ19vMITkwtAMVLWrwRDCSfBwNDRXcnrZ-2YKlBN3gNnOEA88a2QzbxvgxeUyZsTuAbbVg0nt79SuE"/>
+</div>
+<div class="flex flex-col justify-between flex-1 py-1">
+<div>
+<h3 class="font-headline text-base font-bold text-espresso leading-tight mb-1">Espresso clásico de la casa · 500 g</h3>
+</div>
+<div class="font-body font-semibold text-espresso">C$ 620</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-xl p-4 flex gap-4 border border-surface-variant/50 hover:shadow-sm transition-shadow cursor-pointer">
+<div class="w-24 h-24 rounded-lg bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center relative">
+<!-- Using placeholder image as requested when DATA:IMAGE is not provided, with data-alt -->
+<img class="w-full h-full object-cover" data-alt="A lifestyle close-up showing a sleek, portable pack of six single-serve espresso drips on a bright marble surface. The scene is bright, energetic, and clean, highlighting the convenience aspect of the product for on-the-go or gym use, styled with warm natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZLS8loy7AGocxNnxuVAbMs-_MF2ZuwCW8RTEFlZn2jSlB8B6QqRQhh6-H7zMYN6pbyutvyOU9vDwnwKtqgx-vpygcnZUhoaOANmcjDeRQcPWsbv-qjiQntSxAq8Amhg-QhwZRwxPQ5pKCDh4rzcxmwr4mPibuSTiQXANAmdztgFB9nCtgZo4Ag3lpSiTV560zEvmNb4vxO6n4dq_n_bS382xSbZdk8940YzaquGDoVD7Mx-T2uzIStmV7K7Yhboyl2bb0iFT6zsQ"/>
+</div>
+<div class="flex flex-col justify-between flex-1 py-1">
+<div>
+<h3 class="font-headline text-base font-bold text-espresso leading-tight mb-1">Espresso Portable · pack ×6</h3>
+<div class="flex flex-wrap gap-2 mb-2">
+<span class="px-2 py-0.5 rounded-full border border-primary/20 text-primary font-label text-[10px] uppercase tracking-wide font-bold bg-primary/5">PARA LLEVAR AL GYM</span>
+</div>
+</div>
+<div class="font-body font-semibold text-espresso">C$ 540</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tarjeta de Suscripción -->
+<section class="bg-[#221E17] rounded-2xl p-6 md:p-8 text-on-tertiary relative overflow-hidden border border-[#C08A2D]/20 shadow-lg">
+<!-- Decorative subtle texture/pattern could go here -->
+<div class="absolute -right-4 -top-4 text-[#C08A2D]/10">
+<span class="material-symbols-outlined text-9xl" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-[#C08A2D]/20 flex items-center justify-center text-[#C08A2D]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sync</span>
+</div>
+<h2 class="font-headline text-2xl font-bold text-white">Suscripción de la finca</h2>
+</div>
+<p class="font-body text-base text-white/90 font-medium mb-2">Tu bolsa cada mes con envío en Managua · <span class="text-[#C08A2D] font-bold">−10%</span></p>
+<p class="font-body text-sm text-white/60 mb-6 italic">Saltá, pausá o cambiá de café cuando querás</p>
+<button class="bg-[#2F5D45] text-white font-body font-semibold py-3 px-6 rounded-full w-full md:w-auto hover:bg-[#2F5D45]/90 transition-colors active:scale-95 duration-150 flex items-center justify-center gap-2">
+                    Suscribite — C$ 342/mes
+                </button>
+</div>
+</section>
+<!-- Fila de Regalos -->
+<section class="bg-surface-variant/30 rounded-xl p-4 border border-surface-variant/50 flex flex-col md:flex-row items-center justify-between gap-4 cursor-pointer hover:bg-surface-variant/50 transition-colors group">
+<div class="flex items-center gap-3 w-full">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-espresso flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">redeem</span>
+</div>
+<p class="font-body text-sm font-semibold text-espresso flex-1">Cajas de regalo y pedidos corporativos</p>
+</div>
+<div class="text-[#2F5D45] font-body text-sm font-semibold flex items-center whitespace-nowrap group-hover:translate-x-1 transition-transform">
+                Cotizá por WhatsApp <span class="material-symbols-outlined ml-1 text-sm" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-surface-container-lowest dark:bg-surface-container-low rounded-t-xl border-t border-outline-variant/30 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] md:hidden">
+<!-- Inicio (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-primary transition-colors active:scale-90 duration-200 w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-body text-[11px] font-medium tracking-wide uppercase">Inicio</span>
+</a>
+<!-- Pedir (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-primary transition-colors active:scale-90 duration-200 w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">coffee_maker</span>
+<span class="font-body text-[11px] font-medium tracking-wide uppercase">Pedir</span>
+</a>
+<!-- Tienda (Active) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim bg-primary-container/10 rounded-full px-4 py-1 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined mb-1 text-[#2F5D45]" style="font-variation-settings: 'FILL' 1;">store</span>
+<span class="font-body text-[11px] font-bold tracking-wide uppercase text-[#2F5D45]">Tienda</span>
+</a>
+<!-- Club (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-primary transition-colors active:scale-90 duration-200 w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">military_tech</span>
+<span class="font-body text-[11px] font-medium tracking-wide uppercase">Club</span>
+</a>
+<!-- Perfil (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-primary transition-colors active:scale-90 duration-200 w-16" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">person</span>
+<span class="font-body text-[11px] font-medium tracking-wide uppercase">Perfil</span>
+</a>
+</nav>
+</body></html>

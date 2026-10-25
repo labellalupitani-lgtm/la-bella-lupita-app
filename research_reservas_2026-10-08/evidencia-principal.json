@@ -1,0 +1,21 @@
+{
+  "fechaReferencia": "2026-10-08 America/Managua",
+  "alcance": "Lectura pública de producción; frontend idéntico por SHA256 en local; Worker y esquema local con datos sintéticos. No hay prueba de equivalencia del Worker/base desplegados.",
+  "codigoAppModificado": false,
+  "mutacionesProduccion": false,
+  "pruebas": [
+    {"caso":"Entrada pública /reservar", "resultado":"Muestra acceso por correo genérico sin consulta de mesas", "evidencia":"publico-acceso-ax.txt"},
+    {"caso":"Paridad frontend", "resultado":"JS y CSS principales publicados coinciden byte a byte con build local", "evidencia":"paridad-frontend.json"},
+    {"caso":"Build aislado", "resultado":"npx vite build --outDir ../research_reservas_2026-10-08/build completado. No equivale a typecheck ni batería completa"},
+    {"caso":"Creación de mesa sin depósito", "resultado":"POST 200; reserva visible en /compras con personas e inicio/fin correctos", "evidencia":"evidencia-api-ui-flujo-valido.json"},
+    {"caso":"Confirmación móvil 390x844", "resultado":"Aviso de éxito y vuelta a Lugar; pie vuelve a Falta la hora; sin CTA de gestionar", "evidencia":"confirmacion-movil.jpg"},
+    {"caso":"VIP sin saldo", "resultado":"Bloquea C$500 correctamente; CTA lleva a Inicio; recarga indica mostrador", "evidencia":"vip-sin-saldo-ax.txt"},
+    {"caso":"Volver de recarga", "resultado":"Se pierden zona, fecha, hora y progreso", "evidencia":"borrador-perdido-ax.txt"},
+    {"caso":"Cambio paso 1 a 2 a 320x568", "resultado":"Foco res-paso en y643.69..704.16 con scrollY0, fuera de viewport; barra y456.61..568", "evidencia":"foco-paso2-320.json"},
+    {"caso":"POST 200 con cuerpo vacío JSON", "resultado":"Inyección de fallo local: {} anuncia Mesa apartada; la base tiene cero reservas", "evidencia":"respuesta-invalida-servidor.json"},
+    {"caso":"Ocupación responde 503", "resultado":"No muestra horas; ofrece reintentar; Revisar mi reserva deshabilitado. El texto carece de región viva", "evidencia":"ocupacion-503-ax.txt"},
+    {"caso":"Reflujo en anchos inspeccionados", "resultado":"Sin desbordamiento horizontal de documento observado en 1440, 390 y 320 CSS px. No prueba zoom nativo, lectores o todos los estados"},
+    {"caso":"GET público ocupación", "resultado":"200, Cache-Control no-store; salida agregada, no datos nominales", "evidencia":"ocupacion-publica.json"}
+  ],
+  "pendientes": ["Concurrencia PostgreSQL con conexiones separadas", "NVDA y VoiceOver", "Safari/Firefox y dispositivos físicos", "Zoom nativo 200/400% y texto ampliado", "Métricas reales de carga y conversión", "Capacidad física, políticas y operación manual", "WAF y configuración remota del Worker"]
+}

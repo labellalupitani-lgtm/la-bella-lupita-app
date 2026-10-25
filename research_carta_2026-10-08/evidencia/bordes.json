@@ -1,0 +1,263 @@
+{
+  "date": "2026-10-08 America/Managua",
+  "scope": "Fixture local PGlite, build del código actual; sin escrituras remotas",
+  "checks": [
+    {
+      "name": "edge-focus-stable",
+      "status": "completed",
+      "data": {
+        "noPhoto": {
+          "tag": "BODY",
+          "label": null,
+          "text": "BODY",
+          "visible": true
+        },
+        "nextAfterNoPhoto": {
+          "tag": "SUMMARY",
+          "label": null,
+          "text": "Refrescos3 opciones",
+          "visible": true
+        },
+        "hero": {
+          "tag": "BODY",
+          "label": null,
+          "text": "BODY",
+          "visible": true
+        },
+        "justEmptied": {
+          "tag": "BODY",
+          "label": null,
+          "text": "BODY",
+          "visible": true
+        },
+        "afterEmptyClosed": {
+          "tag": "BUTTON",
+          "label": "Cerrar panel",
+          "text": "Cerrar close",
+          "visible": false
+        },
+        "nextAfterEmpty": {
+          "tag": "BUTTON",
+          "label": "Inicio",
+          "text": "homeInicio",
+          "visible": true
+        }
+      }
+    },
+    {
+      "name": "edge-keyboard-obscured",
+      "status": "completed",
+      "data": {
+        "covered": [
+          {
+            "label": "Americano C$ 85",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 20,
+              "y": 743.515625,
+              "w": 248.390625,
+              "h": 92.359375
+            },
+            "visible": false
+          },
+          {
+            "label": "Agregar Americano al pedido",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 326,
+              "y": 767.6875,
+              "w": 44,
+              "h": 44
+            },
+            "visible": false
+          },
+          {
+            "label": "Té Caliente C$ 100",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 20,
+              "y": 743.5625,
+              "w": 241.140625,
+              "h": 71.96875
+            },
+            "visible": false
+          },
+          {
+            "label": "Agregar Té Caliente al pedido",
+            "tag": "BUTTON",
+            "rect": {
+              "x": 326,
+              "y": 757.546875,
+              "w": 44,
+              "h": 44
+            },
+            "visible": false
+          },
+          {
+            "label": "Sobre hielo13 opciones",
+            "tag": "SUMMARY",
+            "rect": {
+              "x": 20,
+              "y": 774.53125,
+              "w": 350,
+              "h": 69.1875
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "edge-search-layout",
+      "status": "completed",
+      "data": {
+        "searchY": 255.390625,
+        "resultY": 839.84375,
+        "hero": "Latte",
+        "scrollY": 0
+      }
+    },
+    {
+      "name": "edge-image-failure",
+      "status": "completed",
+      "data": {
+        "detail": "DE LA CARTA DE LA CASA\n\nCerrar\nclose\nLatte\n\nLeche texturizada al vapor sobre un espresso de Matagalpa Más leche que café, textura de seda\n\nSEDOSO · LECHOSO · CAFÉ DE FONDO\n\nremove\n1\nadd\nAgregar — C$ 95",
+        "images": [
+          {
+            "complete": true,
+            "naturalWidth": 0,
+            "alt": "Latte"
+          }
+        ],
+        "addEnabled": true
+      }
+    },
+    {
+      "name": "edge-account-api-failure",
+      "status": "completed",
+      "data": {
+        "searchCount": 0,
+        "text": "info\nNo pudimos abrir tu cuenta\n\nFallo simulado de cuenta\n\nVolver a intentar"
+      }
+    },
+    {
+      "name": "edge-text-spacing",
+      "status": "completed",
+      "data": {
+        "width": 320,
+        "scrollWidth": 320,
+        "dialogWidth": 320,
+        "buttons": [
+          {
+            "label": "Cerrar panel",
+            "w": 86,
+            "scroll": 86
+          },
+          {
+            "label": "Reducir cantidad",
+            "w": 42,
+            "scroll": 42
+          },
+          {
+            "label": "Aumentar cantidad",
+            "w": 42,
+            "scroll": 42
+          },
+          {
+            "label": "Agregar — C$ 95",
+            "w": 280,
+            "scroll": 280
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "api": [
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    }
+  ]
+}

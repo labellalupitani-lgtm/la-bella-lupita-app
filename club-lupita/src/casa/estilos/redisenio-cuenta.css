@@ -1,0 +1,148 @@
+/* Extensión de la base aprobada: cuenta, pertenencia y lectura. */
+.mi-club, .conoce-club, .cuenta-perfil { font-family:theme('fontFamily.inicio-texto'); }
+.mi-club :is(h2,h3), .conoce-club :is(h1,h2,h3), .cuenta-perfil :is(h2,h3) { font-family:theme('fontFamily.inicio-titular'); }
+:is(.mi-club,.conoce-club,.cuenta-perfil) :is(h2,h3,[id]) { scroll-margin-block:32px 120px; }
+.cuenta-atajos { display:flex; gap:8px; flex-wrap:wrap; padding:12px 0; margin:4px 0 20px; border-bottom:1px solid theme('colors.filete'); }
+.cuenta-atajos a { display:inline-flex; align-items:center; min-height:44px; padding:10px 16px; color:theme('colors.tinta'); font-size:.8125rem; font-weight:600; border:1px solid transparent; border-radius:theme('borderRadius.full'); transition:background-color 160ms ease; }
+.cuenta-atajos a:hover,.cuenta-atajos a:focus-visible { background:theme('colors.inicio-rosa'); border-color:theme('colors.filete'); }
+.cuenta-club-portada { display:grid; grid-template-columns:minmax(0,1fr) auto; padding:12px 0 24px; align-items:center; gap:24px; margin:0; }
+.cuenta-club-portada .casa-titular { font-size:clamp(2rem,3.6vw,3.5rem); font-weight:400; line-height:1.12; letter-spacing:-.035em; }
+.cuenta-club-portada > div > p:last-child { margin-top:12px; }
+.cuenta-club-pase { display:flex; flex-direction:column; gap:12px; align-items:flex-end; max-width:20rem; }
+.cuenta-club-estado,.cuenta-beneficio-etiqueta { font-size:.75rem; font-weight:600; line-height:1.5; letter-spacing:.06em; color:theme('colors.inicio-borgona'); }
+.cuenta-club-estado { text-align:right; }
+.cuenta-lectura { color:theme('colors.tinta-media'); margin-top:-8px; }
+.cuenta-lectura .t-caption { font-size:.75rem; }
+.mi-club-columnas { grid-template-columns:minmax(0,1.25fr) minmax(0,.8fr); gap:40px; margin-top:28px; }
+.cuenta-club-principal,.cuenta-club-lateral { min-width:0; }
+.mi-club-columnas .t-seccion { font-size:clamp(1.375rem,2vw,1.75rem); font-weight:400; line-height:1.2; }
+.mi-club-beneficios { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:20px 0; }
+.mi-club .cuenta-beneficio { display:flex; flex-direction:column; align-items:flex-start; gap:10px; background:theme('colors.inicio-crema'); border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.inicio-control'); padding:22px; }
+.mi-club .cuenta-beneficio p { margin:0; }
+.mi-club .cuenta-beneficio .t-caption { font-size:.8125rem; line-height:1.6; }
+.mi-club .cuenta-beneficio .casa-boton { margin-top:auto; padding-top:12px; }
+.mi-club-detalles { border-color:theme('colors.filete'); padding:12px 0; }
+.mi-club-detalles summary,.conoce-club summary { list-style:none; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.mi-club-detalles summary::-webkit-details-marker,.conoce-club summary::-webkit-details-marker { display:none; }
+.mi-club-detalles summary::after,.conoce-club summary::after { content:'+'; display:grid; place-items:center; flex-shrink:0; width:28px; height:28px; border-radius:theme('borderRadius.full'); background:theme('colors.inicio-rosa'); color:theme('colors.tinta'); font-size:1.2rem; font-weight:400; transition:transform 180ms ease; }
+.mi-club-detalles[open] > summary::after,.conoce-club details[open] > summary::after { transform:rotate(45deg); }
+.mi-club-detalles[open] > :not(summary),.conoce-club details[open] > :not(summary) { animation:cuenta-aparecer 180ms ease-out; }
+.cuenta-sellos { margin-top:32px; }
+.mi-club .cuenta-sellos > .casa-tarjeta { background:theme('colors.inicio-rosa'); border:0; border-radius:theme('borderRadius.inicio-tarjeta'); padding:28px; }
+.cuenta-sellos .club-sellos { display:grid; grid-template-columns:repeat(9,minmax(0,1fr)); gap:7px; margin:24px 0; }
+.cuenta-sellos .club-sellos span { width:100%; height:auto; aspect-ratio:1; font-size:.75rem; }
+.cuenta-saldo { padding:24px; background:theme('colors.inicio-crema'); border-radius:theme('borderRadius.inicio-control'); border:1px solid theme('colors.filete'); }
+.cuenta-saldo > .t-seccion { font-size:1.25rem; margin-top:12px; }
+.cuenta-importe { font-family:theme('fontFamily.inicio-texto'); font-variant-numeric:tabular-nums; font-weight:500; font-size:clamp(1.75rem,3vw,2.5rem); line-height:1.25; letter-spacing:-.04em; margin:12px 0; overflow-wrap:anywhere; }
+.cuenta-saldo > p:not(.cuenta-importe) { font-size:.8125rem; }
+.cuenta-saldo-acciones { display:flex; align-items:center; flex-wrap:wrap; gap:8px 16px; margin-top:16px; }
+.cuenta-saldo-acciones a { min-height:44px; display:inline-flex; align-items:center; text-decoration:underline; text-underline-offset:4px; font-size:.8125rem; }
+.cuenta-club-lateral > section + section { padding-top:16px; }
+.mi-club .cuenta-experiencia.casa-tarjeta { border:0; border-top:1px solid theme('colors.filete'); border-radius:0; padding:20px 0; background:transparent; }
+.cuenta-experiencia .t-seccion { margin:12px 0; }
+.cuenta-experiencia p { margin:8px 0; line-height:1.6; }
+.cuenta-experiencia .casa-boton { margin-top:18px; }
+body:has(.mi-club) .cuenta-pase { border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-rosa'); border-color:theme('colors.filete'); }
+body:has(.mi-club) .cuenta-pase > p.break-all { font-family:theme('fontFamily.inicio-texto'); letter-spacing:.08em; font-size:1.25rem; }
+.cuenta-codigo-beneficio .club-codigo { padding:24px 12px; background:theme('colors.inicio-rosa'); color:theme('colors.tinta'); border-radius:theme('borderRadius.inicio-control'); font-family:theme('fontFamily.inicio-texto'); font-size:clamp(1.5rem,5vw,2.25rem); font-weight:600; letter-spacing:.12em; text-align:center; overflow-wrap:anywhere; }
+.cuenta-condiciones { font-size:.875rem; line-height:1.7; }
+.cuenta-condiciones-version { padding:14px 16px; border-left:3px solid theme('colors.inicio-borgona'); background:theme('colors.inicio-rosa'); }
+.cuenta-espera-vip :is(input:not([type=checkbox]),select) { padding:10px 12px; border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-crema'); font-size:1rem; min-width:0; }
+.cuenta-espera-vip input[type=checkbox] { width:22px; height:22px; flex-shrink:0; }
+.cuenta-entrada { border-top:1px solid theme('colors.filete'); padding-top:16px; }
+.cuenta-entrada > p[role=status] { padding:12px 16px; border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-rosa'); font-weight:500; }
+
+/* Conocer: bienvenida fotográfica, elección y preguntas en ese orden. */
+.conoce-club .conoce-portada { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.9fr); gap:40px; max-width:none; align-items:center; margin-bottom:24px; }
+.conoce-club .conoce-portada h1 { font-weight:400; font-size:clamp(2.25rem,4.5vw,4rem); line-height:1.1; letter-spacing:-.04em; }
+.conoce-club .conoce-intro { font-size:1.125rem; line-height:1.65; }
+.conoce-portada-foto { margin:0; min-width:0; }
+.conoce-portada-foto img { width:100%; height:auto; aspect-ratio:960/609; object-fit:contain; border-radius:theme('borderRadius.inicio-tarjeta'); }
+.conoce-portada-foto figcaption { margin-top:12px; font-size:.75rem; color:theme('colors.tinta-media'); }
+.conoce-club .conoce-boton { background:theme('colors.inicio-borgona'); color:theme('colors.inicio-crema'); font-family:theme('fontFamily.inicio-texto'); font-size:.875rem; transition:background-color 160ms ease; }
+.conoce-club .conoce-boton:hover { background:theme('colors.banda'); }
+.conoce-comparacion { gap:24px; margin-top:32px; align-items:start; }
+.conoce-club .conoce-panel { border:0; border-top:2px solid theme('colors.filete'); border-radius:0; padding:24px 0; background:transparent; }
+.conoce-club .conoce-fundadora { padding:28px; border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.inicio-tarjeta'); background:theme('colors.inicio-rosa'); }
+.conoce-panel .t-seccion { font-size:1.75rem; font-weight:400; margin-top:12px; }
+.conoce-club .conoce-precio { font-family:theme('fontFamily.inicio-texto'); font-size:1.25rem; font-variant-numeric:tabular-nums; font-weight:500; }
+.conoce-club .conoce-precio span { font-family:inherit; font-size:.875rem; }
+.conoce-panel li { padding:4px 0; }
+.conoce-club .conoce-seccion { padding-top:48px; }
+.conoce-seccion > .t-seccion { font-size:2rem; font-weight:400; margin-top:12px; }
+.conoce-pasos { margin:24px 0; gap:28px; }
+.conoce-pasos li { padding-top:20px; }
+.conoce-pasos span { display:inline-grid; place-items:center; width:48px; height:48px; border-radius:theme('borderRadius.full'); background:theme('colors.inicio-rosa'); color:theme('colors.tinta'); font-family:theme('fontFamily.inicio-texto'); font-size:1rem; font-weight:500; }
+.conoce-pasos h3 { font-size:1.5rem; font-weight:400; margin-top:16px; }
+.conoce-club details { padding:8px 0; }
+.conoce-club summary { font-size:.9375rem; line-height:1.5; padding:16px 0; }
+.conoce-club details p { max-width:70ch; }
+.conoce-cierre { margin-bottom:24px; padding-top:28px; }
+
+/* Perfil: índices claros y grupos de información con peso diferente. */
+.cuenta-perfil { gap:32px 40px; grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
+.cuenta-perfil :is(h2,h3) { overflow-wrap:anywhere; }
+.cuenta-perfil > .perfil-indice { grid-column:1/-1; margin:0; padding-top:0; }
+.cuenta-perfil .casa-perfil-identidad { background:theme('colors.inicio-crema'); border-radius:theme('borderRadius.inicio-tarjeta'); padding:28px; }
+.perfil-persona { display:flex; align-items:center; gap:16px; }
+.perfil-inicial { display:grid; place-items:center; flex-shrink:0; width:60px; height:60px; border-radius:theme('borderRadius.full'); background:theme('colors.inicio-rosa'); font-family:theme('fontFamily.inicio-titular'); font-size:1.75rem; }
+.perfil-persona > div { min-width:0; }
+.cuenta-perfil .perfil-persona h2 { font-size:clamp(1.5rem,3vw,2rem); margin-top:6px; }
+.perfil-contacto { border-top:1px solid theme('colors.filete'); padding-top:20px; }
+.perfil-contacto > div { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:12px; }
+.perfil-contacto dd { overflow-wrap:anywhere; }
+.cuenta-perfil .perfil-preferencias { padding:12px 0; }
+.cuenta-perfil .perfil-preferencias > div > div { border:0; border-bottom:1px solid theme('colors.filete'); border-radius:0; padding:16px 0; background:transparent; }
+.cuenta-perfil .perfil-preferencias .t-caption { font-size:.8125rem; line-height:1.7; }
+.cuenta-perfil .perfil-privacidad > .casa-tarjeta { padding:20px 0; background:transparent; border:0; border-top:1px solid theme('colors.filete'); }
+.cuenta-perfil .casa-nivel { border-radius:theme('borderRadius.inicio-tarjeta'); background:theme('colors.inicio-rosa'); padding:28px; }
+.cuenta-perfil .perfil-cuenta > .casa-tarjeta { border:0; border-top:1px solid theme('colors.filete'); background:transparent; padding:20px 0; }
+.cuenta-perfil .casa-invitacion { background:transparent; border:0; border-top:1px solid theme('colors.filete'); padding:24px 0; }
+.cuenta-perfil .perfil-sesion { padding:24px; background:theme('colors.inicio-crema'); border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.inicio-control'); }
+.cuenta-perfil .t-seccion { font-size:1.5rem; font-weight:400; line-height:1.3; }
+.cuenta-perfil .t-caption { font-size:.8125rem; }
+.cuenta-atencion { background:theme('colors.inicio-crema'); border-color:theme('colors.filete'); border-radius:theme('borderRadius.inicio-control'); }
+.cuenta-atencion form { padding-top:20px; border-top:1px solid theme('colors.filete'); }
+.cuenta-atencion :is(textarea,select),.cuenta-editor :is(input:not([type=checkbox]):not([type=radio]),select) { border-radius:theme('borderRadius.inicio-control'); min-height:48px; font-size:1rem; }
+.cuenta-editor fieldset { border-radius:theme('borderRadius.inicio-control'); }
+.cuenta-filtros { padding-bottom:16px; border-bottom:1px solid theme('colors.filete'); }
+.cuenta-filtros button { transition:background-color 160ms ease,color 160ms ease; }
+.cuenta-filtros button[aria-pressed=true] { background:theme('colors.inicio-borgona'); color:theme('colors.inicio-crema'); }
+.cuenta-movimientos { animation:cuenta-aparecer 180ms ease-out; }
+@keyframes cuenta-aparecer { from { opacity:.65; transform:translateY(3px); } to { opacity:1; transform:translateY(0); } }
+@media(max-width:1100px) { .mi-club-beneficios { grid-template-columns:minmax(0,1fr); } .conoce-club .conoce-portada { gap:24px; } .perfil-contacto > div { grid-template-columns:minmax(0,1fr); gap:4px; } }
+@media(max-width:800px) {
+ .cuenta-club-portada { grid-template-columns:minmax(0,1fr); gap:20px; padding-top:4px; }
+ .cuenta-club-pase { flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:space-between; max-width:none; }
+ .cuenta-club-estado { text-align:left; flex:1; }
+ .cuenta-club-pase .casa-boton { flex-shrink:0; max-width:100%; }
+ .mi-club-columnas { grid-template-columns:minmax(0,1fr); gap:32px; margin-top:24px; }
+ .mi-club .cuenta-beneficio { padding:20px; }
+ .mi-club .cuenta-sellos > .casa-tarjeta { padding:22px; }
+ .cuenta-saldo { padding:22px; }
+ .conoce-club .conoce-portada { grid-template-columns:minmax(0,1fr); gap:20px; }
+ .conoce-portada-foto img { max-height:260px; object-fit:cover; }
+ .conoce-portada-foto figcaption { margin-top:8px; }
+ .conoce-comparacion { margin-top:20px; }
+ .conoce-club .conoce-fundadora { padding:24px; }
+ .conoce-club .conoce-seccion { padding-top:32px; }
+ .cuenta-perfil { gap:28px; }
+ .cuenta-perfil .casa-perfil-identidad { padding:22px; }
+ .cuenta-perfil .perfil-sesion { padding:20px; }
+ .cuenta-atajos { gap:4px; }
+ .cuenta-atajos a { padding:10px 12px; }
+ .cuenta-perfil .perfil-preferencias { grid-column:auto; }
+}
+@media(max-width:380px) {
+ .cuenta-club-pase { flex-wrap:wrap; }
+ .cuenta-club-pase .casa-boton { width:100%; }
+ .cuenta-sellos .club-sellos { gap:4px; }
+ .mi-club .cuenta-sellos > .casa-tarjeta { padding:18px; }
+ .perfil-inicial { width:48px; height:48px; }
+ .perfil-persona { gap:12px; }
+ .cuenta-atajos a { padding:8px 10px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .cuenta-atajos a,.cuenta-filtros button,.conoce-club .conoce-boton,.mi-club-detalles summary::after,.conoce-club summary::after { transition:none; }
+ .cuenta-movimientos,.mi-club-detalles[open] > :not(summary),.conoce-club details[open] > :not(summary) { animation:none; }
+}

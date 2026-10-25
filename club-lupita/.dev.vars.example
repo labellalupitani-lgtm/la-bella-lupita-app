@@ -1,0 +1,10 @@
+# Plantilla opcional para una API conectada a servicios. No necesaria para preview:diseno.
+# Copiar a .dev.vars (ignorado por Git) y completar por un canal privado.
+DATABASE_URL=""
+DEMO_DATABASE_URL=""
+SESION_SECRETO=""
+PERSONAL_CREDENCIAL_SECRETO=""
+PERSONAL_MFA_SECRETO=""
+CASA_SECRETO=""
+RESEND_API_KEY=""
+NEON_CUOTA_API_KEY=""

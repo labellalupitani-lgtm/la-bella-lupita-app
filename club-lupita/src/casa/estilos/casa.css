@@ -1,0 +1,419 @@
+/* Club Lupita · un lugar personal para pedir, volver y disfrutar.
+   Colores y radios resueltos desde el sistema compartido de Tailwind. */
+body { background:theme('colors.avena'); }
+button, a, input, select { -webkit-tap-highlight-color:transparent; }
+button { touch-action:manipulation; }
+.casa-aplicacion { padding-left:224px; min-height:100dvh; }
+.casa-contenido { min-width:0; max-width:1600px; margin:auto; }
+.marco { max-width:1360px; padding-left:36px; padding-right:36px; }
+.casa-cabecera { position:fixed; inset:0 auto 0 0; width:224px; z-index:40; background:theme('colors.papel'); color:theme('colors.tinta'); border-right:1px solid theme('colors.filete'); }
+.casa-cabecera-interior { display:flex; flex-direction:column; height:100%; overflow-y:auto; padding:34px 18px 18px; }
+.casa-marca { width:154px; min-height:76px; margin:0 auto 38px; flex-shrink:0; }
+.casa-marca img { width:154px; height:76px; object-fit:contain;  }
+.casa-nav-etiqueta { font-size:12px; letter-spacing:.16em; padding:0 15px; margin-bottom:15px; color:theme('colors.tinta-media'); }
+.casa-nav-amplia { display:flex; flex-direction:column; gap:7px; width:100%; }
+.casa-nav-amplia a { display:flex; gap:13px; align-items:center; min-height:49px; padding:12px 15px; border-radius:theme('borderRadius.troquel'); text-align:left; transition:background 160ms,color 160ms; color:theme('colors.tinta-media'); font-size:14px; }
+.casa-nav-amplia a:hover { background:theme('colors.banda-velo'); color:theme('colors.tinta'); }
+.casa-nav-amplia a[aria-current=page] { font-weight:600; background:theme('colors.banda-velo'); color:theme('colors.tinta'); }
+.casa-nav-cantidad { margin-left:auto; display:grid; place-items:center; min-width:22px; height:22px; padding:0 5px; border-radius:theme('borderRadius.full'); background:theme('colors.rosa'); color:theme('colors.banda-honda'); font-size:12px; }
+.casa-reservar { display:flex; align-items:center; gap:12px; margin-top:21px; padding:20px 13px; width:100%; min-height:49px; font-size:12px; border-top:1px solid theme('colors.filete'); }
+.casa-reservar > .ico:last-child { margin-left:auto; }
+.casa-reservar:hover,.casa-reservar[aria-current=page] { color:theme('colors.tinta'); }
+.casa-nav-final { margin-top:auto; padding-top:48px; width:100%; }
+.casa-nav-invitacion { border-radius:theme('borderRadius.editorial'); padding:20px 16px 10px; background:theme('colors.banda-velo'); border:1px solid theme('colors.filete'); }
+.casa-nav-invitacion > .ico { color:theme('colors.tinta'); }
+.casa-nav-invitacion p { margin:14px 0 8px; font-family:theme('fontFamily.titular'); font-size:19px; line-height:1.45; }
+.casa-nav-invitacion > span { font-size:12px; line-height:1.7; display:block; color:theme('colors.tinta-media'); }
+.casa-nav-invitacion a { display:flex; gap:10px; align-items:center; font-size:12px; min-height:44px; margin-top:8px; color:theme('colors.tinta'); }
+.casa-nav-perfil { display:flex; align-items:center; width:100%; gap:10px; margin-top:20px; padding-top:20px; text-align:left; border-top:1px solid theme('colors.filete'); }
+.casa-avatar { display:grid; place-items:center; width:38px; height:38px; flex-shrink:0; border-radius:theme('borderRadius.full'); background:theme('colors.banda-velo'); color:theme('colors.banda-honda'); font-size:16px; font-weight:500; overflow:hidden; }
+.casa-nav-perfil > span:nth-child(2) { min-width:0; flex:1; }
+.casa-nav-perfil strong { display:block; font-size:12px; font-weight:500; overflow:hidden; text-overflow:ellipsis; }
+.casa-nav-perfil small { display:block; font-size:12px; margin-top:4px; color:theme('colors.tinta-media'); }
+.casa-nav-movil { display:none; }
+.casa-saludo { position:relative; background:transparent; }
+.casa-saludo-interior { display:flex; justify-content:space-between; align-items:center; gap:20px; max-width:1360px; margin:auto; padding:12px 20px; }
+.casa-saludo-texto > p:first-child { font-size:12px; letter-spacing:.17em; font-weight:600; color:theme('colors.tinta-media'); margin-bottom:9px; }
+.casa-saludo-texto > span { line-height:1.3; color:theme('colors.banda-honda'); font-family:theme('fontFamily.texto'); font-size:16px; letter-spacing:0; }
+.casa-saludo-texto > p:last-child { font-size:12px; color:theme('colors.tinta-media'); margin-top:8px; }
+.casa-saludo-perfil { display:flex; align-items:center; gap:11px; text-align:left; min-height:48px; border:1px solid theme('colors.filete'); background:theme('colors.papel'); border-radius:theme('borderRadius.full'); padding:7px 13px 7px 7px; }
+.casa-saludo-perfil strong { display:block; font-weight:500; font-size:12px; }
+.casa-saludo-perfil small { display:block; font-size:12px; margin-top:3px; color:theme('colors.tinta-media'); }
+.casa-boton { flex-shrink:1; overflow-wrap:anywhere; border-radius:theme('borderRadius.troquel'); font-size:14px; font-weight:600; min-height:48px; }
+.casa-boton .ico { flex-shrink:0; }
+.casa-boton:hover { filter:brightness(.96); }
+.casa-boton:active { transform:translateY(1px); }
+.casa-tarjeta { padding:22px; }
+.t-seccion { font-weight:400; border:0; padding-bottom:0; font-size:24px; color:theme('colors.banda-honda'); }
+.t-eyebrow,.t-etiqueta { font-size:12px; }
+.t-cuerpo { font-size:14px; line-height:1.7; }
+.casa-inicio { display:grid; grid-template-columns:minmax(0,1fr) 306px; gap:26px; align-items:start; padding-bottom:28px; }
+.casa-inicio-principal,.casa-inicio-personal { display:flex; flex-direction:column; gap:26px; min-width:0; }
+.casa-inicio-personal { gap:20px; }
+.casa-inicio-cafe { position:relative; overflow:hidden; isolation:isolate; border-radius:theme('borderRadius.editorial'); display:grid; grid-template-columns:1fr; background:theme('colors.papel'); color:theme('colors.tinta'); min-height:0; }
+.casa-inicio-cafe > img { inset:0; position:static; width:100%; height:auto; aspect-ratio:1.45; object-fit:cover; object-position:center; }
+.casa-cafe-texto { position:relative; padding:24px; background:theme('colors.banda-velo'); }
+.casa-cafe-etiqueta { display:flex; align-items:center; gap:8px; font-size:12px; letter-spacing:.13em; color:theme('colors.tinta-media'); }
+.casa-cafe-texto > p { color:theme('colors.tinta-media'); font-size:16px; line-height:1.5; }
+.casa-cafe-texto > button { gap:22px; padding:12px 20px; font-size:14px; width:100%; margin-top:20px; }
+.casa-accesos > ul { gap:10px; }
+.casa-accesos button { min-height:82px; border-radius:theme('borderRadius.editorial'); padding:14px 10px; gap:9px; align-items:center; background:theme('colors.papel'); }
+.casa-accesos button > .ico:first-child { font-size:23px; color:theme('colors.banda'); }
+.casa-accesos button > span:nth-child(2) { font-size:12px; font-weight:500; text-transform:none; letter-spacing:0; }
+.casa-accesos .casa-acceso-flecha { display:none; }
+.casa-seccion-cabecera { display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:18px; }
+.casa-sobretitulo { font-size:12px; letter-spacing:.14em; font-weight:600; color:theme('colors.tinta-media'); margin-bottom:7px; }
+.casa-seccion-cabecera h2 { font-family:theme('fontFamily.titular'); font-weight:400; font-size:22px; line-height:1.3; letter-spacing:-.03em; color:theme('colors.banda-honda'); }
+.casa-seccion-cabecera > button { display:flex; align-items:center; gap:8px; font-size:12px; min-height:44px; flex-shrink:0; color:theme('colors.banda'); }
+.casa-antojos-lista { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; }
+.casa-antojo { min-width:0; text-align:left; display:flex; flex-direction:column; background:theme('colors.papel'); border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.editorial'); overflow:hidden; padding:7px 7px 13px; transition:background 160ms; }
+.casa-antojo:hover { border-color:theme('colors.banda'); }
+.casa-antojo-foto { position:relative; display:block; width:100%; aspect-ratio:1.38; background:theme('colors.avena'); overflow:hidden; border-radius:theme('borderRadius.editorial'); }
+.casa-antojo-foto img { width:100%; height:100%; object-fit:cover; }
+.casa-antojo-foto > span { position:absolute; right:8px; bottom:8px; width:29px; height:29px; display:grid; place-items:center; background:theme('colors.papel'); border-radius:theme('borderRadius.full'); color:theme('colors.banda'); }
+.casa-antojo-nombre { padding:13px 5px 8px; font-size:12px; font-weight:500; line-height:1.5; }
+.casa-antojo-precio { padding:0 5px; display:flex; justify-content:space-between; gap:8px; width:100%; font-size:12px; font-weight:600; font-variant-numeric:tabular-nums; color:theme('colors.banda'); margin-top:auto; }
+.casa-antojo-precio small { font-size:12px; color:theme('colors.tinta-media'); font-weight:400; }
+.casa-cuenta { position:relative; padding:23px; border-radius:theme('borderRadius.editorial'); overflow:hidden; color:theme('colors.papel'); background:theme('colors.banda'); isolation:isolate; }
+.casa-cuenta::before,.casa-cuenta::after { content:''; position:absolute; width:260px; height:260px; border:1px solid theme('colors.papel / 12%'); border-radius:theme('borderRadius.full'); right:-160px; top:20px; z-index:-1; pointer-events:none; display:none; }
+.casa-cuenta::after { width:320px; height:320px; right:-180px; top:-10px; }
+.casa-cuenta-cabecera { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.casa-cuenta-cabecera > span { display:flex; align-items:center; gap:6px; font-size:12px; letter-spacing:.08em; color:theme('colors.rosa'); }
+.casa-cuenta h2 { font-size:12px; font-weight:400; margin-top:25px; color:theme('colors.papel / 80%'); }
+.casa-cuenta-saldo { font-family:theme('fontFamily.titular'); font-size:34px; letter-spacing:-.035em; margin-top:7px; line-height:1.3; font-variant-numeric:tabular-nums; overflow-wrap:anywhere; }
+.casa-cuenta-disponible { font-size:12px; color:theme('colors.papel / 75%'); margin-top:5px; }
+.casa-cuenta-bono { font-size:12px; line-height:1.5; color:theme('colors.papel / 85%'); margin-top:10px; }
+.casa-cuenta-acciones { display:flex; gap:9px; margin-top:23px; }
+.casa-cuenta-acciones > button { flex:1 1 0; min-width:0; padding:9px 6px; gap:5px; white-space:normal; font-size:14px; }
+.casa-cuenta-acciones .ico { font-size:17px !important; }
+.casa-cuenta-acciones > .border { border-color:theme('colors.papel / 50%'); }
+.casa-cuenta-firma { display:flex; justify-content:space-between; font-size:12px; letter-spacing:.17em; border-top:1px solid theme('colors.papel / 20%'); margin-top:22px; padding-top:15px; color:theme('colors.papel / 76%'); }
+.casa-fidelidad { border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.editorial'); background:theme('colors.papel'); padding:20px; }
+.casa-fidelidad-titulo { display:flex; align-items:center; gap:9px; margin-bottom:23px; flex-wrap:wrap; }
+.casa-icono-suave { width:36px; height:36px; display:grid; place-items:center; background:theme('colors.banda-velo'); border-radius:theme('borderRadius.troquel'); color:theme('colors.banda'); flex-shrink:0; }
+.casa-fidelidad h2 { font-size:13px; font-weight:600; }
+.casa-fidelidad-titulo p { font-size:12px; color:theme('colors.tinta-media'); margin-top:5px; }
+.casa-fidelidad-contador { margin-left:auto; font-family:theme('fontFamily.titular'); color:theme('colors.banda'); font-size:26px; white-space:nowrap; }
+.casa-fidelidad-contador small { font-family:theme('fontFamily.texto'); font-size:12px; color:theme('colors.tinta-media'); margin-left:3px; }
+.casa-fidelidad ul { gap:10px 8px; }
+.casa-fidelidad li > span { width:38px; height:38px; }
+.casa-fidelidad li > .bg-achiote { background:theme('colors.banda'); }
+.casa-fidelidad li > .border-dashed { border-width:1px; }
+.casa-fidelidad li .ico { font-size:18px !important; }
+.casa-fidelidad > div > p { font-size:12px; line-height:1.65; }
+.casa-premio-listo { background:theme('colors.banda-velo'); padding:12px; border-radius:theme('borderRadius.troquel'); margin-top:18px; }
+.casa-premio-listo > p { display:flex; align-items:center; gap:7px; font-size:12px; margin-bottom:9px; color:theme('colors.banda-honda'); }
+.casa-premio-listo .casa-boton { font-size:12px; padding:8px 9px; }
+.casa-bolsa-lista { display:flex; align-items:center; gap:9px; text-align:left; width:100%; margin-top:18px; padding-top:17px; border-top:1px solid theme('colors.filete'); color:theme('colors.banda'); min-height:52px; }
+.casa-bolsa-lista > span:nth-child(2) { flex:1; font-size:12px; }
+.casa-bolsa-lista small { display:block; font-size:12px; color:theme('colors.tinta-media'); margin-top:4px; }
+.casa-rincon { position:relative; overflow:hidden; border-radius:theme('borderRadius.editorial'); min-height:174px; text-align:left; color:theme('colors.papel'); isolation:isolate; }
+.casa-rincon > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; }
+.casa-rincon::after { content:''; position:absolute; inset:0; background:linear-gradient(0deg,theme('colors.banda-honda / 98%'),theme('colors.banda-honda / 20%')); z-index:-1; }
+.casa-rincon > span { display:flex; flex-direction:column; padding:25px 22px 20px; }
+.casa-rincon small { font-size:12px; letter-spacing:.11em; }
+.casa-rincon strong { font-family:theme('fontFamily.titular'); font-weight:400; font-size:23px; margin:14px 0 15px; }
+.casa-rincon > span > span { display:flex; justify-content:space-between; gap:12px; font-size:12px; }
+.casa-novedades .t-seccion { font-size:22px; margin-bottom:18px; }
+.casa-novedades ul { display:grid; grid-template-columns:1fr 1fr; gap:13px; }
+.casa-novedades ul > li { margin:0; min-width:0; }
+.casa-novedades article { height:100%; padding:20px; }
+.casa-novedades h3 { font-size:18px; line-height:1.4; font-weight:400; }
+.casa-novedades article .t-caption { font-size:12px; line-height:1.7; }
+.casa-novedades article button { font-size:12px; color:theme('colors.banda'); }
+.casa-pie { grid-column:1/-1; display:flex; justify-content:space-between; gap:12px; border-top:1px solid theme('colors.filete'); padding-top:20px; color:theme('colors.tinta-media'); font-size:12px; }
+.casa-subcabecera { position:relative; background:transparent; }
+.casa-subcabecera > div { max-width:1360px; margin:auto; padding:25px 28px 10px; grid-template-columns:44px 1fr 44px; }
+.casa-subcabecera button,.casa-subcabecera h1 { color:theme('colors.banda-honda'); }
+.casa-subcabecera h1 { font-family:theme('fontFamily.titular'); font-size:25px; font-weight:400; text-align:left; padding-left:10px; }
+.casa-subcabecera button:hover { background:theme('colors.banda-velo'); }
+.casa-contexto { background:transparent; }
+.casa-contexto p { max-width:1360px; padding:8px 36px; color:theme('colors.tinta-media'); font-size:12px; text-transform:none; letter-spacing:0; font-weight:400; }
+.casa-hoja { max-width:520px; margin:auto 16px auto auto; max-height:calc(100dvh - 32px); min-height:0; border-radius:theme('borderRadius.hoja'); border:1px solid theme('colors.filete'); padding:32px; }
+.casa-hoja > h2 { font-size:30px; font-weight:400; color:theme('colors.banda'); }
+.casa-perfil { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:28px; align-items:start; padding-top:25px; }
+.casa-perfil > * { min-width:0; overflow-wrap:anywhere; }
+.casa-nav-perfil > span:nth-child(2) { min-width:0; overflow-wrap:anywhere; }
+.casa-nav-perfil strong { overflow-wrap:anywhere; }
+.casa-perfil-identidad { padding:24px; background:theme('colors.papel'); border-radius:theme('borderRadius.editorial'); border:1px solid theme('colors.filete'); }
+.casa-perfil-identidad h2 { font-size:32px; font-weight:400; line-height:1.2; }
+.casa-nivel { padding:28px; background:theme('colors.banda-velo'); border-radius:theme('borderRadius.editorial'); }
+.casa-perfil > section[aria-labelledby=perfil-casa] { grid-column:2; }
+.casa-invitacion { border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.editorial'); padding:24px; background:theme('colors.papel'); }
+.casa-perfil > div:last-child { grid-column:1/-1; max-width:440px; width:100%; }
+.casa-perfil section[aria-labelledby=perfil-casa] > div > div { border-radius:theme('borderRadius.editorial'); }
+.casa-tienda { display:grid; grid-template-columns:1fr 1.1fr; gap:30px; align-items:start; padding-top:25px; }
+.casa-tienda > header h2 { font-size:clamp(32px,3.2vw,46px); font-weight:400; line-height:1.14; color:theme('colors.banda'); margin:18px 0; }
+.casa-tienda > header > p:last-child { max-width:42ch; }
+.casa-tienda > section[aria-labelledby=tienda-reserva] { grid-column:2; grid-row:1/3; }
+.casa-producto-cosecha { padding:28px; background:theme('colors.papel'); border-radius:theme('borderRadius.editorial'); }
+.casa-producto-cosecha h4 { font-size:26px; font-weight:400; }
+.casa-producto-cosecha > div:first-child { flex-wrap:wrap; }
+.casa-producto-cosecha > div:first-child > span { text-align:left; }
+.casa-producto-cosecha > div:first-child > span > span { font-size:38px; font-weight:400; }
+.casa-tienda > section[aria-labelledby=tienda-encargo],.casa-tienda > div:last-child { grid-column:1/-1; }
+.casa-tienda > section[aria-labelledby=tienda-encargo] > div { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.casa-tienda > section[aria-labelledby=tienda-encargo] > div > button { margin:0; border-radius:theme('borderRadius.editorial'); background:theme('colors.papel'); }
+.pase-cuerpo { min-height:310px; }
+.pase-cara { padding:24px; display:flex; flex-direction:column; justify-content:space-between; gap:12px; overflow-wrap:anywhere; }
+.pase-cara > p { margin:0; }
+.pase-identidad { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.pase-identidad img { object-fit:contain; width:125px; height:60px;  }
+.pase-identidad span { font-family:theme('fontFamily.titular'); font-size:26px; line-height:1.1; color:theme('colors.tinta'); }
+.pase-cara .pase-numero { font-size:32px; font-weight:400; }
+/* La carta mantiene catálogo, búsqueda, selección y pedido. */
+/* Mi Club y reservas comparten la misma escala y superficies. */
+.casa-titular { font-size:clamp(32px,3.3vw,46px); }
+.casa-subtitular { font-size:30px; }
+.club-apertura { padding-bottom:32px; background:theme('colors.banda'); color:theme('colors.papel'); padding:32px; gap:32px; }
+.club-ritual { border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.editorial'); padding:25px; background:theme('colors.papel'); color:theme('colors.tinta'); }
+.club-nota,.club-premio > p,.club-proxima > p { font-size:16px; }
+.club-continuacion { gap:32px; }
+.reserva-casa { gap:32px; padding-top:22px; }
+.reserva-lugar { top:30px; border-radius:theme('borderRadius.editorial'); }
+.reserva-lugar > img { height:350px; }
+.reserva-lugar-pie > h2 { font-size:31px; }
+.reserva-lugar-tipografico { min-height:430px; }
+.reserva-lugar-tipografico > h2 { font-size:52px; }
+.reserva-formulario { background:theme('colors.papel'); padding:26px; border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.editorial'); }
+.reserva-formulario .casa-titular { font-size:34px; margin-bottom:22px; }
+.reserva-zonas { gap:8px; }
+.reserva-zonas li > button { border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.troquel'); padding:14px; }
+.reserva-cierre { left:224px; }
+.reserva-cierre-interior { max-width:1100px; }
+.reserva-grupo { grid-template-columns:1fr; }
+.reserva-dias { gap:4px; }
+.reserva-dias button { padding-left:2px; padding-right:2px; }
+@media(min-width:1440px) {
+ .casa-inicio { grid-template-columns:minmax(0,1fr) 330px; gap:30px; }
+ .casa-accesos button { flex-direction:row; min-height:74px; padding:14px; gap:10px; }
+ .casa-accesos .casa-acceso-flecha { display:block; margin-left:auto; }
+ .casa-accesos button > span:nth-child(2) { font-size:12px; }
+ .casa-inicio-cafe { display:grid; grid-template-columns:1fr; background:theme('colors.papel'); color:theme('colors.tinta'); min-height:0; }
+ .casa-cafe-texto { padding:24px; background:theme('colors.banda-velo'); }
+ .casa-cuenta { padding:26px; }
+ .casa-cuenta-saldo { font-size:38px; }
+ .casa-antojo-nombre { font-size:12px; }
+}
+@media(max-width:1120px) and (min-width:900px) {
+ .marco { padding-left:24px; padding-right:24px; }
+ .casa-saludo-interior { padding:12px 20px; }
+ .casa-saludo-perfil { display:none; }
+ .casa-inicio { grid-template-columns:minmax(0,1fr); }
+ .casa-inicio-personal { display:grid; grid-template-columns:1fr 1fr; align-items:start; }
+ .casa-rincon { grid-column:1/-1; }
+ .casa-cafe-texto { padding:24px; background:theme('colors.banda-velo'); }
+ .reserva-casa { grid-template-columns:1fr; }
+ .reserva-lugar { position:static; }
+ .club-apertura,.club-continuacion { grid-template-columns:1fr; }
+}
+@media(max-width:899px) {
+ .casa-aplicacion { padding-left:0; }
+ .marco { padding-left:20px; padding-right:20px; }
+ .casa-cabecera { position:relative; width:100%; inset:auto; padding-top:env(safe-area-inset-top); z-index:20; background:theme('colors.papel'); color:theme('colors.tinta'); border-right:1px solid theme('colors.filete'); }
+ .casa-cabecera-interior { height:auto; min-height:78px; padding:15px 20px 8px; flex-direction:row; align-items:center; justify-content:space-between; gap:15px; overflow:visible; flex-wrap:wrap; }
+ .casa-marca { margin:0; width:105px; min-height:48px; }
+ .casa-marca img { width:105px; height:50px;  }
+ .casa-nav-amplia,.casa-nav-etiqueta,.casa-nav-final { display:none; }
+ .casa-reservar { width:auto; min-height:44px; margin:0; border:1px solid theme('colors.contorno'); border-radius:theme('borderRadius.full'); padding:9px 12px; font-size:12px; background:theme('colors.papel'); color:theme('colors.banda'); gap:7px; }
+ .casa-reservar > .ico:last-child { display:none; }
+ .casa-reservar:hover,.casa-reservar[aria-current=page] { background:theme('colors.banda-velo'); border-color:theme('colors.banda'); color:theme('colors.tinta'); }
+ .casa-nav-movil { display:block; background:theme('colors.papel'); border-top:1px solid theme('colors.filete'); }
+ .casa-nav-movil > ul { max-width:600px; }
+ .casa-nav-movil a { color:theme('colors.tinta-media'); border:0; padding-top:10px; gap:7px; min-height:72px; min-width:0; }
+ .casa-nav-movil a[aria-current=page] { color:theme('colors.banda'); }
+ .casa-nav-movil a[aria-current=page]::before { content:''; position:absolute; top:5px; z-index:-1; border-radius:theme('borderRadius.troquel'); background:theme('colors.rosa'); width:34px; height:34px; }
+ .casa-nav-movil a > span:nth-child(2) { text-transform:none; letter-spacing:0; font-size:12px; font-weight:500; }
+ .casa-nav-movil a:hover { color:theme('colors.banda'); }
+ .casa-saludo-interior { padding:12px 20px; gap:12px; }
+ .casa-saludo-texto > span { font-family:theme('fontFamily.texto'); font-size:16px; letter-spacing:0; }
+ .casa-saludo-texto > p:first-child { font-size:12px; }
+ .casa-saludo-texto > p:last-child { font-size:12px; }
+ .casa-saludo-perfil { padding:0; border:0; background:transparent; min-width:44px; justify-content:center; }
+ .casa-saludo-perfil > span:nth-child(2),.casa-saludo-perfil > .ico { display:none; }
+ .casa-inicio { display:flex; flex-direction:column; gap:25px; padding-bottom:95px; }
+ .casa-inicio > * { width:100%; min-width:0; }
+ .casa-inicio-principal,.casa-inicio-personal { display:contents; }
+ .casa-inicio-cafe { order:1; display:grid; grid-template-columns:1fr; background:theme('colors.papel'); color:theme('colors.tinta'); min-height:0; }
+ .casa-accesos { order:2; }
+ .casa-cuenta { order:3; }
+ .casa-fidelidad { order:4; padding:20px; }
+ .casa-antojos { order:5; }
+ .casa-rincon { order:6; width:100%; }
+ .casa-novedades { order:7; }
+ .casa-pie { order:8; }
+ .casa-inicio-cafe { display:grid; grid-template-columns:1fr; background:theme('colors.papel'); color:theme('colors.tinta'); min-height:0; }
+ .casa-cafe-texto { padding:24px; background:theme('colors.banda-velo'); }
+ .casa-inicio-cafe > img { position:static; width:100%; height:auto; aspect-ratio:1.45; object-fit:cover; object-position:center; }
+ .casa-cafe-etiqueta { font-size:12px; letter-spacing:.09em; gap:6px; color:theme('colors.tinta-media'); }
+ .casa-cafe-texto > p { color:theme('colors.tinta-media'); font-size:16px; line-height:1.5; }
+ .casa-cafe-texto > button { font-size:14px; width:100%; margin-top:20px; }
+ .casa-accesos > ul { gap:8px; }
+ .casa-accesos button { padding:12px 5px; min-height:82px; }
+ .casa-accesos button > span:nth-child(2) { font-size:12px; line-height:1.4; }
+ .casa-seccion-cabecera h2 { font-size:22px; }
+ .casa-seccion-cabecera { align-items:end; }
+ .casa-seccion-cabecera > button { font-size:12px; gap:4px; }
+ .casa-antojos-lista { gap:9px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .casa-antojo:last-child { display:none; }
+ .casa-antojo-foto { aspect-ratio:1.2; }
+ .casa-antojo-nombre { font-size:12px; }
+ .casa-antojo-precio { font-size:12px; }
+ .casa-antojo-precio small { font-size:12px; }
+ .casa-novedades ul { grid-template-columns:1fr 1fr; gap:10px; }
+ .casa-novedades article { padding:17px; }
+ .casa-novedades h3 { font-size:17px; }
+ .casa-novedades article .t-caption { font-size:12px; }
+ .casa-cuenta { padding:25px; }
+ .casa-cuenta-saldo { font-size:39px; }
+ .casa-cuenta-acciones > button { white-space:normal; font-size:14px; }
+ .casa-cuenta-cabecera > span { font-size:12px; }
+ .casa-cuenta-disponible,.casa-cuenta-bono { font-size:12px; }
+ .casa-cuenta h2 { font-size:13px; }
+ .casa-fidelidad { padding:20px; }
+ .casa-fidelidad-titulo { gap:12px; }
+ .casa-fidelidad h2 { font-size:15px; }
+ .casa-fidelidad-titulo p { font-size:12px; }
+ .casa-fidelidad li > span { width:43px; height:43px; }
+ .casa-fidelidad > div > p { font-size:12px; }
+ .casa-premio-listo > p,.casa-bolsa-lista > span:nth-child(2) { font-size:12px; }
+ .casa-premio-listo .casa-boton { font-size:12px; }
+ .casa-rincon { min-height:200px; }
+ .casa-pie { flex-direction:column; gap:8px; }
+ .casa-subcabecera > div { padding:12px 12px 6px; }
+ .casa-subcabecera h1 { font-size:23px; }
+ .casa-contexto p { padding:8px 20px; }
+ .casa-hoja { min-height:0; max-height:calc(100dvh - 12px); margin:auto auto 0; padding:26px 20px max(24px,env(safe-area-inset-bottom)); max-width:610px; border-radius:theme('borderRadius.hoja') theme('borderRadius.hoja') 0 0; }
+ .casa-hoja > h2 { font-size:28px; }
+ .casa-perfil,.casa-tienda { display:flex; flex-direction:column; gap:24px; }
+ .casa-perfil > *,.casa-tienda > * { width:100%; min-width:0; }
+ .casa-tienda > section[aria-labelledby=tienda-encargo] > div { display:flex; flex-direction:column; gap:16px; }
+ .casa-nivel,.casa-producto-cosecha { padding:22px; }
+ .casa-tienda > header h2 { font-size:37px; }
+ .casa-titular { font-size:36px; }
+ .casa-subtitular { font-size:28px; }
+ .club-ritual { padding:22px; }
+ .club-apertura,.club-continuacion,.reserva-casa { grid-template-columns:1fr; gap:25px; }
+ .reserva-lugar { position:static; }
+ .reserva-lugar > img { height:220px; }
+ .reserva-lugar-tipografico { min-height:300px; }
+ .reserva-lugar-tipografico > h2 { font-size:40px; }
+ .reserva-formulario { padding:20px; }
+ .reserva-formulario .casa-titular { font-size:30px; }
+ .reserva-cierre { left:0; }
+ .reserva-grupo { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:380px) {
+ .marco { padding-left:16px; padding-right:16px; }
+ .casa-saludo-interior { padding-left:16px; padding-right:16px; }
+ .casa-saludo-texto > span { font-family:theme('fontFamily.texto'); font-size:16px; letter-spacing:0; }
+ .casa-cafe-texto { padding:24px; background:theme('colors.banda-velo'); }
+ .casa-seccion-cabecera h2 { font-size:20px; }
+ .casa-fidelidad { padding:20px; }
+ .casa-fidelidad li > span { width:36px; height:36px; }
+ .casa-fidelidad-titulo { gap:8px; }
+ .casa-fidelidad h2 { font-size:13px; }
+ .casa-icono-suave { width:30px; height:30px; }
+ .casa-fidelidad-titulo p { font-size:12px; }
+ .casa-cuenta { padding:21px; }
+ .casa-cuenta-acciones > button { white-space:normal; font-size:14px; }
+ .casa-novedades ul { grid-template-columns:1fr; }
+ .reserva-grupo { grid-template-columns:1fr; }
+ .reserva-formulario { padding:16px; }
+}
+@media(prefers-reduced-motion:no-preference) {
+ .casa-inicio-cafe,.casa-inicio-personal,.casa-antojos { animation:club-entrada 450ms ease-out both; }
+ .casa-inicio-personal { animation-delay:70ms; }
+ .casa-antojos { animation-delay:120ms; }
+ @keyframes club-entrada { from { transform:translateY(8px); } to { transform:translateY(0); } }
+}
+@media(prefers-reduced-motion:reduce) {
+ .casa-hoja,.casa-boton,.casa-antojo { animation:none; transition:none; }
+ .casa-boton:active { transform:none; }
+}
+
+
+@media (min-width:900px) and (max-height:820px) { .casa-nav-invitacion { display:none; } .casa-nav-final { padding-top:20px; } }
+
+/* El orden de lectura y teclado coincide con la secuencia móvil. */
+@media(min-width:1121px) {
+ .casa-inicio { grid-template-areas:'hero wallet' 'quick stamps' 'food stamps' 'news place' 'footer footer'; }
+ .casa-inicio > .casa-inicio-cafe { grid-area:hero; }
+ .casa-inicio > .casa-accesos { grid-area:quick; }
+ .casa-inicio > .casa-cuenta { grid-area:wallet; }
+ .casa-inicio > .casa-fidelidad { grid-area:stamps; }
+ .casa-inicio > .casa-antojos { grid-area:food; }
+ .casa-inicio > .casa-rincon { grid-area:place; }
+ .casa-inicio > .casa-novedades { grid-area:news; }
+ .casa-inicio > .casa-pie { grid-area:footer; }
+}
+@media(max-width:1120px) and (min-width:900px) {
+ .casa-inicio { display:flex; flex-direction:column; }
+ .casa-inicio > * { width:100%; }
+}
+
+/* Bienvenida: identidad, producto y acceso en una sola lectura. */
+.casa-entrada { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:auto 1fr; min-height:100dvh; background:theme('colors.avena'); color:theme('colors.tinta'); }
+.entrada-marca { grid-column:2; display:flex; align-items:center; gap:24px; padding:38px clamp(32px,5vw,96px) 20px; }
+.entrada-marca > img { width:132px; height:auto; flex-shrink:0; }
+.entrada-marca > div { border-left:1px solid theme('colors.filete'); padding-left:24px; }
+.entrada-marca span { display:block; font-size:14px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; }
+.entrada-marca p { max-width:22ch; margin-top:5px; font-size:12px; line-height:1.5; color:theme('colors.tinta-media'); }
+.entrada-foto { grid-column:1; grid-row:1 / 3; position:relative; min-height:100dvh; overflow:hidden; }
+.entrada-foto > img { position:absolute; width:100%; height:100%; object-fit:cover; object-position:48% center; }
+.entrada-foto figcaption { position:absolute; left:36px; bottom:36px; padding:12px 18px; background:theme('colors.avena'); color:theme('colors.tinta'); font-family:theme('fontFamily.titular'); font-size:19px; font-style:italic; }
+.entrada-contenido { grid-column:2; display:flex; align-items:center; padding:36px clamp(32px,5vw,96px) 56px; }
+.entrada-interior { width:100%; max-width:560px; margin-inline:auto; }
+.entrada-origen { font-size:12px; font-weight:600; line-height:1.6; letter-spacing:.12em; text-transform:uppercase; color:theme('colors.tinta-media'); }
+.entrada-contenido h1 { margin:20px 0 24px; font:400 clamp(40px,3.25vw,72px)/1.15 theme('fontFamily.titular'); letter-spacing:-.045em; }
+.entrada-contenido h1 em { font-weight:400; }
+.entrada-descripcion { max-width:46ch; font-size:17px; line-height:1.75; color:theme('colors.tinta-media'); }
+.entrada-beneficios { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:30px 0; padding-top:20px; border-top:1px solid theme('colors.filete'); }
+.entrada-beneficios li > span { display:block; margin-bottom:9px; font-size:11px; color:theme('colors.tinta-media'); }
+.entrada-beneficios strong { display:block; font-size:14px; font-weight:600; }
+.entrada-beneficios p { margin-top:4px; font-size:12px; line-height:1.6; color:theme('colors.tinta-media'); }
+.entrada-demo { font-size:12px; margin-bottom:10px; font-weight:500; }
+.entrada-acceso > .casa-boton { min-height:54px; font-size:15px; }
+.entrada-aviso { margin-top:12px; font-size:12px; line-height:1.6; color:theme('colors.tinta-media'); }
+.entrada-acceso > .t-caption { font-size:12px; text-align:left; line-height:1.6; }
+@media(min-width:1800px) {
+ .entrada-marca { justify-content:center; }
+}
+@media(max-width:899px) {
+ .casa-entrada { grid-template-columns:minmax(0,1fr); grid-template-rows:auto auto auto; }
+ .entrada-marca { grid-column:1; grid-row:1; padding:20px 24px; gap:20px; }
+ .entrada-marca > img { width:112px; }
+ .entrada-marca > div { padding-left:20px; }
+ .entrada-foto { grid-column:1; grid-row:2; min-height:0; height:clamp(180px,42vw,300px); }
+ .entrada-foto > img { object-position:center 42%; }
+ .entrada-foto figcaption { left:24px; bottom:16px; padding:8px 12px; font-size:15px; }
+ .entrada-contenido { grid-column:1; grid-row:3; padding:30px 24px 36px; padding-bottom:max(36px,env(safe-area-inset-bottom)); }
+ .entrada-contenido h1 { font-size:clamp(34px,7vw,52px); margin:16px 0 18px; }
+ .entrada-descripcion { font-size:16px; line-height:1.65; }
+ .entrada-beneficios { margin:24px 0; gap:12px; padding-top:16px; }
+}
+@media(max-width:360px) {
+ .entrada-marca { padding:16px 20px; gap:14px; }
+ .entrada-marca > img { width:95px; }
+ .entrada-marca > div { padding-left:14px; }
+ .entrada-marca span { font-size:12px; }
+ .entrada-contenido { padding-inline:20px; }
+ .entrada-contenido h1 { font-size:30px; }
+ .entrada-origen { font-size:12px; letter-spacing:.08em; }
+}
+
+.entrada-registro { display:flex; flex-direction:column; gap:16px; }
+.entrada-registro .t-seccion { font-size:24px; line-height:1.3; }
+.entrada-registro-ayuda { font-size:13px; line-height:1.65; color:theme('colors.tinta-media'); }
+.entrada-registro-acciones { display:flex; flex-wrap:wrap; gap:8px 20px; }
+.entrada-registro .casa-boton { min-height:48px; }
+.entrada-registro .casa-boton[aria-busy=true] { cursor:wait; }
+.entrada-registro + .entrada-muestra { margin-top:24px; padding-top:20px; border-top:1px solid theme('colors.filete'); }
+
+.casa-conocer-acceso { display:none; }
+.entrada-conocer { display:inline-flex; min-height:44px; align-items:center; padding:.75rem 0; text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:899px), (min-width:900px) and (max-height:820px) {
+ .casa-conocer-acceso { flex-shrink:0; width:100%; display:flex; gap:.5rem; align-items:center; justify-content:center; min-height:44px; padding:.5rem 1rem; text-decoration:underline; text-underline-offset:4px; border-top:1px solid theme('colors.filete'); }
+}
+
+@media(max-width:899px) { .casa-conocer-acceso:not(.es-club) { display:none; } }

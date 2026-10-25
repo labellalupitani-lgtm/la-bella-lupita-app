@@ -1,0 +1,56 @@
+{
+  "fecha": "2026-10-08 America/Managua",
+  "comandos": [
+    {
+      "cmd": "npm run check",
+      "exit": 0
+    },
+    {
+      "cmd": "npx vite build --outDir '../research_mi_club_2026-10-08/build'",
+      "exit": 0
+    },
+    {
+      "cmd": "npm test",
+      "exit": 0,
+      "archivosSuite": 10
+    }
+  ],
+  "ui": {
+    "motores": [
+      "edge",
+      "firefox"
+    ],
+    "escenariosPorMotor": 17,
+    "muestrasAxePorMotor": 19,
+    "violacionesNativas": 0,
+    "erroresPagina": 0
+  },
+  "backend": {
+    "escenarios": 14,
+    "comprobados": 14,
+    "tipo": "PGlite secuencial"
+  },
+  "frontendPublicado": [
+    {
+      "path": "/assets/principal-Cfxl5pt5.js",
+      "status": 200,
+      "bytes": 415080,
+      "sha256": "ef9810f90e45b6535c2831590b886140f9b138a67367402298ff65e0237c723a",
+      "igualALocal": true
+    },
+    {
+      "path": "/assets/principal-C3oGQIwt.css",
+      "status": 200,
+      "bytes": 73931,
+      "sha256": "60585a18d8e12446ed5bd6ecb14675fab2e99c4a0d8a66016f0b8a9df668f88c",
+      "igualALocal": true
+    }
+  ],
+  "limites": [
+    "Backend remoto no cotejado",
+    "Concurrencia real no probada",
+    "NVDA y VoiceOver no usados",
+    "No hay analítica, costos o entrevistas reales",
+    "No cambios productivos ni despliegue"
+  ]
+}

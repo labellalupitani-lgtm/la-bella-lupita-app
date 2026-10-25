@@ -1,0 +1,1174 @@
+MANUAL DE MARCA
+
+
+
+
+Cocina con alma.
+Café con historia.
+Identidad, voz y aplicaciones
+
+EDICIÓN 02 · OCTUBRE 2026
+     UN SISTEMA PARA CRECER
+
+
+
+
+     La marca,
+     de principio a fin.
+     04           Esencia e investigación
+     10           Identidad y usos del logo
+     16           Color y tipografía
+     22           Íconos, vectores y degradados
+     28           Fotografía, voz y web real
+     38           Aplicaciones y mockups
+     58           Atención y producción
+     62           Fuentes y guía rápida
+
+
+
+
+02    0 1 / ES EN C I A
+PLATAFORMA PROPUESTA
+
+
+
+
+Una mesa.
+Muchos buenos
+momentos.
+La Bella Lupita une cocina, café y cercanía en una experiencia que
+invita a hacer una pausa y compartir.
+
+
+
+
+Cálida                    Cuidada                  Cercana
+Recibimos con atención.   Cada detalle cuenta.     Hablamos con naturalidad.
+
+
+
+
+                                                              L A B EL L A L U PIT A   03
+     LA IDENTIDAD QUE YA EXISTE
+
+
+
+
+     Cocina con alma.
+     Café con historia.
+     Esta frase del sitio oficial es el punto de partida. La identidad reúne café,
+     cocina nicaragüense contemporánea y una mesa cercana.
+
+
+     01        Esencia
+               Hospitalidad cálida y cuidado en el detalle.
+     02        Promesa propuesta
+               Una pausa para comer bien, conversar y volver.
+     03        Diferencia
+               El rostro de Lupita y la unión de bistró y café.
+
+04    0 1 / ES EN C I A
+DEL CONCEPTO A LA EXPERIENCIA
+
+
+
+
+Cada contacto
+cuenta la misma historia.
+01       Antes de visitar
+         La carta informa con claridad y la fotografía muestra comida real.
+
+
+
+02       En la mesa
+         Menú, uniforme y atención transmiten el mismo cuidado.
+
+
+
+03       Al llevarse algo
+         El empaque protege, se reconoce y prolonga la experiencia.
+
+
+El posicionamiento y los criterios de esta página son propuestas de dirección de marca. Lema consultado en labellalupita.com/menu, 02.10.2026.
+
+
+                                                                                                                                          L A B EL L A L U PIT A   05
+     BENCHMARK CUALITATIVO
+
+
+
+
+     Cómo construyen
+     marca los referentes.
+     Cinco casos públicos del sector café y restauración permiten comparar normas,
+     fotografía y aplicaciones. Evaluamos prácticas de diseño; no ventas ni cuota de
+     mercado.
+
+
+     Starbucks                                                     Roles claros de tipografía, fotografía e ilustración. [S1–S3]
+
+
+     Blue Bottle                                                   Diseño esencial, materiales y hospitalidad. [S4]
+
+
+     Parla · Pentagram                                             Patrones y símbolos propios conectan los soportes. [S5]
+
+
+     Peach Coffee · Pentagram                                      Información de producto legible dentro de la identidad. [S6]
+
+
+     Baskin Robbins Brown                                          Una familia gráfica para empaque y espacio. [S7]
+
+     Fuentes: páginas oficiales de las marcas y casos publicados por Pentagram. Consulta: 02.10.2026. Identificadores completos en la página 62 y en FUENTES.md.
+
+
+06     0 2 / IN VES T I GA CI Ó N
+QUÉ SE ADOPTA EN LUPITA
+
+
+
+
+Coherencia que
+se puede repetir.
+01   Identidad
+     Un solo logo maestro, reserva y tamaños claros.
+02   Lectura
+     Jerarquía estable en carta, señalización y factura.
+03   Fotografía
+     Producto real, luz natural y disponibilidad revisada.
+04   Recursos
+     Íconos y vectores propios, con reglas de escala.
+05   Producción
+     Medidas y arte nativo junto a cada mockup.
+
+
+                                                             L A B EL L A L U PIT A   07
+     DEL ANÁLISIS A LAS REGLAS
+
+
+
+
+     Adoptar el criterio.
+     Conservar la identidad.
+     REFERENTE                                PRINCIPIO                                        APLICACIÓN EN LUPITA
+
+
+
+     Starbucks                                Roles definidos                                  Playfair expresa. Montserrat organiza.
+
+
+     Blue Bottle                              Material y contención                            Algodón, papel y luz creíbles.
+
+
+     Parla                                    Lenguaje propio                                  Familia de íconos y ondas originales.
+
+
+     Peach Coffee                             Claridad comercial                               Nombre, descripción y precio alineado.
+
+
+     B. Robbins Brown                         Coherencia física                                Una identidad en textil, papel y espacio.
+
+
+
+
+     Síntesis propia a partir de las fuentes [S1–S7]. No existe un único “mejor manual”: aquí se seleccionan principios aplicables al negocio.
+
+08     0 2 / IN VES T I GA CI Ó N
+RESULTADO DEL BENCHMARK
+
+
+
+
+Más real.
+Más útil. Más Lupita.
+01       Lo existente
+         Logo y paleta suministrados, fotos propias y capturas reales de la carta.
+
+
+02       Lo propuesto
+         Sistema gráfico, medidas de aplicación y escenas de producción.
+
+
+03       Lo operativo
+         Una lista de revisión para mantener fotos, precios y archivos vigentes.
+
+
+La investigación compara documentación pública de diseño. No incluye encuestas de consumidores ni resultados comerciales de las marcas.
+
+
+                                                                                                                                      L A B EL L A L U PIT A   09
+     IDENTIDAD
+
+
+
+
+     Un rostro
+     que se reconoce.
+
+
+
+
+     La firma reúne el retrato, el nombre y el descriptor Bistró-Café. Su dibujo original se conserva como
+     una unidad.
+
+10    0 3 / ID EN T I DAD
+VERSIONES DE USO
+
+
+
+
+  Firma principal                                                                            Símbolo contextual
+
+  60 mm / 280 px                                                                             20 mm / 96 px
+
+Mínimos propuestos. En digital, preferir 320 px para la firma. El símbolo requiere que
+el nombre aparezca cerca.
+
+
+No sustituir el lettering del logo por Playfair Display. Los tamaños dependen de la técnica y deben probarse.
+
+                                                                                                                L A B EL L A L U PIT A   11
+     CONSTRUCCIÓN
+
+
+
+
+     Espacio para
+     respirar.
+     x=H/4
+
+
+
+
+                                                      W = 2,11 H
+
+
+     Mantener la proporción original de la firma y una reserva mínima x alrededor. Ningún texto, borde ni
+     fotografía invade ese espacio.
+12    0 3 / ID EN T I DAD
+CRITERIO DE USO
+
+
+
+
+La forma importa.
+01   Conservar
+     Escala proporcional, contraste limpio y márgenes amplios.
+
+
+02   Dar reserva
+     Sobre una foto o fondo oscuro, colocar una cartela clara.
+
+
+03   Evitar
+     Estirar, inclinar, cambiar colores al azar o añadir contornos.
+
+
+04   Respetar
+     No separar letras, mover el retrato ni cambiar Bistró-Café.
+
+
+
+
+                                                                      L A B EL L A L U PIT A   13
+     EL LOGO NO SE ALTERA
+
+
+
+
+     Seis errores
+     que debemos evitar.
+
+
+     NO Deformar                                   NO Inclinar                                    NO Recortar
+
+
+
+
+                                                                                                                NUEVO
+     NO Perder contraste                           NO Añadir una caja invasiva                    NO Invadir la reserva
+
+
+
+
+     Las alteraciones se muestran únicamente como ejemplos de prohibición. Mantener el original, sin recolorear, reconstruir letras ni cambiar
+     el descriptor.
+14     0 3 / ID EN T I DAD
+FONDOS AUTORIZADOS PARA ESTA EDICIÓN
+
+
+
+
+Reconocible
+en cada soporte.
+                                                  Claro · firma original
+                                                  Conservar el color del logo y un espacio limpio
+                                                  alrededor.
+
+
+
+
+                                                  Oscuro · cartela clara
+                                                  Conservar el color del logo y un espacio limpio
+                                                  alrededor.
+
+
+
+
+El archivo suministrado es raster. Una versión a una tinta, negativa o simplificada requiere un
+maestro vectorial revisado; no se improvisa con filtros.
+                                                                                      L A B EL L A L U PIT A   15
+     CÓDIGOS QUE DEFINEN EL COLOR
+
+
+
+
+     Cálida por naturaleza.
+
+
+
+
+     Borgoña                         Coral                           Rosa                            Arena                            Cacao
+
+     #B60032                         #FC6F6F                         #F9AFA4                         #D7C1A5                          #53291E
+     182 / 0 / 50                    252 / 111 / 111                 249 / 175 / 164                 215 / 193 / 165                  83 / 41 / 30
+
+     BASE: CACAO + ARENA / ACENTOS: ROSA, CORAL Y BORGOÑA
+
+
+     Referencia digital: usar estos HEX/RGB, no muestrear el JPG. La lámina suministrada presenta
+     diferencias visibles entre algunas bandas y sus códigos escritos.
+
+     Los valores CMYK dependen del perfil y del papel. La referencia original se conserva en el paquete; solicitar prueba de color.
+
+16     0 4 / CO LO R
+CONTRASTE CALCULADO
+
+
+
+Cacao / blanco                                                                                                  12.33:1
+
+Borgoña / blanco                                                                                                  6.92:1
+
+Cacao / rosa                                                                                                     6.86:1
+
+Coral sobre blanco: 2.75:1. Reservarlo para acentos; el texto principal va en cacao. Objetivo: 4,5:1 para
+lectura normal.
+
+                                                                                              L A B EL L A L U PIT A       17
+     FAMILIA EDITORIAL
+
+
+
+
+     Playfair
+     Display
+     Una serif expresiva para titulares, nombres de
+     platos y mensajes breves. Aporta personalidad sin
+     sustituir la firma original.
+                                                         Aa
+     Regular 400 / Medium 500
+     SemiBold 600 / Bold 700
+
+     Cursiva: una palabra o una frase corta.
+
+18    0 4 / T I P O GR AF Í A
+FAMILIA FUNCIONAL
+
+
+
+
+Montserrat
+Regular · lectura cómoda
+
+Medium · datos y navegación
+
+Bold · énfasis y llamados
+
+
+PRECIOS: CIFRAS UNIFORMES
+
+
+
+
+C$ 280                       C$ 380                       C$ 95
+Usar Montserrat Medium con cifras alineadas. Misma altura, tamaño y línea base;
+columna de precios al mismo margen derecho.
+
+
+                                                                       L A B EL L A L U PIT A   19
+     ORDEN DE LECTURA
+
+
+
+
+     Que se vea.
+     Que se lea.
+     Titular                                Playfair Display
+                                            40–64 px / 28–40 pt
+
+
+     Subtítulo                              Montserrat Medium
+                                            24–32 px / 16–20 pt
+
+
+     Texto                                  Montserrat Regular
+                                            16–18 px / 10–12 pt
+
+
+     Precio / CTA                           Montserrat Medium / Bold
+                                            18–24 px / 12–16 pt
+
+
+
+     Rangos propuestos: pantalla / impresión. Interlineado de 140–150 % en textos; evitar mayúsculas en párrafos completos.
+
+20     0 5 / S I S T EM A G R ÁF I C O
+COMPOSICIÓN
+
+
+
+
+Aire, imagen
+y una sola intención.
+
+
+
+
+Retícula propuesta: 6 columnas en piezas editoriales y 12 en web. Márgenes
+generosos, un punto focal y espacio entre bloques.
+
+
+
+                                                                        L A B EL L A L U PIT A   21
+     BIBLIOTECA ORIGINAL
+
+
+
+
+     Pequeños signos.
+     Una misma voz.
+                             Espresso                      Taza                                Grano                                Postre
+
+
+
+
+                             Desayuno                      Plato                               Para llevar                          Ubicación
+
+
+
+
+                             Horario                       Wi-Fi                               Menú                                 Mesa
+
+
+
+
+     12 archivos SVG editables. Mismo grosor, extremos redondos y color cacao. Los íconos apoyan la información; nunca reemplazan el logo.
+
+
+22     0 5 / LEN GU AJE G R ÁFI C O
+CONSTRUCCIÓN Y CONSISTENCIA
+
+
+
+
+Dibujados para
+funcionar juntos.
+                              01   Retícula
+                                   64 × 64 · trazo de 2 unidades.
+
+                              02   Escala
+                                   24 px mínimo propuesto; 32–64 px preferido.
+
+                              03   Lectura
+                                   Ícono + etiqueta. No depender solo del color.
+
+
+
+Los íconos de Wi-Fi, horario o mesa se usan solo cuando la información esté confirmada.
+No se crean sellos dietéticos ni certificaciones sin respaldo.
+
+                                                                               L A B EL L A L U PIT A   23
+     TRES RECURSOS PROPIOS
+
+
+
+
+     El trazo también
+     es parte de Lupita.
+                                                     Ondas
+                                                     Ritmo fluido inspirado en el movimiento del cabello.
+
+
+
+                                                     Rama de café
+                                                     Un acento botánico para empaque y contenidos de café.
+
+
+
+                                                     Aroma
+                                                     Vapor y destello para piezas pequeñas y cierres.
+
+
+
+
+     Vectores originales de apoyo. No son versiones ni fragmentos reconstruidos del logotipo.
+
+24     0 5 / LEN GU AJE G R ÁFI C O
+UNA FAMILIA QUE SE EXTIENDE
+
+
+
+
+Textura sin ruido.
+
+
+
+
+Usar un motivo por pieza. Mantener un área tranquila alrededor de textos, fotos y
+firma. En papel, probar contraste y ganancia de tinta.
+
+
+                                                                         L A B EL L A L U PIT A   25
+     TRATAMIENTO EDITORIAL
+
+
+
+
+     Luz que une
+     las dos páginas.
+     El degradado se dibuja una sola vez sobre el pliego. Ambas hojas comparten
+     dirección, intensidad y punto de luz.
+
+
+
+
+        01 · BLANCO ROSA SUAVE
+
+
+
+
+        02 · BLANCO ARENA SUAVE
+
+
+
+
+26    0 5 / CO M P O S IC I Ó N
+REGLAS DE USO
+
+
+
+
+Continuidad
+con intención.
+01       Unir
+         Alinear horizonte, márgenes y ritmo entre página par e impar.
+
+
+02       Proteger
+         Rostros, logos, palabras y objetos clave quedan fuera del pliegue.
+
+
+03       Contener
+         El degradado acompaña. No modifica los colores maestros del logo.
+
+
+Fondos editoriales derivados de la paleta. En foto, conservar tonos de alimentos y materiales; evitar filtros naranjas o saturación artificial.
+
+
+                                                                                                                                         L A B EL L A L U PIT A   27
+     FOTOGRAFÍA PROPIA
+
+
+
+
+     Lo rico se siente.
+
+
+
+
+     Luz lateral suave, color real y textura. Centrar el plato, conservar la vajilla y dejar aire
+     para respirar.
+
+
+28    0 6 / F O T O G R AFÍ A Y V OZ
+VOZ DE MARCA
+
+
+
+
+Cercana. Clara.
+Con buen gusto.
+01    Invitar
+      “Hacemos una pausa para vos.”
+
+
+02    Describir
+      Hablar de ingredientes, textura y preparación reales.
+
+
+03    Acompañar
+      “Con gusto te ayudamos a elegir.”
+
+
+
+Evitar promesas sin respaldo, diminutivos en exceso y superlativos vacíos. Tono de vos, amable y
+consistente.
+                                                                                        L A B EL L A L U PIT A   29
+     REDES SOCIALES
+
+
+
+
+     Una imagen
+     que abre el apetito.
+     01       Formato propuesto
+              1080 × 1350 px, relación 4:5. Reservar 64 px de
+              margen para elementos clave.
+
+
+
+     02       Una idea
+              Foto real + titular breve. Una sola invitación
+              por publicación.
+
+
+
+
+30    0 7 / EXP ER I EN CI A DI GI T A L
+El sabor es
+el protagonista.
+Alternar plato, café, mesa y detalle. El logo acompaña: no compite con la comida.
+
+
+
+                                                                        L A B EL L A L U PIT A   31
+     FORMATO VERTICAL
+
+
+
+
+     Una pausa
+     en movimiento.
+     01       Zona útil
+              Propuesta de trabajo: 80 px laterales, 250 px
+              arriba y 300 px abajo.
+
+
+
+     02       Antes de publicar
+              Comprobar las zonas que ocupa la interfaz de
+              cada plataforma.
+
+
+                                                              1080 × 1920 px
+
+
+
+
+32    0 7 / EXP ER I EN CI A DI GI T A L
+GUIÓN EDITORIAL · 15 SEGUNDOS
+
+
+
+
+Antojo. Detalle.
+Invitación.
+
+
+
+00–04 s                                       04–10 s                                        10–15 s
+
+Un café servido.                              Un plato con textura.                          Una mesa para compartir.
+
+
+
+Subtítulos de alto contraste, música con licencia y cierres claros. No acelerar la experiencia hasta volverla impersonal.
+
+                                                                                                                    L A B EL L A L U PIT A   33
+     LABELLALUPITA.COM/MENU
+
+
+
+
+     La web real.
+     La misma marca.
+
+
+
+
+     Captura real del sitio publicado: búsqueda, categorías y menú. Consulta: 02.10.2026. La imagen contigua presenta esta
+     captura en dispositivos.
+34    0 7 / EXP ER I EN CI A DI GI T A L
+Dispositivos: mockup basado en capturas reales; no es una nueva interfaz.
+
+                                                                            L A B EL L A L U PIT A   35
+     EXPERIENCIA PUBLICADA
+
+
+
+
+     Buscar. Elegir.
+     Confirmar.
+     01        Carta ordenada
+               Categorías, fotos de producto, nombre, descripción y precio en córdobas.
+
+
+     02        Pedido y reserva
+               Accesos visibles; la disponibilidad final se confirma por WhatsApp.
+
+
+     03        Mantenimiento
+               Retirar productos no disponibles. El bagel de salmón se excluye de las piezas
+               promocionales de esta edición.
+
+     La web aún listaba el bagel al capturarla. Se documenta esa diferencia y prevalece la actualización indicada por la marca; el sitio no se modificó.
+
+36     0 7 / EXP ER I EN CI A DI GI T A L
+VERSIÓN MÓVIL REAL
+
+
+
+
+Una carta
+a mano.
+
+Mismo logo, misma carta. Respetar el
+contenido existente y comprobar
+legibilidad en cada tamaño.
+
+
+
+
+Captura sin rediseñar 390 × 844 px 02 de octubre de
+2026
+
+
+
+
+                                                      L A B EL L A L U PIT A   37
+     PAPELERÍA
+
+
+
+
+     Pequeños detalles.
+     Una buena impresión.
+                                  90 mm
+
+
+
+
+                                                                                                            50 mm
+
+
+
+
+     Tarjeta de 90 × 50 mm, reserva interior 5 mm y sangrado 3 mm. Papel mate de 300–350
+     g/m² como propuesta de material.
+
+     Artes con datos genéricos de marca. Si se agregan contactos, usar únicamente información confirmada.
+
+38     0 8 / AP LI CA CI O N ES
+Papelería y mesa · concepto de acabados; el arte nativo define el diseño.
+
+                                                                            L A B EL L A L U PIT A   39
+     TEXTIL
+
+
+
+
+     Cuidar también
+     la forma de recibir.
+                                                 Delantal cacao
+                                                 Parche claro: firma de 85 mm de ancho.
+
+
+
+
+                                                 Parche de aplicación
+                                                 105 × 60 mm; conservar la firma original.
+
+
+
+
+     Medidas propuestas. Por el detalle del cabello, preferir impresión textil o parche; validar bordado
+     con muestra de hilo antes de producir.
+40    0 8 / AP LI CA CI O N ES
+Uniforme · visualización conceptual; no representa al personal del local.
+
+                                                                            L A B EL L A L U PIT A   41
+     GORRA
+
+
+
+
+     La marca sale
+     a acompañarte.
+                                                          01   Soporte
+                                                               Sarga cacao. Parche claro, tejido o
+                                                               impreso.
+
+
+                                                          02   Posición
+                                                               Frontal centrado. Validar el parche
+                                                               sobre la costura.
+
+                                 Firma · 70 mm de ancho
+
+
+
+     Aplicación propuesta: firma de 70 mm y cartela de 85 × 45 mm. La curva del panel y el
+     detalle del cabello requieren muestra de producción.
+
+42    0 8 / AP LI CA CI O N ES
+Gorra · propuesta de aplicación, vista frontal y lateral/trasera.
+
+                                                                    L A B EL L A L U PIT A   43
+     CAMISETA
+
+
+
+
+     Vestir el mismo
+     lenguaje de marca.
+
+
+
+
+     Pecho izquierdo                                                   Espalda centrada
+     Firma de 80 mm                                                    Firma de 240 mm
+
+     Algodón marfil o cacao. Usar tinta compatible y prueba de lavado. La medida final se ajusta a talla y al área plana disponible.
+
+44     0 8 / AP LI CA CI O N ES
+Camiseta · frente marfil y espalda cacao; visualización de acabados.
+
+                                                                       L A B EL L A L U PIT A   45
+     PACKAGING
+
+
+
+
+     Algo de Lupita
+     se va con vos.
+                         80 × 80 mm
+
+
+                                           01    Bolsa y caja
+                                                 Papel arena o marfil. Firma frontal, un solo acento y
+                                                 cierre limpio.
+
+
+
+                                           02    Vaso y tapa
+                                                 Logo de 45–60 mm según soporte. Pedir prueba para
+                                                 curvas y absorción.
+
+
+
+
+     Ajustar a troquel real del proveedor. No colocar adhesivos ni tintas sin especificación apta para el
+     contacto alimentario correspondiente.
+46    0 8 / AP LI CA CI O N ES
+Colección para llevar · visualización; definir el troquel con el proveedor.
+
+                                                                              L A B EL L A L U PIT A   47
+     SEÑALÉTICA
+
+
+
+
+     Reconocible
+     desde la entrada.                                      120 × 60 cm · propuesta
+
+
+
+
+     Fondo cacao y cartela clara para conservar el logo original. No reproducir detalles finos
+     en tamaños que impidan su lectura.
+
+     El rótulo es una propuesta de proporción y medida; levantamiento y anclaje corresponden al proveedor.
+
+48     0 8 / AP LI CA CI O N ES
+Fachada propuesta · ambientación conceptual; no corresponde a un local real.
+
+                                                                               L A B EL L A L U PIT A   49
+     PUBLICIDAD EN EL ESPACIO
+
+
+
+
+     Una invitación
+     que se ve de lejos.
+             850 × 2000 mm
+
+
+                                 01   Orden de lectura
+                                      Logo, mensaje, fotografía y llamada al menú.
+
+
+
+                                 02   Zona segura
+                                      50 mm interiores y 100 mm al pie para el mecanismo.
+
+
+
+                                 03   Acceso real
+                                      QR a labellalupita.com/menu. Probar el escaneo en tamaño
+                                      impreso.
+
+
+50    0 8 / AP LI CA CI O N ES
+Roll-up completo · propuesta de 85 × 200 cm, arte original a la izquierda.
+
+                                                                             L A B EL L A L U PIT A   51
+     DOCUMENTOS COMERCIALES
+
+
+
+
+     El cuidado llega
+     hasta la cuenta.
+                                 01   Estructura
+                                      Identidad, emisor, cliente, conceptos y totales.
+
+
+
+                                 02   Números
+                                      Montserrat Medium, decimales y columnas alineadas.
+
+
+
+                                 03   Control contable
+                                      Razón social, RUC, autorización e impuestos por
+                                      completar.
+
+
+52    0 8 / AP LI CA CI O N ES
+Factura A4 · modelo visual; no válido como comprobante fiscal.
+
+                                                                 L A B EL L A L U PIT A   53
+     MENÚ Y MESA
+
+
+
+
+     La carta también
+     es parte del gusto.
+
+
+
+
+     A5 · 148 × 210 mm           100 × 140 mm
+
+54    0 8 / AP LI CA CI O N ES
+INFORMACIÓN GASTRONÓMICA
+
+
+
+
+Nombre, descripción
+y precio.
+
+     Risotto de Gallo Pinto
+     Gallo pinto cremoso, huevo, aguacate y tortilla
+     crujiente.
+                                                                                                                C$ 280
+
+
+Precios en Montserrat Medium, alineados a la derecha. Descripciones con
+ingredientes confirmados y sin reclamos que la cocina no respalde.
+
+Ejemplo vigente en la carta consultada el 02.10.2026. Confirmar precio y disponibilidad antes de publicar.
+
+                                                                                                             L A B EL L A L U PIT A   55
+     TEMPORADAS
+
+
+
+
+     La campaña cambia.
+     La marca permanece.
+
+
+
+
+     Cada temporada puede incorporar un acento temático. La firma y sus márgenes se
+     conservan; solo se promocionan productos disponibles.
+
+56    0 8 / AP LI CA CI O N ES
+PIZARRA Y BIENVENIDA
+
+
+
+
+Una invitación
+que se entiende.
+
+01   Pizarra
+     50 × 70 cm como propuesta. Una frase grande y una
+     sola llamada.
+
+
+
+02   En el espacio
+     Acordar tamaño, soporte y lectura real a distancia
+     antes de fabricar.
+
+
+
+
+                                                          L A B EL L A L U PIT A   57
+     ATENCIÓN
+
+
+
+
+     Antes. Durante.
+     Después.
+     01        Recibir
+               “Bienvenidos a La Bella Lupita. ¿Les gustaría ver la carta?”
+
+
+
+     02        Orientar
+               “Con gusto te explico los ingredientes y las opciones disponibles.”
+
+
+     03        Agradecer
+               “Gracias por compartir este momento con nosotros.”
+
+
+
+     Los datos de alergias, disponibilidad y preparación se confirman con cocina. La cercanía debe ir acompañada de información precisa.
+
+58     0 9 / AT EN C I Ó N Y P R OD U C C I ÓN
+PRODUCCIÓN
+
+
+
+
+De la pantalla
+al material.
+PDF     Impresión
+        Artes a tamaño real; 3 mm de sangrado si hay fondos al corte. Tipografías incrustadas y
+        prueba de impresión.
+
+RGB     Pantalla
+        Exportar sRGB, con dimensiones de uso. No ampliar archivos pequeños esperando mayor
+        definición.
+
+ID      Archivo maestro
+        El recurso suministrado es raster de alta resolución. Para gran formato, obtener vector
+        maestro sin redibujar ni deformar.
+
+Manual: hoja 240 × 156 mm; pliego 480 × 156 mm. El PDF del manual es para consulta; los mockups no sustituyen artes finales de fabricación.
+
+                                                                                                                                L A B EL L A L U PIT A   59
+     ANTES DE ENVIAR A PRODUCIR
+
+
+
+
+     Un archivo correcto
+     para cada soporte.
+     Redes y web                                 sRGB · PNG/JPG/WebP
+                                                 Dimensiones reales y texto legible.
+
+
+     Impresos                                    PDF · fuentes incrustadas
+                                                 Sangrado y perfil de la imprenta.
+
+
+     Señalética                                  Vector maestro
+                                                 Escala, anclaje y prueba de lectura.
+
+
+     Textiles                                    Arte + ficha de colocación
+                                                 Tinta/hilo, tejido y muestra lavada.
+
+
+     Factura                                     Plantilla + datos validados
+                                                 Contabilidad confirma los campos.
+
+
+     El paquete aporta una base visual y archivos de referencia. El proveedor confirma sus requisitos de fabricación.
+60     0 9 / P R O D UCC I Ó N Y C O NT ROL
+VERSIONES Y RESPONSABLES
+
+
+
+
+Una marca viva
+se mantiene al día.
+01   Archivo maestro
+     Conservar una carpeta oficial con logo, fuentes, paleta y recursos SVG.
+
+02   Nombre de versión
+     LBL_soporte_medida_fecha_v02. Separar original, revisión y aprobado.
+
+03   Responsable
+     Dirección valida contenido; diseño controla identidad; proveedor prueba material.
+
+04   Revisión periódica
+     Retirar platos agotados, actualizar precios y revisar enlaces antes de cada campaña.
+
+
+
+                                                                                L A B EL L A L U PIT A   61
+     PROCEDENCIA
+
+
+
+
+     Cada recurso
+     tiene un origen.
+     S1–S3 · Starbucks                              creative.starbucks.com · Typography, Photography e Illustration.
+
+
+
+     S4 · Blue Bottle                               bluebottlecoffee.com/us/eng/our-story · Design Ethos.
+
+
+
+     S5 · Parla                                     pentagram.com/work/parla · identidad y aplicaciones.
+
+
+
+     S6 · Peach Coffee                              pentagram.com/work/peach-coffee-roasters · sistema de marca.
+
+
+
+     S7 · B. R. Brown                               pentagram.com/work/baskin-robbins-brown/story · empaque y espacio.
+
+
+
+
+     Fuentes, capturas y prompts: LEEME.md y FUENTES.md. Edición 02, octubre de 2026.
+
+62     1 0 / F UEN T ES Y CO N TR OL
+ANTES DE PUBLICAR
+
+
+
+
+La marca
+se cuida en conjunto.
+01   La firma respira.
+     Proporción original y reserva H/4.
+02   El color se reproduce.
+     HEX maestros; prueba física para impresión.
+03   La lectura es clara.
+     Playfair para titulares, Montserrat para información.
+04   La imagen corresponde.
+     Platos reales y mockups identificados como propuesta.
+05   Los datos están vigentes.
+     Precios, horarios, ubicación y contacto confirmados.
+
+
+                                                             L A B EL L A L U PIT A   63
+Siempre hay un buen
+momento para compartir.
+LA BELLA LUPITA · BISTRÓ-CAFÉ
+

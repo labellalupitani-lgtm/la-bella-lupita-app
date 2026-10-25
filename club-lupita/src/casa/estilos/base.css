@@ -1,0 +1,303 @@
+/* ============================================================
+   CLUB LUPITA — capa base del sistema «Etiqueta»
+   Todo lo demás vive en clases de Tailwind. Este archivo hace
+   cuatro cosas: cargar los iconos, fijar la escala tipográfica
+   como roles, definir las pocas primitivas que Tailwind no
+   expresa, y nombrar el movimiento.
+   ============================================================ */
+
+/* Las fuentes se importan desde `main.tsx`: un @import de paquete dentro de
+   CSS obliga a postcss a resolver node_modules y Vite ya lo hace mejor desde
+   el módulo. Ver `src/casa/main.tsx`. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Iconos: subconjunto de 78 glifos, 12,9 kB ---------- */
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('/fuentes/material-symbols-subset.woff2') format('woff2');
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    /* El fondo es AVENA, no casi blanco. Es la decisión que más cambia la
+       app por sí sola: sobre avena, el papel de una tarjeta vuelve a ser
+       papel en vez de ser el mismo blanco del fondo. */
+    @apply bg-avena font-texto text-tinta antialiased;
+    /* La app es de teléfono: el ancho se limita en el contenedor, no aquí,
+       para que las bandas a sangre lleguen de verdad al borde. */
+    min-height: 100dvh;
+    font-size:16px;
+    line-height:1.6;
+  }
+
+  input:not([type=checkbox]):not([type=radio]), select:not([hidden]), textarea:not([hidden]) {
+    font-size:16px;
+    min-height:48px;
+    border-color:theme('colors.contorno');
+    border-radius:theme('borderRadius.troquel');
+  }
+  input[type=checkbox], input[type=radio] { accent-color:theme('colors.banda'); width:20px; height:20px; }
+  label:has(> input[type=checkbox]), label:has(> input[type=radio]) { min-height:44px; }
+  button { overflow-wrap:anywhere; }
+  button:disabled { cursor:not-allowed; }
+  h1,h2,h3,h4,p { overflow-wrap:break-word; }
+  em { font-synthesis:none; }
+
+  /*
+    EL SISTEMA «ETIQUETA» NO TIENE SOMBRAS.
+
+    La versión anterior de este archivo declaraba que «el foco de teclado es
+    la única sombra permitida en todo el sistema» y a la vez repartía cuatro
+    sombras distintas por 115 elementos. La auditoría lo cazó como hallazgo
+    V-12: la regla escrita y el código decían cosas contrarias.
+
+    Aquí la regla se hace verdad, y no por disciplina sino porque la tesis
+    lo pide: una etiqueta impresa no proyecta sombra. Lo que separa un plano
+    de otro es el FILETE de 1 px o la BANDA verde. El guardián prohíbe
+    cualquier utilidad `shadow-`.
+
+    El anillo de foco es lo único que se levanta, y no es una sombra: es un
+    anillo de dos tonos. El hueco de papel lo hace visible sobre la banda
+    verde (9,61:1) y el achiote lo hace visible sobre la avena (4,55:1), así
+    que se ve sobre los dos fondos del sistema.
+  */
+  :focus-visible {
+    @apply outline-none ring-2 ring-foco ring-offset-2 ring-offset-papel;
+  }
+
+  ::selection {
+    @apply bg-achiote text-papel;
+  }
+}
+
+@layer components {
+  /* ---------- Escala tipográfica ----------
+     Un rol, una definición, y ocho tamaños en total. Si una pantalla
+     necesita algo que no está aquí, es que el rol falta en el sistema, no
+     que haya que improvisar: los cuatro tamaños que aparecían cinco veces o
+     menos en el sistema anterior eran exactamente eso. */
+
+  /** La portada del Umbral: lo único que grita además del dinero. */
+  .t-display {
+    @apply font-titular text-grande font-normal tracking-tight;
+  }
+  /** Título de pantalla. Vive DENTRO de la banda verde, así que va en papel. */
+  .t-pantalla {
+    @apply font-titular text-pantalla font-bold text-papel;
+  }
+  /**
+   * Título de sección, sobre claro.
+   *
+   * Lleva EL FILETE DE 2 px INCORPORADO. En el sistema anterior la separación
+   * entre bloques la hacía un cambio de plano de 1,05:1 —es decir, nada—; aquí
+   * la hace una regla impresa bajo el título, que es como se parte una etiqueta.
+   *
+   * Es flex para que un contador («7 de 10») pueda ir a la derecha sobre la
+   * misma línea de base sin que la pantalla invente su propio maquetado.
+   */
+  .t-seccion {
+    @apply flex items-baseline justify-between gap-3 border-b-2 border-tinta pb-2;
+    @apply font-titular text-seccion font-bold tracking-tight text-tinta;
+  }
+  /** El dinero. */
+  .t-cifra {
+    @apply font-titular text-grande font-bold tracking-tight tabular-nums;
+  }
+  .t-cuerpo {
+    @apply font-texto text-cuerpo text-tinta-media;
+  }
+  .t-precio {
+    @apply font-texto text-cuerpo font-semibold tabular-nums text-tinta;
+  }
+  .t-caption {
+    @apply font-texto text-pie text-tinta-media;
+  }
+  .t-etiqueta {
+    @apply font-texto text-menuda font-semibold uppercase tracking-wider;
+  }
+  .t-eyebrow {
+    @apply font-texto text-menuda font-semibold uppercase tracking-widest;
+  }
+
+  /* ---------- Icono ----------
+     `opsz 24` fija el tamaño óptico; el `FILL` se modula por variante. */
+  .ico {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+  }
+  .ico-lleno {
+    font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+  }
+
+  /* ---------- Contenedor de la app ----------
+     `max-w-md`, 448 px. La app del socio es de teléfono y no tiene puntos
+     de quiebre (SPEC.md §12.4). */
+  .marco {
+    @apply mx-auto w-full max-w-md px-4;
+  }
+
+  /* ---------- Carriles horizontales ----------
+     La auditoría contó 30 elementos cayendo fuera del borde derecho en
+     «Reservá» sin nada que lo anunciara: el último día del carril quedaba
+     en una lasca de 6 px y parecía un fallo de maquetación, no un carril
+     (hallazgo V-09).
+
+     Dos arreglos, y hacen falta los dos:
+       · la máscara desvanece los últimos 32 px, que es la señal universal
+         de «esto sigue»;
+       · el `padding-right` impide que el último elemento quede pegado al
+         canto, así que cuando el carril SÍ llega al final se ve que llegó.  */
+  .carril {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-mask-image: linear-gradient(to right, #000 0 calc(100% - 32px), transparent 100%);
+    mask-image: linear-gradient(to right, #000 0 calc(100% - 32px), transparent 100%);
+  }
+  .carril::-webkit-scrollbar {
+    display: none;
+  }
+  /* Cuando el contenido cabe entero, la máscara sobra: se apaga con esta
+     variante, que las listas cortas se ponen desde el marcado. */
+  .carril-entero {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .sin-barra {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .sin-barra::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ---------- Grano ----------
+     La banda verde lleva la textura del papel sin blanquear sobre el que
+     está impresa, al 5 %. Va como pseudo-elemento para no ensuciar el
+     marcado. */
+  .grano::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Enlace de salto: obligatorio y visible solo al tabular. */
+  .salto {
+    @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-tinta focus:px-5 focus:py-3 focus:text-cuerpo focus:font-semibold focus:text-papel;
+  }
+}
+
+/* Movimiento reducido: evitar interpolación geométrica, incluso al cambiar de ancho. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Movimiento con nombre ----------
+   El sello es lo único que sobrepasa en todo el sistema: cae y asienta,
+   como un sello de goma contra el papel. Todo lo demás desacelera como
+   líquido denso y nunca rebota. */
+@keyframes cae {
+  0% {
+    transform: translateY(-14px) scale(0.86);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(0) scale(1.06);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ---------- La hoja sube ----------
+   No aparece: se sirve. Entra desde abajo con la curva de extracción y
+   sin rebote, como todo lo demás del sistema salvo el sello. */
+@keyframes sube {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Acabado premium: la luz queda en el canto, fuera de los datos de la cuenta. */
+.carnet-premium::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid theme('colors.contorno');
+  border-radius:theme('borderRadius.editorial');
+  pointer-events: none;
+  opacity: .55;
+}
+.cuenta-compacta { padding-top: 20px; padding-bottom: 20px; }
+#contenido { scroll-margin-top: 100px; }
+dialog { max-height: calc(100dvh - 24px); overscroll-behavior: contain; }
+@media (prefers-reduced-motion: no-preference) {
+  .carta-productos { animation: sube 220ms cubic-bezier(.16,.84,.24,1); }
+  .carnet-premium { animation: sube 520ms cubic-bezier(.16,.84,.24,1); }
+  .carnet-premium::after { transition: opacity 200ms ease; }
+  .carnet-premium:hover::after, .carnet-premium:focus-within::after { opacity: 1; }
+  #res-paso { animation: sube 240ms ease; }
+}
+@media (prefers-reduced-motion: reduce) {
+  button:active, button:hover img { transform: none !important; }
+}
+
+.pase-escena { perspective: 1000px; }
+.pase-cuerpo { position: relative; min-height: 230px; transform-style: preserve-3d; transition: transform 600ms cubic-bezier(.16,.84,.24,1); }
+.pase-girado { transform: rotateY(180deg); }
+.pase-cara { position: absolute; inset: 0; padding: 24px; border-radius: theme('borderRadius.carnet'); backface-visibility: hidden; }
+.pase-reverso { transform: rotateY(180deg); }
+@media (prefers-reduced-motion: reduce) {
+  .pase-cuerpo, .pase-reverso { transform: none; transition: none; }
+  .pase-cara[aria-hidden="true"] { display: none; }
+}

@@ -1,0 +1,48 @@
+- link "Ir al contenido":
+  - /url: "#contenido-equipo"
+- complementary:
+  - link "La Bella Lupita":
+    - /url: /personal
+    - img "La Bella Lupita"
+  - paragraph: OPERACIÓN DE LA CASA
+  - navigation "Secciones del equipo":
+    - link "Resumen":
+      - /url: /personal?seccion=resumen
+    - link "Pedidos":
+      - /url: /personal?seccion=pedidos
+    - link "Caja":
+      - /url: /personal?seccion=caja
+    - link "Entregas":
+      - /url: /personal?seccion=entregas
+    - link "Agenda":
+      - /url: /personal?seccion=agenda
+    - link "Atención":
+      - /url: /personal?seccion=atencion
+    - link "Informes":
+      - /url: /personal?seccion=informes
+    - link "Clientes":
+      - /url: /personal?seccion=clientes
+    - link "Equipo y permisos":
+      - /url: /personal?seccion=equipo
+    - link "Cuenta y seguridad":
+      - /url: /personal?seccion=seguridad
+  - paragraph: Propietario
+  - button "Cerrar sesión"
+- banner:
+  - strong: Operación real
+  - text: Datos reales del negocio
+  - status: Conectado
+  - text: Propietario
+- main:
+  - paragraph: miércoles, 7 de octubre
+  - heading "Caja" [level=1]
+  - paragraph: Clientes, recargas y canjes
+  - text: La Bella Lupita · equipo
+  - group "Tareas de caja":
+    - button "Cliente y recargas" [pressed]
+    - button "Beneficio de membresía"
+    - button "Premio por sellos"
+  - heading "Atender a un cliente" [level=2]
+  - text: Teléfono del cliente
+  - textbox "Teléfono del cliente"
+  - button "Buscar cliente"

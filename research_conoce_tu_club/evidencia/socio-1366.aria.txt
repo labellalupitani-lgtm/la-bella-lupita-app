@@ -1,0 +1,71 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - text: EL CLUB DE LA CASA
+  - navigation "Navegación principal":
+    - button "Inicio"
+    - button "Carta"
+    - button "Tienda"
+    - button "Mi Club"
+    - button "Perfil"
+  - button "Reservar una mesa"
+  - button "Prueba Miembro fundador":
+    - strong: Prueba
+    - text: Miembro fundador
+- banner:
+  - button "Volver"
+  - heading "Club" [level=1]
+- main:
+  - region "El gusto de volver":
+    - paragraph: Club Lupita · Casa abierta
+    - heading "El gusto de volver" [level=2]:
+      - text: El gusto de
+      - emphasis: volver
+    - text: La Bella Lupita Mesa Fundadora
+    - img "Retrato original de La Bella Lupita"
+    - paragraph: De la casa Como vos
+    - img "8 de 9 sellos para la próxima bebida"
+    - paragraph: Prueba Regresión
+    - paragraph: "#001"
+    - button "Ver cómo usarlo"
+    - paragraph: Cada visita cuenta Cada nueve sellos, una bebida por cuenta de la casa
+    - region "Tu próxima bebida empieza aquí":
+      - paragraph: Un gusto de la casa
+      - heading "Tu próxima bebida empieza aquí" [level=3]
+      - paragraph: Completá tu tanda y disfrutá una bebida de cortesía
+    - region "La próxima se acerca":
+      - heading "La próxima se acerca" [level=3]
+      - text: 8 de 9 sellos
+      - img "8 de 9 sellos para la próxima bebida"
+      - paragraph: Te falta 1 sello para tu siguiente bebida
+    - button "La próxima vez, vení con tiempo Reservar una mesa ↗":
+      - text: La próxima vez,
+      - strong: vení con tiempo
+      - text: Reservar una mesa ↗
+  - paragraph: Mesa Fundadora
+  - paragraph: "#001 / 100"
+  - paragraph: Se renueva el 23 oct · C$ 950/mes
+  - button "Cancelar renovación"
+  - region "Lo tuyo de este mes":
+    - heading "Lo tuyo de este mes" [level=3]
+    - text: Tu bolsa del mes · 250 g del lote Sin retirar · se retira de 7 a 9
+    - button "Mostrar código"
+    - text: Un café filtrado por visita Disponible hoy
+    - button "Mostrar código"
+    - text: 15 % en toda la repostería, todos los días Prioridad de horario en el Salón VIP Las experiencias se te abren 48 h antes que al resto
+    - paragraph: "Los tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acá"
+  - region "Experiencias de la casa":
+    - heading "Experiencias de la casa" [level=3]
+    - list:
+      - listitem:
+        - paragraph: jueves, 15 de octubre · 9:19 p. m.
+        - heading "Experiencia de prueba" [level=4]
+        - text: C$ 850 12 de 12 butacas
+        - button "Apartar butaca"
+  - region "Tu mesa":
+    - heading "Tu mesa" [level=3]
+    - heading "Apartá dónde te sentás" [level=4]
+    - paragraph: Terraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día
+    - button "Elegir mesa y hora"

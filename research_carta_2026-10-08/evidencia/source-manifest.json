@@ -1,0 +1,506 @@
+[
+  {
+    "path": "src/app/App.tsx",
+    "sha256": "161c8d6dc21c6f8cfcf8b2787511eaf7558f08bf7601e68223c5acfba709f595"
+  },
+  {
+    "path": "src/app/BarraDeLaCasa.tsx",
+    "sha256": "57c0b4cd01be3d453804340aed6d688523b8e9422e57d0246be8754705c7417e"
+  },
+  {
+    "path": "src/app/Barrera.tsx",
+    "sha256": "b28158f3e30dad01492ae347bba31343dbc501579e3f6139cc7acbbf7e2433e8"
+  },
+  {
+    "path": "src/casa/App.tsx",
+    "sha256": "7b508d1ec4e65d0f095d0f31d7dee1a8f34d0aedffc847008f64f03f605358f0"
+  },
+  {
+    "path": "src/casa/carta.ts",
+    "sha256": "5aa3f291e85d3efbfeabd809a2e241f515803cab02f27294093e33546ff49415"
+  },
+  {
+    "path": "src/casa/componentes/AccesoPersonal.tsx",
+    "sha256": "fc0cfaa625c876e73ff9e7b1aab069ab4ccb847a3d68fcf88cf54aa535928fc3"
+  },
+  {
+    "path": "src/casa/componentes/Atencion.tsx",
+    "sha256": "30c560860e1a08580603e49b7c8810dfe2d6dc76eb2422b1044d53de8b83997c"
+  },
+  {
+    "path": "src/casa/componentes/Base.tsx",
+    "sha256": "7d9de809abeb13c1fb09f201f6d2346c7e066393f00eb9a0c6dab4112334d92b"
+  },
+  {
+    "path": "src/casa/componentes/CajaCliente.tsx",
+    "sha256": "9681d3264a10f050107e51af1986f53e9a4508e8c67a0b61cbef41abde9cc653"
+  },
+  {
+    "path": "src/casa/componentes/CuentaCliente.tsx",
+    "sha256": "392df8f93ab3914268fc2534ce946c1f160c75635477aedde40e03c8e5bac6a6"
+  },
+  {
+    "path": "src/casa/componentes/Datos.tsx",
+    "sha256": "7328e8e1cb23f53d5dfbc3b2a096c95bdbb28ce86ea216157ec6918d1ef100db"
+  },
+  {
+    "path": "src/casa/componentes/EntregasCaja.tsx",
+    "sha256": "4d7c8b2ee8a8618a47f5e09afce680951c0c87d09588bed0d456e250356aba03"
+  },
+  {
+    "path": "src/casa/componentes/EntregaVale.tsx",
+    "sha256": "6e94f755cb857194275c33f8a8011120af581e095f6f165aff2aae40a1f669ea"
+  },
+  {
+    "path": "src/casa/componentes/EstadoDatos.tsx",
+    "sha256": "92a7160a0a4eb11aa17c33f404ef5fc784e2296b35eecea547d2993348fcdd9a"
+  },
+  {
+    "path": "src/casa/componentes/Estados.tsx",
+    "sha256": "0a4455c9e186413b9f39f48b8668a9614df2db765667fbbc32373ba0e445d091"
+  },
+  {
+    "path": "src/casa/componentes/iconos.gen.ts",
+    "sha256": "873c30ead4009ca9ede4dea3ebfc481926aea694320b750371222745045dccf7"
+  },
+  {
+    "path": "src/casa/componentes/Inicio.tsx",
+    "sha256": "66a718c74686851b2442615ffbc9e93f840d22c59203bd655d0da9ac056c7e6b"
+  },
+  {
+    "path": "src/casa/componentes/MetricasOperacion.tsx",
+    "sha256": "e27718d898333752c5d369c50c7b0e7aacca1daa96fc617d1c4c1a2831c4bb6f"
+  },
+  {
+    "path": "src/casa/componentes/Navegacion.tsx",
+    "sha256": "891cd4c3d0970d51779b6ee43b038299e882e737cc4d4a1cd3720104474ed66b"
+  },
+  {
+    "path": "src/casa/componentes/PaseSocio.tsx",
+    "sha256": "c3a30eaa3468efc3e99dd18485911ff52aaf39c4532c2cc87849901688d3e986"
+  },
+  {
+    "path": "src/casa/componentes/Superficies.tsx",
+    "sha256": "fe4ecf5d6204990814788eec07f25abe96356b459e1a0bccfbb3975c4565d712"
+  },
+  {
+    "path": "src/casa/compras.ts",
+    "sha256": "3e1e260622d9d47ff959aaef067e7f80d6395ea3936a1d67e2bb60aee4ccbe5e"
+  },
+  {
+    "path": "src/casa/datos.tsx",
+    "sha256": "7a6041de33f1cf2bb40915c34c012ce86fbb11ca417a3a2938ba066e1982df0e"
+  },
+  {
+    "path": "src/casa/equipo/Acceso.tsx",
+    "sha256": "7b099f932fea0a3d8960a0546fc9e45850b799f455245fc52e1b542c7f9a914f"
+  },
+  {
+    "path": "src/casa/equipo/Caja.tsx",
+    "sha256": "876cdb07f73524198e69a0135414141c17dd8ad87ee7583ba891155b1d9df3a0"
+  },
+  {
+    "path": "src/casa/equipo/Clientes.tsx",
+    "sha256": "4e3c3ae69d37ea912f0b2667133406c74e0b30dc964d937c360744be16756075"
+  },
+  {
+    "path": "src/casa/equipo/comun.tsx",
+    "sha256": "f6cc1b8566e55d4f1426130bc27be2bd2469de7be1929467dec7c5951e59e89d"
+  },
+  {
+    "path": "src/casa/equipo/Equipo.tsx",
+    "sha256": "02dd7aa0486184c1c50b609494ffe819f39f8d58fb10bc0ceacdae7075749062"
+  },
+  {
+    "path": "src/casa/equipo/Lecturas.tsx",
+    "sha256": "fef6cfe13300d513c3ce3e9996b27de8a32249a521cd369f48e616de756fdfc1"
+  },
+  {
+    "path": "src/casa/equipo/Pedidos.tsx",
+    "sha256": "1e8149dc2f17cd43d3833fdc6fbe196bb7aea11d934912a50f1747e2eafcb382"
+  },
+  {
+    "path": "src/casa/equipo/Seguridad.tsx",
+    "sha256": "6e5e238e5c6df14b0a772cccc14edd484447a939c649b7e9a5b9b8a47209a1b7"
+  },
+  {
+    "path": "src/casa/estilos/base.css",
+    "sha256": "fa6e6cfeb27468f93734e5176410eeabed7a764bfcccec0cde9f023352ff5abd"
+  },
+  {
+    "path": "src/casa/estilos/casa.css",
+    "sha256": "151c3baac09bfc20d3150a4a41da4bcf7e9d0dbfb0ba1a5532fc8dde65940c69"
+  },
+  {
+    "path": "src/casa/estilos/equipo.css",
+    "sha256": "869abf193f98d5b8e9df61edae5fd67ecb7bb56c55858f0d735679e431ff17f3"
+  },
+  {
+    "path": "src/casa/estilos/identidad.css",
+    "sha256": "43b4a5155815702354ac6d85ac923fed4a48d712ff40f4e5c7471a3497963830"
+  },
+  {
+    "path": "src/casa/http.ts",
+    "sha256": "da170a0907b8d87a51b40dfe8ba4269453859c8e68b74d3dc9ac275f7759dc34"
+  },
+  {
+    "path": "src/casa/main.tsx",
+    "sha256": "c16b094c72c58831060d8efe2637a1e17ded9ffbe2067e0f16d3386ace949866"
+  },
+  {
+    "path": "src/casa/operacion.ts",
+    "sha256": "c1d7a6b2a8dc790527c0bea3e060c248dd5c3529385145f6887c5cb367030304"
+  },
+  {
+    "path": "src/casa/pantallas/Carta.css",
+    "sha256": "562141887e43b9c9ae22e4f29ad87153a39c71b8fd8461139281afddff7abc51"
+  },
+  {
+    "path": "src/casa/pantallas/Club.tsx",
+    "sha256": "ea1cf76900bbe7b6e11dc003dd017eb4b8bbb7f7a643cbd1b04ca298cde2eb3e"
+  },
+  {
+    "path": "src/casa/pantallas/ClubReserva.css",
+    "sha256": "d5d3f6474643968afb899f5ac370230381b7c7812ec9e6197c80db56bb3e35b0"
+  },
+  {
+    "path": "src/casa/pantallas/DetalleCarta.tsx",
+    "sha256": "a326a6eab22362256a3774ed647811fc750b49e9aab6d313ace2b639f5b251c4"
+  },
+  {
+    "path": "src/casa/pantallas/Inicio.tsx",
+    "sha256": "3e7f8f6a76b862b6bc77800d79684b764e17c6a1b6726004f7d7d7c7b0de9e93"
+  },
+  {
+    "path": "src/casa/pantallas/Kit.tsx",
+    "sha256": "71436c6ea938662641246cdd0231155de7753c5e39527da6434401ce81329ec8"
+  },
+  {
+    "path": "src/casa/pantallas/MisCompras.tsx",
+    "sha256": "7c101ee2d316a4bdf4ce7fdbfb3e2fa1f8452d1b9fa01050b2b51e438c62b194"
+  },
+  {
+    "path": "src/casa/pantallas/Pedir.tsx",
+    "sha256": "453d0930c893591e8346316b5815c711ab5d54c1ca78051b28b31aea6a695b1e"
+  },
+  {
+    "path": "src/casa/pantallas/Perfil.tsx",
+    "sha256": "c4da47b07e3db7f41d7b7c74fe604119cea3bf683635cfe624172c61b616f435"
+  },
+  {
+    "path": "src/casa/pantallas/Personal.tsx",
+    "sha256": "080916dd339b330de9fba5e69718aa57b99ded59e29dcad7d3cc656476ff53eb"
+  },
+  {
+    "path": "src/casa/pantallas/Reservar.tsx",
+    "sha256": "6f3b89c0c4a390b0324c7140441efcbea99cdb188235b83390cfe1aa9a75fe4a"
+  },
+  {
+    "path": "src/casa/pantallas/Tienda.tsx",
+    "sha256": "5260a118069ab7a3789773045fda60900e7ea89b8566bdd79b61f4aa6fce73db"
+  },
+  {
+    "path": "src/casa/pantallas/Umbral.tsx",
+    "sha256": "728a43e7de20ff3cb4825f2b967af0daa0f79fb229844908a1975c2eb43f9239"
+  },
+  {
+    "path": "src/casa/pedido.tsx",
+    "sha256": "4650825ed2af339b50917be1bd78f813b4b9e2f779e69473e8871e54f37cddeb"
+  },
+  {
+    "path": "src/casa/sesion-cliente.ts",
+    "sha256": "5736afd5bdcf5520fc8ae2fa0f616a39b8681eaa5c188d4798b9356a73c0b4a4"
+  },
+  {
+    "path": "src/componentes/Aviso.tsx",
+    "sha256": "5e4d60c9cbdbd20d2d5243cc229a9206723309ccdf7b5ac2cd1de32334d38a45"
+  },
+  {
+    "path": "src/componentes/BarraDeCafe.tsx",
+    "sha256": "5807404a1c6bcf4d28514af4d02874b8a37b73f58f5589150c6d4e25ab3caac4"
+  },
+  {
+    "path": "src/componentes/CaminoDeAltura.tsx",
+    "sha256": "f582663723504158974cd354395c32507653ffa9447736ea61324312b7782aa5"
+  },
+  {
+    "path": "src/componentes/Comanda.tsx",
+    "sha256": "a32d0f9693066b9f66074fff45ca0e3e46daa92001e569050136ee442159705e"
+  },
+  {
+    "path": "src/componentes/Foto.tsx",
+    "sha256": "96ef96c79117ecf6f279ff98783a27d9354051687fc6d139ff7765be017259ad"
+  },
+  {
+    "path": "src/componentes/MesaLarga.tsx",
+    "sha256": "4deb97bd528da4d7035278de7a87c43e18b777bdee9403ebcaf6ccfd5342a789"
+  },
+  {
+    "path": "src/componentes/MiniTanda.tsx",
+    "sha256": "4648b9c823e68a39c5de40c1eb04b0245a8cab21d200a3bc889a953669fc243b"
+  },
+  {
+    "path": "src/componentes/useHoja.ts",
+    "sha256": "3cc76fea005d8752c9b2f3c95e51bef715a6c059d410a629c4654fb79d21cf48"
+  },
+  {
+    "path": "src/data/copy.ts",
+    "sha256": "c4f9ae81c814186b556e91da8665643d27e5953e58670e2a39f06efb0350ba5a"
+  },
+  {
+    "path": "src/data/menu.ts",
+    "sha256": "6c042d1cab1ec6a6d784e6d0764ad0558de7d23b45d11c96c7a8417f5ab2ed56"
+  },
+  {
+    "path": "src/lib/api.ts",
+    "sha256": "464a9d6032094f42fbaea5afa63d8982a08aea682a9ad8f5286544d6d3323d7b"
+  },
+  {
+    "path": "src/lib/estado.tsx",
+    "sha256": "a08cebb1f3629064dbc15598f69aad20acfded9d28a5edf931b29edbde1db35e"
+  },
+  {
+    "path": "src/lib/format.ts",
+    "sha256": "a9b7e50a76ac9b0665d6b68a8c3d66d2598187f4641d0a01997ff590ab304232"
+  },
+  {
+    "path": "src/lib/movimiento.ts",
+    "sha256": "d8bce11119a8fcc9ec4e6990756dfc5a104a6949e0d22319b6237b418c00c010"
+  },
+  {
+    "path": "src/lib/router.tsx",
+    "sha256": "7780be4f2dc18613b877183749b422d3281e7697007e6cba89709d3a97816894"
+  },
+  {
+    "path": "src/main.tsx",
+    "sha256": "53d2c2ab0ab38f35b2f60004d71e5c8fe71e78fbd3ae01c5392d448b5b4b22e2"
+  },
+  {
+    "path": "src/pantallas/Carta.tsx",
+    "sha256": "d925ecd97c867e753f06ab043c83a3a011757517b3ea550e73e589bb1b8334b3"
+  },
+  {
+    "path": "src/pantallas/Casa.tsx",
+    "sha256": "04fe1a4827447d81e83d3edb7a10b5bbaa93dda63303f774eb67ca4b1f80e3f4"
+  },
+  {
+    "path": "src/pantallas/Cuenta.tsx",
+    "sha256": "68532795fc8bd91e59b76fb3a285ca8b2b527d49307d8ee15c871f7f36df7314"
+  },
+  {
+    "path": "src/pantallas/Experiencias.tsx",
+    "sha256": "c399372e41e04afcbd89b20ebc193778776b9252b68aa15953ef3d20c1eb6174"
+  },
+  {
+    "path": "src/pantallas/Finca.tsx",
+    "sha256": "3b413efaa9cb0cceb5d3e466c805f724ae6b9924c7edd35dffb43228255e4ea0"
+  },
+  {
+    "path": "src/pantallas/Lote.tsx",
+    "sha256": "77c3e102f532ba0973e0ae16e1c710a03942e5c6f2bc4bba08e493e7d87193eb"
+  },
+  {
+    "path": "src/pantallas/MesaFundadora.tsx",
+    "sha256": "fda08fb5c597776cfa78cd15110b1bbe66a3c2c219d5089151a898ebc8b13474"
+  },
+  {
+    "path": "src/pantallas/Mostrador.tsx",
+    "sha256": "c0670e844ed527576fbf27458590295aec7418c9fa1b55db151d6923043feb8c"
+  },
+  {
+    "path": "src/pantallas/Perfil.tsx",
+    "sha256": "6ca85453e4f2304cf373357d55472b06cc1acb9ad53161c9443f25db4bebad15"
+  },
+  {
+    "path": "src/pantallas/Reservar.tsx",
+    "sha256": "8ad602dfe0756634c259bed7b96b784ec554a7bfa3a42ec0b6ac5e47c961bb6c"
+  },
+  {
+    "path": "src/pantallas/Tanda.tsx",
+    "sha256": "04f00973c478d8bf37b00641ee95b7a69ae77328ee537c3045985441afa93eb8"
+  },
+  {
+    "path": "src/pantallas/Umbral.tsx",
+    "sha256": "9f404aa4dadd61074ad800532e28418994bf82b2fa7191e589ba44a17dec07e6"
+  },
+  {
+    "path": "src/styles/app.css",
+    "sha256": "0dc612235dc1fffd2d622ba3dc19c3c88d12726472a4660d19af08b6303696f3"
+  },
+  {
+    "path": "src/styles/base.css",
+    "sha256": "2a41e6524c5a3207abe9ddbaa8f5b85cae78db39e6c3d743383b1192289f0b95"
+  },
+  {
+    "path": "src/styles/pantallas.css",
+    "sha256": "67452c8f32e68692729dc79dc25ed8aeb02d758ec050a596501abd966b5b722d"
+  },
+  {
+    "path": "src/styles/tokens.css",
+    "sha256": "535f4e73a8f7e298f59d755dcac2f2ad1ac4408d29af942d4fcea44a32dbba11"
+  },
+  {
+    "path": "src/worker/acceso-correo.ts",
+    "sha256": "c869a86e8ef171cb9c5d14232cea155dbffad78b8df10a299c2c379882f27466"
+  },
+  {
+    "path": "src/worker/acceso-equipo.ts",
+    "sha256": "4fa403158d49bbd4ad000389634d84978a5d1f68a811ff04996aaec6f64d0e5f"
+  },
+  {
+    "path": "src/worker/acceso.ts",
+    "sha256": "f9445c88d64d7b64c378023004c5d2c087eff478e87acad117803d538d65b414"
+  },
+  {
+    "path": "src/worker/atencion.ts",
+    "sha256": "3ced4b620076f72b9f8b36175222832489956ff3329f992bcd6dec23f9cd9719"
+  },
+  {
+    "path": "src/worker/cabeceras.ts",
+    "sha256": "53455eb3b05e18e90f2fc459c36ffb033dae8b41b800613faabc665e156b59ed"
+  },
+  {
+    "path": "src/worker/clientes.ts",
+    "sha256": "c17922a2c3b3c0a0de34a7bae1d4adafc5f283731620137d397bd8e1ab1e8b85"
+  },
+  {
+    "path": "src/worker/correo.ts",
+    "sha256": "d683decb6cd880ced5cf32ea2391d2a5d0e0fc81bc300b208349c8c83b71d6ce"
+  },
+  {
+    "path": "src/worker/credenciales.ts",
+    "sha256": "3e1bd659d8e7859dfb4014e31df21e202f471f1f793258cd315c6fd3bc7e2b27"
+  },
+  {
+    "path": "src/worker/cuenta-cliente.ts",
+    "sha256": "7588b5a8516abc9db1ab6f51066b0c2fbabd76a77d10c2af298c0f093b5d3231"
+  },
+  {
+    "path": "src/worker/equipo-sesion.ts",
+    "sha256": "dd7d88dbfd7df6c1f1a46084a97f83b4930ad0cea77ad7919b63c8fb5efaff18"
+  },
+  {
+    "path": "src/worker/index.ts",
+    "sha256": "c8c08aebf7e25d8a67439d2738217b450d4d5912fc11797eee54911d783eaed5"
+  },
+  {
+    "path": "src/worker/membresias.ts",
+    "sha256": "c28b03dd690a0db9f0c1a86ac1f8680f8402219b679df23c67374e825881a6de"
+  },
+  {
+    "path": "src/worker/mostrador.ts",
+    "sha256": "798342ab6a954a87f285cfeb63d4bcfdcd1fa91183374eb1f60029f1cc98b765"
+  },
+  {
+    "path": "src/worker/operacion.ts",
+    "sha256": "c31ea8384583b4badc2da8222781b59542b0c92ec77fda3c1d7dc8109aa7651e"
+  },
+  {
+    "path": "src/worker/panel.ts",
+    "sha256": "5b59fd877e40f59868407e37178f70f9450ffbb48bbd597c69e6bcfe4b87aff0"
+  },
+  {
+    "path": "src/worker/pedido-publico.ts",
+    "sha256": "5127bd737b72018b9a2082023afc1cd71f41e558caaebceaffa8fdff40445859"
+  },
+  {
+    "path": "src/worker/sesion.ts",
+    "sha256": "f8cdd651be132efabc9eabdc1ce869be6379a4e737fc22aba353300a74458f5c"
+  },
+  {
+    "path": "src/worker/validacion.ts",
+    "sha256": "bdd8f371caae05e611734636bb88b9ebd9eec640639f3382f7a5b3c86a184e4f"
+  },
+  {
+    "path": "db/001_schema.sql",
+    "sha256": "daff1d0deeb08f31f8fb8412baa44ecaba602c64456cde2ce75d87de58f90a42"
+  },
+  {
+    "path": "db/002_seed.sql",
+    "sha256": "9e6f3efbb9764005d51c6ead8f1fbd0f50c0d38efb16b0dde06487ae54973132"
+  },
+  {
+    "path": "db/003_correcciones.sql",
+    "sha256": "0d388b15b13f0ff138b831d85fca928911b4bf3a5ecf6a4d365546cd3603a80e"
+  },
+  {
+    "path": "db/004_sesiones.sql",
+    "sha256": "e3f4ab93df631d49c29558fd58bf305deec783852cc28faeec68714aecf913c5"
+  },
+  {
+    "path": "db/005_generacion.sql",
+    "sha256": "a443d02d96941a483478dae9b079f4f768b81d52c1a54aec70ccd2c830d7ca1b"
+  },
+  {
+    "path": "db/006_orden_del_saldo.sql",
+    "sha256": "87b1d41e9872eea038e4dd9a454d3723b5c364a8539c4553fff172623d4d6f2b"
+  },
+  {
+    "path": "db/007_vale.sql",
+    "sha256": "c71db7c3f3508e18c145d55f303ac1ca4b6c3f96f8f5b29d9e7e06bbb938b818"
+  },
+  {
+    "path": "db/008_historial_demo.sql",
+    "sha256": "74699f63ce286578044aa86d805315dbcb47189e407d9195b218bfe06b911872"
+  },
+  {
+    "path": "db/009_puntos.sql",
+    "sha256": "55174bf64c5a3cb7e0fecddbbd825cf26168bf590ef0395953fd39fd17e111d3"
+  },
+  {
+    "path": "db/010_integridad.sql",
+    "sha256": "12aaf091714ace589b454a8d467e27078adf26b56437d62d1fec3189dd4228f5"
+  },
+  {
+    "path": "db/011_plazas.sql",
+    "sha256": "9a2e432b6dd16c4d5ebeadaca2269fb4dd61bd038318617a8e967a7b7e010d4c"
+  },
+  {
+    "path": "db/012_operacion.sql",
+    "sha256": "9e9fd761e1b69c4f1b18aaf855157f940531f998c2ef50f6b238f19fa6738932"
+  },
+  {
+    "path": "db/013_correo.sql",
+    "sha256": "7e1ea97205090cf70be20e3218ae71fb29e32381989f663184539e6f1308571e"
+  },
+  {
+    "path": "db/014_promociones.sql",
+    "sha256": "103f3fa3b2f479ac53f39abfee29ee21786402b23ac6354d46a84bc389f22873"
+  },
+  {
+    "path": "db/015_saldo_cronologico.sql",
+    "sha256": "4fdf691614f77039c3dbd234c33aa409e30b4016a5c19e8be21ab15403dd036e"
+  },
+  {
+    "path": "db/016_baja_socio.sql",
+    "sha256": "3c6ace14955df7a5f5417be9435f86a99f16bbbd8d27b60481c38d1c85d0d360"
+  },
+  {
+    "path": "db/017_seguridad_personal.sql",
+    "sha256": "4146ca7f713f34477cd1806c97b1b7ab6e216051b001cd8c6a3d0ef09a3cbbe3"
+  },
+  {
+    "path": "db/018_clientes_equipo.sql",
+    "sha256": "91ed5540fccfa1b71a70ed953fcd5fd684bc6fdc7b474d4ab5dbe1f16b3f7705"
+  },
+  {
+    "path": "db/019_archivar_muestras.sql",
+    "sha256": "fa6b4cccfb0a57f3e6d312304654abfec52fbbfa8ab7ede87d2031ea98c6b8c9"
+  },
+  {
+    "path": "db/020_acceso_equipo.sql",
+    "sha256": "cebd318f0c3a9ab0a2de5d507d8a0380a3a94fda897ecd1b0e162534b29643d8"
+  },
+  {
+    "path": "db/CORRECCIONES_2026-10-02.txt",
+    "sha256": "3e25cdadfa83ac695e9b19dc610cbdc9f0ac5ffc2986398975376dbd490ecc9c"
+  },
+  {
+    "path": "package.json",
+    "sha256": "7653c9ce77a2fddeaf8c0766119a566404ca7c8ae96569ff22d7bf91f52b5c9e"
+  },
+  {
+    "path": "vite.config.ts",
+    "sha256": "541cbf5a206d9117fbb5b933b89b80f12525aea2fd38143c26af8673afc2ab9f"
+  }
+]

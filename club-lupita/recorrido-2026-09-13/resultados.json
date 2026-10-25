@@ -1,0 +1,487 @@
+{
+  "results": [
+    {
+      "name": "Entrada: teléfono, alta deshabilitada y acceso demo",
+      "status": "PASA",
+      "detail": "El alta real no está habilitada"
+    },
+    {
+      "name": "Inicio: recarga informativa, pase, premio y avisos",
+      "status": "PASA",
+      "detail": "Recarga sólo en caja; premio disponible"
+    },
+    {
+      "name": "Navegación: pestañas, tarjetas y accesos rápidos",
+      "status": "FALLA",
+      "error": "page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"https://club-lupita.el-molino.workers.dev/\" until \"load\"\n============================================================"
+    },
+    {
+      "name": "Carta completa: filtros, detalles y dos formas de agregar cada producto",
+      "status": "FALLA",
+      "error": "locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('article').first().getByRole('button', { name: /^Agregar .* al pedido$/ })\u001b[22m\n"
+    },
+    {
+      "name": "Carrito: aumentar, reducir y vaciar todas las líneas",
+      "status": "PASA",
+      "detail": {
+        "lineas": 1
+      }
+    },
+    {
+      "name": "Buscador: mayúsculas, tildes, sin resultados y recuperación",
+      "status": "PASA"
+    },
+    {
+      "name": "Pedido: pago confirmado y movimiento persistido",
+      "status": "PASA"
+    },
+    {
+      "name": "Tienda: cancelar, comprar bolsa y abrir opciones de WhatsApp",
+      "status": "PASA",
+      "detail": "WhatsApp: destinos válidos; no se envió ningún mensaje"
+    },
+    {
+      "name": "Club: alta de membresía, ambos beneficios y control de renovación",
+      "status": "FALLA",
+      "error": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Cancelar renovación', exact: true }) to be visible\u001b[22m\n"
+    },
+    {
+      "name": "Club: compra de cada experiencia del catálogo",
+      "status": "PASA",
+      "detail": {
+        "experiencias": 2
+      }
+    },
+    {
+      "name": "Reservas: cinco zonas, catorce fechas, doce tamaños y seis duraciones",
+      "status": "PASA",
+      "detail": {
+        "zonas": 5,
+        "fechas": 14,
+        "personas": 12,
+        "duraciones": 6,
+        "horasSeleccionadas": 14
+      }
+    },
+    {
+      "name": "Reservas: confirmar una mesa de cada zona, incluido depósito VIP",
+      "status": "PASA"
+    },
+    {
+      "name": "Perfil: compartir por portapapeles, volver y salir sin conexión",
+      "status": "PASA"
+    }
+  ],
+  "touches": 131,
+  "errors": [],
+  "responses": [
+    {
+      "path": "/api/yo",
+      "status": 401
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/codigo",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/entrar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/tanda/canjear",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/cuenta/cobrar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/reserva-cosecha/apartar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/membresia/apartar",
+      "status": 500
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/experiencia/cacao/apartar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/experiencia/finca/apartar",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/reserva",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/reserva",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/reserva",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/reserva",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/ocupacion",
+      "status": 200
+    },
+    {
+      "path": "/api/reserva",
+      "status": 200
+    },
+    {
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "path": "/api/yo",
+      "status": 200
+    }
+  ]
+}

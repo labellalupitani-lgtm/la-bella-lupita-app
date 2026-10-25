@@ -1,0 +1,38 @@
+Correcciones de la auditoría funcional — 2 de octubre de 2026
+
+Las migraciones históricas 001–014 permanecen intactas.
+
+015_saldo_cronologico.sql
+  Sustituye saldo_de por una lectura cronológica del libro mayor.
+  Cada salida utiliza el bono que ya existía al realizarse.
+  Las devoluciones completas restauran el reparto del cargo original.
+  No modifica ni elimina asientos; conserva el total SUM(monto).
+
+016_baja_socio.sql
+  Impide renovaciones automáticas de socios dados de baja.
+  Conserva el período ya pagado y vence la membresía cuando corresponde.
+
+Publicación sobre una base que ya tiene 001–014:
+  1. Validar primero sobre una base aislada del entorno de destino.
+  2. Aplicar 015 y 016 antes de publicar el Worker corregido.
+     Con DATABASE_URL seleccionada para ese entorno:
+     node scripts/db.mjs db/015_saldo_cronologico.sql db/016_baja_socio.sql
+  3. Publicar el Worker y la interfaz mediante el procedimiento habitual.
+     npm run deploy compila y publica, pero NO ejecuta migraciones SQL.
+  4. Verificar sesiones revocadas, reservas y conciliación de saldos.
+
+No reaplicar 012_operacion.sql aislada después de 015: reemplazaría saldo_de
+por la versión anterior. Las pruebas que reaplican 012 vuelven a aplicar 015.
+Los scripts históricos de publicación no son un ejecutor de todas las migraciones.
+
+Pruebas locales:
+  npm test
+  npm run build
+  npm run test:auditoria:ui
+
+TEST_OUTPUT_DIR permite guardar las capturas de navegador fuera del proyecto.
+NAVEGADOR=firefox selecciona Firefox en test:auditoria:ui; Edge es el predeterminado.
+Los navegadores Playwright correspondientes deben estar instalados.
+
+La entrega del 2 de octubre contiene cambios locales y pruebas con datos sintéticos.
+No aplica migraciones en Neon ni publica cambios en Cloudflare.

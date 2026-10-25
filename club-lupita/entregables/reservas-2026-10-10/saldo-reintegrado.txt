@@ -1,0 +1,149 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - generic: EL CLUB DE LA CASA
+  - navigation "Navegación principal":
+    - link "Inicio":
+      - /url: /
+      - generic: home
+      - text: Inicio
+    - link "Carta":
+      - /url: /pedir
+      - generic: local_cafe
+      - text: Carta
+    - link "Tienda":
+      - /url: /tienda
+      - generic: storefront
+      - text: Tienda
+    - link "Mi Club":
+      - /url: /club
+      - generic: military_tech
+      - text: Mi Club
+    - link "Perfil":
+      - /url: /perfil
+      - generic: person
+      - text: Perfil
+  - button "Reservar una mesa":
+    - generic: event_seat
+    - text: Reservar una mesa
+    - generic: arrow_forward
+  - button "Cliente Tu cuenta de casa":
+    - generic: C
+    - strong: Cliente
+    - generic: Tu cuenta de casa
+    - generic: chevron_right
+- banner:
+  - paragraph: Tu casa, Cliente
+  - button "Ver perfil de Cliente":
+    - generic: C
+    - strong: Gente de la Casa
+    - generic: 490 pts para Barista
+    - generic: chevron_right
+- main [active]:
+  - paragraph: CLUB LUPITA
+  - heading "Tu casa, a mano" [level=1]
+  - button "Actualizar Inicio"
+  - region "Tu cuenta de casa":
+    - generic: workspace_premium
+    - text: CLUB LUPITA
+    - generic: account_balance_wallet
+    - heading "Tu cuenta de casa" [level=2]
+    - paragraph: C$ 9,900
+    - paragraph: Saldo disponible para tus consumos en la casa
+    - button "Mostrá tu pase":
+      - generic: person
+      - text: Mostrá tu pase
+    - button "Recargar en caja":
+      - generic: add
+      - text: Recargar en caja
+    - button "Ocultar saldo en Inicio"
+    - button "Ver movimientos":
+      - text: Ver movimientos
+      - generic: arrow_forward
+  - region "Tu tanda de café":
+    - heading "Tu tanda de café" [level=2]
+    - paragraph: Un sello por cada compra que califique
+    - generic: 8/ 9
+    - list:
+      - generic "Sello 1":
+        - generic: coffee_maker
+      - generic "Sello 2":
+        - generic: coffee_maker
+      - generic "Sello 3":
+        - generic: coffee_maker
+      - generic "Sello 4":
+        - generic: coffee_maker
+      - generic "Sello 5":
+        - generic: coffee_maker
+      - generic "Sello 6":
+        - generic: coffee_maker
+      - generic "Sello 7":
+        - generic: coffee_maker
+      - generic "Sello 8":
+        - generic: coffee_maker
+      - generic "Casilla 9":
+        - generic: coffee_maker
+      - generic "Tu bebida de cortesía":
+        - generic: redeem
+    - progressbar "8 de 9 sellos"
+    - paragraph: Te falta 1 para tu bebida de cortesía
+    - button "Ver reglas y beneficios"
+  - generic "Estado de tu cuenta":
+    - paragraph:
+      - text: "Última consulta de tu cuenta:"
+      - time: 10/10/26, 9:06:59 p. m.
+  - region "Tu próxima visita":
+    - heading "Tu próxima visita" [level=2]
+    - paragraph: Tenés 2 avisos sin leer.
+    - button "Ver mis avisos"
+  - navigation "Accesos rápidos":
+    - list:
+      - button "Ver la carta":
+        - generic: takeout_dining
+        - generic: Ver la carta
+      - button "Reservar mesa":
+        - generic: event_seat
+        - generic: Reservar mesa
+      - button "Tienda de la finca":
+        - generic: storefront
+        - generic: Tienda de la finca
+  - region "Hacé una pausa rica":
+    - img "Un plato de la cocina de La Bella Lupita"
+    - paragraph: DE LA COCINA DE CASA
+    - heading "Hacé una pausa rica" [level=2]
+    - paragraph: Café de la finca y algo para acompañar.
+    - button "Explorar la carta"
+  - region "Algo rico para acompañar":
+    - heading "Algo rico para acompañar" [level=2]
+    - button "Pizza Churrasco C$ 670":
+      - generic: Pizza Churrasco
+      - generic: C$ 670
+    - button "Risotto de Gallo Pinto C$ 280":
+      - generic: Risotto de Gallo Pinto
+      - generic: C$ 280
+    - button "Dulce Tentación C$ 320":
+      - text: Dulce Tentación
+      - generic: C$ 320
+  - region "Pasa en la casa":
+    - heading "Pasa en la casa" [level=2]
+    - list:
+      - article:
+        - generic: local_mall
+        - text: 150 de 150 disponibles
+        - heading "Reserva de Cosecha" [level=3]
+        - paragraph: C$ 890 · Consultá la entrega y los detalles antes de apartar.
+        - button "Ver la cosecha":
+          - text: Ver la cosecha
+          - generic: arrow_forward
+      - article:
+        - generic: event_seat
+        - text: 12 de 12 cupos disponibles
+        - heading "Experiencia sintética" [level=3]
+        - paragraph: 17 oct 2026, 9:06 p. m. · C$ 850
+        - button "Ver experiencia":
+          - text: Ver experiencia
+          - generic: arrow_forward
+  - generic: La Bella Lupita · Bistró & Café
+  - generic: De nuestra finca, con cariño

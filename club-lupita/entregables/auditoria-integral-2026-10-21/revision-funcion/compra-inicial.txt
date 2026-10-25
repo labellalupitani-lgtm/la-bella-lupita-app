@@ -1,0 +1,144 @@
+Demo local · Datos simulados · Sin cobros ni envíos
+Resumen
+Carta
+Visitas
+Equipo
+Saltar a la propuesta
+¿Qué se te antoja?
+
+Elegí, pagá con tu Cuenta de Casa y retiralo en barra.
+
+Buscar en toda la carta
+Recibimos pedidos
+Retiro en barra · Empaque C$ 40 por pedido
+Para hoy
+Café
+Brunch
+Bistró
+Dulce
+Todo
+Para hoy
+6 opciones
+Latte
+
+Leche texturizada al vapor sobre un espresso de Matagalpa. Más leche que café, textura de seda.
+
+C$ 95
+Agregar +
+Risotto de Gallo Pinto
+
+Tradicional gallo pinto transformado en un cremoso risotto, servido con huevo al gusto, aguacate y tortilla crujiente.
+
+C$ 280
+Elegir +
+Pizza Churrasco
+
+Churrasco a la parrilla, mozzarella artesanal y chimichurri de la casa.
+
+C$ 670
+Agregar +
+Dulce Tentación
+
+Waffle artesanal con mermelada de fresa casera, chantilly, frutas de temporada, tierra de chocolate y miel de maple.
+
+C$ 320
+Agregar +
+Ensalada Lupita
+
+Mix de lechugas, vegetales frescos, pasta penne, parmesano y aderezo de la casa. Disponible con camarón, pollo o res.
+
+C$ 640
+Elegir +
+Delicias de la Abuela
+
+Postre de mango ahumado con el sello dulce de la casa.
+
+C$ 250
+Agregar +
+Horarios y condiciones del pedido
+Escenarios de prueba
+
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- main:
+  - heading "¿Qué se te antoja?" [level=1]
+  - paragraph: Elegí, pagá con tu Cuenta de Casa y retiralo en barra.
+  - status
+  - text: Buscar en toda la carta
+  - searchbox "Buscar en toda la carta"
+  - strong: Recibimos pedidos
+  - text: Retiro en barra · Empaque C$ 40 por pedido
+  - region "Productos de la carta":
+    - navigation "Elegir momento":
+      - button "Para hoy" [pressed]
+      - button "Café"
+      - button "Brunch"
+      - button "Bistró"
+      - button "Dulce"
+      - button "Todo"
+    - heading "Para hoy" [level=2]
+    - status: 6 opciones
+    - article:
+      - button "Ver detalles de Latte":
+        - img "Latte"
+      - button "Latte":
+        - heading "Latte" [level=3]
+      - paragraph: Leche texturizada al vapor sobre un espresso de Matagalpa. Más leche que café, textura de seda.
+      - strong: C$ 95
+      - button "Agregar Latte": Agregar +
+    - article:
+      - button "Ver detalles de Risotto de Gallo Pinto":
+        - img "Risotto de Gallo Pinto"
+      - button "Risotto de Gallo Pinto":
+        - heading "Risotto de Gallo Pinto" [level=3]
+      - paragraph: Tradicional gallo pinto transformado en un cremoso risotto, servido con huevo al gusto, aguacate y tortilla crujiente.
+      - strong: C$ 280
+      - button "Elegir opciones de Risotto de Gallo Pinto": Elegir +
+    - article:
+      - button "Ver detalles de Pizza Churrasco":
+        - img "Pizza Churrasco"
+      - button "Pizza Churrasco":
+        - heading "Pizza Churrasco" [level=3]
+      - paragraph: Churrasco a la parrilla, mozzarella artesanal y chimichurri de la casa.
+      - strong: C$ 670
+      - button "Agregar Pizza Churrasco": Agregar +
+    - article:
+      - button "Ver detalles de Dulce Tentación":
+        - img "Dulce Tentación"
+      - button "Dulce Tentación":
+        - heading "Dulce Tentación" [level=3]
+      - paragraph: Waffle artesanal con mermelada de fresa casera, chantilly, frutas de temporada, tierra de chocolate y miel de maple.
+      - strong: C$ 320
+      - button "Agregar Dulce Tentación": Agregar +
+    - article:
+      - button "Ver detalles de Ensalada Lupita":
+        - img "Ensalada Lupita"
+      - button "Ensalada Lupita":
+        - heading "Ensalada Lupita" [level=3]
+      - paragraph: Mix de lechugas, vegetales frescos, pasta penne, parmesano y aderezo de la casa. Disponible con camarón, pollo o res.
+      - strong: C$ 640
+      - button "Elegir opciones de Ensalada Lupita": Elegir +
+    - article:
+      - button "Ver detalles de Delicias de la Abuela":
+        - img "Delicias de la Abuela"
+      - button "Delicias de la Abuela":
+        - heading "Delicias de la Abuela" [level=3]
+      - paragraph: Postre de mango ahumado con el sello dulce de la casa.
+      - strong: C$ 250
+      - button "Agregar Delicias de la Abuela": Agregar +
+    - group: Horarios y condiciones del pedido
+  - group: Escenarios de prueba

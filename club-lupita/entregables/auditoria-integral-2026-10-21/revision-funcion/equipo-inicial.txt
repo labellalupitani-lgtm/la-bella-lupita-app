@@ -1,0 +1,929 @@
+Demo local · Datos simulados · Sin cobros ni envíos
+Resumen
+Carta
+Visitas
+Equipo
+Saltar a la propuesta
+LA BELLA LUPITA
+Equipo · propuesta local
+
+SERVICIO EN CURSO
+
+Pedidos del turno
+
+26 en curso · 9 superan 15 min
+
+Vista del equipo
+Caja
+Cocina
+Encargado
+En curso
+26
+Por aceptar
+7
+Cocina
+13
+Listos
+6
+Historial
+0
+
+Más antiguos primero
+· 26 resultados
+
+Buscar y filtrar
+#26
+Aceptado
+
+Cliente sintético 26
+
+27 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Comenzar preparación
+Cancelar
+#25
+Por aceptar
+
+Cliente sintético 25
+
+26 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Aceptar pedido
+Cancelar
+#24
+Listo para entregar
+
+Cliente sintético 24
+
+25 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Confirmar entrega
+#23
+En preparación
+
+Cliente sintético 23
+
+24 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Marcar listo
+#22
+Aceptado
+
+Cliente sintético 22
+
+23 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+Restricción confirmada
+
+Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+
+Leí la restricción y confirmé con el equipo cómo atenderla.
+
+Total C$480
+
+Comenzar preparación
+Cancelar
+
+Confirmá la restricción para habilitar la preparación.
+
+#21
+Por aceptar
+
+Cliente sintético 21
+
+22 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Aceptar pedido
+Cancelar
+#20
+Listo para entregar
+
+Cliente sintético 20
+
+21 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Confirmar entrega
+#19
+En preparación
+
+Cliente sintético 19
+
+20 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Marcar listo
+#18
+Aceptado
+
+Cliente sintético 18
+
+19 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Comenzar preparación
+Cancelar
+#17
+Por aceptar
+
+Cliente sintético 17
+
+18 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+Restricción confirmada
+
+Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+
+Total C$480
+
+Aceptar pedido
+Cancelar
+#16
+Listo para entregar
+
+Cliente sintético 16
+
+17 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Confirmar entrega
+#15
+En preparación
+
+Cliente sintético 15
+
+16 min
+Estimación superada
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Marcar listo
+#14
+Aceptado
+
+Cliente sintético 14
+
+15 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Comenzar preparación
+Cancelar
+#13
+Por aceptar
+
+Cliente sintético 13
+
+14 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Aceptar pedido
+Cancelar
+#12
+Listo para entregar
+
+Cliente sintético 12
+
+13 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+Restricción confirmada
+
+Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+
+Total C$480
+
+Confirmar entrega
+#11
+En preparación
+
+Cliente sintético 11
+
+12 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Marcar listo
+#10
+Aceptado
+
+Cliente sintético 10
+
+11 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Comenzar preparación
+Cancelar
+#9
+Por aceptar
+
+Cliente sintético 9
+
+10 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Aceptar pedido
+Cancelar
+#8
+Listo para entregar
+
+Cliente sintético 8
+
+9 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Confirmar entrega
+#7
+En preparación
+
+Cliente sintético 7
+
+8 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+Restricción confirmada
+
+Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+
+Total C$480
+
+Marcar listo
+#6
+Aceptado
+
+Cliente sintético 6
+
+7 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Comenzar preparación
+Cancelar
+#5
+Por aceptar
+
+Cliente sintético 5
+
+6 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Aceptar pedido
+Cancelar
+#4
+Listo para entregar
+
+Cliente sintético 4
+
+5 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Confirmar entrega
+#3
+En preparación
+
+Cliente sintético 3
+
+4 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Marcar listo
+#2
+Aceptado
+
+Cliente sintético 2
+
+3 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+Restricción confirmada
+
+Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+
+Leí la restricción y confirmé con el equipo cómo atenderla.
+
+Total C$480
+
+Comenzar preparación
+Cancelar
+
+Confirmá la restricción para habilitar la preparación.
+
+#1
+Por aceptar
+
+María de los Ángeles Apellidos Compuestos de Prueba
+
+2 min
+Desde el ingreso
+2×
+Latte
+Grande · leche de almendras
+C$280
+1×
+Sándwich de pollo
+C$200
+
+Total C$480
+
+Aceptar pedido
+Cancelar
+
+Datos de prueba · Última revisión: Ahora
+
+Actualizar bandeja
+Escenarios de prueba
+
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- region "Propuesta de operación del equipo":
+  - text: LA BELLA LUPITA Equipo · propuesta local
+  - paragraph: SERVICIO EN CURSO
+  - heading "Pedidos del turno" [level=1]
+  - paragraph:
+    - text: 26 en curso
+    - strong: 9 superan 15 min
+  - text: Vista del equipo
+  - combobox "Vista del equipo":
+    - option "Caja" [selected]
+    - option "Cocina"
+    - option "Encargado"
+  - navigation "Filtrar pedidos por estado":
+    - button "En curso 26" [pressed]
+    - button "Por aceptar 7"
+    - button "Cocina 13"
+    - button "Listos 6"
+    - button "Historial 0"
+  - paragraph: Más antiguos primero · 26 resultados
+  - button "Buscar y filtrar"
+  - status
+  - article "#26 Aceptado":
+    - heading "#26 Aceptado" [level=2]
+    - paragraph: Cliente sintético 26
+    - strong: 27 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Comenzar preparación"
+    - button "Cancelar"
+  - article "#25 Por aceptar":
+    - heading "#25 Por aceptar" [level=2]
+    - paragraph: Cliente sintético 25
+    - strong: 26 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Aceptar pedido"
+    - button "Cancelar"
+  - article "#24 Listo para entregar":
+    - heading "#24 Listo para entregar" [level=2]
+    - paragraph: Cliente sintético 24
+    - strong: 25 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Confirmar entrega"
+  - article "#23 En preparación":
+    - heading "#23 En preparación" [level=2]
+    - paragraph: Cliente sintético 23
+    - strong: 24 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Marcar listo"
+  - article "#22 Aceptado":
+    - heading "#22 Aceptado" [level=2]
+    - paragraph: Cliente sintético 22
+    - strong: 23 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - strong: Restricción confirmada
+    - paragraph: Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+    - checkbox "Leí la restricción y confirmé con el equipo cómo atenderla."
+    - text: Leí la restricción y confirmé con el equipo cómo atenderla.
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Comenzar preparación" [disabled]
+    - button "Cancelar"
+    - paragraph: Confirmá la restricción para habilitar la preparación.
+  - article "#21 Por aceptar":
+    - heading "#21 Por aceptar" [level=2]
+    - paragraph: Cliente sintético 21
+    - strong: 22 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Aceptar pedido"
+    - button "Cancelar"
+  - article "#20 Listo para entregar":
+    - heading "#20 Listo para entregar" [level=2]
+    - paragraph: Cliente sintético 20
+    - strong: 21 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Confirmar entrega"
+  - article "#19 En preparación":
+    - heading "#19 En preparación" [level=2]
+    - paragraph: Cliente sintético 19
+    - strong: 20 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Marcar listo"
+  - article "#18 Aceptado":
+    - heading "#18 Aceptado" [level=2]
+    - paragraph: Cliente sintético 18
+    - strong: 19 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Comenzar preparación"
+    - button "Cancelar"
+  - article "#17 Por aceptar":
+    - heading "#17 Por aceptar" [level=2]
+    - paragraph: Cliente sintético 17
+    - strong: 18 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - strong: Restricción confirmada
+    - paragraph: Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Aceptar pedido"
+    - button "Cancelar"
+  - article "#16 Listo para entregar":
+    - heading "#16 Listo para entregar" [level=2]
+    - paragraph: Cliente sintético 16
+    - strong: 17 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Confirmar entrega"
+  - article "#15 En preparación":
+    - heading "#15 En preparación" [level=2]
+    - paragraph: Cliente sintético 15
+    - strong: 16 min
+    - text: Estimación superada
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Marcar listo"
+  - article "#14 Aceptado":
+    - heading "#14 Aceptado" [level=2]
+    - paragraph: Cliente sintético 14
+    - strong: 15 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Comenzar preparación"
+    - button "Cancelar"
+  - article "#13 Por aceptar":
+    - heading "#13 Por aceptar" [level=2]
+    - paragraph: Cliente sintético 13
+    - strong: 14 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Aceptar pedido"
+    - button "Cancelar"
+  - article "#12 Listo para entregar":
+    - heading "#12 Listo para entregar" [level=2]
+    - paragraph: Cliente sintético 12
+    - strong: 13 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - strong: Restricción confirmada
+    - paragraph: Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Confirmar entrega"
+  - article "#11 En preparación":
+    - heading "#11 En preparación" [level=2]
+    - paragraph: Cliente sintético 11
+    - strong: 12 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Marcar listo"
+  - article "#10 Aceptado":
+    - heading "#10 Aceptado" [level=2]
+    - paragraph: Cliente sintético 10
+    - strong: 11 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Comenzar preparación"
+    - button "Cancelar"
+  - article "#9 Por aceptar":
+    - heading "#9 Por aceptar" [level=2]
+    - paragraph: Cliente sintético 9
+    - strong: 10 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Aceptar pedido"
+    - button "Cancelar"
+  - article "#8 Listo para entregar":
+    - heading "#8 Listo para entregar" [level=2]
+    - paragraph: Cliente sintético 8
+    - strong: 9 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Confirmar entrega"
+  - article "#7 En preparación":
+    - heading "#7 En preparación" [level=2]
+    - paragraph: Cliente sintético 7
+    - strong: 8 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - strong: Restricción confirmada
+    - paragraph: Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Marcar listo"
+  - article "#6 Aceptado":
+    - heading "#6 Aceptado" [level=2]
+    - paragraph: Cliente sintético 6
+    - strong: 7 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Comenzar preparación"
+    - button "Cancelar"
+  - article "#5 Por aceptar":
+    - heading "#5 Por aceptar" [level=2]
+    - paragraph: Cliente sintético 5
+    - strong: 6 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Aceptar pedido"
+    - button "Cancelar"
+  - article "#4 Listo para entregar":
+    - heading "#4 Listo para entregar" [level=2]
+    - paragraph: Cliente sintético 4
+    - strong: 5 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Confirmar entrega"
+  - article "#3 En preparación":
+    - heading "#3 En preparación" [level=2]
+    - paragraph: Cliente sintético 3
+    - strong: 4 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Marcar listo"
+  - article "#2 Aceptado":
+    - heading "#2 Aceptado" [level=2]
+    - paragraph: Cliente sintético 2
+    - strong: 3 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - strong: Restricción confirmada
+    - paragraph: Alergia a lácteos confirmada para este pedido. Revisar ingredientes y preparación con el equipo.
+    - checkbox "Leí la restricción y confirmé con el equipo cómo atenderla."
+    - text: Leí la restricción y confirmé con el equipo cómo atenderla.
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Comenzar preparación" [disabled]
+    - button "Cancelar"
+    - paragraph: Confirmá la restricción para habilitar la preparación.
+  - article "#1 Por aceptar":
+    - heading "#1 Por aceptar" [level=2]
+    - paragraph: María de los Ángeles Apellidos Compuestos de Prueba
+    - strong: 2 min
+    - text: Desde el ingreso
+    - list:
+      - listitem: 2× Latte Grande · leche de almendras C$280
+      - listitem: 1× Sándwich de pollo C$200
+    - paragraph:
+      - text: Total
+      - strong: C$480
+    - button "Aceptar pedido"
+    - button "Cancelar"
+  - paragraph: "Datos de prueba · Última revisión: Ahora"
+  - button "Actualizar bandeja"
+  - group: Escenarios de prueba

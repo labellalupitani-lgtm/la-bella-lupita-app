@@ -1,0 +1,782 @@
+{
+  "/": {
+    "buttons": [
+      {
+        "label": "MBuenas, MaríaBarista · 840 pts para Reserva Lupita",
+        "disabled": false
+      },
+      {
+        "label": "Avisos",
+        "disabled": false
+      },
+      {
+        "label": "Recargá",
+        "disabled": false
+      },
+      {
+        "label": "qr_code_scannerMostrá tu pase",
+        "disabled": false
+      },
+      {
+        "label": "Reservá la tuyaarrow_forward",
+        "disabled": false
+      },
+      {
+        "label": "Ver y apartararrow_forward",
+        "disabled": false
+      },
+      {
+        "label": "takeout_diningPedí para llevar",
+        "disabled": false
+      },
+      {
+        "label": "event_seatReservá mesa",
+        "disabled": false
+      },
+      {
+        "label": "storefrontTienda de la finca",
+        "disabled": false
+      },
+      {
+        "label": "Enseñar mi pase",
+        "disabled": false
+      },
+      {
+        "label": "Inicio",
+        "disabled": false
+      },
+      {
+        "label": "Pedir",
+        "disabled": false
+      },
+      {
+        "label": "Tienda",
+        "disabled": false
+      },
+      {
+        "label": "Club",
+        "disabled": false
+      },
+      {
+        "label": "Perfil",
+        "disabled": false
+      }
+    ],
+    "inputs": [],
+    "text": "Ir al contenido\nM\nBuenas, María\nBARISTA · 840 PTS PARA RESERVA LUPITA\nnotifications\nCLUB LUPITA\nworkspace_premium\n\nTu cuenta de casa\n\nC$ 15\n\nRECARGÁ\nqr_code_scanner\nMOSTRÁ TU PASE\nTu tanda\n7 DE 10\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\nredeem\n\nTe faltan 2 para tu bebida de cortesía.\n\nlocal_fire_department\nLos retos llegan en la próxima entrega\n\nTres visitas en la semana, un premio y un contador. Falta el lado de la casa.\n\nPasa en la casa\nlocal_fire_department\nQUEDAN 33 DE 150\nReserva de Cosecha\n\nPagás hoy y la retirás recién tostada, en temporada.\n\nRESERVÁ LA TUYA\narrow_forward\nevent_seat\n4 DE 12 CUPOS\nMesa del Tostador\n\nTres lotes, una mesa larga, doce sillas y el tostador contando.\n\nVER Y APARTAR\narrow_forward\ntakeout_dining\nPEDÍ PARA LLEVAR\nevent_seat\nRESERVÁ MESA\nstorefront\nTIENDA DE LA FINCA\nhome\nINICIO\nlocal_cafe\nPEDIR\nstorefront\nTIENDA\nmilitary_tech\nCLUB\nperson\nPERFIL"
+  },
+  "/pedir": {
+    "buttons": [
+      {
+        "label": "Volver",
+        "disabled": false
+      },
+      {
+        "label": "Barra",
+        "disabled": false
+      },
+      {
+        "label": "Brunch",
+        "disabled": false
+      },
+      {
+        "label": "Bistró",
+        "disabled": false
+      },
+      {
+        "label": "Sobremesa",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaEspressoC$ 80",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Espresso al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaCortaditoC$ 90",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Cortadito al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaMacchiatoC$ 90",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Macchiato al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaAmericanoC$ 85",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Americano al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLatteC$ 95",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Latte al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaCappuccinoC$ 95",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Cappuccino al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaMochaC$ 120",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Mocha al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaTé CalienteC$ 100",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Té Caliente al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaIced AmericanoC$ 140",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Iced Americano al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaIced LatteC$ 160",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Iced Latte al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaCremoso de CaféC$ 200",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Cremoso de Café al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaCremoso de OreoC$ 210",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Cremoso de Oreo al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaCremoso LightC$ 210",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Cremoso Light al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLimonada Bella LupitaC$ 190",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Limonada Bella Lupita al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLimonada ClásicaC$ 130",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Limonada Clásica al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLimonada HierbabuenaC$ 140",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Limonada Hierbabuena al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLimonada MangoC$ 170",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Limonada Mango al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLimonada PitahayaC$ 150",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Limonada Pitahaya al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLimonada FresaC$ 170",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Limonada Fresa al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLimonada Sandía MentaC$ 170",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Limonada Sandía Menta al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaLimonada de CalalaC$ 170",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Limonada de Calala al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaGaseosaC$ 60",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Gaseosa al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaAguaC$ 60",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Agua al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaSodaC$ 60",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Soda al pedido",
+        "disabled": false
+      },
+      {
+        "label": "Ir a la carta",
+        "disabled": false
+      },
+      {
+        "label": "Inicio",
+        "disabled": false
+      },
+      {
+        "label": "Pedir",
+        "disabled": false
+      },
+      {
+        "label": "Tienda",
+        "disabled": false
+      },
+      {
+        "label": "Club",
+        "disabled": false
+      },
+      {
+        "label": "Perfil",
+        "disabled": false
+      }
+    ],
+    "inputs": [
+      {
+        "placeholder": "¿Qué se te antoja hoy?",
+        "type": "search"
+      }
+    ],
+    "text": "Ir al contenido\narrow_back\nPedí para llevar\n\nschedule\nRETIRÁS EN BARRA, EN PLAZA LA FE\n\nBuscar en la carta\nsearch\nBarra\nBrunch\nBistró\nSobremesa\n\nEspresso, cortado y filtrado del lote del mes. De pie o para llevar, en minutos.\n\nrestaurant\nDE LA CASA\nEspresso\nC$ 80\nadd\nrestaurant\nDE LA CASA\nCortadito\nC$ 90\nadd\nrestaurant\nDE LA CASA\nMacchiato\nC$ 90\nadd\nrestaurant\nDE LA CASA\nAmericano\nC$ 85\nadd\nrestaurant\nDE LA CASA\nLatte\nC$ 95\nadd\nrestaurant\nDE LA CASA\nCappuccino\nC$ 95\nadd\nrestaurant\nDE LA CASA\nMocha\nC$ 120\nadd\nrestaurant\nDE LA CASA\nTé Caliente\nC$ 100\nadd\nrestaurant\nDE LA CASA\nIced Americano\nC$ 140\nadd\nrestaurant\nDE LA CASA\nIced Latte\nC$ 160\nadd\nrestaurant\nDE LA CASA\nCremoso de Café\nC$ 200\nadd\nrestaurant\nDE LA CASA\nCremoso de Oreo\nC$ 210\nadd\nrestaurant\nDE LA CASA\nCremoso Light\nC$ 210\nadd\nrestaurant\nDE LA CASA\nLimonada Bella Lupita\nC$ 190\nadd\nrestaurant\nDE LA CASA\nLimonada Clásica\nC$ 130\nadd\nrestaurant\nDE LA CASA\nLimonada Hierbabuena\nC$ 140\nadd\nrestaurant\nDE LA CASA\nLimonada Mango\nC$ 170\nadd\nrestaurant\nDE LA CASA\nLimonada Pitahaya\nC$ 150\nadd\nrestaurant\nDE LA CASA\nLimonada Fresa\nC$ 170\nadd\nrestaurant\nDE LA CASA\nLimonada Sandía Menta\nC$ 170\nadd\nrestaurant\nDE LA CASA\nLimonada de Calala\nC$ 170\nadd\nrestaurant\nDE LA CASA\nGaseosa\nC$ 60\nadd\nrestaurant\nDE LA CASA\nAgua\nC$ 60\nadd\nrestaurant\nDE LA CASA\nSoda\nC$ 60\nadd\nhome\nINICIO\nlocal_cafe\nPEDIR\nstorefront\nTIENDA\nmilitary_tech\nCLUB\nperson\nPERFIL"
+  },
+  "/tienda": {
+    "buttons": [
+      {
+        "label": "Volver",
+        "disabled": false
+      },
+      {
+        "label": "Apartar la mía",
+        "disabled": true
+      },
+      {
+        "label": "military_techVer la Mesa Fundadora",
+        "disabled": false
+      },
+      {
+        "label": "redeemCajas de regaloSe arman a mano y se cotizan una por unaarrow_forward",
+        "disabled": false
+      },
+      {
+        "label": "storefrontPedidos para oficinaGrano molido o en bolsa, con entrega en Managuaarrow_forward",
+        "disabled": false
+      },
+      {
+        "label": "No alcanza el saldo",
+        "disabled": true
+      },
+      {
+        "label": "Mejor no",
+        "disabled": false
+      },
+      {
+        "label": "Inicio",
+        "disabled": false
+      },
+      {
+        "label": "Pedir",
+        "disabled": false
+      },
+      {
+        "label": "Tienda",
+        "disabled": false
+      },
+      {
+        "label": "Club",
+        "disabled": false
+      },
+      {
+        "label": "Perfil",
+        "disabled": false
+      }
+    ],
+    "inputs": [],
+    "text": "Ir al contenido\narrow_back\nTienda de la finca\n\nCULTIVADO POR LA FAMILIA DESDE 1971\n\nEl café que se toma acá es el que baja de la finca.\n\nNo compramos grano de nadie. Lo que está en la taza y lo que está en la bolsa salieron de la misma ladera, en Matagalpa, el mismo año.\n\nReserva de Cosecha\n\nDEL LOTE DE LA FINCA · 250 G\n\nTu bolsa lleva un número.\nNo hay dos iguales.\nC$ 890\n\nPagás hoy y la retirás recién tostada cuando entre la temporada. El número que te toque queda escrito en la bolsa y en tu cuenta.\n\nlocal_fire_department\nQUEDAN 33 DE 150\nAPARTAR LA MÍA\n\nTe faltan C$ 875 en la Cuenta de Casa. Recargá en el mostrador.\n\nLa bolsa de cada mes\nlocal_cafe\nViene con la Mesa Fundadora\n\nLa casa no vende suscripción de café por su cuenta: los 250 g del mes son uno de los cinco beneficios de la Mesa Fundadora.\n\nmilitary_tech\nVER LA MESA FUNDADORA\nEncargos grandes\nredeem\nCajas de regalo\nSe arman a mano y se cotizan una por una\narrow_forward\nstorefront\nPedidos para oficina\nGrano molido o en bolsa, con entrega en Managua\narrow_forward\n\nLos dos se cierran por WhatsApp, con una persona del otro lado. Es más lento que un botón y sale mejor.\n\ninfo\n\nEsta tienda enseña sólo lo que la casa puede cobrarte hoy y entregarte de verdad. El catálogo de mostrador —los lotes sueltos, el pack portátil— se compra en la barra, donde alguien te lo puede moler como lo tomás.\n\nhome\nINICIO\nlocal_cafe\nPEDIR\nstorefront\nTIENDA\nmilitary_tech\nCLUB\nperson\nPERFIL"
+  },
+  "/club": {
+    "buttons": [
+      {
+        "label": "Volver",
+        "disabled": false
+      },
+      {
+        "label": "Tomar una plaza — C$ 950/mes",
+        "disabled": true
+      },
+      {
+        "label": "Apartar butaca",
+        "disabled": true
+      },
+      {
+        "label": "Apartar butaca",
+        "disabled": true
+      },
+      {
+        "label": "event_seatElegir mesa y hora",
+        "disabled": false
+      },
+      {
+        "label": "No alcanza el saldo",
+        "disabled": true
+      },
+      {
+        "label": "Mejor no",
+        "disabled": false
+      },
+      {
+        "label": "No alcanza el saldo",
+        "disabled": true
+      },
+      {
+        "label": "Mejor no",
+        "disabled": false
+      },
+      {
+        "label": "No alcanza el saldo",
+        "disabled": true
+      },
+      {
+        "label": "Mejor no",
+        "disabled": false
+      },
+      {
+        "label": "Sí, cancelar renovación",
+        "disabled": false
+      },
+      {
+        "label": "Volver",
+        "disabled": false
+      },
+      {
+        "label": "Inicio",
+        "disabled": false
+      },
+      {
+        "label": "Pedir",
+        "disabled": false
+      },
+      {
+        "label": "Tienda",
+        "disabled": false
+      },
+      {
+        "label": "Club",
+        "disabled": false
+      },
+      {
+        "label": "Perfil",
+        "disabled": false
+      }
+    ],
+    "inputs": [],
+    "text": "Ir al contenido\narrow_back\nClub\n\nMESA FUNDADORA\n\nCien personas, y una silla que siempre está.\n\nEl Club es gratis y ya lo tenés. Esto es lo otro: una bolsa del lote cada mes, un café por visita, y la casa contando con vos antes que con nadie.\n\nworkspace_premium\nQUEDAN 20 DE 100\nTOMAR UNA PLAZA — C$ 950/MES\n\nTe faltan C$ 935 en la Cuenta de Casa.\n\nExperiencias de la casa\n\nDOMINGO, 27 DE SEPTIEMBRE · 4:00 P. M.\n\nCata y maridaje con cacao nicaragüense\nC$ 850\nevent_seat\n15 DE 16 BUTACAS\nAPARTAR BUTACA\n\nTe faltan C$ 835 en la Cuenta de Casa.\n\nDOMINGO, 4 DE OCTUBRE · 5:00 A. M.\n\nTour a la finca en Matagalpa\nC$ 2,400\nevent_seat\n20 DE 20 BUTACAS\nAPARTAR BUTACA\n\nTe faltan C$ 2,385 en la Cuenta de Casa.\n\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP. Te enseñamos las horas que de verdad quedan libres ese día.\n\nevent_seat\nELEGIR MESA Y HORA\nhome\nINICIO\nlocal_cafe\nPEDIR\nstorefront\nTIENDA\nmilitary_tech\nCLUB\nperson\nPERFIL"
+  },
+  "/reservar": {
+    "buttons": [
+      {
+        "label": "Volver",
+        "disabled": false
+      },
+      {
+        "label": "balconyLa terraza10 mesas · sin depósito",
+        "disabled": false
+      },
+      {
+        "label": "windowEl ventanal6 mesas · sin depósito",
+        "disabled": false
+      },
+      {
+        "label": "countertopsLa barra8 mesas · sin depósito",
+        "disabled": false
+      },
+      {
+        "label": "restaurantEl bistró12 mesas · sin depósito",
+        "disabled": false
+      },
+      {
+        "label": "diamondEl Salón VIPLleva C$ 500 de depósito",
+        "disabled": false
+      },
+      {
+        "label": "domingo, 13 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "lunes, 14 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "martes, 15 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "miércoles, 16 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "jueves, 17 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "viernes, 18 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "sábado, 19 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "domingo, 20 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "lunes, 21 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "martes, 22 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "miércoles, 23 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "jueves, 24 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "viernes, 25 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "sábado, 26 de septiembre",
+        "disabled": false
+      },
+      {
+        "label": "1",
+        "disabled": false
+      },
+      {
+        "label": "2",
+        "disabled": false
+      },
+      {
+        "label": "3",
+        "disabled": false
+      },
+      {
+        "label": "4",
+        "disabled": false
+      },
+      {
+        "label": "5",
+        "disabled": false
+      },
+      {
+        "label": "6",
+        "disabled": false
+      },
+      {
+        "label": "7",
+        "disabled": false
+      },
+      {
+        "label": "8",
+        "disabled": false
+      },
+      {
+        "label": "9",
+        "disabled": false
+      },
+      {
+        "label": "10",
+        "disabled": false
+      },
+      {
+        "label": "11",
+        "disabled": false
+      },
+      {
+        "label": "12",
+        "disabled": false
+      },
+      {
+        "label": "Menos horas de mesa",
+        "disabled": false
+      },
+      {
+        "label": "Más horas de mesa",
+        "disabled": false
+      },
+      {
+        "label": "Apartar la mesa",
+        "disabled": true
+      }
+    ],
+    "inputs": [],
+    "text": "Ir al contenido\narrow_back\nApartá tu mesa\n¿Dónde te sentás?\nbalcony\nLa terraza\n10 mesas · sin depósito\nwindow\nEl ventanal\n6 mesas · sin depósito\ncountertops\nLa barra\n8 mesas · sin depósito\nrestaurant\nEl bistró\n12 mesas · sin depósito\ndiamond\nEl Salón VIP\nLleva C$ 500 de depósito\n¿Qué día?\nHOY\n13\nLUN\n14\nMAR\n15\nMIÉ\n16\nJUE\n17\nVIE\n18\nSÁB\n19\nDOM\n20\nLUN\n21\nMAR\n22\nMIÉ\n23\nJUE\n24\nVIE\n25\nSÁB\n26\n¿A qué hora?\n\nElegí primero dónde te sentás y te decimos qué horas quedan.\n\n¿Cuántos, y por cuánto rato?\n\nPERSONAS\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n\nCUÁNTO RATO\n\nremove\n2\nhoras\nadd\n\nElegí una zona para seguir\n\nAPARTAR LA MESA"
+  },
+  "/perfil": {
+    "buttons": [
+      {
+        "label": "Volver",
+        "disabled": false
+      },
+      {
+        "label": "shareCompartir MARÍA000",
+        "disabled": false
+      },
+      {
+        "label": "Volver a la casa",
+        "disabled": false
+      },
+      {
+        "label": "Cerrar sesión",
+        "disabled": false
+      },
+      {
+        "label": "Inicio",
+        "disabled": false
+      },
+      {
+        "label": "Pedir",
+        "disabled": false
+      },
+      {
+        "label": "Tienda",
+        "disabled": false
+      },
+      {
+        "label": "Club",
+        "disabled": false
+      },
+      {
+        "label": "Perfil",
+        "disabled": false
+      }
+    ],
+    "inputs": [],
+    "text": "Ir al contenido\narrow_back\nTu perfil\nM\nMaría\n\nen la casa desde abril de 2026\n\nNIVEL ACTUAL\nSIGUIENTE\nBarista\nReserva Lupita\n\n840 pts más y subís de nivel.\n\ngroup\nTraé a alguien a la mesa\n\nLa primera vez que llegue con tu código, los dos toman algo por cuenta de la casa.\n\nshare\nCOMPARTIR MARÍA000\nTu perfil de la casa\nlocal_cafe\nTu bebida de siempre\nCappuccino con leche de almendra\nwarning\nAlergias\nNueces\ncake\nTu cumpleaños\n14 de septiembre · el regalo se activa una semana antes\naccount_balance_wallet\nCómo recargás\nEn caja, con efectivo o con tarjeta\nnotifications\nAvisos por WhatsApp\nSe conectan en la próxima entrega\n\nEsto lo ve el barista cuando llegás. Para cambiarlo, decíselo en la barra: la pantalla para editarlo llega con el resto del Perfil.\n\nTu cuenta de casa\nReserva de Cosecha · bolsa 117\n4 sept\n−C$ 890\nAjuste de demostración\n25 ago\n+C$ 850\nExperiencia · cacao\n24 ago\n−C$ 850\nAjuste de demostración\n21 ago\n+C$ 900\nprueba arbitro\n21 ago\n−C$ 10\nReserva de Cosecha · bolsa 117\n21 ago\n−C$ 890\nAjuste de demostración\n21 ago\n+C$ 280\nRisotto de Gallo Pinto\n21 ago\n−C$ 280\nVOLVER A LA CASACerrar sesión\nhome\nINICIO\nlocal_cafe\nPEDIR\nstorefront\nTIENDA\nmilitary_tech\nCLUB\nperson\nPERFIL"
+  },
+  "/kit": {
+    "buttons": [
+      {
+        "label": "Volver",
+        "disabled": false
+      },
+      {
+        "label": "Recargá",
+        "disabled": false
+      },
+      {
+        "label": "qr_code_scannerPagá con QR",
+        "disabled": false
+      },
+      {
+        "label": "Sin cupos",
+        "disabled": true
+      },
+      {
+        "label": "Recargá",
+        "disabled": false
+      },
+      {
+        "label": "qr_code_scannerPagá con QR",
+        "disabled": false
+      },
+      {
+        "label": "Ya soy socio — iniciar sesión",
+        "disabled": false
+      },
+      {
+        "label": "Barra",
+        "disabled": false
+      },
+      {
+        "label": "Brunch",
+        "disabled": false
+      },
+      {
+        "label": "Bistro",
+        "disabled": false
+      },
+      {
+        "label": "Sobremesa",
+        "disabled": false
+      },
+      {
+        "label": "Quitar",
+        "disabled": false
+      },
+      {
+        "label": "Sellar visita",
+        "disabled": false
+      },
+      {
+        "label": "local_cafeTu bebida de siempreCapuchino, leche de almendrachevron_right",
+        "disabled": false
+      },
+      {
+        "label": "warningAlergiasNueceschevron_right",
+        "disabled": false
+      },
+      {
+        "label": "2× sellos hoyNica ToastC$ 300",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Nica Toast al pedido",
+        "disabled": false
+      },
+      {
+        "label": "Bagel de SalmónC$ 430",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Bagel de Salmón al pedido",
+        "disabled": false
+      },
+      {
+        "label": "restaurantDe la casaSin fotografía todavíaC$ 110",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Sin fotografía todavía al pedido",
+        "disabled": false
+      },
+      {
+        "label": "Con la foto rotaC$ 110",
+        "disabled": false
+      },
+      {
+        "label": "Agregar Con la foto rota al pedido",
+        "disabled": false
+      },
+      {
+        "label": "Pedir",
+        "disabled": false
+      },
+      {
+        "label": "Reservá la tuyaarrow_forward",
+        "disabled": false
+      },
+      {
+        "label": "Ver y apartararrow_forward",
+        "disabled": false
+      },
+      {
+        "label": "takeout_diningPedí para llevar",
+        "disabled": false
+      },
+      {
+        "label": "event_seatReservá mesa",
+        "disabled": false
+      },
+      {
+        "label": "storefrontTienda de la finca",
+        "disabled": false
+      },
+      {
+        "label": "Ver la carta",
+        "disabled": false
+      },
+      {
+        "label": "Ver toda la carta",
+        "disabled": false
+      },
+      {
+        "label": "Anotarme en la lista",
+        "disabled": false
+      },
+      {
+        "label": "Agregar — C$ 110",
+        "disabled": false
+      }
+    ],
+    "inputs": [
+      {
+        "placeholder": "¿Qué se te antoja hoy?",
+        "type": "search"
+      },
+      {
+        "placeholder": "",
+        "type": "text"
+      }
+    ],
+    "text": "Ir al contenido\nIr al contenido\narrow_back\nKit del sistema\n\nCLUB LUPITA · FASE 1 · RONDA 3\n\nVeintinueve componentes y sus estados.\n\nNinguna pantalla se arma hasta que esta página esté verde. Si algo no está aquí, no existe en el sistema.\n\nFaltan cuatro que llegan con su pantalla: el carnet con QR, la fila de movimiento, el selector de recarga y la barra flotante del pedido.\n\nBotones\n\nPíldora en versalitas. El primario es verde hoja sobre porcelana: 6,83:1 medido.\n\nRECARGÁ\nqr_code_scanner\nPAGÁ CON QR\nSIN CUPOS\n\nSOBRE SUPERFICIE OSCURA\n\nRECARGÁ\nqr_code_scanner\nPAGÁ CON QR\nYa soy socio — iniciar sesión\nChips\n\nEl de escasez nunca aparece sin cifra: si no hay número, no hay chip.\n\nBarra\nBrunch\nBistro\nSobremesa\nlocal_fire_department\nQUEDAN 34 DE 150\nevent_seat\n8 DE 12 CUPOS\nlocal_mall\nBOLSA DEL MES LISTA\nCarnet\n\nTocá o pasá el puntero: la lámina de oro atrapa la luz.\n\nCLUB LUPITA · MESA FUNDADORA\nworkspace_premium\n\nTu monedero\n\nC$ 1,240\n\nlocal_mall\nBOLSA DEL MES LISTA PARA RETIRAR\nLa tanda\n\nDiez casillas, nueve se ganan, la décima la pone la casa. SPEC.md §1.\n\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\ncoffee_maker\nredeem\n\nTe faltan 2 para tu bebida de cortesía.\n\nQUITAR\nSELLAR VISITA\nProgreso de nivel\nNIVEL ACTUAL\nSIGUIENTE\nBarista\nReserva Lupita\n\n620 pts más y subís de nivel.\n\nAvisos\nredeem\n\nSocios del club: acceso 48 h antes que el público\n\ncheck_circle\n\nTu bolsa del mes está tostada y con tu nombre\n\nwarning\n\nAlergia: nueces\n\nFilas de lista\nlocal_cafe\nTu bebida de siempre\nCapuchino, leche de almendra\nchevron_right\nwarning\nAlergias\nNueces\nchevron_right\nnotifications\nNotificaciones por WhatsApp\nActivadas\nSÍ\nBuscador y ficha de producto\nBuscar en la carta\nsearch\n2× SELLOS HOY\nNica Toast\nC$ 300\nadd\nBagel de Salmón\nC$ 430\nadd\nrestaurant\nDE LA CASA\nSin fotografía todavía\nC$ 110\nadd\nCon la foto rota\nC$ 110\nadd\nPiezas del Inicio\n\nEl reto es estructura permanente: cuando no hay ninguno, el módulo se queda y lo dice.\n\nlocal_cafe\n\nLO DE SIEMPRE\n\nCapuchino con leche de almendra\n\nC$ 110 · listo en 6 min\n\nPEDIR\n\nlocal_fire_department\nReto de la semana: 3 visitas\n\nPremio: Waffle El Consentido al 50 %\n\nVAS 2 DE 3\nlocal_fire_department\nEsta semana no hay reto\n\nVolvé el lunes. La casa siempre está tramando algo.\n\nPasa en la casa\nlocal_fire_department\nQUEDAN 34 DE 150\nReserva de Cosecha\n\nPagás hoy, la retirás recién tostada en temporada.\n\nRESERVÁ LA TUYA\narrow_forward\nevent_seat\n8 DE 12 CUPOS\nMesa del Tostador\n\nTres lotes, una mesa larga, doce sillas. Viernes 12 de septiembre.\n\nVER Y APARTAR\narrow_forward\ntakeout_dining\nPEDÍ PARA LLEVAR\nevent_seat\nRESERVÁ MESA\nstorefront\nTIENDA DE LA FINCA\nEstados\n\nNinguna de las 23 pantallas del prototipo tenía uno. Quince vacíos, siete errores de campo, esqueleto y confirmación.\n\ncoffee_maker\nTu tanda está en blanco\n\nEl primer sello lo pone el barista en tu próxima visita. No hay que pedirlo.\n\nVER LA CARTA\nsearch\nEso no está en la carta de hoy\n\nProbá con «capuchino», «huevos» o «dulce». La carta cambia con la temporada.\n\nVER TODA LA CARTA\nevent_seat\nLos doce lugares están tomados\n\nDejá tu nombre y te escribimos primero si alguien suelta uno.\n\nANOTARME EN LA LISTA\nTU NÚMERO DE WHATSAPP\n\nwarning\nEse número no nos cuadra. Son ocho dígitos, sin el 505.\n\nIndicadores del panel\n\nSi un dato no se puede calcular, lo dice. No hay ceros de relleno.\n\nSOCIOS DEL CLUB\n\ngroup\n\n82\n/100\n\nLista de espera: 17\n\nSALDO PREPAGO VIVO\n\naccount_balance_wallet\n\nC$ 186,400\n\nFlujo futuro asegurado\n\nCOMEN EN SUS VISITAS\n\n31 %\ntrending_up\n+1,1 pts\n\nDe cada 100 visitas de socio, 31 llevan plato\n\nTRANSACCIONES IDENTIFICADAS\n\nPendiente de conectar el punto de venta."
+  }
+}

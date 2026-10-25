@@ -1,0 +1,13 @@
+import {createRequire} from 'node:module';
+import {readFileSync,writeFileSync,readdirSync,statSync} from 'node:fs';
+import {join,resolve,relative} from 'node:path';
+import {createHash} from 'node:crypto';
+const dir=import.meta.dirname,root=resolve(dir,'../club-lupita'),require=createRequire(join(root,'package.json'));
+const {transform}=require('esbuild');const ts=readFileSync(join(root,'src/data/menu.ts'),'utf8');
+const {code}=await transform(ts,{loader:'ts',format:'esm'});const {CARTA,MOMENTOS}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+const walk=p=>readdirSync(p,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(p,e.name)):[join(p,e.name)]);
+const files=[...walk(join(root,'src')),...walk(join(root,'db')),join(root,'package.json'),join(root,'vite.config.ts')].map(p=>({path:relative(root,p).replaceAll('\\','/'),sha256:createHash('sha256').update(readFileSync(p)).digest('hex')}));
+writeFileSync(join(dir,'evidencia/source-manifest.json'),JSON.stringify(files,null,2));
+const data={total:CARTA.length,moments:MOMENTOS.map(m=>({id:m.id,count:CARTA.filter(p=>p.momento===m.id).length,estimatedMinutes:m.minutos})),photoCount:CARTA.filter(p=>p.foto).length,missingPhotos:CARTA.filter(p=>!p.foto).map(p=>p.id),duplicateIds:CARTA.filter((p,i)=>CARTA.findIndex(q=>q.id===p.id)!==i).map(p=>p.id),invalidPrices:CARTA.filter(p=>!Number.isSafeInteger(p.precio)||p.precio<=0).map(p=>p.id),minPrice:Math.min(...CARTA.map(p=>p.precio)),maxPrice:Math.max(...CARTA.map(p=>p.precio)),brokenLocalPhotos:CARTA.filter(p=>p.foto).filter(p=>{try{return !statSync(join(root,'public',p.foto)).isFile()}catch{return true}}).map(p=>p.id)};
+writeFileSync(join(dir,'evidencia/catalogo.json'),JSON.stringify(data,null,2));console.log(JSON.stringify(data));
+const response=await fetch('https://labellalupita.com/menu?filter=cafe');const html=await response.text();const terms=['Empaque','C$ 40','Ensalada Lupita','Latte','Maracuyá','7:00'];const observations={url:response.url,status:response.status,bytes:Buffer.byteLength(html),sha256:createHash('sha256').update(html).digest('hex'),matches:terms.map(term=>({term,found:html.includes(term),context:html.includes(term)?html.slice(Math.max(0,html.indexOf(term)-70),html.indexOf(term)+180):null}))};writeFileSync(join(dir,'evidencia/sitio-oficial.json'),JSON.stringify(observations,null,2));console.log(JSON.stringify(observations));

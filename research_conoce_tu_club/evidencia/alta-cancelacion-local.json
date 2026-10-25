@@ -1,0 +1,17 @@
+{
+  "alcance": "Compra y cancelación exclusivamente locales; PGlite efímero y red externa bloqueada.",
+  "afterPurchase": {
+    "focus": {
+      "tag": "BODY",
+      "text": "\n    Ir al contenidoEL CLUB DE LA CASAhomeIniciolocal_cafeCartastorefrontTiendamilitary_techMi ClubpersonPerfilevent_sea"
+    },
+    "status": "Sos la #001 de 100 Se fueron C$ 950",
+    "dialogs": 0
+  },
+  "afterCancellation": {
+    "focus": "BUTTON",
+    "status": "Renovación cancelada Conservás tu mes pagado hasta la fecha indicada",
+    "mainText": "Club Lupita · Casa abiertaEl gustode volverLa BellaLupitaMesa FundadoraDe la casaComo vos010203040506070809Otro Socio#001Tu pase en el mostradorMostralo La casa te encuentraVolvé al frente para enseñar tu identificación al barista y consultar tu cuentaVer cómo usarloCada visita cuentaCada nueve sellos, una bebida por cuenta de la casaUn gusto de la casaTu próxima bebidaempieza aquíCompletá tu tanda y disfrutá una bebida de cortesíaLa próxima se acerca0 de 9 sellos123456789Te faltan 9 sellos para tu siguiente bebidaLa próxima vez,vení con tiempoReservar una mesa ↗Mesa Fundadora#001 / 100workspace_premiumTu mes pagado termina el 7 nov · C$ 950/mesActivar renovación automáticaLo tuyo de este meslocal_mallTu bolsa del mes · 250 g del loteSin retirar · se retira de 7 a 9Mostrar códigolocal_cafeUn café filtrado por visitaDisponible hoyMostrar códigobakery_dining15 % en toda la repostería, todos los díasevent_seatPrioridad de horario en el Salón VIPscheduleLas experiencias se te abren 48 h antes que al restoLos tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acáExperiencias de la casajueves, 15 de octubre · 9:24 p. m.Experiencia de pruebaC$ 850event_seat12 de 12 butacasApartar butacaTu mesaevent_seatApartá dónde te sentásTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese díaevent_seatElegir mesa y hora",
+    "toastDismissButtons": 0
+  }
+}

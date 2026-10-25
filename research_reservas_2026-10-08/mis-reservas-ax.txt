@@ -1,0 +1,47 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa":
+    - generic: event_seat
+    - text: Reservar una mesa
+- banner:
+  - button "Volver":
+    - generic: arrow_back
+  - heading "Mis compras y reservas" [level=1]
+- main:
+  - paragraph: Tus pedidos, mesas y experiencias, siempre a mano Actualizá para consultar el último estado
+  - button "Actualizar"
+  - heading "Tu mesa · terraza" [level=2]
+  - paragraph: "Registrado: 8 oct 2026, 9:19 p. m."
+  - paragraph: 10 oct 2026, 12:00 p. m. · 2 personas
+  - paragraph: Hasta 10 oct 2026, 2:00 p. m. · Registrada
+  - paragraph: "Depósito: C$ 0"
+  - button "Cancelar esta reserva"
+  - paragraph: "Comprobante: reserva:8678e642-4f6e-4890-96b5-17fdca09a948"
+  - heading "Avisos y ayuda de la casa" [level=2]
+  - button "Actualizar avisos"
+  - list
+  - text: ¿Necesitás cambiar una reserva o revisar una compra?
+  - textbox "¿Necesitás cambiar una reserva o revisar una compra?"
+  - paragraph: Incluí el número de tu pedido o comprobante La solicitud queda para el equipo de la casa; no cambia ni cancela tu compra automáticamente
+  - button "Enviar solicitud a la casa"
+  - list
+- navigation "Secciones de Club Lupita":
+  - list:
+    - button "Inicio":
+      - generic: home
+      - generic: Inicio
+    - button "Pedir":
+      - generic: local_cafe
+      - generic: Pedir
+    - button "Tienda":
+      - generic: storefront
+      - generic: Tienda
+    - button "Club":
+      - generic: military_tech
+      - generic: Club
+    - button "Perfil":
+      - generic: person
+      - generic: Perfil

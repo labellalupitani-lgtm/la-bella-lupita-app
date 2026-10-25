@@ -1,0 +1,157 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa":
+    - generic: event_seat
+    - text: Reservar una mesa
+- banner:
+  - paragraph: Tu casa, Otro
+  - button "Ver perfil de Otro":
+    - generic: O
+- main:
+  - region "Un buen día empieza aquí":
+    - paragraph: Bienvenida a tu mesa
+    - heading "Un buen día empieza aquí" [level=1]:
+      - text: Un buen día
+      - text: empieza
+      - emphasis: aquí
+    - img "Desayuno de La Bella Lupita con sándwich, aguacate y papas"
+    - heading "Para empezar el día" [level=2]:
+      - text: Para empezar
+      - text: el día
+    - paragraph:
+      - text: Elegí tu desayuno
+      - text: Disfrutá la pausa
+    - button "Explorar la carta"
+  - navigation "Accesos rápidos":
+    - list:
+      - button "Pedí para llevar":
+        - generic: takeout_dining
+        - generic: Pedí para llevar
+      - button "Reservá mesa":
+        - generic: event_seat
+        - generic: Reservá mesa
+      - button "Tienda de la finca":
+        - generic: storefront
+        - generic: Tienda de la finca
+  - region "Tu cuenta de casa":
+    - generic: workspace_premium
+    - text: CLUB LUPITA
+    - generic: account_balance_wallet
+    - heading "Tu cuenta de casa" [level=2]
+    - paragraph: C$ 0
+    - paragraph: Saldo disponible para disfrutar
+    - button "Recargá":
+      - generic: add
+      - text: Recargá
+    - button "Mostrá tu pase":
+      - generic: qr_code_scanner
+      - text: Mostrá tu pase
+    - generic: LA BELLA LUPITA
+    - generic: HECHO PARA VOS
+  - region "Tu tanda de café":
+    - generic: redeem
+    - heading "Tu tanda de café" [level=2]
+    - paragraph: Volver tiene sus recompensas
+    - generic: 0/ 9
+    - list:
+      - generic "Casilla 1":
+        - generic: coffee_maker
+      - generic "Casilla 2":
+        - generic: coffee_maker
+      - generic "Casilla 3":
+        - generic: coffee_maker
+      - generic "Casilla 4":
+        - generic: coffee_maker
+      - generic "Casilla 5":
+        - generic: coffee_maker
+      - generic "Casilla 6":
+        - generic: coffee_maker
+      - generic "Casilla 7":
+        - generic: coffee_maker
+      - generic "Casilla 8":
+        - generic: coffee_maker
+      - generic "Casilla 9":
+        - generic: coffee_maker
+      - generic "Tu bebida de cortesía":
+        - generic: redeem
+    - progressbar "0 de 9 sellos"
+    - paragraph: Te faltan 9 para tu bebida de cortesía
+  - region "Algo rico para acompañar":
+    - paragraph: DE LA COCINA DE CASA
+    - heading "Algo rico para acompañar" [level=2]
+    - button "Ver la carta":
+      - text: Ver la carta
+      - generic: arrow_forward
+    - button "Risotto de Gallo Pinto C$ 280 Brunch":
+      - generic: arrow_forward
+      - generic: Risotto de Gallo Pinto
+      - text: C$ 280
+      - generic: Brunch
+    - button "Dulce Tentación C$ 320 Brunch":
+      - generic: arrow_forward
+      - generic: Dulce Tentación
+      - text: C$ 320
+      - generic: Brunch
+  - button "Terraza de La Bella Lupita al atardecer HACÉ TIEMPO PARA VOS Tu mesa te espera Encontrá tu rincón":
+    - img "Terraza de La Bella Lupita al atardecer"
+    - generic: HACÉ TIEMPO PARA VOS
+    - strong: Tu mesa te espera
+    - text: Encontrá tu rincón
+    - generic: arrow_forward
+  - region "Pasa en la casa":
+    - heading "Pasa en la casa" [level=2]
+    - list:
+      - article:
+        - generic: local_fire_department
+        - text: Quedan 150 de 150
+        - heading "Reserva de Cosecha" [level=3]
+        - paragraph: Pagás hoy y la retirás recién tostada, en temporada
+        - button "Reservá la tuya":
+          - text: Reservá la tuya
+          - generic: arrow_forward
+      - article:
+        - generic: event_seat
+        - text: 12 de 12 cupos
+        - heading "Mesa del Tostador" [level=3]
+        - paragraph: Tres lotes, una mesa larga, doce sillas y el tostador contando
+        - button "Ver y apartar":
+          - text: Ver y apartar
+          - generic: arrow_forward
+  - generic: La Bella Lupita · Bistró & Café
+  - generic: De nuestra finca, con cariño
+- dialog "Recargá en el mostrador":
+  - button "Cerrar panel" [active]:
+    - text: Cerrar
+    - generic: close
+  - text: Cómo entra el saldo
+  - heading "Recargá en el mostrador" [level=2]
+  - paragraph: Recargá tu Cuenta de Casa en el mostrador, con efectivo o con tarjeta Mostrá tu pase y decí cuánto querés agregar
+  - paragraph: Cuando la caja confirme la recarga, actualizá tu cuenta para ver el saldo disponible
+  - paragraph: Tenés ahora
+  - paragraph: C$ 0
+  - button "Enseñar mi pase"
+  - generic "Estado de tu cuenta":
+    - paragraph:
+      - text: "Última consulta de tu cuenta:"
+      - time: 8/10/26, 9:20:27 p. m.
+  - button "Actualizar mi saldo"
+- navigation "Secciones de Club Lupita":
+  - list:
+    - button "Inicio":
+      - generic: home
+      - generic: Inicio
+    - button "Pedir":
+      - generic: local_cafe
+      - generic: Pedir
+    - button "Tienda":
+      - generic: storefront
+      - generic: Tienda
+    - button "Club":
+      - generic: military_tech
+      - generic: Club
+    - button "Perfil":
+      - generic: person
+      - generic: Perfil

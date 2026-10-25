@@ -1,0 +1,66 @@
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- main:
+  - heading "Así va tu pedido." [level=1]
+  - paragraph: Retiro en barra · Plaza La Fe
+  - button "← Seguir eligiendo"
+  - status: "Risotto de Gallo Pinto: 2 agregados al pedido."
+  - heading "Lo que elegiste" [level=2]
+  - text: 2 artículos
+  - list:
+    - listitem:
+      - strong: Risotto de Gallo Pinto
+      - text: revuelto C$ 280 por unidad
+      - button "Quitar un Risotto de Gallo Pinto": −
+      - text: "2"
+      - button "Agregar otro Risotto de Gallo Pinto": +
+      - strong: C$ 560
+  - group: Alergias o restricciones
+  - button "Vaciar pedido"
+  - complementary:
+    - paragraph: Retirás en barra
+    - heading "Plaza La Fe" [level=2]
+    - paragraph: El equipo confirma la preparación después del pago.
+    - term: Productos
+    - definition: C$ 560
+    - term: Empaque por pedido
+    - definition: C$ 40
+    - term: Total
+    - definition: C$ 600
+    - text: Tu Cuenta de Casa
+    - strong: C$ 9,900
+    - paragraph: Todavía no se hace ningún cargo.
+    - button "Revisar total para pagar →"
+  - group:
+    - text: Escenarios de prueba
+    - paragraph: Estos controles simulan estados. No llaman al negocio ni realizan cargos.
+    - text: Próximo escenario
+    - combobox "Próximo escenario":
+      - option "Recorrido normal" [selected]
+      - option "Pago rechazado antes del cargo"
+      - option "Pago hecho, respuesta perdida"
+      - option "Saldo insuficiente"
+      - option "Recepción en pausa"
+      - option "Latte agotado"
+      - option "Catálogo no disponible"
+    - checkbox "Probar nombre largo"
+    - text: Probar nombre largo
+    - paragraph:
+      - text: "Cargos simulados en este recorrido:"
+      - strong: "0"
+      - text: . Los cambios de preparación al actualizar también son sintéticos.
+    - button "Reiniciar demostración"

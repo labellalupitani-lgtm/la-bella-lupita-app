@@ -1,0 +1,9 @@
+FALLO UI-01-centavos: Se introdujeron C$ 200.49, pero la confirmación no conserva sus centavos: Importe recibido: C$ 200
+FALLO UI-02-error-cobro: El cobro fue rechazado, pero su error está fuera del diálogo modal y de su árbol accesible
+FALLO UI-03-saldo-antiguo: La actualización recibió 500, pero el diálogo sigue presentando el saldo anterior sin error ni indicación de antigüedad
+FALLO UI-04-catalogo: El catálogo no se recuperó: 1 consultas; compra visible=false; zonas=0; reintento Tienda=false; reintento Reservar=false
+FALLO UI-05-sesion-401: El Cliente conserva su token y puede regresar al perfil cacheado después de recibir 401
+
+true !== false
+
+PASA OBS-nav-contraste: Contraste estable de etiquetas, separado de numerales decorativos

@@ -1,0 +1,1 @@
+OK UI: disponibilidad, recuperación de red, correo, código incorrecto/correcto, teléfono obligatorio, alta, reingreso sin repetir datos, accesibilidad y móvil/escritorio.

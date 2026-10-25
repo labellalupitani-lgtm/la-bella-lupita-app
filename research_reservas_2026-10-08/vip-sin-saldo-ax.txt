@@ -1,0 +1,39 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa":
+    - generic: event_seat
+    - text: Reservar una mesa
+- banner:
+  - button "Volver":
+    - generic: arrow_back
+  - heading "Apartá tu mesa" [level=1]
+- main:
+  - complementary "El lugar de tu visita":
+    - paragraph: Tu lugar en la casa
+    - heading "El Salón VIP" [level=2]
+    - generic: 1 mesas
+    - generic: C$ 500 de depósito
+    - paragraph: Elegí el día, la hora y con quién venís
+  - navigation "Pasos de la reserva":
+    - button "1 Lugar"
+    - button "2 Fecha y grupo"
+    - button "3 Revisión"
+  - heading "Todo listo para tu visita" [active] [level=2]
+  - term: Tu mesa
+  - definition: El Salón VIP
+  - term: Tu visita
+  - definition: sábado, 10 de octubre · 12 p. m.
+  - term: Tu grupo
+  - definition: 2 personas · 2 horas
+  - term: Depósito
+  - definition: C$ 500
+  - button "Cambiar fecha o grupo"
+  - generic: info
+  - paragraph: El Salón VIP lleva C$ 500 de depósito Se carga a tu Cuenta de Casa al apartar y queda anotado en tus movimientos Si te surge algo, escribinos y lo arreglamos entre personas
+- paragraph: Te faltan C$ 500 para el depósito
+- button "Paso anterior": Volver
+- button "Apartar con C$ 500" [disabled]
+- button "Ver mi cuenta y recargar"

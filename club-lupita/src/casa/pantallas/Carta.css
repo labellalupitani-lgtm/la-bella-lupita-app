@@ -1,0 +1,90 @@
+/* Carta owns its layout at every breakpoint. casa.css has no Carta overrides. */
+.casa-carta { padding-top:24px; padding-bottom:190px; }
+html:has(.casa-carta) { scroll-padding-bottom:180px; scroll-padding-top:100px; }
+.casa-carta :is(button,input,summary,a) { scroll-margin-block:100px 190px; }
+.casa-carta-composicion { display:grid; min-width:0; }
+.casa-carta-titulo { grid-area:titulo; font-weight:400; font-size:clamp(36px,4vw,48px); line-height:1.15; color:theme('colors.banda'); }
+.casa-carta-buscador { grid-area:busca; }
+.casa-carta-buscador input { background:theme('colors.papel'); font-size:16px; border-radius:0; border-width:0 0 1px; border-color:theme('colors.contorno'); }
+.casa-carta-categorias { grid-area:categorias; display:flex; border-bottom:1px solid theme('colors.filete'); }
+.casa-carta-categorias button { flex:1; min-width:0; min-height:48px; padding:8px; font-size:15px; border-bottom:2px solid transparent; }
+.casa-carta-categorias button[aria-pressed=true] { color:theme('colors.banda'); font-weight:600; border-color:theme('colors.banda'); }
+.casa-carta-destacado { grid-area:foto; position:sticky; top:24px; min-width:0; }
+.casa-carta-foto { display:block; width:100%; height:300px; background:theme('colors.avena'); overflow:hidden; border-radius:theme('borderRadius.editorial'); }
+.casa-carta-foto img { width:100%; height:100%; object-fit:cover; }
+.casa-carta-pie-foto { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 0; }
+.casa-carta-elegir { display:flex; flex-direction:column; align-items:flex-end; gap:8px; font-size:15px; }
+.casa-carta-elegir button { display:flex; align-items:center; gap:8px; min-height:44px; padding:8px; color:theme('colors.banda'); }
+.casa-carta-resultados { grid-area:resultados; min-width:0; }
+.casa-carta-grupo { padding:10px 0; border-bottom:1px solid theme('colors.filete'); }
+.casa-carta-lista li { display:flex; align-items:center; gap:16px; padding:18px 0; border-bottom:1px solid theme('colors.filete'); }
+.casa-carta-plato { text-align:left; min-width:0; flex:1; display:flex; flex-direction:column; gap:6px; }
+.casa-carta-plato > span:first-child { font-size:21px; font-weight:400; }
+.casa-carta-plato .t-caption { font-size:14px; line-height:1.6; max-width:45ch; }
+.casa-carta-accion { display:flex; align-items:center; gap:12px; flex-shrink:0; font-size:15px; font-variant-numeric:tabular-nums; }
+.casa-carta-accion > button { display:flex; align-items:center; justify-content:center; gap:3px; min-width:44px; height:44px; border:1px solid theme('colors.contorno'); border-radius:50%; color:theme('colors.banda'); }
+.casa-carta-accion > button:disabled { opacity:.5; }
+.casa-carta-grupo-plegable { border-bottom:1px solid theme('colors.filete'); }
+.casa-carta-grupo-plegable summary { min-height:56px; padding:20px 0; cursor:pointer; }
+.casa-carta-grupo-plegable summary span { float:right; margin-top:4px; }
+.casa-carta-barra { position:fixed; z-index:30; left:224px; right:0; bottom:24px; padding:0 20px; pointer-events:none; }
+.casa-carta-barra > button { pointer-events:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; width:100%; max-width:540px; margin:auto; border-radius:theme('borderRadius.hoja'); background:theme('colors.tinta'); color:theme('colors.papel'); min-height:60px; padding:16px 20px; font-size:15px; }
+.casa-detalle-dialogo { position:fixed; inset:0; width:100%; max-width:none; height:100dvh; max-height:none; margin:0; padding:0; border:0; background:transparent; overflow:hidden; }
+.casa-detalle-dialogo::backdrop { background:theme('colors.tinta'); opacity:.55; }
+.casa-detalle-panel { position:absolute; right:16px; top:16px; bottom:16px; width:min(560px,calc(100% - 32px)); background:theme('colors.papel'); color:theme('colors.tinta'); border-radius:theme('borderRadius.hoja'); display:flex; flex-direction:column; overflow:hidden; animation:carta-aparece .2s ease-out; }
+@keyframes carta-aparece { from {opacity:0;transform:translateX(12px)} to {opacity:1;transform:none} }
+.casa-detalle-cabecera { padding:12px 20px; display:flex; justify-content:space-between; align-items:center; gap:12px; border-bottom:1px solid theme('colors.filete'); }
+.casa-detalle-cabecera button { min-height:44px; flex-shrink:0; display:flex; gap:8px; align-items:center; }
+.casa-detalle-contenido { padding:24px; overflow-y:auto; flex:1; min-height:0; scroll-padding-block:12px; }
+.casa-detalle-contenido:focus-visible { outline:2px solid theme('colors.inicio-borgona'); outline-offset:-3px; }
+.casa-detalle-contenido h2 { font-weight:400; font-size:32px; margin-bottom:20px; }
+.casa-detalle-foto { width:100%; height:260px; background:theme('colors.avena'); border-radius:theme('borderRadius.editorial'); overflow:hidden; }
+.casa-detalle-foto img { width:100%; height:100%; object-fit:cover; }
+.casa-detalle-acciones { display:flex; justify-content:space-between; gap:14px; padding:16px 20px max(16px,env(safe-area-inset-bottom)); border-top:1px solid theme('colors.filete'); background:theme('colors.papel'); }
+.casa-detalle-cantidad { display:flex; align-items:center; gap:10px; font-variant-numeric:tabular-nums; }
+.casa-detalle-cantidad button,.carta-contador button { display:grid; place-items:center; min-width:44px; min-height:44px; border:1px solid theme('colors.filete'); border-radius:50%; }
+.casa-detalle-cantidad button:disabled { opacity:.4; }
+.carta-opcion legend { font-weight:600; margin-bottom:8px; }
+.carta-opcion label { display:flex; align-items:center; gap:12px; min-height:48px; }
+.carta-opcion input[type=radio],.carta-restriccion input[type=checkbox] { width:20px; height:20px; accent-color:theme('colors.banda'); }
+.carta-opcion input:not([type=radio]),.carta-restriccion textarea { display:block; width:100%; font-size:16px; padding:12px; border:1px solid theme('colors.contorno'); background:theme('colors.papel'); }
+.carta-restriccion summary { cursor:pointer; min-height:44px; }
+.carta-restriccion label { display:block; margin-top:12px; }
+.carta-totales div { display:flex; justify-content:space-between; gap:12px; padding:6px 0; }
+.carta-totales div:last-child { border-top:1px solid theme('colors.filete'); font-weight:600; font-size:21px; }
+.casa-carta-linea-pedido { display:flex; gap:12px; align-items:center; padding:14px 0; }
+.casa-carta-linea-pedido > span:first-child { flex:1; min-width:0; }
+.casa-carta-linea-pedido small { display:block; font-size:14px; }
+.carta-contador { display:flex; align-items:center; gap:8px; }
+.carta-aviso { border:1px solid theme('colors.filete'); border-left:3px solid theme('colors.banda'); padding:14px; margin-bottom:18px; background:theme('colors.papel'); }
+.carta-foto-respaldo { display:flex; width:100%; height:100%; align-items:center; justify-content:center; flex-direction:column; padding:24px; color:theme('colors.tinta-media'); }
+.carta-foto-respaldo small { display:block; margin-top:8px; }
+@media(max-width:1120px) {
+ .casa-carta-destacado { position:static; display:flex; gap:20px; align-items:center; }
+ .casa-carta-foto { width:40%; height:180px; flex-shrink:0; }
+ .casa-carta-pie-foto { flex:1; }
+}
+@media(max-width:899px) {
+ .casa-carta { padding-top:18px; }
+ .casa-carta-barra { left:0; bottom:calc(77px + env(safe-area-inset-bottom)); padding:0 16px; }
+ .casa-detalle-panel { top:auto; bottom:0; right:0; width:100%; max-height:94dvh; border-radius:theme('borderRadius.hoja') theme('borderRadius.hoja') 0 0; }
+}
+@media(max-width:540px) {
+ .casa-carta-destacado { gap:14px; }
+ .casa-carta-foto { width:34%; height:130px; }
+ .casa-carta-pie-foto { display:block; }
+ .casa-carta-pie-foto h2 { font-size:20px; }
+ .casa-carta-elegir { flex-direction:row; justify-content:space-between; align-items:center; gap:8px; }
+ .casa-carta-categorias button { font-size:14px; padding:8px 4px; }
+ .casa-carta-lista li { gap:10px; }
+ .casa-carta-accion { flex-direction:column; gap:8px; }
+ .casa-detalle-contenido { padding:20px; }
+ .casa-detalle-foto { height:220px; }
+ .casa-detalle-acciones { flex-wrap:wrap; }
+ .casa-detalle-acciones > button { flex:1; min-width:155px; }
+}
+@media(max-width:380px) { .casa-carta-linea-pedido { flex-wrap:wrap; }.casa-carta-linea-pedido > span:first-child { flex-basis:100%; } }
+@media(prefers-reduced-motion:reduce) { .casa-carta *, .casa-detalle-dialogo * { animation:none; transition:none; } }
+
+.carta-recepcion { display:flex; align-items:center; min-height:84px; padding:10px 12px; margin-bottom:18px; border-left:3px solid theme('colors.filete'); font-size:13px; line-height:20px; }
+

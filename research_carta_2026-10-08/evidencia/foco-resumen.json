@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-08 America/Managua",
+  "scope": "Fixture local PGlite, build del código actual; sin escrituras remotas",
+  "checks": [
+    {
+      "name": "edge-proof-summary",
+      "status": "completed",
+      "data": {
+        "focus": "Sobre hielo13 opciones",
+        "control": {
+          "top": 774.53125,
+          "bottom": 843.71875,
+          "left": 20,
+          "right": 370
+        },
+        "fixedNav": {
+          "top": 771,
+          "bottom": 844,
+          "left": 0,
+          "right": 390
+        },
+        "fullyCovered": true
+      }
+    }
+  ],
+  "errors": [],
+  "api": [
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    }
+  ]
+}

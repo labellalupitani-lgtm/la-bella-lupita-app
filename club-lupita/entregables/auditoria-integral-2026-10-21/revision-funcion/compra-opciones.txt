@@ -1,0 +1,89 @@
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- main:
+  - heading "¿Qué se te antoja?" [level=1]
+  - paragraph: Elegí, pagá con tu Cuenta de Casa y retiralo en barra.
+  - status
+  - text: Buscar en toda la carta
+  - searchbox "Buscar en toda la carta": Risotto
+  - strong: Recibimos pedidos
+  - text: Retiro en barra · Empaque C$ 40 por pedido
+  - region "Productos de la carta":
+    - navigation "Elegir momento":
+      - button "Para hoy"
+      - button "Café"
+      - button "Brunch"
+      - button "Bistró"
+      - button "Dulce"
+      - button "Todo"
+    - heading "Resultados para “Risotto”" [level=2]
+    - status: 2 opciones
+    - article:
+      - button "Ver detalles de Arancini":
+        - img "Arancini"
+      - button "Arancini":
+        - heading "Arancini" [level=3]
+      - paragraph: Croquetas de risotto inspiradas en el gallo pinto, doradas al momento y servidas con salsa Nikkei.
+      - strong: C$ 220
+      - button "Agregar Arancini": Agregar +
+    - article:
+      - button "Ver detalles de Risotto de Gallo Pinto":
+        - img "Risotto de Gallo Pinto"
+      - button "Risotto de Gallo Pinto":
+        - heading "Risotto de Gallo Pinto" [level=3]
+      - paragraph: Tradicional gallo pinto transformado en un cremoso risotto, servido con huevo al gusto, aguacate y tortilla crujiente.
+      - strong: C$ 280
+      - button "Elegir opciones de Risotto de Gallo Pinto": Elegir +
+    - group: Horarios y condiciones del pedido
+  - group:
+    - text: Escenarios de prueba
+    - paragraph: Estos controles simulan estados. No llaman al negocio ni realizan cargos.
+    - text: Próximo escenario
+    - combobox "Próximo escenario":
+      - option "Recorrido normal" [selected]
+      - option "Pago rechazado antes del cargo"
+      - option "Pago hecho, respuesta perdida"
+      - option "Saldo insuficiente"
+      - option "Recepción en pausa"
+      - option "Latte agotado"
+      - option "Catálogo no disponible"
+    - checkbox "Probar nombre largo"
+    - text: Probar nombre largo
+    - paragraph:
+      - text: "Cargos simulados en este recorrido:"
+      - strong: "0"
+      - text: . Los cambios de preparación al actualizar también son sintéticos.
+    - button "Reiniciar demostración"
+- dialog "Risotto de Gallo Pinto":
+  - button "Cerrar detalles del producto": ×
+  - img "Risotto de Gallo Pinto"
+  - paragraph: A tu gusto
+  - heading "Risotto de Gallo Pinto" [level=2]
+  - paragraph: Tradicional gallo pinto transformado en un cremoso risotto, servido con huevo al gusto, aguacate y tortilla crujiente.
+  - paragraph: Imagen de referencia.
+  - paragraph: "Porción o tamaño: consultá en barra."
+  - strong: C$ 280
+  - group "¿Cómo querés el huevo? · obligatorio":
+    - text: ¿Cómo querés el huevo? · obligatorio Preparación del huevo
+    - textbox "Preparación del huevo":
+      - /placeholder: Ej. revuelto
+  - text: Cantidad
+  - button "Reducir cantidad" [disabled]: −
+  - text: "1"
+  - button "Aumentar cantidad": +
+  - paragraph: "Empaque: C$ 40 por pedido, incluido en el total al revisar."
+  - button "Agregar · C$ 280" [disabled]

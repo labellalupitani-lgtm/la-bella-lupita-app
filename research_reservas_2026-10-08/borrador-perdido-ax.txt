@@ -1,0 +1,47 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa":
+    - generic: event_seat
+    - text: Reservar una mesa
+- banner:
+  - button "Volver":
+    - generic: arrow_back
+  - heading "Apartá tu mesa" [level=1]
+- main [active]:
+  - complementary "El lugar de tu visita":
+    - img "La terraza de La Bella Lupita al atardecer"
+    - text: Un lugar para quedarse
+    - heading "La terraza" [level=2]
+  - navigation "Pasos de la reserva":
+    - button "1 Lugar"
+    - button "2 Fecha y grupo" [disabled]
+    - button "3 Revisión" [disabled]
+  - heading "Encontrá tu rincón" [level=2]
+  - region "¿Dónde te sentás?":
+    - heading "¿Dónde te sentás?" [level=3]
+    - list:
+      - button "La terraza 10 mesas · sin depósito":
+        - generic: balcony
+        - generic: La terraza
+        - generic: 10 mesas · sin depósito
+      - button "El ventanal 6 mesas · sin depósito":
+        - generic: window
+        - generic: El ventanal
+        - generic: 6 mesas · sin depósito
+      - button "La barra 8 mesas · sin depósito":
+        - generic: countertops
+        - generic: La barra
+        - generic: 8 mesas · sin depósito
+      - button "El bistró 12 mesas · sin depósito":
+        - generic: restaurant
+        - generic: El bistró
+        - generic: 12 mesas · sin depósito
+      - button "El Salón VIP Lleva C$ 500 de depósito":
+        - generic: diamond
+        - generic: El Salón VIP
+        - generic: Lleva C$ 500 de depósito
+- paragraph: Elegí una zona para seguir
+- button "Elegir fecha y grupo" [disabled]

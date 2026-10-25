@@ -1,0 +1,44 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "club-lupita",
+  "main": "src/worker/entrada.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "account_id": "afd04c6c8d8782f59c1844f11639b609",
+  "vars": {
+    "DEMO_AISLADA": "true",
+    "ACCESO_PERSONAL": "false",
+    "ACCESO_CORREO": "true",
+    "RESERVAS_CORREO": "true",
+    "EMAIL_FROM": "acceso@labellalupita.com"
+  },
+  "workers_dev": true,
+  "durable_objects": {
+    "bindings": [{ "name": "MANTENIMIENTO", "class_name": "PlanificadorMantenimiento" }]
+  },
+  "migrations": [{ "tag": "mantenimiento-v1", "new_sqlite_classes": ["PlanificadorMantenimiento"] }],
+  "triggers": {
+    "crons": [
+      "17 * * * *"
+    ]
+  },
+  "routes": [
+    {
+      "pattern": "app.labellalupita.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ],
+    "not_found_handling": "single-page-application"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

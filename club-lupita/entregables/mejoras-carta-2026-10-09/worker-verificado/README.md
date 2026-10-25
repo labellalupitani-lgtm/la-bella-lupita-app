@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "club-lupita" generated at 2026-10-09T12:50:47.201Z.

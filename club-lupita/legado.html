@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-NI" class="tema-papel">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F7F0DF" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#120D0A" />
+    <title>Club Lupita — La Bella Lupita Bistró Café</title>
+    <meta
+      name="description"
+      content="El club de la casa: la tanda de sellos, tu cuenta abierta, la membresía, la tienda de la finca y la mesa lista para vos."
+    />
+    <!-- Resuelve el tema ANTES de la primera pintada: sin esto hay destello.
+         Orden: lo que el socio eligió, luego lo que dice su teléfono, luego papel. -->
+    <script>
+      ;(function () {
+        try {
+          var e = localStorage.getItem('club-lupita:tema')
+          var t =
+            e === 'tinta' || e === 'papel'
+              ? e
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'tinta'
+                : 'papel'
+          document.documentElement.className = 'tema-' + t
+        } catch (_) {
+          document.documentElement.className = 'tema-papel'
+        }
+      })()
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..800,0..100,0..1&family=Archivo:wdth,wght@62..125,400..800&family=Chivo+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

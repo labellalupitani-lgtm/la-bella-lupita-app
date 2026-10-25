@@ -1,0 +1,83 @@
+CLIENTES Y EQUIPO — IMPLEMENTACIÓN TERMINADA
+6 de octubre de 2026, hora de Nicaragua
+
+1. Inventario y respaldos
+Código original conservado en respaldo/. Datos reales y demo exportados a
+archivos privados *.local, excluidos del control de versiones. Restauración
+completa en una base local aislada: 26 tablas en cada entorno, con igualdad
+comprobada de todos sus registros. Snapshot remoto real: snap-bold-bar-ay08giz8.
+El respaldo anterior de seguridad también fue exportado y restaurado antes de
+liberar su rama; se conservan sus 25 tablas y 736 registros. La rama de ensayo
+usada en esta actualización fue eliminada después de verificar la publicación.
+
+2. Separación de muestras
+Producción conserva las 84 cuentas originales: 2 operativas y 82 archivadas.
+No se borró ni reescribió ningún movimiento, sello o punto. La migración verificó
+saldos, credenciales y cuentas reales antes de confirmar la transacción.
+Las muestras dejaron de ocupar membresías, bolsas, butacas y reservas reales.
+El propietario consulta su historia desde Clientes > Muestras archivadas.
+Demo conserva 82 cuentas, sin archivar, en su base independiente.
+
+3. Directorio
+https://app.labellalupita.com/personal?seccion=clientes
+Propietario y encargado pueden buscar por nombre, correo o teléfono, filtrar
+estado, origen y fechas, y recorrer todas las páginas. Se incluyen cuentas
+sin compras. El archivo de muestras es exclusivo del propietario.
+
+4. Ficha
+Contacto, verificación, alta, preferencias declaradas, saldo pagado y bono,
+puntos, membresía y pedidos. Historial paginado de 11 clases de actividad,
+incluidos movimientos de saldo, pedidos y estados, reservas, bolsas,
+experiencias, sellos, canjes, puntos, membresías, beneficios y atención.
+Abrir una ficha no ejecuta cobros, renovaciones ni ajustes de cuenta.
+La búsqueda y los filtros se conservan en la URL al abrir y cerrar la ficha.
+
+5. Equipo y permisos
+https://app.labellalupita.com/personal?seccion=equipo
+Cinco perfiles explicados: propietario, encargado, caja, cocina y cliente.
+El propietario se muestra separado de los empleados. Mesa Fundadora se explica
+como membresía comercial. SOLO EL PROPIETARIO crea, cambia roles, desactiva,
+reactiva y restablece accesos. El encargado consulta el equipo sin modificarlo.
+Se conservan usuario, identidad e historial. Los cambios invalidan sesiones;
+reactivar no vuelve a aceptar sesiones antiguas. Las versiones desactualizadas
+se rechazan para impedir conflictos entre ventanas.
+Actualmente no hay empleados creados en real ni demo. El propietario sigue
+siendo un acceso independiente y conserva su clave vigente.
+
+6. Pruebas
+Las 10 suites de npm test pasaron. Se verificaron 109 cuentas, fechas de
+Nicaragua, búsqueda literal, paginación sin omisiones, historial con fechas
+idénticas, archivo repetible, saldos intactos y liberación de cupos.
+Neon aislado confirmó también la concurrencia real: solo un cambio de rol
+simultáneo gana, con revocación, desactivación y reactivación correctas.
+Build, validación TypeScript, controles de diseño y empaquetado Worker correctos.
+UI revisada en escritorio y móvil de 390 px, sin desbordamiento horizontal;
+verificados regreso a la búsqueda, ficha, historial vacío, cuadro de cambio de
+rol, foco de teclado y ausencia de acciones administrativas para encargado.
+Las imágenes guardadas usan exclusivamente datos sintéticos de prueba.
+
+7. Publicación
+Versión activa al 100%: c2f3beee-0db8-4147-bb90-a82bd6789339.
+018 aplicado a real y demo; 019 aplicado únicamente a real tras publicar.
+HTML y activos publicados idénticos al build revisado. Secretos conservados.
+Cupos públicos reales: 100 membresías, 150 bolsas y butacas disponibles
+12/20/16 en las tres experiencias configuradas. El acceso público de demo
+y su historial siguen funcionando; un cliente no puede consultar administración.
+La revisión visual del panel autenticado se hizo en el entorno local aislado.
+El navegador de producción estaba sin sesión: para revisar el panel publicado,
+ingresá como propietario con tu clave vigente y seleccioná Operación real.
+
+OPERACIÓN Y RECUPERACIÓN
+No volver a ejecutar la semilla de demostración en producción. Las muestras
+archivadas son de consulta: no se ofrece reactivarlas como clientes reales.
+No desplegar un Worker anterior a esta actualización sobre el esquema archivado,
+pues contaría las muestras como operativas. Ante un problema, priorizar una
+corrección compatible. Restaurar un respaldo requiere revisar primero las
+operaciones posteriores para no perder actividad real. Las ubicaciones privadas
+y pruebas de respaldo están registradas en .clientes-release.local.
+
+EVIDENCIAS
+PLAN.txt: plan y criterios de aceptación.
+pruebas.txt: ejecución completa de las diez suites.
+verificacion-publicada.json: versión, conteos, aislamiento y activos publicados.
+ficha-escritorio.png / directorio-escritorio.png: interfaz con datos sintéticos.

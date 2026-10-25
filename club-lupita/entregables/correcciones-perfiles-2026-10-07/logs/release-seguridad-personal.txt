@@ -1,0 +1,4 @@
+PASA cambio propio, Unicode, concurrencia, cierre de todas sus sesiones y aislamiento entre usuarios
+PASA restablecimiento exclusivo del propietario, mismo usuario, temporal de un uso, caducidad y cambio obligatorio
+PASA separación real/demo, propietario compartido, revocación en ambos entornos y rechazo de su clave anterior
+PASA límite de intentos y auditoría sin secretos

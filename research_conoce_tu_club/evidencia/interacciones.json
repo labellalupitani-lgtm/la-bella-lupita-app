@@ -1,0 +1,105 @@
+[
+  {
+    "name": "equivalencia-publicacion",
+    "status": 200,
+    "localSHA256": "ef9810f90e45b6535c2831590b886140f9b138a67367402298ff65e0237c723a",
+    "publicSHA256": "ef9810f90e45b6535c2831590b886140f9b138a67367402298ff65e0237c723a",
+    "iguales": true,
+    "headers": {
+      "content-security-policy": "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+      "strict-transport-security": "max-age=31536000",
+      "x-frame-options": "DENY",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "cache-control": "public, max-age=0, must-revalidate"
+    }
+  },
+  {
+    "name": "error-catalogo",
+    "overflow": false,
+    "text": "No pudimos actualizar el catálogo. Fallo sintético de auditoría\n\nActualizar catálogo\n\nCLUB LUPITA · CASA ABIERTA\n\nEl gusto\nde volver\nLA BELLA\nLUPITA\nMESA FUNDADORA\n\nDe la casa\nComo vos\n\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\n09\n\nPrueba Regresión\n\n#001\n\nVer cómo usarlo\n\nCada visita cuenta\nCada nueve sellos, una bebida por cuenta de la casa\n\nUN GUSTO DE LA CASA\n\nTu próxima bebida\nempieza aquí\n\nCompletá tu tanda y disfrutá una bebida de cortesía\n\nLa próxima se acerca\n8 de 9 sellos\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nTe falta 1 sello para tu siguiente bebida\n\nLa próxima vez,\nvení con tiempo\nReservar una mesa ↗\n\nMESA FUNDADORA\n\n#001 / 100\n\nworkspace_premium\n\nSe renueva el 23 oct\n\nCancelar renovación\nLo tuyo de este mes\nlocal_mall\nTu bolsa del mes · 250 g del lote\nSin retirar · se retira de 7 a 9\nMostrar código\nlocal_cafe\nUn café filtrado por visita\nDisponible hoy\nMostrar código\nbakery_dining\n15 % en toda la repostería, todos los días\nevent_seat\nPrioridad de horario en el Salón VIP\nschedule\nLas experiencias se te abren 48 h antes que al resto\n\nLos tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acá\n\nExperiencias de la casa\nwarning\nNo pudimos abrir tu cuenta\n\nPuede ser la señal o puede ser la casa Tu tanda y tu saldo están a salvo del otro lado\n\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día\n\nevent_seat\nElegir mesa y hora"
+  },
+  {
+    "name": "error-cupos",
+    "overflow": false,
+    "text": "No pudimos actualizar los cupos. Fallo sintético de auditoría\n\nActualizar cupos\n\nCLUB LUPITA · CASA ABIERTA\n\nEl gusto\nde volver\nLA BELLA\nLUPITA\nCLUB LUPITA\n\nDe la casa\nComo vos\n\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\n09\n\nPrueba Regresión\n\n87442006\n\nVer cómo usarlo\n\nCada visita cuenta\nCada nueve sellos, una bebida por cuenta de la casa\n\nUN GUSTO DE LA CASA\n\nTu próxima bebida\nempieza aquí\n\nCompletá tu tanda y disfrutá una bebida de cortesía\n\nLa próxima se acerca\n8 de 9 sellos\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nTe falta 1 sello para tu siguiente bebida\n\nLa próxima vez,\nvení con tiempo\nReservar una mesa ↗\n\nMESA FUNDADORA\n\nCien personas, y una silla que siempre está\n\nEl Club es gratis y ya lo tenés Esto es lo otro: una bolsa del lote cada mes, un café por visita, y la casa contando con vos antes que con nadie\n\nTomar una plaza — C$ 950/mes\n\nSe cobra el primer mes de tu Cuenta de Casa Se corta cuando querás\n\nExperiencias de la casa\n\nJUEVES, 15 DE OCTUBRE · 9:21 P. M.\n\nExperiencia de prueba\nC$ 850\nevent_seat\n12 DE 12 BUTACAS\nApartar butaca\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día\n\nevent_seat\nElegir mesa y hora"
+  },
+  {
+    "name": "error-cuenta",
+    "overflow": false,
+    "text": "info\nNo pudimos abrir tu cuenta\n\nFallo sintético de auditoría\n\nVolver a intentar"
+  },
+  {
+    "name": "error-canje-fuera-de-vista",
+    "errorView": {
+      "top": 176.34375,
+      "bottom": 227.9375,
+      "viewport": 844,
+      "visible": true
+    },
+    "overflow": false,
+    "text": "CLUB LUPITA · CASA ABIERTA\n\nEl gusto\nde volver\nLA BELLA\nLUPITA\nMESA FUNDADORA\n\nDe la casa\nComo vos\n\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\n09\n\nPrueba Regresión\n\n#001\n\nVer cómo usarlo\n\nCada visita cuenta\nCada nueve sellos, una bebida por cuenta de la casa\n\nUN GUSTO DE LA CASA\n\nTu próxima bebida\nempieza aquí\n\nCompletá tu tanda y disfrutá una bebida de cortesía\n\nLa próxima se acerca\n8 de 9 sellos\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nTe falta 1 sello para tu siguiente bebida\n\nLa próxima vez,\nvení con tiempo\nReservar una mesa ↗\n\nMESA FUNDADORA\n\n#001 / 100\n\nworkspace_premium\n\nSe renueva el 23 oct · C$ 950/mes\n\nCancelar renovación\n\nCanje fallido de prueba\n\nLo tuyo de este mes\nlocal_mall\nTu bolsa del mes · 250 g del lote\nSin retirar · se retira de 7 a 9\nMostrar código\nlocal_cafe\nUn café filtrado por visita\nDisponible hoy\nMostrar código\nbakery_dining\n15 % en toda la repostería, todos los días\nevent_seat\nPrioridad de horario en el Salón VIP\nschedule\nLas experiencias se te abren 48 h antes que al resto\n\nLos tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acá\n\nExperiencias de la casa\n\nJUEVES, 15 DE OCTUBRE · 9:21 P. M.\n\nExperiencia de prueba\nC$ 850\nevent_seat\n12 DE 12 BUTACAS\nApartar butaca\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día\n\nevent_seat\nElegir mesa y hora"
+  },
+  {
+    "name": "pase-texto-ampliado",
+    "metodo": "Todos los tamaños computados dentro del contenido duplicados; prueba de esfuerzo, no zoom nativo.",
+    "card": {
+      "height": 400,
+      "scrollHeight": 394,
+      "clientHeight": 394,
+      "children": [
+        {
+          "text": "La BellaLupitaMesa Fundadora",
+          "top": 23,
+          "bottom": 84.84375,
+          "outside": false
+        },
+        {
+          "text": "De la casaComo vos",
+          "top": 102.015625,
+          "bottom": 167.640625,
+          "outside": false
+        },
+        {
+          "text": "local_cafelocal_cafelocal_cafelocal_cafelocal_cafelocal_cafelocal_cafelocal_cafe09",
+          "top": 184.796875,
+          "bottom": 260.796875,
+          "outside": false
+        },
+        {
+          "text": "María Alejandra de los Ángeles Rodríguez López#001",
+          "top": 277.96875,
+          "bottom": 381,
+          "outside": false
+        }
+      ]
+    },
+    "overflow": false,
+    "text": "CLUB LUPITA · CASA ABIERTA\n\nEl gusto\nde volver\nLA BELLA\nLUPITA\nMESA FUNDADORA\n\nDe la casa\nComo vos\n\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\nlocal_cafe\n09\n\nMaría Alejandra de los Ángeles Rodríguez López\n\n#001\n\nVer cómo usarlo\n\nCada visita cuenta\nCada nueve sellos, una bebida por cuenta de la casa\n\nUN GUSTO DE LA CASA\n\nTu próxima bebida\nempieza aquí\n\nCompletá tu tanda y disfrutá una bebida de cortesía\n\nLa próxima se acerca\n8 de 9 sellos\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nTe falta 1 sello para tu siguiente bebida\n\nLa próxima vez,\nvení con tiempo\nReservar una mesa ↗\n\nMESA FUNDADORA\n\n#001 / 100\n\nworkspace_premium\n\nSe renueva el 23 oct · C$ 950/mes\n\nCancelar renovación\nLo tuyo de este mes\nlocal_mall\nTu bolsa del mes · 250 g del lote\nSin retirar · se retira de 7 a 9\nMostrar código\nlocal_cafe\nUn café filtrado por visita\nDisponible hoy\nMostrar código\nbakery_dining\n15 % en toda la repostería, todos los días\nevent_seat\nPrioridad de horario en el Salón VIP\nschedule\nLas experiencias se te abren 48 h antes que al resto\n\nLos tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acá\n\nExperiencias de la casa\n\nJUEVES, 15 DE OCTUBRE · 9:21 P. M.\n\nExperiencia de prueba\nC$ 850\nevent_seat\n12 DE 12 BUTACAS\nApartar butaca\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día\n\nevent_seat\nElegir mesa y hora"
+  },
+  {
+    "name": "pase-reverso",
+    "button": "true",
+    "overflow": false,
+    "text": "CLUB LUPITA · CASA ABIERTA\n\nEl gusto\nde volver\n\nTU PASE EN EL MOSTRADOR\n\nMostralo La casa te encuentra\n\nVolvé al frente para enseñar tu identificación al barista y consultar tu cuenta\n\nVer identificación\n\nCada visita cuenta\nCada nueve sellos, una bebida por cuenta de la casa\n\nUN GUSTO DE LA CASA\n\nTu próxima bebida\nempieza aquí\n\nCompletá tu tanda y disfrutá una bebida de cortesía\n\nLa próxima se acerca\n8 de 9 sellos\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nTe falta 1 sello para tu siguiente bebida\n\nLa próxima vez,\nvení con tiempo\nReservar una mesa ↗\n\nMESA FUNDADORA\n\n#001 / 100\n\nworkspace_premium\n\nSe renueva el 23 oct · C$ 950/mes\n\nCancelar renovación\nLo tuyo de este mes\nlocal_mall\nTu bolsa del mes · 250 g del lote\nSin retirar · se retira de 7 a 9\nMostrar código\nlocal_cafe\nUn café filtrado por visita\nDisponible hoy\nMostrar código\nbakery_dining\n15 % en toda la repostería, todos los días\nevent_seat\nPrioridad de horario en el Salón VIP\nschedule\nLas experiencias se te abren 48 h antes que al resto\n\nLos tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acá\n\nExperiencias de la casa\n\nJUEVES, 15 DE OCTUBRE · 9:21 P. M.\n\nExperiencia de prueba\nC$ 850\nevent_seat\n12 DE 12 BUTACAS\nApartar butaca\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día\n\nevent_seat\nElegir mesa y hora"
+  },
+  {
+    "name": "premio-codigo",
+    "dialogText": "Cerrar\nclose\nMostrá este código en la barra\nTu bebida de cortesía\n\n32SSKRG4\n\nTu premio se conserva hasta que la casa te entregue la bebida Si el código vence, podés volver a generarlo\n\nListo",
+    "overflow": false,
+    "text": "CLUB LUPITA · CASA ABIERTA\n\nEl gusto\nde volver\nLA BELLA\nLUPITA\nMESA FUNDADORA\n\nDe la casa\nComo vos\n\n01\n02\n03\n04\n05\n06\n07\n08\n09\n\nPrueba Regresión\n\n#001\n\nVer cómo usarlo\n\nCada visita cuenta\nCada nueve sellos, una bebida por cuenta de la casa\n\nYA ES TUYA\n\nUna bebida\nte está esperando\n\nTenés 1 bebida de cortesía disponible\n\nMostrar mi premio\nLa próxima se acerca\n0 de 9 sellos\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nTe faltan 9 sellos para tu siguiente bebida\n\nLa próxima vez,\nvení con tiempo\nReservar una mesa ↗\n\nMESA FUNDADORA\n\n#001 / 100\n\nworkspace_premium\n\nSe renueva el 23 oct · C$ 950/mes\n\nCancelar renovación\nLo tuyo de este mes\nlocal_mall\nTu bolsa del mes · 250 g del lote\nSin retirar · se retira de 7 a 9\nMostrar código\nlocal_cafe\nUn café filtrado por visita\nDisponible hoy\nMostrar código\nbakery_dining\n15 % en toda la repostería, todos los días\nevent_seat\nPrioridad de horario en el Salón VIP\nschedule\nLas experiencias se te abren 48 h antes que al resto\n\nLos tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acá\n\nExperiencias de la casa\n\nJUEVES, 15 DE OCTUBRE · 9:21 P. M.\n\nExperiencia de prueba\nC$ 850\nevent_seat\n12 DE 12 BUTACAS\nApartar butaca\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día\n\nevent_seat\nElegir mesa y hora"
+  },
+  {
+    "name": "firefox-club-390",
+    "version": "155.0",
+    "violations": [],
+    "overflow": false,
+    "text": "CLUB LUPITA · CASA ABIERTA\n\nEl gusto\nde volver\nLA BELLA\nLUPITA\nMESA FUNDADORA\n\nDe la casa\nComo vos\n\n01\n02\n03\n04\n05\n06\n07\n08\n09\n\nPrueba Regresión\n\n#001\n\nVer cómo usarlo\n\nCada visita cuenta\nCada nueve sellos, una bebida por cuenta de la casa\n\nYA ES TUYA\n\nUna bebida\nte está esperando\n\nTenés 1 bebida de cortesía disponible\n\nMostrar mi premio\nLa próxima se acerca\n0 de 9 sellos\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nTe faltan 9 sellos para tu siguiente bebida\n\nLa próxima vez,\nvení con tiempo\nReservar una mesa ↗\n\nMESA FUNDADORA\n\n#001 / 100\n\nworkspace_premium\n\nSe renueva el 23 oct · C$ 950/mes\n\nCancelar renovación\nLo tuyo de este mes\nlocal_mall\nTu bolsa del mes · 250 g del lote\nSin retirar · se retira de 7 a 9\nMostrar código\nlocal_cafe\nUn café filtrado por visita\nDisponible hoy\nMostrar código\nbakery_dining\n15 % en toda la repostería, todos los días\nevent_seat\nPrioridad de horario en el Salón VIP\nschedule\nLas experiencias se te abren 48 h antes que al resto\n\nLos tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acá\n\nExperiencias de la casa\n\nJUEVES, 15 DE OCTUBRE · 9:21 P. M.\n\nExperiencia de prueba\nC$ 850\nevent_seat\n12 DE 12 BUTACAS\nApartar butaca\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día\n\nevent_seat\nElegir mesa y hora"
+  },
+  {
+    "name": "firefox-club-1440",
+    "version": "155.0",
+    "violations": [],
+    "overflow": false,
+    "text": "CLUB LUPITA · CASA ABIERTA\n\nEl gusto\nde volver\nLA BELLA\nLUPITA\nMESA FUNDADORA\n\nDe la casa\nComo vos\n\n01\n02\n03\n04\n05\n06\n07\n08\n09\n\nPrueba Regresión\n\n#001\n\nVer cómo usarlo\n\nCada visita cuenta\nCada nueve sellos, una bebida por cuenta de la casa\n\nYA ES TUYA\n\nUna bebida\nte está esperando\n\nTenés 1 bebida de cortesía disponible\n\nMostrar mi premio\nLa próxima se acerca\n0 de 9 sellos\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nTe faltan 9 sellos para tu siguiente bebida\n\nLa próxima vez,\nvení con tiempo\nReservar una mesa ↗\n\nMESA FUNDADORA\n\n#001 / 100\n\nworkspace_premium\n\nSe renueva el 23 oct · C$ 950/mes\n\nCancelar renovación\nLo tuyo de este mes\nlocal_mall\nTu bolsa del mes · 250 g del lote\nSin retirar · se retira de 7 a 9\nMostrar código\nlocal_cafe\nUn café filtrado por visita\nDisponible hoy\nMostrar código\nbakery_dining\n15 % en toda la repostería, todos los días\nevent_seat\nPrioridad de horario en el Salón VIP\nschedule\nLas experiencias se te abren 48 h antes que al resto\n\nLos tres de abajo los aplica quien te atiende Decilo en la barra y ya: no hay nada que tocar acá\n\nExperiencias de la casa\n\nJUEVES, 15 DE OCTUBRE · 9:21 P. M.\n\nExperiencia de prueba\nC$ 850\nevent_seat\n12 DE 12 BUTACAS\nApartar butaca\nTu mesa\nevent_seat\nApartá dónde te sentás\n\nTerraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día\n\nevent_seat\nElegir mesa y hora"
+  }
+]

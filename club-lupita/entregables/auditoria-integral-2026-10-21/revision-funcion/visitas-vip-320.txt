@@ -1,0 +1,58 @@
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- banner:
+  - paragraph: LA BELLA LUPITA / TU VISITA · DEMO
+  - heading "Todo listo para vernos." [level=1]
+  - paragraph: Revisá los detalles. Vos tenés la última palabra.
+- main "Preparación y estado de tu visita":
+  - paragraph: TU VISITA, DE UN VISTAZO
+  - strong: Salón VIP
+  - text: sábado, 24 de octubre 12:00 p. m. · 2 horas 2 personas · Hora de Managua
+  - heading "Tu anticipo, claro" [level=3]
+  - paragraph:
+    - strong: C$ 500
+    - text: de tu Cuenta de Casa. Se aplica al consumo de tu visita; el equipo registra esa aplicación.
+  - paragraph: Al cancelar, el anticipo pendiente vuelve íntegro a tu Cuenta de Casa. Si no asistís, se devuelve cuando el equipo registra la inasistencia.
+  - paragraph: Política de la fixture auditada · condiciones de prueba.
+  - text: Anticipo al confirmar
+  - strong: C$ 500
+  - paragraph: "Saldo sintético de Cuenta de Casa: C$ 9,900. Después del anticipo: C$ 9,400."
+  - button "Confirmar con C$ 500"
+  - button "Volver a los detalles"
+- complementary "Tu visita y el espacio de la casa":
+  - figure "LA TERRAZA DE LA CASA Hay tiempo para un café.":
+    - img "Mesas y sillones en la terraza de La Bella Lupita, entre palmeras al atardecer"
+    - text: LA TERRAZA DE LA CASA
+    - strong: Hay tiempo para un café.
+  - paragraph: Imagen del activo existente de la terraza. Ilustra ese espacio; no representa las otras zonas.
+  - paragraph: TU VISITA POR CONFIRMAR
+  - strong: Salón VIP
+  - text: sábado, 24 de octubre 12:00 p. m. · 2 horas 2 personas · Hora de Managua Anticipo aplicable a consumo
+  - strong: C$ 500
+- group:
+  - text: Escenarios de prueba
+  - paragraph: Estos controles cambian datos locales de la propuesta. No consultan disponibilidad ni cuentas reales.
+  - text: Simular
+  - combobox "Simular":
+    - option "Consulta normal" [selected]
+    - option "Sin horarios disponibles"
+    - option "Error al consultar horarios"
+    - option "Respuesta perdida al confirmar"
+  - checkbox "Nombre largo en comprobante"
+  - text: Nombre largo en comprobante
+  - button "Reiniciar la demostración"
+  - paragraph: Fechas, horarios, disponibilidad y saldos son sintéticos. Condiciones de anticipo basadas en la fixture local auditada.

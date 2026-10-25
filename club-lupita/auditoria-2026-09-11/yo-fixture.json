@@ -1,0 +1,92 @@
+{
+  "socio": {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "telefono": "50587442005",
+    "nombre": "Prueba Auditoría",
+    "creado": "2026-09-11T16:48:20.921Z",
+    "bebida_siempre": null,
+    "alergias": null,
+    "cumple": "2000-09-14T00:00:00.000Z"
+  },
+  "vale": null,
+  "sellos": [
+    {
+      "n": 1,
+      "motivo": "Prueba local",
+      "barista": "La casa",
+      "puesto": "2026-09-11T16:48:21.119Z"
+    },
+    {
+      "n": 2,
+      "motivo": "Prueba local",
+      "barista": "La casa",
+      "puesto": "2026-09-11T16:48:21.119Z"
+    },
+    {
+      "n": 3,
+      "motivo": "Prueba local",
+      "barista": "La casa",
+      "puesto": "2026-09-11T16:48:21.119Z"
+    },
+    {
+      "n": 4,
+      "motivo": "Prueba local",
+      "barista": "La casa",
+      "puesto": "2026-09-11T16:48:21.119Z"
+    },
+    {
+      "n": 5,
+      "motivo": "Prueba local",
+      "barista": "La casa",
+      "puesto": "2026-09-11T16:48:21.119Z"
+    },
+    {
+      "n": 6,
+      "motivo": "Prueba local",
+      "barista": "La casa",
+      "puesto": "2026-09-11T16:48:21.119Z"
+    },
+    {
+      "n": 7,
+      "motivo": "Prueba local",
+      "barista": "La casa",
+      "puesto": "2026-09-11T16:48:21.119Z"
+    }
+  ],
+  "saldo": {
+    "pagado": 1020000,
+    "bono": 24000,
+    "total": 1044000
+  },
+  "membresia": {
+    "numero": 1,
+    "estado": "activa",
+    "hasta": "2026-09-26T16:48:21.119Z"
+  },
+  "movimientos": [
+    {
+      "id": 4,
+      "monto": 24000,
+      "tipo": "bono",
+      "concepto": "La casa puso",
+      "creado": "2026-09-11T16:48:21.109Z"
+    },
+    {
+      "id": 2,
+      "monto": 20000,
+      "tipo": "recarga",
+      "concepto": "Recarga",
+      "creado": "2026-09-11T16:48:21.106Z"
+    },
+    {
+      "id": 1,
+      "monto": 1000000,
+      "tipo": "recarga",
+      "concepto": "Saldo ficticio de auditoría",
+      "creado": "2026-09-09T16:48:20.921Z"
+    }
+  ],
+  "tandasCerradas": 1,
+  "bebidaDelDia": "2026-09-11",
+  "bolsaDelMes": null
+}

@@ -1,0 +1,96 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa"
+- banner:
+  - button "Volver"
+  - heading "Pedí para llevar" [level=1]
+- paragraph: "Preparación estimada: 6 min · Confirmá en barra"
+- main:
+  - navigation "Momentos de la carta":
+    - button "Café" [pressed]
+    - button "Brunch"
+    - button "Bistró"
+    - button "Dulce"
+  - region "Selección de la casa":
+    - button "Ver Latte":
+      - img "Latte"
+    - paragraph: De la carta de la casa
+    - heading "Latte" [level=2]
+    - text: C$ 95
+    - button "Elegir"
+    - paragraph: La Bella Lupita Plaza La Fe · Managua
+  - heading "La carta" [level=1]:
+    - text: La
+    - emphasis: carta
+  - text: Buscar en la carta
+  - searchbox "Buscar en la carta"
+  - paragraph: Espresso, cortado y filtrado del lote del mes De pie o para llevar, en minutos
+  - heading "Café caliente" [level=2]
+  - list:
+    - listitem:
+      - button "Espresso C$ 80": Espresso Treinta mililitros del Aguacatal, la ladera de la familia Veintiséis segundos, crema espesa, panela
+      - text: C$ 80
+      - button "Agregar Espresso al pedido"
+    - listitem:
+      - button "Cortadito C$ 90": Cortadito Un espresso cortado con leche caliente en partes iguales Baja el filo, no el café
+      - text: C$ 90
+      - button "Agregar Cortadito al pedido"
+    - listitem:
+      - button "Macchiato C$ 90": "Macchiato Mismo espresso, apenas manchado: una cucharada de espuma encima Se toma en dos sorbos"
+      - text: C$ 90
+      - button "Agregar Macchiato al pedido"
+    - listitem:
+      - button "Americano C$ 85": Americano Espresso alargado con agua caliente Al abrirse la taza aparece la naranja madura de la finca
+      - text: C$ 85
+      - button "Agregar Americano al pedido"
+    - listitem:
+      - button "Latte C$ 95": Latte Leche texturizada al vapor sobre un espresso de Matagalpa Más leche que café, textura de seda
+      - text: C$ 95
+      - button "Agregar Latte al pedido": "1"
+    - listitem:
+      - button "Cappuccino C$ 95": "Cappuccino Tercios parejos: espresso, leche y espuma Más aire que el latte, más café por sorbo"
+      - text: C$ 95
+      - button "Agregar Cappuccino al pedido"
+    - listitem:
+      - button "Mocha C$ 120": Mocha Espresso, chocolate fundido y leche al vapor El fondo de cacao del grano, subido de tono
+      - text: C$ 120
+      - button "Agregar Mocha al pedido"
+    - listitem:
+      - button "Té Caliente C$ 100": Té Caliente La opción sin café de la barra Hoja en infusión, agua a punto y no hirviendo
+      - text: C$ 100
+      - button "Agregar Té Caliente al pedido"
+  - group: Sobre hielo 13 opciones
+  - group: Refrescos 3 opciones
+- button "1 artículo · C$ 95 Ver tu pedido"
+- dialog "Tu pedido":
+  - button "Cerrar panel": Cerrar
+  - paragraph: Retirás en barra · Plaza La Fe
+  - heading "Tu pedido" [level=2]
+  - list:
+    - listitem:
+      - text: Latte C$ 95 c/u
+      - button "Quitar un Latte"
+      - text: "1"
+      - button "Agregar otro Latte"
+      - text: C$ 95
+  - text: Total C$ 95
+  - paragraph: En tu Cuenta de Casa hay C$ 9,900
+  - alert: No se pudo completar este pedido de prueba
+  - button "Pagar con la Cuenta de Casa"
+  - button "Vaciar el pedido"
+  - paragraph: El importe se descuenta al enviar el pedido El equipo lo recibe y confirma su preparación Consultá el estado en Mis compras y reservas
+- navigation "Secciones de Club Lupita":
+  - list:
+    - listitem:
+      - button "Inicio"
+    - listitem:
+      - button "Pedir, 1 productos en el pedido": Pedir 1
+    - listitem:
+      - button "Tienda"
+    - listitem:
+      - button "Club"
+    - listitem:
+      - button "Perfil"

@@ -1,0 +1,54 @@
+{
+  "Date": [
+    "Fri, 09 Oct 2026 03:15:55 GMT"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "CF-Cache-Status": [
+    "HIT"
+  ],
+  "Cache-Control": [
+    "public, must-revalidate, max-age=0"
+  ],
+  "Nel": [
+    "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+  ],
+  "Strict-Transport-Security": [
+    "max-age=31536000"
+  ],
+  "Content-Security-Policy": [
+    "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
+  ],
+  "Referrer-Policy": [
+    "strict-origin-when-cross-origin"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Server-Timing": [
+    "cfCacheStatus;desc=\"HIT\"",
+    "cfEdge;dur=21,cfOrigin;dur=0"
+  ],
+  "Report-To": [
+    "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VLbZGrrz7t1DzUriL5t2h2as8E1kzafc%2Ftgz01IkiiyxCZ8%2FxiMrXvI6yrA%2Fn6OCvvzwvpyUxDkRYz2jpS1FjVewWoLlqx%2F9HEyS9BOIRTB4FTc%2BqK5lK93N0ub1pzI201mC26qle0TQ5rSnOreRY7oFExY%3D\"}]}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "a47a393ecdc5133a-MIA"
+  ],
+  "Alt-Svc": [
+    "h3=\":443\""
+  ],
+  "Content-Type": [
+    "text/html"
+  ]
+}

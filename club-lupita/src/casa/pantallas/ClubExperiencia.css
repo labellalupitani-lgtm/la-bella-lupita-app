@@ -1,0 +1,243 @@
+/* Mi Club: la pausa de hoy, las próximas visitas y la cuenta de la casa. */
+.mi-club.club-experiencia { max-width:1280px; padding-top:24px; }
+.club-experiencia :is(h1,h2,h3) { font-family:theme('fontFamily.inicio-titular'); font-weight:400; }
+.club-cabecera { display:flex; align-items:center; flex-wrap:wrap; gap:12px 18px; margin-bottom:28px; }
+.club-volver { display:grid; place-items:center; width:44px; min-height:44px; flex:none; border-radius:theme('borderRadius.full'); }
+.club-volver:hover { background:theme('colors.inicio-rosa'); }
+.club-cabecera h1 { font-size:2rem; line-height:1.2; letter-spacing:-.035em; }
+.club-cabecera > span { margin-left:auto; font-size:.75rem; color:theme('colors.tinta-media'); }
+.club-experiencia :is(button,a,summary):focus-visible { outline:2px solid theme('colors.inicio-borgona'); outline-offset:4px; }
+.club-experiencia :is(button,a,summary) { scroll-margin-block:28px 120px; }
+.club-hoy { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(0,1fr); gap:clamp(32px,5.4vw,72px); align-items:center; }
+.club-hoy-foto { min-width:0; margin:0; }
+.club-hoy-foto > div { aspect-ratio:1.16; overflow:hidden; border-radius:theme('borderRadius.editorial') theme('borderRadius.editorial') theme('borderRadius.inicio-tarjeta') theme('borderRadius.editorial'); background:theme('colors.inicio-rosa'); }
+.club-hoy-foto img { display:block; width:100%; height:100%; object-fit:cover; object-position:50% 46%; }
+.club-hoy-foto figcaption { margin-top:10px; font-size:.6875rem; line-height:1.6; color:theme('colors.tinta-media'); }
+.club-hoy-contenido { min-width:0; padding:12px 0 24px; }
+.club-hoy-contenido .t-eyebrow { font-size:.6875rem; letter-spacing:.12em; }
+.club-hoy h2 { font-size:clamp(3.25rem,5.7vw,5rem); letter-spacing:-.055em; line-height:1.03; margin:24px 0 20px; }
+.club-hoy-nombre { font-size:1rem; line-height:1.6; margin:0 0 14px; }
+.club-disponibilidad { display:flex; align-items:center; gap:8px; font-size:.75rem; line-height:1.6; font-weight:600; }
+.club-disponibilidad::before { content:''; width:6px; height:6px; flex:none; border-radius:theme('borderRadius.full'); background:theme('colors.exito'); }
+.club-entregado .club-disponibilidad::before { background:theme('colors.tinta-media'); }
+.club-hoy .club-hoy-accion { display:flex; justify-content:space-between; gap:20px; width:100%; max-width:24rem; margin-top:24px; padding-inline:24px; font-size:.875rem; }
+.club-hoy-accion .ico,.club-credencial-abrir .ico { transition:transform 220ms ease; }
+.club-hoy-accion:not(:disabled):hover .ico,.club-credencial:hover .ico { transform:translateX(4px); }
+.club-hoy-contenido > .club-beneficio-detalle { margin-top:8px; max-width:34rem; }
+.club-pertenencia { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(0,1fr); align-items:center; gap:clamp(32px,5.4vw,72px); margin:28px 0; }
+.club-credencial { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px 24px; width:100%; min-width:0; text-align:left; padding:22px 26px; border:1px solid theme('colors.tinta'); border-radius:theme('borderRadius.inicio-control'); background:theme('colors.tinta'); color:theme('colors.inicio-crema'); cursor:pointer; transition:background-color 220ms ease; }
+.club-credencial:hover { background:theme('colors.banda-honda'); }
+.club-credencial-identidad { min-width:0; flex:1 1 13rem; }
+.club-credencial-marca { display:block; font-size:.625rem; letter-spacing:.12em; text-transform:uppercase; line-height:1.6; color:theme('colors.inicio-rosa'); }
+.club-credencial-nombre { display:block; font-family:theme('fontFamily.inicio-titular'); font-weight:400; font-size:1.5rem; line-height:1.3; margin:5px 0; overflow-wrap:anywhere; }
+.club-credencial-tipo { display:block; font-size:.6875rem; line-height:1.6; }
+.club-credencial-abrir { display:flex; align-items:center; gap:12px; min-height:44px; font-size:.75rem; font-weight:600; }
+.club-vigencia { font-size:.8125rem; line-height:1.7; color:theme('colors.tinta-media'); }
+.club-vigencia strong { color:theme('colors.tinta'); font-weight:500; }
+.club-vigencia .casa-boton { font-size:.75rem; padding-left:0; margin-top:4px; }
+.club-experiencia > .cuenta-atajos { gap:8px 28px; border-top:1px solid theme('colors.filete'); border-bottom:1px solid theme('colors.filete'); padding:6px 0; margin:0 0 32px; }
+.club-experiencia > .cuenta-atajos a { padding:8px 0; border-radius:0; border:0; font-size:.8125rem; }
+.club-experiencia > .cuenta-atajos a:hover { background:transparent; color:theme('colors.inicio-borgona'); }
+.club-experiencia :is(h2,h3).t-seccion { border:0; padding:0; font-size:clamp(1.625rem,2.7vw,2.25rem); line-height:1.2; }
+.club-titulo-fila { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; }
+.club-titulo-fila > div { min-width:0; }
+.club-titulo-fila .t-eyebrow { font-size:.6875rem; margin-bottom:10px; }
+.club-beneficios-seccion { padding-top:12px; }
+.club-beneficios-restantes { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(0,1fr); gap:clamp(32px,5.4vw,72px); margin:28px 0 20px; }
+.club-beneficio-bolsa { display:flex; flex-wrap:wrap; min-width:0; background:theme('colors.inicio-crema'); border-radius:theme('borderRadius.inicio-control'); border:1px solid theme('colors.filete'); }
+.club-bolsa-arte { display:flex; flex-direction:column; align-items:flex-start; justify-content:space-between; gap:24px; flex:1 1 9rem; min-width:min-content; max-width:100%; min-height:240px; padding:26px 22px; border-radius:theme('borderRadius.inicio-control') 0 0 theme('borderRadius.inicio-control'); background:theme('colors.inicio-rosa'); }
+.club-bolsa-arte > span:not(.club-peso) { font-size:.6875rem; line-height:1.6; }
+.club-peso { display:block; white-space:nowrap; font-family:theme('fontFamily.inicio-titular'); font-size:4.5rem; letter-spacing:-.065em; line-height:1; }
+.club-peso > span { font-size:1.5rem; letter-spacing:0; margin-left:4px; }
+.club-beneficio-contenido { min-width:0; flex:1.65 1 14rem; padding:24px; align-self:center; }
+.club-experiencia .club-beneficio-contenido .t-seccion { font-size:1.625rem; margin:12px 0 18px; }
+.club-beneficio-contenido .casa-boton { padding-inline:14px; font-size:.8125rem; }
+.club-beneficios-extra { min-width:0; }
+.club-beneficios-extra > article { display:flex; gap:16px; padding:20px 0; border-bottom:1px solid theme('colors.filete'); }
+.club-beneficios-extra > article:first-child { padding-top:0; }
+.club-beneficios-extra > article:last-child { border-bottom:0; padding-bottom:0; }
+.club-beneficio-numero { flex:none; font-size:.625rem; color:theme('colors.tinta-media'); margin-top:7px; }
+.club-beneficios-extra article > div { min-width:0; }
+.club-beneficios-extra h3 { font-size:1.5rem; line-height:1.3; margin:0 0 6px; }
+.club-beneficios-extra h3 strong { font-weight:400; }
+.club-beneficios-extra p { font-size:.8125rem; line-height:1.7; }
+.club-beneficio-detalle { font-size:.8125rem; line-height:1.7; }
+.club-beneficio-detalle summary { display:flex; align-items:center; gap:10px; min-height:44px; padding-block:8px; cursor:pointer; list-style:none; text-decoration:underline; text-underline-offset:4px; }
+.club-beneficio-detalle summary::after { content:'+'; flex:none; text-decoration:none; }
+.club-beneficio-detalle[open] summary::after { content:'−'; }
+.club-beneficio-detalle summary::-webkit-details-marker { display:none; }
+.club-beneficio-detalle p { padding-bottom:10px; }
+.club-beneficio-detalle[open] > :not(summary) { animation:club-revelar 220ms ease-out; }
+.club-experiencia .mi-club-detalles { font-size:.8125rem; line-height:1.7; padding:8px 0; }
+.club-experiencia .mi-club-detalles summary { font-size:.8125rem; font-weight:500; min-height:48px; }
+.club-experiencia .mi-club-detalles summary::after { background:transparent; }
+.club-experiencia .club-tanda { margin:48px 0 0; }
+.mi-club.club-experiencia .club-tanda > .casa-tarjeta { position:relative; container-type:inline-size; background:theme('colors.inicio-rosa'); padding:32px 36px 20px; border:0; border-radius:theme('borderRadius.inicio-control'); }
+.club-tanda-cifra { font-family:theme('fontFamily.inicio-titular'); font-size:4rem; line-height:1; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.club-tanda-cifra small { font-size:1.25rem; color:theme('colors.tinta-media'); margin-left:4px; }
+.club-tanda-estado { font-size:.8125rem; line-height:1.7; margin-top:12px; }
+.club-estampillas { --club-columnas:9; --club-espacio:clamp(8px,2vw,24px); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,max(3.5em,calc((100% - (var(--club-columnas) - 1)*var(--club-espacio))/var(--club-columnas)))),1fr)); gap:var(--club-espacio); padding:30px 0 26px; }
+.club-estampilla { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.125em; aspect-ratio:1; width:100%; min-width:0; min-height:3.5em; padding:10px 8px; color:theme('colors.tinta-media'); border:1px dashed theme('colors.contorno'); border-radius:theme('borderRadius.full'); font-size:1rem; line-height:1; }
+.club-estampilla-lista { background:theme('colors.tinta'); color:theme('colors.inicio-crema'); border:1px solid theme('colors.tinta'); cursor:pointer; box-shadow:inset 0 0 0 5px theme('colors.inicio-rosa'),inset 0 0 0 6px theme('colors.tinta'); transition:background-color 200ms ease,transform 200ms ease; }
+.club-estampilla-lista small { font-size:.625rem; line-height:1.2; color:theme('colors.inicio-crema'); }
+.club-estampilla-lista .ico { flex-shrink:0; }
+.club-estampilla-meta { border-style:solid; border-color:theme('colors.tinta-media'); }
+.club-estampilla-lista:hover { transform:translateY(-3px); }
+.club-estampilla-lista[aria-pressed=true] { outline:2px solid theme('colors.inicio-borgona'); outline-offset:3px; background:theme('colors.inicio-borgona'); box-shadow:inset 0 0 0 5px theme('colors.inicio-rosa'),inset 0 0 0 6px theme('colors.inicio-borgona'); }
+.club-estampilla-nueva { animation:club-estampar 280ms ease-out; }
+.club-sello-detalle { min-height:58px; border-top:1px dashed theme('colors.contorno'); padding:14px 0; font-size:.8125rem; line-height:1.7; }
+.club-sello-detalle strong { display:block; font-weight:600; }
+.club-sello-detalle span { display:block; margin-top:4px; font-size:.75rem; color:theme('colors.tinta-media'); }
+.club-sello-detalle p { animation:club-revelar 200ms ease-out; }
+.club-premio-listo { display:flex; align-items:center; flex-wrap:wrap; gap:16px 24px; padding:16px 0 24px; }
+.club-premio-listo > p { flex:1 1 14rem; font-size:.9375rem; font-weight:600; }
+.club-premio-listo > p > span { display:block; font-size:.8125rem; font-weight:400; margin-top:6px; }
+.club-premio-listo .casa-boton { width:auto; flex:0 1 auto; }
+.club-experiencias,.club-gestion { margin-top:56px; }
+.club-experiencias .club-titulo-fila > a { display:inline-flex; align-items:center; gap:10px; min-height:44px; font-size:.8125rem; text-decoration:underline; text-underline-offset:4px; }
+.club-experiencias-vacio { padding:28px 0; font-size:.875rem; border-bottom:1px solid theme('colors.filete'); margin-top:16px; }
+.club-agenda { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(0,1fr); align-items:start; gap:24px 40px; margin-top:28px; }
+.club-agenda > li { min-width:0; }
+.club-agenda-destacada { grid-row:span 3; }
+.club-evento { display:flex; gap:24px; padding:20px 0; border-top:1px solid theme('colors.filete'); }
+.club-agenda-destacada .club-evento { padding:28px; background:theme('colors.inicio-crema'); border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.inicio-control'); }
+.club-evento-fecha { flex:none; min-width:2.6rem; text-align:center; }
+.club-evento-fecha span { display:block; font-size:.6875rem; line-height:1.6; text-transform:uppercase; letter-spacing:.08em; }
+.club-evento-fecha strong { display:block; font-family:theme('fontFamily.inicio-titular'); font-weight:400; font-size:2.75rem; line-height:1.1; }
+.club-agenda-destacada .club-evento-fecha strong { font-size:3.5rem; }
+.club-evento-cuerpo { min-width:0; flex:1; }
+.club-evento-cuando { font-size:.6875rem; line-height:1.7; color:theme('colors.tinta-media'); }
+.club-evento h3 { font-size:1.625rem; line-height:1.2; margin:10px 0 12px; }
+.club-agenda-destacada .club-evento h3 { font-size:2.25rem; }
+.club-evento-lugar { font-size:.8125rem; line-height:1.7; }
+.club-evento-precio { font-size:1.125rem; font-variant-numeric:tabular-nums; font-weight:500; margin-top:16px; }
+.club-evento-precio span { display:block; font-size:.75rem; line-height:1.7; font-weight:400; margin-top:4px; }
+.club-evento .club-beneficio-detalle { margin-top:6px; }
+.club-evento .casa-boton { margin-top:16px; padding-inline:16px; font-size:.8125rem; }
+.club-evento-apertura { padding-top:6px; font-size:.8125rem; line-height:1.7; }
+.club-gestion-columnas { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.4fr); gap:clamp(28px,5vw,64px); margin-top:28px; }
+.club-gestion-columnas > div { min-width:0; }
+.club-experiencia .cuenta-saldo { padding:26px; border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-crema'); border:1px solid theme('colors.filete'); }
+.club-experiencia .cuenta-saldo .t-seccion { font-size:1.375rem; margin-top:12px; }
+.club-experiencia .cuenta-saldo .cuenta-importe { display:flex; flex-wrap:wrap; gap:.1em .25em; font-size:2.75rem; margin:18px 0 12px; overflow-wrap:normal; }
+.club-experiencia .cuenta-importe > span { white-space:nowrap; }
+.club-experiencia .cuenta-saldo-acciones .casa-boton { font-size:.8125rem; }
+.club-proxima-visita { margin-top:12px; }
+.club-proxima-visita .mi-club-enlace { display:flex; align-items:center; justify-content:space-between; gap:12px; font-size:.8125rem; }
+.club-gestion-detalles .atencion-motivo-actual { display:block; font-size:.8125rem; line-height:1.7; margin-top:6px; overflow-wrap:anywhere; }
+.club-experiencia .club-lectura { display:flex; justify-content:space-between; align-items:center; gap:8px 20px; flex-wrap:wrap; padding-top:20px; margin-top:36px; border-top:1px solid theme('colors.filete'); }
+.club-experiencia .club-lectura .t-caption { font-size:.75rem; line-height:1.7; }
+.club-experiencia .club-lectura .casa-boton { font-size:.8125rem; }
+.club-renovacion-pendiente { padding:26px; margin:0 0 24px; border:1px solid theme('colors.filete'); border-left:4px solid theme('colors.inicio-borgona'); border-radius:0 theme('borderRadius.inicio-control') theme('borderRadius.inicio-control') 0; background:theme('colors.inicio-rosa'); }
+.club-renovacion-pendiente h2 { margin:12px 0 16px; }
+.club-renovacion-pendiente p { font-size:.875rem; line-height:1.7; max-width:80ch; margin-top:12px; }
+.club-renovacion-pendiente .casa-boton { margin-top:20px; }
+.club-reposicion { margin-bottom:20px; }
+.club-reposicion p { font-size:.875rem; line-height:1.7; margin:12px 0; }
+.club-gratuito .club-pertenencia { grid-template-columns:minmax(0,1fr); max-width:720px; margin-top:0; }
+.club-gratuito .club-tanda { margin-top:0; }
+.mi-club.club-experiencia .club-oferta-mesa > .casa-tarjeta { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.12fr); gap:clamp(24px,5vw,64px); margin-top:40px; padding:32px; background:theme('colors.inicio-crema'); border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.inicio-control'); }
+.club-oferta-mesa h2 { margin:12px 0 16px; }
+.club-oferta-mesa p { font-size:.875rem; line-height:1.7; }
+.club-oferta-mesa .club-cuota { font-family:theme('fontFamily.inicio-titular'); font-size:2.75rem; line-height:1.2; margin:24px 0 0; font-variant-numeric:tabular-nums; letter-spacing:-.04em; }
+.club-cuota span { font-family:theme('fontFamily.inicio-texto'); display:block; font-size:.75rem; letter-spacing:0; margin-top:8px; }
+.club-mesa-resumen { font-size:.875rem; line-height:1.7; margin-bottom:16px; }
+.club-mesa-resumen li { padding:7px 0; border-bottom:1px solid theme('colors.filete'); }
+.club-oferta-mesa .mi-club-detalles { margin-bottom:16px; }
+.club-consulta { font-size:.875rem; line-height:1.7; padding:20px 0; }
+.club-experiencia + .casa-hoja[open] { animation-duration:240ms; }
+@keyframes club-revelar { from { transform:translateY(4px); opacity:.6; } to { transform:translateY(0); opacity:1; } }
+@keyframes club-estampar { 0% { transform:scale(1.14) rotate(-9deg); } 65% { transform:scale(.97) rotate(2deg); } 100% { transform:scale(1) rotate(0); } }
+@media (max-width:1100px) {
+ .club-hoy,.club-pertenencia,.club-beneficios-restantes { gap:32px; }
+ .club-hoy h2 { font-size:3.75rem; }
+ .club-bolsa-arte { flex-basis:100%; min-height:0; flex-direction:row; align-items:center; flex-wrap:wrap; gap:16px; border-radius:theme('borderRadius.inicio-control') theme('borderRadius.inicio-control') 0 0; }
+ .club-bolsa-arte > span:not(.club-peso) { max-width:10ch; }
+ .club-peso { font-size:3.75rem; }
+ .club-beneficio-contenido { padding:22px; }
+ .club-agenda { gap:24px; }
+ .club-evento { gap:18px; }
+ .club-agenda-destacada .club-evento { padding:24px; flex-wrap:wrap; }
+ .club-agenda-destacada .club-evento-cuerpo { flex-basis:100%; }
+}
+@media (max-width:800px) {
+ .mi-club.club-experiencia { padding-top:16px; }
+ .club-cabecera { margin-bottom:20px; gap:8px 10px; }
+ .club-cabecera h1 { font-size:1.75rem; }
+ .club-cabecera > span { font-size:.6875rem; }
+ .club-hoy { grid-template-columns:minmax(0,1fr); gap:18px; }
+ .club-hoy-foto > div { aspect-ratio:1.65; }
+ .club-hoy-foto img { object-position:50% 40%; }
+ .club-hoy-foto figcaption { margin-top:7px; font-size:.6875rem; }
+ .club-hoy-contenido { padding:0; }
+ .club-hoy-contenido .t-eyebrow { font-size:.625rem; }
+ .club-hoy h2 { font-size:2.75rem; margin:10px 0; }
+ .club-hoy-salto { display:none; }
+ .club-hoy-nombre { font-size:.875rem; margin-bottom:8px; }
+ .club-hoy .club-hoy-accion { max-width:none; margin-top:16px; min-height:48px; font-size:.8125rem; }
+ .club-hoy-contenido > .club-beneficio-detalle { margin-top:4px; }
+ .club-pertenencia { grid-template-columns:minmax(0,1fr); gap:14px; margin:24px 0; }
+ .club-credencial { padding:18px 22px; gap:8px 20px; }
+ .club-credencial-identidad { flex-basis:10rem; }
+ .club-credencial-nombre { font-size:1.375rem; }
+ .club-credencial-abrir { font-size:.6875rem; gap:8px; }
+ .club-vigencia { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:4px 16px; }
+ .club-vigencia .casa-boton { margin-top:0; }
+ .club-experiencia > .cuenta-atajos { gap:4px 22px; margin-bottom:24px; }
+ .club-experiencia > .cuenta-atajos a { font-size:.75rem; }
+ .club-beneficios-restantes { grid-template-columns:minmax(0,1fr); gap:28px; margin-top:24px; }
+ .club-bolsa-arte { flex:1 1 8rem; flex-direction:column; align-items:flex-start; gap:18px; border-radius:theme('borderRadius.inicio-control') 0 0 theme('borderRadius.inicio-control'); }
+ .club-bolsa-arte > span:not(.club-peso) { max-width:none; }
+ .club-beneficio-contenido { flex:1.6 1 13rem; }
+ .club-beneficios-extra { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+ .club-beneficios-extra > article { display:block; padding:0; border-bottom:0; }
+ .club-beneficio-numero { display:block; margin:0 0 10px; }
+ .club-beneficios-extra h3 { font-size:1.375rem; }
+ .club-experiencia .club-tanda { margin-top:36px; }
+ .mi-club.club-experiencia .club-tanda > .casa-tarjeta { padding:24px; }
+ .club-tanda-cifra { font-size:3rem; }
+ .club-tanda .club-titulo-fila { align-items:flex-start; gap:16px; }
+ .club-tanda .club-titulo-fila > div { flex:1 1 12rem; }
+ .club-estampillas { --club-espacio:12px; padding:24px 0; }
+ .club-experiencias,.club-gestion { margin-top:40px; }
+ .club-agenda,.club-gestion-columnas { grid-template-columns:minmax(0,1fr); gap:24px; }
+ .club-agenda-destacada { grid-row:auto; }
+ .club-agenda-destacada .club-evento { flex-wrap:nowrap; }
+ .club-agenda-destacada .club-evento-cuerpo { flex-basis:0; }
+ .club-gratuito .club-tanda { margin-top:0; }
+ .mi-club.club-experiencia .club-oferta-mesa > .casa-tarjeta { grid-template-columns:minmax(0,1fr); padding:24px; margin-top:32px; }
+}
+@media (max-width:600px) {
+ .club-beneficios-extra { grid-template-columns:minmax(0,1fr); gap:0; }
+ .club-beneficios-extra > article { display:flex; gap:16px; border-bottom:1px solid theme('colors.filete'); padding:18px 0; }
+ .club-beneficio-numero { margin-top:5px; }
+ .club-beneficios-extra > article:first-child { padding-top:0; }
+ .club-bolsa-arte { flex-direction:row; align-items:center; flex-wrap:wrap; flex-basis:100%; gap:14px; min-height:0; padding:20px; border-radius:theme('borderRadius.inicio-control') theme('borderRadius.inicio-control') 0 0; }
+ .club-bolsa-arte > span:not(.club-peso) { max-width:10ch; }
+ .club-peso { font-size:3.25rem; }
+ .club-peso > span { font-size:1.25rem; }
+ .club-agenda-destacada .club-evento { padding:22px; flex-wrap:wrap; }
+ .club-agenda-destacada .club-evento-fecha { display:flex; align-items:baseline; gap:10px; flex-direction:row-reverse; }
+ .club-agenda-destacada .club-evento-fecha strong { font-size:2.75rem; }
+ .club-agenda-destacada .club-evento-cuerpo { flex-basis:100%; }
+ .club-agenda-destacada .club-evento h3 { font-size:1.5rem; }
+ .club-experiencia .cuenta-saldo { padding:20px; }
+ .club-experiencia .cuenta-saldo .cuenta-importe { font-size:1.75rem; }
+}
+@media (max-width:380px) {
+ .club-cabecera > span { margin-left:54px; flex-basis:100%; }
+ .club-hoy h2 { font-size:2.5rem; }
+ .club-credencial { padding:18px; }
+ .club-credencial-abrir { width:100%; justify-content:space-between; }
+ .club-experiencia > .cuenta-atajos { gap:2px 18px; }
+ .mi-club.club-experiencia .club-tanda > .casa-tarjeta { padding:20px; }
+ .club-tanda .club-titulo-fila > div { flex-basis:10rem; }
+ .club-evento { gap:14px; }
+ .club-evento-fecha strong { font-size:2.25rem; }
+}
+@container (max-width:38rem) { .club-estampillas { --club-columnas:5; } }
+@container (max-width:22rem) { .club-estampillas { --club-columnas:3; } }
+@media (prefers-reduced-motion:reduce) {
+ .club-experiencia *,.club-experiencia *::before,.club-experiencia *::after,.club-experiencia + .casa-hoja[open] { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+ .club-hoy-accion:not(:disabled):hover .ico,.club-credencial:hover .ico,.club-estampilla-lista:hover { transform:none; }
+}

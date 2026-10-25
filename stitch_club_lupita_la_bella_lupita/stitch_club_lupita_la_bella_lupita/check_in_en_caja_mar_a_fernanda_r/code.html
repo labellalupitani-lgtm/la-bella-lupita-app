@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perfil de Socio - Casa Lupita</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#754e00",
+                    "tertiary-fixed-dim": "#efbc9b",
+                    "primary": "#16452f",
+                    "surface-container": "#f1eee7",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f3f0e9",
+                    "on-tertiary-fixed-variant": "#623f25",
+                    "on-primary-fixed": "#002112",
+                    "secondary": "#805600",
+                    "surface-bright": "#fcf9f2",
+                    "surface-variant": "#e5e2db",
+                    "surface-dim": "#dcdad3",
+                    "surface-container-highest": "#e5e2db",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#2f5d45",
+                    "tertiary-fixed": "#ffdcc6",
+                    "on-secondary-fixed-variant": "#614000",
+                    "on-primary-container": "#a2d4b6",
+                    "on-background": "#1c1c18",
+                    "outline-variant": "#c0c9c1",
+                    "surface-container-high": "#ebe8e1",
+                    "primary-fixed": "#bbeecf",
+                    "background": "#fcf9f2",
+                    "secondary-fixed-dim": "#f9bc5a",
+                    "primary-fixed-dim": "#a0d2b3",
+                    "on-secondary-fixed": "#281800",
+                    "secondary-container": "#ffc15f",
+                    "on-surface": "#1c1c18",
+                    "secondary-fixed": "#ffddb0",
+                    "tertiary-container": "#714c32",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#39684f",
+                    "on-tertiary-fixed": "#2f1502",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#57351d",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f6f3ec",
+                    "outline": "#717972",
+                    "on-surface-variant": "#414943",
+                    "on-primary-fixed-variant": "#214f38",
+                    "inverse-surface": "#31312c",
+                    "on-tertiary-container": "#f1bf9d",
+                    "inverse-primary": "#a0d2b3",
+                    "surface": "#fcf9f2",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Libre Caslon Text"
+                    ],
+                    "display": [
+                            "Libre Caslon Text"
+                    ],
+                    "body": [
+                            "Work Sans"
+                    ],
+                    "label": [
+                            "Work Sans"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Work Sans', sans-serif;
+        background-color: #F6F3EC; /* Porcelana */
+      }
+      h1, h2, h3, h4, h5, h6, .font-headline {
+        font-family: 'Libre Caslon Text', serif;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.75rem; /* 12px */
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased flex h-screen overflow-hidden">
+<!-- SideNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-inverse-surface text-primary dark:text-primary-fixed-dim border-r border-outline-variant dark:border-outline flat no shadows h-screen w-64 fixed left-0 top-0 flex flex-col py-6 px-4 z-20">
+<div class="mb-8 px-4">
+<h1 class="font-headline text-xl text-primary dark:text-primary-fixed-dim font-bold">Casa Lupita</h1>
+<p class="eyebrow text-on-surface-variant mt-1">Administración</p>
+</div>
+<ul class="flex-1 space-y-2">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-on-tertiary-container opacity-80 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="assignment_ind">assignment_ind</span>
+<span class="font-medium text-sm">Turno de hoy</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-primary dark:text-primary-fixed-dim font-bold bg-primary-container/10 active:scale-95 duration-75" href="#">
+<span class="material-symbols-outlined" data-icon="qr_code_scanner" style="font-variation-settings: 'FILL' 1;">qr_code_scanner</span>
+<span class="font-medium text-sm">Check-ins</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-on-tertiary-container opacity-80 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+<span class="font-medium text-sm">Reservas</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-on-tertiary-container opacity-80 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-medium text-sm">Pedidos</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-on-tertiary-container opacity-80 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-medium text-sm">Socios</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-on-tertiary-container opacity-80 hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="local_activity">local_activity</span>
+<span class="font-medium text-sm">Eventos</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto px-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro shot of rich, dark espresso coffee beans scattered on a rustic wooden table, bathed in warm, cinematic light. High contrast, sharp focus on the texture of the beans, conveying a premium artisanal coffee aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMzJtejOG6x--tNPyYTCJh__yHh2OG1EzWYtOKltF5mkPRFU1EEDKibDVnFNhrVqWmVnaiLoxT10DH9ac-b7zuC1ND7fBoMbpQbKuWk2Gje9mM9lPhkKDwe8vaNJmmXF3HVkq0Goag6hm-W7Gfm2YVItG741BAmD4i3gauoomOMuaengNPqdrYD2Zm4UvfjJnXyoxEba93JbAhqBZyygANhUe_iJL5YITt3uucGHvJuaSEM8EqWOPtNAuWTvzgflA3DRxU0EvMk70"/>
+</div>
+<div class="text-sm">
+<p class="font-medium text-on-surface">Caja Principal</p>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="ml-64 w-full h-full flex flex-col overflow-y-auto">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline flat no shadows flex justify-between items-center px-8 h-16 sticky top-0 z-10">
+<h2 class="font-headline text-lg font-bold text-on-surface dark:text-inverse-on-surface">Check-in en caja</h2>
+<div class="flex items-center gap-6 w-full max-w-xl justify-end">
+<div class="relative w-full max-w-md hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-on-surface" placeholder="Buscá por teléfono o nombre" type="text" value="8744-XXXX"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-sm" data-icon="close">close</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-on-surface-variant dark:text-on-tertiary-container hover:bg-surface-variant/50 dark:hover:bg-surface-container-highest rounded-full transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant dark:text-on-tertiary-container hover:bg-surface-variant/50 dark:hover:bg-surface-container-highest rounded-full transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Page Content -->
+<div class="p-8 max-w-6xl mx-auto w-full space-y-6">
+<!-- Guest Profile Header Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-l-secondary relative overflow-hidden">
+<div class="p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-6">
+<div class="w-24 h-24 rounded-full border-2 border-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A bright, warm portrait of a young woman enjoying coffee in a beautifully lit, artisanal cafe setting. Soft natural light, shallow depth of field, conveying a welcoming and premium hospitality experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj-G2wobYTGJV9XC2wI79DEz4EjxX4OZI4d_spUJvoLwEy5HKtmK912rZJIzlVByUKeN7CxQOn8PM7ZQhWuw-J1tHlhChSgGQpttUqNrME0-2szicQZSVbNfcjONr7MP2jckDBZLUILvD-HauA7KFF0vjefohuVEvbcw-71I5c4u2IufuDRdxCI9HTcAzoD3AOowO4KXV5il3ZeZxGpOXmqlnQ6rLFhPY0Fe1R7BfodEzLcCSD1zbL6C6NuJwwJLsPxUg95J_OL4I"/>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-3 mb-2">
+<h1 class="font-headline text-3xl font-bold text-on-surface">María Fernanda R.</h1>
+<span class="px-3 py-1 bg-[#221E17] text-surface-container-lowest text-xs rounded-full eyebrow border border-secondary font-medium tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                                SOCIA FUNDADORA #037
+                            </span>
+<span class="px-3 py-1 bg-surface-variant text-on-surface text-xs rounded-full eyebrow font-medium tracking-wider">
+                                NIVEL BARISTA
+                            </span>
+</div>
+<p class="text-on-surface-variant text-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="history">history</span>
+                            77ª visita · socia desde marzo 2026
+                        </p>
+</div>
+</div>
+</div>
+<!-- Bento Grid Info -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Col 1: Habitual Order -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<h3 class="eyebrow text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="local_cafe">local_cafe</span>
+                            Su pedido de siempre
+                        </h3>
+<p class="text-lg font-medium text-on-surface mb-2">Capuchino · leche de almendra</p>
+</div>
+<button class="mt-6 w-full py-3 bg-primary text-on-primary rounded-full font-medium hover:bg-primary/90 transition-colors flex justify-center items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="send">send</span>
+                        Marchar ahora
+                    </button>
+</div>
+<!-- Col 2: Notes -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/30">
+<h3 class="eyebrow text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="info">info</span>
+                        Notas y Preferencias
+                    </h3>
+<div class="mb-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 bg-error-container text-on-error-container text-xs rounded-full eyebrow font-semibold">
+<span class="material-symbols-outlined text-[14px]" data-icon="warning">warning</span>
+                            Alergia: nueces
+                        </span>
+</div>
+<blockquote class="border-l-2 border-outline-variant pl-4 py-1 italic text-on-surface-variant text-sm">
+                        "Prefiere mesa tranquila, idealmente cerca de la ventana"
+                    </blockquote>
+</div>
+<!-- Col 3: Status -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<h3 class="eyebrow text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="today">today</span>
+                            Estado Hoy
+                        </h3>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span class="text-on-surface-variant">Sellos: 7/9</span>
+<span class="text-secondary font-medium">— le faltan 2</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full" style="width: 77%"></div>
+</div>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span class="text-sm text-on-surface-variant">Saldo monedero:</span>
+<span class="font-headline font-bold text-lg text-on-surface">C$ 1,240</span>
+</div>
+<div class="flex justify-between items-start pt-1">
+<span class="text-sm text-on-surface-variant">Beneficio disponible:</span>
+<span class="text-sm font-medium text-primary text-right">Café filtrado de la casa</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Birthday Alert -->
+<div class="bg-secondary-container/30 border border-secondary/40 rounded-xl p-4 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined" data-icon="redeem">redeem</span>
+</div>
+<div>
+<p class="text-on-secondary-container text-sm font-medium">
+                        Su cumpleaños es en 3 semanas — el regalo se activa automáticamente el 7 de octubre. <span class="font-bold">¡Prepará una felicitación!</span>
+</p>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-wrap gap-4 py-2 border-b border-outline-variant/30 pb-6">
+<button class="px-6 py-2.5 bg-primary text-on-primary rounded-full font-medium hover:bg-primary/90 transition-colors shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]" data-icon="check_circle">check_circle</span>
+                    Sellar visita
+                </button>
+<button class="px-6 py-2.5 border-2 border-[#221E17] text-[#221E17] rounded-full font-medium hover:bg-surface-variant transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]" data-icon="card_giftcard">card_giftcard</span>
+                    Canjear beneficio
+                </button>
+<button class="px-6 py-2.5 border border-outline text-on-surface-variant rounded-full font-medium hover:bg-surface-variant transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit_note">edit_note</span>
+                    Agregar nota
+                </button>
+</div>
+<!-- History Table -->
+<div>
+<h3 class="eyebrow text-on-surface-variant mb-4">ÚLTIMAS VISITAS</h3>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 overflow-hidden">
+<table class="w-full text-left border-collapse">
+<tbody>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 text-sm text-on-surface-variant w-32">14 ago, 2026</td>
+<td class="py-4 px-6 text-sm font-medium text-on-surface">Brunch para dos</td>
+<td class="py-4 px-6 text-sm text-right font-headline font-semibold">C$ 610</td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 text-sm text-on-surface-variant w-32">02 ago, 2026</td>
+<td class="py-4 px-6 text-sm font-medium text-on-surface">Capuchino · Croissant</td>
+<td class="py-4 px-6 text-sm text-right font-headline font-semibold">C$ 220</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 text-sm text-on-surface-variant w-32">25 jul, 2026</td>
+<td class="py-4 px-6 text-sm font-medium text-on-surface">Bolsa 250g Matagalpa Lavado</td>
+<td class="py-4 px-6 text-sm text-right font-headline font-semibold">C$ 450</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Spacer for bottom scrolling -->
+<div class="h-8"></div>
+</div>
+</main>
+</body></html>

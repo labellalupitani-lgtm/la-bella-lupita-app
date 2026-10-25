@@ -1,0 +1,13 @@
+# Referencia de calidad
+
+Referencia visual principal: [WatchHouse, portada y carta](https://watchhouse.com/). Referencia de identidad: [Onyx Coffee Lab, portada](https://onyxcoffeelab.com/). Referencia de continuidad: [Motion Primitives en 21st](https://21st.dev/@ibelick/library/motion-primitives). Inspección directa realizada el 13 de septiembre de 2026. Los criterios siguientes son decisiones para Lupita derivadas de la comparación; no mediciones atribuidas a esas webs.
+
+1. **El producto abre la experiencia.** En la primera pantalla de Carta se ven fotografía auténtica de café, nombre, precio y una acción para elegirlo. La foto precede a las filas sin imagen. El texto nunca tapa la taza ni la marca impresa en ella.
+2. **Una composición distinta según el ancho.** A 1280–1440 px, la interfaz aprovecha al menos 1000 px con fotografía y contenido relacionados. A 320–390 px, la composición se apila y todas las acciones siguen completas. No es una columna de teléfono centrada sobre una ventana vacía.
+3. **Jerarquía que se reconoce sin leer.** Un titular dominante por vista, al menos el doble del tamaño de un título de producto; texto auxiliar con contraste y aire. Los precios se comparan con facilidad. El listado usa agrupación y ritmo, no una repetición de cajas idénticas.
+4. **Identidad propia visible.** La marca real de Lupita, su café y sus espacios sostienen la dirección. El verde profundo pertenece a la marca y al pase; el catálogo conserva superficies tranquilas. Saldo, producto y membresía no reciben el mismo tratamiento de carnet.
+5. **El movimiento responde.** Seleccionar categoría mueve el indicador y renueva el contenido; abrir/cerrar el producto conserva contexto; añadir actualiza cantidad y total juntos. La respuesta empieza inmediatamente, termina sin bucles ni rebotes y tiene alternativa de movimiento reducido.
+6. **El beneficio se entiende y el espacio se elige.** Club distingue una bebida disponible del progreso al próximo premio. Reserva muestra una imagen diferente y auténtica para Terraza y VIP; permite revisar y volver sin perder la selección.
+7. **El acabado resiste el uso.** Sin textos cortados, controles fuera de sus superficies, fotos ampliadas desde miniaturas inadecuadas ni contenido inaccesible sin hover. Nombre, precio y acción permanecen legibles al cambiar de categoría o abrir una hoja.
+
+La comparación de craft evaluará estos mecanismos en tres piezas: Carta; detalle/pedido; Club/reserva. Una referencia con marca visible no permite cegamiento completo: el crítico no conocerá el proceso ni las justificaciones del constructor, pero reconocerá las marcas. Un aprobado de prototipo no certifica toda la aplicación ni la conversión real.

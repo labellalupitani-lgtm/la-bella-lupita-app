@@ -1,0 +1,196 @@
+{
+  "motor": "webkit",
+  "version": "26.6",
+  "alcance": "Cliente local, teclado y árbol accesible automatizados; no certifica lector de pantalla ni zoom nativo.",
+  "ampliacion": {
+    "base": "1280x900",
+    "equivalente200": "640x450 CSS, deviceScaleFactor 2",
+    "texto200": "font-size raíz duplicado"
+  },
+  "results": [
+    {
+      "id": "A01-navegacion-teclado-foco",
+      "estado": "APROBADO",
+      "detalle": {
+        "tabs": 20,
+        "foco": "main del Perfil tras navegación SPA por Enter"
+      }
+    },
+    {
+      "id": "A02-modal-perfil",
+      "estado": "APROBADO",
+      "detalle": {
+        "tabs": 5,
+        "controles": 6,
+        "pasos": [
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"name\" required=\"\" minlength=\"2\" maxlength=\"80\" value=\"Prueba Regresión\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"off\" maxlength=\"120\" value=\"\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"off\" maxlength=\"240\" value=\"\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<button type=\"submit\" class=\"casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-banda text-papel hover:bg"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": false,
+            "navegador": true,
+            "elemento": "<body style=\"overflow: hidden;\">\n    <div id=\"root\"><a class=\"salto\" href=\"#contenido\">Ir al contenido</a><div class=\"casa-aplicacion\"><header class=\"casa-cabecera\"><div class=\"casa-cabecera-interior\"><button class=\"casa-marca\" aria-label=\"La Bella L"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<dialog aria-labelledby=\":r0:\" class=\"casa-hoja w-full max-w-md rounded-t-hoja border-t-2 border-t-banda bg-papel p-5 pb-[max(2rem,env(safe-area-inset-bottom))] mb-0 mt-auto backdrop:bg-tinta/60 open:animate-[sube_320ms_cubic-bezier(0.16,0.84,0.24,1)"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<button type=\"button\" aria-label=\"Cerrar panel\" class=\"flex min-h-[44px] items-center gap-2 rounded-full border border-filete px-4 text-cuerpo text-tinta\">Cerrar <span aria-hidden=\"true\" class=\"ico  \" style=\"font-size: 20px;\">close</span></button>"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<dialog aria-labelledby=\":r0:\" class=\"casa-hoja w-full max-w-md rounded-t-hoja border-t-2 border-t-banda bg-papel p-5 pb-[max(2rem,env(safe-area-inset-bottom))] mb-0 mt-auto backdrop:bg-tinta/60 open:animate-[sube_320ms_cubic-bezier(0.16,0.84,0.24,1)"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": false,
+            "navegador": true,
+            "elemento": "<body style=\"overflow: hidden;\">\n    <div id=\"root\"><a class=\"salto\" href=\"#contenido\">Ir al contenido</a><div class=\"casa-aplicacion\"><header class=\"casa-cabecera\"><div class=\"casa-cabecera-interior\"><button class=\"casa-marca\" aria-label=\"La Bella L"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<button type=\"submit\" class=\"casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-banda text-papel hover:bg"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"off\" maxlength=\"240\" value=\"\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"off\" maxlength=\"120\" value=\"\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"name\" required=\"\" minlength=\"2\" maxlength=\"80\" value=\"Prueba Regresión\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<button type=\"button\" aria-label=\"Cerrar panel\" class=\"flex min-h-[44px] items-center gap-2 rounded-full border border-filete px-4 text-cuerpo text-tinta\">Cerrar <span aria-hidden=\"true\" class=\"ico  \" style=\"font-size: 20px;\">close</span></button>"
+          }
+        ],
+        "escape": "cerró y devolvió foco al origen"
+      }
+    },
+    {
+      "id": "A05-reflujo200-perfil",
+      "estado": "APROBADO",
+      "detalle": {
+        "viewportCSS": "640x450",
+        "captura": "1280x900",
+        "equivalente": "reflujo a 200 % sobre base de 1280x900"
+      }
+    },
+    {
+      "id": "A06-texto200-perfil",
+      "estado": "APROBADO",
+      "detalle": {
+        "fuente": {
+          "antes": 16,
+          "despues": 32
+        },
+        "controles": "botones visibles alcanzables mediante desplazamiento; Escape cierra"
+      }
+    }
+  ],
+  "capturas": [
+    {
+      "nombre": "A01-navegacion-teclado-foco",
+      "geometria": {
+        "ancho": 390,
+        "documento": 390,
+        "alto": 844,
+        "escalaCaptura": 1,
+        "fuenteRaiz": "16px"
+      },
+      "violaciones": []
+    },
+    {
+      "nombre": "A02-modal-perfil",
+      "geometria": {
+        "ancho": 390,
+        "documento": 390,
+        "alto": 844,
+        "escalaCaptura": 1,
+        "fuenteRaiz": "16px"
+      },
+      "violaciones": []
+    },
+    {
+      "nombre": "A05-reflujo200-perfil",
+      "geometria": {
+        "ancho": 640,
+        "documento": 640,
+        "alto": 450,
+        "escalaCaptura": 2,
+        "fuenteRaiz": "16px"
+      },
+      "violaciones": []
+    },
+    {
+      "nombre": "A06-texto200-perfil",
+      "geometria": {
+        "ancho": 640,
+        "documento": 640,
+        "alto": 900,
+        "escalaCaptura": 1,
+        "fuenteRaiz": "32px"
+      },
+      "violaciones": []
+    }
+  ],
+  "csp": [],
+  "pageErrors": [],
+  "solicitudesFallidas": []
+}

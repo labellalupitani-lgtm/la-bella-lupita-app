@@ -1,0 +1,140 @@
+{
+  "fecha": "2026-10-09T03:22:21.767Z",
+  "zonaInforme": "America/Managua",
+  "publico": {
+    "ruta": "/perfil",
+    "status": 200,
+    "requiresLoginObserved": true,
+    "assets": [
+      {
+        "path": "/assets/principal-Cfxl5pt5.js",
+        "status": 200,
+        "bytes": 415080,
+        "sha256": "ef9810f90e45b6535c2831590b886140f9b138a67367402298ff65e0237c723a",
+        "igualCompilacionActual": true
+      },
+      {
+        "path": "/assets/principal-C3oGQIwt.css",
+        "status": 200,
+        "bytes": 73931,
+        "sha256": "60585a18d8e12446ed5bd6ecb14675fab2e99c4a0d8a66016f0b8a9df668f88c",
+        "igualCompilacionActual": true
+      }
+    ],
+    "endpoints": [
+      {
+        "path": "/api/health",
+        "status": 200,
+        "cache": "no-store",
+        "csp": true,
+        "hsts": true
+      },
+      {
+        "path": "/api/yo",
+        "status": 401,
+        "cache": "no-store",
+        "csp": true,
+        "hsts": true
+      },
+      {
+        "path": "/api/actividad",
+        "status": 401,
+        "cache": "no-store",
+        "csp": true,
+        "hsts": true
+      }
+    ]
+  },
+  "sources": [
+    {
+      "path": "index.html",
+      "sha256": "c2944123811f61c8769a997cab2ea1110d5816e344a966e74ccc2447c2e8b2ba",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/pantallas/Perfil.tsx",
+      "sha256": "c4da47b07e3db7f41d7b7c74fe604119cea3bf683635cfe624172c61b616f435",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/componentes/CuentaCliente.tsx",
+      "sha256": "392df8f93ab3914268fc2534ce946c1f160c75635477aedde40e03c8e5bac6a6",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/componentes/Base.tsx",
+      "sha256": "7d9de809abeb13c1fb09f201f6d2346c7e066393f00eb9a0c6dab4112334d92b",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/componentes/Superficies.tsx",
+      "sha256": "fe4ecf5d6204990814788eec07f25abe96356b459e1a0bccfbb3975c4565d712",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/componentes/Navegacion.tsx",
+      "sha256": "891cd4c3d0970d51779b6ee43b038299e882e737cc4d4a1cd3720104474ed66b",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/componentes/EstadoDatos.tsx",
+      "sha256": "92a7160a0a4eb11aa17c33f404ef5fc784e2296b35eecea547d2993348fcdd9a",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/datos.tsx",
+      "sha256": "7a6041de33f1cf2bb40915c34c012ce86fbb11ca417a3a2938ba066e1982df0e",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/App.tsx",
+      "sha256": "7b508d1ec4e65d0f095d0f31d7dee1a8f34d0aedffc847008f64f03f605358f0",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/http.ts",
+      "sha256": "da170a0907b8d87a51b40dfe8ba4269453859c8e68b74d3dc9ac275f7759dc34",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/sesion-cliente.ts",
+      "sha256": "5736afd5bdcf5520fc8ae2fa0f616a39b8681eaa5c188d4798b9356a73c0b4a4",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/estilos/casa.css",
+      "sha256": "151c3baac09bfc20d3150a4a41da4bcf7e9d0dbfb0ba1a5532fc8dde65940c69",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/casa/estilos/identidad.css",
+      "sha256": "43b4a5155815702354ac6d85ac923fed4a48d712ff40f4e5c7471a3497963830",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/worker/cuenta-cliente.ts",
+      "sha256": "7588b5a8516abc9db1ab6f51066b0c2fbabd76a77d10c2af298c0f093b5d3231",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/worker/index.ts",
+      "sha256": "c8c08aebf7e25d8a67439d2738217b450d4d5912fc11797eee54911d783eaed5",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/worker/sesion.ts",
+      "sha256": "f8cdd651be132efabc9eabdc1ce869be6379a4e737fc22aba353300a74458f5c",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/worker/acceso-correo.ts",
+      "sha256": "c869a86e8ef171cb9c5d14232cea155dbffad78b8df10a299c2c379882f27466",
+      "publicadaLocalIgual": true
+    },
+    {
+      "path": "src/worker/equipo-sesion.ts",
+      "sha256": "dd7d88dbfd7df6c1f1a46084a97f83b4930ad0cea77ad7919b63c8fb5efaff18",
+      "publicadaLocalIgual": true
+    }
+  ]
+}

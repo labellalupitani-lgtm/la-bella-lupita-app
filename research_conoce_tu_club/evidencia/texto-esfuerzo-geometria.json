@@ -1,0 +1,35 @@
+{
+  "box": {
+    "top": 340.09375,
+    "bottom": 740.09375,
+    "height": 400
+  },
+  "scrollHeight": 602,
+  "clientHeight": 394,
+  "children": [
+    {
+      "text": "La BellaLupitaClub Lupita",
+      "top": 23,
+      "bottom": 153.171875,
+      "outside": false
+    },
+    {
+      "text": "De la casaComo vos",
+      "top": 165.171875,
+      "bottom": 380.171875,
+      "outside": false
+    },
+    {
+      "text": "local_cafelocal_cafelocal_cafelocal_cafelocal_cafelocal_cafelocal_cafelocal_cafe09",
+      "top": 392.171875,
+      "bottom": 484.171875,
+      "outside": true
+    },
+    {
+      "text": "Prueba Regresión87442006",
+      "top": 496.171875,
+      "bottom": 606.765625,
+      "outside": true
+    }
+  ]
+}

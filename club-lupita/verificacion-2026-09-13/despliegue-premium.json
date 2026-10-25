@@ -1,0 +1,15 @@
+{
+  "version": "428d4b98-0b22-460b-9732-5cd3c9436370",
+  "rutas": [
+    "/",
+    "/pedir",
+    "/reservar"
+  ],
+  "anterior": "27488075-99b3-4d24-b3a2-8c36e220c6e2",
+  "archivos": [
+    "/assets/principal-CMA93gHC.js",
+    "/assets/principal-Ck92tpzs.css"
+  ],
+  "catalogo": "HTTP 200 JSON válido",
+  "url": "https://club-lupita.el-molino.workers.dev"
+}

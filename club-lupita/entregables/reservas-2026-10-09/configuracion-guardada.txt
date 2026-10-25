@@ -1,0 +1,163 @@
+- link "Ir al contenido":
+  - /url: "#contenido-equipo"
+- complementary:
+  - link "La Bella Lupita":
+    - /url: /personal
+    - img "La Bella Lupita"
+  - paragraph: OPERACIÓN DE LA CASA
+  - navigation "Secciones del equipo":
+    - link "Resumen":
+      - /url: /personal?seccion=resumen
+      - generic: "01"
+      - generic: Resumen
+    - link "Pedidos":
+      - /url: /personal?seccion=pedidos
+      - generic: "02"
+      - generic: Pedidos
+    - link "Caja":
+      - /url: /personal?seccion=caja
+      - generic: "03"
+      - generic: Caja
+    - link "Mi Club":
+      - /url: /personal?seccion=club
+      - generic: "04"
+      - generic: Mi Club
+    - link "Tienda":
+      - /url: /personal?seccion=tienda
+      - generic: "05"
+      - generic: Tienda
+    - link "Entregas":
+      - /url: /personal?seccion=entregas
+      - generic: "06"
+      - generic: Entregas
+    - link "Agenda":
+      - /url: /personal?seccion=agenda
+      - generic: "07"
+      - generic: Agenda
+    - link "Atención":
+      - /url: /personal?seccion=atencion
+      - generic: "08"
+      - generic: Atención
+    - link "Informes":
+      - /url: /personal?seccion=informes
+      - generic: "09"
+      - generic: Informes
+    - link "Clientes":
+      - /url: /personal?seccion=clientes
+      - generic: "10"
+      - generic: Clientes
+    - link "Equipo y permisos":
+      - /url: /personal?seccion=equipo
+      - generic: "11"
+      - generic: Equipo y permisos
+    - link "Cuenta y seguridad":
+      - /url: /personal?seccion=seguridad
+      - generic: "12"
+      - generic: Cuenta y seguridad
+  - paragraph: Propietario de pruebas
+  - generic: propietario
+  - button "Bloquear"
+  - button "Cerrar sesión / cambiar persona"
+- banner:
+  - strong: Operación real
+  - generic: Datos reales del negocio
+  - status: Conectado
+  - generic: Propietario de pruebas · propietario
+- main:
+  - paragraph: viernes, 9 de octubre
+  - heading "Agenda" [level=1]
+  - paragraph: Mesas y reservas
+  - generic: La Bella Lupita · equipo
+  - paragraph: Hora de Managua. Cada cambio guarda responsable y revisión. La inasistencia se registra expresamente; no se deduce del paso del tiempo.
+  - text: Fecha
+  - textbox "Fecha": 2026-10-09
+  - button "Registrar reserva manual"
+  - button "Configurar mesas y condiciones"
+  - heading "Inventario y condiciones · revisión 2" [level=2]
+  - paragraph: Registrá únicamente mesas, capacidades y características verificadas. Una zona sin mesas no acepta confirmaciones en línea. VIP necesita además las condiciones de cancelación e inasistencia.
+  - status: Configuración guardada y publicada en la agenda.
+  - generic "Terraza · 10 mesas registradas"
+  - generic "Ventanal · 6 mesas registradas"
+  - generic "Barra · 8 mesas registradas"
+  - generic "Bistró · 12 mesas registradas"
+  - generic "Salón VIP · 1 mesa registrada"
+  - heading "Límites de la agenda" [level=3]
+  - text: Días de anticipación máxima
+  - spinbutton "Días de anticipación máxima": "90"
+  - text: Anticipación mínima en minutos
+  - spinbutton "Anticipación mínima en minutos": "30"
+  - text: Duración máxima en horas
+  - spinbutton "Duración máxima en horas": "6"
+  - text: Reservas activas máximas por cuenta
+  - spinbutton "Reservas activas máximas por cuenta": "3"
+  - heading "Horario por día" [level=3]
+  - text: Domingo · apertura
+  - spinbutton "Domingo · apertura": "8"
+  - text: Domingo · cierre
+  - spinbutton "Domingo · cierre": "21"
+  - text: Lunes · apertura
+  - spinbutton "Lunes · apertura": "7"
+  - text: Lunes · cierre
+  - spinbutton "Lunes · cierre": "21"
+  - text: Martes · apertura
+  - spinbutton "Martes · apertura": "7"
+  - text: Martes · cierre
+  - spinbutton "Martes · cierre": "21"
+  - text: Miércoles · apertura
+  - spinbutton "Miércoles · apertura": "7"
+  - text: Miércoles · cierre
+  - spinbutton "Miércoles · cierre": "21"
+  - text: Jueves · apertura
+  - spinbutton "Jueves · apertura": "7"
+  - text: Jueves · cierre
+  - spinbutton "Jueves · cierre": "21"
+  - text: Viernes · apertura
+  - spinbutton "Viernes · apertura": "7"
+  - text: Viernes · cierre
+  - spinbutton "Viernes · cierre": "21"
+  - text: Sábado · apertura
+  - spinbutton "Sábado · apertura": "7"
+  - text: Sábado · cierre
+  - spinbutton "Sábado · cierre": "21"
+  - heading "Fechas excepcionales" [level=3]
+  - button "Agregar fecha excepcional"
+  - heading "Cierres por zona y horario" [level=3]
+  - paragraph: El salón VIP se reserva para un solo grupo a la vez. Para lluvia o mantenimiento, registrá aquí los intervalos sin servicio; el motivo es visible en la configuración pública, sin datos de clientes.
+  - text: Zona cerrada
+  - combobox "Zona cerrada":
+    - option "Terraza" [selected]
+    - option "Ventanal"
+    - option "Barra"
+    - option "Bistró"
+    - option "Salón VIP"
+  - text: Día del cierre
+  - textbox "Día del cierre": 2026-11-20
+  - text: Cierre desde la hora
+  - spinbutton "Cierre desde la hora": "7"
+  - text: Cierre hasta la hora
+  - spinbutton "Cierre hasta la hora": "21"
+  - text: Motivo público del cierre
+  - textbox "Motivo público del cierre": Cierre por lluvia simulado para la prueba.
+  - button "Quitar cierre"
+  - button "Agregar cierre por zona"
+  - heading "Anticipo VIP de C$500 aplicable al consumo" [level=3]
+  - text: Condiciones reales de cancelación y devolución
+  - textbox "Condiciones reales de cancelación y devolución": "Condición de prueba: devolución explícita por administración."
+  - text: Condiciones reales ante inasistencia
+  - textbox "Condiciones reales ante inasistencia": "Condición de prueba: sin penalización automática."
+  - button "Guardar configuración verificada"
+  - button "Descartar cambios y actualizar"
+  - generic: Actualizado 01:50 p. m. · Automático cada 30 s
+  - button "Actualizar"
+  - article:
+    - heading "9 oct 2026, 1:19 p. m. · Salón VIP" [level=2]
+    - paragraph: Cliente de pruebas · 50587442006 · 2 personas
+    - paragraph: Hasta 9 oct 2026, 3:19 p. m. · Llegada registrada · Revisión 1
+    - paragraph: "Mesas: prueba-1 · Comprobante 3298461f-1417-40ad-a31a-345dc46ee393"
+    - paragraph: "Anticipo: C$ 500 · Aplicado: C$ 0 · Devuelto: C$ 0 · Pendiente: C$ 500"
+    - paragraph: Hay 1 avisos de correo pendientes. El comprobante está disponible en la app.
+    - button "Registrar mesa ocupada"
+    - button "Cancelar reserva"
+    - button "Aplicar anticipo"
+    - button "Devolver anticipo"
+  - generic "Métricas de reservas · últimos 30 días"

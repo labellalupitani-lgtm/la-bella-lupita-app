@@ -1,0 +1,15 @@
+PASA B02 calendario: imposibles, año cero, bisiestos, fecha normal y día local
+PASA B03 bigint: límites, representación inválida, aviso propio y aviso ajeno
+PASA B04 nombres: controles y Unicode malformado rechazados; acentos y no BMP conservados
+PASA O04 alta temporal24h: bloqueo operativo, cambio propio, caducidad y restablecimiento con revocación
+PASA O04 cuentas anteriores no cambian ni pierden acceso al crear una temporal
+PASA O05 cocina: ambas bandejas minimizan datos, otros perfiles conservan importes y estados
+PASA B01 proyección sin cargos: vigencia/gracia/renovación, panel y mantenimiento coherentes
+{"evento":"mantenimiento_membresias","entorno":"real","estado":"correcto"}
+{"evento":"mantenimiento_membresias","entorno":"demo","estado":"correcto"}
+{"evento":"mantenimiento_membresias","entorno":"real","estado":"correcto"}
+{"evento":"mantenimiento_membresias","entorno":"demo","estado":"correcto"}
+PASA O03 scheduled: real y demo independientes, sin mutar bindings ni duplicar renovaciones
+PASA O03 alias pooler de la misma base: una sola ejecución y fallo de aislamiento
+PASA O03 fallos parciales: la otra base continúa y los logs no revelan secretos
+CORRECCIONES_SERVIDOR {"fechaUTC":"2026-10-08T03:19:02.872Z","filtro":null,"grupos":10,"omitidos":0,"pasan":10,"fallan":0,"resultados":[{"nombre":"B02 calendario: imposibles, año cero, bisiestos, fecha normal y día local","estado":"PASA"},{"nombre":"B03 bigint: límites, representación inválida, aviso propio y aviso ajeno","estado":"PASA"},{"nombre":"B04 nombres: controles y Unicode malformado rechazados; acentos y no BMP conservados","estado":"PASA"},{"nombre":"O04 alta temporal24h: bloqueo operativo, cambio propio, caducidad y restablecimiento con revocación","estado":"PASA"},{"nombre":"O04 cuentas anteriores no cambian ni pierden acceso al crear una temporal","estado":"PASA"},{"nombre":"O05 cocina: ambas bandejas minimizan datos, otros perfiles conservan importes y estados","estado":"PASA"},{"nombre":"B01 proyección sin cargos: vigencia/gracia/renovación, panel y mantenimiento coherentes","estado":"PASA"},{"nombre":"O03 scheduled: real y demo independientes, sin mutar bindings ni duplicar renovaciones","estado":"PASA"},{"nombre":"O03 alias pooler de la misma base: una sola ejecución y fallo de aislamiento","estado":"PASA"},{"nombre":"O03 fallos parciales: la otra base continúa y los logs no revelan secretos","estado":"PASA"}]}

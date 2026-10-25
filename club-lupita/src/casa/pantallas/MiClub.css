@@ -1,0 +1,15 @@
+.mi-club { overflow-wrap: anywhere; }
+.mi-club-bienvenida { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem; }
+.mi-club-bienvenida .casa-titular { font-size:clamp(2rem,4vw,3.5rem); margin:.5rem 0; }
+.mi-club-columnas { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:2rem; margin-top:1.5rem; }
+.mi-club-beneficios { display:grid; gap:1rem; }
+.mi-club-beneficios button { margin-top:1rem; }
+.mi-club-lista { list-style:disc; padding-left:1.5rem; margin:1rem 0; }
+.mi-club-lista li { margin:.5rem 0; }
+.mi-club-detalles { border-top:1px solid theme('colors.filete'); padding:1rem 0; }
+.mi-club-detalles summary { min-height:44px; cursor:pointer; font-weight:600; padding:.5rem 0; }
+.mi-club-detalles p { margin:.75rem 0; }
+.mi-club-enlace { display:block; padding:.85rem 0; text-decoration:underline; text-underline-offset:4px; }
+.mi-club-aceptar { display:flex; gap:.75rem; align-items:flex-start; padding:.75rem 0; cursor:pointer; }
+.mi-club-aceptar input { width:24px; height:24px; flex-shrink:0; margin-top:3px; }
+@media(max-width:800px) { .mi-club-columnas { grid-template-columns:minmax(0,1fr); } }

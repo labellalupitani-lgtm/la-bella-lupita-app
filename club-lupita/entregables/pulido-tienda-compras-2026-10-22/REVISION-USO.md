@@ -1,0 +1,31 @@
+# Revisión independiente de uso — 22 de octubre de 2026
+
+**PASS en el alcance revisado. Sin defectos activos reproducibles.** El ajuste de Mis compras corrige el pequeño solapamiento que se observó antes a 390 px. La revisión general se realizó sobre `principal-Bp7QHhfg.js`; el cierre focal del último cambio identifica el recurso final servido `principal-CUBKWecD.js`.
+
+Revisión de la UI local en `http://127.0.0.1:5310`, con Chromium headless y cuenta sintética de `/__preview/entrar`. Se leyó únicamente `bar.md` como criterio; no se leyó ni modificó la implementación. Se bloquearon todas las solicitudes fuera de `127.0.0.1`. No se ejecutaron pagos, envíos de ayuda ni creación de reservas. Las capturas son de **viewport**, nunca se usó una captura de página completa para concluir sobre superposiciones.
+
+| Comprobación | Resultado | Evidencia |
+| --- | --- | --- |
+| Tienda → Mis compras y ayuda | PASS: el botón abre `/compras`, con un título principal y continuidad de tipografía, color y acciones. | `pruebas-uso/continuidad-390.png`, `resultados-uso.json` |
+| Detalles de Tienda por teclado | PASS: Tab alcanza Sobre el café, Retiro y condiciones y Regalos y café para oficina. Enter abre y Espacio cierra cada uno. | `teclado-sobre.png`, `teclado-retiro.png`, `teclado-regalos.png` |
+| Ayuda a una acción | PASS: el summary abre la ayuda. Motivo y campo de texto tienen etiqueta; el teclado alcanza los controles. | `ayuda-borrador-390.png`, `foco-uso.json` |
+| Borrador al cerrar/reabrir | PASS: se conserva el texto sintético y el motivo «Compra o reserva», sin enviar. | `ayuda-borrador-conservado-390.png`, `resultados-uso.json` |
+| Actualizar | PASS en el escenario de éxito local: vuelve a quedar disponible y conserva el estado vacío y la última consulta, sin explicación técnica de intervalos. Ambas capturas ocurren dentro del mismo minuto, por lo que no se pretende probar un cambio de minuto. | `actualizacion-390.png`, `resultados-uso.json` |
+| Destinos de reserva | PASS: Mis reservas abre `/reservas`; Preparar una visita abre `/reservar`. Se detuvo en esos destinos, sin crear reservas. | `destino-mis-reservas.png`, `destino-preparar-una-visita.png` |
+| 320/390/768/1440 px | PASS: Tienda y Mis compras sin desborde horizontal en la matriz inicial, a 100% y 200%; `scrollWidth` coincide con el ancho del viewport. | `resultados-uso.json`, capturas `{tienda,compras}-{ancho}-{100,200}-{top,bottom}.png` |
+| Foco en móvil | PASS: recorrido por Tab en Tienda y Mis compras, incluida ayuda abierta, a 320/390 px y 100/200%. Borde visible borgoña de 2 px; ningún centro de control enfocado quedó tapado por la navegación fija. | `foco-uso.json`, `final-compras-320-200-cta-foco.png` |
+| Ajuste final del vacío móvil | PASS: revalidado con el recurso final a 320/390 px y 100/200%, manteniendo foco visible y contenido alcanzable. | `validacion-final.json`, `final-compras-390-100-top.png`, `final-compras-390-200-bottom.png` |
+
+Todas las rutas de evidencia de la tabla, excepto donde ya se indica el prefijo, se encuentran dentro de `pruebas-uso/`.
+
+**Cierre focal sobre `principal-CUBKWecD.js`: PASS.** Se refrescó la aplicación, se abrió ayuda y se eligió el motivo largo «Solicitar copia o revisión de mis datos». A 320×740, la nueva línea «Motivo elegido» muestra la selección completa debajo del select nativo, aunque éste abrevie su texto. Con letra normal ocupa 41,594 px de alto; al ampliar texto realmente al 200% pasa de 13 a 26 px y ocupa 124,781 px de alto en tres líneas. El texto termina en x=289,25 dentro de los 320 px; `scrollWidth` sigue siendo 320. La línea quedó completa y despejada respecto de la navegación fija en ambas capturas. Evidencias: `pruebas-uso/cierre-motivo-320-100.png`, `cierre-motivo-320-200.png` y `cierre-motivo.json`; reproducción: `cerrar-motivo.cjs`. No se envió solicitud. Se conserva la evidencia anterior para el resto de recorridos, sin repetir la matriz ni la lista poblada de la suite sintética.
+
+**Ampliación de texto comprobada.** Se tomaron los tamaños computados de todos los elementos renderizados y se duplicaron individualmente; no se limitó la prueba a aumentar `html`. En la versión final a 390 px: título 36→72 px, cuerpo 14→28 px, fecha 12→24 px, CTA 14→28 px y summary 15→30 px. A 320 px, el título pasa de 34→68 px. La captura inferior final vuelve a medir y aplicar el factor tras cualquier renovación de nodos del DOM: todos los cocientes registrados en `bottomFonts` son exactamente 2. Es una prueba de ampliación de texto, no una afirmación sobre el zoom nativo del navegador.
+
+**Hallazgo anterior resuelto.** En 390×844 a 100%, el botón Preparar una visita estaba en y=729,375 con altura 48 px; la navegación fija comenzaba en y=771. Sus últimos 6,375 px quedaban bajo la navegación en el primer viewport. Evidencia conservada: `compras-390-100-top.png`. En el recurso final, el botón está en y=684,953 y termina en y=732,953: quedan 38,047 px hasta la navegación. `final-compras-390-100-top.png` confirma visualmente la corrección.
+
+**Jerarquía y desplazamiento.** En 390 px, el título final ocupa 77,75 px de alto y la CTA de 48 px se ve completa sin desplazar. En 320×740, el título ocupa 73,438 px y la CTA comienza en y=748,641, por lo que requiere desplazamiento; Tab la trae a y=375,641 y queda totalmente visible. Esto no impide el uso. A 200%, la navegación móvil crece de 73 a 202,594 px y ocupa dos filas; las capturas inferiores y el recorrido por teclado confirman que las acciones finales se pueden ver y activar. No se encontró una pérdida de contenido atribuible a esa barra.
+
+**Límites de esta revisión.** El selector público de preview ofrece la cuenta cliente vacía. No se repitió la suite separada de compras y transacciones ni se fabricaron compras desde esta revisión. La lista poblada, filtros, paginación, comprobantes, estados de error/datos antiguos e intentos inciertos corresponden a esa suite; este PASS no sustituye sus resultados. El enlace externo de consulta se inspeccionó, pero no se abrió ni se envió mensaje.
+
+Scripts reproducibles y resultados estructurados: `pruebas-uso/revisar-uso.cjs`, `revisar-foco.cjs`, `validar-final.cjs`, `resultados-uso.json`, `foco-uso.json` y `validacion-final.json`.

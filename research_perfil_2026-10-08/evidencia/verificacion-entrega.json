@@ -1,0 +1,111 @@
+{
+  "fecha": "2026-10-09T03:28:33.365Z",
+  "linksLocalesRotos": [],
+  "fuentesProductoModificadas": [],
+  "uiEscenarios": 11,
+  "erroresDelHarness": [],
+  "excepcionesUI": [],
+  "accesibilidad": [
+    {
+      "motor": "edge",
+      "version": "154.0.4258.62",
+      "checks": 4,
+      "fallos": 0
+    },
+    {
+      "motor": "firefox",
+      "version": "155.0",
+      "checks": 4,
+      "fallos": 0
+    },
+    {
+      "motor": "webkit",
+      "version": "26.6",
+      "checks": 4,
+      "fallos": 0
+    }
+  ],
+  "capturasEvaluadasAxe": 23,
+  "violacionesAxe": 0,
+  "transporte": {
+    "total": 18,
+    "aprobados": 18
+  },
+  "artifacts": [
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/INFORME.md",
+      "bytes": 32597,
+      "sha256": "f155a059ea017655c3eedb12541ace35315998e7c53035e4a3e4d1da9b3d49fb"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/audit-ui.mjs",
+      "bytes": 11054,
+      "sha256": "eada5f30e8e19b2e992ab6b5dc127421ebb8baf12e251902fb386fad219a2b69"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/reproduce_backend.mjs",
+      "bytes": 5192,
+      "sha256": "169b06f48f76f196bc0e193e876eef5ebe11f0550f0b2503c8fa631b6d6755a2"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/reproduce_backend.json",
+      "bytes": 3834,
+      "sha256": "9030af7bb35e6de230127b76aa868c882bb5d019b643d4d75dda63e44cf636b0"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/perfil-1440.png",
+      "bytes": 130029,
+      "sha256": "38835185dfa57a8ca4ad174bbf0df568d2d3e19ab8e4468086f7f77599acbb74"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/perfil-768.png",
+      "bytes": 104664,
+      "sha256": "4891f2180acaceb029d985381f9a7bb943a21db17ee80e61d07ac3bfd996776e"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/perfil-390.png",
+      "bytes": 101543,
+      "sha256": "bbb3b0145861e879f302a2b58c71f159a9e88eca192f5ecfd87aa9900655faa7"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/perfil-320.png",
+      "bytes": 99937,
+      "sha256": "76d48af2be6d0d8b234d4d42a844ab71cf98fe70d09ea2dc50cc40dd01d0f3bf"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/guardado-reapertura-borrador-antiguo.png",
+      "bytes": 108814,
+      "sha256": "1407180dac3f6608ae52c17a6042d5042cd27ba927b00b54c872d2b8a027e411"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/guardado-con-datos-antiguos.png",
+      "bytes": 117924,
+      "sha256": "acb62f122f25500c4df4797310acb2d1779878c513900510e6ca02df46114c39"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/formulario-error-fecha.png",
+      "bytes": 98895,
+      "sha256": "dae0c5903a1a09520184727b4a10a6f2d1b8a9e54c115e9851051721f9b1b66a"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/perfil-nombre-largo-320.png",
+      "bytes": 139788,
+      "sha256": "6cfff0b7d7db1488aaec8d15c4ff76315cba13dba8a469035a800640d0a68ad7"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/actividad.png",
+      "bytes": 111342,
+      "sha256": "083681e7d41ad7855a69dece1338cf6f514d78c65338f8be5271791243f06a76"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/actividad-vacia.png",
+      "bytes": 109421,
+      "sha256": "6219fa6fad9aad370e7c7a35c57cee9c171ad8bf8e574fe207aa8344b50d7f07"
+    },
+    {
+      "path": "C:/Users/artur/Desktop/Proyectos/La Bella Lupita  - APP/research_perfil_2026-10-08/evidencia/ui/actividad-zona-madrid.png",
+      "bytes": 115555,
+      "sha256": "6615b6955b52812cb9efe8e74a40be7b3415bd988774ea353ed1080199dfdecd"
+    }
+  ]
+}

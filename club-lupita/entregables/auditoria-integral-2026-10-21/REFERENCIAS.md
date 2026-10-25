@@ -1,0 +1,9 @@
+# Referencias contrastadas
+
+Las dos imágenes adjuntas se volvieron a inspeccionar: `image-1.jpeg` aísla cada bebida y pone una elección breve junto al producto; `image-2.jpeg` distingue descubrimiento, lista y detalle con un producto dominante. Son conceptos estáticos: no prueban recuperación, accesibilidad ni rendimiento. Su valor transferible es el orden de las decisiones y la proporción de imagen/texto, no copiar colores ni ocultar condiciones.
+
+[Escape Coffee](https://escape.cafe/) y [su ficha Suga Mommy](https://escape.cafe/products/suga-mommy) se abrieron nuevamente en el navegador. Se observan fotografía propia del envase, selección de tamaño/molienda, precio y retiro; información complementaria en Beans/Brew/Delivery. La portada usa una gran escena ambiental y tipografía dominante. Para un cliente que viene a pedir repetidamente, copiar la altura de esa portada retrasaría la acción: aquí se toma su separación entre relato y decisión, no su tamaño literal. Captura: [referencia-escape.png](base/referencia-escape.png). No se efectuaron compras ni se enviaron formularios.
+
+[Starbucks Coffee App Design de Bacancy](https://dribbble.com/shots/20371794-Starbucks-Coffee-App-Design) es concepto de autor, no evidencia del funcionamiento del producto oficial. El enlace volvió a responder. [Starbucks Rewards](https://www.starbucks.com/rewards) no devolvió contenido utilizable en el extractor de este ciclo; no se toma como validación funcional reciente. Las observaciones de ciclos anteriores son antecedentes explícitos.
+
+Los siete criterios de [bar.md](bar.md) convierten estas observaciones en comprobaciones de la propuesta. La identidad aprobada prevalece: firma de La Bella Lupita, Playfair Display/Montserrat y paleta de marca. No se atribuye a ninguna referencia un premio ni una superioridad universal.

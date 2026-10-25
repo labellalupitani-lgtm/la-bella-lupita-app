@@ -1,0 +1,26 @@
+.conoce-club { overflow-wrap:anywhere; padding-top:2rem; }
+.conoce-portada { max-width:48rem; margin-bottom:2rem; }
+.conoce-portada h1 { font-size:clamp(2.4rem,5vw,4rem); margin:.6rem 0 1rem; }
+.conoce-club p { line-height:1.65; margin:.75rem 0; }
+.conoce-intro { font-size:1.25rem; max-width:36rem; }
+.conoce-acciones { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem 1.5rem; margin-top:1.25rem; }
+.conoce-enlace { display:inline-flex; align-items:center; min-height:44px; padding:.6rem 0; text-decoration:underline; text-underline-offset:4px; }
+.conoce-boton { display:inline-flex; justify-content:center; align-items:center; min-height:48px; padding:.8rem 1.3rem; border-radius:theme('borderRadius.full'); background:theme('colors.banda'); color:theme('colors.papel'); font-weight:600; text-align:center; }
+.conoce-comparacion { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; }
+.conoce-panel { border:1px solid theme('colors.filete'); padding:1.6rem; background:theme('colors.papel'); border-radius:theme('borderRadius.editorial'); scroll-margin-top:2rem; }
+.conoce-fundadora { background:theme('colors.banda-velo'); border-color:theme('colors.banda'); }
+.conoce-precio { font-family:theme('fontFamily.titular'); font-size:1.6rem; }
+.conoce-precio span { font-family:theme('fontFamily.texto'); font-size:1rem; }
+.conoce-panel ul { padding-left:1.3rem; list-style:disc; margin:1rem 0; }
+.conoce-panel li { margin:.7rem 0; line-height:1.6; }
+.conoce-seccion { padding-top:2.5rem; }
+.conoce-pasos { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem; margin:1.5rem 0; }
+.conoce-pasos li { border-top:1px solid theme('colors.filete'); padding-top:1rem; }
+.conoce-pasos span { font-family:theme('fontFamily.titular'); font-size:1.6rem; color:theme('colors.tinta-media'); }
+.conoce-pasos h3 { font-weight:600; font-size:1.1rem; margin-top:.5rem; }
+.conoce-club details { border-bottom:1px solid theme('colors.filete'); padding:.5rem 0; }
+.conoce-club summary { min-height:48px; padding:.8rem 0; cursor:pointer; font-weight:600; }
+.conoce-version { padding-top:1rem; }
+.conoce-cierre { display:flex; align-items:center; flex-wrap:wrap; gap:1rem 1.5rem; margin-top:2rem; border-top:1px solid theme('colors.filete'); padding-top:2rem; }
+.conoce-cierre h2 { flex-basis:100%; }
+@media(max-width:700px) { .conoce-comparacion,.conoce-pasos { grid-template-columns:minmax(0,1fr); } .conoce-panel { padding:1.25rem; } }

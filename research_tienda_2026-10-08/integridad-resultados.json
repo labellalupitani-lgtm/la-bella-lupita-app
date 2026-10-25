@@ -1,0 +1,69 @@
+{
+  "alcance": "API actual, base PGlite sintética en memoria; sin tráfico externo ni concurrencia multiconexión",
+  "results": [
+    {
+      "name": "Precio cambia tras consultar catálogo sin reconfirmación",
+      "precioVisto": 89000,
+      "precioCobrado": 99000,
+      "http": 200
+    },
+    {
+      "name": "Precio mínimo vendido diverge del siguiente disponible",
+      "precioCatalogo": 89000,
+      "precioCobrado": 99000,
+      "numero": 2
+    },
+    {
+      "name": "Reintento conserva recibo pero saldo de respuesta es histórico",
+      "saldoRespuesta": 891000,
+      "saldoActual": 792000,
+      "repetido": true
+    },
+    {
+      "name": "Aislamiento e idempotencia operan correctamente",
+      "compras": 2,
+      "comprasAjenasVisibles": 0,
+      "sinSesion": 401,
+      "refAusente": 422,
+      "refOtraOperacion": 409
+    },
+    {
+      "name": "Sin saldo revierte; reintento conserva compra pagada",
+      "nuevaCompra": 409,
+      "replay": 200,
+      "comprasAntesYDespues": 2,
+      "saldoActual": 0,
+      "saldoRespuestaReplay": 891000
+    },
+    {
+      "name": "Entrega restringida, única y auditada",
+      "cliente": 403,
+      "primera": 200,
+      "segunda": 409,
+      "auditorias": 1,
+      "responsableIndividual": true
+    },
+    {
+      "name": "Total de catálogo fijo aunque sólo existan dos filas",
+      "filasReales": 2,
+      "catalogo": {
+        "precio": 89000,
+        "quedan": 0,
+        "total": 150,
+        "generacion": 1
+      }
+    },
+    {
+      "name": "Respuesta compra carece de ID durable y generación",
+      "campos": [
+        "saldo",
+        "total",
+        "numero",
+        "quedan",
+        "cobrado",
+        "repetido"
+      ],
+      "generacionEnHistorial": 1
+    }
+  ]
+}

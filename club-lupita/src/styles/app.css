@@ -1,0 +1,329 @@
+/* Club Lupita — armazón: lienzo, barra de la casa, estados de tránsito. */
+
+.lienzo {
+  min-height: 100dvh;
+  padding-bottom: calc(var(--alto-barra) + env(safe-area-inset-bottom) + var(--sp-lg));
+}
+
+.lienzo-umbral {
+  padding-bottom: 0;
+}
+
+/* =========================================================
+   BARRA DE LA CASA
+   ========================================================= */
+
+.barra {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: var(--z-barra);
+  background-color: var(--surface);
+  border-top: var(--hair-accent) solid var(--line-strong);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* El `backdrop-filter` salió del proyecto: la barra ya no se separa por
+   desenfoque sino por escalón de superficie y filete. Además es caro dentro
+   de contenedores con scroll y en Android modesto cuesta cuadros. */
+
+.barra__lista {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 34.5rem;
+  margin-inline: auto;
+}
+
+.barra__puesto {
+  position: relative;
+  width: 100%;
+  min-height: var(--alto-barra);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3xs);
+  color: var(--muted);
+  transition: color var(--t-2) var(--ease-crema);
+}
+
+.barra__puesto:hover,
+.barra__puesto.es-activo {
+  color: var(--acento-ink);
+}
+
+.barra__icono {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.barra__nombre {
+  font-size: var(--fs-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: var(--w-medium);
+}
+
+.barra__aviso {
+  position: absolute;
+  top: -5px;
+  right: -9px;
+  min-width: 15px;
+  height: 15px;
+  padding-inline: 3px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-pill);
+  background: var(--acento);
+  color: var(--acento-contra);
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: 1;
+  font-weight: var(--w-semi);
+}
+
+.barra__filo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: var(--acento);
+}
+
+/* =========================================================
+   CABECERA DE PANTALLA
+   ========================================================= */
+
+.encabezado {
+  padding-top: calc(var(--sp-2xl) + env(safe-area-inset-top));
+  padding-bottom: var(--sp-lg);
+}
+
+.encabezado__eyebrow {
+  display: block;
+  margin-bottom: var(--sp-sm);
+}
+
+.encabezado__bajada {
+  margin-top: var(--sp-sm);
+}
+
+.volver {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-xs);
+  min-height: var(--tap-min);
+  color: var(--muted);
+  font-size: var(--fs-body-sm);
+  transition: color var(--t-2) var(--ease-crema);
+}
+
+.volver:hover {
+  color: var(--ink);
+}
+
+.volver svg {
+  transition: transform var(--t-2) var(--ease-crema);
+}
+
+.volver:hover svg {
+  transform: translateX(-2px);
+}
+
+/* =========================================================
+   SECCIONES
+   ========================================================= */
+
+.seccion {
+  padding-block: var(--sp-2xl);
+}
+
+.seccion + .seccion {
+  padding-top: 0;
+}
+
+.seccion__titulo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  margin-bottom: var(--sp-md);
+}
+
+.enlace-fino {
+  color: var(--ink-soft);
+  font-size: var(--fs-body-sm);
+  white-space: nowrap;
+  border-bottom: var(--hair) solid transparent;
+  transition: border-color var(--t-2) var(--ease-crema);
+}
+
+.enlace-fino:hover {
+  border-bottom-color: var(--line-acento);
+}
+
+/* =========================================================
+   TRÁNSITO Y VACÍOS
+   ========================================================= */
+
+.sirviendo {
+  min-height: 60dvh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: var(--sp-md);
+}
+
+.vacio-pantalla {
+  min-height: 70dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--sp-md);
+}
+
+.vacio {
+  padding: var(--sp-xl) var(--sp-lg);
+  text-align: center;
+  border: var(--hair) dashed var(--line-strong);
+  border-radius: var(--r-md);
+  color: var(--muted);
+}
+
+/* =========================================================
+   AVISO FLOTANTE (toast de la casa)
+   ========================================================= */
+
+.aviso {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--alto-barra) + env(safe-area-inset-bottom) + var(--sp-md));
+  transform: translateX(-50%);
+  z-index: var(--z-toast);
+  width: min(calc(100vw - var(--sp-xl)), 30rem);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  padding: var(--sp-sm) var(--sp-md);
+  background-color: var(--surface-raised);
+  background-image: var(--elev-3-bg);
+  border-radius: var(--r-md);
+  border: var(--hair) solid var(--line-strong);
+  color: var(--ink);
+  font-size: var(--fs-body-sm);
+}
+
+.aviso__marca {
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--acento);
+}
+
+/* =========================================================
+   HOJA INFERIOR
+   ========================================================= */
+
+.telon {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  background: rgba(6, 4, 3, 0.62);
+}
+
+.hoja {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: var(--z-sheet);
+  max-height: 88dvh;
+  overflow-y: auto;
+  padding: var(--sp-lg) var(--margen) calc(var(--sp-xl) + env(safe-area-inset-bottom));
+  background-color: var(--surface-raised);
+  background-image: var(--elev-3-bg);
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+  border-top: var(--hair-rule) solid var(--acento);
+}
+
+.hoja__tirador {
+  width: 38px;
+  height: 4px;
+  margin: 0 auto var(--sp-lg);
+  border-radius: var(--r-pill);
+  background: var(--line-strong);
+}
+
+@media (min-width: 720px) {
+  .hoja {
+    inset-inline: auto;
+    right: var(--sp-lg);
+    bottom: var(--sp-lg);
+    width: 28rem;
+    border-radius: var(--r-lg);
+    max-height: calc(100dvh - var(--sp-xl));
+  }
+}
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.campo {
+  display: block;
+}
+
+.campo__etiqueta {
+  display: block;
+  margin-bottom: var(--sp-xs);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  min-height: var(--tap-min);
+  padding: var(--sp-sm) var(--sp-md);
+  background: var(--surface-sunken);
+  border: var(--hair) solid var(--ink-faint);
+  border-radius: var(--r-sm);
+  color: var(--ink);
+  transition: border-color var(--t-2) var(--ease-crema);
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+  color: var(--ink-faint);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: var(--acento);
+}
+
+/* =========================================================
+   FILA DE DATO (transparencia)
+   ========================================================= */
+
+.dato {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  padding-block: var(--sp-sm);
+  border-bottom: var(--hair) solid var(--line-subtle);
+}
+
+.dato:last-child {
+  border-bottom: 0;
+}
+
+.dato__valor {
+  text-align: right;
+  color: var(--ink);
+}

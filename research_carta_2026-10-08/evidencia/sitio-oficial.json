@@ -1,0 +1,38 @@
+{
+  "url": "https://labellalupita.com/menu?filter=cafe",
+  "status": 200,
+  "bytes": 1842,
+  "sha256": "c644cf08c1723859afa4f0361fb729b5d43a669c2a85848b0641e28899f59460",
+  "matches": [
+    {
+      "term": "Empaque",
+      "found": false,
+      "context": null
+    },
+    {
+      "term": "C$ 40",
+      "found": false,
+      "context": null
+    },
+    {
+      "term": "Ensalada Lupita",
+      "found": false,
+      "context": null
+    },
+    {
+      "term": "Latte",
+      "found": false,
+      "context": null
+    },
+    {
+      "term": "Maracuyá",
+      "found": false,
+      "context": null
+    },
+    {
+      "term": "7:00",
+      "found": false,
+      "context": null
+    }
+  ]
+}

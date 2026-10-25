@@ -1,0 +1,16 @@
+OK Cumpleaños sin desfase de fecha
+OK Premio pendiente accesible
+OK Cancelación de renovación reflejada en pantalla
+OK Respuesta perdida y recarga de página: una sola compra
+OK Sin desbordamiento horizontal en móvil y escritorio
+OK Pase reversible con movimiento y alternativa reducida
+OK Panel: cierre visible, Escape y retorno del foco
+OK Navegación conserva el inicio de la pantalla
+OK Búsqueda reconoce capuchino
+OK Carta sin marcadores repetidos, foto real y pedido funcional
+OK Reserva guiada preserva selección y confirma con API aislada
+OK Accesibilidad WCAG automatizada: las seis pantallas principales
+OK Premium sin desbordamiento a 320, 390 y 1440 px
+OK Cierre de sesión sin conexión elimina los datos visibles
+OK Respuesta inválida muestra error recuperable
+OK Sin errores JavaScript

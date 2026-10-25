@@ -1,0 +1,181 @@
+{
+  "desktop": [
+    {
+      "headings": [
+        "Pedí para llevar",
+        "Tu pausa, bien hecha."
+      ],
+      "overflow": false,
+      "path": "/pedir",
+      "width": 1280
+    },
+    {
+      "headings": [
+        "Tienda de la finca"
+      ],
+      "overflow": false,
+      "path": "/tienda",
+      "width": 1280
+    },
+    {
+      "headings": [
+        "Club"
+      ],
+      "overflow": false,
+      "path": "/club",
+      "width": 1280
+    },
+    {
+      "headings": [
+        "Tu perfil"
+      ],
+      "overflow": false,
+      "path": "/perfil",
+      "width": 1280
+    },
+    {
+      "headings": [
+        "Apartá tu mesa"
+      ],
+      "overflow": false,
+      "path": "/reservar",
+      "width": 1280
+    }
+  ],
+  "home": [
+    {
+      "size": 320,
+      "client": 305,
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "size": 390,
+      "client": 375,
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "size": 768,
+      "client": 753,
+      "overflow": false,
+      "scroll": 753
+    },
+    {
+      "size": 1024,
+      "client": 1009,
+      "overflow": false,
+      "scroll": 1009
+    }
+  ],
+  "mobile": [
+    {
+      "size": 320,
+      "route": "pedir",
+      "client": 305,
+      "headings": [
+        "Pedí para llevar",
+        "Tu pausa, bien hecha."
+      ],
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "size": 320,
+      "route": "tienda",
+      "client": 305,
+      "headings": [
+        "Tienda de la finca"
+      ],
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "size": 320,
+      "route": "club",
+      "client": 305,
+      "headings": [
+        "Club"
+      ],
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "size": 320,
+      "route": "perfil",
+      "client": 305,
+      "headings": [
+        "Tu perfil"
+      ],
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "size": 320,
+      "route": "reservar",
+      "client": 305,
+      "headings": [
+        "Apartá tu mesa"
+      ],
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "size": 390,
+      "route": "pedir",
+      "client": 375,
+      "headings": [
+        "Pedí para llevar",
+        "Tu pausa, bien hecha."
+      ],
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "size": 390,
+      "route": "tienda",
+      "client": 375,
+      "headings": [
+        "Tienda de la finca"
+      ],
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "size": 390,
+      "route": "club",
+      "client": 375,
+      "headings": [
+        "Club"
+      ],
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "size": 390,
+      "route": "perfil",
+      "client": 375,
+      "headings": [
+        "Tu perfil"
+      ],
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "size": 390,
+      "route": "reservar",
+      "client": 375,
+      "headings": [
+        "Apartá tu mesa"
+      ],
+      "overflow": false,
+      "scroll": 375
+    }
+  ],
+  "regressionGroups": 12,
+  "flows": [
+    "producto desde Inicio a detalle, cantidad 2, total C$ 560 y carrito",
+    "pase: Escape cierra y devuelve foco",
+    "reserva: zona, fecha, hora, revisión y confirmación local"
+  ]
+}

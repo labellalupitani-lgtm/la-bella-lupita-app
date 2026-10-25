@@ -1,0 +1,18 @@
+PLAN DE IMPLEMENTACIÓN — 7 de octubre de 2026, America/Managua
+
+Objetivo: resolver los hallazgos del acceso del equipo para varios propietarios y dispositivos personales/compartidos, preservando operaciones, clientes e historial.
+
+1. Respaldo de código y migración aditiva de identidad y sesiones.
+2. Propietarios nominales en el modelo de personas; protección concurrente del último propietario activo; atribución nominal de acciones.
+3. Sesiones opacas almacenadas por hash, cookie HttpOnly/Secure/SameSite, protección CSRF, revocación, cierre por dispositivo, expiración absoluta e inactividad que las consultas automáticas no renueven.
+4. Alta mediante invitación temporal consumible; contraseña propia; MFA TOTP con biblioteca mantenida para propietarios y encargados, códigos de recuperación de un uso y revalidación de cambios privilegiados. TOTP es la alternativa de MFA elegida para esta implementación, sin contratar un proveedor nuevo. Passkeys y PIN de estación quedan como alternativas opcionales, no requisitos de este cambio.
+5. Límites de tráfico separados de fallos, bloqueos progresivos breves, lista de contraseñas previsibles, secretos de credenciales y MFA separados del de firma de clientes, auditoría de autenticación y eventos de seguridad visibles.
+6. Cerrar acceso legado y tokens administrativos anteriores; activar el primer propietario mediante transición de un solo uso acreditada con la clave existente, sin crear identidades ni autenticadores reales por cuenta del usuario.
+7. Acceso único del equipo, contraseña visible opcionalmente, formulario primero en móvil, capacitación en entrada explícita con base separada obligatoria; bloquear y cambiar de persona en equipos compartidos.
+8. Pruebas locales de controles, regresión operativa, compilación y navegador. Ensayo de migración sobre copia de datos antes de publicación y respaldo remoto. La activación de identidades/factores reales necesita a cada propietario; no se considerará completada esa activación por haber construido el formulario.
+
+Criterios de aceptación: todos los del informe de auditoría; pruebas de cierre y revocación; matriz de roles; protección del último propietario en concurrencia; aislamiento demo incluso ante configuración inválida; expiración/consumo de invitaciones y recuperación; MFA sin reutilización del código; sin tokens en JS; navegación de caja/cocina conservada.
+
+Estado inicial: plan elaborado antes de modificar la aplicación. Respaldo local en respaldo/. Sin cambios de cuentas reales.
+
+Estado al 8 de octubre de 2026: implementación, ensayo aislado, migración y publicación completados. Versión 63af0ad0-33f4-4ab1-bd36-06284b2c46c0 al 100%. Pasaron los 17 grupos de verificación y las 16 comprobaciones públicas. Copia de 380 archivos cotejada con el manifiesto. La activación de propietarios/personas reales y las decisiones operativas de recuperación y retención siguen pendientes; consultar CIERRE.txt y GUIA-DE-ACTIVACION.txt para alcance, evidencia y pasos personales.

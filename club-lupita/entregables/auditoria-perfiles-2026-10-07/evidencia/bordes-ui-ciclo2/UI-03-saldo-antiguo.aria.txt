@@ -1,0 +1,101 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa"
+- banner:
+  - paragraph: Tu casa, Prueba
+  - button "Ver perfil de Prueba"
+- main:
+  - region "Un buen día empieza aquí":
+    - paragraph: Bienvenida a tu mesa
+    - heading "Un buen día empieza aquí" [level=1]:
+      - text: Un buen día empieza
+      - emphasis: aquí
+    - img "Desayuno de La Bella Lupita con sándwich, aguacate y papas"
+    - heading "Para empezar el día" [level=2]
+    - paragraph: Elegí tu desayuno Disfrutá la pausa
+    - button "Explorar la carta"
+  - navigation "Accesos rápidos":
+    - list:
+      - listitem:
+        - button "Pedí para llevar"
+      - listitem:
+        - button "Reservá mesa"
+      - listitem:
+        - button "Tienda de la finca"
+  - region "Tu cuenta de casa":
+    - text: CLUB LUPITA
+    - heading "Tu cuenta de casa" [level=2]
+    - paragraph: C$ 9,900
+    - paragraph: Saldo disponible para disfrutar
+    - button "Recargá"
+    - button "Mostrá tu pase"
+    - text: LA BELLA LUPITA HECHO PARA VOS
+  - region "Tu tanda de café":
+    - heading "Tu tanda de café" [level=2]
+    - paragraph: Volver tiene sus recompensas
+    - text: 8/ 9
+    - list:
+      - listitem
+      - listitem
+      - listitem
+      - listitem
+      - listitem
+      - listitem
+      - listitem
+      - listitem
+      - listitem
+      - listitem
+    - progressbar "8 de 9 sellos"
+    - paragraph: Te falta 1 para tu bebida de cortesía
+  - region "Algo rico para acompañar":
+    - paragraph: DE LA COCINA DE CASA
+    - heading "Algo rico para acompañar" [level=2]
+    - button "Ver la carta"
+    - button "Risotto de Gallo Pinto C$ 280 Brunch"
+    - button "Dulce Tentación C$ 320 Brunch"
+  - button "Terraza de La Bella Lupita al atardecer HACÉ TIEMPO PARA VOS Tu mesa te espera Encontrá tu rincón":
+    - img "Terraza de La Bella Lupita al atardecer"
+    - text: HACÉ TIEMPO PARA VOS
+    - strong: Tu mesa te espera
+    - text: Encontrá tu rincón
+  - region "Pasa en la casa":
+    - heading "Pasa en la casa" [level=2]
+    - list:
+      - listitem:
+        - article:
+          - text: Quedan 150 de 150
+          - heading "Reserva de Cosecha" [level=3]
+          - paragraph: Pagás hoy y la retirás recién tostada, en temporada
+          - button "Reservá la tuya"
+      - listitem:
+        - article:
+          - text: 12 de 12 cupos
+          - heading "Mesa del Tostador" [level=3]
+          - paragraph: Tres lotes, una mesa larga, doce sillas y el tostador contando
+          - button "Ver y apartar"
+  - text: La Bella Lupita · Bistró & Café De nuestra finca, con cariño
+- dialog "Recargá en el mostrador":
+  - button "Cerrar panel": Cerrar
+  - text: Cómo entra el saldo
+  - heading "Recargá en el mostrador" [level=2]
+  - paragraph: Recargá tu Cuenta de Casa en el mostrador, con efectivo o con tarjeta Mostrá tu pase y decí cuánto querés agregar
+  - paragraph: Cuando la caja confirme la recarga, actualizá tu cuenta para ver el saldo disponible
+  - paragraph: Tenés ahora
+  - paragraph: C$ 9,900
+  - button "Enseñar mi pase"
+  - button "Actualizar mi saldo"
+- navigation "Secciones de Club Lupita":
+  - list:
+    - listitem:
+      - button "Inicio"
+    - listitem:
+      - button "Pedir"
+    - listitem:
+      - button "Tienda"
+    - listitem:
+      - button "Club"
+    - listitem:
+      - button "Perfil"

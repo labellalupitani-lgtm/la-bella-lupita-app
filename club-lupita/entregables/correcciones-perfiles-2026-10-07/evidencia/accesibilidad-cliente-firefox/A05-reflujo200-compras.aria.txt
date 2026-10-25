@@ -1,0 +1,33 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa"
+- banner:
+  - button "Volver"
+  - heading "Mis compras y reservas" [level=1]
+- main:
+  - paragraph: Tus pedidos, mesas y experiencias, siempre a mano Actualizá para consultar el último estado
+  - button "Actualizar"
+  - text: Todavía no hay compras o reservas en tu cuenta
+  - heading "Avisos y ayuda de la casa" [level=2]
+  - button "Actualizar avisos"
+  - list
+  - text: ¿Necesitás cambiar una reserva o revisar una compra?
+  - textbox "¿Necesitás cambiar una reserva o revisar una compra?"
+  - paragraph: Incluí el número de tu pedido o comprobante La solicitud queda para el equipo de la casa; no cambia ni cancela tu compra automáticamente
+  - button "Enviar solicitud a la casa"
+  - list
+- navigation "Secciones de Club Lupita":
+  - list:
+    - listitem:
+      - button "Inicio"
+    - listitem:
+      - button "Pedir"
+    - listitem:
+      - button "Tienda"
+    - listitem:
+      - button "Club"
+    - listitem:
+      - button "Perfil"

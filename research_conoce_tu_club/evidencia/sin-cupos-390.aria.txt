@@ -1,0 +1,66 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa"
+- banner:
+  - button "Volver"
+  - heading "Club" [level=1]
+- main:
+  - region "El gusto de volver":
+    - paragraph: Club Lupita · Casa abierta
+    - heading "El gusto de volver" [level=2]:
+      - text: El gusto de
+      - emphasis: volver
+    - text: La Bella Lupita Club Lupita
+    - img "Retrato original de La Bella Lupita"
+    - paragraph: De la casa Como vos
+    - img "8 de 9 sellos para la próxima bebida"
+    - paragraph: Prueba Regresión
+    - paragraph: "87442006"
+    - button "Ver cómo usarlo"
+    - paragraph: Cada visita cuenta Cada nueve sellos, una bebida por cuenta de la casa
+    - region "Tu próxima bebida empieza aquí":
+      - paragraph: Un gusto de la casa
+      - heading "Tu próxima bebida empieza aquí" [level=3]
+      - paragraph: Completá tu tanda y disfrutá una bebida de cortesía
+    - region "La próxima se acerca":
+      - heading "La próxima se acerca" [level=3]
+      - text: 8 de 9 sellos
+      - img "8 de 9 sellos para la próxima bebida"
+      - paragraph: Te falta 1 sello para tu siguiente bebida
+    - button "La próxima vez, vení con tiempo Reservar una mesa ↗":
+      - text: La próxima vez,
+      - strong: vení con tiempo
+      - text: Reservar una mesa ↗
+  - paragraph: Mesa Fundadora
+  - heading "Cien personas, y una silla que siempre está" [level=2]
+  - paragraph: "El Club es gratis y ya lo tenés Esto es lo otro: una bolsa del lote cada mes, un café por visita, y la casa contando con vos antes que con nadie"
+  - text: Las 100 están tomadas
+  - paragraph: "Dejá tu número en la barra y te escribimos apenas se desocupe un lugar No hay lista pública: se llama por orden"
+  - region "Experiencias de la casa":
+    - heading "Experiencias de la casa" [level=3]
+    - list:
+      - listitem:
+        - paragraph: jueves, 15 de octubre · 9:19 p. m.
+        - heading "Experiencia de prueba" [level=4]
+        - text: C$ 850 12 de 12 butacas
+        - button "Apartar butaca"
+  - region "Tu mesa":
+    - heading "Tu mesa" [level=3]
+    - heading "Apartá dónde te sentás" [level=4]
+    - paragraph: Terraza, ventanal, barra, bistró o el Salón VIP Te enseñamos las horas que de verdad quedan libres ese día
+    - button "Elegir mesa y hora"
+- navigation "Secciones de Club Lupita":
+  - list:
+    - listitem:
+      - button "Inicio"
+    - listitem:
+      - button "Pedir"
+    - listitem:
+      - button "Tienda"
+    - listitem:
+      - button "Club"
+    - listitem:
+      - button "Perfil"

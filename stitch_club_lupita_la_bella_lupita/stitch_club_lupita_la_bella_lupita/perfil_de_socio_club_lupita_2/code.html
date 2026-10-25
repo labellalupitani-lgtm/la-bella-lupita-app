@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>Perfil - Casa Lupita</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e5e2db",
+                    "surface-container-high": "#ebe8e1",
+                    "secondary": "#805600",
+                    "tertiary": "#57351d",
+                    "primary-fixed-dim": "#a0d2b3",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f3f0e9",
+                    "inverse-primary": "#a0d2b3",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#414943",
+                    "outline-variant": "#c0c9c1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e5e2db",
+                    "on-secondary-container": "#754e00",
+                    "on-primary-container": "#a2d4b6",
+                    "tertiary-fixed-dim": "#efbc9b",
+                    "secondary-fixed-dim": "#f9bc5a",
+                    "on-secondary-fixed-variant": "#614000",
+                    "on-background": "#1c1c18",
+                    "primary": "#16452f",
+                    "inverse-surface": "#31312c",
+                    "outline": "#717972",
+                    "surface-container": "#f1eee7",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#dcdad3",
+                    "on-tertiary-fixed": "#2f1502",
+                    "on-primary-fixed-variant": "#214f38",
+                    "surface-tint": "#39684f",
+                    "primary-fixed": "#bbeecf",
+                    "tertiary-fixed": "#ffdcc6",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffddb0",
+                    "on-surface": "#1c1c18",
+                    "primary-container": "#2f5d45",
+                    "on-secondary-fixed": "#281800",
+                    "secondary-container": "#ffc15f",
+                    "on-tertiary-container": "#f1bf9d",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fcf9f2",
+                    "on-primary-fixed": "#002112",
+                    "background": "#fcf9f2",
+                    "tertiary-container": "#714c32",
+                    "surface-container-low": "#f6f3ec",
+                    "surface": "#fcf9f2",
+                    "on-tertiary-fixed-variant": "#623f25"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Libre Caslon Text", "serif"],
+                    "display": ["Libre Caslon Text", "serif"],
+                    "body": ["Work Sans", "sans-serif"],
+                    "label": ["Work Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+        body {
+            background-color: #F9F7F2; /* Porcelain cream as requested */
+            -webkit-tap-highlight-color: transparent;
+        }
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom, 20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-surface antialiased min-h-screen pb-24 md:pb-8 flex flex-col">
+<!-- Header / TopAppBar -->
+<header class="w-full top-0 left-0 bg-background dark:bg-on-background flat no shadows flex items-center justify-between px-6 py-4 sticky z-40">
+<button class="text-on-surface-variant dark:text-outline-variant hover:opacity-80 transition-opacity active:scale-95">
+<span class="material-symbols-outlined text-[28px]">arrow_back</span>
+</button>
+<h1 class="font-headline text-2xl italic text-primary dark:text-primary-fixed-dim">Casa Lupita</h1>
+<div class="w-7"></div> <!-- Spacer for centering -->
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full max-w-md mx-auto px-5 flex flex-col gap-8 pb-10">
+<!-- Profile Header -->
+<section class="flex flex-col items-center pt-2">
+<div class="relative mb-4">
+<img class="w-24 h-24 rounded-full object-cover border-4 border-surface-container-lowest shadow-sm" data-alt="A high-quality, warm portrait of a Latina woman in her 30s with a soft smile. She has dark hair styled elegantly and is wearing a cozy, earth-toned sweater. The lighting is soft and natural, evoking a premium, artisanal coffee shop atmosphere. The background is slightly blurred but suggests a rustic, well-lit café setting with wooden textures. Shot on a 85mm lens with shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ4OUHx771pFKj_kaog2ix4C3gpvlpZPpk4UQZ_IPOboYU1BPD71kBL5dLn_0mDvYmzxa2-MJZBoNXIymaOxD8Z1gxkU3XCMDxWMz6xdmuRObWhDBIHFdwPlIz2NpxCkcsznbbbJfbDmitMLgsxCNXhpJAHS4XCwyokXjUFXuoYokGex6XANJ_7BIfsbsZq4uZSOcCINZ-GkeKD2uiwbc1MHSe3ixDPduAHjLli2M0nKO97rNheYGtjsSVS8Pjmt0u47jLcIKEJOs"/>
+<button class="absolute bottom-0 right-0 bg-primary-container text-on-primary-container p-1.5 rounded-full shadow-md border-2 border-surface-container-lowest">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+<h2 class="font-headline text-2xl text-on-surface mb-1">María Fernanda R.</h2>
+<p class="font-label text-[11px] uppercase tracking-widest text-on-surface-variant text-center">Socia Fundadora #037 · miembro desde marzo 2026</p>
+</section>
+<!-- Level Progress Card -->
+<section class="bg-[#221E17] rounded-xl p-5 shadow-md relative overflow-hidden">
+<!-- Subtle texture overlay simulation -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent pointer-events-none"></div>
+<div class="flex justify-between items-end mb-4 relative z-10">
+<div>
+<p class="font-label text-[11px] uppercase tracking-widest text-[#F6F3EC] opacity-80 mb-1">Nivel actual</p>
+<h3 class="font-headline text-xl text-[#C08A2D]">Barista</h3>
+</div>
+<div class="text-right">
+<p class="font-label text-[11px] uppercase tracking-widest text-[#F6F3EC] opacity-80 mb-1">Siguiente</p>
+<p class="font-body font-medium text-[#F6F3EC]">Reserva Lupita</p>
+</div>
+</div>
+<div class="w-full bg-[#3D352A] rounded-full h-2 mb-3 relative z-10">
+<div class="bg-[#C08A2D] h-2 rounded-full" style="width: 68%"></div>
+</div>
+<p class="text-center font-body text-sm text-[#F6F3EC] opacity-90 relative z-10">
+                620 pts más y subís de nivel
+            </p>
+</section>
+<!-- Referral Card -->
+<section class="bg-surface-container-lowest rounded-xl p-5 shadow-sm border border-[#C08A2D]/30 relative overflow-hidden">
+<!-- Decorative accent -->
+<div class="absolute top-0 right-0 w-24 h-24 bg-[#C08A2D]/5 rounded-bl-[100px] pointer-events-none"></div>
+<div class="flex items-start gap-4 mb-5 relative z-10">
+<div class="bg-[#C08A2D]/10 p-3 rounded-full text-[#C08A2D]">
+<span class="material-symbols-outlined fill text-2xl">emoji_food_beverage</span>
+</div>
+<div>
+<h3 class="font-headline text-lg text-on-surface mb-1">Invitá a un amigo</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Una bebida de cortesía para vos y otra para tu invitado en su primera visita
+                    </p>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container rounded-full py-3 px-4 font-body font-medium flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[18px]">share</span>
+                Compartí tu código: MARIA037
+            </button>
+</section>
+<!-- Tu perfil de la casa -->
+<section>
+<h3 class="font-headline text-lg text-on-surface mb-4 px-1">Tu perfil de la casa</h3>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<!-- Row 1 -->
+<button class="w-full flex items-center p-4 border-b border-surface-variant hover:bg-surface-container-low transition-colors text-left group">
+<span class="material-symbols-outlined text-tertiary mr-4 opacity-80 group-hover:opacity-100 transition-opacity">local_cafe</span>
+<div class="flex-1">
+<p class="font-body font-medium text-on-surface">Tu bebida de siempre</p>
+<p class="font-body text-sm text-on-surface-variant">Capuchino, leche de almendra</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</button>
+<!-- Row 2 -->
+<button class="w-full flex items-center p-4 border-b border-surface-variant hover:bg-surface-container-low transition-colors text-left group">
+<span class="material-symbols-outlined text-tertiary mr-4 opacity-80 group-hover:opacity-100 transition-opacity">error_outline</span>
+<div class="flex-1">
+<p class="font-body font-medium text-on-surface">Alergias</p>
+<p class="font-body text-sm text-on-surface-variant">Nueces</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</button>
+<!-- Row 3 -->
+<button class="w-full flex items-center p-4 border-b border-surface-variant hover:bg-surface-container-low transition-colors text-left group">
+<span class="material-symbols-outlined text-[#C08A2D] mr-4 opacity-80 group-hover:opacity-100 transition-opacity">cake</span>
+<div class="flex-1">
+<p class="font-body font-medium text-on-surface">Tu cumpleaños</p>
+<p class="font-body text-sm text-on-surface-variant">14 de octubre 🎁 regalo una semana antes</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</button>
+<!-- Row 4 -->
+<button class="w-full flex items-center p-4 border-b border-surface-variant hover:bg-surface-container-low transition-colors text-left group">
+<span class="material-symbols-outlined text-tertiary mr-4 opacity-80 group-hover:opacity-100 transition-opacity">payments</span>
+<div class="flex-1">
+<p class="font-body font-medium text-on-surface">Métodos de pago</p>
+<p class="font-body text-sm text-on-surface-variant">Monedero · Visa ····4412</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</button>
+<!-- Row 5 -->
+<button class="w-full flex items-center p-4 hover:bg-surface-container-low transition-colors text-left group">
+<span class="material-symbols-outlined text-primary-container mr-4 opacity-80 group-hover:opacity-100 transition-opacity">notifications</span>
+<div class="flex-1">
+<p class="font-body font-medium text-on-surface">Notificaciones por WhatsApp</p>
+<p class="font-body text-sm text-on-surface-variant">Activadas</p>
+</div>
+<div class="w-10 h-6 bg-primary-container rounded-full relative shadow-inner">
+<div class="absolute right-1 top-1 w-4 h-4 bg-surface-container-lowest rounded-full shadow-sm"></div>
+</div>
+</button>
+</div>
+</section>
+<!-- Footer Links -->
+<section class="flex flex-col items-center gap-4 mt-4 pt-6 border-t border-surface-variant/50">
+<button class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors">Términos del Club</button>
+<button class="font-body text-sm text-on-surface-variant hover:text-primary transition-colors">Ayuda por WhatsApp</button>
+<button class="font-body text-sm text-error mt-2 font-medium hover:opacity-80 transition-opacity">Cerrar sesión</button>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-surface-container-lowest dark:bg-surface-dim shadow-[0_-4px_20px_-10px_rgba(0,0,0,0.1)] rounded-t-2xl">
+<!-- Inicio (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed-dim active:scale-90 transition-transform duration-150 w-16">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label text-[11px] uppercase tracking-widest">Inicio</span>
+</button>
+<!-- Pedir (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed-dim active:scale-90 transition-transform duration-150 w-16">
+<span class="material-symbols-outlined mb-1">coffee_maker</span>
+<span class="font-label text-[11px] uppercase tracking-widest">Pedir</span>
+</button>
+<!-- Tienda (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed-dim active:scale-90 transition-transform duration-150 w-16">
+<span class="material-symbols-outlined mb-1">local_mall</span>
+<span class="font-label text-[11px] uppercase tracking-widest">Tienda</span>
+</button>
+<!-- Club (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed-dim active:scale-90 transition-transform duration-150 w-16">
+<span class="material-symbols-outlined mb-1">military_tech</span>
+<span class="font-label text-[11px] uppercase tracking-widest">Club</span>
+</button>
+<!-- Perfil (Active) -->
+<button class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold hover:text-secondary dark:hover:text-secondary-fixed-dim active:scale-90 transition-transform duration-150 w-16 relative">
+<div class="absolute -top-1 w-8 h-1 bg-primary rounded-full"></div>
+<span class="material-symbols-outlined fill mb-1">person</span>
+<span class="font-label text-[11px] uppercase tracking-widest">Perfil</span>
+</button>
+</nav>
+<!-- Web Navigation Cluster (Hidden on mobile) -->
+<div class="hidden md:flex fixed top-0 right-6 h-16 items-center gap-6 z-50">
+<button class="text-on-surface-variant hover:text-primary transition-colors font-label text-xs uppercase tracking-widest">Inicio</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors font-label text-xs uppercase tracking-widest">Pedir</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors font-label text-xs uppercase tracking-widest">Tienda</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors font-label text-xs uppercase tracking-widest">Club</button>
+<button class="text-primary font-bold font-label text-xs uppercase tracking-widest border-b-2 border-primary pb-1">Perfil</button>
+</div>
+</body></html>

@@ -1,0 +1,102 @@
+PLAN DE IMPLEMENTACIÓN — OPCIÓN B
+Fecha: 6 de octubre de 2026. Alcance: panel /personal y sus API internas.
+
+1. Respaldo y alcance.
+   Copia previa de src, tests y package.json en respaldo/. Sin cambios de esquema ni de saldos.
+2. Consultas completas.
+   Paginación de 20 filas con total, búsqueda y filtros en servidor para pedidos, entregas,
+   agenda, solicitudes, equipo y auditoría. Historial de pedidos y solicitudes.
+3. Interfaz por rol.
+   Encargado: Resumen, Pedidos, Caja, Entregas, Agenda, Atención, Informes, Equipo.
+   Caja: Caja como entrada, Pedidos, Entregas, Agenda y Atención.
+   Cocina: Pedidos como entrada y única sección operativa.
+   Navegación mediante enlaces /personal?seccion=... y diseño adaptable.
+4. Fiabilidad y flujos.
+   Sesión vencida, mensajes junto a la acción, carga/vacío/error separados, indicador de
+   entorno permanente, actualización automática de lecturas y última sincronización.
+   Canjes con vigencia previa, confirmación de recarga y desactivación; cierre de sesión claro.
+5. Verificación aislada.
+   Probar más de 100 registros, filtros, roles y sesión; regresión de operaciones y build.
+   Verificar en navegador módulos, errores, formularios, teclado y anchos móvil/escritorio.
+6. Entrega.
+   Registrar pruebas y resultado; verificar despliegue y lectura publicada sin operaciones reales.
+
+CRITERIOS DE ACEPTACIÓN
+- Ninguna tarea frecuente requiere recorrer otros módulos.
+- Listas completas, 20 filas por página, total y navegación visibles.
+- Errores junto al control; ningún vacío mostrado como resultado durante la carga inicial.
+- Sesión inválida vuelve al acceso; entorno y conexión siempre identificables.
+- Nuevos pedidos detectados automáticamente; consulta manual también disponible.
+- Cocina y caja no acceden a funciones exclusivas del encargado.
+- Conserva identidad, permisos, validaciones transaccionales y operaciones existentes.
+- Sin desbordamiento horizontal a 320 px; navegación y diálogos operables con teclado.
+
+ESTADO INICIAL
+Respaldo completado. No existe repositorio Git en esta carpeta.
+
+RESULTADO FINAL — COMPLETADO EL 6 DE OCTUBRE DE 2026
+1. Respaldo: src, tests y package.json conservados en respaldo/.
+   También se guardó el identificador del despliegue anterior.
+2. Consultas: seis listas paginadas, 20 registros por página, totales,
+   búsquedas literales, filtros de estado y fecha donde corresponde.
+   Las entregas pendientes antiguas también aparecen. Hay historial consultable.
+3. Panel modular: ocho secciones para propietario/encargado, cinco para caja
+   y una para cocina. Enlaces directos, historial del navegador y vista móvil.
+4. Flujos: identidad y entorno persistentes; lectura automática cada 30 segundos
+   con la página visible; actualización manual; errores y confirmaciones visibles;
+   sesión inválida regresa al acceso; canjes vencidos bloqueados; recargas y
+   entregas con revisión previa; historial de movimientos; CSV de cifras;
+   registro de actividad y administración de accesos.
+5. Verificación:
+   - npm test: ocho suites pasaron, incluida tests/panel.mjs.
+   - npm run build: TypeScript, compilación y guardián visual pasaron.
+   - Wrangler dry-run: paquete válido, sin cambios de esquema.
+   - 105 registros sintéticos: seis páginas completas sin pérdida ni duplicados.
+   - API: permisos de caja/cocina/encargado, filtros inválidos y beneficio vencido.
+   - Navegador aislado: búsqueda de Bolsa 105, paginación, confirmación de entrega,
+     recarga y saldo posterior, error local de beneficio, acceso por rol,
+     actualización automática de un pedido nuevo y expiración de sesión.
+   - Aviso de una acción a más de 5.000 px de desplazamiento visible a 96 px
+     del borde superior. Sin desbordamiento horizontal a 320 px.
+   - Diálogos: foco inicial y cierre con Escape; creación disponible en lista vacía.
+   - CSV descargado y comparado con las cifras: 25 pedidos, 4 entregados,
+     4 cancelados, 1 cliente, C$ 4.785 (datos sintéticos locales).
+   - Capturas de escritorio, móvil y publicación en esta carpeta.
+6. Publicación: activa en https://app.labellalupita.com/personal
+   Versión: 1cc2c69f-6c3f-4cfb-b322-f6ebceeac9df (100 %).
+   Versión anterior: 77441ba8-1870-4553-848b-5ca35951086b.
+   Verificación posterior: API real y demo, identidad, seis listas, resumen,
+   cuatro períodos de informes, respuestas 401/422 y archivos publicados
+   idénticos al build local. Resultado en verificacion-publicada.json.
+
+ALCANCE Y OPERACIÓN
+- Las mutaciones de prueba se hicieron en PGlite aislado, con datos sintéticos.
+- En producción se verificaron acceso y consultas. No se hicieron recargas,
+  entregas, respuestas a clientes ni cambios de usuarios reales o de demostración.
+- No se cambió el esquema de base de datos ni las credenciales existentes.
+- La actualización automática usa consultas cada 30 segundos, no conexión en vivo.
+- Agenda conserva consulta e historial; cambios/devoluciones siguen el proceso
+  existente de atención. Los informes cubren pedidos registrados en la aplicación.
+- Recuperar una clave del equipo sigue requiriendo desactivar el acceso anterior
+  y crear otro usuario; no se añadió un mecanismo de restablecimiento de claves.
+- La prueba de ancho de pantalla es emulación en navegador, no ensayo en teléfonos físicos.
+
+ARCHIVOS PRINCIPALES
+src/casa/pantallas/Personal.tsx
+src/casa/equipo/{comun,Pedidos,Caja,Lecturas,Equipo}.tsx
+src/casa/estilos/equipo.css
+src/worker/panel.ts
+tests/panel.mjs
+tests/preview-panel.mjs
+scripts/verificar-panel-publicado.mjs
+
+REPRODUCCIÓN
+npm test
+npm run build
+node tests/preview-panel.mjs
+node scripts/verificar-panel-publicado.mjs
+
+REVERSIÓN DE CÓDIGO (solo si se solicita)
+Con la cuenta Cloudflare configurada, wrangler rollback
+77441ba8-1870-4553-848b-5ca35951086b revierte a la versión previa.
+El respaldo local permite recuperar los archivos. No hace falta revertir SQL.

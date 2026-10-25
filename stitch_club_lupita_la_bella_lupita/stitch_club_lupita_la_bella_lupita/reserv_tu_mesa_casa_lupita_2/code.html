@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reservá tu mesa - Casa Lupita</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#754e00",
+                      "tertiary-container": "#714c32",
+                      "on-surface": "#1c1c18",
+                      "surface-variant": "#e5e2db",
+                      "surface-dim": "#dcdad3",
+                      "primary-fixed-dim": "#a0d2b3",
+                      "surface-container-high": "#ebe8e1",
+                      "on-secondary-fixed": "#281800",
+                      "on-primary-fixed-variant": "#214f38",
+                      "on-background": "#1c1c18",
+                      "on-tertiary-fixed": "#2f1502",
+                      "on-primary-container": "#a2d4b6",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#bbeecf",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#ffc15f",
+                      "secondary-fixed": "#ffddb0",
+                      "tertiary-fixed-dim": "#efbc9b",
+                      "secondary": "#805600",
+                      "outline-variant": "#c0c9c1",
+                      "on-primary-fixed": "#002112",
+                      "surface-container": "#f1eee7",
+                      "inverse-on-surface": "#f3f0e9",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e5e2db",
+                      "on-secondary-fixed-variant": "#614000",
+                      "secondary-fixed-dim": "#f9bc5a",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface": "#fcf9f2",
+                      "inverse-surface": "#31312c",
+                      "tertiary-fixed": "#ffdcc6",
+                      "error-container": "#ffdad6",
+                      "surface-container-low": "#f6f3ec",
+                      "background": "#fcf9f2",
+                      "tertiary": "#57351d",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-primary": "#a0d2b3",
+                      "surface-bright": "#fcf9f2",
+                      "surface-tint": "#39684f",
+                      "primary-container": "#2f5d45",
+                      "on-surface-variant": "#414943",
+                      "outline": "#717972",
+                      "on-tertiary-container": "#f1bf9d",
+                      "on-tertiary-fixed-variant": "#623f25",
+                      "primary": "#16452f",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Libre Caslon Text"
+                      ],
+                      "display": [
+                              "Libre Caslon Text"
+                      ],
+                      "body": [
+                              "Work Sans"
+                      ],
+                      "label": [
+                              "Work Sans"
+                      ]
+              },
+              "fontSize": {}
+      },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased pb-24 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar: Transactional Page so we don't render the full shell top nav, just a simple back header -->
+<header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md px-4 py-4 flex items-center gap-4">
+<button aria-label="Volver" class="p-2 -ml-2 rounded-full hover:bg-surface-variant transition-colors text-on-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<h1 class="font-headline text-xl text-primary font-bold">Reservá tu mesa</h1>
+</header>
+<main class="px-4 space-y-6 max-w-lg mx-auto pb-8">
+<!-- Category Selector -->
+<section>
+<div class="flex overflow-x-auto hide-scrollbar gap-2 py-1 -mx-4 px-4 snap-x">
+<button class="snap-start shrink-0 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant text-sm font-medium whitespace-nowrap">Café</button>
+<button class="snap-start shrink-0 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant text-sm font-medium whitespace-nowrap">Brunch</button>
+<button class="snap-start shrink-0 px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant text-sm font-medium whitespace-nowrap">Bistró</button>
+<button class="snap-start shrink-0 px-4 py-2 rounded-full border-2 border-secondary-container bg-secondary-container/10 text-secondary-container text-sm font-bold whitespace-nowrap">Salón VIP</button>
+</div>
+</section>
+<!-- VIP Info Card -->
+<section>
+<div class="bg-inverse-surface text-on-primary p-5 rounded-2xl border border-secondary-container relative overflow-hidden shadow-sm">
+<!-- Subtle texture overlay would go here if we used an image, but keeping it clean per instructions -->
+<div class="flex items-start gap-4 relative z-10">
+<div class="p-2 bg-secondary-container/20 rounded-full text-secondary-container shrink-0 mt-1">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">crown</span>
+</div>
+<div>
+<h3 class="font-headline text-lg text-secondary-container mb-2">Salón VIP · privado para hasta 10 personas</h3>
+<ul class="space-y-2 text-sm text-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Depósito de C$ 500 para confirmar (se abona a tu cuenta)
+                            </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary-container shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Como Socia Fundadora tenés prioridad de horario
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Reservation Form -->
+<section class="space-y-4">
+<!-- Guests -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-surface-variant shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant" style="font-variation-settings: 'FILL' 0;">group</span>
+<span class="font-medium text-on-surface">Personas:</span>
+<span class="font-headline text-lg font-bold">6</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Date -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-surface-variant shadow-sm flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant" style="font-variation-settings: 'FILL' 0;">calendar_today</span>
+<span class="font-medium text-on-surface flex-1">Vie 12 de septiembre</span>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</div>
+<!-- Time Selection -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-surface-variant shadow-sm space-y-3">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">schedule</span>
+<span class="text-sm font-medium">Horario sugerido</span>
+</div>
+<div class="flex gap-2 flex-wrap">
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-on-surface-variant text-sm font-medium">6:00 pm</button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary-container text-sm font-bold shadow-sm">7:00 pm</button>
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-on-surface-variant text-sm font-medium">8:00 pm</button>
+</div>
+</div>
+<!-- Note Field -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-surface-variant shadow-sm space-y-2">
+<label class="text-sm font-medium text-on-surface block uppercase tracking-wider font-label text-[11px]" for="note">¿Algo que debamos saber?</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant" style="font-variation-settings: 'FILL' 0;">edit_note</span>
+<textarea class="w-full bg-transparent border border-outline-variant rounded-lg pl-10 pr-3 py-2 text-sm focus:ring-1 focus:ring-primary-container focus:border-primary-container text-on-surface placeholder:text-on-surface-variant/50 resize-none" id="note" placeholder="Reunión con clientes, mesa tranquila" rows="2"></textarea>
+</div>
+</div>
+</section>
+<!-- Payment Toggle -->
+<section>
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-container mt-0.5" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+<div>
+<p class="text-sm text-on-surface font-medium leading-tight">Pagá el depósito con tu monedero</p>
+<p class="text-xs text-on-surface-variant mt-1">Saldo <span class="font-headline font-bold text-secondary-container">C$ 1,240</span></p>
+</div>
+</div>
+<!-- Custom Toggle Switch ON -->
+<button aria-checked="true" class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary-container transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2" role="switch" type="button">
+<span aria-hidden="true" class="pointer-events-none inline-block h-5 w-5 translate-x-5 transform rounded-full bg-on-primary-container shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</section>
+<!-- Action Area -->
+<section class="mt-8 space-y-4 text-center">
+<button class="w-full py-4 rounded-full bg-primary-container text-on-primary-container font-medium text-lg shadow-md active:scale-95 transition-transform flex items-center justify-center gap-2">
+                Confirmar reserva
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+<p class="text-xs text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">chat</span>
+                Te confirmamos por WhatsApp en minutos
+            </p>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface border-t border-outline-variant">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors rounded-xl p-2 w-16 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors rounded-xl p-2 w-16 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">coffee_maker</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Pedir</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors rounded-xl p-2 w-16 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">local_mall</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Tienda</span>
+</a>
+<!-- Active Tab -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 hover:bg-surface-variant transition-colors w-20 active:scale-90 transition-transform shadow-sm" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label text-[11px] uppercase tracking-wider font-bold">Club</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors rounded-xl p-2 w-16 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">person</span>
+<span class="font-label text-[11px] uppercase tracking-wider">Perfil</span>
+</a>
+</nav>
+<style>
+        /* Utility to hide scrollbar for the segmented control */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

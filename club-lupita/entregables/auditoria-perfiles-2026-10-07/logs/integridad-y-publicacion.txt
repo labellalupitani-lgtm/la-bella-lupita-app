@@ -1,0 +1,24 @@
+{
+  "checkedAtUTC": "2026-10-08T02:22:46.614Z",
+  "fuentes": 120,
+  "fuentesModificadas": [],
+  "frontendPublicado": [
+    {
+      "path": "/assets/principal-BQ_bCH-F.js",
+      "status": 200,
+      "bytes": 128078,
+      "localSHA256": "fb7b0dd3b26dcdb25f57e04c7522a198c25d0f5c726beaff54dafdf3dca1ad43",
+      "remoteSHA256": "fb7b0dd3b26dcdb25f57e04c7522a198c25d0f5c726beaff54dafdf3dca1ad43",
+      "coincide": true
+    },
+    {
+      "path": "/assets/Personal-LEms0I4X.js",
+      "status": 200,
+      "bytes": 60578,
+      "localSHA256": "46ad0269667e5b709ff9eb5012729bc41c6daa9a3e24082a6829264ca4123c43",
+      "remoteSHA256": "46ad0269667e5b709ff9eb5012729bc41c6daa9a3e24082a6829264ca4123c43",
+      "coincide": true
+    }
+  ],
+  "alcance": "Coincidencia de bundles frontend. No certifica que el backend desplegado coincida con las fuentes locales."
+}

@@ -1,0 +1,14 @@
+MATRIZ_LECTURAS 132
+PASA Matriz de lecturas: cinco perfiles e invitado, 22 rutas por identidad
+MATRIZ_ESCRITURAS_DENEGADAS 60
+PASA Matriz de escrituras prohibidas y escalada de privilegios
+PASA Sesiones ausentes, vencidas y firma alterada no abren operaciones
+PASA IDOR: cliente no modifica reserva ni aviso ajenos y no cobra a otro teléfono
+PASA Cocina respeta transiciones; bandejas no incluyen teléfonos, correo, saldo ni hashes
+PASA Aislamiento demo/real: escrituras del propietario y empleado, cierre ante base demo ausente
+PASA Identificador de aviso fuera de bigint se rechaza sin error interno
+PASA Nombre de empleado con NUL se valida antes de escribir en PostgreSQL
+PASA Revocación por rol y baja impide reutilizar las sesiones anteriores
+PASA Fechas imposibles de ocupación devuelven 4xx en vez de error interno
+PASA Cupos públicos excluyen membresías vencidas aun antes del mantenimiento
+AUDITORIA_PERFILES_API {"ejecutadoUTC":"2026-10-08T03:19:19.626Z","filtro":null,"grupos":11,"omitidos":0,"pasan":11,"fallan":0,"resultados":[{"nombre":"Matriz de lecturas: cinco perfiles e invitado, 22 rutas por identidad","estado":"PASA"},{"nombre":"Matriz de escrituras prohibidas y escalada de privilegios","estado":"PASA"},{"nombre":"Sesiones ausentes, vencidas y firma alterada no abren operaciones","estado":"PASA"},{"nombre":"IDOR: cliente no modifica reserva ni aviso ajenos y no cobra a otro teléfono","estado":"PASA"},{"nombre":"Cocina respeta transiciones; bandejas no incluyen teléfonos, correo, saldo ni hashes","estado":"PASA"},{"nombre":"Aislamiento demo/real: escrituras del propietario y empleado, cierre ante base demo ausente","estado":"PASA"},{"nombre":"Identificador de aviso fuera de bigint se rechaza sin error interno","estado":"PASA"},{"nombre":"Nombre de empleado con NUL se valida antes de escribir en PostgreSQL","estado":"PASA"},{"nombre":"Revocación por rol y baja impide reutilizar las sesiones anteriores","estado":"PASA"},{"nombre":"Fechas imposibles de ocupación devuelven 4xx en vez de error interno","estado":"PASA"},{"nombre":"Cupos públicos excluyen membresías vencidas aun antes del mantenimiento","estado":"PASA"}]}

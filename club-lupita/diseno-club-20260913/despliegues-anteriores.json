@@ -1,0 +1,158 @@
+[
+  {
+    "id": "9d4db0ee-4fc7-49b4-a465-abd0af3a65ce",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "zyz.investments@gmail.com",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "3769152a-c479-4b67-97f2-ac298e4be670",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-08-25T11:11:46.06734Z"
+  },
+  {
+    "id": "2ea9b685-3029-4bc5-8614-b9256c4f4a58",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "zyz.investments@gmail.com",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "68759193-da2a-485a-b081-6947a942b368",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-08-25T11:30:35.335678Z"
+  },
+  {
+    "id": "aa53b4d1-e87e-4ee7-bd93-e96c5563e0f1",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "zyz.investments@gmail.com",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "4fdc730d-f111-413e-a5ac-dd6e5f96c70f",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-08-25T11:40:54.690465Z"
+  },
+  {
+    "id": "71d785c2-22a8-4cb6-8150-076af26c6a4c",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "5bf455ed-d69d-4316-b48d-4b370fd04f81",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-08-25T18:18:23.00602Z"
+  },
+  {
+    "id": "5d2beb7b-ad0b-4bf5-929a-05550456777c",
+    "source": "api",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/triggered_by": "secret"
+    },
+    "versions": [
+      {
+        "version_id": "73505503-1f18-452d-ab34-321d44499373",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-13T16:30:48.624357Z"
+  },
+  {
+    "id": "bc7384fa-721f-46f1-8d17-356368830320",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "517ad35a-0ee6-4550-bd6b-601fd5e081b7",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-13T16:31:42.484777Z"
+  },
+  {
+    "id": "c2a0ec6f-bd5f-4de9-9e0d-9b50d654a933",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "abcfa80f-41db-409f-9353-335bd7980b6a",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-13T16:32:31.792493Z"
+  },
+  {
+    "id": "566f0770-268f-446d-bef5-1d6a61adec07",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "27488075-99b3-4d24-b3a2-8c36e220c6e2",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-13T16:43:14.966476Z"
+  },
+  {
+    "id": "b19b895b-68b7-43e4-ae29-4a24cdcdb20a",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "zyz.investments@gmail.com",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "428d4b98-0b22-460b-9732-5cd3c9436370",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-13T18:10:39.159422Z"
+  },
+  {
+    "id": "424aefd1-2354-49c8-983c-660b135d3c5b",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "zyz.investments@gmail.com",
+    "annotations": {
+      "workers/message": "Implementación dirección Casa: diseño adaptable, Carta animada, Club y Reserva",
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "688d0f1c-2b72-41f7-9c69-c5a6dee4135c",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-09-13T19:46:52.795165Z"
+  }
+]

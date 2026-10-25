@@ -1,0 +1,245 @@
+/* Comercio y visitas · extensión de la composición aprobada de Inicio.
+   Los estilos se limitan a estas tareas; datos y operaciones conservan su API. */
+.comercio-pagina { font-family:theme('fontFamily.inicio-texto'); color:theme('colors.tinta'); }
+.comercio-pagina :is(h1,h2,h3,.font-titular,.t-seccion) { font-family:theme('fontFamily.inicio-titular'); }
+.comercio-pagina :is(input,select,textarea) { font:inherit; border-radius:theme('borderRadius.inicio-control'); }
+.comercio-pagina :is(button,a,summary,input,select,textarea) { scroll-margin-block:100px calc(var(--casa-nav-alto,76px) + 100px); }
+.comercio-pagina .casa-boton { min-height:48px; }
+.comercio-pagina .t-caption { line-height:1.6; }
+.comercio-encabezado { display:flex; justify-content:space-between; align-items:flex-start; gap:24px; margin-bottom:24px; }
+.comercio-encabezado h2 { font-size:clamp(1.8rem,3vw,2.7rem); line-height:1.15; font-weight:400; margin:0 0 10px; }
+.comercio-encabezado p { max-width:62ch; }
+.comercio-utilidades { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+.comercio-vacio { padding:36px 24px; border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.inicio-tarjeta'); background:theme('colors.inicio-crema'); }
+.comercio-vacio h2 { font-size:1.75rem; margin-bottom:12px; }
+.comercio-vacio .casa-boton { margin-top:20px; }
+
+/* Carta: navegación breve, fotografía real y lectura de menú. */
+.comercio-pagina.casa-carta { max-width:1280px; padding-top:20px; padding-bottom:calc(var(--casa-nav-alto,76px) + 130px); }
+.comercio-pagina .carta-recepcion { grid-area:recepcion; min-height:0; padding:10px 14px; margin:0; border:0; border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-rosa'); font-size:.8125rem; line-height:1.6; }
+.comercio-pagina .casa-carta-composicion { grid-template-columns:1fr 1fr; grid-template-areas:'titulo busca' 'categorias categorias' 'recepcion recepcion' 'foto foto' 'resultados resultados'; gap:22px 28px; align-items:center; }
+/* Las áreas de búsqueda y exploración viven juntas: recepción siempre tiene
+   una fila explícita, independientemente del orden de carga de las hojas CSS. */
+.comercio-pagina.carta-buscando .casa-carta-composicion { grid-template-areas:'titulo busca' 'categorias categorias' 'recepcion recepcion' 'resultados resultados'; }
+.carta-entrada { grid-area:titulo; }
+.carta-entrada > p { font-size:.8125rem; line-height:1.6; margin-top:10px; }
+.comercio-pagina .casa-carta-titulo { margin:0; font-size:clamp(2.5rem,4vw,3.5rem); line-height:1.1; letter-spacing:-.025em; }
+.casa-carta-buscador { min-width:0; }
+.carta-busqueda-etiqueta { display:block; margin-bottom:8px; font-size:.8125rem; font-weight:600; }
+.carta-busqueda-control { position:relative; }
+.carta-busqueda-control > .ico { position:absolute; left:16px; top:50%; transform:translateY(-50%); color:theme('colors.tinta-media'); pointer-events:none; }
+.comercio-pagina .casa-carta-buscador input { width:100%; min-width:0; min-height:52px; border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.full'); background:theme('colors.inicio-crema'); color:theme('colors.tinta'); padding:12px 18px 12px 48px; font-size:1rem; line-height:1.5; }
+.casa-carta-buscador input::placeholder { color:theme('colors.tinta-media'); opacity:1; }
+.casa-carta-buscador input::-webkit-search-cancel-button { appearance:none; }
+.casa-carta-buscador input:focus-visible { outline:2px solid theme('colors.foco'); outline-offset:3px; }
+.casa-carta-buscador .carta-busqueda-control:has(button) input { padding-right:5.5rem; }
+.carta-busqueda-limpiar { position:absolute; right:5px; top:50%; transform:translateY(-50%); min-height:44px; min-width:44px; padding:8px 12px; border-radius:theme('borderRadius.full'); background:theme('colors.inicio-rosa'); color:theme('colors.tinta'); font-size:.8125rem; font-weight:600; }
+.comercio-pagina .casa-carta-categorias { gap:6px; padding:6px; scroll-padding-inline:6px; border:0; border-radius:theme('borderRadius.full'); background:theme('colors.inicio-crema'); overflow-x:auto; scrollbar-width:thin; }
+.comercio-pagina .casa-carta-categorias button { flex:1 0 auto; min-width:70px; padding:10px 18px; border:0; border-radius:theme('borderRadius.full'); font-size:.875rem; line-height:1.5; transition:background-color 160ms ease,color 160ms ease; }
+.comercio-pagina .casa-carta-categorias button[aria-pressed=true] { color:theme('colors.papel'); background:theme('colors.inicio-borgona'); font-weight:600; }
+.carta-seleccion { grid-area:foto; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; min-width:0; }
+.carta-seleccion-producto { min-width:0; }
+.carta-seleccion-enlace { display:block; width:100%; text-align:left; border-radius:theme('borderRadius.inicio-control'); }
+.carta-seleccion-foto { display:block; aspect-ratio:1.25; overflow:hidden; border-radius:theme('borderRadius.inicio-tarjeta'); background:theme('colors.filete'); }
+.carta-seleccion-foto img { width:100%; height:100%; object-fit:cover; transition:transform 220ms ease; }
+.carta-seleccion-datos { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:12px; align-items:center; padding:16px 2px 4px; }
+.carta-seleccion-nombre { font:400 1.45rem/1.2 theme('fontFamily.inicio-titular'); }
+.carta-seleccion-precio { display:flex; align-items:center; gap:12px; font-size:.9375rem; font-weight:600; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.carta-seleccion-precio .ico { display:grid; place-items:center; min-width:40px; min-height:40px; border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.full'); }
+.carta-seleccion-unica { display:block; }
+.carta-seleccion-unica .carta-seleccion-enlace { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; background:theme('colors.inicio-rosa'); overflow:hidden; border-radius:theme('borderRadius.inicio-tarjeta'); }
+.carta-seleccion-unica .carta-seleccion-foto { height:240px; aspect-ratio:auto; border-radius:0; }
+.carta-seleccion-unica .carta-seleccion-datos { display:block; padding:28px; }
+.carta-seleccion-unica .carta-seleccion-nombre { display:block; font-size:2.4rem; }
+.carta-seleccion-unica .carta-seleccion-precio { margin-top:18px; justify-content:space-between; }
+.comercio-pagina .casa-carta-resultados { align-self:start; animation:comercio-aparecer 180ms ease; }
+.comercio-pagina .casa-carta-resultados > p { margin-bottom:18px; font-size:.875rem; line-height:1.65; max-width:75ch; }
+.comercio-pagina .casa-carta-grupo { padding:12px 0; font:500 1.45rem/1.3 theme('fontFamily.inicio-titular'); border-bottom:1px solid theme('colors.filete'); letter-spacing:0; text-transform:none; }
+.comercio-pagina .casa-carta-lista { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:36px; }
+.comercio-pagina .casa-carta-lista li { min-width:0; padding:20px 0; gap:16px; align-items:center; }
+.comercio-pagina .casa-carta-plato { flex-direction:row; align-items:center; gap:16px; border-radius:theme('borderRadius.inicio-control'); }
+.carta-plato-texto { min-width:0; display:flex; flex-direction:column; gap:8px; }
+.carta-plato-texto > .font-titular { font-size:1.3rem; line-height:1.25; font-weight:400; }
+.carta-plato-texto > .t-caption { font-size:.8125rem; line-height:1.6; }
+.carta-plato-miniatura { width:90px; height:104px; flex-shrink:0; overflow:hidden; border-radius:theme('borderRadius.inicio-control'); }
+.carta-plato-miniatura img { width:100%; height:100%; object-fit:cover; transition:transform 180ms ease; }
+.carta-agotado { font-weight:600; color:theme('colors.achiote'); }
+.comercio-pagina .casa-carta-accion { flex-direction:column; gap:12px; font-size:.875rem; }
+.comercio-pagina .casa-carta-accion > button { border-color:theme('colors.inicio-borgona'); color:theme('colors.inicio-borgona'); background:theme('colors.inicio-crema'); transition:background-color 160ms ease, transform 160ms ease; }
+.comercio-pagina .casa-carta-accion > button:active { transform:scale(.94); }
+.comercio-pagina .casa-carta-grupo-plegable summary { font-size:1.4rem; padding:22px 0; }
+.comercio-pagina .casa-carta-grupo-plegable[open] .casa-carta-lista { animation:comercio-aparecer 180ms ease; }
+body:has(.casa-carta) .casa-carta-barra { left:0; bottom:24px; }
+body:has(.casa-carta) .casa-carta-barra > button { border-radius:theme('borderRadius.full'); background:theme('colors.inicio-borgona'); font-weight:600; }
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+ .carta-seleccion-enlace:hover .carta-seleccion-foto img,.casa-carta-plato:hover .carta-plato-miniatura img { transform:scale(1.025); }
+ .comercio-pagina .casa-carta-accion > button:not(:disabled):hover { background:theme('colors.inicio-rosa'); }
+}
+
+/* Ficha de producto: la foto y el precio siguen al plato elegido. */
+.casa-detalle-dialogo .casa-detalle-panel { width:min(760px,calc(100% - 32px)); border-radius:theme('borderRadius.inicio-tarjeta'); font-family:theme('fontFamily.inicio-texto'); }
+.casa-detalle-dialogo .casa-detalle-cabecera { padding:12px 24px; background:theme('colors.inicio-crema'); }
+.casa-detalle-dialogo .casa-detalle-cabecera button { border-radius:theme('borderRadius.full'); }
+.casa-detalle-dialogo .casa-detalle-contenido { padding:26px; }
+.carta-detalle-identidad { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:24px; margin-bottom:20px; }
+.carta-detalle-sin-foto { display:block; }
+.casa-detalle-dialogo .casa-detalle-foto { height:300px; border-radius:theme('borderRadius.inicio-control'); }
+.casa-detalle-dialogo .casa-detalle-contenido h2 { font:400 clamp(1.8rem,3vw,2.4rem)/1.1 theme('fontFamily.inicio-titular'); margin-bottom:16px; }
+.carta-detalle-precio { font-size:1.4rem; font-weight:500; font-variant-numeric:tabular-nums; }
+.carta-detalle-precio span { display:block; font-size:.75rem; color:theme('colors.tinta-media'); margin-top:5px; }
+.casa-detalle-dialogo .carta-opcion label { padding:8px 12px; border-radius:theme('borderRadius.inicio-control'); border:1px solid theme('colors.filete'); margin-bottom:8px; }
+.casa-detalle-dialogo .carta-opcion label:has(input:checked) { background:theme('colors.inicio-rosa'); border-color:theme('colors.inicio-borgona'); }
+.casa-detalle-dialogo .carta-opcion input[type=radio] { accent-color:theme('colors.inicio-borgona'); flex-shrink:0; }
+.casa-detalle-dialogo .casa-detalle-acciones { background:theme('colors.inicio-crema'); }
+.casa-detalle-dialogo .casa-detalle-acciones > button { min-height:48px; border-radius:theme('borderRadius.full'); }
+
+/* Tienda: oferta principal, condiciones y beneficio distinguidos. */
+.comercio-pagina.casa-tienda { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr); gap:40px; padding-top:20px; padding-bottom:calc(var(--casa-nav-alto,76px) + 40px); }
+.comercio-pagina.casa-tienda > section[aria-labelledby=tienda-reserva] { grid-column:1/-1; grid-row:auto; }
+.tienda-oferta { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:28px 44px; align-items:start; }
+.tienda-oferta-titulo { grid-column:1; }
+.tienda-oferta-titulo h2 { font-size:clamp(2.5rem,4vw,3.6rem); line-height:1.08; font-weight:400; margin:16px 0; }
+.tienda-oferta-titulo > p:last-child { font-size:1rem; line-height:1.7; }
+.tienda-fotografia { grid-column:1; grid-row:2; border-radius:theme('borderRadius.inicio-tarjeta'); overflow:hidden; background:theme('colors.inicio-crema'); }
+.tienda-fotografia img { width:100%; height:350px; object-fit:contain; }
+.tienda-oferta .tienda-comprar { grid-column:2; grid-row:1/3; padding:28px; background:theme('colors.inicio-crema'); border-radius:theme('borderRadius.inicio-tarjeta'); margin:0; }
+.tienda-precio-datos { display:flex; flex-wrap:wrap; gap:20px; align-items:start; justify-content:space-between; padding-bottom:20px; margin-bottom:18px; border-bottom:1px solid theme('colors.filete'); }
+.tienda-precio { font:500 1.8rem/1.2 theme('fontFamily.inicio-texto'); font-variant-numeric:tabular-nums; }
+.tienda-precio-datos > p { font-size:.9375rem; line-height:1.7; }
+.tienda-precio-datos .t-caption { margin-top:6px; }
+.tienda-estado { grid-column:1/-1; padding:20px; border-left:3px solid theme('colors.inicio-borgona'); background:theme('colors.inicio-crema'); }
+.comercio-pagina.casa-tienda h3 { font-weight:400; font-size:1.7rem; line-height:1.2; }
+.tienda-ficha { padding-top:24px; border-top:1px solid theme('colors.filete'); }
+.tienda-condiciones { display:grid; gap:16px; }
+.tienda-condiciones > div { margin:0; }
+.tienda-condiciones dt { font-size:.8125rem; color:theme('colors.tinta-media'); margin-bottom:5px; }
+.tienda-condiciones dd { font-size:.9375rem; line-height:1.7; overflow-wrap:anywhere; }
+.tienda-beneficio { padding:24px; background:theme('colors.inicio-rosa'); border-radius:theme('borderRadius.inicio-tarjeta'); }
+.comercio-pagina.casa-tienda .tienda-beneficio .tienda-beneficio-cuerpo { border:0; padding:0; margin-top:18px; background:transparent; }
+.tienda-encargo { grid-column:1/-1; padding-top:28px; border-top:1px solid theme('colors.filete'); }
+.tienda-encargo > .space-y-3 { margin-top:20px; }
+.tienda-encargo label { font-size:.875rem; }
+.tienda-encargo :is(input,select) { border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-crema'); }
+.comercio-pagina.casa-tienda > .casa-boton { grid-column:1/-1; justify-self:start; }
+
+/* Historial y comprobantes: referencia, estado e importe permanecen visibles. */
+.comercio-historial { max-width:1200px; padding-bottom:calc(var(--casa-nav-alto,76px) + 40px); }
+.compras-filtros { display:flex; flex-wrap:wrap; gap:8px; margin:24px 0; }
+.compras-filtros button { min-height:44px; padding:10px 16px; border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.full'); font-size:.8125rem; transition:background-color 160ms ease,color 160ms ease; }
+.compras-filtros button[aria-pressed=true] { background:theme('colors.inicio-borgona'); border-color:theme('colors.inicio-borgona'); color:theme('colors.papel'); font-weight:600; }
+.compras-lista { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:start; }
+.compras-lista .compra-comprobante { padding:26px; border-radius:theme('borderRadius.inicio-tarjeta'); background:theme('colors.inicio-crema'); border:1px solid theme('colors.filete'); }
+.compra-tipo { display:flex; align-items:center; gap:9px; font-size:.75rem; font-weight:600; letter-spacing:.04em; margin-bottom:14px; color:theme('colors.inicio-borgona'); }
+.compra-comprobante h2 { font-size:1.7rem; line-height:1.2; font-weight:400; }
+.compra-comprobante ul { padding-block:14px; border-block:1px solid theme('colors.filete'); }
+.compra-comprobante .compra-importe { font-weight:600; font-variant-numeric:tabular-nums; padding-top:16px; border-top:1px solid theme('colors.filete'); }
+.compra-referencia { color:theme('colors.tinta-media'); font-size:.75rem; }
+.reservas-lista { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:start; }
+.reserva-comprobante.casa-tarjeta { padding:24px; border-radius:theme('borderRadius.inicio-tarjeta'); background:theme('colors.inicio-crema'); }
+.reserva-comprobante h2,.reserva-comprobante h3 { font:400 1.7rem/1.2 theme('fontFamily.inicio-titular'); }
+.reserva-estado { display:inline-block; font-size:.8125rem; font-weight:600; color:theme('colors.inicio-borgona'); background:theme('colors.inicio-rosa'); padding:7px 12px; border-radius:theme('borderRadius.full'); margin:12px 0; }
+.reserva-comprobante-datos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:16px 0; }
+.reserva-comprobante-datos dt { font-size:.75rem; color:theme('colors.tinta-media'); margin-bottom:5px; }
+.reserva-comprobante-datos dd { font-size:.9375rem; line-height:1.6; }
+.reserva-comprobante-datos > div:first-child { grid-column:1/-1; }
+.reserva-anticipo { border-block:1px solid theme('colors.filete'); padding-block:16px; margin-block:16px; }
+
+/* Visitas: pasos y elección de zona con selección explícita. */
+.reserva-nueva.comercio-pagina { grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); align-items:start; gap:40px; padding-bottom:calc(var(--reserva-pie,180px) + 32px); }
+.reserva-nueva.comercio-pagina .reserva-lugar { border-radius:theme('borderRadius.inicio-tarjeta'); overflow:hidden; }
+.reserva-nueva.comercio-pagina .reserva-lugar > picture > img { width:100%; height:400px; object-fit:cover; }
+.reserva-nueva.comercio-pagina .reserva-lugar-pie { background:theme('colors.inicio-rosa'); color:theme('colors.tinta'); padding:24px; }
+.reserva-nueva.comercio-pagina .reserva-lugar-pie h2 { font:400 2rem/1.15 theme('fontFamily.inicio-titular'); margin-top:10px; }
+.reserva-nueva.comercio-pagina .reserva-lugar-tipografico { min-height:330px; padding:28px; background:theme('colors.inicio-rosa'); color:theme('colors.tinta'); }
+.reserva-nueva.comercio-pagina .reserva-formulario { border:0; border-radius:0; padding:0; background:transparent; }
+.reserva-nueva.comercio-pagina .reserva-utilidades { justify-content:space-between; padding-bottom:14px; border-bottom:1px solid theme('colors.filete'); }
+.reserva-nueva.comercio-pagina .reserva-utilidades .t-caption { max-width:35ch; }
+.reserva-nueva.comercio-pagina .reserva-pasos { gap:8px; margin:24px 0; }
+.reserva-nueva.comercio-pagina .reserva-pasos button { display:flex; align-items:center; gap:9px; padding:8px 4px; border:0; border-radius:theme('borderRadius.inicio-control'); font-size:.8125rem; text-align:left; }
+.reserva-paso-numero { display:grid; place-items:center; width:30px; height:30px; flex-shrink:0; border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.full'); }
+.reserva-nueva.comercio-pagina .reserva-pasos [aria-current=step] { color:theme('colors.inicio-borgona'); }
+.reserva-nueva.comercio-pagina .reserva-pasos [aria-current=step] .reserva-paso-numero { background:theme('colors.inicio-borgona'); color:theme('colors.papel'); border-color:theme('colors.inicio-borgona'); }
+.reserva-nueva.comercio-pagina .reserva-zonas { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:24px; }
+.reserva-nueva.comercio-pagina .reserva-zonas li > button { min-height:108px; height:100%; padding:18px; border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-crema'); transition:background-color 160ms ease,border 160ms ease; }
+.reserva-nueva.comercio-pagina .reserva-zonas li > button[aria-pressed=true] { background:theme('colors.inicio-rosa'); border-color:theme('colors.inicio-borgona'); }
+.reserva-zona-titulo { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:10px; }
+.reserva-zona-titulo .t-seccion { font-size:1.4rem; }
+.reserva-zona-seleccion { display:grid; place-items:center; width:24px; height:24px; flex-shrink:0; font-family:theme('fontFamily.inicio-texto'); font-size:1rem; }
+.reserva-nueva.comercio-pagina .reserva-hora { border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-crema'); font-variant-numeric:tabular-nums; }
+.reserva-nueva.comercio-pagina .reserva-hora[aria-pressed=true] { background:theme('colors.inicio-borgona'); color:theme('colors.papel'); }
+.reserva-revision.casa-tarjeta { padding:24px; border-radius:theme('borderRadius.inicio-tarjeta'); background:theme('colors.inicio-crema'); }
+.reserva-cierre { left:0; background:theme('colors.inicio-crema'); }
+.reserva-cierre .reserva-cierre-interior { max-width:1200px; }
+.reserva-cierre .reserva-cierre-interior > p { font-size:.875rem; line-height:1.5; }
+.reserva-cierre .reserva-acciones { flex-wrap:wrap; }
+.reserva-cierre .reserva-acciones > button:last-child { flex:1 1 13em; }
+@keyframes comercio-aparecer { from { opacity:.4; } to { opacity:1; } }
+@media(max-width:899px) {
+ .comercio-pagina .casa-carta-composicion { grid-template-columns:minmax(0,1fr); grid-template-areas:'titulo' 'busca' 'categorias' 'recepcion' 'foto' 'resultados'; gap:18px; }
+ .comercio-pagina.carta-buscando .casa-carta-composicion { grid-template-areas:'titulo' 'busca' 'categorias' 'recepcion' 'resultados'; }
+ .comercio-pagina .casa-carta-lista { grid-template-columns:minmax(0,1fr); }
+ .carta-seleccion { grid-auto-flow:column; grid-auto-columns:52%; grid-template-columns:none; gap:16px; overflow-x:auto; scroll-snap-type:x proximity; padding:3px 3px 12px; margin-inline:-3px; }
+ .carta-seleccion-producto { scroll-snap-align:start; }
+ .carta-seleccion-foto { aspect-ratio:1; border-radius:theme('borderRadius.inicio-control'); }
+ .carta-seleccion-datos { display:block; padding-top:12px; }
+ .carta-seleccion-nombre { display:block; font-size:1.25rem; }
+ .carta-seleccion-precio { margin-top:8px; justify-content:space-between; }
+ .carta-seleccion-precio .ico { min-width:32px; min-height:32px; }
+ .carta-seleccion-unica { overflow:visible; padding:0; margin:0; }
+ .carta-seleccion-unica .carta-seleccion-enlace { grid-template-columns:42% minmax(0,1fr); }
+ .carta-seleccion-unica .carta-seleccion-foto { height:165px; }
+ .carta-seleccion-unica .carta-seleccion-datos { padding:20px; }
+ .carta-seleccion-unica .carta-seleccion-nombre { font-size:1.8rem; }
+ body:has(.casa-carta) .casa-carta-barra { bottom:calc(var(--casa-nav-alto,76px) + 12px); }
+ .casa-detalle-dialogo .casa-detalle-panel { top:auto; bottom:0; right:0; width:100%; max-height:94dvh; border-radius:theme('borderRadius.inicio-tarjeta') theme('borderRadius.inicio-tarjeta') 0 0; }
+ .casa-detalle-dialogo .casa-detalle-contenido { padding:20px; }
+ .carta-detalle-identidad { grid-template-columns:minmax(0,1fr); gap:20px; }
+ .casa-detalle-dialogo .casa-detalle-foto { height:250px; }
+ .comercio-pagina.casa-tienda { display:grid; grid-template-columns:minmax(0,1fr); gap:28px; }
+ .tienda-oferta { grid-template-columns:minmax(0,1fr); gap:22px; }
+ .tienda-oferta .tienda-comprar,.tienda-fotografia { grid-column:1; grid-row:auto; }
+ .tienda-oferta .tienda-comprar { padding:22px; }
+ .tienda-fotografia img { height:280px; }
+ .compras-lista,.reservas-lista { grid-template-columns:minmax(0,1fr); }
+ .comercio-encabezado { flex-direction:column; gap:16px; }
+ .reserva-nueva.comercio-pagina { grid-template-columns:minmax(0,1fr); gap:24px; }
+ .reserva-nueva.comercio-pagina .reserva-lugar { order:2; }
+ .reserva-nueva.comercio-pagina .reserva-formulario { order:1; }
+ .reserva-nueva.comercio-pagina .reserva-lugar > picture > img { height:150px; }
+ .reserva-nueva.comercio-pagina .reserva-lugar-pie { padding:16px 20px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; }
+ .reserva-nueva.comercio-pagina .reserva-lugar-pie > span { font-size:.75rem; max-width:14ch; }
+ .reserva-nueva.comercio-pagina .reserva-lugar-pie h2 { margin:0; font-size:1.5rem; }
+ .reserva-nueva.comercio-pagina .reserva-lugar-tipografico { min-height:170px; }
+ .reserva-nueva.comercio-pagina .reserva-lugar-tipografico > h2 { font-size:2.5rem; }
+}
+@media(max-width:540px) {
+ .comercio-pagina .casa-carta-categorias button { padding:10px 12px; font-size:.8125rem; min-width:64px; }
+ .comercio-pagina .casa-carta-plato { gap:12px; }
+ .carta-plato-miniatura { width:78px; height:100px; }
+ .carta-plato-texto > .font-titular { font-size:1.2rem; }
+ .comercio-pagina .casa-carta-lista li { gap:12px; }
+ .reserva-nueva.comercio-pagina .reserva-zonas { grid-template-columns:minmax(0,1fr); }
+ .reserva-nueva.comercio-pagina .reserva-zonas li > button { min-height:92px; padding:16px; }
+ .reserva-nueva.comercio-pagina .reserva-pasos button { flex-direction:column; align-items:flex-start; gap:8px; }
+ .reserva-comprobante-datos { grid-template-columns:minmax(0,1fr); }
+ .reserva-nueva.comercio-pagina .reserva-utilidades .t-caption { font-size:.75rem; }
+ .compras-lista .compra-comprobante { padding:20px; }
+}
+@media(max-width:380px) {
+ .carta-plato-con-foto .casa-carta-plato { flex-direction:column; align-items:flex-start; }
+ .carta-plato-miniatura { width:100%; height:150px; }
+ .casa-detalle-dialogo .casa-detalle-cabecera { padding-inline:16px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .comercio-pagina *, .casa-detalle-dialogo *, .casa-carta-barra * { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+}
+
+
+.comercio-pagina .reserva-zona-titulo .t-seccion { border:0; padding:0; }
+
+.comercio-pagina .carta-foto-respaldo { color:theme('colors.tinta'); text-align:center; overflow-wrap:anywhere; }
+.carta-plato-miniatura .carta-foto-respaldo { padding:8px; font-size:.75rem; }
+
+.carta-seleccion-foto img[src*="risoto-gallopinto"],.carta-plato-miniatura img[src*="risoto-gallopinto"],.casa-detalle-foto img[src*="risoto-gallopinto"] { object-position:50% 85%; }
+
+.reserva-nueva.comercio-pagina :is(button,a,summary,input,select,textarea) { scroll-margin-bottom:calc(var(--reserva-pie,180px) + 24px); }

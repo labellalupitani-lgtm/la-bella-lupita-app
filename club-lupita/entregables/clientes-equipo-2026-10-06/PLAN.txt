@@ -1,0 +1,49 @@
+CLIENTES, DATOS DE MUESTRA Y EQUIPO — PLAN Y CRITERIOS DE ACEPTACIÓN
+6 de octubre de 2026
+
+1. INVENTARIO Y RESPALDO
+   Código y pruebas respaldados. Revisar claves foráneas, relaciones cruzadas,
+   cuentas reales, saldos, cupos y versión publicada antes de migrar.
+2. SEPARACIÓN DE MUESTRAS
+   Identificar exclusivamente los registros de la semilla conocida sin correo.
+   Archivar lógicamente esas cuentas y sus reservas en producción. Conservar
+   íntegros el libro mayor, los sellos y sus relaciones; guardar el estado previo
+   de las asignaciones de inventario que se liberan. Los registros archivados
+   no deben aparecer en operaciones, cifras, acceso de clientes o cupos reales.
+   Demo sigue funcionando en su propia base. Consulta del archivo: propietario.
+3. DIRECTORIO CLIENTES
+   Propietario y encargado: listado paginado, búsqueda por nombre/correo/teléfono,
+   fecha de alta, estado y origen. Incluir cuentas sin compras. Filtros de estado,
+   origen y fechas; conteos que distingan registros y muestras archivadas.
+4. FICHA DE CLIENTE
+   Contacto y registro, membresía, saldo y puntos; historial completo paginado
+   de movimientos, pedidos, reservas, bolsas, experiencias, sellos y atención.
+   Las consultas no deben ejecutar renovaciones ni modificar saldos.
+5. EQUIPO Y PERMISOS
+   Política confirmada por el usuario: SOLO EL PROPIETARIO administra accesos.
+   Encargado consulta equipo/clientes/informes, sin administrar usuarios.
+   Matriz visible de cinco perfiles y tarjeta del propietario diferenciada.
+   Cambiar rol, desactivar, reactivar y restablecer conserva identidad/historial.
+   Las mutaciones revocan sesiones anteriores y rechazan versiones desactualizadas.
+6. VERIFICACIÓN
+   Pruebas de autorización, archivo, integridad, búsqueda, paginación >100 registros,
+   ficha completa, rol/reactivación, concurrencia y regresión existente.
+   Comprobar UI en escritorio y móvil, errores, vacíos y navegación por URL.
+7. PUBLICACIÓN
+   Ensayo remoto sobre copia; respaldos reales comprobados antes de aplicar.
+   Migrar esquema en real y demo; archivar muestras solamente en real.
+   Publicar conservando secretos. Verificar versión, activos, conteos, cupos,
+   integridad de cuentas reales, permisos y funcionamiento de demostración.
+
+INVARIANTES
+- No borrar ni reescribir movimientos monetarios.
+- No cambiar claves reales durante las pruebas.
+- No usar la clave inicial del propietario: el propietario ya la cambió.
+- No reabrir sesiones antiguas al reactivar un empleado.
+- No convertir una cuenta sin correo en muestra por ese único motivo.
+- Un cruce entre muestra y cuenta real detiene el archivo para revisión.
+- No revertir a una versión que ignore la revocación o el archivo de muestras.
+
+ESTADO: los siete pasos fueron completados y verificados. Publicación activa: c2f3beee-0db8-4147-bb90-a82bd6789339.
+
+Ver RESULTADO.txt, pruebas.txt y verificacion-publicada.json para la evidencia.

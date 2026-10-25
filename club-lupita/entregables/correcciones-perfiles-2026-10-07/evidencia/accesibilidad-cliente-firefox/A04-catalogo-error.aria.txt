@@ -1,0 +1,42 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa"
+- banner:
+  - button "Volver"
+  - heading "Tienda de la finca" [level=1]
+- main:
+  - alert: No pudimos actualizar el catálogo. Catálogo temporalmente no disponible
+  - button "Actualizar catálogo"
+  - paragraph: Cultivado por la familia desde 1971
+  - heading "El café que se toma acá es el que baja de la finca" [level=2]
+  - paragraph: No compramos grano de nadie Lo que está en la taza y lo que está en la bolsa salieron de la misma ladera, en Matagalpa, el mismo año
+  - region "Reserva de Cosecha":
+    - heading "Reserva de Cosecha" [level=3]
+    - heading "No pudimos abrir tu cuenta" [level=3]
+    - paragraph: Puede ser la señal o puede ser la casa Tu tanda y tu saldo están a salvo del otro lado
+  - region "La bolsa de cada mes":
+    - heading "La bolsa de cada mes" [level=3]
+    - heading "Viene con la Mesa Fundadora" [level=4]
+    - paragraph: "La casa no vende suscripción de café por su cuenta: los 250 g del mes son uno de los cinco beneficios de la Mesa Fundadora"
+    - button "Ver la Mesa Fundadora"
+  - region "Encargos grandes":
+    - heading "Encargos grandes" [level=3]
+    - button "Cajas de regalo Se arman a mano y se cotizan una por una"
+    - button "Pedidos para oficina Grano molido o en bolsa, con entrega en Managua"
+    - paragraph: Los dos se cierran por WhatsApp, con una persona del otro lado Es más lento que un botón y sale mejor
+  - paragraph: Esta tienda enseña sólo lo que la casa puede cobrarte hoy y entregarte de verdad El catálogo de mostrador —los lotes sueltos, el pack portátil— se compra en la barra, donde alguien te lo puede moler como lo tomás
+- navigation "Secciones de Club Lupita":
+  - list:
+    - listitem:
+      - button "Inicio"
+    - listitem:
+      - button "Pedir"
+    - listitem:
+      - button "Tienda"
+    - listitem:
+      - button "Club"
+    - listitem:
+      - button "Perfil"

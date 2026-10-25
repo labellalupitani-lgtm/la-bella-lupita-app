@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>La Bella Lupita - Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom Donut Chart CSS */
+        .donut-segment {
+            stroke-dasharray: 74 100; /* 74 of 82 visual representation */
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#281800",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed-variant": "#214f38",
+                      "surface-variant": "#e5e2db",
+                      "primary-fixed-dim": "#a0d2b3",
+                      "primary-container": "#2f5d45",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#f1eee7",
+                      "on-primary-fixed": "#002112",
+                      "tertiary-fixed-dim": "#efbc9b",
+                      "on-error": "#ffffff",
+                      "secondary": "#805600",
+                      "primary": "#16452f",
+                      "surface-container-high": "#ebe8e1",
+                      "secondary-container": "#ffc15f",
+                      "secondary-fixed-dim": "#f9bc5a",
+                      "tertiary-container": "#714c32",
+                      "error-container": "#ffdad6",
+                      "background": "#fcf9f2",
+                      "tertiary": "#57351d",
+                      "on-background": "#1c1c18",
+                      "on-tertiary": "#ffffff",
+                      "surface": "#fcf9f2",
+                      "inverse-primary": "#a0d2b3",
+                      "on-tertiary-fixed": "#2f1502",
+                      "inverse-surface": "#31312c",
+                      "on-surface": "#1c1c18",
+                      "inverse-on-surface": "#f3f0e9",
+                      "outline-variant": "#c0c9c1",
+                      "outline": "#717972",
+                      "on-tertiary-fixed-variant": "#623f25",
+                      "primary-fixed": "#bbeecf",
+                      "on-surface-variant": "#414943",
+                      "on-secondary-fixed-variant": "#614000",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#f6f3ec",
+                      "on-primary-container": "#a2d4b6",
+                      "tertiary-fixed": "#ffdcc6",
+                      "secondary-fixed": "#ffddb0",
+                      "surface-container-highest": "#e5e2db",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#39684f",
+                      "on-secondary-container": "#754e00",
+                      "surface-dim": "#dcdad3",
+                      "on-tertiary-container": "#f1bf9d",
+                      "surface-bright": "#fcf9f2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Libre Caslon Text", "serif"],
+                      "body": ["Work Sans", "sans-serif"]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-surface-container-low text-on-surface font-body antialiased flex h-screen overflow-hidden">
+<!-- SideNavBar (Shared Component) -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface shadow-xl flex flex-col py-8 z-50">
+<div class="px-6 mb-10">
+<h1 class="font-headline text-2xl text-secondary-fixed-dim">La Bella Lupita</h1>
+<p class="font-body text-label-sm tracking-wider uppercase text-surface-variant/70 mt-1">Administración</p>
+</div>
+<nav class="flex-1 flex flex-col gap-2">
+<!-- Active Tab: Resumen -->
+<a class="flex items-center gap-3 text-secondary-fixed-dim font-bold border-l-4 border-secondary-fixed-dim pl-4 py-3 bg-surface-container-highest/10 opacity-90 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-weight="fill">dashboard</span>
+<span class="font-body text-label-sm tracking-wider uppercase">Resumen</span>
+</a>
+<!-- Inactive Tabs -->
+<a class="flex items-center gap-3 text-surface-variant/70 font-medium pl-4 py-3 hover:bg-surface-container-highest/20 hover:text-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-body text-label-sm tracking-wider uppercase">Socios</span>
+</a>
+<a class="flex items-center gap-3 text-surface-variant/70 font-medium pl-4 py-3 hover:bg-surface-container-highest/20 hover:text-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-body text-label-sm tracking-wider uppercase">Monedero</span>
+</a>
+<a class="flex items-center gap-3 text-surface-variant/70 font-medium pl-4 py-3 hover:bg-surface-container-highest/20 hover:text-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">event</span>
+<span class="font-body text-label-sm tracking-wider uppercase">Eventos</span>
+</a>
+<a class="flex items-center gap-3 text-surface-variant/70 font-medium pl-4 py-3 hover:bg-surface-container-highest/20 hover:text-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-body text-label-sm tracking-wider uppercase">Tienda</span>
+</a>
+<a class="flex items-center gap-3 text-surface-variant/70 font-medium pl-4 py-3 hover:bg-surface-container-highest/20 hover:text-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-body text-label-sm tracking-wider uppercase">Campañas</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-64 flex flex-col h-full overflow-y-auto">
+<!-- TopNavBar (Shared Component Adapted for Header Shell) -->
+<header class="bg-surface border-b border-outline-variant flex justify-between items-center h-20 px-8 shrink-0">
+<h2 class="font-headline text-xl text-primary">La Bella Lupita</h2>
+<div class="flex items-center gap-6">
+<button class="text-on-surface-variant hover:text-primary transition-colors scale-95 duration-150"><span class="material-symbols-outlined">calendar_today</span></button>
+<button class="text-on-surface-variant hover:text-primary transition-colors scale-95 duration-150"><span class="material-symbols-outlined">notifications</span></button>
+<button class="text-on-surface-variant hover:text-primary transition-colors scale-95 duration-150"><span class="material-symbols-outlined">account_circle</span></button>
+<button class="font-body font-medium text-on-primary bg-primary-container px-4 py-2 rounded-full scale-95 duration-150">Descubrí</button>
+</div>
+</header>
+<!-- Page Content -->
+<div class="p-8 max-w-7xl mx-auto w-full space-y-8">
+<!-- Page Header -->
+<div class="flex justify-between items-end">
+<h1 class="font-headline text-4xl text-on-surface">Resumen de septiembre</h1>
+<div class="relative">
+<select class="appearance-none bg-surface-container-lowest border border-outline-variant text-on-surface font-body py-2 pl-4 pr-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer">
+<option>Septiembre 2023</option>
+<option>Agosto 2023</option>
+<option>Julio 2023</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- KPI Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-surface-variant">
+<p class="font-body text-xs font-semibold tracking-wider uppercase text-on-surface-variant mb-2">Transacciones identificadas</p>
+<div class="flex items-baseline gap-3">
+<span class="font-headline text-3xl text-on-surface">34%</span>
+<span class="font-body text-sm font-medium text-primary-container flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span> +2.4%</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mt-2">meta año 1: 30–40%</p>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-surface-variant">
+<p class="font-body text-xs font-semibold tracking-wider uppercase text-on-surface-variant mb-2">Attach de miembros</p>
+<div class="flex items-baseline gap-3">
+<span class="font-headline text-3xl text-on-surface">31%</span>
+<span class="font-body text-sm font-medium text-primary-container flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span> +1.1%</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mt-2">compran comida en sus visitas</p>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-surface-variant">
+<p class="font-body text-xs font-semibold tracking-wider uppercase text-on-surface-variant mb-2">Socios del Club</p>
+<div class="flex items-baseline gap-2">
+<span class="font-headline text-3xl text-on-surface">82</span>
+<span class="font-headline text-xl text-on-surface-variant">/100</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mt-2">lista de espera: <span class="font-medium text-secondary-container">17</span></p>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-surface-variant">
+<p class="font-body text-xs font-semibold tracking-wider uppercase text-on-surface-variant mb-2">Saldo prepago vivo</p>
+<div class="flex items-baseline">
+<span class="font-headline text-3xl text-on-surface">C$ 186,400</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mt-2">Flujo futuro asegurado</p>
+</div>
+</div>
+<!-- Charts Section (Bento Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Line Chart -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-surface-variant flex flex-col">
+<h3 class="font-headline text-lg text-on-surface mb-6">Frecuencia: socios vs no socios</h3>
+<div class="flex-1 relative min-h-[200px] flex items-end gap-2 pb-4 border-b border-outline-variant/30">
+<!-- CSS Mockup Line Chart -->
+<div class="absolute bottom-0 left-0 w-full h-full pointer-events-none">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 100 50">
+<path class="drop-shadow-md" d="M0,40 Q20,30 40,35 T80,20 T100,10" fill="none" stroke="#C08A2D" stroke-width="2"></path>
+<path d="M0,45 Q20,40 40,42 T80,35 T100,38" fill="none" opacity="0.6" stroke="#2F5D45" stroke-dasharray="4" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<div class="flex gap-6 mt-4">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<span class="font-body text-sm text-on-surface-variant">Socios</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary-container opacity-60"></div>
+<span class="font-body text-sm text-on-surface-variant">No socios</span>
+</div>
+</div>
+</div>
+<!-- Donut Chart -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-surface-variant flex flex-col items-center justify-center relative">
+<h3 class="font-headline text-lg text-on-surface w-full mb-4">Retiros de bolsa del mes</h3>
+<div class="relative w-40 h-40">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary-container donut-segment" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline text-3xl text-on-surface">74</span>
+<span class="font-body text-sm text-on-surface-variant">de 82</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pb-12">
+<!-- Table -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl shadow-sm border border-surface-variant overflow-hidden">
+<div class="p-6 border-b border-surface-variant">
+<h3 class="font-headline text-lg text-on-surface">Próximos eventos</h3>
+</div>
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-body text-xs uppercase tracking-wider text-on-surface-variant">
+<th class="p-4 font-semibold">Evento</th>
+<th class="p-4 font-semibold">Fecha</th>
+<th class="p-4 font-semibold">Ocupación</th>
+<th class="p-4 font-semibold text-right">Proyección</th>
+</tr>
+</thead>
+<tbody class="font-body text-sm text-on-surface">
+<tr class="border-b border-surface-variant hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 font-medium">Mesa del Tostador</td>
+<td class="p-4 text-on-surface-variant">12 sep</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-secondary-container text-secondary-container bg-secondary-container/10 text-xs font-medium">
+                                        8/12 cupos
+                                    </span>
+</td>
+<td class="p-4 text-right tabular-nums">C$ 9,200</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 font-medium">Cata café &amp; cacao</td>
+<td class="p-4 text-on-surface-variant">25 sep</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-secondary-container text-secondary-container bg-secondary-container/10 text-xs font-medium">
+                                        8/12 cupos
+                                    </span>
+</td>
+<td class="p-4 text-right tabular-nums">C$ 9,200</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Campaign Card -->
+<div class="bg-primary-container text-on-primary p-6 rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</div>
+<div class="relative z-10">
+<p class="font-body text-xs font-semibold tracking-wider uppercase text-primary-fixed-dim mb-3">Campaña activa</p>
+<h4 class="font-headline text-xl mb-2">Recordatorio de sellos por WhatsApp</h4>
+</div>
+<div class="relative z-10 mt-8 pt-4 border-t border-primary-fixed-dim/30 flex justify-between items-end">
+<div>
+<p class="font-body text-sm text-primary-fixed-dim">Tasa de apertura</p>
+<p class="font-headline text-3xl">62%</p>
+</div>
+<button class="bg-surface-container-lowest text-primary-container px-4 py-2 rounded-full font-body text-sm font-medium hover:bg-surface-variant transition-colors">
+                            Ver reporte
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

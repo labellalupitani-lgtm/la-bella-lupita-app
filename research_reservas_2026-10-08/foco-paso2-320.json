@@ -1,0 +1,28 @@
+{
+  "active": "res-paso",
+  "bar": {
+    "bottom": 568,
+    "height": 111.390625,
+    "left": 0,
+    "right": 305,
+    "top": 456.609375,
+    "width": 305,
+    "x": 0,
+    "y": 456.609375
+  },
+  "focusRect": {
+    "bottom": 704.15625,
+    "height": 60.46875,
+    "left": 33,
+    "right": 272,
+    "top": 643.6875,
+    "width": 239,
+    "x": 33,
+    "y": 643.6875
+  },
+  "scrollY": 0,
+  "viewport": {
+    "h": 568,
+    "w": 320
+  }
+}

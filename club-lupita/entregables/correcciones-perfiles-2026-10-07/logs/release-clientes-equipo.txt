@@ -1,0 +1,4 @@
+PASA directorio: 109 cuentas, sin compras, búsqueda literal y normalizada, estado, origen, fechas y paginación estable
+PASA ficha y 11 clases de historial, cursor sin omisiones, privacidad y consultas sin mutaciones
+PASA política del propietario, cinco perfiles, cambio de rol, reactivación, auditoría, revocación y conflicto concurrente
+PASA archivo exacto, correos reales preservados, bloqueo de cruces, historial intacto, sin acceso operativo, cupos liberados e idempotencia

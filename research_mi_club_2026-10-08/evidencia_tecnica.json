@@ -1,0 +1,251 @@
+{
+  "fecha": "2026-10-08 America/Managua",
+  "entorno": "PGlite en memoria; sin red; pruebas secuenciales, no prueban concurrencia PostgreSQL multiusuario",
+  "resultados": [
+    {
+      "nombre": "T01: GET /yo renueva y cobra exactamente una vez",
+      "verificado": true,
+      "datos": {
+        "antes": 1000000,
+        "despues": 905000,
+        "debito": 95000,
+        "segundaConsultaNoDuplica": true
+      }
+    },
+    {
+      "nombre": "T02: beneficio rechaza membresía renovable hasta consultar /yo",
+      "verificado": true,
+      "datos": {
+        "antes": {
+          "status": 403,
+          "body": {
+            "error": "No tenés una membresía vigente."
+          }
+        },
+        "despues": {
+          "status": 200,
+          "body": {
+            "codigo": "8B7BBF7F8FA2",
+            "vence": "2026-10-09T03:29:17.875Z"
+          }
+        }
+      }
+    },
+    {
+      "nombre": "T03: reingreso: /yo dice bolsa usada y API entrega segunda bolsa del mismo mes",
+      "verificado": true,
+      "datos": {
+        "reingreso": {
+          "status": 200,
+          "body": {
+            "numero": 1,
+            "quedan": 97,
+            "cobrado": 95000,
+            "saldo": {
+              "pagado": 905000,
+              "bono": 0,
+              "total": 905000
+            }
+          }
+        },
+        "bolsaDelMesEnYo": "2026-10-01",
+        "segunda": {
+          "status": 200,
+          "body": {
+            "codigo": "A409693F5883",
+            "vence": "2026-10-09T03:29:17.913Z"
+          }
+        },
+        "entrega": {
+          "status": 200,
+          "body": {
+            "entregado": true,
+            "clase": "bolsa_mes"
+          }
+        },
+        "usos": [
+          {
+            "ventana": "2026-10-01",
+            "n": 2
+          }
+        ]
+      }
+    },
+    {
+      "nombre": "T04: reactivaciones de nueva membresía vuelven a sumar 500 puntos",
+      "verificado": true,
+      "datos": {
+        "activaciones": 2,
+        "puntos": 1000
+      }
+    },
+    {
+      "nombre": "T05: experiencia recién creada accesible inmediatamente a no miembro",
+      "verificado": true,
+      "datos": {
+        "publica": true,
+        "sinMembresia": true,
+        "compra": {
+          "status": 200,
+          "body": {
+            "butaca": 1,
+            "quedan": 11,
+            "cobrado": 10000,
+            "saldo": {
+              "pagado": 990000,
+              "bono": 0,
+              "total": 990000
+            }
+          }
+        }
+      }
+    },
+    {
+      "nombre": "T06: entrada cedida no aparece en compras del destinatario",
+      "verificado": true,
+      "datos": {
+        "comprador": [
+          {
+            "id": "experiencia:e52992bf-414a-4c0f-b0d6-b1830fab716f",
+            "tipo": "experiencia",
+            "creado": "2026-10-09T03:19:17.953Z",
+            "detalle": {
+              "total": 10000,
+              "butaca": 2,
+              "cedida": true,
+              "cuando": "2026-10-15T21:19:17.939-06:00",
+              "nombre": "Nueva experiencia auditada",
+              "asistencia": null
+            }
+          }
+        ],
+        "destinatario": []
+      }
+    },
+    {
+      "nombre": "T07: cancelar y activar renovación no registran evento de auditoría ni aviso",
+      "verificado": true,
+      "datos": {
+        "cancelar": {
+          "status": 200,
+          "body": {
+            "cancelada": true,
+            "numero": 5,
+            "hasta": "2026-11-08T03:19:17.970Z",
+            "cobrado": 0,
+            "saldo": {
+              "pagado": 1000000,
+              "bono": 0,
+              "total": 1000000
+            }
+          }
+        },
+        "activar": {
+          "status": 200,
+          "body": {
+            "activada": true,
+            "hasta": "2026-11-08T03:19:17.970Z",
+            "cobrado": 0,
+            "saldo": {
+              "pagado": 1000000,
+              "bono": 0,
+              "total": 1000000
+            }
+          }
+        },
+        "logs": [],
+        "avisos": []
+      }
+    },
+    {
+      "nombre": "T08: sin saldo pasa a vencida sin gracia ni aviso y no se recupera al recargar",
+      "verificado": true,
+      "datos": {
+        "estado": "vencida",
+        "saldoTrasRecarga": 100000,
+        "membresia": null,
+        "avisos": []
+      }
+    },
+    {
+      "nombre": "T09: reabrir código activo no renueva diez minutos de vigencia",
+      "verificado": true,
+      "datos": {
+        "mismoCodigo": true,
+        "segundosRestantesAproximados": 29.996,
+        "vence": "2026-10-09T03:19:48.005Z"
+      }
+    },
+    {
+      "nombre": "T10: otra cuenta repite ticket y recibe 200 sin sello ni conflicto explícito",
+      "verificado": true,
+      "datos": {
+        "original": {
+          "status": 200,
+          "body": {
+            "sellos": 1,
+            "nuevo": 1,
+            "cerrada": false
+          }
+        },
+        "otroCliente": {
+          "status": 200,
+          "body": {
+            "sellos": 0,
+            "nuevo": null,
+            "cerrada": false
+          }
+        },
+        "mismoTicketConEspacios": {
+          "status": 200,
+          "body": {
+            "sellos": 2,
+            "nuevo": 2,
+            "cerrada": false
+          }
+        }
+      }
+    },
+    {
+      "nombre": "T11: controles de autenticación, titularidad, entrega única y referencia de compra",
+      "verificado": true,
+      "datos": {
+        "sinSesion": 401,
+        "socioNoEntrega": 403,
+        "entregaUnica": [
+          200,
+          409
+        ],
+        "reintentoMismaButaca": 3,
+        "datosOtroClienteNoExpuestos": true
+      }
+    },
+    {
+      "nombre": "T12: alta de cliente A renueva y cobra también a cliente B",
+      "verificado": true,
+      "datos": {
+        "altaA": 200,
+        "debitoAB": 95000,
+        "consentimientoPrevioB": true
+      }
+    },
+    {
+      "nombre": "T13: topes diarios y mensuales toman hora de Managua",
+      "verificado": true,
+      "datos": {
+        "dia": "2026-10-08",
+        "mes": "2026-10-01",
+        "medianoche": "2026-10-09"
+      }
+    },
+    {
+      "nombre": "T14: no hay sobreventa secuencial de experiencias y saldo insuficiente no cobra",
+      "verificado": true,
+      "datos": {
+        "sinSaldo": 409,
+        "sinCargo": true,
+        "lleno": 409
+      }
+    }
+  ]
+}

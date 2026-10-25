@@ -1,0 +1,55 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa":
+    - generic: event_seat
+    - text: Reservar una mesa
+- banner:
+  - button "Volver":
+    - generic: arrow_back
+  - heading "Reservá una mesa" [level=1]
+- main:
+  - button "Mis reservas"
+  - generic: Tu borrador se conserva durante 24 horas en esta pestaña.
+  - status
+  - alert: No se pudo consultar la agenda de prueba.
+  - navigation "Pasos de la reserva":
+    - button "1. Lugar"
+    - button "2. Fecha y grupo"
+    - button "3. Revisión" [disabled]
+  - heading "Hagamos espacio para vos" [level=2]
+  - text: Fecha de tu visita
+  - textbox "Fecha de tu visita": 2026-10-09
+  - paragraph: Hoy · viernes, 9 de octubre de 2026 · Managua
+  - text: Personas
+  - combobox "Personas":
+    - option "1 persona"
+    - option "2 personas" [selected]
+    - option "3 personas"
+    - option "4 personas"
+    - option "5 personas"
+    - option "6 personas"
+    - option "7 personas"
+    - option "8 personas"
+    - option "9 personas"
+    - option "10 personas"
+    - option "11 personas"
+    - option "12 personas"
+  - paragraph: Duración
+  - button "Menos horas de mesa":
+    - generic: remove
+  - generic: "2"
+  - generic: horas
+  - button "Más horas de mesa":
+    - generic: add
+  - heading "Horarios para Terraza" [level=3]
+  - paragraph: La disponibilidad no pudo verificarse. Usá Actualizar horarios para reintentar.
+  - list
+  - button "Actualizar horarios"
+  - link "Preparar consulta por WhatsApp (abre otra pestaña)":
+    - /url: https://wa.me/50587442005?text=Quisiera%20consultar%20una%20mesa%20en%20Terraza%20para%202%20personas%20el%202026-10-09.%20Entiendo%20que%20esta%20consulta%20no%20confirma%20la%20reserva.
+- paragraph: No pudimos comprobar las mesas. Actualizá los horarios para reintentar.
+- button "Volver"
+- button "Revisar mi reserva" [disabled]

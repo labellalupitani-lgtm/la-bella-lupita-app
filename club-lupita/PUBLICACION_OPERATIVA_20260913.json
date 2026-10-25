@@ -1,0 +1,20 @@
+{
+  "url": "https://club-lupita.el-molino.workers.dev",
+  "version": "eb1b7aa5-93fe-4879-b59b-c6920ebff778",
+  "verified": "2026-09-14T01:13:35.178Z",
+  "migration": {
+    "real": true,
+    "demo": true,
+    "balancePreserved": true
+  },
+  "checks": [
+    "tests",
+    "build",
+    "dry-run",
+    "api-real",
+    "api-demo",
+    "permissions",
+    "assets-exact"
+  ],
+  "personalAccessEnabled": false
+}

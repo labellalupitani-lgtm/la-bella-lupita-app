@@ -1,0 +1,25 @@
+.reserva-nueva { padding-bottom: max(160px, var(--reserva-pie, 180px)); }
+.reserva-nueva fieldset { min-width: 0; }
+.reserva-utilidades { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.reserva-pasos { display: flex; gap: 8px; margin-top: 18px; }
+.reserva-pasos button { min-height: 44px; flex: 1; border-bottom: 2px solid theme('colors.filete'); font-size: 14px; }
+.reserva-pasos [aria-current='step'] { border-color: theme('colors.banda'); color: theme('colors.banda'); font-weight: 700; }
+.reserva-pasos button:disabled { opacity: .65; }
+#res-paso, #res-comprobante { scroll-margin-top: 100px; }
+.reserva-campo { display: grid; gap: 8px; margin: 18px 0; font-weight: 600; min-width: 0; }
+.reserva-campo input, .reserva-campo select, .reserva-campo textarea { width: 100%; min-width: 0; min-height: 48px; padding: 8px 12px; border: 1px solid theme('colors.filete'); background: theme('colors.papel'); border-radius: theme('borderRadius.troquel'); font-size: 16px; font-weight: 400; }
+.reserva-hora { width: 100%; min-height: 48px; border: 1px solid theme('colors.filete'); border-radius: theme('borderRadius.troquel'); }
+.reserva-hora[aria-pressed='true'] { background: theme('colors.banda'); color: theme('colors.papel'); }
+.reserva-detalle { display: grid; gap: 16px; }
+.reserva-detalle dt { font-size: 14px; color: theme('colors.tinta-media'); }
+.reserva-detalle dd { margin-top: 4px; }
+.reserva-nueva .reserva-zonas li > button { width: 100%; text-align: left; }
+@media (max-width: 899px) {
+  .reserva-en-paso .reserva-lugar { display: none; }
+  .reserva-nueva .reserva-lugar > img, .reserva-nueva .reserva-lugar > picture > img { height: 180px; }
+  .reserva-nueva .reserva-lugar-pie { padding: 14px 20px; }
+  .reserva-nueva .reserva-lugar-pie h2 { font-size: 26px; }
+}
+@media (max-width: 480px) {
+  .reserva-nueva .reserva-grupo { grid-template-columns: minmax(0, 1fr); }
+}

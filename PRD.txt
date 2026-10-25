@@ -1,0 +1,51 @@
+web application/stitch/projects/5765812192251292782/screens/62c68f067dae448fafeba6190261f0eb
+# PRD: Club Lupita — Ecosistema Digital de Café de Especialidad
+
+## 1. Visión del Proyecto
+Transformar la experiencia tradicional de **Casa Lupita (La Bella Lupita)** en un ecosistema digital de lealtad y conveniencia. El objetivo es conectar la herencia cafetalera de la familia (desde 1971) con una interfaz moderna que facilite la compra de café, la gestión de membresías y el acceso a experiencias exclusivas en la finca y el bistró.
+
+## 2. Objetivos Estratégicos
+*   **Digitalización de la Lealtad:** Sustituir o complementar el sistema de sellos físico por uno digital integrado.
+*   **Gestión de Membresía:** Facilitar el control de los "Socios Fundadores" y niveles de membresía (Barista, Reserva Lupita).
+*   **Omnicanalidad:** Permitir pedidos para llevar (Take Away), reservas de mesa y compra de productos de la finca desde una sola aplicación.
+*   **Transparencia:** Comunicar la trazabilidad del café desde Matagalpa/Jinotega hasta la taza.
+
+## 3. Público Objetivo
+*   **Socios del Club:** Clientes recurrentes que buscan beneficios exclusivos, trazabilidad y un sentido de pertenencia.
+*   **Amantes del Café de Especialidad:** Usuarios interesados en métodos de preparación, lotes específicos y catas.
+*   **Clientes de Staff:** Equipo interno que gestiona check-ins, pedidos y beneficios de socios en tiempo real.
+
+## 4. Arquitectura de Información (Mapa de Sitio)
+
+### A. Experiencia del Socio (Mobile)
+1.  **Inicio (Dashboard):** Saldo del monedero, tarjeta de sellos digital, retos semanales y accesos rápidos.
+2.  **Pedir (Tienda/Bistró):** Menú digital para pedidos en barra o para llevar.
+3.  **Tienda de la Finca:** Venta de café en grano (Lotes numerados), suscripciones mensuales y kits de regalo.
+4.  **Club (Experiencias):** Reserva de mesas, inscripciones a catas, tours por la finca y visualización de beneficios de nivel.
+5.  **Perfil:** Gestión de datos personales, métodos de pago, preferencias (bebida de siempre, alergias) y configuración de notificaciones (WhatsApp).
+
+### B. Panel de Administración/Staff (Desktop)
+1.  **Resumen de Analítica:** KPIs de retención, ingresos por membresía, frecuencia de visitas y saldo prepago vivo.
+2.  **Check-in en Caja:** Buscador de socios, visualización de preferencias críticas (alergias), sellado de visitas y canje de beneficios.
+3.  **Gestión de Eventos:** Control de cupos para catas y experiencias.
+
+## 5. Sistema de Diseño (Visual Identity)
+*   **Concepto:** "Elegancia Rural Nicaragüense". Mezcla de lo artesanal con lo premium.
+*   **Paleta:** Verde Bosque (#2F5D45), crema suave (Papel), y acentos en dorado para niveles premium.
+*   **Tipografía:** 
+    *   Titulares: *Libre Caslon Text* (Serifa clásica para denotar herencia).
+    *   Cuerpo/UI: *Work Sans* (Grotesca moderna para legibilidad técnica).
+*   **Componentes Clave:** Tarjetas de producto con fotografía gastronómica de alta fidelidad, barras de progreso de nivel, y visualización de trazabilidad tipo "timeline".
+
+## 6. Funcionalidades Clave (Features)
+*   **Monedero Lupita:** Sistema de prepago con bonificaciones por recarga.
+*   **Suscripción de la Finca:** Modelo recurrente para recibir café recién tostado en casa.
+*   **Mesa del Tostador:** Sistema de reserva para experiencias VIP con cupos limitados.
+*   **Transparencia de Lote:** Fichas técnicas detalladas de cada micro-lote (altura, proceso, notas de cata).
+
+## 7. Roadmap de Diseño
+1.  **Fase 1:** Onboarding y Dashboard de Socio (Completado).
+2.  **Fase 2:** Flujo de Pedidos y Tienda (Completado).
+3.  **Fase 3:** Sistema de Reservas y Experiencias (Completado).
+4.  **Fase 4:** Panel de Analítica y Staff (Completado).
+5.  **Fase 5:** Animaciones de fidelidad y micro-interacciones (Pendiente).

@@ -1,0 +1,62 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/yo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/catalogo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/cupos",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-08",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-10",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-10",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/yo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/catalogo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/cupos",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/yo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/catalogo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/cupos",
+    "status": 200
+  }
+]

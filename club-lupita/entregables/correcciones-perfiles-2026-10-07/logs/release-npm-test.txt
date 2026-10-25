@@ -1,0 +1,63 @@
+
+> club-lupita@0.1.0 test
+> node tests/regresion.mjs && node tests/cuenta-cliente.mjs && node tests/operacion.mjs && node tests/correo.mjs && node tests/resend.mjs && node tests/auditoria.mjs && node tests/saldo-cronologico.mjs && node tests/panel.mjs && node tests/seguridad-personal.mjs && node tests/clientes-equipo.mjs
+
+PASA migración de puntos con historial y consumo posterior
+PASA permisos y aislamiento de cuenta
+PASA cobro de caja al socio indicado e idempotencia
+PASA membresía vencida no concede beneficios ni cargos sin consentimiento
+PASA noveno sello conserva un premio pendiente y permite renovarlo
+PASA reserva válida, duplicada y cierre con minutos
+PASA reintento recupera bolsa y recibo antes de comprobar saldo o inventario
+PASA reintento de experiencia devuelve la misma butaca
+PASA recarga y bono son una operación inseparable
+PASA reciclaje de plaza, cancelación visible y renovación consentida
+PASA saldo y puntos llegan por API, el libro mayor no se modifica
+PASA ochenta membresías vencidas sin agotar subpeticiones del Worker
+12 grupos de regresión correctos.
+Cuenta cliente: perfil persistente, validación, permisos, auditoría y paginación sin omisiones verificados.
+PASA acceso preparado, envío confirmado, cuenta nueva y código de un solo uso
+PASA accesos individuales y separación de caja/cocina
+PASA pedido persistente, cobro único, estados, devolución exacta de saldo/puntos y avisos
+PASA atención con respuesta, privacidad, cancelación de reservas, entregas únicas, comprobantes permanentes y métricas
+PASA entrega por personal, uso único y revocación inmediata del acceso
+OK Registro por correo: alta, reingreso, contacto obligatorio, cuenta existente protegida, OTP privado, expiración, cinco intentos, reenvío, uso único y fallo de entrega. Correos simulados: 6
+OK Resend: transporte privado, reserva 100 permitida/101 bloqueada, límite 3000, reinicio diario y ventana mensual, fallo del proveedor invalida código.
+PASA F1: baja revoca la sesión anterior, cobros de caja y renovación automática
+PASA F2: reintento VIP con saldo exacto devuelve la reserva sin un segundo cargo
+PASA F3: aforo simultáneo permite tramos adyacentes y rechaza un pico intermedio lleno
+PASA F4: la API conserva el bono nuevo después de agotar una recarga anterior
+PASA F5: el panel concilia con la composición de las cuentas, incluidas las bajas
+PASA F6: entradas ausentes, null, escalares, arreglos y JSON truncado devuelven 422 sin escribir
+6 grupos de correcciones de auditoría correctos.
+PASA consumos antiguos no gastan un bono posterior; migración sin tocar el libro
+PASA una cuenta sin historial devuelve ceros y no afecta otra cuenta
+PASA cada consumo agota primero el bono que ya existe
+PASA devolución de dinero no recupera bonos usados por compras posteriores
+PASA devoluciones mixtas y fuera de orden conservan el reparto de cada cargo
+PASA creado manda sobre la inserción y el id desempata timestamps iguales
+PASA ajustes, regalos y deuda histórica conservan SUM(monto) sin gastar bonos futuros
+PASA una referencia de devolución ajena o parcial no importa bonos de otro cargo
+PASA acumuladores amplios conservan saldos finales dentro del contrato integer
+PASA libro inmutable y migración repetible conservan resultados y movimientos
+10 grupos de saldo cronológico correctos.
+PASA panel: más de 100 registros, paginación sin pérdida, filtros, historial, roles, resumen, métricas, movimientos y beneficio vencido.
+PASA cambio propio, Unicode, concurrencia, cierre de todas sus sesiones y aislamiento entre usuarios
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+429 !== 200
+
+    at file:///C:/Users/artur/Desktop/Proyectos/La%20Bella%20Lupita%20%20-%20APP/club-lupita/.test-output/release-perfiles/tests/seguridad-personal.mjs:61:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 429,
+  expected: 200,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.12.0

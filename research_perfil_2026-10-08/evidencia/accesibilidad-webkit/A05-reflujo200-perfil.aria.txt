@@ -1,0 +1,44 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa"
+- banner:
+  - button "Volver"
+  - heading "Tu perfil" [level=1]
+- main:
+  - heading "Prueba Regresión" [level=2]
+  - paragraph: en la casa desde octubre de 2026
+  - text: Nivel actual Siguiente Gente de la Casa Barista
+  - progressbar "510 puntos"
+  - paragraph: 490 pts más y subís de nivel
+  - heading "Traé a alguien a la mesa" [level=3]
+  - paragraph: Compartí el enlace del Club para que conozcan la casa y sus beneficios
+  - button "Copiar enlace del Club"
+  - region "Tu perfil de la casa":
+    - heading "Tu perfil de la casa" [level=3]
+    - text: Tu bebida de siempre Todavía no nos lo dijiste Alergias Ninguna anotada Tu cumpleaños 14 de septiembre Cómo recargás En caja, con efectivo o con tarjeta Avisos por WhatsApp Consultá tus preferencias en la barra
+    - paragraph: Mantené tus preferencias al día para tu próxima visita
+    - button "Editar mi perfil"
+  - region "Tu cuenta de casa":
+    - heading "Tu cuenta de casa" [level=3]
+    - list:
+      - listitem: Historial para puntos 8 oct −C$ 100
+      - listitem: Saldo sintético 6 oct +C$ 10,000
+    - button "Ver toda mi actividad"
+    - button "Mis compras y reservas"
+  - button "Volver a la casa"
+  - button "Cerrar sesión"
+- navigation "Secciones de Club Lupita":
+  - list:
+    - listitem:
+      - button "Inicio"
+    - listitem:
+      - button "Pedir"
+    - listitem:
+      - button "Tienda"
+    - listitem:
+      - button "Club"
+    - listitem:
+      - button "Perfil"

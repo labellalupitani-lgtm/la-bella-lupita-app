@@ -1,0 +1,409 @@
+Ir al contenido
+event_seat
+Reservar una mesa
+arrow_back
+Volver al perfil
+Mis compras y reservas
+
+Tus pedidos, mesas y experiencias, siempre a mano.
+
+Explorar la carta
+Mis reservas
+
+Última consulta: 22 oct 2026, 9:28 a. m.
+
+Actualizar
+Todas
+Pedidos
+Café
+Mesas
+Experiencias
+En curso y próximas
+
+4 comprobantes
+
+restaurant
+Tu pedido
+
+Pedido #4101
+
+Estado: preparando
+
+Importe
+C$ 190
+
+2 × Café de prueba con opciones
+C$ 180
+Mesa Fundadora: 10% incluido. Precio unitario antes del descuento: C$ 100.
+Leche: Avena de prueba
+
+Empaque incluido: C$ 10
+
+Restricción confirmada para cocina: Sin nueces; confirmar utensilios separados con cocina.
+
+Registrado: 1 oct 2026, 11:59 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000001
+
+local_cafe
+Café para llevar
+
+Reserva de Cosecha · bolsa 37
+
+Lote 1 · Pagada · en espera de preparación
+
+Importe
+C$ 890
+
+250 g · Grano entero (fixture)
+
+Retiro estimado
+1 nov 2099 al 15 nov 2099
+Lugar y horario
+Mostrador de prueba · 08:00 a 17:00 (fixture)
+Demoras y cancelaciones
+Solo prueba: ante demora se acuerda nueva fecha o se devuelve a la Cuenta de Casa.
+
+Registrado: 1 oct 2026, 11:58 a. m.
+
+Comprobante: bolsa:00000000-0000-4000-8000-000000000002
+
+event_seat
+Tu visita
+
+Tu mesa · Terraza
+
+Confirmada
+
+Anticipo
+C$ 120
+
+Gestionar esta reserva
+Tu visita
+2 nov 2099, 12:00 p. m.
+Hasta
+2 nov 2099, 2:00 p. m.
+Personas
+4 personas
+
+Registrado: 1 oct 2026, 11:57 a. m.
+
+Comprobante: reserva:00000000-0000-4000-8000-000000000003
+
+local_activity
+Experiencia en la casa
+
+Encuentro sintético de café
+
+Entrada registrada
+
+Importe
+C$ 850
+
+4 nov 2099, 4:00 p. m. · Butaca 3
+
+Entrada registrada a tu nombre.
+
+Mesa de prueba · 90 minutos
+
+Incluye tres degustaciones de prueba.
+
+Condición sintética: ingreso diez minutos antes; cupo individual.
+
+Registrado: 1 oct 2026, 11:56 a. m.
+
+Comprobante: experiencia:00000000-0000-4000-8000-000000000004
+
+Historial
+
+16 comprobantes
+
+restaurant
+Tu pedido
+
+Pedido #4105
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 1
+C$ 60
+
+Registrado: 1 oct 2026, 11:55 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000005
+
+restaurant
+Tu pedido
+
+Pedido #4106
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 2
+C$ 60
+
+Registrado: 1 oct 2026, 11:54 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000006
+
+restaurant
+Tu pedido
+
+Pedido #4107
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 3
+C$ 60
+
+Registrado: 1 oct 2026, 11:53 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000007
+
+restaurant
+Tu pedido
+
+Pedido #4108
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 4
+C$ 60
+
+Registrado: 1 oct 2026, 11:52 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000008
+
+restaurant
+Tu pedido
+
+Pedido #4109
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 5
+C$ 60
+
+Registrado: 1 oct 2026, 11:51 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000009
+
+restaurant
+Tu pedido
+
+Pedido #4110
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 6
+C$ 60
+
+Registrado: 1 oct 2026, 11:50 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000010
+
+restaurant
+Tu pedido
+
+Pedido #4111
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 7
+C$ 60
+
+Registrado: 1 oct 2026, 11:49 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000011
+
+restaurant
+Tu pedido
+
+Pedido #4112
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 8
+C$ 60
+
+Registrado: 1 oct 2026, 11:48 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000012
+
+restaurant
+Tu pedido
+
+Pedido #4113
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 9
+C$ 60
+
+Registrado: 1 oct 2026, 11:47 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000013
+
+restaurant
+Tu pedido
+
+Pedido #4114
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 10
+C$ 60
+
+Registrado: 1 oct 2026, 11:46 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000014
+
+restaurant
+Tu pedido
+
+Pedido #4115
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 11
+C$ 60
+
+Registrado: 1 oct 2026, 11:45 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000015
+
+restaurant
+Tu pedido
+
+Pedido #4116
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 12
+C$ 60
+
+Registrado: 1 oct 2026, 11:44 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000016
+
+restaurant
+Tu pedido
+
+Pedido #4117
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 13
+C$ 60
+
+Registrado: 1 oct 2026, 11:43 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000017
+
+restaurant
+Tu pedido
+
+Pedido #4118
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 14
+C$ 60
+
+Registrado: 1 oct 2026, 11:42 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000018
+
+restaurant
+Tu pedido
+
+Pedido #4119
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 15
+C$ 60
+
+Registrado: 1 oct 2026, 11:41 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000019
+
+restaurant
+Tu pedido
+
+Pedido #4120
+
+Estado: entregado
+
+Importe
+C$ 60
+
+1 × Americano sintético 16
+C$ 60
+
+Registrado: 1 oct 2026, 11:40 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000020
+
+Ver anteriores
+
+Más comprobantes de tu cuenta.
+
+notifications
+Avisos y ayuda de la casa
+chevron_right
+home
+Inicio
+local_cafe
+Carta
+storefront
+Tienda
+military_tech
+Mi Club
+person
+Perfil

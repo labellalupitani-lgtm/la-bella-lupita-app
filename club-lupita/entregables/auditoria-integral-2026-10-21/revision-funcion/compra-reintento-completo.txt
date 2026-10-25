@@ -1,0 +1,65 @@
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- main:
+  - heading "Tu pedido, paso a paso." [level=1]
+  - paragraph: El equipo confirma la preparación. Te mostramos cada cambio aquí.
+  - status: Estado de prueba actualizado.
+  - paragraph: Pago confirmado · C$ 135
+  - 'heading "Pedido #1042" [level=2]'
+  - paragraph:
+    - text: "Estado:"
+    - strong: Listo para retirar
+  - list "Estado de preparación":
+    - listitem: ✓ Recibido
+    - listitem: ✓ En preparación
+    - listitem: 3 Listo para retirar
+  - heading "Tu pedido te espera en barra." [level=3]
+  - paragraph: "Mostrá el número #1042 al equipo para recogerlo."
+  - list:
+    - listitem:
+      - strong: Latte
+      - text: C$ 95 por unidad 1 unidad
+      - strong: C$ 95
+  - term: Productos
+  - definition: C$ 95
+  - term: Empaque por pedido
+  - definition: C$ 40
+  - term: Total
+  - definition: C$ 135
+  - paragraph: "Saldo después del pago: C$ 9,765 · Referencia de prueba: LUP-1042"
+  - button "Actualizar estado"
+  - group: Necesito ayuda con mi pedido
+  - button "Volver a la carta · reiniciar prueba"
+  - group:
+    - text: Escenarios de prueba
+    - paragraph: Estos controles simulan estados. No llaman al negocio ni realizan cargos.
+    - text: Próximo escenario
+    - combobox "Próximo escenario" [disabled]:
+      - option "Recorrido normal"
+      - option "Pago rechazado antes del cargo" [selected]
+      - option "Pago hecho, respuesta perdida"
+      - option "Saldo insuficiente"
+      - option "Recepción en pausa"
+      - option "Latte agotado"
+      - option "Catálogo no disponible"
+    - checkbox "Probar nombre largo"
+    - text: Probar nombre largo
+    - paragraph:
+      - text: "Cargos simulados en este recorrido:"
+      - strong: "1"
+      - text: . Los cambios de preparación al actualizar también son sintéticos.
+    - button "Reiniciar demostración"

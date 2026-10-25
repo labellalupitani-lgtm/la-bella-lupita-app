@@ -1,0 +1,152 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "Volver"
+  - heading "Kit del sistema" [level=1]
+- main:
+  - paragraph: La Bella Lupita · Identidad V3
+  - heading "Componentes de la casa" [level=1]
+  - paragraph: Tipografía, superficies y estados de la aplicación
+  - paragraph: Datos de ejemplo para revisión visual
+  - heading "Botones" [level=2]
+  - paragraph: Café sobre crema, esquinas de 4 px y objetivos táctiles de al menos 44 px
+  - button "Recargá"
+  - button "Pagá con QR"
+  - button "Sin cupos" [disabled]
+  - button "Confirmando pedido" [disabled]
+  - paragraph: Sobre superficie oscura
+  - button "Recargá"
+  - button "Pagá con QR"
+  - button "Ya soy socio — iniciar sesión"
+  - heading "Chips" [level=2]
+  - paragraph: "El de escasez nunca aparece sin cifra: si no hay número, no hay chip"
+  - button "Barra" [pressed]
+  - button "Brunch"
+  - button "Bistro"
+  - button "Sobremesa"
+  - text: Quedan 34 de 150 8 de 12 cupos Bolsa del mes lista
+  - heading "Pase del socio" [level=2]
+  - paragraph: Frente y reverso con datos de ejemplo
+  - text: La Bella Lupita Mesa Fundadora
+  - img "Retrato original de La Bella Lupita"
+  - paragraph: De la casa Como vos
+  - img "7 de 9 sellos para la próxima bebida"
+  - paragraph: María López
+  - paragraph: "#037"
+  - button "Ver cómo usarlo"
+  - heading "Cuenta de casa" [level=2]
+  - paragraph: Saldo y acciones sobre superficie café
+  - text: Club Lupita · Mesa Fundadora
+  - paragraph: Tu monedero
+  - paragraph: C$ 1,240
+  - text: Bolsa del mes lista para retirar
+  - heading "La tanda" [level=2]
+  - paragraph: Diez casillas, nueve se ganan, la décima la pone la casa SPEC.md §1
+  - list:
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+  - progressbar "7 de 9 sellos"
+  - paragraph: Te faltan 2 para tu bebida de cortesía
+  - button "Quitar"
+  - button "Sellar visita"
+  - heading "Progreso de nivel" [level=2]
+  - text: Nivel actual Siguiente Barista Reserva Lupita
+  - progressbar "1.880 de 2.500 puntos"
+  - paragraph: 620 pts más y subís de nivel
+  - heading "Avisos" [level=2]
+  - paragraph: "Socios del club: acceso 48 h antes que el público"
+  - paragraph: Tu bolsa del mes está tostada y con tu nombre
+  - alert:
+    - paragraph: "Alergia: nueces"
+  - heading "Filas de lista" [level=2]
+  - button "Tu bebida de siempre Capuchino, leche de almendra"
+  - button "Alergias Nueces"
+  - text: Notificaciones por WhatsApp Activadas Sí
+  - heading "Buscador y ficha de producto" [level=2]
+  - text: Buscar en la carta
+  - searchbox "Buscar en la carta"
+  - article:
+    - button "2× sellos hoy Nica Toast C$ 300"
+    - button "Agregar Nica Toast al pedido"
+  - article:
+    - button "Bagel de Salmón C$ 430"
+    - button "Agregar Bagel de Salmón al pedido"
+  - article:
+    - button "Sin fotografía todavía C$ 110"
+    - button "Agregar Sin fotografía todavía al pedido"
+  - article:
+    - button "Con la foto rota C$ 110"
+    - button "Agregar Con la foto rota al pedido"
+  - heading "Piezas del Inicio" [level=2]
+  - paragraph: "El reto es estructura permanente: cuando no hay ninguno, el módulo se queda y lo dice"
+  - paragraph: Lo de siempre
+  - paragraph: Capuchino con leche de almendra
+  - paragraph: C$ 110 · listo en 6 min
+  - button "Pedir"
+  - paragraph: "Reto de la semana: 3 visitas"
+  - paragraph: "Premio: Waffle El Consentido al 50 %"
+  - text: Vas 2 de 3
+  - progressbar "2 de 3 visitas del reto"
+  - heading "Esta semana no hay reto" [level=3]
+  - paragraph: Volvé el lunes La casa siempre está tramando algo
+  - region "Pasa en la casa":
+    - heading "Pasa en la casa" [level=2]
+    - list:
+      - listitem:
+        - article:
+          - text: Quedan 34 de 150
+          - heading "Reserva de Cosecha" [level=3]
+          - paragraph: Pagás hoy, la retirás recién tostada en temporada
+          - button "Reservá la tuya"
+      - listitem:
+        - article:
+          - text: 8 de 12 cupos
+          - heading "Mesa del Tostador" [level=3]
+          - paragraph: Tres lotes, una mesa larga, doce sillas Viernes 12 de septiembre
+          - button "Ver y apartar"
+  - navigation "Accesos rápidos":
+    - list:
+      - listitem:
+        - button "Pedí para llevar"
+      - listitem:
+        - button "Reservá mesa"
+      - listitem:
+        - button "Tienda de la finca"
+  - heading "Estados" [level=2]
+  - paragraph: Ninguna de las 23 pantallas del prototipo tenía uno Quince vacíos, siete errores de campo, esqueleto y confirmación
+  - heading "Tu tanda está en blanco" [level=3]
+  - paragraph: El primer sello lo pone el barista en tu próxima visita No hay que pedirlo
+  - button "Ver la carta"
+  - heading "Eso no está en la carta de hoy" [level=3]
+  - paragraph: Probá con «capuchino», «huevos» o «dulce». La carta cambia con la temporada
+  - button "Ver toda la carta"
+  - heading "Los doce lugares están tomados" [level=3]
+  - paragraph: Dejá tu nombre y te escribimos primero si alguien suelta uno
+  - button "Anotarme en la lista"
+  - text: Tu número de WhatsApp
+  - textbox "Tu número de WhatsApp" [invalid]: "8744"
+  - alert: Ese número no nos cuadra Son ocho dígitos, sin el 505
+  - status "Cargando la carta"
+  - heading "Indicadores del panel" [level=2]
+  - paragraph: Si un dato no se puede calcular, lo dice No hay ceros de relleno
+  - paragraph: Socios del club
+  - paragraph: 82 /100
+  - paragraph: "Lista de espera: 17"
+  - paragraph: Saldo prepago vivo
+  - paragraph: C$ 186,400
+  - paragraph: Flujo futuro asegurado
+  - paragraph: Comen en sus visitas
+  - paragraph: 31 % +1,1 pts
+  - paragraph: De cada 100 visitas de socio, 31 llevan plato
+  - paragraph: Transacciones identificadas
+  - paragraph: Pendiente de conectar el punto de venta

@@ -1,0 +1,67 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - generic: EL CLUB DE LA CASA
+  - navigation "Navegación principal":
+    - link "Inicio":
+      - /url: /
+      - generic: home
+      - text: Inicio
+    - link "Carta":
+      - /url: /pedir
+      - generic: local_cafe
+      - text: Carta
+    - link "Tienda":
+      - /url: /tienda
+      - generic: storefront
+      - text: Tienda
+    - link "Mi Club":
+      - /url: /club
+      - generic: military_tech
+      - text: Mi Club
+    - link "Perfil":
+      - /url: /perfil
+      - generic: person
+      - text: Perfil
+  - button "Reservar una mesa":
+    - generic: event_seat
+    - text: Reservar una mesa
+    - generic: arrow_forward
+  - button "Mi cuenta Tu cuenta de casa":
+    - generic: M
+    - strong: Mi cuenta
+    - generic: Tu cuenta de casa
+    - generic: chevron_right
+- banner:
+  - button "Volver":
+    - generic: arrow_back
+  - heading "Reservá una mesa" [level=1]
+- main:
+  - complementary "La terraza de la casa":
+    - img "Terraza de La Bella Lupita al atardecer"
+    - text: Tu próxima visita
+    - heading "La mesa te espera" [level=2]
+  - button "Mis reservas"
+  - generic: Tu borrador se conserva durante 24 horas en esta pestaña.
+  - status: Disponibilidad actualizada. Hora de Managua.
+  - navigation "Pasos de la reserva":
+    - button "1. Lugar"
+    - button "2. Fecha y grupo"
+    - button "3. Revisión"
+  - heading "Revisá tu visita" [active] [level=2]
+  - term: Zona
+  - definition: Terraza
+  - term: Fecha y hora
+  - definition: viernes, 9 de octubre de 2026 · 5:00 p. m. · Managua
+  - term: Grupo y duración
+  - definition: 2 personas · 2 horas
+  - term: Anticipo
+  - definition: Sin anticipo
+  - button "Cambiar fecha o grupo"
+  - link "Preparar consulta por WhatsApp (abre otra pestaña)":
+    - /url: https://wa.me/50587442005?text=Quisiera%20consultar%20una%20mesa%20en%20Terraza%20para%202%20personas%20el%202026-10-09.%20Entiendo%20que%20esta%20consulta%20no%20confirma%20la%20reserva.
+- paragraph: Revisá los datos antes de confirmar.
+- button "Volver"
+- button "Ingresar para confirmar"

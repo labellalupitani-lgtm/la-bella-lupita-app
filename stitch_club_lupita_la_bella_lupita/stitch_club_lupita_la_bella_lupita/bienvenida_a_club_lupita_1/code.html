@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Club Lupita - Onboarding</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#714c32",
+                        "secondary-fixed-dim": "#f9bc5a",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#2f1502",
+                        "surface-dim": "#dcdad3",
+                        "primary-fixed": "#bbeecf",
+                        "primary": "#16452f",
+                        "tertiary-fixed-dim": "#efbc9b",
+                        "tertiary-fixed": "#ffdcc6",
+                        "on-tertiary-container": "#f1bf9d",
+                        "surface-tint": "#39684f",
+                        "surface": "#fcf9f2",
+                        "inverse-surface": "#31312c",
+                        "secondary": "#805600",
+                        "surface-variant": "#e5e2db",
+                        "secondary-container": "#ffc15f",
+                        "tertiary": "#57351d",
+                        "inverse-on-surface": "#f3f0e9",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffddb0",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f6f3ec",
+                        "inverse-primary": "#a0d2b3",
+                        "on-secondary-fixed-variant": "#614000",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#002112",
+                        "on-surface-variant": "#414943",
+                        "primary-container": "#2f5d45",
+                        "primary-fixed-dim": "#a0d2b3",
+                        "surface-container-high": "#ebe8e1",
+                        "background": "#fcf9f2",
+                        "surface-container": "#f1eee7",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#623f25",
+                        "outline-variant": "#c0c9c1",
+                        "outline": "#717972",
+                        "on-primary-fixed-variant": "#214f38",
+                        "on-primary-container": "#a2d4b6",
+                        "on-secondary-container": "#754e00",
+                        "surface-bright": "#fcf9f2",
+                        "on-surface": "#1c1c18",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e5e2db",
+                        "on-background": "#1c1c18",
+                        "on-secondary-fixed": "#281800"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Libre Caslon Text", "serif"],
+                        "display": ["Libre Caslon Text", "serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-container-low min-h-screen flex flex-col font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col relative w-full max-w-md mx-auto bg-surface-container-low overflow-hidden shadow-2xl h-screen md:h-[850px] md:my-auto md:rounded-3xl md:border md:border-outline-variant">
+<!-- Full Bleed Hero -->
+<div class="relative w-full h-[60vh] shrink-0">
+<!-- Background Image -->
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLthMi4dfnqrBumSQvp1E2P97ry4plH2fCTHW0RbdD6QZ9IuD2ncdTrFP1_1-4sZP826JHQSizAb_2hXoba-FT9L5nliXscHGLMf24z7u44oJe2_c8qLL5SHhU7r39xGaPDwVCto5k6I34HImhL4wILZr9pT7EbzPOySvmi8NYCHjC5h5yc2b2R6lxZ5Vft3pwHEd0x4d5zCKwWot6Lab-57RgWbdcLm0v8VG9K-IPjZUmXbvPyIAKtnWGM');"></div>
+<!-- Soft Dark Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-inverse-surface/40 to-transparent opacity-95"></div>
+<!-- Text Overlay content -->
+<div class="absolute bottom-0 left-0 w-full p-6 pb-20 flex flex-col">
+<span class="font-label text-[11px] uppercase tracking-[0.15em] text-secondary-container font-semibold mb-3">
+                    DESDE 1971 · MATAGALPA &amp; JINOTEGA
+                </span>
+<h1 class="font-headline text-4xl text-on-primary leading-tight mb-4">
+                    Tres generaciones.<br/>Una taza.
+                </h1>
+<p class="font-body text-sm text-surface-container-low font-light leading-relaxed max-w-[280px]">
+                    El café de nuestra finca, ahora en tu bolsillo: sellos, monedero, cosechas y experiencias de la casa.
+                </p>
+</div>
+</div>
+<!-- Overlapping Card & Actions Section -->
+<div class="relative z-10 flex-grow flex flex-col items-center px-4 pb-8 -mt-10">
+<!-- Main Action Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-xl p-6 border border-surface-container-highest">
+<label class="font-label text-[11px] uppercase tracking-[0.1em] text-on-surface-variant font-medium block mb-2" for="whatsapp">
+                    TU NÚMERO DE WHATSAPP
+                </label>
+<!-- Input Group -->
+<div class="flex items-center rounded-xl border border-outline-variant focus-within:border-primary focus-within:ring-1 focus-within:ring-primary overflow-hidden mb-6 transition-all bg-surface-container-lowest">
+<div class="bg-surface-container-low px-4 py-3 border-r border-outline-variant flex items-center justify-center">
+<span class="font-body text-base text-on-surface font-medium">+505</span>
+</div>
+<input class="flex-grow bg-transparent px-4 py-3 border-none focus:outline-none focus:ring-0 font-body text-base text-on-surface placeholder-outline font-medium w-full" id="whatsapp" placeholder="0000 0000" type="tel"/>
+</div>
+<!-- Primary Button -->
+<button class="w-full bg-primary-container text-on-primary-container font-label text-[13px] uppercase tracking-widest font-semibold py-4 rounded-full flex items-center justify-center hover:bg-primary transition-colors hover:text-on-primary active:scale-[0.98] duration-200 mb-5">
+                    Unite al Club
+                </button>
+<!-- Reassurance Row -->
+<div class="flex items-start gap-3 pt-1 border-t border-surface-variant">
+<span class="material-symbols-outlined text-secondary-container text-xl" style="font-variation-settings: 'FILL' 1;">redeem</span>
+<p class="font-body text-xs text-on-surface-variant leading-tight pt-0.5">
+<strong class="font-semibold text-on-surface">De bienvenida:</strong> 2 sellos de regalo y una sorpresa de cumpleaños.
+                    </p>
+</div>
+</div>
+<!-- Secondary Link -->
+<button class="mt-8 flex items-center justify-center gap-1 font-label text-[11px] uppercase tracking-widest text-primary font-semibold hover:text-primary-container transition-colors group">
+<span>Ya soy socio — Iniciar sesión</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Footer Terms -->
+<div class="mt-auto pt-8 w-full text-center">
+<p class="font-body text-[10px] text-outline">
+                    Al continuar aceptás los términos del Club Lupita
+                </p>
+</div>
+</div>
+</main>
+</body></html>

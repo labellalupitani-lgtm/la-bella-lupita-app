@@ -1,0 +1,82 @@
+{
+  "url": "https://club-lupita.el-molino.workers.dev",
+  "checkedAt": "2026-09-13T20:27:01.597Z",
+  "version": "5ff9cfaa-b1a6-4c2e-8b98-e4c93b84fc5d",
+  "previous": [
+    {
+      "version_id": "688d0f1c-2b72-41f7-9c69-c5a6dee4135c",
+      "percentage": 100
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "sameAsBuild": true
+    },
+    {
+      "path": "/pedir",
+      "status": 200,
+      "sameAsBuild": true
+    },
+    {
+      "path": "/tienda",
+      "status": 200,
+      "sameAsBuild": true
+    },
+    {
+      "path": "/club",
+      "status": 200,
+      "sameAsBuild": true
+    },
+    {
+      "path": "/perfil",
+      "status": 200,
+      "sameAsBuild": true
+    },
+    {
+      "path": "/reservar",
+      "status": 200,
+      "sameAsBuild": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/principal-B9_Lbeeg.js",
+      "status": 200,
+      "sha256": "b3238fd1530f720b7d67bab6b464a823b8ad5b53636ba1fe51e1ba2169d71293",
+      "sameAsBuild": true
+    },
+    {
+      "path": "/assets/principal-BT1Ben2h.css",
+      "status": 200,
+      "sha256": "abd9b38dc0dceb04682477b1078e8773518da3cd7733b198d4a1f32233ee821a",
+      "sameAsBuild": true
+    }
+  ],
+  "api": {
+    "health": {
+      "status": 200,
+      "ok": true
+    },
+    "catalog": {
+      "status": 200,
+      "keys": [
+        "experiencias",
+        "bolsa",
+        "membresia",
+        "zonas"
+      ]
+    },
+    "unauthenticated": {
+      "status": 401
+    }
+  },
+  "ok": true,
+  "browser": {
+    "homeVerified": true,
+    "cartaNavigationVerified": true,
+    "consoleErrors": [],
+    "screenshot": "produccion-inicio.png"
+  }
+}

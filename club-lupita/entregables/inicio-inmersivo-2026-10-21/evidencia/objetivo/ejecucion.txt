@@ -1,0 +1,606 @@
+[
+  {
+    "name": "320 pase abre con Enter",
+    "ok": true,
+    "detail": {
+      "text": "Cerrar\nclose",
+      "label": "Cerrar panel",
+      "class": "flex min-h-[44px] items-center gap-2 rounded-full border border-filete px-4 text-cuerpo text-tinta",
+      "rect": {
+        "x": 184.4375,
+        "y": 65,
+        "width": 110.5625,
+        "height": 44,
+        "right": 295,
+        "bottom": 109
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 Escape devuelve foco al pase",
+    "ok": true,
+    "detail": {
+      "text": "person\nMostrá tu pase",
+      "label": null,
+      "class": "casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-transparent border border-papel text-papel hover:bg-papel/10 py-3 px-5 text-cuerpo font-texto font-medium  inicio-pase-rapido",
+      "rect": {
+        "x": 16,
+        "y": 128,
+        "width": 147.25,
+        "height": 48,
+        "right": 163.25,
+        "bottom": 176
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 Carta enfocada queda operable y libre de navegación",
+    "ok": true,
+    "detail": {
+      "text": "arrow_forward\nExplorar la carta",
+      "label": null,
+      "class": "casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-banda text-papel hover:bg-banda-honda py-3 px-5 text-cuerpo font-texto font-medium  ",
+      "rect": {
+        "x": 20,
+        "y": 188,
+        "width": 174.421875,
+        "height": 48,
+        "right": 194.421875,
+        "bottom": 236
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 Tab producto 1",
+    "ok": true,
+    "detail": {
+      "text": "Pizza Churrasco\nC$ 670\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 20,
+        "y": 115.703125,
+        "width": 212.796875,
+        "height": 260.875,
+        "right": 232.796875,
+        "bottom": 376.578125
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 Tab producto 2",
+    "ok": true,
+    "detail": {
+      "text": "Risotto de Gallo Pinto\nC$ 280\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 19.796875,
+        "y": 115.703125,
+        "width": 212.796875,
+        "height": 260.875,
+        "right": 232.59375,
+        "bottom": 376.578125
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 Tab producto 3",
+    "ok": true,
+    "detail": {
+      "text": "Dulce Tentación\nC$ 320\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 87.59375,
+        "y": 115.703125,
+        "width": 212.796875,
+        "height": 260.875,
+        "right": 300.390625,
+        "bottom": 376.578125
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 Shift+Tab producto 2",
+    "ok": true,
+    "detail": {
+      "text": "Risotto de Gallo Pinto\nC$ 280\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 19.796875,
+        "y": 115.703125,
+        "width": 212.796875,
+        "height": 260.875,
+        "right": 232.59375,
+        "bottom": 376.578125
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 Shift+Tab producto 1",
+    "ok": true,
+    "detail": {
+      "text": "Pizza Churrasco\nC$ 670\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 20,
+        "y": 115.703125,
+        "width": 212.796875,
+        "height": 260.875,
+        "right": 232.796875,
+        "bottom": 376.578125
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 Enter abre detalle del producto",
+    "ok": true,
+    "detail": {
+      "url": "http://127.0.0.1:5190/pedir?plato=pizza-churrasco",
+      "dialog": "DE LA CARTA DE LA CASA\n\nCerrar\nclose\nPizza Churrasco\n\nChurrasco a la parrilla, mozzarella artesanal y chimichurri de la casa.\n\nImagen de referencia.\n\nPorción o tamaño\nConsultá el tamaño y la porción en barra.\n\nC$ 670 por unidad\n\nPara retirar en barra. Empaque: C$ 40 por pedido, incluido en el total antes de pagar.\n\nSi tenés una alergia o restricción, confirmá con el equipo antes de pagar. La descripción no garantiza ausencia de alérgenos.\n\nremove\n1\nadd\nAgregar · C$ 670"
+    }
+  },
+  {
+    "name": "320 Carta navega a /pedir",
+    "ok": true,
+    "detail": {
+      "url": "http://127.0.0.1:5190/pedir"
+    }
+  },
+  {
+    "name": "320 cuenta y recarga accesibles",
+    "ok": true,
+    "detail": {
+      "text": "Recargar en caja",
+      "label": null,
+      "class": "casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-papel text-banda hover:bg-avena py-3 px-5 text-cuerpo font-texto font-medium  ",
+      "rect": {
+        "x": 36,
+        "y": 188.140625,
+        "width": 248,
+        "height": 48,
+        "right": 284,
+        "bottom": 236.140625
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 495,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 recarga conserva instrucciones y acceso al pase",
+    "ok": true,
+    "detail": {
+      "text": "Cerrar\nclose\nEn la casa\nRecargar en caja\n\nMostrá tu pase en caja y decí cuánto querés agregar. La recarga se paga en el mostrador, con efectivo o tarjeta.\n\nPor recarga: de C$ 200 a C$ 3,000. El personal confirma el importe y cualquier bono antes de cobrar.\n\nCuando caja confirme, actualizá para consultar tu saldo.\n\nSaldo: C$ 9,900\n\nEnseñar mi pase\n\nÚltima consulta de tu cuenta: 21/10/26, 7:55:46 a. m.\n\nActualizar mi saldo"
+    }
+  },
+  {
+    "name": "320 pase desde recarga",
+    "ok": true,
+    "detail": {
+      "text": "Cerrar\nclose\nEn la casa\nTu pase de la casa\n\nLa Bella Lupita\n\nMesa Fundadora\n\nVista previa\n\n264C44609E8B\n\nMesa Fundadora #001\n\nVer cómo usarlo\n\nMostrá el código del pase para que el personal encuentre tu cuenta. El pase identifica tu cuenta; el personal confirma cada operación.\n\nPara tu bebida del día o bolsa de 250 g, generá el código del beneficio en Mi Club.\n\nÚltima consulta de tu cuenta: 21/10/26, 7:55:46 a. m.\n\nActualizar mi cuenta"
+    }
+  },
+  {
+    "name": "390 pase abre con Enter",
+    "ok": true,
+    "detail": {
+      "text": "Cerrar\nclose",
+      "label": "Cerrar panel",
+      "class": "flex min-h-[44px] items-center gap-2 rounded-full border border-filete px-4 text-cuerpo text-tinta",
+      "rect": {
+        "x": 254.4375,
+        "y": 205.5,
+        "width": 110.5625,
+        "height": 44,
+        "right": 365,
+        "bottom": 249.5
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 Escape devuelve foco al pase",
+    "ok": true,
+    "detail": {
+      "text": "person\nMostrá tu pase",
+      "label": null,
+      "class": "casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-transparent border border-papel text-papel hover:bg-papel/10 py-3 px-5 text-cuerpo font-texto font-medium  inicio-pase-rapido",
+      "rect": {
+        "x": 16,
+        "y": 128,
+        "width": 162.84375,
+        "height": 48,
+        "right": 178.84375,
+        "bottom": 176
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 Carta enfocada queda operable y libre de navegación",
+    "ok": true,
+    "detail": {
+      "text": "arrow_forward\nExplorar la carta",
+      "label": null,
+      "class": "casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-banda text-papel hover:bg-banda-honda py-3 px-5 text-cuerpo font-texto font-medium  ",
+      "rect": {
+        "x": 20,
+        "y": 604.1875,
+        "width": 174.421875,
+        "height": 48,
+        "right": 194.421875,
+        "bottom": 652.1875
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 Tab producto 1",
+    "ok": true,
+    "detail": {
+      "text": "Pizza Churrasco\nC$ 670\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 20,
+        "y": 197.890625,
+        "width": 266,
+        "height": 303.78125,
+        "right": 286,
+        "bottom": 501.671875
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 Tab producto 2",
+    "ok": true,
+    "detail": {
+      "text": "Risotto de Gallo Pinto\nC$ 280\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 20,
+        "y": 197.890625,
+        "width": 266,
+        "height": 303.78125,
+        "right": 286,
+        "bottom": 501.671875
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 Tab producto 3",
+    "ok": true,
+    "detail": {
+      "text": "Dulce Tentación\nC$ 320\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 104,
+        "y": 197.890625,
+        "width": 266,
+        "height": 303.78125,
+        "right": 370,
+        "bottom": 501.671875
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 Shift+Tab producto 2",
+    "ok": true,
+    "detail": {
+      "text": "Risotto de Gallo Pinto\nC$ 280\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 20,
+        "y": 197.890625,
+        "width": 266,
+        "height": 303.78125,
+        "right": 286,
+        "bottom": 501.671875
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 Shift+Tab producto 1",
+    "ok": true,
+    "detail": {
+      "text": "Pizza Churrasco\nC$ 670\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 20,
+        "y": 197.890625,
+        "width": 266,
+        "height": 303.78125,
+        "right": 286,
+        "bottom": 501.671875
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 Enter abre detalle del producto",
+    "ok": true,
+    "detail": {
+      "url": "http://127.0.0.1:5190/pedir?plato=pizza-churrasco",
+      "dialog": "DE LA CARTA DE LA CASA\n\nCerrar\nclose\nPizza Churrasco\n\nChurrasco a la parrilla, mozzarella artesanal y chimichurri de la casa.\n\nImagen de referencia.\n\nPorción o tamaño\nConsultá el tamaño y la porción en barra.\n\nC$ 670 por unidad\n\nPara retirar en barra. Empaque: C$ 40 por pedido, incluido en el total antes de pagar.\n\nSi tenés una alergia o restricción, confirmá con el equipo antes de pagar. La descripción no garantiza ausencia de alérgenos.\n\nremove\n1\nadd\nAgregar · C$ 670"
+    }
+  },
+  {
+    "name": "390 Carta navega a /pedir",
+    "ok": true,
+    "detail": {
+      "url": "http://127.0.0.1:5190/pedir"
+    }
+  },
+  {
+    "name": "390 cuenta y recarga accesibles",
+    "ok": true,
+    "detail": {
+      "text": "add\nRecargar en caja",
+      "label": null,
+      "class": "casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-papel text-banda hover:bg-avena py-3 px-5 text-cuerpo font-texto font-medium  ",
+      "rect": {
+        "x": 40,
+        "y": 326.4375,
+        "width": 310,
+        "height": 48,
+        "right": 350,
+        "bottom": 374.4375
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "navTop": 771,
+      "centerFree": true,
+      "scrollWidth": 390
+    }
+  },
+  {
+    "name": "390 recarga conserva instrucciones y acceso al pase",
+    "ok": true,
+    "detail": {
+      "text": "Cerrar\nclose\nEn la casa\nRecargar en caja\n\nMostrá tu pase en caja y decí cuánto querés agregar. La recarga se paga en el mostrador, con efectivo o tarjeta.\n\nPor recarga: de C$ 200 a C$ 3,000. El personal confirma el importe y cualquier bono antes de cobrar.\n\nCuando caja confirme, actualizá para consultar tu saldo.\n\nSaldo: C$ 9,900\n\nEnseñar mi pase\n\nÚltima consulta de tu cuenta: 21/10/26, 7:55:49 a. m.\n\nActualizar mi saldo"
+    }
+  },
+  {
+    "name": "390 pase desde recarga",
+    "ok": true,
+    "detail": {
+      "text": "Cerrar\nclose\nEn la casa\nTu pase de la casa\n\nLa Bella Lupita\n\nMesa Fundadora\n\nVista previa\n\n264C44609E8B\n\nMesa Fundadora #001\n\nVer cómo usarlo\n\nMostrá el código del pase para que el personal encuentre tu cuenta. El pase identifica tu cuenta; el personal confirma cada operación.\n\nPara tu bebida del día o bolsa de 250 g, generá el código del beneficio en Mi Club.\n\nÚltima consulta de tu cuenta: 21/10/26, 7:55:49 a. m.\n\nActualizar mi cuenta"
+    }
+  },
+  {
+    "name": "320 texto 200%: Carta accesible y sin overflow",
+    "ok": true,
+    "detail": {
+      "before": "16px",
+      "after": "32px",
+      "text": "arrow_forward\nExplorar la carta",
+      "label": null,
+      "class": "casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-banda text-papel hover:bg-banda-honda py-3 px-5 text-cuerpo font-texto font-medium  ",
+      "rect": {
+        "x": 20,
+        "y": 62.140625,
+        "width": 280,
+        "height": 107.1875,
+        "right": 300,
+        "bottom": 169.328125
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 430.609375,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 texto 200%: producto accesible",
+    "ok": true,
+    "detail": {
+      "text": "Pizza Churrasco\nC$ 670\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 20,
+        "y": 47.203125,
+        "width": 212.796875,
+        "height": 350.78125,
+        "right": 232.796875,
+        "bottom": 397.984375
+      },
+      "viewport": {
+        "w": 320,
+        "h": 568
+      },
+      "navTop": 430.609375,
+      "centerFree": true,
+      "scrollWidth": 320
+    }
+  },
+  {
+    "name": "320 texto 200%: detalle abre",
+    "ok": true,
+    "detail": {
+      "url": "http://127.0.0.1:5190/pedir?plato=pizza-churrasco"
+    }
+  },
+  {
+    "name": "1440 texto 200%: Carta accesible y sin overflow",
+    "ok": true,
+    "detail": {
+      "before": "16px",
+      "after": "32px",
+      "text": "arrow_forward\nExplorar la carta",
+      "label": null,
+      "class": "casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-banda text-papel hover:bg-banda-honda py-3 px-5 text-cuerpo font-texto font-medium  ",
+      "rect": {
+        "x": 112,
+        "y": 298.734375,
+        "width": 290.84375,
+        "height": 65.59375,
+        "right": 402.84375,
+        "bottom": 364.328125
+      },
+      "viewport": {
+        "w": 1440,
+        "h": 1000
+      },
+      "navTop": 1000,
+      "centerFree": true,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "1440 texto 200%: producto accesible",
+    "ok": true,
+    "detail": {
+      "text": "Pizza Churrasco\nC$ 670\narrow_forward",
+      "label": null,
+      "class": "casa-antojo",
+      "rect": {
+        "x": 112,
+        "y": 167.765625,
+        "width": 389.328125,
+        "height": 449.15625,
+        "right": 501.328125,
+        "bottom": 616.921875
+      },
+      "viewport": {
+        "w": 1440,
+        "h": 1000
+      },
+      "navTop": 1000,
+      "centerFree": true,
+      "scrollWidth": 1440
+    }
+  },
+  {
+    "name": "1440 texto 200%: detalle abre",
+    "ok": true,
+    "detail": {
+      "url": "http://127.0.0.1:5190/pedir?plato=pizza-churrasco"
+    }
+  }
+]

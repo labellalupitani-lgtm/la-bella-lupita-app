@@ -1,0 +1,4 @@
+// Datos exclusivamente sintéticos: jamás se publican como ficha comercial.
+export const fichaPrueba={nombre:'Lote de prueba',presentacion:'Grano entero (fixture)',gramos:250,origen:'Finca sintética',proceso:'Lavado de prueba',perfil:'Descripción sintética',retiroDesde:'2099-11-01',retiroHasta:'2099-11-15',lugar:'Mostrador de prueba',horario:'08:00 a 17:00 (fixture)',politica:'Solo prueba: ante demora se acuerda nueva fecha o se devuelve a la Cuenta de Casa.',foto:'',fotoAlt:'',fuente:'Fixture automatizado, no usar en producción',habilitada:true}
+export async function habilitarTienda(t){await t.db.query('UPDATE tienda_lote SET ficha=$1::jsonb',[JSON.stringify(fichaPrueba)])}
+export async function cotizarTienda(t,ref,auth=t.token){const r=await t.request('/api/tienda/cotizar',{ref},auth);if(r.status!==200)throw Error('No se cotizó: '+JSON.stringify(r.body));return {ref,cotizacionId:r.body.id}}

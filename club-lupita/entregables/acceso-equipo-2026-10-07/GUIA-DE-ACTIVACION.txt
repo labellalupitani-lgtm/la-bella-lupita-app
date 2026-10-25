@@ -1,0 +1,48 @@
+ACTIVAR Y USAR EL NUEVO ACCESO DEL EQUIPO
+
+Primer propietario
+1. Abrí https://app.labellalupita.com/personal. Confirmá que diga «OPERACIÓN REAL».
+2. Elegí «Configurar la primera cuenta de propietario».
+3. Ingresá tu nombre, un usuario individual y la clave anterior del propietario. Elegí y confirmá una contraseña propia de al menos 15 caracteres. Podés usar una frase larga y guardarla en tu gestor de contraseñas.
+4. Dejá «Uso un equipo compartido» marcado si estás en la computadora/tablet del negocio. Desmarcalo únicamente en tu dispositivo personal.
+5. Seguí el alta del autenticador: escaneá el QR con tu aplicación de autenticación en tu teléfono personal y confirmá el código. No guardés ese autenticador en el equipo compartido del negocio.
+6. Guardá los códigos de recuperación en un lugar privado fuera del dispositivo compartido. Se muestran una sola vez. Confirmá que los guardaste para continuar.
+
+Este paso lo realiza personalmente el propietario: la aplicación y el asistente no eligen ni conservan su contraseña o segundo factor. Una vez creada la primera cuenta, la clave anterior no permite entrar a operar ni crear propietarios adicionales en ese entorno.
+
+Otros propietarios y empleados
+1. Ingresá como propietario y abrí «Equipo y permisos».
+2. Elegí «Invitar a una persona». Completá nombre, usuario y rol.
+3. Entregá el enlace de invitación solamente a esa persona por un canal privado. No lo publiques ni lo pegues en grupos. Vence en 24 horas y se usa una sola vez.
+4. La persona abre el enlace y elige su contraseña. Propietarios y encargados deben configurar su autenticador antes de operar.
+5. Si venció el enlace, usá «Renovar invitación». Se conserva un autenticador que ya estuviera configurado; no se desactiva el segundo factor.
+
+Conviene activar al menos a dos propietarios, cada uno con contraseña, autenticador y códigos propios. Una cuenta invitada que aún no terminó el alta no sirve como respaldo para desactivar al último propietario preparado.
+
+Roles
+- Propietario: operación completa y administración de accesos.
+- Encargado: operación, clientes, informes y consulta del equipo; no administra accesos.
+- Caja: pedidos, caja, entregas, reservas y atención.
+- Cocina: preparación de pedidos, sin precios ni datos de contacto.
+
+Personal existente
+Sus usuarios y credenciales anteriores se conservaron. Para reemplazar claves iniciales que otra persona conocía, el propietario renueva la invitación y cada empleado elige una nueva contraseña. Los encargados tendrán que configurar el autenticador si aún no lo hicieron.
+
+Uso cotidiano
+- Entrá siempre con tu propio usuario y contraseña. Si tenés MFA configurado, ingresá también el código del autenticador.
+- En el negocio mantené marcada la opción de equipo compartido. Podés darle un nombre, como «Caja principal», para reconocerlo en tus sesiones.
+- Al alejarte, usá «Bloquear». Para cambiar de operador, cerrá la sesión y dejá que la siguiente persona ingrese con su cuenta. Al terminar tu turno, cerrá sesión.
+- Compartido: bloqueo tras 5 minutos sin interacción, sesión de hasta 8 horas. Personal: bloqueo tras 30 minutos, sesión de hasta 12 horas.
+- En Seguridad podés revisar «Mis sesiones», cerrar un dispositivo o cerrar todas tus sesiones. Los cambios sensibles pueden pedirte que confirmés nuevamente tu identidad.
+
+Si perdés acceso
+- Con uno de tus códigos guardados, elegí «Perdí mi acceso». Recuperar la cuenta invalida los demás códigos, cierra las sesiones y exige registrar nuevamente el autenticador. Guardá los códigos nuevos.
+- Si sólo olvidaste la contraseña y conservás el autenticador, otro propietario puede renovar tu invitación.
+- Si perdiste también el autenticador y no tenés códigos, necesitás asistencia técnica del negocio. No existe un botón que permita a otro propietario omitir MFA. Evitá llegar a ese caso conservando tus códigos y manteniendo más de un propietario activo.
+- Si el código del autenticador es rechazado después de haberlo usado, esperá el siguiente código; el mismo no puede reutilizarse. Mantené automática la fecha y hora del teléfono.
+
+Capacitación
+Entrá mediante «Abrir capacitación con datos de prueba». Verificá la indicación de capacitación en pantalla. Sus cuentas e invitaciones son independientes de la operación real y hay que activarlas allí por separado. Al pasar de un entorno al otro, cerrá la sesión actual e ingresá en el destino correspondiente.
+
+Antes de empezar un turno con el nuevo acceso
+Comprobá que ambos propietarios puedan ingresar por separado, que cada uno guardó sus códigos, que caja y cocina muestran sólo su trabajo permitido y que cerrar sesión permite cambiar de operador sin conservar datos de la persona anterior. Los ensayos técnicos ya pasaron; esta comprobación confirma la preparación de las personas y los dispositivos reales.

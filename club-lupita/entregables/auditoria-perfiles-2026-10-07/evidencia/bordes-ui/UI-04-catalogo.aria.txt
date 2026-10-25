@@ -1,0 +1,24 @@
+- link "Ir al contenido":
+  - /url: "#contenido"
+- banner:
+  - button "La Bella Lupita, ir al inicio":
+    - img "La Bella Lupita Bistró-Café"
+  - button "Reservar una mesa"
+- banner:
+  - button "Volver"
+  - heading "Apartá tu mesa" [level=1]
+- main:
+  - complementary "El lugar de tu visita":
+    - img "La terraza de La Bella Lupita al atardecer"
+    - text: Un lugar para quedarse
+    - heading "La terraza" [level=2]
+  - navigation "Pasos de la reserva":
+    - button "1 Lugar"
+    - button "2 Fecha y grupo" [disabled]
+    - button "3 Revisión" [disabled]
+  - heading "Encontrá tu rincón" [level=2]
+  - region "¿Dónde te sentás?":
+    - heading "¿Dónde te sentás?" [level=3]
+    - paragraph: No pudimos traer las zonas de la casa Probá en un momento, o escribinos
+- paragraph: Elegí una zona para seguir
+- button "Elegir fecha y grupo" [disabled]

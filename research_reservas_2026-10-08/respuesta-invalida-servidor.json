@@ -1,0 +1,6 @@
+{
+  "respuesta": {},
+  "status": 200,
+  "reservasReales": 0,
+  "escenario": "Respuesta 200 vacía inyectada, el Worker no recibe la creación"
+}

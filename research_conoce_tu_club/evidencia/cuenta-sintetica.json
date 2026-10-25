@@ -1,0 +1,101 @@
+{
+  "socio": {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "telefono": "50587442006",
+    "nombre": "Prueba Regresión",
+    "creado": "2026-10-09T03:19:48.790Z",
+    "bebida_siempre": null,
+    "alergias": null,
+    "cumple": "2000-09-14T00:00:00.000Z"
+  },
+  "vale": null,
+  "sellos": [
+    {
+      "n": 1,
+      "motivo": "Prueba",
+      "barista": "La casa",
+      "puesto": "2026-10-09T03:19:48.790Z"
+    },
+    {
+      "n": 2,
+      "motivo": "Prueba",
+      "barista": "La casa",
+      "puesto": "2026-10-09T03:19:48.790Z"
+    },
+    {
+      "n": 3,
+      "motivo": "Prueba",
+      "barista": "La casa",
+      "puesto": "2026-10-09T03:19:48.790Z"
+    },
+    {
+      "n": 4,
+      "motivo": "Prueba",
+      "barista": "La casa",
+      "puesto": "2026-10-09T03:19:48.790Z"
+    },
+    {
+      "n": 5,
+      "motivo": "Prueba",
+      "barista": "La casa",
+      "puesto": "2026-10-09T03:19:48.790Z"
+    },
+    {
+      "n": 6,
+      "motivo": "Prueba",
+      "barista": "La casa",
+      "puesto": "2026-10-09T03:19:48.790Z"
+    },
+    {
+      "n": 7,
+      "motivo": "Prueba",
+      "barista": "La casa",
+      "puesto": "2026-10-09T03:19:48.790Z"
+    },
+    {
+      "n": 8,
+      "motivo": "Prueba",
+      "barista": "La casa",
+      "puesto": "2026-10-09T03:19:48.790Z"
+    }
+  ],
+  "saldo": {
+    "pagado": 990000,
+    "bono": 0,
+    "total": 990000
+  },
+  "membresia": {
+    "numero": 1,
+    "estado": "activa",
+    "hasta": "2026-10-24T03:19:48.976Z",
+    "cuota": 95000,
+    "autorenueva": true
+  },
+  "movimientos": [
+    {
+      "id": 3,
+      "monto": -10000,
+      "tipo": "consumo",
+      "concepto": "Historial para puntos",
+      "creado": "2026-10-09T03:19:48.790Z"
+    },
+    {
+      "id": 1,
+      "monto": 1000000,
+      "tipo": "recarga",
+      "concepto": "Saldo sintético",
+      "creado": "2026-10-07T03:19:48.790Z"
+    }
+  ],
+  "tandasCerradas": 0,
+  "premiosPendientes": 0,
+  "puntaje": {
+    "puntos": 510,
+    "nivel_nombre": "Gente de la Casa",
+    "siguiente_nombre": "Barista",
+    "faltan": 490,
+    "avance": 51
+  },
+  "bebidaDelDia": null,
+  "bolsaDelMes": null
+}

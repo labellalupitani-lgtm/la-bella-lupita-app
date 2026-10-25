@@ -1,0 +1,19 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Executable doesn't exist at C:\Users\artur\AppData\Local\ms-playwright\firefox-1543\firefox\firefox.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at C:\Users\artur\Desktop\Proyectos\La Bella Lupita  - APP\club-lupita\tests\perfiles-ui-audit.mjs:11:70 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.12.0

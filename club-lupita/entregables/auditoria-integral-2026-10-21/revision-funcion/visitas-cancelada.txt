@@ -1,0 +1,51 @@
+- text: Demo local · Datos simulados · Sin cobros ni envíos
+- banner:
+  - link "Inicio de las propuestas":
+    - /url: /
+    - img "La Bella Lupita"
+  - navigation "Propuestas de la auditoría":
+    - link "Resumen":
+      - /url: /
+    - link "Carta":
+      - /url: /compra
+    - link "Visitas":
+      - /url: /visitas
+    - link "Equipo":
+      - /url: /equipo
+- link "Saltar a la propuesta":
+  - /url: "#audit-content"
+- banner:
+  - paragraph: LA BELLA LUPITA / TU VISITA · DEMO
+  - heading "Nos vemos otro día." [level=1]
+  - paragraph: La mesa quedó libre. Podés preparar una nueva visita cuando querás.
+- status: Resultado recuperado. La operación ya estaba registrada; no la repetimos.
+- main "Preparación y estado de tu visita":
+  - text: Cancelada · simulación
+  - strong: Terraza
+  - text: sábado, 24 de octubre 1:00 p. m. · 2 horas 2 personas · Hora de Managua
+  - paragraph: "Comprobante: VISITA-DEMO-001"
+  - paragraph: No había anticipo. No se aplicó ningún cargo.
+  - button "Preparar otra visita"
+- complementary "Tu visita y el espacio de la casa":
+  - figure "LA TERRAZA DE LA CASA Hay tiempo para un café.":
+    - img "Mesas y sillones en la terraza de La Bella Lupita, entre palmeras al atardecer"
+    - text: LA TERRAZA DE LA CASA
+    - strong: Hay tiempo para un café.
+  - paragraph: Imagen del activo existente de la terraza. Ilustra ese espacio; no representa las otras zonas.
+  - paragraph: TU PRÓXIMA PAUSA
+  - strong: Terraza
+  - text: sábado, 24 de octubre 1:00 p. m. · 2 horas 2 personas · Hora de Managua Reserva sin anticipo
+  - strong: C$ 0
+- group:
+  - text: Escenarios de prueba
+  - paragraph: Estos controles cambian datos locales de la propuesta. No consultan disponibilidad ni cuentas reales.
+  - text: Simular
+  - combobox "Simular":
+    - option "Consulta normal"
+    - option "Sin horarios disponibles"
+    - option "Error al consultar horarios"
+    - option "Respuesta perdida al confirmar" [selected]
+  - checkbox "Nombre largo en comprobante"
+  - text: Nombre largo en comprobante
+  - button "Reiniciar la demostración"
+  - paragraph: Fechas, horarios, disponibilidad y saldos son sintéticos. Condiciones de anticipo basadas en la fixture local auditada.

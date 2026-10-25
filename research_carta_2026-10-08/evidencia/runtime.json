@@ -1,0 +1,554 @@
+{
+  "date": "2026-10-08 America/Managua",
+  "scope": "Fixture local PGlite, build del código actual; sin escrituras remotas",
+  "checks": [
+    {
+      "name": "public-build-match",
+      "status": "completed",
+      "data": {
+        "status": 200,
+        "assets": [
+          {
+            "asset": "/assets/principal-Cfxl5pt5.js",
+            "status": 200,
+            "bytes": 415080,
+            "sha256": "ef9810f90e45b6535c2831590b886140f9b138a67367402298ff65e0237c723a",
+            "sameAsLocal": true,
+            "headers": {
+              "cacheControl": "public, max-age=0, must-revalidate",
+              "contentEncoding": "br"
+            }
+          },
+          {
+            "asset": "/assets/principal-C3oGQIwt.css",
+            "status": 200,
+            "bytes": 73931,
+            "sha256": "60585a18d8e12446ed5bd6ecb14675fab2e99c4a0d8a66016f0b8a9df668f88c",
+            "sameAsLocal": true,
+            "headers": {
+              "cacheControl": "public, max-age=0, must-revalidate",
+              "contentEncoding": "br"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "layout-320",
+      "status": "completed",
+      "data": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "searchY": 309.390625,
+        "firstProductY": 971.90625,
+        "headlineY": 239.390625,
+        "bodyHeight": 2381,
+        "font": "12px",
+        "a11y": null
+      }
+    },
+    {
+      "name": "layout-390",
+      "status": "completed",
+      "data": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "searchY": 255.390625,
+        "firstProductY": 953.828125,
+        "headlineY": 185.390625,
+        "bodyHeight": 2200,
+        "font": "12px",
+        "a11y": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 25
+        }
+      }
+    },
+    {
+      "name": "layout-768",
+      "status": "completed",
+      "data": {
+        "viewport": 768,
+        "scrollWidth": 768,
+        "searchY": 267.390625,
+        "firstProductY": 1270.71875,
+        "headlineY": 197.390625,
+        "bodyHeight": 2517,
+        "font": "12px",
+        "a11y": null
+      }
+    },
+    {
+      "name": "layout-1024",
+      "status": "completed",
+      "data": {
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "searchY": 920.40625,
+        "firstProductY": 1078.59375,
+        "headlineY": 852.40625,
+        "bodyHeight": 2394,
+        "font": "12px",
+        "a11y": null
+      }
+    },
+    {
+      "name": "layout-1440",
+      "status": "completed",
+      "data": {
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "searchY": 194.390625,
+        "firstProductY": 352.578125,
+        "headlineY": 57.390625,
+        "bodyHeight": 1599,
+        "font": "12px",
+        "a11y": {
+          "violations": [],
+          "incomplete": [],
+          "passes": 26
+        }
+      }
+    },
+    {
+      "name": "search-behaviour",
+      "status": "completed",
+      "data": {
+        "queries": {
+          "cafe": "8 resultados en toda la carta\n\nCAFÉ CALIENTE\nCortadito\nUn espresso cortado con leche caliente en partes iguales Baja el filo, no el café\nC$ 90\nadd\nLatte\nLeche texturizada al vapor sobre un espresso de Matagalpa Más leche que café, textura de seda\nC$ 95\nadd\nCappuccino\nTercios parejos: espresso, leche y espuma Más aire que el latte, más café por sorbo\nC$ 95\nadd\nTé Caliente\nLa opción sin café de la barra Hoja en infusión, agua a punto y no hirviendo\nC$ 100\nadd\nSOBRE HIELO\nCremoso de Café\nCafé, leche y hielo licuados hasta quedar espeso Se toma con pajilla ancha, no con cuchara\nC$ 200\nadd\nREFRESCOS\nGaseosa\nBien fría, para el que no toma café\nC$ 60\nadd\nPLATOS FUERTES\nSalmón del Chef La Bella Lupita\nFilete de salmón con puré mixto, zucchini asado y salsa de café de especialidad La Bella Lupita\nC$ 830\nadd\nALGO DULCE\nCheesecake de Café\nCheesecake cremoso con café de especialidad de la casa\nC$ 240\nadd",
+          "capuchino": "1 resultados en toda la carta\n\nCAFÉ CALIENTE\nCappuccino\nTercios parejos: espresso, leche y espuma Más aire que el latte, más café por sorbo\nC$ 95\nadd",
+          "bagel": "2 resultados en toda la carta\n\nDESAYUNOS\nBagel el Consentido\nBagel con crema de la casa, jamón, huevos de codorniz, germinados y reducción balsámica\nC$ 400\nadd\nBagel de Salmón\nBagel con salmón curado, crema de queso y chips de camote\nC$ 430\nadd",
+          "maracuyá": "0 resultados en toda la carta\n\nsearch\nEso no está en la carta de hoy\n\nProbá con «capuchino», «huevos» o «dulce». La carta cambia con la temporada\n\nVer toda la carta",
+          "calala": "1 resultados en toda la carta\n\nSOBRE HIELO\nLimonada de Calala\nCalala colada, ácida y perfumada\nC$ 170\nadd",
+          "sin lactosa": "0 resultados en toda la carta\n\nsearch\nEso no está en la carta de hoy\n\nProbá con «capuchino», «huevos» o «dulce». La carta cambia con la temporada\n\nVer toda la carta",
+          "dulce": "4 resultados en toda la carta\n\nSOBRE HIELO\nCremoso Light\nSin azúcar añadida Solo el dulce que trae la leche y el que deja el tueste\nC$ 210\nadd\nLimonada Fresa\nFresa madura, dulce contra el ácido del limón\nC$ 170\nadd\nDESAYUNOS\nDulce Tentación\nWaffle artesanal con mermelada de fresa casera, chantilly, frutas de temporada, tierra de chocolate y miel de maple\nC$ 320\nadd\nALGO DULCE\nDelicias de la Abuela\nPostre de mango ahumado con el sello dulce de la casa\nC$ 250\nadd",
+          "   ": "24 resultados en toda la carta\n\nCAFÉ CALIENTE\nEspresso\nTreinta mililitros del Aguacatal, la ladera de la familia Veintiséis segundos, crema espesa, panela\nC$ 80\nadd\nCortadito\nUn espresso cortado con leche caliente en partes iguales Baja el filo, no el café\nC$ 90\nadd\nMacchiato\nMismo espresso, apenas manchado: una cucharada de espuma encima Se toma en dos sorbos\nC$ 90\nadd\nAmericano\nEspresso alargado con agua caliente Al abrirse la taza aparece la naranja madura de la finca\nC$ 85\nadd\nLatte\nLeche texturizada al vapor sobre un espresso de Matagalpa Más leche que café, textura de seda\nC$ 95\nadd\nCappuccino\nTercios parejos: espresso, leche y espuma Más aire que el latte, más café por sorbo\nC$ 95\nadd\nMocha\nEspresso, chocolate fundido y leche al vapor El fondo de cacao del grano, subido de tono\nC$ 120\nadd\nTé Caliente\nLa opción sin café de la barra Hoja en infusión, agua a punto y no hirviendo\nC$ 100\nadd\nSOBRE HIELO\nIced Americano\nEspresso caído directo sobre hielo y agua El grano se abre en frío, más cítrico\nC$ 140\nadd\nIced Latte\nLeche fría sobre hielo y el espresso encima, sin mezclar Se revuelve antes del primer sorbo\nC$ 160\nadd\nCremoso de Café\nCafé, leche y hielo licuados hasta quedar espeso Se toma con pajilla ancha, no con cuchara\nC$ 200\nadd\nCremoso de Oreo\nEl mismo licuado con galleta molida adentro y encima Textura con grumos, a propósito\nC$ 210\nadd\nCremoso Light\nSin azúcar añadida Solo el dulce que trae la leche y el que deja el tueste\nC$ 210\nadd\nLimonada Bella Lupita\nLa clásica lleva limón y hielo Esta lleva tres frutas, hierbabuena machacada al momento y vaso doble\nC$ 190\nadd\nLimonada Clásica\nLimón, hielo y azúcar justa\nC$ 130\nadd\nLimonada Hierbabuena\nHoja machacada, verde y con filo\nC$ 140\nadd\nLimonada Mango\nPulpa de mango maduro, densa y amarilla\nC$ 170\nadd\nLimonada Pitahaya\nColor fucsia, sabor suave, semillas que crujen\nC$ 150\nadd\nLimonada Fresa\nFresa madura, dulce contra el ácido del limón\nC$ 170\nadd\nLimonada Sandía Menta\nSandía jugosa, menta que enfría al final\nC$ 170\nadd\nLimonada de Calala\nCalala colada, ácida y perfumada\nC$ 170\nadd\nREFRESCOS\nGaseosa\nBien fría, para el que no toma café\nC$ 60\nadd\nAgua\nAgua pura, fría o al tiempo Decinos cómo la querés\nC$ 60\nadd\nSoda\nAgua con gas y hielo Limpia el paladar entre bocados\nC$ 60\nadd",
+          "zzzzz": "0 resultados en toda la carta\n\nsearch\nEso no está en la carta de hoy\n\nProbá con «capuchino», «huevos» o «dulce». La carta cambia con la temporada\n\nVer toda la carta"
+        },
+        "afterShowAll": "Espresso, cortado y filtrado del lote del mes De pie o para llevar, en minutos\n\nCAFÉ CALIENTE\nEspresso\nTreinta mililitros del Aguacatal, la ladera de la familia Veintiséis segundos, crema espesa, panela\nC$ 80\nadd\nCortadito\nUn espresso cortado con leche caliente en partes iguales Baja el filo, no el café\nC$ 90\nadd\nMacchiato\nMismo espresso, apenas manchado: una cucharada de espuma encima Se toma en dos sorbos\nC$ 90\nadd\nAmericano\nEspresso alargado con agua caliente Al abrirse la taza aparece la naranja madura de la finca\nC$ 85\nadd\nLatte\nLeche texturizada al vapor sobre un espresso de Matagalpa Más leche que café, textura de seda\nC$ 95\nadd\nCappuccino\nTercios parejos: espresso, leche y espuma Más aire que el latte, más café por sorbo\nC$ 95\nadd\nMocha\nEspresso, chocolate fundido y leche al vapor El fondo de cacao del grano, subido de tono\nC$ 120\nadd\nTé Caliente\nLa opción sin café de la barra Hoja en infusión, agua a punto y no hirviendo\nC$ 100\nadd\nSobre hielo\n13 opciones\nRefrescos\n3 opciones",
+        "selected": "Café"
+      }
+    },
+    {
+      "name": "detail-and-focus",
+      "status": "completed",
+      "data": {
+        "focus": {
+          "tag": "BODY",
+          "label": null
+        },
+        "a11y": {
+          "violations": [],
+          "incomplete": [],
+          "passes": 14
+        },
+        "detailText": "DE LA CARTA DE LA CASA\n\nCerrar\nclose\nEnsalada Lupita\n\nMix de lechugas, vegetales frescos, pasta penne, parmesano y aderezo de la casa Disponible con camarón, pollo o res\n\nremove\n1\nadd\nAgregar — C$ 640",
+        "inputs": 0
+      }
+    },
+    {
+      "name": "quantity-21",
+      "status": "completed",
+      "data": {
+        "displayed": "Cerrar\nclose\n\nRETIRÁS EN BARRA · PLAZA LA FE\n\nTu pedido\nLatte\nC$ 95 c/u\nremove\n21\nadd\nC$ 1,995\nTOTAL\nC$ 1,995\n\nEn tu Cuenta de Casa hay C$ 9,900\n\nPagar con la Cuenta de CasaVaciar el pedido\n\nEl importe se descuenta al enviar el pedido El equipo lo recibe y confirma su preparación Consultá el estado en Mis compras y reservas",
+        "error": "La cantidad de Latte no nos cuadra.",
+        "a11y": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 18
+        },
+        "persisted": {
+          "lineas": [
+            {
+              "id": "latte",
+              "cuanto": 21
+            }
+          ],
+          "referencia": "4005071c-6bc8-4962-8ac8-3a0d67f26dcf",
+          "pendiente": false
+        }
+      }
+    },
+    {
+      "name": "lost-response-retry",
+      "status": "completed",
+      "data": {
+        "error": "Se cayó la señal y no pudimos confirmar el resultado. Consultá el estado o reintentá la misma operación.",
+        "refs": [
+          "3c44409f-a170-43fe-8fac-dbc18a5d50f0",
+          "3c44409f-a170-43fe-8fac-dbc18a5d50f0"
+        ],
+        "sameReference": true,
+        "ordersCreated": 1,
+        "url": "/compras"
+      }
+    },
+    {
+      "name": "pending-removed-product",
+      "status": "completed",
+      "data": {
+        "dialog": "Cerrar\nclose\n\nRETIRÁS EN BARRA · PLAZA LA FE\n\nTu pedido\nshopping_bag\nTu pedido está vacío\n\nTocá el «+» de cualquier plato y aparece acá\n\nIr a la carta",
+        "addEnabled": false,
+        "canRetry": 0,
+        "canEmpty": 0
+      }
+    },
+    {
+      "name": "insufficient-balance",
+      "status": "completed",
+      "data": {
+        "text": "Cerrar\nclose\n\nRETIRÁS EN BARRA · PLAZA LA FE\n\nTu pedido\nLatte\nC$ 95 c/u\nremove\n1\nadd\nC$ 95\nTOTAL\nC$ 95\n\nEn tu Cuenta de Casa hay C$ 0\n\nTe faltan C$ 95 para este pedido Podés recargar en caja o pagar la diferencia ahí mismo\n\nPagar con la Cuenta de CasaVaciar el pedido\n\nEl importe se descuenta al enviar el pedido El equipo lo recibe y confirma su preparación Consultá el estado en Mis compras y reservas",
+        "payEnabled": false,
+        "buttons": [
+          "Cerrar close",
+          "remove",
+          "add",
+          "Pagar con la Cuenta de Casa",
+          "Vaciar el pedido"
+        ]
+      }
+    },
+    {
+      "name": "empty-cart-focus",
+      "status": "completed",
+      "data": {
+        "focusTag": "BUTTON",
+        "focusName": "Cerrar panel",
+        "focusText": "Cerrar close"
+      }
+    },
+    {
+      "name": "deep-link-history",
+      "status": "completed",
+      "data": {
+        "open": "/pedir?plato=latte",
+        "closed": "/pedir?plato=latte",
+        "reopenedOnReload": true
+      }
+    },
+    {
+      "name": "guest-route",
+      "status": "completed",
+      "data": {
+        "showsCarta": 0,
+        "text": "CLUB LUPITA\n\nLa casa digital de La Bella Lupita\n\nEl gusto de volver\n\nDESDE 1971 · MATAGALPA Y JINOTEGA\n\nTres generaciones\nUna taza\n\nEl café de nuestra finca, ahora más cerca de vos. Conocé Club Lupita: tus sellos, tu cuenta y algo rico para tu próxima visita.\n\n01\nTus sellos\n\nSeguí tu tanda\n\n02\nTu cuenta\n\nConsultá tu saldo\n\n03\nLa carta\n\nElegí tu antojo\n\nTu lugar en Club Lupita\n\nCreá tu cuenta o entrá con tu correo. Te enviaremos un código, sin contraseñas.\n\nCorreo electrónico\n\nEstamos preparando el registro por correo. Todavía no podemos enviarte un código.\n\nContinuar con mi correo\nVolver a comprobar\n\n¿Ya tenés cuenta? Usá tu mismo correo para entrar."
+      }
+    },
+    {
+      "name": "webkit-basic",
+      "status": "completed",
+      "data": {
+        "dialogClosed": true,
+        "a11y": {
+          "violations": [],
+          "incomplete": [],
+          "passes": 15
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "api": [
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/cuenta/cobrar",
+      "status": 400
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/cuenta/cobrar",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/cuenta/cobrar",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 401
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/capacidades",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/yo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/catalogo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/cupos",
+      "status": 200
+    }
+  ]
+}

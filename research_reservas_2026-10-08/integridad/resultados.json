@@ -1,0 +1,240 @@
+{
+  "scope": "PGlite isolated, no remote network, sequential requests; not a concurrency load test",
+  "timestamp": "2026-10-09T03:19:46.471Z",
+  "results": [
+    {
+      "name": "La reserva requiere sesión de cliente",
+      "status": "PASS",
+      "evidence": {
+        "status": 401,
+        "body": {
+          "error": "Tu sesión terminó. Ingresá nuevamente."
+        }
+      }
+    },
+    {
+      "name": "Cambiar personas y duración en mismo inicio devuelve reserva original",
+      "status": "PASS",
+      "evidence": {
+        "original": {
+          "status": 200,
+          "body": {
+            "reserva": {
+              "id": "84364123-6d8a-47fb-9bde-632111b0257b",
+              "zona": "ventanal",
+              "cuando": "2026-11-15T16:00:00.000Z",
+              "termina": "2026-11-15T17:00:00.000Z",
+              "personas": 2,
+              "deposito": 0
+            },
+            "yaEstaba": false,
+            "cobrado": 0,
+            "saldo": {
+              "pagado": 0,
+              "bono": 0,
+              "total": 0
+            }
+          }
+        },
+        "requested": {
+          "zona": "ventanal",
+          "cuando": "2026-11-15T10:00:00-06:00",
+          "personas": 12,
+          "horas": 6
+        },
+        "changed": {
+          "status": 200,
+          "body": {
+            "reserva": {
+              "id": "84364123-6d8a-47fb-9bde-632111b0257b",
+              "zona": "ventanal",
+              "cuando": "2026-11-15T16:00:00.000Z",
+              "termina": "2026-11-15T17:00:00.000Z",
+              "personas": 2,
+              "deposito": 0
+            },
+            "yaEstaba": true,
+            "cobrado": 0,
+            "saldo": {
+              "pagado": 0,
+              "bono": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Una cuenta agota diez mesas de terraza con inicios separados por un segundo",
+      "status": "PASS",
+      "evidence": {
+        "statuses": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "occupancy": {
+          "reservas": 10,
+          "personas": 120
+        },
+        "rejected": {
+          "status": 409,
+          "body": {
+            "error": "No nos quedan mesas ahí a esa hora. Probá una hora antes, o el ventanal."
+          }
+        }
+      }
+    },
+    {
+      "name": "Fecha inexistente 31 de noviembre se normaliza a 1 de diciembre",
+      "status": "PASS",
+      "evidence": {
+        "sent": {
+          "zona": "barra",
+          "cuando": "2026-11-31T10:00:00-06:00",
+          "personas": 2,
+          "horas": 1
+        },
+        "result": {
+          "status": 200,
+          "body": {
+            "reserva": {
+              "id": "64796f9d-da8e-4d1c-9ef3-671c1436f276",
+              "zona": "barra",
+              "cuando": "2026-12-01T16:00:00.000Z",
+              "termina": "2026-12-01T17:00:00.000Z",
+              "personas": 2,
+              "deposito": 0
+            },
+            "yaEstaba": false,
+            "cobrado": 0,
+            "saldo": {
+              "pagado": 0,
+              "bono": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "VIP cobra una sola vez, rechaza cancelar y no emite aviso de creación",
+      "status": "PASS",
+      "evidence": {
+        "original": {
+          "status": 200,
+          "body": {
+            "reserva": {
+              "id": "23b80aa8-d3cf-40cf-83ac-4c6ef2e810ba",
+              "zona": "vip",
+              "cuando": "2026-11-15T16:00:00.000Z",
+              "termina": "2026-11-15T18:00:00.000Z",
+              "personas": 2,
+              "deposito": 50000
+            },
+            "yaEstaba": false,
+            "cobrado": 50000,
+            "saldo": {
+              "pagado": 0,
+              "bono": 0,
+              "total": 0
+            }
+          }
+        },
+        "retry": {
+          "status": 200,
+          "body": {
+            "reserva": {
+              "id": "23b80aa8-d3cf-40cf-83ac-4c6ef2e810ba",
+              "zona": "vip",
+              "cuando": "2026-11-15T16:00:00.000Z",
+              "termina": "2026-11-15T18:00:00.000Z",
+              "personas": 2,
+              "deposito": 50000
+            },
+            "yaEstaba": true,
+            "cobrado": 0,
+            "saldo": {
+              "pagado": 0,
+              "bono": 0,
+              "total": 0
+            }
+          }
+        },
+        "cancelled": {
+          "status": 409,
+          "body": {
+            "error": "Esta reserva tiene un depósito. Pedí ayuda para acordar el cambio o la devolución con la casa."
+          }
+        },
+        "balance": {
+          "pagado": 0,
+          "bono": 0,
+          "total": 0
+        },
+        "charges": [
+          {
+            "tipo": "consumo",
+            "monto": -50000,
+            "concepto": "Depósito del Salón VIP",
+            "ref_externa": "dep:23b80aa8-d3cf-40cf-83ac-4c6ef2e810ba"
+          }
+        ],
+        "notices": {
+          "avisos": []
+        }
+      }
+    },
+    {
+      "name": "Cancelar mesa gratis es privada, idempotente y libera inventario",
+      "status": "PASS",
+      "evidence": {
+        "stranger": {
+          "status": 404,
+          "body": {
+            "error": "Reserva no encontrada."
+          }
+        },
+        "first": {
+          "status": 200,
+          "body": {
+            "cancelada": true
+          }
+        },
+        "repeat": {
+          "status": 200,
+          "body": {
+            "cancelada": true,
+            "repetido": true
+          }
+        },
+        "newReservation": "18943162-9c97-4e81-802b-14451d707c56"
+      }
+    },
+    {
+      "name": "Cierre y domingo temprano rechazados",
+      "status": "PASS",
+      "evidence": {
+        "closing": {
+          "status": 400,
+          "body": {
+            "error": "Esa mesa se pasaría de la hora de cierre. Probá más temprano o menos horas."
+          }
+        },
+        "sunday": {
+          "status": 400,
+          "body": {
+            "error": "A esa hora la casa está cerrada. Abrimos de 7 a 21, y los domingos desde las 8."
+          }
+        }
+      }
+    }
+  ]
+}

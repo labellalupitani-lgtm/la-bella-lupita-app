@@ -1,0 +1,471 @@
+/* ============================================================
+   CLUB LUPITA — tokens.css
+   Sistema visual v2.0 · «RENGLÓN Y SELLO»
+
+   Un expediente no tiene sombras: tiene renglones.
+   Toda la jerarquía la hacen seis escalones y ninguno es una sombra
+   (ver §2.5 de la especificación). `box-shadow` queda prohibido en
+   todo el proyecto salvo `:focus-visible`.
+
+   ARQUITECTURA DE TEMAS
+   ---------------------
+   `:root` guarda SOLO lo que no es color: espaciado, medidas, radios,
+   filetes, tipografía, curvas, duraciones y capas.
+   `.tema-papel` y `.tema-tinta` guardan la cromática completa.
+   El tema se pone como CLASE en <html> (script anti-destello en
+   index.html) y se puede teñir un cuarto solo poniendo `.tema-tinta`
+   sobre el <main> de una ruta: Umbral, Mesa Fundadora y Mostrador.
+
+   Nueve pantallas de doce nacen en papel.
+   ============================================================ */
+
+:root {
+  /* ---------- 1. MARCA: los ocho valores, ni uno más ----------
+     Contrastes WCAG 2.1 sobre sRGB; L* en CIE Lab D65. Verificados. */
+  --papel: #f7f0df; /* L* 94,9 — superficie dominante            */
+  --papel-hondo: #ede3ce; /* L* 90,8 — campos, surcos, filas alternas  */
+  --verde-lavado: #e7ecdf; /* L* 92,7 — único relleno sobre papel       */
+  --verde-estarcido: #0f5c3c; /* L* 34,1 — PRIMARIO. 7,06:1 en ambos sentidos */
+  --tinta: #120d0a; /* L*  3,9 — texto y las tres oscuras        */
+  --tinta-alzada: #1a211c; /* L* 11,9 — único plano alzado en oscuro    */
+  --verde-cal: #79b294; /* L* 68,0 — el verde encarnado en oscuro    */
+  --oro-lamina: #c9a456; /* L* 68,9 — acreditación. PROHIBIDO como texto sobre papel (2,09:1) */
+  --oro-tinta: #7c5c1b; /* L* 41,1 — el único oro que habla sobre papel (5,45:1) */
+
+  /* Dos valores de servicio, no de paleta */
+  --tinta-honda: #070403; /* L*  1,25 — sólo scrim de oclusión         */
+  --rojo-baja: #a33520; /* único destructivo — 5,1:1 sobre papel     */
+
+  /* ---------- 2. TIPOGRAFÍA ----------
+     Fraunces hace dos oficios gracias a su eje óptico real (9–144):
+     display a opsz 144 y prosa larga a opsz 14. */
+  --font-editorial: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-ui: 'Archivo', -apple-system, 'Segoe UI', system-ui, sans-serif;
+  --font-lab: 'Chivo Mono', 'SFMono-Regular', ui-monospace, monospace;
+
+  --fs-display-xl: clamp(3.5rem, 1.2rem + 9.4vw, 9.25rem);
+  --fs-display-lg: clamp(2.75rem, 1.6rem + 4.7vw, 6rem);
+  --fs-display-md: clamp(1.75rem, 1.44rem + 1.27vw, 2.125rem);
+  --fs-lab-xl: clamp(2rem, 1.5rem + 2.05vw, 2.75rem);
+  --fs-title-lg: clamp(1.375rem, 1.25rem + 0.51vw, 1.75rem);
+  --fs-title-md: clamp(1.1875rem, 1.11rem + 0.31vw, 1.375rem);
+  --fs-title-sm: 0.9375rem;
+  --fs-body-lg: 1.25rem;
+  --fs-body-md: 1.0625rem;
+  --fs-body-sm: 0.9375rem;
+  --fs-caption: 0.8125rem;
+  --fs-label: 0.6875rem;
+  --fs-lab-lg: 0.9375rem;
+  --fs-lab-md: 0.71875rem;
+  --fs-lab-sm: 0.625rem;
+
+  --lh-display-xl: 0.86;
+  --ls-display-xl: -0.035em;
+  --lh-display-lg: 0.88;
+  --ls-display-lg: -0.032em;
+  --lh-display-md: 1.04;
+  --ls-display-md: -0.022em;
+  --lh-title-lg: 1.16;
+  --ls-title-lg: -0.01em;
+  --lh-title-md: 1.28;
+  --ls-title-md: -0.006em;
+  --lh-title-sm: 1.36;
+  --ls-title-sm: 0.06em;
+  --lh-body-lg: 1.62;
+  --ls-body-lg: 0em;
+  --lh-body-md: 1.62;
+  --ls-body-md: 0em;
+  --lh-body-sm: 1.58;
+  --ls-body-sm: 0em;
+  --lh-caption: 1.45;
+  --ls-caption: 0.01em;
+  --lh-label: 1.1;
+  --ls-label: 0.14em;
+  --lh-lab-xl: 1;
+  --ls-lab-xl: -0.03em;
+  --lh-lab-lg: 1.15;
+  --ls-lab-lg: -0.015em;
+  --lh-lab-md: 1.45;
+  --ls-lab-md: 0.02em;
+  --lh-lab-sm: 1.3;
+  --ls-lab-sm: 0.12em;
+
+  /* Microtipografía como sistema, no como decisión caso a caso */
+  --tracking-display: -0.035em;
+  --leading-display: 0.88;
+  --tracking-mono: 0.08em;
+
+  /* Ejes variables: Fraunces (opsz/wght/SOFT/WONK) y Archivo (wdth/wght) */
+  --fv-display: 'opsz' 144, 'wght' 700, 'SOFT' 30, 'WONK' 0;
+  --fv-titulo: 'opsz' 60, 'wght' 600, 'SOFT' 30, 'WONK' 0;
+  --fv-prosa: 'opsz' 14, 'wght' 400, 'SOFT' 30, 'WONK' 0;
+  --fv-prosa-lg: 'opsz' 18, 'wght' 400, 'SOFT' 30, 'WONK' 0;
+  --fv-ui: 'wdth' 100, 'wght' 400;
+  --fv-ui-semi: 'wdth' 100, 'wght' 600;
+  --fv-ui-alta: 'wdth' 88, 'wght' 600;
+  --fv-pilar: 'wdth' 62, 'wght' 800;
+
+  --w-light: 300;
+  --w-regular: 400;
+  --w-medium: 500;
+  --w-semi: 600;
+  --w-bold: 700;
+  --medida: 34rem;
+
+  /* ---------- 3. ESPACIADO — razón √2 anclada en 4px ---------- */
+  --sp-4xs: 2px;
+  --sp-3xs: 4px;
+  --sp-2xs: 6px;
+  --sp-xs: 8px;
+  --sp-sm: 12px;
+  --sp-md: 16px;
+  --sp-lg: 24px;
+  --sp-xl: 32px;
+  --sp-2xl: 48px;
+  --sp-3xl: 64px;
+  --sp-4xl: 96px;
+  --sp-5xl: 128px;
+
+  /* ---------- 4. GRILLA ---------- */
+  --margen: 20px;
+  --contenedor: 1280px;
+  --medianil: 16px;
+  --alto-cabecera: 56px;
+  --alto-barra: 64px;
+  --tap-min: 44px;
+
+  /* ---------- 5. RADIOS Y FILETES ----------
+     Los cuatro pesos de renglón. Aquí vive toda la jerarquía. */
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 14px;
+  --r-xl: 22px;
+  --r-pill: 999px;
+  --r-arco: 999px 999px 8px 8px;
+
+  --hair: 1px;
+  --hair-accent: 1.5px;
+  /* El grosor del foco NO sale del token de renglon: son cosas distintas y
+     `--hair-accent` se redondea a 1 px en pantallas de 1 dppx. La 2.4.11 pide
+     que el indicador cubra el area de un perimetro de 2 px. */
+  --foco-grosor: 2px;
+  --hair-rule: 3px;
+  --hair-bloque: 6px;
+
+  /* ---------- 6. ROLES DE IMAGEN ----------
+     Muere el contenedor único 4/5 que recortaba ~45% del ancho de los
+     37 platos apaisados. Cinco roles, cada uno con su proporción. */
+  --img-hero: 3 / 2; /* proporción NATIVA de las 37: cero recorte  */
+  --img-riel: 3 / 2; /* carrusel de la carta                       */
+  --img-ficha: 1 / 1; /* miniatura cuadrada de lista                */
+  --img-retrato: 2 / 3; /* las dos verticales reales                  */
+  --img-banda: 21 / 9; /* banda de fondo, sangrada                   */
+
+  /* ---------- 7. MOVIMIENTO ----------
+     Nada aparece: todo se sirve. La materia entra con peso,
+     desacelera como líquido denso sobre crema, y jamás rebota. */
+  --ease-extraccion: cubic-bezier(0.16, 0.84, 0.24, 1);
+  --ease-crema: cubic-bezier(0.32, 0.72, 0.18, 1);
+  --ease-caida: cubic-bezier(0.55, 0, 0.86, 0.3);
+  --ease-vapor: cubic-bezier(0.62, 0.02, 0.2, 1);
+  --ease-flujo: cubic-bezier(0.37, 0, 0.63, 1);
+  --ease-sello: cubic-bezier(0.34, 1.12, 0.44, 1); /* único sobrepaso del sistema */
+
+  --t-1: 120ms; /* táctil                              */
+  --t-2: 200ms; /* techo de inmediatez para toda la UI */
+  --t-3: 320ms; /* paneles, glosas, view transitions   */
+  --t-4: 520ms; /* ritos                               */
+  --t-5: 840ms; /* sólo el troquel                     */
+
+  --reveal-y: 14px;
+  --stagger: 40ms;
+  --scale-max: 1.02;
+
+  /* ---------- 8. CAPAS ---------- */
+  --z-base: 0;
+  --z-sticky: 20;
+  --z-barra: 40;
+  --z-overlay: 60;
+  --z-sheet: 70;
+  --z-toast: 80;
+  --z-grano: 9998;
+
+
+  /* ---------- RELIEVE: UNA SOLA LUZ PARA TODA LA ESCENA ----------
+     Si dos elementos vecinos reciben luz de angulos distintos, el cerebro
+     registra "grafico", no "objeto". Aqui la luz es CENITAL y se declara
+     una vez; ningun componente vuelve a escribir un `inset` a mano.
+
+     Un objeto ALZADO lleva el brillo arriba y la sombra abajo.
+     Un HUECO lleva la sombra arriba, porque el borde cercano ocluye.
+     Las dos direcciones son la misma luz vista sobre geometrias opuestas. */
+  --luz-alta: rgba(255, 238, 196, 0.4);
+  --luz-sombra: rgba(46, 32, 10, 0.5);
+  --relieve-alzado: inset 0 1px 0 var(--luz-alta), inset 0 -5px 10px var(--luz-sombra);
+  --relieve-hundido: inset 0 1px 2px rgba(7, 4, 3, 0.55);
+  --relieve-lacre:
+    inset 0 2px 4px rgba(255, 238, 196, 0.45), inset 0 -7px 14px rgba(46, 32, 10, 0.55);
+  --relieve-filo: inset 0 1px 0 rgba(255, 238, 196, 0.28);
+  --relieve-liquido: inset 0 8px 18px rgba(255, 214, 150, 0.14);
+
+  /* ---------- 9. CONSTANTES DE MARCA ----------
+     Se conservan porque el sitio en vivo del cliente las publica. */
+  --brand-ink: #120d0a;
+  --brand-gold: #c9a456;
+  --brand-cream: #f7f0df;
+
+  /* ---------- 10. TEXTURA ----------
+     `--cerezas` salió del proyecto: era el motivo vegetal dibujado que
+     devuelve el verde estarcido al cliché orgánico del que se lo sacó. */
+  --grano: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+
+/* ============================================================
+   TEMA PAPEL — el suelo por defecto. Nueve pantallas de doce.
+   ============================================================ */
+.tema-papel {
+  color-scheme: light;
+
+  /* Superficies: escalones 0 a 2 de la jerarquía */
+  --bg: var(--papel);
+  --bg-deep: var(--papel-hondo);
+  --surface: var(--papel-hondo);
+  --surface-raised: var(--verde-lavado);
+  --surface-sunken: var(--papel-hondo);
+
+  /* Tinta */
+  --ink: var(--tinta); /* 16,9:1 AAA */
+  --ink-soft: #3a322a; /* 11,4:1 AAA */
+  --muted: #5f5346; /*  6,9:1 AAA */
+  --ink-faint: #6d6155; /*  5,6:1 AA  */
+
+  /* Primario */
+  --acento: var(--verde-estarcido); /* 7,06:1 en las dos direcciones */
+  --acento-ink: var(--verde-estarcido);
+  --acento-wash: var(--verde-lavado);
+  --acento-contra: var(--papel); /* lo que va ENCIMA del verde */
+
+  /* Oro: no es color, es acreditación. Cuatro apariciones. */
+  --gold: var(--oro-lamina); /* decorativo, jamás texto */
+  --gold-ink: var(--oro-tinta); /* el único que habla: 5,45:1 */
+  --gold-bright: var(--oro-lamina);
+  --gold-dim: var(--oro-tinta);
+  --gold-wash: #f0e7d6;
+
+  /* Renglones: los cuatro pesos */
+  --line: rgba(18, 13, 10, 0.14);
+  --line-subtle: rgba(18, 13, 10, 0.075);
+  --line-strong: rgba(18, 13, 10, 0.26);
+  --line-rule: rgba(18, 13, 10, 0.55);
+  --line-gold: rgba(124, 92, 27, 0.42);
+  --line-acento: rgba(15, 92, 60, 0.38);
+  --focus: var(--verde-estarcido);
+
+  /* Semánticos: lo afirmativo es verde, lo destructivo es un solo rojo */
+  --success: var(--verde-estarcido);
+  --warn: #8a5a12;
+  --danger: var(--rojo-baja);
+  --info: var(--verde-estarcido);
+  --success-wash: var(--verde-lavado);
+  --warn-wash: #f0e7d6;
+  --danger-wash: #f2e0da;
+
+  /* Escalón 1: el filete. Único superviviente de la elevación. */
+  --filo: inset 0 1px 0 0 rgba(255, 253, 249, 0.8);
+
+  /* Escalón 5: OCLUSIÓN. No hay popovers flotantes en este sistema. */
+  --telon: rgba(7, 4, 3, 0.62);
+
+  /* Fotografía */
+  --foto-filtro: saturate(0.96) contrast(1.04) brightness(1.01) sepia(0.04);
+  --foto-vineta: radial-gradient(
+    120% 90% at 50% 42%,
+    transparent 0 44%,
+    rgba(74, 52, 30, 0.12) 80%,
+    rgba(74, 52, 30, 0.22) 100%
+  );
+  /* Cuatro paradas con curva: dos paradas producen banda visible. */
+  --foto-scrim: linear-gradient(
+    to top,
+    rgba(18, 13, 10, 0.92) 0%,
+    rgba(18, 13, 10, 0.72) 22%,
+    rgba(18, 13, 10, 0.28) 52%,
+    transparent 78%
+  );
+  --foto-lqip: linear-gradient(163deg, var(--papel-hondo) 0%, #ded0b6 100%);
+
+  --grano-opacidad: 0.05;
+  --grano-mezcla: multiply;
+
+  /* --- Compatibilidad: superficies planas donde antes había degradado ---
+     Los `--elev-N-bg` no eran sombra sino degradados de superficie.
+     Se aplanan: la separación ahora la hace el renglón, no la luz. */
+  --elev-1-bg: none;
+  --elev-2-bg: none;
+  --elev-3-bg: none;
+  --elev-4-bg: none;
+
+  /* El sello: anillo en oro tinta (el oro puro rinde 2,09:1 y no se
+     vería), mancha en oro lámina al 78 %. Ésta es la corrección que
+     la dirección ganadora no había hecho. */
+  --lacre: radial-gradient(122% 122% at 32% 26%,
+    rgba(201,164,86,.92) 0%, rgba(201,164,86,.86) 38%,
+    rgba(124,92,27,.78) 74%, rgba(124,92,27,.7) 100%);
+
+  /* Curva de tueste: del verde al oro, sin pasar por el marrón. */
+  --tueste-a: #0f5c3c;
+  --tueste-b: #7c5c1b;
+  --tueste-c: #c9a456;
+
+}
+
+/* ============================================================
+   TEMA TINTA — se lo ganan tres pantallas, con argumento funcional:
+   UMBRAL (todavía no sos socio: es la puerta de noche)
+   MESA FUNDADORA (el oro sólo modula luz sobre sustrato oscuro)
+   MOSTRADOR (personal, salón en penumbra, decenas de usos por turno)
+   ============================================================ */
+/* ISLAS DE TINTA — cuatro elementos viven sobre sustrato oscuro aunque su
+   pantalla sea de papel: el carne (§2.1, la tinta alzada es su sustrato) y
+   los tres velos que van sobre fotografia. Sin esto sus hijos resuelven
+   tokens de papel y quedan en 2,5:1 sobre negro. Una sola fuente de verdad. */
+.tema-tinta,
+.carnet__cara,
+.jarra__marca-texto,
+.lote__altimetro,
+.telon {
+  color-scheme: dark;
+
+  --bg: var(--tinta);
+  --bg-deep: #0a0705;
+  --surface: var(--tinta-alzada);
+  --surface-raised: var(--tinta-alzada);
+  --surface-sunken: #0e0a08;
+
+  --ink: #f2ece0; /* 16,2:1 AAA */
+  --ink-soft: #cec5b6; /* 11,7:1 AAA */
+  --muted: #a0968a; /*  7,1:1 AAA */
+  --ink-faint: #8a8074; /*  5,3:1 AA  */
+
+  /* Un solo verde, dos temperaturas de luz */
+  --acento: var(--verde-cal); /* 7,91:1 sobre tinta */
+  --acento-ink: var(--verde-cal);
+  --acento-wash: #16201a;
+  --acento-contra: var(--tinta);
+
+  /* Aquí el oro sí habla: 8,14:1 sobre tinta */
+  --gold: var(--oro-lamina);
+  --gold-ink: var(--oro-lamina);
+  --gold-bright: #e6c782;
+  --gold-dim: #8c7038;
+  --gold-wash: #2f2418;
+
+  --line: rgba(242, 236, 224, 0.13);
+  --line-subtle: rgba(242, 236, 224, 0.07);
+  --line-strong: rgba(242, 236, 224, 0.24);
+  --line-rule: rgba(242, 236, 224, 0.5);
+  --line-gold: rgba(201, 164, 86, 0.34);
+  --line-acento: rgba(121, 178, 148, 0.4);
+  --focus: var(--verde-cal);
+
+  --success: var(--verde-cal);
+  --warn: #e8a33f;
+  --danger: #e2705a;
+  --info: var(--verde-cal);
+  --success-wash: #16201a;
+  --warn-wash: #352616;
+  --danger-wash: #341f1a;
+
+  --filo: inset 0 1px 0 0 rgba(242, 236, 224, 0.07);
+  --telon: rgba(7, 4, 3, 0.78);
+
+  --foto-filtro: saturate(0.94) contrast(1.05) brightness(0.94) sepia(0.06);
+  --foto-vineta: radial-gradient(
+    120% 90% at 50% 42%,
+    transparent 0 38%,
+    rgba(18, 13, 10, 0.28) 78%,
+    rgba(18, 13, 10, 0.55) 100%
+  );
+  --foto-scrim: linear-gradient(
+    to top,
+    rgba(7, 4, 3, 0.94) 0%,
+    rgba(7, 4, 3, 0.76) 22%,
+    rgba(7, 4, 3, 0.3) 52%,
+    transparent 78%
+  );
+  --foto-lqip: linear-gradient(163deg, var(--tinta-alzada) 0%, var(--tinta) 100%);
+
+  --grano-opacidad: 0.055;
+  --grano-mezcla: overlay;
+
+  --elev-1-bg: none;
+  --elev-2-bg: none;
+  --elev-3-bg: none;
+  --elev-4-bg: none;
+
+  --lacre: radial-gradient(122% 122% at 32% 26%,
+    #f0d699 0%, #e6c782 16%, #c9a456 38%, #8c6e2f 74%, #5e4718 100%);
+
+  --tueste-a: #79b294;
+  --tueste-b: #8c7038;
+  --tueste-c: #c9a456;
+
+}
+
+@media (min-width: 900px) {
+  :root {
+    --margen: 80px;
+    --medianil: 24px;
+    --reveal-y: 20px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  :root {
+    --hair: 0.5px;
+  }
+}
+
+/* Higiene obligatoria: al conmutar el tema, los ~60 tokens harían un
+   fundido lechoso de 300 ms que se reporta como bug. La clase se pone
+   al conmutar y se retira al frame siguiente con doble rAF. */
+.tema-cambiando,
+.tema-cambiando * {
+  transition: none !important;
+}
+
+/* Movimiento reducido: se elimina el desplazamiento y el bucle,
+   se conserva el fundido corto para que los cambios de estado
+   sigan siendo perceptibles. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-1: 1ms;
+    --t-2: 100ms;
+    --t-3: 100ms;
+    --t-4: 120ms;
+    --t-5: 120ms;
+    --reveal-y: 0px;
+    --stagger: 0ms;
+    --scale-max: 1;
+    --ease-extraccion: linear;
+    --ease-sello: linear;
+  }
+}
+
+/* =========================================================
+   CROMO DE ADMINISTRACION — §8.12
+   Mostrador es panel de personal en salon en penumbra, con
+   decenas de usos por turno. Las cinco duraciones a cero:
+   no es una preferencia estetica, es la regla de frecuencia.
+   ========================================================= */
+[data-chrome='admin'] {
+  --t-1: 0ms;
+  --t-2: 0ms;
+  --t-3: 0ms;
+  --t-4: 0ms;
+  --t-5: 0ms;
+  --reveal-y: 0px;
+  --stagger: 0ms;
+  --scale-max: 1;
+}

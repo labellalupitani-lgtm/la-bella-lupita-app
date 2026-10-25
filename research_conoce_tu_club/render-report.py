@@ -1,0 +1,22 @@
+from pathlib import Path
+import markdown
+from html import escape
+
+root = Path(__file__).resolve().parent
+source = root / 'INFORME-AUDITORIA-CONOCE-TU-CLUB.md'
+md = markdown.Markdown(extensions=['tables', 'toc', 'fenced_code'], extension_configs={'toc': {'toc_depth': '2-2'}})
+body = md.convert(source.read_text(encoding='utf-8'))
+style = '''
+:root{--paper:#fbf7ef;--ink:#44271f;--line:#dcc8b7;--muted:#705d54;--accent:#8c4935}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+.bar{background:#53291e;color:#fff7ed;padding:18px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px}.bar strong{font-size:14px;letter-spacing:.08em}.bar button{background:transparent;border:1px solid #e7cdbb;color:inherit;padding:10px 15px;border-radius:6px;font:inherit;cursor:pointer}
+.layout{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:44px;padding:38px 30px 90px}aside{position:sticky;top:24px;align-self:start;max-height:90vh;overflow:auto;font-size:13px}aside h2{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}aside ul{list-style:none;padding:0}aside li{margin:0 0 12px}aside a{color:var(--muted);text-decoration:none}aside a:hover{text-decoration:underline;color:var(--ink)}
+main{max-width:1050px;min-width:0}h1,h2,h3{line-height:1.2;color:#53291e}h1{font:400 clamp(34px,4vw,54px)/1.08 Georgia,serif;letter-spacing:-.025em;max-width:850px;margin:0 0 22px}h2{font:400 30px/1.2 Georgia,serif;margin:52px 0 20px;padding-top:18px;border-top:1px solid var(--line)}h3{font-size:21px;margin:34px 0 16px}p{margin:14px 0}a{color:#8a3525;text-decoration-thickness:1px;text-underline-offset:3px}strong{font-weight:650}code{font:13px/1.5 Consolas,monospace;background:#f0e7dc;border-radius:3px;padding:2px 5px;overflow-wrap:anywhere}
+table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px;line-height:1.5}th{text-align:left;background:#eee1d4;color:#48291e;font-size:12px}th,td{padding:12px 14px;border:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#fffaf5}blockquote{border-left:4px solid #d5917e;background:#f4e6dd;margin:18px 0;padding:6px 24px}li{margin:8px 0}img{max-width:100%;height:auto}a:focus-visible,button:focus-visible{outline:3px solid #a0422a;outline-offset:3px}.footer{margin-top:44px;border-top:1px solid var(--line);padding-top:15px;font-size:13px;color:var(--muted)}
+@media(max-width:950px){.layout{grid-template-columns:1fr;padding:26px 20px;gap:22px}aside{position:static;max-height:none;border-bottom:1px solid var(--line);padding-bottom:16px}aside ul{columns:2}table{display:block;overflow-x:auto}h2{font-size:27px}.bar{padding:16px 20px}}
+@media(max-width:550px){aside ul{columns:1}body{font-size:15px}.bar strong{font-size:11px}.bar button{font-size:12px}h1{font-size:35px}th,td{padding:9px;min-width:100px}}
+@media print{.bar,aside{display:none}.layout{display:block;padding:0}main{max-width:none}body{background:white;font:10pt/1.5 Arial,sans-serif}h1{font-size:27pt}h2{font-size:18pt;break-after:avoid}h3{break-after:avoid;font-size:13pt}p,li{orphans:3;widows:3}table{font-size:8pt}tr{break-inside:avoid}a{color:inherit}blockquote{break-inside:avoid}@page{size:A4;margin:18mm}
+'''
+html = f'''<!doctype html><html lang="es-NI"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Auditoría de Conocé tu club · La Bella Lupita</title><style>{style}</style></head><body><header class="bar"><strong>LA BELLA LUPITA · AUDITORÍA DE PRODUCTO</strong><button type="button" onclick="window.print()">Imprimir / guardar PDF</button></header><div class="layout"><aside aria-label="Contenido del informe"><details id="indice" open><summary>Contenido del informe</summary>{md.toc}<p><a href="INFORME-AUDITORIA-CONOCE-TU-CLUB.md">Versión Markdown</a></p></details></aside><main>{body}<p class="footer">Documento de diagnóstico · Evidencia local y consultas públicas de solo lectura · Sin cambios en la aplicación.</p></main></div><script>if(matchMedia("(max-width:950px)").matches)document.getElementById("indice").open=false;</script></body></html>'''
+(root/'Auditoria-Conoce-tu-club.html').write_text(html,encoding='utf-8')
+print('HTML generado:',root/'Auditoria-Conoce-tu-club.html')

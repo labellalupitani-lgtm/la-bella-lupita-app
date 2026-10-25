@@ -1,0 +1,14 @@
+
+ ⛅️ wrangler 4.147.0
+────────────────────
+✨ Read 164 files from the assets directory C:\Users\artur\Desktop\Proyectos\La Bella Lupita  - APP\club-lupita\dist
+Total Upload: 634.35 KiB / gzip: 151.31 KiB
+Your Worker has access to the following bindings:
+Binding                                               Resource                  
+env.ASSETS                                            Assets                    
+env.DEMO_AISLADA ("true")                             Environment Variable      
+env.ACCESO_PERSONAL ("false")                         Environment Variable      
+env.ACCESO_CORREO ("true")                            Environment Variable      
+env.EMAIL_FROM ("acceso@labellalupita.com")           Environment Variable      
+
+--dry-run: exiting now.

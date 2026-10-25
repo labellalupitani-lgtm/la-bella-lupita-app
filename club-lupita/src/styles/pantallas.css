@@ -1,0 +1,2685 @@
+/* Club Lupita — pantallas e interacciones firma. */
+
+/* =========================================================
+   CASA
+   ========================================================= */
+
+.casa__hola {
+  padding-bottom: var(--sp-lg);
+}
+
+.casa__falta,
+.casa__push {
+  margin-top: var(--sp-sm);
+  color: var(--ink-soft);
+}
+
+.casa__canjear {
+  margin-top: var(--sp-md);
+}
+
+.casa__duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-sm);
+}
+
+.casa__cifra {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-3xs);
+  padding: var(--sp-md);
+  text-align: left;
+  transition: border-color var(--t-2) var(--ease-crema), transform var(--t-1) var(--ease-crema);
+}
+
+.casa__cifra:active {
+  transform: translateY(1px);
+}
+
+.casa__cifra-valor {
+  color: var(--ink);
+}
+
+.casa__socio,
+.casa__invita {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-sm);
+  padding: var(--sp-lg);
+  width: 100%;
+  text-align: left;
+}
+
+.casa__socio-cabeza {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--sp-md);
+}
+
+.casa__socio-num {
+  color: var(--gold-ink);
+}
+
+.casa__pie {
+  padding-block: var(--sp-2xl) var(--sp-xl);
+  display: grid;
+  gap: var(--sp-xs);
+}
+
+.riel__carta {
+  width: 16.5rem;
+  min-height: 10.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-xs);
+  padding: var(--sp-md);
+  text-align: left;
+  background-color: var(--surface);
+  background-image: var(--elev-1-bg);
+  border-radius: var(--r-md);
+  border: var(--hair) solid var(--line);
+  transition: border-color var(--t-2) var(--ease-crema), transform var(--t-1) var(--ease-crema);
+}
+
+.riel__carta:hover {
+  border-color: var(--line-rule);
+}
+
+.riel__carta:active {
+  transform: translateY(1px);
+}
+
+.riel__carta .chip {
+  margin-top: auto;
+}
+
+/* =========================================================
+   COMANDA — «Lo de Siempre»
+   ========================================================= */
+
+.comanda-marco {
+  position: relative;
+  padding-bottom: var(--sp-md);
+}
+
+.comanda {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-2xs);
+  padding: var(--sp-lg) var(--sp-lg) var(--sp-xl);
+  background-color: var(--surface-raised);
+  background-image: var(--elev-2-bg);
+  border-radius: var(--r-lg) var(--r-lg) var(--r-sm) var(--r-sm);
+  border: var(--hair) solid var(--line-strong);
+  cursor: grab;
+  touch-action: pan-x;
+  text-align: left;
+  width: 100%;
+}
+
+.comanda:active {
+  cursor: grabbing;
+}
+
+.comanda__plato {
+  position: absolute;
+  inset: auto var(--sp-lg) -10px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(60% 100% at 50% 0%, rgba(6, 4, 3, 0.7), transparent 72%);
+  pointer-events: none;
+}
+
+.comanda__hola {
+  color: var(--muted);
+}
+
+.comanda__item {
+  color: var(--ink);
+}
+
+.comanda__meta {
+  color: var(--muted);
+}
+
+.comanda__attach {
+  margin-top: var(--sp-2xs);
+  color: var(--ink-soft);
+}
+
+.comanda__pistas {
+  position: relative;
+  align-self: center;
+  margin-top: var(--sp-md);
+  min-height: 1.2em;
+  width: 100%;
+  text-align: center;
+}
+
+.comanda__pistas > span {
+  position: absolute;
+  inset-inline: 0;
+}
+
+.comanda__pistas .es-arma {
+  color: var(--ink);
+}
+
+/* Perforación del bloc: la comanda se arranca, no se cierra. */
+.comanda__perforacion {
+  position: absolute;
+  inset-inline: var(--sp-md);
+  bottom: 9px;
+  height: 4px;
+  background-image: radial-gradient(circle, var(--bg) 46%, transparent 48%);
+  background-size: 12px 4px;
+  background-repeat: repeat-x;
+  opacity: 0.85;
+}
+
+.comanda__salidas {
+  display: grid;
+  gap: var(--sp-xs);
+  margin-top: var(--sp-md);
+}
+
+@media (min-width: 480px) {
+  .comanda__salidas {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+/* =========================================================
+   TANDA — «El Grano que Cae»
+   ========================================================= */
+
+.minitanda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  width: 100%;
+  padding: var(--sp-md);
+  background-color: var(--surface);
+  background-image: var(--elev-1-bg);
+  border-radius: var(--r-md);
+  border: var(--hair) solid var(--line);
+}
+
+.minitanda__granos {
+  display: flex;
+  gap: 5px;
+}
+
+.grano {
+  position: relative;
+  width: 17px;
+  height: 22px;
+  border-radius: 50% 50% 48% 52% / 44% 44% 56% 56%;
+  border: var(--hair) solid var(--line-strong);
+  display: grid;
+  place-items: center;
+}
+
+.grano.es-lleno {
+  border-color: transparent;
+}
+
+.grano__cuerpo {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--lacre);
+  box-shadow: var(--relieve-alzado);
+  position: relative;
+}
+
+/* La hendidura del grano de café. */
+.grano__cuerpo::after {
+  content: '';
+  position: absolute;
+  inset: 12% 46%;
+  border-radius: var(--r-pill);
+  background: rgba(46, 32, 10, 0.55);
+}
+
+.minitanda__cuenta {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  color: var(--ink);
+}
+
+.tarjeta-tanda {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-lg);
+}
+
+.tanda__rejilla {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--sp-sm);
+  margin-bottom: var(--sp-lg);
+}
+
+.casilla {
+  position: relative;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-sm);
+  background: var(--surface-sunken);
+  border: var(--hair) solid var(--line);
+}
+
+.casilla.es-llena {
+  border-color: var(--line-gold);
+  background: var(--gold-wash);
+}
+
+.casilla__grano {
+  width: 58%;
+  height: 72%;
+  border-radius: 50% 50% 48% 52% / 44% 44% 56% 56%;
+  background: var(--lacre);
+  box-shadow: var(--relieve-alzado);
+  position: relative;
+}
+
+.casilla__grano::after {
+  content: '';
+  position: absolute;
+  inset: 12% 46%;
+  border-radius: var(--r-pill);
+  background: rgba(46, 32, 10, 0.55);
+}
+
+.casilla__hueco {
+  width: 58%;
+  height: 72%;
+  border-radius: 50% 50% 48% 52% / 44% 44% 56% 56%;
+  border: var(--hair) dashed var(--line-strong);
+}
+
+.casilla-decima {
+  aspect-ratio: auto;
+  padding-block: var(--sp-sm);
+  background: transparent;
+  border: 0;
+  border-top: var(--hair) dashed var(--line-acento);
+  border-radius: 0;
+}
+
+.sello.es-apagado {
+  background: none;
+  border: var(--hair) dashed var(--line-acento);
+  box-shadow: none;
+  color: var(--ink-faint);
+}
+
+.sello.es-apagado::before {
+  display: none;
+}
+
+.tanda__estado {
+  text-align: center;
+  color: var(--ink);
+}
+
+.tanda__pista {
+  padding: var(--sp-md);
+  border: var(--hair) dashed var(--line-strong);
+  border-radius: var(--r-md);
+}
+
+/* El canje: sostener 600 ms. No hay botón que se pueda tocar sin querer. */
+.canje {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: var(--sp-lg) 0;
+  touch-action: none;
+  user-select: none;
+}
+
+.canje__halo {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(226, 150, 60, 0.42), transparent 68%);
+  pointer-events: none;
+}
+
+.canje__anillo {
+  width: 96px;
+  height: 96px;
+}
+
+.canje__texto {
+  margin-top: var(--sp-sm);
+  color: var(--ink);
+}
+
+.canje__vale {
+  padding: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.canje__codigo {
+  color: var(--acento-ink);
+  word-break: break-all;
+}
+
+.canje__aviso {
+  max-width: 28ch;
+}
+
+.canje__botones {
+  display: grid;
+  gap: var(--sp-xs);
+  width: 100%;
+  margin-top: var(--sp-sm);
+}
+
+.historial__n {
+  color: var(--muted);
+  margin-right: var(--sp-2xs);
+}
+
+/* =========================================================
+   CUENTA — «La Jarra»
+   ========================================================= */
+
+.saldo {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-2xs);
+}
+
+.saldo__cifra {
+  color: var(--acento-ink);
+}
+
+.jarra__intro {
+  margin-bottom: var(--sp-lg);
+}
+
+.jarra-fila {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  gap: var(--sp-lg);
+  align-items: stretch;
+}
+
+.jarra {
+  position: relative;
+  height: 280px;
+  border-radius: var(--r-sm) var(--r-sm) var(--r-lg) var(--r-lg);
+  border: var(--hair) solid var(--line-strong);
+  background: linear-gradient(100deg, rgba(244, 239, 228, 0.05), rgba(244, 239, 228, 0.01) 40%, transparent);
+  overflow: hidden;
+}
+
+.jarra__liquido {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #6b4a1f 0%, #3f2a12 62%, #2a1c0c 100%);
+  box-shadow: var(--relieve-liquido);
+}
+
+.jarra__menisco {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(230, 199, 130, 0.6), transparent);
+  pointer-events: none;
+}
+
+.jarra__marca {
+  position: absolute;
+  inset-inline: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3xs);
+  padding-left: var(--sp-2xs);
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity var(--t-2) var(--ease-crema);
+}
+
+.jarra__marca.es-alcanzada {
+  opacity: 1;
+}
+
+.jarra__marca-linea {
+  position: absolute;
+  inset-inline: 0;
+  height: var(--hair);
+  background: var(--line-acento);
+}
+
+.jarra__marca-texto {
+  position: relative;
+  /* Estas marcas llevan la cifra del bono: no pueden ser el texto más pequeño
+     de la app, y su color no puede depender del tema porque el vidrio de la
+     jarra es oscuro en los dos. */
+  color: var(--gold-ink);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  background: rgba(10, 7, 5, 0.55);
+  padding: 1px 3px;
+  border-radius: var(--r-xs);
+}
+
+.jarra__bono {
+  color: var(--acento-ink);
+}
+
+.jarra__mano {
+  position: absolute;
+  inset: 0;
+  touch-action: none;
+  cursor: ns-resize;
+}
+
+.jarra__lectura {
+  display: grid;
+  align-content: start;
+  gap: var(--sp-2xs);
+}
+
+.jarra__gana-cifra,
+.jarra__fantasma .lab {
+  color: var(--acento-ink);
+}
+
+.jarra__fantasma {
+  margin-top: var(--sp-xs);
+  padding-top: var(--sp-xs);
+  border-top: var(--hair) dashed var(--line);
+}
+
+.jarra__nota {
+  color: var(--muted);
+}
+
+.jarra__atajos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-xs);
+  margin-top: var(--sp-lg);
+}
+
+.jarra__atajos .boton {
+  flex-direction: column;
+  gap: 2px;
+  padding-inline: var(--sp-2xs);
+  font-size: var(--fs-caption);
+}
+
+.jarra__atajos .es-elegido {
+  border-color: var(--line-acento);
+  color: var(--acento-ink);
+  background: var(--acento-wash);
+}
+
+.jarra__atajo-bono {
+  color: var(--success);
+  font-size: 9px;
+}
+
+.jarra__cobrar {
+  margin-top: var(--sp-md);
+  flex-wrap: wrap;
+}
+
+.jarra__legal {
+  margin-top: var(--sp-xs);
+}
+
+.movimiento-entra {
+  color: var(--success);
+}
+
+/* =========================================================
+   CARTA
+   ========================================================= */
+
+.momentos {
+  display: flex;
+  gap: var(--sp-xs);
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: var(--hair) solid var(--line);
+}
+
+.momentos::-webkit-scrollbar {
+  display: none;
+}
+
+.momento {
+  position: relative;
+  padding: var(--sp-sm) var(--sp-sm) var(--sp-md);
+  color: var(--ink-faint);
+  white-space: nowrap;
+  transition: color var(--t-2) var(--ease-crema);
+}
+
+.momento:hover,
+.momento.es-activo {
+  color: var(--acento-ink);
+}
+
+.momento__filo {
+  position: absolute;
+  bottom: -1px;
+  inset-inline: var(--sp-sm);
+  height: var(--hair-accent);
+  background: var(--acento);
+  border-radius: var(--r-pill);
+}
+
+.carta__cabecera {
+  padding-top: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-xs);
+}
+
+.carta__buscar {
+  margin-top: var(--sp-xs);
+}
+
+.carta__lista {
+  padding-top: var(--sp-lg);
+}
+
+.plato {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: var(--sp-md);
+  padding-block: var(--sp-md);
+  border-bottom: var(--hair) solid var(--line-subtle);
+}
+
+.plato:has(.plato__cuerpo:only-child) {
+  grid-template-columns: 1fr;
+}
+
+/* Era `aspect-ratio: 1`: un cuadrado recorta el 33 % del ancho de un plato
+   apaisado, y sin punto focal declarado ese recorte es ciego. A 3/2 el plato
+   se ve entero. (La §4.2 pide ademas convertir esto en un riel horizontal
+   con scroll-snap: eso es trabajo de la fase 6.) */
+.plato__foto {
+  aspect-ratio: var(--img-riel);
+  border-radius: var(--r-sm);
+}
+
+.plato__cuerpo {
+  display: grid;
+  gap: var(--sp-2xs);
+  align-content: start;
+}
+
+.plato__linea {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-sm);
+}
+
+.plato__precio {
+  color: var(--gold-ink);
+  white-space: nowrap;
+}
+
+.plato__desc {
+  color: var(--muted);
+}
+
+.plato__acciones {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-xs);
+  flex-wrap: wrap;
+  margin-top: var(--sp-2xs);
+}
+
+.plato__pedir {
+  margin-left: auto;
+  min-height: 38px;
+  padding-inline: var(--sp-md);
+}
+
+.carrito-pestana {
+  position: fixed;
+  inset-inline: var(--margen);
+  bottom: calc(var(--alto-barra) + env(safe-area-inset-bottom) + var(--sp-sm));
+  z-index: var(--z-sticky);
+  max-width: 32rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-sm);
+  padding: var(--sp-sm) var(--sp-md);
+  background: var(--acento);
+  color: var(--brand-ink);
+  border-radius: var(--r-md);
+  border: var(--hair) solid var(--line-strong);
+}
+
+.carrito-pestana .etiqueta {
+  color: rgba(18, 13, 10, 0.7);
+}
+
+.pedido {
+  margin-block: var(--sp-md);
+}
+
+.pedido__control {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-xs);
+}
+
+.pedido__paso {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: var(--hair) solid var(--line-strong);
+  border-radius: var(--r-sm);
+  color: var(--ink);
+}
+
+.pedido__importe {
+  min-width: 5.5em;
+  text-align: right;
+  color: var(--gold-ink);
+}
+
+.pedido__total {
+  border-top: var(--hair) solid var(--line-strong);
+  border-bottom: 0;
+  margin-bottom: var(--sp-sm);
+}
+
+/* =========================================================
+   LOTE — «El Ascenso»
+   ========================================================= */
+
+.lote {
+  position: relative;
+  isolation: isolate;
+}
+
+.lote__frio {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(60, 80, 96, 0.28), rgba(18, 13, 10, 0) 62%);
+}
+
+.lote__sierra {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  height: 42vh;
+  z-index: -1;
+  pointer-events: none;
+  color: rgba(28, 20, 15, 0.9);
+}
+
+.lote__sierra svg {
+  width: 100%;
+  height: 100%;
+}
+
+.lote__cabeza {
+  padding-top: calc(var(--sp-2xl) + env(safe-area-inset-top));
+  min-height: 78dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--sp-sm);
+}
+
+.lote__atajo {
+  align-self: flex-start;
+  color: var(--acento-ink);
+  font-size: var(--fs-body-sm);
+  border-bottom: var(--hair) solid var(--line-acento);
+  padding-bottom: 2px;
+}
+
+.lote__nombre {
+  color: var(--ink);
+}
+
+.lote__perfil {
+  color: var(--ink-soft);
+}
+
+.lote__altimetro {
+  position: sticky;
+  top: var(--sp-lg);
+  z-index: var(--z-sticky);
+  float: right;
+  margin-right: var(--margen);
+  display: grid;
+  justify-items: end;
+  padding: var(--sp-xs) var(--sp-sm);
+  background: rgba(10, 7, 5, 0.62);
+  border: var(--hair) solid var(--line-acento);
+  border-radius: var(--r-sm);
+  color: var(--acento-ink);
+}
+
+.lote__unidad {
+  color: var(--muted);
+}
+
+.lote__cuerpo {
+  padding-bottom: var(--sp-5xl);
+}
+
+.lote__hito {
+  min-height: 52dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--sp-2xs);
+  border-top: var(--hair) solid var(--line-subtle);
+}
+
+.lote__cota {
+  color: var(--muted);
+}
+
+.lote__valor {
+  color: var(--ink);
+}
+
+.lote__origen {
+  padding-block: var(--sp-2xl);
+  display: grid;
+  gap: var(--sp-lg);
+}
+
+.lote__origen-texto {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.lote__tueste {
+  display: grid;
+  gap: var(--sp-sm);
+  padding-block: var(--sp-xl);
+}
+
+.curva-tueste {
+  width: 100%;
+  height: 120px;
+}
+
+.curva-tueste__trazo {
+  animation: verter var(--t-5) var(--ease-extraccion) forwards;
+}
+
+@keyframes verter {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .curva-tueste__trazo {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+.lote__ficha {
+  padding-block: var(--sp-xl);
+  display: grid;
+  gap: var(--sp-md);
+  scroll-margin-top: var(--sp-xl);
+}
+
+.lote__tabla .dato dt {
+  color: var(--muted);
+}
+
+.lote__transparencia {
+  color: var(--muted);
+}
+
+.lote__compra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  padding: var(--sp-md);
+  border: var(--hair) solid var(--line-acento);
+  border-radius: var(--r-md);
+  background: var(--acento-wash);
+}
+
+.lote__barra {
+  position: fixed;
+  inset-inline: 0;
+  bottom: calc(var(--alto-barra) + env(safe-area-inset-bottom));
+  z-index: var(--z-sticky);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  max-width: 34.5rem;
+  margin-inline: auto;
+  padding: var(--sp-sm) var(--margen);
+  background-color: color-mix(in srgb, var(--surface-raised) 92%, transparent);
+  border-top: var(--hair) solid var(--line-acento);
+}
+
+/* =========================================================
+   FINCA — «La Última Bolsa»
+   ========================================================= */
+
+.reserva__intro {
+  margin-bottom: var(--sp-lg);
+}
+
+.mazo {
+  position: relative;
+  height: 260px;
+  display: grid;
+  place-items: center;
+}
+
+.mazo__sombra {
+  position: absolute;
+  width: 190px;
+  height: 236px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  border: var(--hair) solid var(--line);
+}
+
+.mazo__sombra-1 {
+  transform: rotate(-3deg) translateY(4px);
+  opacity: 0.7;
+}
+
+.mazo__sombra-2 {
+  transform: rotate(4deg) translateY(8px);
+  opacity: 0.4;
+}
+
+.bolsa {
+  color: var(--ink);
+  position: relative;
+  overflow: hidden;
+  width: 196px;
+  min-height: 240px;
+  padding: var(--sp-md);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-2xs);
+  background-color: var(--surface);
+  background-image: repeating-linear-gradient(
+    98deg,
+    rgba(201, 164, 86, 0.05) 0 2px,
+    transparent 2px 6px
+  );
+  border: var(--hair) solid var(--line-acento);
+  border-radius: var(--r-sm) var(--r-sm) var(--r-md) var(--r-md);
+  cursor: grab;
+  touch-action: pan-y;
+  text-align: left;
+}
+
+.bolsa:active {
+  cursor: grabbing;
+}
+
+.bolsa__casa {
+  color: var(--muted);
+}
+
+.bolsa__serie {
+  color: var(--gold-ink);
+  margin-top: auto;
+}
+
+.bolsa__precio {
+  color: var(--ink-soft);
+}
+
+.bolsa__sello {
+  position: absolute;
+  top: 42%;
+  right: var(--sp-md);
+  transform: rotate(-12deg);
+  padding: var(--sp-2xs) var(--sp-sm);
+  border: 2px solid var(--danger);
+  color: var(--danger);
+  border-radius: var(--r-xs);
+  letter-spacing: 0.14em;
+}
+
+.bolsa__oclusion {
+  position: absolute;
+  inset: auto 0 0;
+  height: 40%;
+  background: linear-gradient(180deg, transparent, rgba(6, 4, 3, 0.5));
+  pointer-events: none;
+}
+
+.bolsa.es-mia {
+  border-color: var(--success);
+}
+
+.mazo__salida {
+  margin-top: var(--sp-md);
+}
+
+.mazo__entrega {
+  margin-top: var(--sp-xs);
+}
+
+.lote-tarjeta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-xs);
+  padding: var(--sp-md);
+  text-align: left;
+}
+
+.lote-tarjeta__foto {
+  width: 100%;
+  margin-bottom: var(--sp-xs);
+}
+
+.finca__bloque {
+  padding: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-sm);
+}
+
+.finca__bloque + .finca__bloque {
+  margin-top: var(--sp-md);
+}
+
+.finca__foto {
+  aspect-ratio: 4 / 3;
+}
+
+.finca__planes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xs);
+}
+
+.finca__planes .boton {
+  flex-direction: column;
+  gap: 2px;
+  font-size: var(--fs-caption);
+}
+
+.finca__confirmada {
+  padding: var(--sp-md);
+  border: var(--hair) solid color-mix(in srgb, var(--success) 40%, transparent);
+  background: var(--success-wash);
+  border-radius: var(--r-md);
+}
+
+/* =========================================================
+   MESA FUNDADORA — «El Carnet que Pesa»
+   ========================================================= */
+
+.carnet-escena {
+  perspective: 900px;
+  display: grid;
+  place-items: center;
+  padding-block: var(--sp-md);
+}
+
+.carnet {
+  position: relative;
+  width: min(100%, 22rem);
+  aspect-ratio: 1.586;
+  transform-style: preserve-3d;
+}
+
+.carnet__cara,
+.carnet__dorso {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--r-lg);
+  padding: var(--sp-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.carnet__cara {
+  background-color: var(--tinta-alzada);
+  background-size: 128px 128px;
+  border: var(--hair) solid var(--line-gold);
+  text-align: left;
+}
+
+.carnet__lamina {
+  position: absolute;
+  inset: -20% -60%;
+  background: linear-gradient(100deg, transparent, rgba(255, 236, 190, 0.5), transparent);
+  pointer-events: none;
+}
+
+.carnet__casa {
+  color: var(--gold-ink);
+  position: relative;
+}
+
+.carnet__nombre {
+  position: relative;
+  margin-top: auto;
+  color: var(--brand-cream);
+}
+
+.carnet__pie {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  color: var(--gold-bright);
+}
+
+.carnet__de {
+  color: var(--muted);
+}
+
+.carnet__dorso {
+  transform: rotateY(180deg);
+  background: var(--papel);
+  color: var(--tinta);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--sp-xs);
+}
+
+.carnet__dorso .etiqueta,
+.carnet__dorso .caption {
+  color: rgba(18, 13, 10, 0.62);
+}
+
+.carnet__codigo {
+  color: var(--oro-tinta);
+}
+
+.carnet__pista {
+  text-align: center;
+  margin-top: var(--sp-xs);
+}
+
+.beneficios {
+  display: grid;
+  gap: var(--sp-sm);
+  margin-block: var(--sp-md);
+}
+
+.beneficio {
+  padding: var(--sp-md);
+  border-left: 2px solid var(--line-acento);
+  background: linear-gradient(90deg, var(--acento-wash), transparent 60%);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  display: grid;
+  gap: var(--sp-3xs);
+}
+
+.lista-puntos {
+  display: grid;
+  gap: var(--sp-xs);
+  margin-block: var(--sp-sm);
+}
+
+.lista-puntos li {
+  position: relative;
+  padding-left: var(--sp-md);
+  color: var(--ink-soft);
+}
+
+.lista-puntos li::before {
+  content: '·';
+  position: absolute;
+  left: 3px;
+  color: var(--acento-ink);
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+.oferta {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-sm);
+}
+
+.oferta__pitch {
+  position: relative;
+}
+
+.oferta__precio {
+  color: var(--acento-ink);
+}
+
+.cupo {
+  display: grid;
+  gap: var(--sp-3xs);
+  margin-block: var(--sp-md);
+}
+
+.cupo > .lab-xl {
+  color: var(--acento-ink);
+}
+
+.cupo__barra {
+  height: 4px;
+  border-radius: var(--r-pill);
+  background: var(--surface-sunken);
+  overflow: hidden;
+  margin-top: var(--sp-xs);
+}
+
+.cupo__barra span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--tueste-a), var(--tueste-b), var(--tueste-c));
+}
+
+.cancelar {
+  margin-top: var(--sp-md);
+  padding-top: var(--sp-md);
+  border-top: var(--hair) solid var(--line);
+  display: grid;
+  gap: var(--sp-xs);
+}
+
+.cancelar summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+/* =========================================================
+   EXPERIENCIAS
+   ========================================================= */
+
+.experiencias__socio {
+  margin-bottom: var(--sp-md);
+}
+
+.experiencias__lista {
+  display: grid;
+  gap: var(--sp-md);
+}
+
+.experiencia {
+  overflow: hidden;
+  display: grid;
+}
+
+@media (min-width: 560px) {
+  .experiencia {
+    grid-template-columns: 40% 1fr;
+  }
+}
+
+.experiencia__foto {
+  border-radius: 0;
+  border: 0;
+  aspect-ratio: 16 / 10;
+  height: 100%;
+}
+
+@media (min-width: 560px) {
+  .experiencia__foto {
+    aspect-ratio: auto;
+  }
+}
+
+.experiencia__cuerpo {
+  padding: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-2xs);
+  align-content: start;
+}
+
+.experiencia__precio {
+  color: var(--ink);
+  margin-top: var(--sp-2xs);
+}
+
+.experiencia__cuerpo .boton {
+  margin-top: var(--sp-sm);
+}
+
+.prepago {
+  margin-block: var(--sp-md);
+  padding: var(--sp-md);
+  border: var(--hair) solid var(--line-strong);
+  border-radius: var(--r-md);
+  display: grid;
+  gap: var(--sp-xs);
+}
+
+.prepago__check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-xs);
+  margin-top: var(--sp-2xs);
+  cursor: pointer;
+}
+
+.prepago__check input {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--acento);
+}
+
+/* =========================================================
+   RESERVAR — «El Plano de la Casa»
+   ========================================================= */
+
+.plano {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--sp-md);
+}
+
+.plano__muro {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.plano__zona {
+  fill: var(--acento);
+  stroke: var(--line-acento);
+  stroke-width: 1;
+  cursor: pointer;
+  transition: stroke var(--t-2) var(--ease-crema);
+}
+
+.plano__zona.es-elegida {
+  stroke: var(--acento-ink);
+  stroke-width: 2;
+}
+
+.plano__zona.es-llena {
+  cursor: not-allowed;
+  fill: var(--danger);
+}
+
+.plano__rotulo {
+  fill: var(--ink);
+  font-family: var(--font-ui);
+  /* 8px en un viewBox de 320 escalado a ~350 salían a 8.7 px reales: ilegible. */
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  pointer-events: none;
+  opacity: 0.82;
+}
+
+.plano__hora {
+  display: grid;
+  gap: var(--sp-xs);
+}
+
+.plano__hora input[type='range'] {
+  width: 100%;
+  accent-color: var(--acento);
+  min-height: var(--tap-min);
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.plano__salida {
+  color: var(--ink);
+}
+
+.plano__sugerencia {
+  margin-top: var(--sp-sm);
+  padding: var(--sp-sm) var(--sp-md);
+  border-left: 2px solid var(--line-acento);
+  background: var(--acento-wash);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+
+.zonas {
+  display: grid;
+  gap: var(--sp-xs);
+}
+
+.zona {
+  width: 100%;
+  display: grid;
+  gap: var(--sp-3xs);
+  padding: var(--sp-md);
+  text-align: left;
+  background-color: var(--surface);
+  border: var(--hair) solid var(--line);
+  border-radius: var(--r-md);
+  transition: border-color var(--t-2) var(--ease-crema);
+}
+
+.zona:hover:not(:disabled) {
+  border-color: var(--line-acento);
+}
+
+.zona:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.zona.es-elegida {
+  border-color: var(--acento-ink);
+  background: var(--acento-wash);
+}
+
+.zona__cabeza {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-sm);
+}
+
+.zona__deposito {
+  color: var(--ink-soft);
+}
+
+.deposito {
+  margin-block: var(--sp-md);
+  padding: var(--sp-md);
+  border: var(--hair) solid var(--line-acento);
+  background: var(--acento-wash);
+  border-radius: var(--r-md);
+  display: grid;
+  gap: var(--sp-xs);
+}
+
+.reserva-ok {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-sm);
+  justify-items: start;
+}
+
+/* =========================================================
+   PERFIL
+   ========================================================= */
+
+.ladera {
+  display: grid;
+  gap: 0;
+  margin-block: var(--sp-md);
+  border-left: var(--hair) solid var(--line);
+  padding-left: var(--sp-lg);
+}
+
+.ladera__paso {
+  position: relative;
+  display: grid;
+  gap: 2px;
+  padding-block: var(--sp-md);
+  opacity: 0.5;
+}
+
+.ladera__paso.es-alcanzado {
+  opacity: 1;
+}
+
+.ladera__marca {
+  position: absolute;
+  left: calc(var(--sp-lg) * -1 - 5px);
+  top: calc(var(--sp-md) + 6px);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--surface-sunken);
+  border: var(--hair) solid var(--line-strong);
+}
+
+.ladera__paso.es-alcanzado .ladera__marca {
+  background: var(--acento);
+  border-color: var(--acento);
+  outline: var(--hair-accent) solid var(--acento);
+  outline-offset: 2px;
+}
+
+.perfil__campo {
+  margin-block: var(--sp-sm);
+}
+
+.referidos {
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-sm);
+  justify-items: start;
+}
+
+.ajustes {
+  display: grid;
+}
+
+/* =========================================================
+   UMBRAL
+   ========================================================= */
+
+.umbral {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+}
+
+.umbral__foto {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+}
+
+.umbral__foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: var(--foto-filtro) brightness(0.55);
+}
+
+.umbral__velo {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(10, 7, 5, 0.72) 0%, rgba(10, 7, 5, 0.5) 38%, rgba(10, 7, 5, 0.94) 100%);
+}
+
+.umbral__contenido {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: calc(var(--sp-xl) + env(safe-area-inset-top));
+  padding-bottom: calc(var(--sp-xl) + env(safe-area-inset-bottom));
+}
+
+.umbral__marca {
+  display: grid;
+  gap: var(--sp-3xs);
+}
+
+.umbral__perfil {
+  color: var(--acento-ink);
+}
+
+.umbral__paso {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--sp-md);
+  padding-block: var(--sp-2xl);
+}
+
+.umbral__display {
+  color: var(--brand-cream);
+}
+
+.umbral__linea {
+  display: block;
+}
+
+.umbral__regalo {
+  display: flex;
+  gap: 6px;
+  margin-top: var(--sp-md);
+}
+
+.umbral__grano {
+  width: 19px;
+  height: 25px;
+}
+
+.umbral__campo {
+  margin-top: var(--sp-md);
+}
+
+.umbral__campo input {
+  font-family: var(--font-lab);
+  font-size: var(--fs-lab-lg);
+  letter-spacing: 0.06em;
+}
+
+.umbral__legal {
+  margin-top: var(--sp-md);
+  color: var(--muted);
+}
+
+.umbral__error {
+  color: var(--danger);
+  padding: var(--sp-xs) var(--sp-sm);
+  background: var(--danger-wash);
+  border-radius: var(--r-sm);
+  margin-bottom: var(--sp-sm);
+}
+
+.umbral__pie {
+  display: grid;
+  gap: var(--sp-sm);
+  justify-items: center;
+}
+
+.umbral__pasos {
+  display: flex;
+  gap: var(--sp-2xs);
+}
+
+.umbral__punto {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  transition: background-color var(--t-2) var(--ease-crema);
+}
+
+.umbral__punto.es-activo {
+  background: var(--acento);
+}
+
+.umbral__casa {
+  text-align: center;
+}
+
+/* =========================================================
+   MOSTRADOR
+   ========================================================= */
+
+.mostrador__caras {
+  display: flex;
+  gap: var(--sp-sm);
+  margin-top: var(--sp-md);
+  border-bottom: var(--hair) solid var(--line);
+}
+
+.ficha {
+  padding: var(--sp-lg);
+  background-color: var(--surface);
+  background-image: var(--elev-2-bg);
+  border-radius: var(--r-lg);
+  border: var(--hair) solid var(--line-strong);
+  display: grid;
+  gap: var(--sp-lg);
+}
+
+.ficha__cabeza {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-md);
+}
+
+.ficha__rejilla {
+  display: grid;
+  gap: var(--sp-sm);
+}
+
+@media (min-width: 700px) {
+  .ficha__rejilla {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ficha__celda {
+  padding: var(--sp-md);
+  border: var(--hair) solid var(--line);
+  border-radius: var(--r-md);
+  display: grid;
+  gap: var(--sp-3xs);
+  align-content: start;
+}
+
+.ficha__celda.es-destacada {
+  border-color: var(--line-acento);
+  background: var(--acento-wash);
+}
+
+.ficha__celda.es-alerta {
+  border-color: color-mix(in srgb, var(--danger) 40%, transparent);
+  background: var(--danger-wash);
+}
+
+.ficha__ultimas {
+  display: grid;
+  gap: var(--sp-xs);
+}
+
+.ficha__nota {
+  padding-top: var(--sp-md);
+  border-top: var(--hair) solid var(--line);
+}
+
+.panel {
+  display: grid;
+  gap: var(--sp-md);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .panel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.panel__grande,
+.panel__celda {
+  padding: var(--sp-lg);
+  display: grid;
+  gap: var(--sp-3xs);
+  align-content: start;
+}
+
+.panel__grande .lab-xl,
+.panel__celda .lab-lg {
+  color: var(--acento-ink);
+}
+
+.panel__de {
+  color: var(--muted);
+  font-size: 0.5em;
+}
+
+.panel__nota {
+  margin-top: var(--sp-xs);
+  padding-top: var(--sp-xs);
+  border-top: var(--hair) dashed var(--line);
+  color: var(--ink-faint);
+}
+
+.panel__pie {
+  margin-top: var(--sp-lg);
+}
+
+.aviso__cerrar {
+  margin-left: auto;
+  color: var(--acento-ink);
+}
+
+.umbral__demo {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--line-strong);
+}
+
+.umbral__demo:hover {
+  color: var(--acento-ink);
+}
+
+.umbral__acciones {
+  display: flex;
+  gap: var(--sp-md);
+  margin-top: var(--sp-sm);
+}
+
+/* =========================================================
+   LA BARRA — matriz, no lista
+   ========================================================= */
+
+.barra-carta {
+  display: grid;
+  gap: var(--sp-2xl);
+}
+
+.barra-bloque {
+  display: grid;
+  gap: var(--sp-sm);
+}
+
+.matriz {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-sm);
+  margin-top: var(--sp-md);
+  align-items: start;
+}
+
+.matriz__columna {
+  display: grid;
+  gap: var(--sp-sm);
+  align-content: start;
+}
+
+.matriz__eje {
+  padding-bottom: var(--sp-xs);
+  border-bottom: var(--hair) solid var(--line);
+}
+
+/* Cada taza es una celda: nombre, precio, perfil y el anillo con el volumen. */
+.taza-celda {
+  position: relative;
+  display: grid;
+  justify-items: start;
+  gap: var(--sp-3xs);
+  padding: var(--sp-md) var(--sp-sm) var(--sp-sm);
+  text-align: left;
+  background-color: var(--surface);
+  background-image: var(--elev-1-bg);
+  border-radius: var(--r-md);
+  border: var(--hair) solid var(--line);
+  color: var(--ink-faint);
+  transition:
+  border-color var(--t-2) var(--ease-crema),
+    color var(--t-2) var(--ease-crema),
+    transform var(--t-1) var(--ease-crema);
+}
+
+.taza-celda:hover {
+  border-color: var(--line-rule);
+  color: var(--muted);
+}
+
+.taza-celda:active {
+  transform: translateY(1px);
+}
+
+.taza-celda.es-pedida {
+  border: var(--hair) solid var(--line-acento);
+}
+
+.taza {
+  margin-bottom: var(--sp-2xs);
+}
+
+.taza-celda__nombre {
+  color: var(--ink);
+}
+
+.taza-celda__precio {
+  color: var(--ink-soft);
+}
+
+.taza-celda__perfil {
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.35;
+}
+
+.taza-celda__desc {
+  margin-top: var(--sp-2xs);
+}
+
+.taza-celda__cuenta {
+  position: absolute;
+  top: var(--sp-xs);
+  right: var(--sp-xs);
+}
+
+/* Filas simples: para lo que sí es heterogéneo. */
+.lista-simple {
+  display: grid;
+  margin-top: var(--sp-xs);
+}
+
+.fila-simple {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  padding-block: var(--sp-sm);
+  border-bottom: var(--hair) solid var(--line-subtle);
+}
+
+.fila-simple:last-child {
+  border-bottom: 0;
+}
+
+.fila-simple__pedir {
+  min-height: 40px;
+  padding-inline: var(--sp-md);
+  white-space: nowrap;
+}
+
+/* Nueve limonadas: una pieza, la fruta como decisión. */
+.limonadas__frutas {
+  margin-top: var(--sp-xs);
+  padding-block: var(--sp-2xs);
+}
+
+.limonadas__frutas .chip {
+  min-height: 36px;
+  cursor: pointer;
+}
+
+.chip.es-elegida {
+  border-color: var(--line-acento);
+  background: var(--acento-wash);
+  color: var(--acento-ink);
+}
+
+.limonadas__elegida {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  flex-wrap: wrap;
+  margin-top: var(--sp-md);
+  padding: var(--sp-md);
+  background-color: var(--surface);
+  background-image: var(--elev-1-bg);
+  border-radius: var(--r-md);
+  border: var(--hair) solid var(--acento);
+}
+
+/* De la nevera: tira compacta. */
+.tira {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: var(--sp-xs);
+  margin-top: var(--sp-xs);
+}
+
+.tira__pieza {
+  display: grid;
+  justify-items: start;
+  gap: 2px;
+  padding: var(--sp-sm) var(--sp-md);
+  text-align: left;
+  border: var(--hair) solid var(--line);
+  border-radius: var(--r-sm);
+  transition: border-color var(--t-2) var(--ease-crema);
+}
+
+.tira__pieza:hover {
+  border-color: var(--line-strong);
+}
+
+@media (max-width: 380px) {
+  .matriz {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* La letra de la barra y del jarro dejó de ser la más pequeña de la app:
+   ahí van el perfil de taza y la cifra del bono. */
+.taza-celda__perfil {
+  font-size: 11px;
+}
+
+.matriz__eje-bajo {
+  margin-top: var(--sp-md);
+}
+
+/* =========================================================
+   LA CASA — el primer pliegue es una sola idea
+   ========================================================= */
+
+.casa__pliegue {
+  position: relative;
+  min-height: calc(100dvh - var(--alto-barra) - env(safe-area-inset-bottom));
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: stretch;
+  padding-top: calc(var(--sp-xl) + env(safe-area-inset-top));
+  padding-bottom: var(--sp-md);
+}
+
+/* El anillo de taza, enorme y apenas visible, detrás del pliegue: es la marca
+   de la taza que quedó en la mesa. Puro CSS, cero imágenes. */
+.casa__pliegue::before {
+  content: '';
+  position: absolute;
+  top: 14%;
+  right: -22%;
+  width: 78vw;
+  max-width: 30rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+  background: conic-gradient(
+    from 218deg,
+    rgba(201, 164, 86, 0) 0% 6%,
+    rgba(201, 164, 86, 0.5) 14% 41%,
+    rgba(201, 164, 86, 0.12) 52% 63%,
+    rgba(201, 164, 86, 0.55) 72% 93%,
+    rgba(201, 164, 86, 0) 97% 100%
+  );
+  -webkit-mask: radial-gradient(circle at 50% 50%, transparent 0 46.8%, #000 47.6% 49.4%, transparent 50%);
+  mask: radial-gradient(circle at 50% 50%, transparent 0 46.8%, #000 47.6% 49.4%, transparent 50%);
+  opacity: 0.5;
+}
+
+.casa__hola {
+  display: grid;
+  gap: var(--sp-xs);
+  position: relative;
+}
+
+.casa__saludo {
+  color: var(--ink);
+  max-width: 15ch;
+}
+
+.casa__comanda {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-block: var(--sp-lg);
+}
+
+.casa__comanda > * {
+  width: 100%;
+}
+
+/* La comanda es la protagonista del pliegue: crece. */
+.casa__comanda .comanda {
+  padding: var(--sp-xl) var(--sp-lg) calc(var(--sp-xl) + var(--sp-sm));
+}
+
+.casa__comanda .comanda__item {
+  font-size: var(--fs-display-md);
+  line-height: var(--lh-display-md);
+  letter-spacing: var(--ls-display-md);
+}
+
+/* Una línea de datos, no tres tarjetas. */
+.casa__linea {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: var(--sp-xs);
+  padding-top: var(--sp-md);
+  border-top: var(--hair) solid var(--line);
+}
+
+.casa__dato {
+  flex: 1 1 0;
+  display: grid;
+  justify-items: start;
+  gap: 2px;
+  text-align: left;
+  color: var(--muted);
+  transition: color var(--t-2) var(--ease-crema);
+}
+
+.casa__dato:hover {
+  color: var(--ink);
+}
+
+.casa__dato-valor {
+  color: var(--ink);
+  font-size: var(--fs-body-md);
+}
+
+.casa__separador {
+  width: var(--hair);
+  background: var(--line);
+}
+
+@media (min-width: 560px) {
+  .casa__saludo {
+    max-width: 18ch;
+  }
+}
+
+/* =========================================================
+   CAMINO DE ALTURA — el nivel del socio como subida real
+   ========================================================= */
+
+.camino {
+  display: grid;
+  gap: var(--sp-lg);
+  margin-block: var(--sp-md);
+}
+
+.camino__lienzo {
+  width: 100%;
+  height: auto;
+  max-height: 46dvh;
+}
+
+.camino__ladera {
+  fill: var(--surface);
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.camino__senda {
+  fill: none;
+  stroke: var(--line-strong);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 5;
+  stroke-linecap: round;
+}
+
+.camino__andado {
+  fill: none;
+  stroke: var(--acento);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.camino__cota {
+  stroke: var(--line);
+  stroke-width: 1;
+  stroke-dasharray: 2 6;
+}
+
+.camino__marca {
+  fill: var(--surface-sunken);
+  stroke: var(--line-strong);
+  stroke-width: 1.25;
+}
+
+.camino__hito.es-alcanzado .camino__marca {
+  fill: var(--acento);
+  stroke: var(--acento);
+}
+
+.camino__hito.es-alcanzado .camino__cota {
+  stroke: var(--line-acento);
+}
+
+.camino__metros {
+  fill: var(--muted);
+  font-family: var(--font-lab);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.camino__hito.es-alcanzado .camino__metros {
+  fill: var(--ink-soft);
+}
+
+.camino__niveles {
+  display: grid;
+  gap: var(--sp-md);
+}
+
+.camino__nivel {
+  display: grid;
+  gap: 2px;
+  padding-left: var(--sp-md);
+  border-left: 2px solid var(--line);
+  opacity: 0.55;
+}
+
+.camino__nivel.es-pasado {
+  opacity: 0.8;
+  border-left-color: var(--line-acento);
+}
+
+.camino__nivel.es-actual {
+  opacity: 1;
+  border-left-color: var(--acento);
+}
+
+.camino__nivel-cota {
+  color: var(--muted);
+}
+
+.camino__pie {
+  padding-top: var(--sp-sm);
+  border-top: var(--hair) solid var(--line);
+}
+
+.camino__empuje {
+  margin-top: var(--sp-md);
+}
+
+/* Lo que todavia no se puede medir se ve distinto: no es un dato en blanco,
+   es una tarea pendiente. */
+.panel__celda.es-pendiente {
+  border: var(--hair) dashed var(--line-strong);
+  box-shadow: none;
+  background-image: none;
+}
+
+.panel__pendiente {
+  color: var(--muted);
+}
+
+/* =========================================================
+   LA MESA LARGA — el cupo hecho objeto
+   ========================================================= */
+
+.mesa {
+  margin: 0 0 var(--sp-sm);
+  display: grid;
+  gap: var(--sp-2xs);
+}
+
+.mesa__lienzo {
+  /* Con el ancho fijo, un viewBox más ancho encogía la mesa entera: veinte
+     sillas salían de 14 px y doce de 22, así que la experiencia más cara se
+     veía más pequeña. Con el alto fijo, la silla mantiene su tamaño y la mesa
+     de verdad se alarga; si no cabe, el riel la deja deslizarse — una mesa
+     larga que no entra en pantalla es, de hecho, la idea. */
+  height: 132px;
+  width: auto;
+  max-width: none;
+}
+
+.mesa__riel {
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-inline: calc(var(--sp-md) * -1);
+  padding-inline: var(--sp-md);
+}
+
+.mesa__riel::-webkit-scrollbar {
+  display: none;
+}
+
+.mesa__tabla {
+  fill: var(--surface-sunken);
+  stroke: var(--line-strong);
+  stroke-width: 1;
+}
+
+.mesa__veta {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.mesa__asiento,
+.mesa__respaldo {
+  fill: none;
+  stroke: var(--ink-faint);
+  stroke-width: 1.1;
+}
+
+.mesa__silla.es-tomada .mesa__asiento,
+.mesa__silla.es-tomada .mesa__respaldo {
+  fill: var(--surface-sunken);
+  stroke: var(--line);
+}
+
+.mesa__silla.es-mia .mesa__asiento {
+  fill: var(--brand-gold);
+  stroke: var(--brand-gold);
+}
+
+.mesa__silla.es-mia .mesa__respaldo {
+  fill: var(--brand-gold);
+  stroke: var(--brand-gold);
+}
+
+.mesa__pie {
+  color: var(--muted);
+}
+
+.mesa__cuenta {
+  display: inline-block;
+  color: var(--ink);
+}
+
+/* =========================================================
+   EL LIBRO — la tabla de asientos de la Cuenta.
+   Seis estados de fila y ninguno es una sombra. Esta es la
+   pantalla que demuestra que la jerarquia no se comprime
+   bajo densidad, y por eso se construye antes que la firma.
+   ========================================================= */
+
+.salto-visual {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.libro {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+/* Estado 1 — cabecera: regla de 3 px verde. El escalon mas alto que
+   existe sin salir del papel. */
+.libro thead th {
+  text-align: left;
+  padding: var(--sp-xs) var(--sp-sm) var(--sp-2xs);
+  border-bottom: var(--hair-rule) solid var(--acento);
+  color: var(--acento-ink);
+}
+
+.libro__col-num {
+  text-align: right;
+  width: 1%;
+  white-space: nowrap;
+}
+
+/* Estado 2 — fila normal: papel desnudo mas filete. */
+.libro tbody tr {
+  border-bottom: var(--hair) solid var(--line);
+  transition: background-color var(--t-2) var(--ease-crema);
+}
+
+/* Estado 3 — fila alterna: relleno plano claro, el unico permitido
+   sobre papel. Cuatro puntos de L* separan una fila de la siguiente. */
+.libro tbody tr:nth-child(even) {
+  background: var(--acento-wash);
+}
+
+/* Estado 4 — fila activa: relleno mas renglon izquierdo de 3 px.
+   Se distingue de la alterna por el renglon, no por la luz. */
+.libro tbody tr.es-activa {
+  background: var(--acento-wash);
+}
+
+/* El renglon izquierdo va en la primera celda, no como box-shadow inset:
+   la regla del sistema es que la jerarquia la hace el renglon, y un truco
+   de sombra para dibujar una linea sigue siendo una sombra. */
+.libro tbody tr.es-activa td:first-child {
+  border-left: var(--hair-rule) solid var(--acento);
+  padding-left: calc(var(--sp-sm) - var(--hair-rule));
+}
+
+.libro td {
+  padding: var(--sp-2xs) var(--sp-sm);
+  vertical-align: baseline;
+}
+
+.libro__asiento {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
+  min-height: var(--tap-min);
+  justify-content: center;
+  text-align: left;
+  padding-block: var(--sp-2xs);
+}
+
+.libro__concepto {
+  font-variation-settings: var(--fv-ui-semi);
+  color: var(--ink);
+}
+
+.libro__cuando {
+  font-variant-numeric: tabular-nums;
+}
+
+.libro__asiento:hover .libro__concepto {
+  color: var(--acento-ink);
+}
+
+/* Estado 5 — el detalle no flota: tapa lo de atras. */
+.hoja-asiento {
+  display: grid;
+  gap: var(--sp-sm);
+}
+
+.ficha-asiento {
+  display: grid;
+  border-top: var(--hair-accent) solid var(--line-strong);
+}
+
+/* =========================================================
+   RESERVAR — §8.5. La pantalla mas larga del proyecto, un
+   formulario, y el sitio exacto donde los sistemas sin
+   elevacion mueren de falta de affordance.
+
+   El campo se lee como campo porque esta HUNDIDO y SUBRAYADO,
+   no porque tenga sombra.
+   ========================================================= */
+
+.campo select,
+.campo input:not([type='range']),
+.campo textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: var(--sp-sm) var(--sp-md);
+  background: var(--surface);
+  border: 0;
+  /* Nivel 1 de superficie mas filete inferior de 1,5 px: el resto sin borde. */
+  border-bottom: var(--hair-accent) solid var(--line-strong);
+  border-radius: var(--r-sm) var(--r-sm) 0 0;
+  color: var(--ink);
+  transition:
+    border-color var(--t-2) var(--ease-crema),
+    background-color var(--t-2) var(--ease-crema);
+}
+
+/* Al foco el filete pasa a 3 px de verde estarcido: de 1,5 px neutro a
+   3 px saturado hay mas señal que en cualquier sombra. */
+/* Se engancha en `:focus-within` del contenedor, no en `:focus` del control:
+   un <select> no siempre reporta :focus de forma fiable entre navegadores, y
+   el contenedor si. Ademas asi la etiqueta y el campo cambian a la vez. */
+.campo:focus-within select,
+.campo:focus-within input:not([type='range']),
+.campo:focus-within textarea {
+  /* Sin `outline: none`. El subrayado de 3 px es refuerzo, no sustituto:
+     un solo borde no cubre el perimetro que exige 2.4.11, y la regla del
+     sistema esta escrita con :where(), que tiene especificidad CERO y
+     pierde contra cualquier selector de una clase. */
+  border-bottom-width: var(--hair-rule);
+  border-bottom-color: var(--acento);
+  background: var(--acento-wash);
+}
+
+/* La etiqueta SIEMPRE visible arriba. Nunca marcador de posicion haciendo
+   de etiqueta: al escribir desaparece y el campo queda mudo. */
+.campo__etiqueta {
+  color: var(--muted);
+  transition: color var(--t-2) var(--ease-crema);
+}
+
+.campo:focus-within .campo__etiqueta {
+  color: var(--acento-ink);
+}
+
+/* El CTA es el nivel 4 de la jerarquia: bloque plano verde, el elemento
+   mas pesado de la pantalla. Es imposible no encontrarlo. */
+.boton-verde.boton-lleno {
+  min-height: 48px;
+  border-radius: var(--r-sm);
+}
+
+.boton:active:not(:disabled) {
+  scale: 0.97;
+}
+
+/* Chips de zona: apagado sin relleno (filete de 1 px), encendido con relleno
+   PLANO verde. La diferencia entre los dos estados es 7,06:1. */
+.zona.es-elegida,
+.chip.es-elegida {
+  border-color: var(--acento);
+  background: var(--acento);
+  color: var(--acento-contra);
+}
+
+/* Enumerar clases hijas se rompe en cuanto alguien mete otra dentro del
+   boton: `.cuerpo-sm` no estaba en la lista y su gris sobre el verde solido
+   daba 1,07:1, o sea texto borrado, en la pantalla donde se cobra deposito.
+   Con :where() la lista deja de importar y el reemplazo es imposible. */
+.zona.es-elegida :where(.caption, .etiqueta, .cuerpo-sm, .cuerpo, .lab, .lab-sm, .zona__deposito),
+.chip.es-elegida :where(.caption, .etiqueta, .cuerpo-sm, .lab, .lab-sm) {
+  color: inherit;
+  opacity: 0.88;
+}
+
+/* Un chip dentro de la zona elegida quedaba con su color propio sobre el
+   verde solido: contraste 1,0, o sea el texto pintado del mismo color que
+   el fondo. Sobre verde el chip pasa a ser contorno de papel. */
+.zona.es-elegida .chip {
+  color: inherit;
+  background: transparent;
+  border-color: color-mix(in srgb, var(--acento-contra) 55%, transparent);
+  opacity: 0.92;
+}
+
+/* =========================================================
+   LA TANDA — §6.1. Una tarjeta de sellos normal SE LLENA.
+   Esta SE CIERRA.
+
+   Empezas con diez troqueles abiertos —diez agujeros por los
+   que se ve la prensa— y la casa te los va cerrando, uno por
+   visita, hasta que la hoja vuelve a estar entera.
+
+   Riesgo cableado, no confiado: diez circulos oscuros sobre
+   papel pueden leerse como diez imagenes que no cargaron.
+   Tres mitigaciones, las tres en el HTML inicial:
+     (a) los numeros 01..10 en verde cal al 45 % desde el
+         primer frame, DENTRO de cada hueco;
+     (b) las dos cortesias ya cerradas antes de tocar nada;
+     (c) la linea bajo la rejilla que lo dice con palabras.
+   ========================================================= */
+
+/* Se anima `clip-path` directamente en vez de sustituir una propiedad
+   registrada dentro de el: con `@property` la animacion quedaba en estado
+   `running` sin progresar y el sello no se veia nunca. Menos piezas moviles
+   y el mismo resultado, tambien en el compositor. */
+
+/* La hoja: papel de verdad, con su filete. */
+.tanda__rejilla {
+  /* La hoja va mas CLARA que la mesa, no al reves: es papel sobre mesa.
+     Estaba invertido y por eso la tarjeta se hundia en vez de posarse. */
+  background: var(--papel);
+  border: var(--hair) solid var(--line);
+  border-radius: var(--r-md);
+  padding: var(--sp-md);
+}
+
+/* TROQUEL ABIERTO — se ve la prensa por el agujero. */
+.casilla__hueco {
+  background: var(--tinta);
+  border: 0;
+  /* El borde interior de un troquel real: el papel se hunde antes de romper. */
+  box-shadow: var(--relieve-hundido);
+}
+
+/* El numero vive DENTRO del hueco y se ve desde el primer frame:
+   es lo que separa "diez troqueles" de "diez imagenes rotas". */
+.casilla__n {
+  /* `inset: 0` seguido de `top/left: auto` NO centra: deja el digito anclado
+     abajo a la derecha, montado entre el hueco oscuro y el papel. Con inset
+     limpio y place-items el numero cae dentro del agujero, que es donde la
+     mitigacion (a) lo necesita. */
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  /* La especificacion pedia 45 %, pero medido da 2,46:1 sobre tinta: a esa
+     debilidad el numero deja de desmentir la lectura de "imagen rota", que
+     es justo para lo que existe. Al 62 % llega a ~3:1, el umbral de objeto
+     grafico perceptible, y sigue leyendose como filigrana y no como dato. */
+  color: color-mix(in srgb, var(--verde-cal) 88%, transparent);
+  font-size: var(--fs-lab-sm);
+  letter-spacing: var(--ls-lab-sm);
+  z-index: 1;
+}
+
+/* TROQUEL CERRADO — la hoja vuelve a estar entera y encima va el sello:
+   anillo en oro tinta (el oro puro rinde 2,09:1 sobre papel y no se
+   veria), mancha en oro lamina al 78 %. */
+.casilla.es-llena {
+  border-color: transparent;
+  background: transparent;
+}
+
+/* En la casilla cerrada el numero sobra: el sello YA es la marca, y a 38 %
+   rendia 1,67:1. Se retira en vez de dejarlo como suciedad ilegible. */
+.casilla.es-llena .casilla__n {
+  display: none;
+}
+
+.casilla__grano {
+  background: var(--lacre);
+  border: var(--hair-accent) solid var(--oro-tinta);
+  /* El cierre del troquel: la mascara crece del centro hacia afuera.
+     Una sola mascara componible, en el compositor. */
+  clip-path: circle(72% at 50% 50%);
+}
+
+/* T3 · la tinta (200 -> 600 ms): el troquel se cierra. */
+/* Solo se cierra el troquel del sello RECIEN puesto. Los otros nueve nacen
+   cerrados: al abrir la pantalla no se vuelve a sellar toda la tanda, que
+   ademas contaria una mentira sobre cuando pasaron las cosas. */
+@media (prefers-reduced-motion: no-preference) {
+  .casilla.es-nueva .casilla__grano {
+    animation: cerrar-troquel var(--t-4) var(--ease-extraccion) both;
+  }
+}
+
+@keyframes cerrar-troquel {
+  from {
+    clip-path: circle(0% at 50% 50%);
+  }
+  to {
+    clip-path: circle(72% at 50% 50%);
+  }
+}
+
+/* En movimiento reducido el sello SE PONE: sin descenso ni onda. */
+/* En movimiento reducido el sello SE PONE, sin cierre progresivo. */
+@media (prefers-reduced-motion: reduce) {
+  .casilla__grano {
+    animation: none;
+  }
+}
+
+/* La linea que desarma la lectura de "imagenes rotas" con palabras. */
+.tanda__cortesia {
+  text-align: center;
+  margin-top: calc(var(--sp-sm) * -1);
+  margin-bottom: var(--sp-md);
+}
+
+/* =========================================================
+   EL TROQUEL — §7.4 ②. Se ve una vez cada diez visitas.
+
+   Las dos muescas se RECORTAN de la hoja con `mask-image`, no
+   se pintan encima con el color del fondo: es la unica receta
+   que sobrevive al cambio de tema, porque no supone nada sobre
+   lo que hay detras. (Ahmad Shadeed, "Building a Football
+   Ticket With CSS and SVG".)
+
+   Durante el sostener la muesca crece de 10 a 13 px y la linea
+   perforada se tensa. Al soltar, el talon se va y la hoja se
+   queda: el progreso deja de ser una barra y pasa a ser una
+   herida que sana.
+   ========================================================= */
+
+/* La mascara SOLO cuando la tanda esta lista: hasta entonces no hay troquel
+   que abrir, y una capa de composicion permanente sobre un grid la pagan las
+   nueve visitas que no la usan. */
+.tarjeta-tanda.es-lista .tanda__rejilla {
+  --muesca: 10px;
+  --corte-y: calc(100% - 4px);
+  -webkit-mask-image:
+    radial-gradient(circle at left var(--corte-y), transparent var(--muesca), #000 calc(var(--muesca) + 1px)),
+    radial-gradient(circle at right var(--corte-y), transparent var(--muesca), #000 calc(var(--muesca) + 1px));
+  -webkit-mask-composite: source-in;
+  mask-image:
+    radial-gradient(circle at left var(--corte-y), transparent var(--muesca), #000 calc(var(--muesca) + 1px)),
+    radial-gradient(circle at right var(--corte-y), transparent var(--muesca), #000 calc(var(--muesca) + 1px));
+  mask-composite: intersect;
+}
+
+/* La linea perforada entre las dos muescas. `.casilla-decima` ya existia
+   con un punteado que no significaba nada: ahora ES el troquel. */
+/* El talon es hermano de la rejilla, no hijo: dentro quedaria recortado por
+   `mask-clip: border-box` al arrancarse. La linea perforada lo une visualmente
+   a la hoja y es lo que se rompe. */
+.casilla-decima {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-top: var(--hair) dashed var(--line-strong);
+  margin-top: var(--sp-sm);
+  padding-top: var(--sp-md);
+  padding-bottom: var(--sp-xs);
+}
+
+/* El talon se va con resorte; la hoja se queda quieta. */
+.casilla-decima.se-arranca {
+  animation: arrancar-talon var(--t-5) var(--ease-caida) forwards;
+}
+
+@keyframes arrancar-talon {
+  to {
+    transform: translateY(140px) rotate(-3deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .casilla-decima.se-arranca {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/* =========================================================
+   LOS CINCO ROLES DE IMAGEN — §4.2
+   Cada foto se sirve en la proporcion en que se tomo. Una sola
+   proporcion para material heterogeneo no es un sistema: es un
+   recorte con nombre de sistema.
+   ========================================================= */
+
+.foto-retrato {
+  aspect-ratio: var(--img-retrato);
+}
+
+.foto-ficha {
+  aspect-ratio: var(--img-ficha);
+}
+
+.foto-banda {
+  aspect-ratio: var(--img-banda);
+}
+
+/* Los platos: apaisados nativos, sin recorte y sin reencuadre inventado.
+   El `object-position: 50% 46%` que habia era una correccion para el
+   recorte 4/5; sin recorte, sobra. */
+.foto-plato img {
+  object-position: 50% 50%;
+}
+
+/* terraza-atardecer y salon-vip son VERTICALES nativas (960x1440, 2:3).
+   Servirlas a 3/2 las cortaba por la mitad. Nota: la §8.8 pide ademas
+   cambiarles el sujeto en Finca y Lote, que es trabajo de la fase 8. */
+.foto-finca,
+.lote-tarjeta__foto,
+.experiencia__foto {
+  aspect-ratio: var(--img-retrato);
+}
+
+/* El espresso de producto tambien es vertical. */
+.finca__foto {
+  aspect-ratio: var(--img-retrato);
+}

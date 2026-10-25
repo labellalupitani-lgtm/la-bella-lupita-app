@@ -1,0 +1,357 @@
+/* Sexta composición · fotografía natural y carta inmediata. */
+@font-face {
+  font-family:'Playfair Display Inicio';
+  font-style:normal;
+  font-weight:400 900;
+  font-display:swap;
+  src:url('/fuentes/diseno/playfair-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family:'Montserrat Inicio';
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url('/fuentes/diseno/montserrat-latin.woff2') format('woff2');
+}
+
+body:has(.inicio-redisenado) {
+  background:theme('colors.avena');
+  font-family:theme('fontFamily.inicio-texto');
+}
+body:has(.inicio-redisenado) .font-texto { font-family:theme('fontFamily.inicio-texto'); }
+body:has(.inicio-redisenado) .t-caption,
+body:has(.inicio-redisenado) .t-cuerpo,
+body:has(.inicio-redisenado) .t-etiqueta { font-family:theme('fontFamily.inicio-texto'); }
+body:has(.inicio-redisenado) .font-titular { font-family:theme('fontFamily.inicio-titular'); }
+html:has(.inicio-redisenado) { scroll-padding-block:24px calc(var(--inicio-nav-alto,72px) + 24px); }
+.inicio-redisenado :is(button, a, [tabindex]) { scroll-margin-block:24px calc(var(--inicio-nav-alto,72px) + 24px); }
+.inicio-redisenado .casa-seccion-cabecera > div { min-width:0; }
+.inicio-redisenado .casa-seccion-cabecera h2 { overflow-wrap:anywhere; }
+body:has(.inicio-redisenado) .casa-aplicacion { padding-left:0; }
+body:has(.inicio-redisenado) .casa-contenido { max-width:none; }
+body:has(.inicio-redisenado) .casa-cabecera {
+  position:relative; inset:auto; width:100%; border:0;
+  border-bottom:1px solid theme('colors.filete / 65%');
+  background:theme('colors.inicio-crema');
+}
+body:has(.inicio-redisenado) .casa-cabecera-interior {
+  flex-direction:row; align-items:center; justify-content:space-between;
+  max-width:1280px; margin:auto; gap:24px; padding:21px 32px;
+  height:auto; overflow:visible; flex-wrap:nowrap;
+}
+/* La firma conserva su proporción y una reserva de al menos H/4. */
+body:has(.inicio-redisenado) .casa-marca { width:144px; min-height:0; margin:0; }
+body:has(.inicio-redisenado) .casa-marca img { width:144px; height:auto; }
+body:has(.inicio-redisenado) .casa-marca:focus-visible { outline:2px solid theme('colors.inicio-borgona'); outline-offset:18px; box-shadow:none; }
+body:has(.inicio-redisenado) .casa-nav-etiqueta,
+body:has(.inicio-redisenado) .casa-nav-final { display:none; }
+body:has(.inicio-redisenado) .casa-nav-amplia {
+  flex-direction:row; justify-content:center; gap:4px; width:auto; min-width:0;
+}
+body:has(.inicio-redisenado) .casa-nav-amplia a {
+  flex-direction:row; gap:6px; min-width:74px; min-height:44px; padding:10px 12px;
+  border-radius:theme('borderRadius.inicio-control'); font-size:.8125rem; font-weight:500;
+}
+body:has(.inicio-redisenado) .casa-nav-amplia a[aria-current=page] {
+  background:theme('colors.inicio-rosa'); color:theme('colors.inicio-borgona'); font-weight:700;
+}
+body:has(.inicio-redisenado) .casa-reservar {
+  width:auto; margin:0; padding:12px 16px; gap:8px; min-height:48px;
+  border:1px solid theme('colors.filete'); border-radius:theme('borderRadius.full');
+  font-size:.75rem; font-weight:600;
+}
+body:has(.inicio-redisenado) .casa-reservar > .ico:last-child { display:none; }
+body:has(.inicio-redisenado) .casa-conocer-acceso { display:none; }
+body:has(.inicio-redisenado) .casa-saludo-interior { padding:0 4px 4px; gap:12px; flex-wrap:wrap; }
+body:has(.inicio-redisenado) .casa-saludo-texto > p {
+  font-size:.875rem; font-weight:500; letter-spacing:0; color:theme('colors.tinta-media');
+}
+body:has(.inicio-redisenado) .casa-saludo-perfil {
+  display:flex; min-height:48px; max-width:100%; border:0; padding:0; background:transparent;
+}
+body:has(.inicio-redisenado) .casa-saludo-perfil > span:nth-child(2) { display:block; min-width:0; overflow-wrap:anywhere; }
+body:has(.inicio-redisenado) .casa-saludo-perfil > .ico { display:block; flex-shrink:0; }
+body:has(.inicio-redisenado) .casa-saludo-perfil strong { font-size:.75rem; font-weight:600; }
+body:has(.inicio-redisenado) .casa-saludo-perfil small { font-size:.75rem; }
+body:has(.inicio-redisenado) .casa-avatar { width:40px; height:40px; background:theme('colors.inicio-rosa'); }
+
+/* La columna central conserva el ancho de lectura sin recurrir a 100vw,
+   que también incluiría la barra de desplazamiento del escritorio. */
+.inicio-redisenado.inicio-mejorado {
+  --inicio-margen:32px;
+  display:grid; grid-template-columns:minmax(var(--inicio-margen),1fr) minmax(0,1216px) minmax(var(--inicio-margen),1fr);
+  gap:24px 0; max-width:none; padding:0 0 48px;
+}
+.inicio-redisenado.inicio-mejorado > * { grid-column:2; }
+body:has(.inicio-redisenado) .inicio-encabezado { display:flex; justify-content:flex-end; align-items:center; gap:6px; padding:0; flex:0 1 auto; min-width:0; width:auto; }
+.inicio-redisenado .t-eyebrow { font:600 .75rem/1.5 theme('fontFamily.inicio-texto'); letter-spacing:.14em; color:theme('colors.tinta-media'); }
+body:has(.inicio-redisenado) .inicio-encabezado .inicio-actualizar { width:44px; min-width:44px; min-height:44px; padding:0; border-radius:theme('borderRadius.full'); color:theme('colors.tinta-media'); }
+body:has(.inicio-redisenado) .inicio-encabezado .inicio-pase-rapido { border-color:theme('colors.filete'); color:theme('colors.tinta'); background:transparent; min-height:44px; padding:10px 16px; font-family:theme('fontFamily.inicio-texto'); font-size:.8125rem; line-height:1.5; gap:6px; max-width:none; flex:0 1 auto; white-space:normal; border-radius:theme('borderRadius.full'); }
+body:has(.inicio-redisenado) .inicio-actualizar > .animate-spin { display:none; }
+body:has(.inicio-redisenado) .inicio-actualizar[aria-busy=true] { cursor:progress; background:theme('colors.inicio-rosa'); }
+body:has(.inicio-redisenado) .inicio-actualizar[aria-busy=true] > .inicio-refrescar-icono { animation:inicio-refrescar 1s linear infinite; }
+@keyframes inicio-refrescar { to { transform:rotate(360deg); } }
+.inicio-redisenado .inicio-alertas:not(:empty) { margin-top:20px; }
+.inicio-redisenado > .inicio-seguimiento:first-of-type { margin-top:20px; }
+.inicio-redisenado .casa-boton,
+body:has(.inicio-redisenado) .casa-hoja .casa-boton {
+  border-radius:theme('borderRadius.full'); min-height:48px; font-family:theme('fontFamily.inicio-texto');
+  font-size:.8125rem; font-weight:600; text-underline-offset:4px;
+}
+.inicio-redisenado .inicio-resumen { grid-template-columns:minmax(0, .9fr) minmax(0, 1.1fr); align-items:start; gap:24px; }
+.inicio-redisenado .inicio-cuenta-columna { display:flex; flex-direction:column; gap:12px; min-width:0; }
+.inicio-redisenado .inicio-cuenta-columna > * { order:0; min-width:0; }
+.inicio-redisenado .inicio-resumen .casa-cuenta {
+  padding:24px 28px 16px; border-radius:theme('borderRadius.inicio-tarjeta');
+  background:theme('colors.banda'); display:flex; flex-direction:column;
+}
+.inicio-redisenado .casa-cuenta-cabecera > span { font-size:.75rem; font-weight:600; letter-spacing:.1em; }
+.inicio-redisenado .casa-cuenta-cabecera > .ico { color:theme('colors.rosa'); }
+.inicio-redisenado .inicio-resumen .casa-cuenta h2 {
+  margin-top:16px; font-family:theme('fontFamily.inicio-texto'); font-size:.875rem;
+  color:theme('colors.papel');
+}
+.inicio-redisenado .inicio-resumen .casa-cuenta-saldo {
+  font:500 clamp(2rem,4vw,2.8rem)/1.2 theme('fontFamily.inicio-texto');
+  letter-spacing:-.055em; margin-top:8px;
+}
+.inicio-redisenado .casa-cuenta-disponible { font-size:.75rem; line-height:1.6; margin-top:10px; color:theme('colors.papel'); }
+.inicio-redisenado .casa-cuenta-bono { font-size:.75rem; color:theme('colors.papel'); }
+.inicio-redisenado .inicio-resumen .casa-cuenta-acciones { gap:8px; margin-top:20px; flex-wrap:wrap; }
+.inicio-redisenado .inicio-resumen .casa-cuenta-acciones > button { min-width:0; padding:12px 10px; font-size:.8125rem; }
+.inicio-redisenado .casa-cuenta-acciones > button:first-child { background:theme('colors.rosa'); color:theme('colors.tinta'); }
+.inicio-redisenado .casa-cuenta-acciones > button + button { color:theme('colors.papel'); border-color:theme('colors.papel / 50%'); background:transparent; }
+.inicio-redisenado .inicio-cuenta-enlaces { display:flex; flex-wrap:wrap; justify-content:space-between; gap:0 16px; margin-top:10px; }
+.inicio-redisenado .inicio-movimientos { padding:4px 0; min-height:44px; font-size:.75rem; text-decoration:none; color:theme('colors.papel'); }
+.inicio-redisenado .inicio-movimientos:hover { text-decoration:underline; text-underline-offset:4px; }
+.inicio-redisenado .casa-fidelidad {
+  border-radius:theme('borderRadius.inicio-tarjeta'); padding:24px 32px 20px;
+  border:1px solid theme('colors.filete / 70%'); background:theme('colors.inicio-crema');
+}
+.inicio-redisenado .inicio-club-resumen { display:grid; grid-template-columns:minmax(0, 1fr); gap:16px; }
+.inicio-redisenado .inicio-club-resumen > * { min-width:0; order:0; }
+.inicio-redisenado .casa-fidelidad-titulo { margin-bottom:20px; gap:12px; flex-wrap:nowrap; }
+.inicio-redisenado .casa-fidelidad-titulo > div { min-width:0; }
+.inicio-redisenado .casa-fidelidad-titulo .inicio-fidelidad-etiqueta {
+  font-size:.75rem; letter-spacing:.13em; font-weight:600; margin:0 0 5px; color:theme('colors.tinta-media');
+}
+.inicio-redisenado .casa-fidelidad h2 { font:500 1.5rem/1.25 theme('fontFamily.inicio-titular'); }
+.inicio-redisenado .casa-fidelidad-titulo p { font-size:.75rem; line-height:1.6; margin-top:6px; }
+.inicio-redisenado .casa-fidelidad-contador { font:500 2.25rem/1 theme('fontFamily.inicio-texto'); letter-spacing:-.06em; }
+.inicio-redisenado .casa-fidelidad-contador small { font:.75rem/1.5 theme('fontFamily.inicio-texto'); letter-spacing:0; }
+.inicio-redisenado .casa-fidelidad ul { gap:12px; max-width:400px; margin:auto; }
+.inicio-redisenado .casa-fidelidad li > span { width:42px; height:42px; }
+.inicio-redisenado .casa-fidelidad li > .bg-achiote { background:theme('colors.tinta'); }
+.inicio-redisenado .casa-fidelidad [role=progressbar] { border-radius:theme('borderRadius.full'); height:5px; background:theme('colors.inicio-rosa'); outline:0; margin-top:20px; }
+.inicio-redisenado .casa-fidelidad [role=progressbar] > div { background:theme('colors.inicio-borgona'); border-radius:theme('borderRadius.full'); }
+.inicio-redisenado .casa-fidelidad > div > p,
+.inicio-redisenado .inicio-sellos p { font-size:.75rem; line-height:1.6; }
+.inicio-redisenado .casa-fidelidad > .casa-boton { margin-top:4px; color:theme('colors.tinta'); font-size:.75rem; }
+.inicio-redisenado .casa-premio-listo { background:theme('colors.inicio-rosa'); border-radius:theme('borderRadius.inicio-control'); padding:16px; margin-bottom:20px; }
+.inicio-redisenado .casa-premio-listo .casa-boton { background:theme('colors.inicio-borgona'); color:theme('colors.papel'); }
+.inicio-redisenado .inicio-actualizacion { margin:0; padding-inline:4px; }
+.inicio-redisenado .inicio-actualizacion > div { font-family:theme('fontFamily.inicio-texto'); font-size:.75rem; color:theme('colors.tinta-media'); }
+.inicio-redisenado .inicio-seguimiento {
+  padding:14px 20px; display:flex; gap:12px; align-items:flex-start;
+  border-radius:theme('borderRadius.inicio-control'); background:theme('colors.inicio-crema');
+  border:1px solid theme('colors.filete / 70%');
+}
+.inicio-redisenado .inicio-seguimiento-icono { display:grid; place-items:center; flex-shrink:0; width:36px; height:36px; background:theme('colors.inicio-rosa'); border-radius:theme('borderRadius.full'); }
+.inicio-redisenado .inicio-seguimiento-contenido { display:flex; flex-wrap:wrap; align-items:center; gap:4px 12px; width:100%; min-width:0; }
+.inicio-redisenado .inicio-seguimiento-datos { flex:1 1 9rem; min-width:0; }
+.inicio-redisenado .inicio-seguimiento h2 { grid-column:1; font-size:.875rem; margin:0; font-weight:600; }
+.inicio-redisenado .inicio-seguimiento p { grid-column:1; font-size:.8125rem; line-height:1.6; color:theme('colors.tinta-media'); margin-top:4px; }
+.inicio-redisenado .inicio-seguimiento .casa-boton { grid-column:1; grid-row:auto; font-size:.75rem; min-height:44px; justify-content:flex-start; justify-self:start; padding:8px 0; }
+.inicio-redisenado .casa-accesos > ul { gap:16px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.inicio-redisenado .casa-accesos button {
+  flex-direction:row; min-height:64px; border:1px solid theme('colors.filete / 70%');
+  border-radius:theme('borderRadius.inicio-control'); padding:12px 20px; gap:12px;
+  background:theme('colors.inicio-crema');
+}
+.inicio-redisenado .casa-accesos button > .ico:first-child { color:theme('colors.inicio-borgona'); }
+.inicio-redisenado .casa-accesos button > span:nth-child(2) { font-size:.8125rem; font-weight:600; text-align:left; }
+.inicio-redisenado .casa-accesos .casa-acceso-flecha { display:block; margin-left:auto; }
+.inicio-redisenado .casa-bolsa-lista {
+  border:0; background:theme('colors.inicio-rosa'); padding:16px 24px; gap:14px;
+  border-radius:theme('borderRadius.inicio-control'); margin-top:0;
+}
+.inicio-redisenado .casa-bolsa-lista > span:nth-child(2) { font-size:.8125rem; font-weight:600; }
+.inicio-redisenado .casa-bolsa-lista small { font-size:.75rem; font-weight:400; }
+.inicio-redisenado .inicio-invitacion {
+  grid-column:1 / -1; display:block; background:theme('colors.inicio-crema');
+  border-radius:0; min-height:0; overflow:visible;
+}
+.inicio-redisenado .inicio-invitacion-foto { display:grid; grid-template-columns:2fr 3fr; height:390px; min-width:0; padding:0; overflow:hidden; }
+.inicio-redisenado .inicio-invitacion img { display:block; height:100%; width:100%; min-width:0; min-height:0; max-height:none; aspect-ratio:auto; object-fit:cover; }
+.inicio-redisenado .inicio-invitacion .inicio-foto-cafe { object-position:50% 52%; }
+.inicio-redisenado .inicio-invitacion .inicio-foto-mesa { object-position:50% 55%; }
+.inicio-redisenado .inicio-invitacion .inicio-invitacion-texto {
+  padding:16px max(var(--inicio-margen),calc((100% - 1216px)/2));
+  color:theme('colors.tinta'); border-bottom:1px solid theme('colors.filete / 65%');
+}
+.inicio-redisenado .inicio-invitacion-mensaje { display:flex; justify-content:space-between; align-items:center; gap:16px 24px; min-width:0; flex-wrap:wrap; }
+.inicio-redisenado .inicio-invitacion h1 { font:500 clamp(2rem,3vw,2.75rem)/1.15 theme('fontFamily.inicio-titular'); letter-spacing:-.035em; margin:0; }
+.inicio-redisenado .inicio-invitacion .casa-boton { margin:0; background:theme('colors.inicio-borgona'); color:theme('colors.papel'); padding:12px 20px; flex-direction:row-reverse; max-width:100%; white-space:normal; }
+.inicio-redisenado .casa-antojos { padding-top:0; }
+.inicio-redisenado .casa-seccion-cabecera { margin-bottom:16px; gap:12px; flex-wrap:wrap; align-items:center; }
+.inicio-redisenado .casa-seccion-cabecera h2 { font:500 clamp(1.375rem,2vw,1.75rem)/1.25 theme('fontFamily.inicio-titular'); letter-spacing:-.02em; margin:0; }
+.inicio-redisenado .inicio-seccion-nota { font-size:.75rem; line-height:1.5; color:theme('colors.tinta-media'); }
+.inicio-redisenado .casa-antojos-lista { gap:24px; grid-template-columns:repeat(3,minmax(0,1fr)); }
+.inicio-redisenado .casa-antojo,
+.inicio-redisenado.inicio-mejorado .casa-antojo:last-child {
+  display:flex; flex-direction:column; padding:0 0 12px; border-radius:theme('borderRadius.none');
+  border:0; border-bottom:1px solid theme('colors.filete'); background:transparent; overflow:visible;
+}
+.inicio-redisenado .casa-antojo-foto { border-radius:theme('borderRadius.editorial'); aspect-ratio:1.75; }
+.inicio-redisenado .casa-antojo-foto img { transition:transform 200ms ease; }
+.inicio-redisenado .casa-antojo[data-plato="risotto-gallo-pinto"] .casa-antojo-foto img { object-position:50% 73%; }
+.inicio-redisenado .casa-antojo:hover .casa-antojo-foto img { transform:scale(1.035); }
+.inicio-redisenado .casa-antojo:focus-visible { outline:3px solid theme('colors.foco'); outline-offset:4px; }
+.inicio-redisenado .casa-antojo-nombre { font:500 1.125rem/1.3 theme('fontFamily.inicio-titular'); padding:12px 0 8px; }
+.inicio-redisenado .casa-antojo-precio { font-size:.875rem; padding:0; align-items:center; font-weight:500; color:theme('colors.tinta'); }
+.inicio-redisenado .casa-antojo-precio > .ico { color:theme('colors.inicio-borgona'); }
+.inicio-redisenado .casa-novedades { padding-top:12px; }
+.inicio-redisenado .casa-novedades .t-seccion { font:500 1.875rem/1.2 theme('fontFamily.inicio-titular'); margin-bottom:24px; }
+.inicio-redisenado .casa-novedades ul { gap:24px; }
+.inicio-redisenado .casa-novedades article { border-radius:theme('borderRadius.inicio-tarjeta'); padding:24px; background:theme('colors.inicio-crema'); border-color:theme('colors.filete / 70%'); }
+.inicio-redisenado .casa-novedades h3 { font:500 1.375rem/1.3 theme('fontFamily.inicio-titular'); }
+.inicio-redisenado .casa-novedades article .t-caption { font-size:.875rem; line-height:1.7; }
+.inicio-redisenado .casa-novedades article button { font-size:.8125rem; color:theme('colors.inicio-borgona'); }
+.inicio-redisenado .casa-novedades article .rounded-troquel { border-radius:theme('borderRadius.full'); }
+.inicio-redisenado .casa-pie { padding-top:24px; margin-top:8px; font-size:.75rem; }
+.inicio-redisenado .casa-pie small { display:block; margin-top:4px; font-size:.75rem; }
+.inicio-redisenado .casa-pie .casa-boton { justify-content:flex-start; font-size:.75rem; }
+
+body:has(.inicio-redisenado) .casa-hoja {
+  color:theme('colors.tinta');
+  border-radius:theme('borderRadius.inicio-tarjeta'); background:theme('colors.inicio-crema');
+  padding:28px; border:1px solid theme('colors.filete'); font-size:.875rem;
+}
+body:has(.inicio-redisenado) .casa-hoja > h2 { font:500 1.875rem/1.2 theme('fontFamily.inicio-titular'); margin-bottom:20px; }
+body:has(.inicio-redisenado) .casa-hoja p.t-seccion { font-family:theme('fontFamily.inicio-texto'); }
+body:has(.inicio-redisenado) .casa-hoja .pase-cara { border-radius:theme('borderRadius.inicio-control'); }
+body:has(.inicio-redisenado) .casa-hoja .pase-retrato p { font-family:theme('fontFamily.inicio-titular'); }
+body:has(.inicio-redisenado) .casa-hoja .premio-codigo { font-family:theme('fontFamily.inicio-texto'); }
+body:has(.inicio-redisenado) .casa-hoja .casa-boton.bg-banda { background:theme('colors.inicio-borgona'); }
+
+@media (min-width:900px) {
+  .inicio-redisenado .inicio-club-resumen { gap:16px; }
+  .inicio-redisenado .casa-fidelidad { padding:24px 28px 16px; }
+  .inicio-redisenado .casa-fidelidad-titulo { flex-wrap:wrap; }
+  .inicio-redisenado .casa-fidelidad-titulo > div { flex:1 1 180px; }
+  .inicio-redisenado .casa-bolsa-lista { align-self:start; }
+}
+@media (min-width:900px) and (max-width:1199px) {
+  body:has(.inicio-redisenado) .casa-cabecera-interior { gap:16px; }
+  body:has(.inicio-redisenado) .casa-nav-amplia a { min-width:62px; padding:10px 8px; }
+  body:has(.inicio-redisenado) .casa-reservar { max-width:164px; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta,
+  .inicio-redisenado .casa-fidelidad { padding-inline:24px; }
+}
+@media (max-width:899px) {
+  body:has(.inicio-redisenado) .casa-cabecera-interior { min-height:86px; gap:16px; padding:18px 20px; flex-wrap:wrap; }
+  body:has(.inicio-redisenado) .casa-marca,
+  body:has(.inicio-redisenado) .casa-marca img { width:120px; }
+  body:has(.inicio-redisenado) .casa-marca:focus-visible { outline-offset:15px; }
+  body:has(.inicio-redisenado) .casa-nav-amplia { display:none; }
+  body:has(.inicio-redisenado) .casa-reservar { padding:10px 13px; font-size:.75rem; gap:6px; min-height:44px; min-width:0; flex:0 1 auto; white-space:normal; overflow-wrap:anywhere; }
+  body:has(.inicio-redisenado) .casa-saludo-interior { padding:0 4px 4px; min-height:0; }
+  body:has(.inicio-redisenado) .casa-saludo-perfil { min-height:48px; min-width:44px; }
+  body:has(.inicio-redisenado) .casa-saludo-texto > p { font-size:.8125rem; }
+  body:has(.inicio-redisenado) .casa-avatar { width:34px; height:34px; }
+  body:has(.inicio-redisenado) .casa-nav-movil { background:theme('colors.inicio-crema'); border-top:1px solid theme('colors.filete / 70%'); }
+  body:has(.inicio-redisenado) .casa-nav-movil > ul { flex-wrap:wrap; gap:0; max-width:600px; padding-inline:8px; }
+  body:has(.inicio-redisenado) .casa-nav-movil li { flex:1 0 max(20%,4.125em); min-width:min-content; font-size:.75rem; }
+  body:has(.inicio-redisenado) .casa-nav-movil a { min-height:72px; gap:8px; padding:12px 4px 8px; }
+  body:has(.inicio-redisenado) .casa-nav-movil a[aria-current=page] { color:theme('colors.inicio-borgona'); }
+  body:has(.inicio-redisenado) .casa-nav-movil a[aria-current=page]::before { border-radius:theme('borderRadius.full'); background:theme('colors.inicio-rosa'); width:52px; height:32px; top:7px; }
+  body:has(.inicio-redisenado) .casa-nav-movil a > span:nth-child(2) { font-family:theme('fontFamily.inicio-texto'); font-size:.75rem; font-weight:600; max-width:none; white-space:nowrap; overflow-wrap:normal; text-align:center; }
+  .inicio-redisenado.inicio-mejorado { --inicio-margen:20px; padding:0 0 calc(var(--inicio-nav-alto,72px) + 36px); gap:24px 0; }
+  body:has(.inicio-redisenado) .inicio-encabezado .inicio-pase-rapido { padding:10px 12px; font-size:.75rem; }
+  .inicio-redisenado .inicio-resumen { grid-template-columns:1fr; gap:20px; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta { padding:20px 24px 12px; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta h2 { margin-top:12px; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta-saldo { font-size:2.25rem; margin-top:6px; }
+  .inicio-redisenado .casa-cuenta-disponible { margin-top:6px; font-size:.75rem; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta-acciones { margin-top:16px; gap:8px; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta-acciones > button { padding:8px; font-size:.75rem; min-height:48px; line-height:1.5; }
+  .inicio-redisenado .inicio-cuenta-enlaces { margin-top:8px; gap:0 10px; }
+  .inicio-redisenado .inicio-movimientos { font-size:.75rem; }
+  .inicio-redisenado .casa-fidelidad { padding:22px 24px 14px; }
+  .inicio-redisenado .casa-fidelidad-titulo { flex-wrap:wrap; }
+  .inicio-redisenado .casa-fidelidad-titulo > div { flex:1 1 180px; }
+  .inicio-redisenado .casa-fidelidad h2 { font-size:1.4rem; }
+  .inicio-redisenado .casa-fidelidad-titulo p { font-size:.75rem; }
+  .inicio-redisenado .casa-fidelidad ul { gap:12px; }
+  .inicio-redisenado .casa-fidelidad li > span { width:42px; height:42px; }
+  .inicio-redisenado .inicio-actualizacion { margin:0; }
+  .inicio-redisenado .inicio-actualizacion > div { font-size:.75rem; }
+  .inicio-redisenado .inicio-seguimiento { padding:12px 16px; gap:12px; }
+  .inicio-redisenado .inicio-seguimiento p { margin-top:4px; }
+  .inicio-redisenado .inicio-seguimiento .casa-boton { justify-content:flex-start; }
+  .inicio-redisenado .casa-accesos > ul { gap:10px; }
+  .inicio-redisenado .casa-accesos button { flex-direction:column; min-height:88px; padding:12px 8px; gap:8px; }
+  .inicio-redisenado .casa-accesos button > span:nth-child(2) { font-size:.75rem; text-align:center; }
+  .inicio-redisenado .casa-accesos .casa-acceso-flecha { display:none; }
+  .inicio-redisenado .casa-bolsa-lista { padding:16px 20px; }
+  .inicio-redisenado .inicio-invitacion-foto { display:block; height:clamp(280px,65vw,420px); }
+  .inicio-redisenado .inicio-invitacion .inicio-foto-mesa { display:none; }
+  .inicio-redisenado .inicio-invitacion .inicio-foto-cafe { object-position:50% 48%; }
+  .inicio-redisenado .inicio-invitacion .inicio-invitacion-texto {
+    padding:12px var(--inicio-margen); min-height:0;
+  }
+  .inicio-redisenado .inicio-invitacion-mensaje { gap:12px; }
+  .inicio-redisenado .inicio-invitacion h1 { font-size:1.75rem; line-height:1.15; max-width:100%; }
+  .inicio-redisenado .inicio-invitacion .casa-boton { min-height:44px; padding:10px 14px; font-size:.75rem; gap:6px; }
+  .inicio-redisenado .casa-antojos-lista { gap:16px; }
+  .inicio-redisenado .casa-antojo-nombre { padding:12px 0 8px; font-size:1.125rem; }
+  .inicio-redisenado .casa-antojo-precio { padding-inline:0; font-size:.875rem; }
+  .inicio-redisenado .casa-novedades ul { grid-template-columns:1fr; gap:16px; }
+  .inicio-redisenado .casa-pie { flex-direction:column; gap:4px; }
+  body:has(.inicio-redisenado) .casa-hoja { margin:auto 0 0; max-width:none; max-height:calc(100dvh - 24px); padding:24px; border-radius:theme('borderRadius.inicio-tarjeta') theme('borderRadius.inicio-tarjeta') 0 0; }
+}
+@media (max-width:599px) {
+  .inicio-redisenado.inicio-mejorado { --inicio-margen:20px; gap:16px 0; }
+  body:has(.inicio-redisenado) .casa-cabecera-interior { padding-inline:20px; gap:18px 12px; }
+  body:has(.inicio-redisenado) .inicio-encabezado { gap:0; }
+  .inicio-redisenado .inicio-invitacion-mensaje { align-items:center; }
+  .inicio-redisenado .inicio-invitacion h1 { font-size:1.5rem; }
+  .inicio-redisenado .inicio-invitacion .casa-boton { padding-inline:12px; }
+  .inicio-redisenado .casa-seccion-cabecera { gap:4px; margin-bottom:8px; }
+  .inicio-redisenado .casa-seccion-cabecera h2 { font-size:1.25rem; }
+  .inicio-redisenado .inicio-seccion-nota { display:none; }
+  .inicio-redisenado.inicio-mejorado .casa-antojos-lista { grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:max(43%,min(100%,9.4rem)); gap:16px; overflow-x:auto; padding:4px 4px 12px; margin-inline:-4px; scroll-padding-inline:4px; scroll-snap-type:x proximity; scrollbar-width:thin; }
+  .inicio-redisenado .casa-antojo { scroll-snap-align:start; }
+  .inicio-redisenado .casa-antojo-foto { aspect-ratio:1.2; }
+  .inicio-redisenado .casa-antojo-nombre { font-size:1rem; }
+  .inicio-redisenado .casa-antojo-precio { font-size:.875rem; }
+}
+@media (max-width:380px) {
+  body:has(.inicio-redisenado) .casa-cabecera-interior { padding:18px; gap:18px 12px; }
+  body:has(.inicio-redisenado) .inicio-encabezado .inicio-pase-rapido { max-width:7rem; padding-inline:8px; }
+  body:has(.inicio-redisenado) .inicio-encabezado .inicio-pase-rapido > .ico { display:none; }
+  .inicio-redisenado.inicio-mejorado { --inicio-margen:16px; }
+  .inicio-redisenado .inicio-invitacion-mensaje { align-items:flex-start; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta { padding:16px 20px 10px; }
+  .inicio-redisenado .casa-cuenta-cabecera > span { font-size:.75rem; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta h2 { font-size:.75rem; margin-top:10px; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta-saldo { font-size:2rem; }
+  .inicio-redisenado .inicio-resumen .casa-cuenta-acciones > button { font-size:.8125rem; padding:10px 6px; }
+  .inicio-redisenado .casa-cuenta-acciones .ico { display:none; }
+  .inicio-redisenado .inicio-cuenta-enlaces { gap:0 8px; }
+  .inicio-redisenado .inicio-movimientos { font-size:.75rem; }
+  .inicio-redisenado .casa-fidelidad { padding:20px; }
+  .inicio-redisenado .casa-fidelidad h2 { font-size:1.25rem; }
+  .inicio-redisenado .casa-fidelidad ul { gap:10px 6px; }
+  .inicio-redisenado .casa-fidelidad li > span { width:36px; height:36px; }
+  .inicio-redisenado .casa-fidelidad-contador { font-size:1.875rem; }
+  .inicio-redisenado .inicio-seguimiento { padding:12px 16px; }
+  .inicio-redisenado .inicio-seguimiento-icono { display:none; }
+  .inicio-redisenado .casa-accesos > ul { gap:8px; }
+  .inicio-redisenado .casa-accesos button > span:nth-child(2) { font-size:.75rem; }
+}
+@media (prefers-reduced-motion:reduce) {
+  body:has(.inicio-redisenado) .inicio-actualizar[aria-busy=true] > .inicio-refrescar-icono { animation:none; }
+  .inicio-redisenado .casa-antojo-foto img { transition:none; }
+  .inicio-redisenado .casa-antojo:hover .casa-antojo-foto img { transform:none; }
+}

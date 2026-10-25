@@ -1,0 +1,10 @@
+node_modules
+dist
+.wrangler
+.dev.vars
+.env
+*.local
+.env.deploy
+respaldo-correcciones-*
+.test-output
+verificacion-*/datos-privados

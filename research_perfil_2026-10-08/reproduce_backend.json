@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-08",
+  "environment": "PGlite in memory; synthetic data; no network database; no production",
+  "results": [
+    {
+      "context": "bearer_solo",
+      "path": "/api/yo",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "bearer_solo",
+      "path": "/api/actividad",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "bearer_solo",
+      "path": "/api/perfil",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "cookie_sola",
+      "path": "/api/yo",
+      "status": 404,
+      "error": "No encontramos esa cuenta.",
+      "cache": "no-store"
+    },
+    {
+      "context": "cookie_sola",
+      "path": "/api/actividad",
+      "status": 403,
+      "error": "Entrá con tu cuenta para ver tu actividad.",
+      "cache": "no-store"
+    },
+    {
+      "context": "cookie_sola",
+      "path": "/api/perfil",
+      "status": 403,
+      "error": "Entrá con tu cuenta para editar tu perfil.",
+      "cache": "no-store"
+    },
+    {
+      "context": "ambos_sin_csrf",
+      "path": "/api/yo",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "ambos_sin_csrf",
+      "path": "/api/actividad",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "ambos_sin_csrf",
+      "path": "/api/perfil",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "ambos_con_csrf",
+      "path": "/api/yo",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "ambos_con_csrf",
+      "path": "/api/actividad",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "ambos_con_csrf",
+      "path": "/api/perfil",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "bearer_con_cookie_expirada",
+      "path": "/api/yo",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "bearer_con_cookie_expirada",
+      "path": "/api/actividad",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "bearer_con_cookie_expirada",
+      "path": "/api/perfil",
+      "status": 200,
+      "error": null,
+      "cache": "no-store"
+    },
+    {
+      "context": "dos_borradores_misma_version",
+      "path": "/api/perfil",
+      "firstStatus": 200,
+      "secondStatus": 200,
+      "firstChangePreserved": false,
+      "finalBeverage": "Espresso"
+    },
+    {
+      "context": "consultas_yo_sin_membresia_activa",
+      "path": "/api/yo",
+      "status": 200,
+      "httpStatements": 11
+    },
+    {
+      "context": "reuso_credencial_tras_logout_real",
+      "path": "/api/yo",
+      "clientSessionCleared": true,
+      "replayStatus": 200
+    },
+    {
+      "context": "alergias_en_preparacion",
+      "path": "/api/operacion/pedidos",
+      "status": 200,
+      "profileHasAllergy": true,
+      "orderCount": 1,
+      "kitchenPayloadHasAllergy": false
+    },
+    {
+      "context": "alergias_en_preparacion",
+      "path": "/api/operacion/listas/pedidos",
+      "status": 200,
+      "profileHasAllergy": true,
+      "orderCount": 1,
+      "kitchenPayloadHasAllergy": false
+    },
+    {
+      "context": "unicode_bidi",
+      "path": "/api/perfil",
+      "status": 200,
+      "error": null
+    },
+    {
+      "context": "unicode_C1",
+      "path": "/api/perfil",
+      "status": 200,
+      "error": null
+    },
+    {
+      "context": "surrogate_aislado",
+      "path": "/api/perfil",
+      "status": 200,
+      "error": null
+    },
+    {
+      "context": "41_caracteres_unicode_no_BMP",
+      "path": "/api/perfil",
+      "status": 422
+    }
+  ]
+}

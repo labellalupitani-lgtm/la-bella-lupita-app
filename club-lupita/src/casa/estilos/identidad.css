@@ -1,0 +1,46 @@
+/* Componentes nuevos de V3 — los componentes existentes se corrigen en su origen */
+.casa-portada-titulo { padding:20px 24px; background:theme('colors.papel'); }
+.casa-portada-titulo h1 { font:400 clamp(36px,4vw,54px)/1.08 theme('fontFamily.titular'); letter-spacing:-.045em; margin-top:14px; }
+.casa-portada-titulo em,.club-identidad em { font-weight:400; }
+.casa-cafe-texto h2 { font:400 29px/1.15 theme('fontFamily.titular'); letter-spacing:-.035em; margin-bottom:12px; }
+.casa-saludo-texto > p:only-child { margin:0; letter-spacing:.06em; }
+.pase-frente { border-top:5px solid theme('colors.rosa'); }
+.pase-rotulo { display:flex; justify-content:space-between; align-items:start; gap:12px; border-bottom:1px solid theme('colors.filete'); padding-bottom:14px; text-transform:uppercase; font-size:12px; letter-spacing:.06em; }
+.pase-rotulo > span:last-child { max-width:15ch; text-align:right; }
+.pase-retrato { display:flex; align-items:center; gap:18px; }
+.pase-retrato img { width:64px; height:80px; object-fit:contain; flex-shrink:0; }
+.pase-retrato p { font:400 28px/1.12 theme('fontFamily.titular'); letter-spacing:-.035em; }
+.pase-datos { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 16px; padding-top:12px; border-top:1px solid theme('colors.filete'); font-size:14px; }
+.pase-sellos { display:grid; grid-template-columns:repeat(10,minmax(0,1fr)); gap:8px; }
+.pase-sellos > span { grid-column:span 2; justify-self:center; display:grid; place-items:center; border:1px solid theme('colors.contorno'); border-radius:50%; width:34px; max-width:100%; aspect-ratio:1; font-size:12px; }
+.pase-sellos > span:nth-child(6) { grid-column:2 / span 2; }
+.pase-sellos > .pase-sello-lleno { background:theme('colors.banda'); color:theme('colors.papel'); outline:1px solid theme('colors.papel'); outline-offset:-4px; }
+.club-identidad > .club-nota { color:theme('colors.papel'); }
+.club-identidad > .casa-titular { color:theme('colors.papel'); margin-bottom:22px; }
+.club-pase { margin-top:24px; }
+.club-pase .pase-cuerpo { min-height:380px; }
+.club-pase .casa-boton { color:theme('colors.papel'); }
+.casa-personal { max-width:1120px; }
+.casa-personal > header { display:flex; align-items:center; gap:24px; border-bottom:1px solid theme('colors.filete'); padding-bottom:24px; }
+.casa-personal > header img { width:125px; height:auto; }
+.casa-personal .t-seccion { font-size:24px; }
+.casa-personal > section { padding-top:16px; }
+.casa-personal li { overflow-wrap:anywhere; }
+@media(max-width:899px) {
+ .casa-portada-titulo { padding:18px 24px 20px; }
+ .casa-portada-titulo h1 { font-size:43px; }
+ .club-casa { padding-top:12px; }
+ .club-apertura { margin-inline:-20px; padding:24px; }
+ .club-identidad > .casa-titular { font-size:43px; }
+ .casa-personal > header { gap:16px; align-items:start; flex-direction:column; }
+}
+@media(max-width:380px) {
+ .casa-portada-titulo { padding:20px; }
+ .casa-portada-titulo h1 { font-size:36px; }
+ .pase-cara { padding:18px; }
+ .pase-retrato { gap:12px; }
+ .pase-retrato img { width:48px; height:60px; }
+ .pase-retrato p { font-size:24px; }
+ .club-apertura { margin-inline:-16px; padding:20px; }
+ .club-pase .pase-cuerpo { min-height:400px; }
+}

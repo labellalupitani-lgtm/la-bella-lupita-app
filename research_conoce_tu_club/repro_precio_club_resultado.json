@@ -1,0 +1,28 @@
+{
+  "fecha_referencia": "2026-10-08 America/Managua",
+  "entorno": "Worker local actual y PGlite efímero con datos sintéticos; red externa bloqueada",
+  "resultados": [
+    {
+      "caso": "precio_actualizado_entre_catalogo_y_confirmacion",
+      "estado": "DEFECTO_REPRODUCIDO_LOCALMENTE",
+      "importe_mostrado_centavos": 85000,
+      "importe_actualizado_centavos": 90000,
+      "cobrado_centavos": 90000,
+      "exceso_sobre_precio_mostrado_centavos": 5000,
+      "http": 200
+    },
+    {
+      "caso": "reintento_misma_referencia_tras_otro_cambio_precio",
+      "estado": "PROTECCION_VERIFICADA",
+      "doble_cargo": false,
+      "misma_butaca": true
+    },
+    {
+      "caso": "experiencia_pasada_en_endpoints_publicos",
+      "estado": "DIFERENCIA_REPRODUCIDA_LOCALMENTE",
+      "presente_en_catalogo": false,
+      "presente_en_cupos": true,
+      "afecta_listado_club": false
+    }
+  ]
+}

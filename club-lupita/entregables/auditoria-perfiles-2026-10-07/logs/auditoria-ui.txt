@@ -1,0 +1,14 @@
+{
+  "motor": "edge",
+  "version": "154.0.4258.62",
+  "results": [
+    {
+      "caso": "F2: respuesta VIP perdida y reintento con saldo exacto",
+      "estado": "APROBADO"
+    },
+    {
+      "caso": "F1: baja elimina el token y oculta los datos privados en ambas pestañas",
+      "estado": "APROBADO"
+    }
+  ]
+}

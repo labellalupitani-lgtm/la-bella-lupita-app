@@ -1,0 +1,44 @@
+
+> club-lupita@0.1.0 test:carta
+> node tests/carta.mjs && node tests/carta-ui.mjs && node tests/carta-operacion-ui.mjs
+
+PASA horario confirmado respeta Managua, domingo y límites exactos
+PASA la migración es aditiva e idempotente
+PASA la carta es pública; la configuración y cotización exigen permisos
+PASA no cobra sin cotización; cobra exactamente producto y empaque aceptados
+PASA cambiar precio entre cotización y cobro no debita hasta reconfirmar
+PASA un recibo sobrevive a cambio de precio, nombre y retiro del producto
+PASA referencias históricas recuperan su recibo sin revalorar
+PASA cotización vencida o alterada no produce pedido
+PASA cierre atómico impide cobrar una petición tardía y preserva recibos existentes
+PASA límites acumulados rechazan fraccionamiento y aceptan el borde exacto
+PASA opciones obligatorias y restricciones llegan a la comanda
+PASA agotado, pausa, horario y capacidad se revalidan antes del débito
+PASA el cargo de empaque cambiado requiere nueva aceptación
+PASA control de versiones evita pisar cambios de otro operador
+PASA cocina recibe opciones y restricción, pero no importes ni el perfil completo
+PASA cancelación excepcional requiere administración, devuelve una sola vez y deja motivo
+PASA fichas verificadas conservan revisión y permisos sin publicar responsable personal
+PASA medición agregada valida campos y percentil sin guardar contenido sensible
+PASA recuperación pertenece a la cuenta y lápidas cerradas no fingen cotizaciones
+PASA referencia de soporte enlaza cliente, pedido y registro sin exponer su perfil
+PASA el límite de nuevos pedidos conserva la consulta y repetición del recibo
+21 escenarios específicos correctos
+PASA búsqueda global con alias y resultados próximos en cinco anchos
+PASA ficha restaura foco por teclado y limpia la URL
+PASA opciones obligatorias conservan variantes distintas y sus límites
+PASA veinte unidades no se pueden exceder en ficha y listado
+PASA el pago muestra empaque y requiere revisar una cotización
+{"evento":"carta_cobro","intento":"9c338dd9c288b17996c67a2b170782b226a7689a03525474f84dda459eadbce9","estado":200}
+PASA respuesta perdida y cierre de pestaña recuperan exactamente un cobro
+PASA consulta pública y cuenta caída conservan productos
+PASA pendiente con producto retirado o contenido dañado conserva consulta y cierre
+PASA almacenamiento bloqueado impide cobrar y conserva el presupuesto
+PASA otra pestaña reconoce el intento y no envía un segundo pedido
+PASA un HTTP 200 sin recibo válido no se interpreta como pago exitoso
+PASA foco de teclado queda visible por encima del pedido y navegación móvil
+PASA consulta y posición sobreviven a salir y volver a Carta
+PASA foto fallida y revisión automatizada de accesibilidad
+PASA Administración guarda reglas y cliente recibe estimación
+PASA Ficha exige revisión y se publica desde administración
+PASA Cocina marca agotados sin editar precio, horario o capacidad

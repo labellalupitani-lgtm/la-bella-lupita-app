@@ -1,0 +1,32 @@
+- main:
+  - img "La Bella Lupita Bistró-Café"
+  - text: Club Lupita
+  - paragraph: La casa digital de La Bella Lupita
+  - figure "El gusto de volver":
+    - img "Una taza de café de La Bella Lupita entre las manos."
+    - text: El gusto de volver
+  - region "Tres generaciones Una taza":
+    - paragraph: Desde 1971 · Matagalpa y Jinotega
+    - heading "Tres generaciones Una taza" [level=1]:
+      - text: Tres generaciones
+      - emphasis: Una taza
+    - paragraph: "El café de nuestra finca, ahora más cerca de vos. Conocé Club Lupita: tus sellos, tu cuenta y algo rico para tu próxima visita."
+    - list "Qué podés descubrir en Club Lupita":
+      - listitem:
+        - text: "01"
+        - strong: Tus sellos
+        - paragraph: Seguí tu tanda
+      - listitem:
+        - text: "02"
+        - strong: Tu cuenta
+        - paragraph: Consultá tu saldo
+      - listitem:
+        - text: "03"
+        - strong: La carta
+        - paragraph: Elegí tu antojo
+    - heading "Tu lugar en Club Lupita" [level=2]
+    - paragraph: Creá tu cuenta o entrá con tu correo. Te enviaremos un código, sin contraseñas.
+    - text: Correo electrónico
+    - textbox "Correo electrónico"
+    - button "Continuar con mi correo"
+    - paragraph: ¿Ya tenés cuenta? Usá tu mismo correo para entrar.

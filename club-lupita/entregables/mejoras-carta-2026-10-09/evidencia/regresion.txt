@@ -1,0 +1,87 @@
+
+> club-lupita@0.1.0 test
+> node tests/regresion.mjs && node tests/cuenta-cliente.mjs && node tests/operacion.mjs && node tests/correo.mjs && node tests/resend.mjs && node tests/auditoria.mjs && node tests/saldo-cronologico.mjs && node tests/panel.mjs && node tests/acceso-equipo.mjs && node tests/clientes-equipo.mjs && node tests/inicio.mjs && node tests/carta.mjs
+
+PASA migración de puntos con historial y consumo posterior
+PASA permisos y aislamiento de cuenta
+PASA cobro de caja al socio indicado e idempotencia
+PASA membresía vencida no concede beneficios ni cargos sin consentimiento
+PASA noveno sello conserva un premio pendiente y permite renovarlo
+PASA reserva válida, duplicada y cierre con minutos
+PASA reintento recupera bolsa y recibo antes de comprobar saldo o inventario
+PASA reintento de experiencia devuelve la misma butaca
+PASA recarga y bono son una operación inseparable
+PASA reciclaje de plaza, cancelación visible y renovación consentida
+PASA saldo y puntos llegan por API, el libro mayor no se modifica
+PASA ochenta membresías vencidas sin agotar subpeticiones del Worker
+12 grupos de regresión correctos.
+Cuenta cliente: perfil persistente, validación, permisos, auditoría y paginación sin omisiones verificados.
+PASA acceso preparado, envío confirmado, cuenta nueva y código de un solo uso
+PASA accesos individuales y separación de caja/cocina
+{"evento":"carta_cobro","intento":"0cb9c897e9015d0d89543c9b6049b23aa95ca16f8ab4fa2ca3b224d653e42617","estado":200}
+{"evento":"carta_cobro","intento":"0cb9c897e9015d0d89543c9b6049b23aa95ca16f8ab4fa2ca3b224d653e42617","estado":200}
+{"evento":"carta_cobro","intento":"a576d2206aef1e18f056283470e98819e37b1aa64df399d42cb7d2ab733f86c7","estado":200}
+PASA pedido persistente, cobro único, estados, devolución exacta de saldo/puntos y avisos
+PASA atención con respuesta, privacidad, cancelación de reservas, entregas únicas, comprobantes permanentes y métricas
+PASA entrega por personal, uso único y revocación inmediata del acceso
+OK Registro por correo: alta, reingreso, contacto obligatorio, cuenta existente protegida, OTP privado, expiración, cinco intentos, reenvío, uso único y fallo de entrega. Correos simulados: 6
+OK Resend: transporte privado, reserva 100 permitida/101 bloqueada, límite 3000, reinicio diario y ventana mensual, fallo del proveedor invalida código.
+PASA F1: baja revoca la sesión anterior, cobros de caja y renovación automática
+PASA F2: reintento VIP con saldo exacto devuelve la reserva sin un segundo cargo
+PASA F3: aforo simultáneo permite tramos adyacentes y rechaza un pico intermedio lleno
+PASA F4: la API conserva el bono nuevo después de agotar una recarga anterior
+PASA F5: el panel concilia con la composición de las cuentas, incluidas las bajas
+PASA F6: entradas ausentes, null, escalares, arreglos y JSON truncado devuelven 422 sin escribir
+6 grupos de correcciones de auditoría correctos.
+PASA consumos antiguos no gastan un bono posterior; migración sin tocar el libro
+PASA una cuenta sin historial devuelve ceros y no afecta otra cuenta
+PASA cada consumo agota primero el bono que ya existe
+PASA devolución de dinero no recupera bonos usados por compras posteriores
+PASA devoluciones mixtas y fuera de orden conservan el reparto de cada cargo
+PASA creado manda sobre la inserción y el id desempata timestamps iguales
+PASA ajustes, regalos y deuda histórica conservan SUM(monto) sin gastar bonos futuros
+PASA una referencia de devolución ajena o parcial no importa bonos de otro cargo
+PASA acumuladores amplios conservan saldos finales dentro del contrato integer
+PASA libro inmutable y migración repetible conservan resultados y movimientos
+10 grupos de saldo cronológico correctos.
+PASA panel: más de 100 registros, paginación sin pérdida, filtros, historial, roles, resumen, métricas, movimientos y beneficio vencido.
+PASA Transición de un uso, propietario nominal, MFA obligatorio y legado cerrado
+PASA Varios propietarios y matriz de Caja, Cocina, Encargado y Cliente
+PASA Cookie segura, CSRF/origen, coexistencia cliente-equipo y cierre revocable por sesión
+PASA Inactividad no renovada por consultas y revalidación de acciones privilegiadas
+PASA Invitación de 24 horas, renovación, consumo único y contraseña elegida por la persona
+PASA Desafío MFA limitado, sesión rotada, código no reutilizable y secreto cifrado
+PASA Recuperación con código de un uso, revocación total y nuevo autenticador
+PASA Último propietario protegido; invitaciones pendientes no cuentan como relevo
+PASA Éxitos sin penalización, retraso por fallos y entradas inválidas sin 500
+PASA Capacitación falla cerrada, aislamiento de sesión, auditoría sin secretos y migración aditiva idempotente
+PASA directorio: 109 cuentas, sin compras, búsqueda literal y normalizada, estado, origen, fechas y paginación estable
+PASA ficha y 11 clases de historial, cursor sin omisiones, privacidad y consultas sin mutaciones
+PASA política del propietario, cinco perfiles, cambio de rol, reactivación, auditoría, revocación y conflicto concurrente
+PASA archivo exacto, correos reales preservados, bloqueo de cruces, historial intacto, sin acceso operativo, cupos liberados e idempotencia
+PASA catálogo y cupos excluyen fechas pasadas y muestran capacidad real
+PASA contexto privado priorizable, sin limitarse a compras recientes
+PASA premio conserva derecho, código idempotente y hora de referencia
+PASA métricas sólo aceptan campos y eventos permitidos y administración puede leerlas
+PASA migración a cookie, revocación del bearer, CSRF y cierre revocable
+5 grupos de Inicio correctos.
+PASA la migración es aditiva e idempotente
+PASA la carta es pública; la configuración y cotización exigen permisos
+PASA no cobra sin cotización; cobra exactamente producto y empaque aceptados
+PASA cambiar precio entre cotización y cobro no debita hasta reconfirmar
+PASA un recibo sobrevive a cambio de precio, nombre y retiro del producto
+PASA referencias históricas recuperan su recibo sin revalorar
+PASA cotización vencida o alterada no produce pedido
+PASA cierre atómico impide cobrar una petición tardía y preserva recibos existentes
+PASA límites acumulados rechazan fraccionamiento y aceptan el borde exacto
+PASA opciones obligatorias y restricciones llegan a la comanda
+PASA agotado, pausa, horario y capacidad se revalidan antes del débito
+PASA el cargo de empaque cambiado requiere nueva aceptación
+PASA control de versiones evita pisar cambios de otro operador
+PASA cocina recibe opciones y restricción, pero no importes ni el perfil completo
+PASA cancelación excepcional requiere administración, devuelve una sola vez y deja motivo
+PASA fichas verificadas conservan revisión y permisos sin publicar responsable personal
+PASA medición agregada valida campos y percentil sin guardar contenido sensible
+PASA recuperación pertenece a la cuenta y lápidas cerradas no fingen cotizaciones
+PASA el límite de nuevos pedidos conserva la consulta y repetición del recibo
+19 escenarios específicos correctos

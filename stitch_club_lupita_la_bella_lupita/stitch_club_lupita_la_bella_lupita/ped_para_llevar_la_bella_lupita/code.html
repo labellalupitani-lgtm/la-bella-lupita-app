@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedí para llevar - La Bella Lupita</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#714c32",
+                        "secondary-container": "#ffc15f",
+                        "surface-container-low": "#f6f3ec",
+                        "surface-variant": "#e5e2db",
+                        "surface": "#fcf9f2",
+                        "outline": "#717972",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdcc6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#414943",
+                        "tertiary-fixed-dim": "#efbc9b",
+                        "secondary-fixed-dim": "#f9bc5a",
+                        "on-primary-fixed": "#002112",
+                        "surface-container-high": "#ebe8e1",
+                        "on-primary-fixed-variant": "#214f38",
+                        "inverse-primary": "#a0d2b3",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#a0d2b3",
+                        "secondary": "#805600",
+                        "on-error": "#ffffff",
+                        "background": "#fcf9f2",
+                        "surface-container": "#f1eee7",
+                        "on-secondary-fixed-variant": "#614000",
+                        "on-background": "#1c1c18",
+                        "primary-container": "#2f5d45",
+                        "on-tertiary-fixed-variant": "#623f25",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#281800",
+                        "surface-tint": "#39684f",
+                        "surface-bright": "#fcf9f2",
+                        "on-tertiary-fixed": "#2f1502",
+                        "inverse-on-surface": "#f3f0e9",
+                        "tertiary": "#57351d",
+                        "surface-container-highest": "#e5e2db",
+                        "secondary-fixed": "#ffddb0",
+                        "on-secondary-container": "#754e00",
+                        "on-primary-container": "#a2d4b6",
+                        "on-tertiary-container": "#f1bf9d",
+                        "outline-variant": "#c0c9c1",
+                        "on-surface": "#1c1c18",
+                        "inverse-surface": "#31312c",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dcdad3",
+                        "primary-fixed": "#bbeecf",
+                        "primary": "#16452f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Libre Caslon Text", "serif"],
+                        "display": ["Libre Caslon Text", "serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    },
+                    "fontSize": {}
+                },
+            },
+        }
+    </script>
+<style>
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface-container-low text-on-surface font-body antialiased md:bg-surface-container pb-32">
+<!-- Top App Bar (Web) / Hidden on Mobile -->
+<header class="hidden md:flex items-center justify-between px-6 h-16 w-full fixed top-0 z-50 bg-surface border-b border-surface-container-high">
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:bg-surface-container transition-colors p-2 rounded-full scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<span class="font-headline text-2xl italic text-primary">La Bella Lupita</span>
+</div>
+<div class="flex items-center gap-6">
+<nav class="flex gap-6">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Pedir</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Tienda</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#">Club</a>
+</nav>
+<button class="text-on-surface-variant hover:bg-surface-container transition-colors p-2 rounded-full scale-95 active:opacity-80 transition-transform relative">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-secondary-container rounded-full"></span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 md:pt-24 md:flex md:gap-8">
+<!-- Left Column: Navigation/Filters (Web) / Header (Mobile) -->
+<div class="md:w-1/4 flex-shrink-0">
+<div class="mb-6 md:sticky md:top-24">
+<h1 class="font-headline text-3xl md:text-4xl text-on-surface mb-1">Pedí para llevar</h1>
+<p class="text-on-surface-variant text-sm font-medium flex items-center gap-1 mb-6">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Retirás en barra en 15 min · Plaza La Fe
+                </p>
+<div class="relative mb-6">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container rounded-full py-3 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary border-none placeholder:text-on-surface-variant/70" placeholder="¿Qué se te antoja hoy?" type="text"/>
+</div>
+<!-- Categories -->
+<div class="flex md:flex-col gap-3 overflow-x-auto hide-scrollbar pb-2 md:pb-0">
+<button class="flex-shrink-0 px-5 py-2.5 rounded-full bg-primary-container text-on-primary text-sm font-medium transition-all shadow-sm">
+                        Barra
+                    </button>
+<button class="flex-shrink-0 px-5 py-2.5 rounded-full bg-surface border border-outline-variant text-on-surface-variant text-sm font-medium hover:bg-surface-container transition-all">
+                        Brunch
+                    </button>
+<button class="flex-shrink-0 px-5 py-2.5 rounded-full bg-surface border border-outline-variant text-on-surface-variant text-sm font-medium hover:bg-surface-container transition-all">
+                        Bistró
+                    </button>
+<button class="flex-shrink-0 px-5 py-2.5 rounded-full bg-surface border border-outline-variant text-on-surface-variant text-sm font-medium hover:bg-surface-container transition-all">
+                        Sobremesa
+                    </button>
+</div>
+</div>
+</div>
+<!-- Right Column: Product Grid -->
+<div class="md:w-3/4 flex-grow">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+<!-- Product 1 -->
+<article class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative flex flex-col group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A top-down view of a cappuccino with perfect latte art in a rustic ceramic mug on a weathered wooden table. Soft, warm cafe lighting, rich crema, inviting and artisanal atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyos4h0HfAIFFC_wFqHhsuY6glNfa0esVZ3zEDjRqUAFdoFBHMrE8wNLPekdP5ULse1udZdePLYQTy9KAerFiqXGT69IUL3WEmhw4da9uKqoiMmMte9xVjyTqKosR5eBLB-8prV5hnJo-I4iR5Sv-q6w-P9vh_nokbaVqy7ILZP7aiJKBP4pA45tnB3ZpQYSIgldmxh1mDKtRCoaiU-BvlXVe-zT2VHnh4AOLQnGAC0uPb8yVXqsL5q5xOqm6Z7IYLEyw4a8KxHYI"/>
+<div class="absolute top-2 left-2 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full shadow-sm">
+                            2× SELLOS HOY
+                        </div>
+</div>
+<div class="p-4 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline text-base text-on-surface mb-1">Capuchino de la finca</h3>
+<p class="text-on-surface-variant text-sm font-medium tabular-nums">C$ 110</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center self-end mt-2 hover:bg-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</article>
+<!-- Product 2 -->
+<article class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative flex flex-col group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A tall glass of iced coffee latte with layers of milk and espresso, condensation on the glass, sitting on a wooden counter with a cafe background. Refreshing, bright, artisanal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3OpiuOrut4X0r8Rs5Kp4CkIAfT5rCfgsqIcZK587f3xyR0uP2Q07WNN6pQLNTEvMhs13caz0fd3c5sjVb6CI4QOhCaeGza4YmeBd1gU29KyI6dgR0SrU1btzfCNH52CBDbKd7j2032ogRLjusrnY8d9UoKebmgQ8KcmR0YE9HOxZZdzAeW7d_fBciAWfvdmLIyJBb06qGdl2CbV33lBFT0Fbx01KohKBoCQcKxOeWY_msDYkvD-85hHNy1jAWuLAuwa07HgPMuWg"/>
+</div>
+<div class="p-4 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline text-base text-on-surface mb-1">Iced Coffee Latte</h3>
+<p class="text-on-surface-variant text-sm font-medium tabular-nums">C$ 120</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center self-end mt-2 hover:bg-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</article>
+<!-- Product 3 -->
+<article class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative flex flex-col group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A golden, perfectly baked waffle topped with fresh berries, a dollop of whipped cream, and drizzled with honey. Served on a ceramic plate on a rustic wooden table. Warm, appetizing, brunch aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTgycDHXShfXIP8ykCka97Q9HppaU0LbiJSnwwv5Jjmvw-cTjiTInN7r0ssDFhl1lOBdEBOAot9WFNP0g9cQdygClOPBJg-nj7zGNSvJyF3hfC9WHMjycmFLLmOmVyKVY3UNI_qkBpNgnyOyec0nwTVXZW_6aFOP-tL0jbqEcscg2lRj8JxkRqixEyaO59RaabQQr5ju8eSOgXqs7KexoRcAp0xjG47SXu6J2W0Z05LkdBYrQWG57U6H1260ns2JHLyXhSgAD8g88"/>
+</div>
+<div class="p-4 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline text-base text-on-surface mb-1">Waffle El Consentido</h3>
+<p class="text-on-surface-variant text-sm font-medium tabular-nums">C$ 260</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center self-end mt-2 hover:bg-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</article>
+<!-- Product 4 -->
+<article class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative flex flex-col group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A beautifully plated risotto featuring gallo pinto elements, garnished with fresh microgreens and edible flowers. Served in a shallow rustic bowl on a wooden table. Gourmet, Nicaraguan fusion, warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzsE7LWqB_jcA_1vo0Sr8KseljDyrnoDzs3pqC6fUE27IR6g12wMbbWJSY_ruNr8hatDHeP71e6B1CJF-beQIUQgOujryJ9UYzP96T5U2QMMxx2cIjirBQf7c8-kOPGOv17mL-f1HNtGegnwc7P0-FkvUfBgztMTi1pTLQsXnkJKl9DI0bVPbpSViDhfJXI0cA7MAUzA5TkgT4z0Bzwtbfl3-eZAtM9_BKmMG4yK2wZffHcBUvvYJBc2jI6qQjc8Xc1ynsaSIRQ0U"/>
+</div>
+<div class="p-4 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline text-base text-on-surface mb-1">Risotto de Gallo Pinto</h3>
+<p class="text-on-surface-variant text-sm font-medium tabular-nums">C$ 280</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center self-end mt-2 hover:bg-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</article>
+<!-- Product 5 -->
+<article class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative flex flex-col group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A fresh bagel sandwich with smoked salmon, cream cheese, capers, and red onion, sliced in half on a light-colored plate. Bright cafe setting, healthy, artisanal brunch." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSR8ex30vIDeX-VZWDSJnJVm37ZDLF7k9Gr-lkQkFyCGvntS2yf2avmIQ0FMGI-nz6VkpjhO4GeGVLtSWKI97SiYqFOGjd9kLqo1-OfRxgOl2MS2cJeD8StnOIpijbtd7gejyfV0kstkahkC2OregTrczQs6WFA9aKACUtU8YRIndA4wbr4VEAq8NMHYDEGXgBh_DkIJ8lumufAKyidmner-3sTBipNa9Le-YB55ubw6ufWcN1VdI1wdDWdtk5zgHUydUknXdFZPw"/>
+</div>
+<div class="p-4 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline text-base text-on-surface mb-1">Bagel de Salmón</h3>
+<p class="text-on-surface-variant text-sm font-medium tabular-nums">C$ 430</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center self-end mt-2 hover:bg-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</article>
+<!-- Product 6 -->
+<article class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow relative flex flex-col group">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A decadent chocolate dome dessert garnished with gold leaf, sitting on a dark ceramic plate in a dimly lit, cozy bistro setting. Rich, premium, indulgent atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIblM2U3YfZnlA2gVGfqdNAQpAvgRx9XxmBRSpvpprG-eLBWcyZlRgZFfAVdTKLUkwDi3gaqz7Jb9Uh6hGaAB3gVWnL78mKVsGk60MRp7oBKUn1YCuMiAWp5YYbSVgXxVz6hTsi6bocX3zvVEHiQGwhkL_VZ5RBsZ7MG3F5mU9Yo8oo2607dl6CnF4H3t0XNMGWIs3NVbZhSr6fDZUs3RaSGsbkfFZNfZHNUYB1Or35UwabmrW9whzGjM4J-ggDPZYEYYF9LgF1xU"/>
+</div>
+<div class="p-4 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline text-base text-on-surface mb-1">Dulce Tentación</h3>
+<p class="text-on-surface-variant text-sm font-medium tabular-nums">C$ 320</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center self-end mt-2 hover:bg-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- Floating Cart Bar -->
+<div class="fixed bottom-[88px] left-0 w-full px-4 z-40 md:hidden">
+<button class="w-full bg-[#221E17] text-surface-container-low rounded-full py-4 px-6 flex justify-between items-center shadow-lg active:scale-95 transition-transform">
+<span class="font-medium text-sm">2 artículos · <span class="tabular-nums font-bold">C$ 380</span></span>
+<span class="font-bold text-sm">Ver tu pedido</span>
+</button>
+</div>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden flex justify-around items-center h-20 px-2 w-full fixed bottom-0 z-50 pb-safe bg-surface border-t border-surface-container-high shadow-[0_-4px_12px_0_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 0;">home</span>
+<span class="font-body text-[11px] uppercase tracking-widest font-medium">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary bg-primary-container/10 rounded-xl px-3 py-1 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="font-body text-[11px] uppercase tracking-widest font-medium">Pedir</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 0;">storefront</span>
+<span class="font-body text-[11px] uppercase tracking-widest font-medium">Tienda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 0;">loyalty</span>
+<span class="font-body text-[11px] uppercase tracking-widest font-medium">Club</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 0;">person</span>
+<span class="font-body text-[11px] uppercase tracking-widest font-medium">Perfil</span>
+</a>
+</nav>
+</body></html>

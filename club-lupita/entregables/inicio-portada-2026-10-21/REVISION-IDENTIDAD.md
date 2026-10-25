@@ -1,0 +1,27 @@
+# Revisión independiente de identidad — PASS
+
+Fecha: 21 de octubre de 2026. Referencia: `entregables/redisenio-2026-10-20/design-system.md`. Se revisaron exclusivamente el render y los estilos/medidas del DOM de Inicio y sus diálogos de pase y recarga en la vista previa aislada `http://127.0.0.1:5190/__preview/entrar`, con datos sintéticos. No se leyó código de la aplicación ni el razonamiento del constructor.
+
+**Dictamen final: PASS.** No queda un incumplimiento comprobado del sistema de identidad en el alcance revisado. La última compilación también conserva la tarjeta enfocada y su aro completos al navegar el carrusel. El dictamen verifica requisitos y consistencia; la preferencia estética del usuario sobre la propuesta sigue siendo una decisión independiente.
+
+| Criterio del sistema | Resultado y evidencia |
+|---|---|
+| Firma original íntegra, sin filtro ni deformación | Se ven el emblema, la denominación y Bistró-Café completos. El DOM confirma `filter: none`, `transform: none` y `object-fit: contain`. Variante de 160×76 px mostrada a 100×47,5 px; variante de 320×151 px mostrada a 176×83,047 px. Las proporciones se conservan. La firma compacta de 100 px móvil/tablet y 176 px escritorio es la adaptación explícita de esta petición; no se impone aquí el rango general de 280–320 px. |
+| Reserva H/4 | Móvil/tablet: H/4 = 11,875 px; espacio superior 12,25 px e inferior 13,25 px; el margen izquierdo mínimo es 16 px y el vecino de cabecera queda fuera de la reserva. Escritorio: H/4 = 20,762 px; espacio superior 22 px e inferior 23 px. PASS en 320, 390, 768 y 1440 px. |
+| Paleta y contraste | Cacao `#53291E`, fondo marfil `#FBF6EE`, acciones borgoña `#B60032`, rosa `#F9AFA4` y superficies cálidas coherentes. No se encontró coral como texto pequeño sobre claro. Contraste calculado desde los colores compuestos del DOM: cacao/marfil 11,46:1; texto secundario/marfil 6,03:1; marfil/borgoña 6,43:1. Mínimo de todos los pares de texto revisados: **5,43:1**, en texto secundario sobre rosa claro; supera 4,5:1. |
+| Tipografía y números | Playfair Display en titulares, Montserrat en cuerpo, navegación, precios, saldo y sellos. Ambas fuentes figuran cargadas desde `/fuentes/diseno/` del mismo origen. Saldo: 32 / 36 / 36 / 44,8 px según ancho; sello actual: 30 / 36 / 36 / 36 px; precios: 14 / 14 / 13 / 14 px. La jerarquía distingue importe de cuenta, avance y precios sin cambiar de familia numérica. |
+| Radios y espaciado | Portada, productos, cuenta, sellos y ofertas: 24 px. Accesos y aviso: 16 px. Diálogos: 24 px; las hojas móviles terminan rectas al borde inferior. Separaciones y rellenos predominantes de 8, 16, 20, 24 y 32 px. Los controles en píldora son distinguibles de las superficies. La nueva elección de superficies redondeadas sigue siendo propuesta visual, no una aprobación atribuida al usuario. |
+| Área de controles | Todos los controles visibles de producto medidos en los cuatro anchos tienen altura y anchura mínimas de 44 px. El enlace de la franja de herramienta «Reabrir cuenta» queda fuera del producto; el salto al contenido oculto se evaluó como ayuda de teclado, no como objetivo táctil visible. |
+| Foco | Aro visible borgoña de 2 px con separación marfil de 2 px (extensión exterior total de 4 px). Tras la última compilación, Tab desde Pizza lleva Risotto completo al área visible; Shift+Tab devuelve Pizza completa. En 320/390 px el carrusel reserva 4 px para el aro. También se comprobó a 768/1440 px. El foco inicial de los diálogos llega al control Cerrar. |
+| Texto ampliado | Comprobación con tamaño raíz al 200 % en los cuatro anchos: el documento mantiene `scrollWidth = clientWidth`. Pase y recarga no producen desplazamiento horizontal; su contenido vertical se puede recorrer hasta «Actualizar mi cuenta» / «Actualizar mi saldo». Los controles finales permanecen visibles y operables al recibir foco. |
+
+La portada prioriza foto, titular breve y acción. El texto operativo permanece en las secciones de cuenta y en los diálogos. En **320×568**, «Mostrá tu pase» aparece en la primera vista y «Explorar la carta» requiere desplazamiento por la altura de la fotografía; disponibilidad y visibilidad inicial son condiciones distintas. No se usó exigir ese CTA sobre el primer pliegue como criterio de aprobación.
+
+Evidencia propia:
+
+- Portada: [320×568](evidencia/identidad/portada-320x568.png), [320×844](evidencia/identidad/portada-320.png), [390×844](evidencia/identidad/portada-390.png), [768×844](evidencia/identidad/portada-768.png), [1440×1000](evidencia/identidad/portada-1440.png).
+- Diálogos: [pase a 320](evidencia/identidad/pase-320.png), [recarga a 390](evidencia/identidad/recarga-390.png); las capturas de los cuatro tamaños están en la misma carpeta.
+- Foco final: [320](evidencia/identidad/foco-carrusel-final-320.png), [390](evidencia/identidad/foco-carrusel-final-390.png), [768](evidencia/identidad/foco-carrusel-final-768.png), [1440](evidencia/identidad/foco-carrusel-final-1440.png).
+- Ampliación 200 %: [pase, inicio del diálogo](evidencia/identidad/pase-texto-200-320.png), [pase, control final](evidencia/identidad/pase-texto-200-final-320.png), [recarga, control final](evidencia/identidad/recarga-texto-200-final-320.png).
+- Medidas reproducibles: [estilos y geometría](evidencia/identidad/mediciones.json), [contraste](evidencia/identidad/contraste.json), [logo, fuentes y radios](evidencia/identidad/revalidacion-final.json), [cierre sobre última compilación](evidencia/identidad/cierre-final.json).
+

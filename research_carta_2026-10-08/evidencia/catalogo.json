@@ -1,0 +1,73 @@
+{
+  "total": 73,
+  "moments": [
+    {
+      "id": "barra",
+      "count": 24,
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "brunch",
+      "count": 14,
+      "estimatedMinutes": 15
+    },
+    {
+      "id": "bistro",
+      "count": 27,
+      "estimatedMinutes": 22
+    },
+    {
+      "id": "sobremesa",
+      "count": 8,
+      "estimatedMinutes": 5
+    }
+  ],
+  "photoCount": 33,
+  "missingPhotos": [
+    "espresso",
+    "cortadito",
+    "macchiato",
+    "americano",
+    "cappuccino",
+    "mocha",
+    "te-caliente",
+    "iced-americano",
+    "iced-latte",
+    "cremoso-cafe",
+    "cremoso-oreo",
+    "cremoso-light",
+    "limonada-bella-lupita",
+    "limonada-clasica",
+    "limonada-hierbabuena",
+    "limonada-mango",
+    "limonada-pitahaya",
+    "limonada-fresa",
+    "limonada-sandia-menta",
+    "limonada-maracuya",
+    "gaseosa",
+    "agua",
+    "soda",
+    "bocado-queso-platano",
+    "pizza-caprichosa",
+    "hamburguesa-autor",
+    "churrasco-mi-tierra",
+    "costillas-bbq",
+    "pancake-huerta",
+    "huevos-poche",
+    "omelette-campesino",
+    "mollete-huerto",
+    "waffle-bistro",
+    "torrijas-autor",
+    "cheesecake-cafe",
+    "cheesecake-pistacho",
+    "pastel-chocolate",
+    "tres-leches",
+    "natilla",
+    "flan-caramelo"
+  ],
+  "duplicateIds": [],
+  "invalidPrices": [],
+  "minPrice": 6000,
+  "maxPrice": 83000,
+  "brokenLocalPhotos": []
+}

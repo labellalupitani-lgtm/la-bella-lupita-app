@@ -1,0 +1,1254 @@
+{
+  "entrada": "http://127.0.0.1:5300/",
+  "url": "http://127.0.0.1:5300/tienda",
+  "h1": "Reserva de Cosecha",
+  "textoInicial": "Café servido en la casa · imagen de ambiente\n\nTIENDA DE LA FINCA\n\nReserva de Cosecha\n\nEl café de la casa, para llevar con vos.\n\n250 g\nC$ 890\n\nPreventa · retiro en la casa.\n\nEstamos confirmando la presentación y las condiciones de retiro. Consultá con la casa.\n\nConsultar este lote\narrow_forward\npor WhatsApp (abre otra pestaña)\nSobre el café\nchevron_right\nRetiro y condiciones\nchevron_right\nlocal_cafe\nLa bolsa de tu membresía\n\nTu bolsa de este mes está disponible.\n\nMostrar mi beneficio de bolsa\nRegalos y café para oficina\nchevron_right\nMis compras y ayuda",
+  "consultaPrincipal": {
+    "href": "https://wa.me/50587442005?text=Buenas.%20Quisiera%20consultar%20la%20disponibilidad%20y%20condiciones%20del%20lote%201%20de%20Reserva%20de%20Cosecha.",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  },
+  "tabs390": [
+    {
+      "text": "Volver al selector",
+      "tag": "A",
+      "rect": {
+        "x": 168.4375,
+        "y": 25.5,
+        "width": 94.25,
+        "height": 12,
+        "bottom": 37.5
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Ir al contenido",
+      "tag": "A",
+      "rect": {
+        "x": 16,
+        "y": 16,
+        "width": 158.796875,
+        "height": 49.59375,
+        "bottom": 65.59375
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "La Bella Lupita, ir al inicio",
+      "tag": "BUTTON",
+      "rect": {
+        "x": 20,
+        "y": 67,
+        "width": 120,
+        "height": 57,
+        "bottom": 124
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "15px",
+      "shadow": "none",
+      "visibleFocus": true
+    },
+    {
+      "text": "event_seat\nReservar una mesa",
+      "tag": "BUTTON",
+      "rect": {
+        "x": 197.03125,
+        "y": 71.5,
+        "width": 172.96875,
+        "height": 48,
+        "bottom": 119.5
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Consultar este lote\narrow_forward\npor WhatsApp (abre otra pestaña)",
+      "tag": "A",
+      "rect": {
+        "x": 42,
+        "y": 600.0625,
+        "width": 306,
+        "height": 50,
+        "bottom": 650.0625
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Sobre el café\nchevron_right",
+      "tag": "SUMMARY",
+      "rect": {
+        "x": 20,
+        "y": 514.0625,
+        "width": 350,
+        "height": 60,
+        "bottom": 574.0625
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Retiro y condiciones\nchevron_right",
+      "tag": "SUMMARY",
+      "rect": {
+        "x": 20,
+        "y": 514.0625,
+        "width": 350,
+        "height": 60,
+        "bottom": 574.0625
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Mostrar mi beneficio de bolsa",
+      "tag": "BUTTON",
+      "rect": {
+        "x": 56,
+        "y": 602.25,
+        "width": 182.71875,
+        "height": 48,
+        "bottom": 650.25
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Regalos y café para oficina\nchevron_right",
+      "tag": "SUMMARY",
+      "rect": {
+        "x": 20,
+        "y": 542.25,
+        "width": 350,
+        "height": 60,
+        "bottom": 602.25
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Mis compras y ayuda",
+      "tag": "BUTTON",
+      "rect": {
+        "x": 20,
+        "y": 610.25,
+        "width": 350,
+        "height": 48,
+        "bottom": 658.25
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "home\nInicio",
+      "tag": "A",
+      "rect": {
+        "x": 8,
+        "y": 772,
+        "width": 74.796875,
+        "height": 72,
+        "bottom": 844
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "local_cafe\nCarta",
+      "tag": "A",
+      "rect": {
+        "x": 82.796875,
+        "y": 772,
+        "width": 74.8125,
+        "height": 72,
+        "bottom": 844
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "storefront\nTienda",
+      "tag": "A",
+      "rect": {
+        "x": 157.609375,
+        "y": 772,
+        "width": 74.796875,
+        "height": 72,
+        "bottom": 844
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "military_tech\nMi Club",
+      "tag": "A",
+      "rect": {
+        "x": 232.40625,
+        "y": 772,
+        "width": 74.796875,
+        "height": 72,
+        "bottom": 844
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "person\nPerfil",
+      "tag": "A",
+      "rect": {
+        "x": 307.203125,
+        "y": 772,
+        "width": 74.796875,
+        "height": 72,
+        "bottom": 844
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "VISTA PREVIA LOCAL · Datos de prueba · Sin operaciones realesVolver al selector\nIr al contenido\nevent_seat\nReservar una mesa\nCafé servido en la casa · imagen de ambiente\n\nTIENDA DE LA FINCA\n\nReserva de Cosecha\n\nEl café de la casa, para llevar con vos.\n\n250 g\nC$ 890\n\nPreventa · retiro en la casa.\n\nEstamos confirmando la presentación y las condiciones de retiro. Consultá con la casa.\n\nConsultar este lote\narrow_forward\npor WhatsApp (abre otra pestaña)\nSobre el café\nchevron_right\nRetiro y condiciones\nchevron_right\nlocal_cafe\nLa bolsa de tu membresía\n\nTu bolsa de este mes está disponible.\n\nMostrar mi beneficio de bolsa\nRegalos y café para oficina\nchevron_right\nMis compras y ayuda\nhome\nInicio\nlocal_cafe\nCarta\nstorefront\nTienda\nmilitary_tech\nMi Club\nperson\nPerfil",
+      "tag": "BODY",
+      "rect": {
+        "x": 0,
+        "y": -463,
+        "width": 390,
+        "height": 1307.25,
+        "bottom": 844.25
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": true,
+      "centerHit": true,
+      "outline": "rgb(83, 41, 30) none 3px",
+      "outlineOffset": "0px",
+      "shadow": "none",
+      "visibleFocus": false
+    }
+  ],
+  "desplegables": [
+    {
+      "nombre": "Sobre el café",
+      "abierto": {
+        "open": true,
+        "text": "Sobre el café\nchevron_right\n\nLos detalles de origen y proceso todavía no están publicados."
+      },
+      "cerrado": true,
+      "focusAbierto": {
+        "text": "Sobre el café\nchevron_right",
+        "tag": "SUMMARY",
+        "rect": {
+          "x": 20,
+          "y": 514.0625,
+          "width": 350,
+          "height": 60,
+          "bottom": 574.0625
+        },
+        "nav": {
+          "y": 771,
+          "height": 73
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "4px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      }
+    },
+    {
+      "nombre": "Retiro y condiciones",
+      "abierto": {
+        "open": true,
+        "text": "Retiro y condiciones\nchevron_right\n\nLa casa está confirmando las condiciones de retiro de este lote."
+      },
+      "cerrado": true,
+      "focusAbierto": {
+        "text": "Retiro y condiciones\nchevron_right",
+        "tag": "SUMMARY",
+        "rect": {
+          "x": 20,
+          "y": 514.0625,
+          "width": 350,
+          "height": 60,
+          "bottom": 574.0625
+        },
+        "nav": {
+          "y": 771,
+          "height": 73
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "4px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      }
+    },
+    {
+      "nombre": "Regalos y café para oficina",
+      "abierto": {
+        "open": true,
+        "text": "Regalos y café para oficina\nchevron_right\n\nPrepará tu consulta. La casa confirma las opciones y el precio.\n\nTipo de encargo\nCajas de regalo\nCafé para oficina\nCantidad aproximada (opcional)\nFecha deseada (opcional)\nZona de retiro o entrega (opcional)\nlocal_cafe\nTU CONSULTA, LISTA PARA CONVERSAR\n\nCajas de regalo\n\nCantidad\nPor definir\nCuándo\nPor definir\nDónde\nPor definir\nPreparar consulta por WhatsApp\narrow_forward\nAbre otra pestaña\n\nRevisás el mensaje antes de enviarlo. No es una reserva ni una compra."
+      },
+      "cerrado": true,
+      "focusAbierto": {
+        "text": "Regalos y café para oficina\nchevron_right",
+        "tag": "SUMMARY",
+        "rect": {
+          "x": 20,
+          "y": 542.25,
+          "width": 350,
+          "height": 60,
+          "bottom": 602.25
+        },
+        "nav": {
+          "y": 771,
+          "height": 73
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "4px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      }
+    }
+  ],
+  "campos": [
+    "Tipo de encargo\nCajas de regalo\nCafé para oficina",
+    "Cantidad aproximada (opcional)",
+    "Fecha deseada (opcional)",
+    "Zona de retiro o entrega (opcional)"
+  ],
+  "encargoLink": {
+    "href": "https://wa.me/50587442005?text=Buenas. Quiero cotizar cajas de regalo. Cantidad: 20 bolsas. Fecha deseada: por definir. Zona de retiro o entrega: Managua. ¿Qué opciones y condiciones tienen disponibles?",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  },
+  "focoBeneficio": {
+    "text": "Mostrar mi beneficio de bolsa",
+    "tag": "BUTTON",
+    "rect": {
+      "x": 56,
+      "y": 171.25,
+      "width": 182.71875,
+      "height": 48,
+      "bottom": 219.25
+    },
+    "nav": {
+      "y": 771,
+      "height": 73
+    },
+    "overlap": false,
+    "centerHit": true,
+    "outline": "rgba(0, 0, 0, 0) solid 2px",
+    "outlineOffset": "2px",
+    "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+    "visibleFocus": true
+  },
+  "beneficio": {
+    "url": "http://127.0.0.1:5300/club?beneficio=bolsa",
+    "foco": {
+      "text": "Tus beneficios disponibles",
+      "tag": "H2",
+      "rect": {
+        "x": 20,
+        "y": 56.21875,
+        "width": 270.125,
+        "height": 28.796875,
+        "bottom": 85.015625
+      },
+      "nav": {
+        "y": 771,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    }
+  },
+  "viewports": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": false
+    },
+    {
+      "width": 913,
+      "scrollWidth": 913,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": false
+    }
+  ],
+  "texto200": {
+    "overflow": {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    "tabs": [
+      {
+        "text": "Volver al selector",
+        "tag": "A",
+        "rect": {
+          "x": 137.875,
+          "y": 77,
+          "width": 188.5,
+          "height": 25,
+          "bottom": 102
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Ir al contenido",
+        "tag": "A",
+        "rect": {
+          "x": 16,
+          "y": 16,
+          "width": 277.59375,
+          "height": 75.203125,
+          "bottom": 91.203125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "La Bella Lupita, ir al inicio",
+        "tag": "BUTTON",
+        "rect": {
+          "x": 20,
+          "y": 133,
+          "width": 120,
+          "height": 57,
+          "bottom": 190
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "15px",
+        "shadow": "none",
+        "visibleFocus": true
+      },
+      {
+        "text": "event_seat\nReservar una mesa",
+        "tag": "BUTTON",
+        "rect": {
+          "x": 20,
+          "y": 210,
+          "width": 311.9375,
+          "height": 64,
+          "bottom": 274
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Consultar este lote\narrow_forward\npor WhatsApp (abre otra pestaña)",
+        "tag": "A",
+        "rect": {
+          "x": 42,
+          "y": 203.1875,
+          "width": 306,
+          "height": 108,
+          "bottom": 311.1875
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "4px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Sobre el café\nchevron_right",
+        "tag": "SUMMARY",
+        "rect": {
+          "x": 20,
+          "y": 229.1875,
+          "width": 350,
+          "height": 86,
+          "bottom": 315.1875
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "4px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Retiro y condiciones\nchevron_right",
+        "tag": "SUMMARY",
+        "rect": {
+          "x": 20,
+          "y": 175.1875,
+          "width": 350,
+          "height": 140,
+          "bottom": 315.1875
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "4px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Mostrar mi beneficio de bolsa",
+        "tag": "BUTTON",
+        "rect": {
+          "x": 80,
+          "y": 319,
+          "width": 290,
+          "height": 72,
+          "bottom": 391
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Regalos y café para oficina\nchevron_right",
+        "tag": "SUMMARY",
+        "rect": {
+          "x": 20,
+          "y": 203,
+          "width": 350,
+          "height": 140,
+          "bottom": 343
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "4px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Mis compras y ayuda",
+        "tag": "BUTTON",
+        "rect": {
+          "x": 20,
+          "y": 351,
+          "width": 350,
+          "height": 48,
+          "bottom": 399
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "home\nInicio",
+        "tag": "A",
+        "rect": {
+          "x": 8,
+          "y": 642.40625,
+          "width": 124.65625,
+          "height": 100.796875,
+          "bottom": 743.203125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "local_cafe\nCarta",
+        "tag": "A",
+        "rect": {
+          "x": 132.65625,
+          "y": 642.40625,
+          "width": 124.671875,
+          "height": 100.796875,
+          "bottom": 743.203125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "storefront\nTienda",
+        "tag": "A",
+        "rect": {
+          "x": 257.328125,
+          "y": 642.40625,
+          "width": 124.671875,
+          "height": 100.796875,
+          "bottom": 743.203125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "military_tech\nMi Club",
+        "tag": "A",
+        "rect": {
+          "x": 8,
+          "y": 743.203125,
+          "width": 187,
+          "height": 100.796875,
+          "bottom": 844
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "person\nPerfil",
+        "tag": "A",
+        "rect": {
+          "x": 195,
+          "y": 743.203125,
+          "width": 187,
+          "height": 100.796875,
+          "bottom": 844
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "VISTA PREVIA LOCAL · Datos de prueba · Sin operaciones realesVolver al selector\nIr al contenido\nevent_seat\nReservar una mesa\nCafé servido en la casa · imagen de ambiente\n\nTIENDA DE LA FINCA\n\nReserva de Cosecha\n\nEl café de la casa, para llevar con vos.\n\n250 g\nC$ 890\n\nPreventa · retiro en la casa.\n\nEstamos confirmando la presentación y las condiciones de retiro. Consultá con la casa.\n\nConsultar este lote\narrow_forward\npor WhatsApp (abre otra pestaña)\nSobre el café\nchevron_right\nRetiro y condiciones\nchevron_right\nlocal_cafe\nLa bolsa de tu membresía\n\nTu bolsa de este mes está disponible.\n\nMostrar mi beneficio de bolsa\nRegalos y café para oficina\nchevron_right\nMis compras y ayuda\nhome\nInicio\nlocal_cafe\nCarta\nstorefront\nTienda\nmilitary_tech\nMi Club\nperson\nPerfil",
+        "tag": "BODY",
+        "rect": {
+          "x": 0,
+          "y": -1688,
+          "width": 390,
+          "height": 2532.1875,
+          "bottom": 844.1875
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": true,
+        "centerHit": true,
+        "outline": "rgb(83, 41, 30) none 3px",
+        "outlineOffset": "0px",
+        "shadow": "none",
+        "visibleFocus": false
+      }
+    ],
+    "encargoTabs": [
+      {
+        "text": "Cajas de regalo\nCafé para oficina",
+        "tag": "SELECT",
+        "rect": {
+          "x": 20,
+          "y": 323.6875,
+          "width": 350,
+          "height": 67,
+          "bottom": 390.6875
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "INPUT",
+        "tag": "INPUT",
+        "rect": {
+          "x": 20,
+          "y": 313.5,
+          "width": 350,
+          "height": 77.203125,
+          "bottom": 390.703125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "INPUT",
+        "tag": "INPUT",
+        "rect": {
+          "x": 20,
+          "y": 311.109375,
+          "width": 350,
+          "height": 79.203125,
+          "bottom": 390.3125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "INPUT",
+        "tag": "INPUT",
+        "rect": {
+          "x": 20,
+          "y": 311.109375,
+          "width": 350,
+          "height": 79.203125,
+          "bottom": 390.3125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(83, 41, 30) none 3px",
+        "outlineOffset": "0px",
+        "shadow": "none",
+        "visibleFocus": false
+      },
+      {
+        "text": "INPUT",
+        "tag": "INPUT",
+        "rect": {
+          "x": 20,
+          "y": 313.125,
+          "width": 350,
+          "height": 77.203125,
+          "bottom": 390.328125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Preparar consulta por WhatsApp\narrow_forward\nAbre otra pestaña",
+        "tag": "A",
+        "rect": {
+          "x": 44,
+          "y": 154.5625,
+          "width": 302,
+          "height": 205.59375,
+          "bottom": 360.15625
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgb(182, 0, 50) solid 2px",
+        "outlineOffset": "4px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "Mis compras y ayuda",
+        "tag": "BUTTON",
+        "rect": {
+          "x": 20,
+          "y": 350.875,
+          "width": 350,
+          "height": 48,
+          "bottom": 398.875
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      },
+      {
+        "text": "home\nInicio",
+        "tag": "A",
+        "rect": {
+          "x": 8,
+          "y": 642.40625,
+          "width": 124.65625,
+          "height": 100.796875,
+          "bottom": 743.203125
+        },
+        "nav": {
+          "y": 641.40625,
+          "height": 202.59375
+        },
+        "overlap": false,
+        "centerHit": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "outlineOffset": "2px",
+        "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "visibleFocus": true
+      }
+    ],
+    "encargoFoco": {
+      "text": "Preparar consulta por WhatsApp\narrow_forward\nAbre otra pestaña",
+      "tag": "A",
+      "rect": {
+        "x": 44,
+        "y": 124.0625,
+        "width": 302,
+        "height": 205.59375,
+        "bottom": 329.65625
+      },
+      "nav": {
+        "y": 641.40625,
+        "height": 202.59375
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    "filas": [
+      {
+        "html": "<dl style=\"font-size: 32px; line-height: 51.2px;\"><div style=\"font-size: 32px; line-height: 51.2px;\"><dt style=\"font-size: 24px; line-height: 38.4px;\">Cantidad</dt><dd style=\"font-size: 28px; line-height: 43.4px;\">Por definir</dd></div><div style=\"font-size: 32px; line-height: 51.2px;\"><dt style=\"font-size: 24px; line-height: 38.4px;\">Cuándo</dt><dd style=\"font-size: 28px; line-height: 43.4px;\">Por definir</dd></div><div style=\"font-size: 32px; line-height: 51.2px;\"><dt style=\"font-size: 24px; line-height: 38.4px;\">Dónde</dt><dd style=\"font-size: 28px; line-height: 43.4px;\">Por definir</dd></div></dl>",
+        "children": [
+          {
+            "tag": "DT",
+            "text": "Cantidad",
+            "x": 44,
+            "y": -89.15625,
+            "width": 70,
+            "height": 43.40625,
+            "scrollWidth": 110,
+            "clientWidth": 70,
+            "fontSize": "24px"
+          },
+          {
+            "tag": "DD",
+            "text": "Por definir",
+            "x": 130,
+            "y": -89.15625,
+            "width": 216,
+            "height": 43.40625,
+            "scrollWidth": 216,
+            "clientWidth": 216,
+            "fontSize": "28px"
+          },
+          {
+            "tag": "DT",
+            "text": "Cuándo",
+            "x": 44,
+            "y": -16.75,
+            "width": 70,
+            "height": 43.40625,
+            "scrollWidth": 94,
+            "clientWidth": 70,
+            "fontSize": "24px"
+          },
+          {
+            "tag": "DD",
+            "text": "Por definir",
+            "x": 130,
+            "y": -16.75,
+            "width": 216,
+            "height": 43.40625,
+            "scrollWidth": 216,
+            "clientWidth": 216,
+            "fontSize": "28px"
+          },
+          {
+            "tag": "DT",
+            "text": "Dónde",
+            "x": 44,
+            "y": 55.65625,
+            "width": 70,
+            "height": 43.40625,
+            "scrollWidth": 82,
+            "clientWidth": 70,
+            "fontSize": "24px"
+          },
+          {
+            "tag": "DD",
+            "text": "Por definir",
+            "x": 130,
+            "y": 55.65625,
+            "width": 216,
+            "height": 43.40625,
+            "scrollWidth": 216,
+            "clientWidth": 216,
+            "fontSize": "28px"
+          }
+        ]
+      }
+    ]
+  },
+  "pantallaCorta": [
+    {
+      "text": "Consultar este lote\narrow_forward\npor WhatsApp (abre otra pestaña)",
+      "tag": "A",
+      "rect": {
+        "x": 34,
+        "y": 223.65625,
+        "width": 252,
+        "height": 50,
+        "bottom": 273.65625
+      },
+      "nav": {
+        "y": 495,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Sobre el café\nchevron_right",
+      "tag": "SUMMARY",
+      "rect": {
+        "x": 16,
+        "y": 237.65625,
+        "width": 288,
+        "height": 60,
+        "bottom": 297.65625
+      },
+      "nav": {
+        "y": 495,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Retiro y condiciones\nchevron_right",
+      "tag": "SUMMARY",
+      "rect": {
+        "x": 16,
+        "y": 237.65625,
+        "width": 288,
+        "height": 60,
+        "bottom": 297.65625
+      },
+      "nav": {
+        "y": 495,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Mostrar mi beneficio de bolsa",
+      "tag": "BUTTON",
+      "rect": {
+        "x": 52,
+        "y": 325.84375,
+        "width": 182.71875,
+        "height": 48,
+        "bottom": 373.84375
+      },
+      "nav": {
+        "y": 495,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Regalos y café para oficina\nchevron_right",
+      "tag": "SUMMARY",
+      "rect": {
+        "x": 16,
+        "y": 265.84375,
+        "width": 288,
+        "height": 60,
+        "bottom": 325.84375
+      },
+      "nav": {
+        "y": 495,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgb(182, 0, 50) solid 2px",
+      "outlineOffset": "4px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    },
+    {
+      "text": "Mis compras y ayuda",
+      "tag": "BUTTON",
+      "rect": {
+        "x": 16,
+        "y": 333.84375,
+        "width": 288,
+        "height": 48,
+        "bottom": 381.84375
+      },
+      "nav": {
+        "y": 495,
+        "height": 73
+      },
+      "overlap": false,
+      "centerHit": true,
+      "outline": "rgba(0, 0, 0, 0) solid 2px",
+      "outlineOffset": "2px",
+      "shadow": "rgb(251, 246, 238) 0px 0px 0px 2px, rgb(182, 0, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+      "visibleFocus": true
+    }
+  ],
+  "externosBloqueados": [],
+  "errores": []
+}

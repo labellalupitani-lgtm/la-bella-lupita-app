@@ -1,0 +1,1604 @@
+{
+  "motor": "firefox",
+  "version": "155.0",
+  "fechaLocal": "2026-10-08",
+  "results": [
+    {
+      "name": "Membresía activa a 1440 px",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "club-bienvenida": 166,
+        "club-premio-titulo": 204,
+        "club-beneficios": 1116,
+        "club-experiencias": 881,
+        "club-mesa": 1150
+      }
+    },
+    {
+      "name": "Membresía activa a 1024 px",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "club-bienvenida": 166,
+        "club-premio-titulo": 883,
+        "club-beneficios": 1696,
+        "club-experiencias": 2261,
+        "club-mesa": 2530
+      }
+    },
+    {
+      "name": "Membresía activa a 768 px",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 934,
+        "club-beneficios": 1723,
+        "club-experiencias": 2281,
+        "club-mesa": 2550
+      }
+    },
+    {
+      "name": "Membresía activa a 390 px",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1864,
+        "club-experiencias": 2537,
+        "club-mesa": 2852
+      }
+    },
+    {
+      "name": "Membresía activa a 320 px",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "club-bienvenida": 257,
+        "club-premio-titulo": 1031,
+        "club-beneficios": 1922,
+        "club-experiencias": 2818,
+        "club-mesa": 3134
+      }
+    },
+    {
+      "name": "Texto 200 por ciento a 390 px",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "desborde": false,
+        "width": 390
+      }
+    },
+    {
+      "name": "Generar código no consume beneficio y hay foco modal",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "foco": {
+          "tag": "BUTTON",
+          "text": "Cerrar close",
+          "modal": true
+        },
+        "focusReturn": {
+          "tag": "BODY",
+          "id": "",
+          "text": "\n    Ir al contenidoEL CLUB DE LA CASAhomeIniciolocal_cafeCartastorefrontTiendamilitary_te"
+        },
+        "longitudCodigo": 12,
+        "bolsaSinConsumir": true
+      }
+    },
+    {
+      "name": "Error de beneficio queda visible desde su acción",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "top": 313.51666259765625,
+        "bottom": 390.71665954589844,
+        "viewport": 844,
+        "text": "Servicio no disponible durante esta prueba aislada"
+      }
+    },
+    {
+      "name": "Cancelación y feedback persistente",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "autorenueva": false,
+        "status": [
+          "Renovación cancelada Conservás tu mes pagado hasta la fecha indicada"
+        ],
+        "cerrarAviso": 0
+      }
+    },
+    {
+      "name": "Compra experiencia durante respuesta pendiente",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "dialog": "Cerrar\nclose\nConfirmá la compra\nExperiencia sintética\n\njueves, 15 de octubre · 9:23 p. m. · la butaca la elige la casa: la primera libre, y queda a tu nombre Son 12 sillas contadas, así que la entrada no se devuelve; sí se puede ceder —decinos a quién\n\nCuesta\nC$ 850\nTenés\nC$ 9,900\nTe queda\nC$ 9,050\nSí, cobrá C$ 850Mejor no",
+        "pending": {
+          "dialogAbierto": 0,
+          "busy": [
+            "Apartar butaca",
+            "Sí, cobrá C$ 850"
+          ],
+          "status": [
+            "Renovación cancelada Conservás tu mes pagado hasta la fecha indicada"
+          ]
+        },
+        "success": [
+          "Tenés tu lugar en Experiencia sintética Butaca 1, y te quedan C$ 9,050"
+        ],
+        "enlaceCompra": 0,
+        "botonCompra": 0
+      }
+    },
+    {
+      "name": "Beneficios con datos sin refrescar al volver de otra pestaña",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "before": 1,
+        "after": 1,
+        "servidor": "2026-10-08"
+      }
+    },
+    {
+      "name": "Recompensa de tanda y progreso reiniciado",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "premiosPendientes": 1,
+        "sellos": 0,
+        "codigoVivo": true
+      }
+    },
+    {
+      "name": "Sin membresía con saldo insuficiente",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "ctaDisabled": true,
+        "recargarEnMain": 0,
+        "beneficiosDetalladosVisibles": 0
+      }
+    },
+    {
+      "name": "Estado en gracia servido por la API",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "membresia": null,
+        "db": [
+          {
+            "estado": "vencida",
+            "hasta": "2026-10-08T03:23:23.471Z"
+          }
+        ],
+        "ctaAlta": 1
+      }
+    },
+    {
+      "name": "Catálogo no disponible sin ocultar la cuenta",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "reintento": true
+      }
+    },
+    {
+      "name": "Texto calculado duplicado a 390 px",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "width": 390,
+        "viewport": 390,
+        "pase": {
+          "alto": 374,
+          "contenido": 665,
+          "elementos": [
+            {
+              "text": "La BellaLupitaMesa Fundadora",
+              "top": 29,
+              "bottom": 159
+            },
+            {
+              "text": "De la casaComo vos",
+              "top": 171,
+              "bottom": 422
+            },
+            {
+              "text": "010203040506070809",
+              "top": 434,
+              "bottom": 523
+            },
+            {
+              "text": "Cliente de pruebas#001",
+              "top": 535,
+              "bottom": 646
+            }
+          ]
+        },
+        "metodo": "Todos los font-size calculados multiplicados por 2, line-height numérico también; simulación de texto ampliado. No ejecutar axe sobre estilos introducidos por la prueba."
+      }
+    },
+    {
+      "name": "Espaciado WCAG a 390 px",
+      "estado": "COMPROBADO",
+      "evidence": {
+        "width": 390,
+        "viewport": 390
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "activa-1440",
+      "file": "activa-1440-firefox.png",
+      "viewport": 1440,
+      "width": 1440,
+      "height": 1778,
+      "positions": {
+        "club-bienvenida": 166,
+        "club-premio-titulo": 204,
+        "club-beneficios": 1116,
+        "club-experiencias": 881,
+        "club-mesa": 1150
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 682,
+          "width": 460,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 547,
+          "width": 472,
+          "height": 118
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1014,
+          "width": 514,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1173,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1267,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 1051,
+          "width": 510,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 1292,
+          "width": 510,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "activa-1024",
+      "file": "activa-1024-firefox.png",
+      "viewport": 1024,
+      "width": 1024,
+      "height": 2864,
+      "positions": {
+        "club-bienvenida": 166,
+        "club-premio-titulo": 883,
+        "club-beneficios": 1696,
+        "club-experiencias": 2261,
+        "club-mesa": 2530
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 655,
+          "width": 460,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1244,
+          "width": 636,
+          "height": 118
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1594,
+          "width": 710,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1754,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1848,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2431,
+          "width": 706,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 2653,
+          "width": 706,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "activa-768",
+      "file": "activa-768-firefox.png",
+      "viewport": 768,
+      "width": 768,
+      "height": 2885,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 934,
+        "club-beneficios": 1723,
+        "club-experiencias": 2281,
+        "club-mesa": 2550
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 460,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1295,
+          "width": 674,
+          "height": 118
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1622,
+          "width": 686,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1781,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1875,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2451,
+          "width": 682,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 2674,
+          "width": 682,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "activa-390",
+      "file": "activa-390-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3222,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1864,
+        "club-experiencias": 2537,
+        "club-mesa": 2852
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1762,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1948,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2086,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2753,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3011,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "activa-320",
+      "file": "activa-320-firefox.png",
+      "viewport": 320,
+      "width": 320,
+      "height": 3522,
+      "positions": {
+        "club-bienvenida": 257,
+        "club-premio-titulo": 1031,
+        "club-beneficios": 1922,
+        "club-experiencias": 2818,
+        "club-mesa": 3134
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 786,
+          "width": 280,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1435,
+          "width": 234,
+          "height": 155
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1821,
+          "width": 246,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2067,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2297,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 3035,
+          "width": 242,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3311,
+          "width": 242,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "texto-200",
+      "file": "texto-200-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3961,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1991,
+        "club-experiencias": 3119,
+        "club-mesa": 3454
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1865,
+          "width": 268,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2203,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2493,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 3355,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3638,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "codigo-bolsa",
+      "file": "codigo-bolsa-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3222,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1864,
+        "club-experiencias": 2537,
+        "club-mesa": 2852
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1762,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1948,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2086,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2753,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3011,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "error-beneficio",
+      "file": "error-beneficio-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3327,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1969,
+        "club-experiencias": 2642,
+        "club-mesa": 2957
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1762,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2053,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2191,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2858,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3116,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "cancelar-confirmacion",
+      "file": "cancelar-confirmacion-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3222,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1864,
+        "club-experiencias": 2537,
+        "club-mesa": 2852
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 1762,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1948,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2086,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2753,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3011,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "cancelada",
+      "file": "cancelada-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3248,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1889,
+        "club-experiencias": 2562,
+        "club-mesa": 2877
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Activar renovación automática",
+          "disabled": false,
+          "top": 1788,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1973,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2111,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2778,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3037,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "experiencia-confirmacion",
+      "file": "experiencia-confirmacion-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3248,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1889,
+        "club-experiencias": 2562,
+        "club-mesa": 2877
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Activar renovación automática",
+          "disabled": false,
+          "top": 1788,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1973,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2111,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2778,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3037,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "experiencia-pendiente",
+      "file": "experiencia-pendiente-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3248,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1889,
+        "club-experiencias": 2562,
+        "club-mesa": 2877
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Activar renovación automática",
+          "disabled": false,
+          "top": 1788,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1973,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2111,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": true,
+          "top": 2778,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3037,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": false,
+      "violations": []
+    },
+    {
+      "name": "experiencia-comprada",
+      "file": "experiencia-comprada-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3248,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1889,
+        "club-experiencias": 2562,
+        "club-mesa": 2877
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Activar renovación automática",
+          "disabled": false,
+          "top": 1788,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1973,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2111,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2778,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3037,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "beneficio-desactualizado",
+      "file": "beneficio-desactualizado-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3248,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1889,
+        "club-experiencias": 2562,
+        "club-mesa": 2877
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1368,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Activar renovación automática",
+          "disabled": false,
+          "top": 1788,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 1973,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2111,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2778,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3037,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "premio-disponible",
+      "file": "premio-disponible-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3246,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1930,
+        "club-experiencias": 2560,
+        "club-mesa": 2875
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "Mostrar mi premio",
+          "disabled": false,
+          "top": 1093,
+          "width": 168,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1408,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Activar renovación automática",
+          "disabled": false,
+          "top": 1829,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2014,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2776,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3035,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "premio-codigo",
+      "file": "premio-codigo-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3246,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": 1930,
+        "club-experiencias": 2560,
+        "club-mesa": 2875
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "Mostrar mi premio",
+          "disabled": false,
+          "top": 1093,
+          "width": 168,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1408,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Activar renovación automática",
+          "disabled": false,
+          "top": 1829,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2014,
+          "width": 135,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": false,
+          "top": 2776,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3035,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "sin-saldo",
+      "file": "sin-saldo-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 2829,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": null,
+        "club-experiencias": 2117,
+        "club-mesa": 2458
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "Mostrar mi premio",
+          "disabled": false,
+          "top": 1093,
+          "width": 168,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1408,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Tomar una plaza — C$ 950/mes",
+          "disabled": true,
+          "top": 1960,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": true,
+          "top": 2333,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 2618,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "gracia-real",
+      "file": "gracia-real-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 2829,
+      "positions": {
+        "club-bienvenida": 207,
+        "club-premio-titulo": 961,
+        "club-beneficios": null,
+        "club-experiencias": 2117,
+        "club-mesa": 2458
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 716,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "Mostrar mi premio",
+          "disabled": false,
+          "top": 1093,
+          "width": 168,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1408,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "Tomar una plaza — C$ 950/mes",
+          "disabled": true,
+          "top": 1960,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": true,
+          "top": 2333,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 2618,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "catalogo-error",
+      "file": "catalogo-error-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 2843,
+      "positions": {
+        "club-bienvenida": 324,
+        "club-premio-titulo": 1077,
+        "club-beneficios": null,
+        "club-experiencias": 2135,
+        "club-mesa": 2473
+      },
+      "buttons": [
+        {
+          "text": "Actualizar catálogo",
+          "disabled": false,
+          "top": 208,
+          "width": 174,
+          "height": 48
+        },
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 833,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "Mostrar mi premio",
+          "disabled": false,
+          "top": 1209,
+          "width": 168,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1525,
+          "width": 296,
+          "height": 185
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 2632,
+          "width": 304,
+          "height": 48
+        }
+      ],
+      "audited": true,
+      "violations": []
+    },
+    {
+      "name": "texto-calculado-200",
+      "file": "texto-calculado-200-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 6918,
+      "positions": {
+        "club-bienvenida": 343,
+        "club-premio-titulo": 1446,
+        "club-beneficios": 3522,
+        "club-experiencias": 5387,
+        "club-mesa": 6227
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 1037,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "Mostrar mi premio",
+          "disabled": false,
+          "top": 1834,
+          "width": 296,
+          "height": 69
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 2398,
+          "width": 296,
+          "height": 589
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 3353,
+          "width": 308,
+          "height": 116
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 3994,
+          "width": 239,
+          "height": 58
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": true,
+          "top": 6025,
+          "width": 304,
+          "height": 71
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 6642,
+          "width": 304,
+          "height": 114
+        }
+      ],
+      "audited": false,
+      "violations": []
+    },
+    {
+      "name": "espaciado-wcag",
+      "file": "espaciado-wcag-firefox.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3885,
+      "positions": {
+        "club-bienvenida": 218,
+        "club-premio-titulo": 1043,
+        "club-beneficios": 2289,
+        "club-experiencias": 3058,
+        "club-mesa": 3460
+      },
+      "buttons": [
+        {
+          "text": "Ver cómo usarlo",
+          "disabled": false,
+          "top": 763,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "Mostrar mi premio",
+          "disabled": false,
+          "top": 1293,
+          "width": 201,
+          "height": 48
+        },
+        {
+          "text": "La próxima vez,\nvení con tiempo\nReservar una mesa ↗",
+          "disabled": false,
+          "top": 1611,
+          "width": 296,
+          "height": 231
+        },
+        {
+          "text": "Cancelar renovación",
+          "disabled": false,
+          "top": 2188,
+          "width": 308,
+          "height": 48
+        },
+        {
+          "text": "Mostrar código",
+          "disabled": false,
+          "top": 2405,
+          "width": 161,
+          "height": 48
+        },
+        {
+          "text": "Apartar butaca",
+          "disabled": true,
+          "top": 3311,
+          "width": 304,
+          "height": 48
+        },
+        {
+          "text": "event_seat\nElegir mesa y hora",
+          "disabled": false,
+          "top": 3671,
+          "width": 304,
+          "height": 51
+        }
+      ],
+      "audited": true,
+      "violations": []
+    }
+  ],
+  "errors": []
+}

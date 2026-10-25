@@ -1,0 +1,129 @@
+Ir al contenido
+event_seat
+Reservar una mesa
+arrow_back
+Volver al perfil
+Mis compras y reservas
+
+Tus pedidos, mesas y experiencias, siempre a mano.
+
+Explorar la carta
+Mis reservas
+
+Última consulta: 22 oct 2026, 9:29 a. m.
+
+Actualizar
+Todas
+Pedidos
+Café
+Mesas
+Experiencias
+En curso y próximas
+
+4 comprobantes
+
+restaurant
+Tu pedido
+
+Pedido #4101
+
+Estado: preparando
+
+Importe
+C$ 190
+
+2 × Café de prueba con opciones
+C$ 180
+Mesa Fundadora: 10% incluido. Precio unitario antes del descuento: C$ 100.
+Leche: Avena de prueba
+
+Empaque incluido: C$ 10
+
+Restricción confirmada para cocina: Sin nueces; confirmar utensilios separados con cocina.
+
+Registrado: 1 oct 2026, 11:59 a. m.
+
+Comprobante: pedido:00000000-0000-4000-8000-000000000001
+
+local_cafe
+Café para llevar
+
+Reserva de Cosecha · bolsa 37
+
+Lote 1 · Pagada · en espera de preparación
+
+Importe
+C$ 890
+
+250 g · Grano entero (fixture)
+
+Retiro estimado
+1 nov 2099 al 15 nov 2099
+Lugar y horario
+Mostrador de prueba · 08:00 a 17:00 (fixture)
+Demoras y cancelaciones
+Solo prueba: ante demora se acuerda nueva fecha o se devuelve a la Cuenta de Casa.
+
+Registrado: 1 oct 2026, 11:58 a. m.
+
+Comprobante: bolsa:00000000-0000-4000-8000-000000000002
+
+event_seat
+Tu visita
+
+Tu mesa · Terraza
+
+Confirmada
+
+Anticipo
+C$ 120
+
+Gestionar esta reserva
+Tu visita
+2 nov 2099, 12:00 p. m.
+Hasta
+2 nov 2099, 2:00 p. m.
+Personas
+4 personas
+
+Registrado: 1 oct 2026, 11:57 a. m.
+
+Comprobante: reserva:00000000-0000-4000-8000-000000000003
+
+local_activity
+Experiencia en la casa
+
+Encuentro sintético de café
+
+Entrada registrada
+
+Importe
+C$ 850
+
+4 nov 2099, 4:00 p. m. · Butaca 3
+
+Entrada registrada a tu nombre.
+
+Mesa de prueba · 90 minutos
+
+Incluye tres degustaciones de prueba.
+
+Condición sintética: ingreso diez minutos antes; cupo individual.
+
+Registrado: 1 oct 2026, 11:56 a. m.
+
+Comprobante: experiencia:00000000-0000-4000-8000-000000000004
+
+notifications
+Avisos y ayuda de la casa
+chevron_right
+home
+Inicio
+local_cafe
+Carta
+storefront
+Tienda
+military_tech
+Mi Club
+person
+Perfil

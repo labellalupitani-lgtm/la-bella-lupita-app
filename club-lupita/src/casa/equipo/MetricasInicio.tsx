@@ -1,0 +1,16 @@
+import { useLectura } from './comun'
+
+type Segmento={cuenta:string;dispositivo:string;evento:string;cantidad:number}
+type Informe={segmentos:Segmento[];dias:number;eventos:{evento:string;cantidad:number;duracion_ms:number}[]}
+const nombres:Record<string,string>={vista:'Aperturas de Inicio',pase:'Pases abiertos',actualizacion_ok:'Actualizaciones correctas',actualizacion_error:'Actualizaciones fallidas',premio_intento:'Intentos de mostrar premio',premio_ok:'Códigos obtenidos',premio_error:'Errores al emitir premio',oferta_cosecha:'Ofertas de cosecha abiertas',oferta_experiencia:'Experiencias abiertas',destino_cosecha:'Tienda cargada desde Inicio',destino_experiencia:'Mi Club cargado desde Inicio',compra_cosecha:'Apartados de cosecha desde Inicio',compra_experiencia:'Apartados de experiencia desde Inicio'}
+export function MetricasInicio({token,dias}:{token:string;dias:string}) {
+  const l=useLectura<Informe>('/operacion/metricas-inicio?dias='+dias,token)
+  const contar=(n:string)=>Number(l.datos?.eventos.find(e=>e.evento===n)?.cantidad??0)
+  const grupos=[...new Set(l.datos?.segmentos.map(s=>s.cuenta+' / '+s.dispositivo)??[])]
+  const tasa=(a:string,b:string)=>contar(b)?`${(100*contar(a)/contar(b)).toFixed(1)} %`:'Sin base suficiente'
+  return <section><h2 className="equipo-subtitulo">Uso de Inicio</h2><p className="equipo-nota">Contadores anónimos de acciones, no personas únicas. Excluyen quienes solicitan no ser medidos. La atribución de apartados dura 30 minutos en esta visita; no representa todas las ventas.</p>
+    {l.error&&<p role="alert">No pudimos cargar las métricas. <button type="button" onClick={()=>void l.refrescar()}>Reintentar</button></p>}
+    {l.cargando&&<p role="status">Consultando el uso de Inicio…</p>}
+    {l.datos&&<><dl className="equipo-cifras">{l.datos.eventos.map(e=><div key={e.evento}><dt>{nombres[e.evento]??e.evento}</dt><dd>{e.cantidad}</dd></div>)}</dl><p className="equipo-nota">Códigos obtenidos / intentos: {tasa('premio_ok','premio_intento')} · Pase / aperturas: {tasa('pase','vista')} · Apartados / ofertas de cosecha: {tasa('compra_cosecha','oferta_cosecha')} · Apartados / ofertas de experiencias: {tasa('compra_experiencia','oferta_experiencia')}</p><p className="equipo-nota">Tiempo medio de actualización correcta: {contar('actualizacion_ok')?Math.round(Number(l.datos.eventos.find(e=>e.evento==='actualizacion_ok')?.duracion_ms??0)/contar('actualizacion_ok'))+' ms':'Sin muestras'}. Responsable de revisión: administración de La Bella Lupita.</p><div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Métricas de Inicio por cuenta y pantalla"><table className="w-full text-left text-pie"><caption className="text-left py-3">Por tipo de cuenta y tamaño de pantalla</caption><thead><tr><th scope="col">Grupo</th><th scope="col">Aperturas</th><th scope="col">Pases</th><th scope="col">Códigos / intentos</th></tr></thead><tbody>{grupos.map(g=>{const cuenta=(evento:string)=>l.datos!.segmentos.filter(s=>s.cuenta+' / '+s.dispositivo===g&&s.evento===evento).reduce((n,s)=>n+s.cantidad,0);return <tr key={g}><th scope="row">{g}</th><td>{cuenta('vista')}</td><td>{cuenta('pase')}</td><td>{cuenta('premio_ok')} / {cuenta('premio_intento')}</td></tr>})}</tbody></table></div>{!l.datos.eventos.length&&<p>Aún no hay acciones registradas en este período.</p>}</>}
+  </section>
+}

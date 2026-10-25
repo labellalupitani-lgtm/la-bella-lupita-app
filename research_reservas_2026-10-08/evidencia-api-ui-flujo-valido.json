@@ -1,0 +1,129 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/yo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/catalogo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/cupos",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-08",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-10",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/reserva",
+    "status": 200,
+    "body": {
+      "reserva": {
+        "id": "8678e642-4f6e-4890-96b5-17fdca09a948",
+        "zona": "terraza",
+        "cuando": "2026-10-10T18:00:00.000Z",
+        "termina": "2026-10-10T20:00:00.000Z",
+        "personas": 2,
+        "deposito": 0
+      },
+      "yaEstaba": false,
+      "cobrado": 0,
+      "saldo": {
+        "pagado": 990000,
+        "bono": 0,
+        "total": 990000
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/yo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-10",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/catalogo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/cupos",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/yo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/catalogo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/cupos",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/atencion",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/avisos",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/compras?pagina=0",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/yo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/catalogo",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/cupos",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-08",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-10",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocupacion?dia=2026-10-08",
+    "status": 200
+  }
+]

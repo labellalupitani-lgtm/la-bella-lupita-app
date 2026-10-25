@@ -1,0 +1,10 @@
+import { readFileSync } from 'node:fs';
+import { parseEnv } from 'node:util';
+const env={...parseEnv(readFileSync('.env.deploy','utf8')),...parseEnv(readFileSync('.infra.local','utf8'))};
+const test=JSON.parse(readFileSync('.staging.local','utf8'));
+const backup=JSON.parse(readFileSync('.backup.local','utf8'));const demo=JSON.parse(readFileSync('.demo.local','utf8'));
+if([test.parent,backup.branch,demo.branch].includes(test.branch))throw Error('La rama no es temporal');
+const url='https://console.neon.tech/api/v2/projects/'+env.NEON_PROJECT_ID+'/branches/'+test.branch;
+const headers={Authorization:'Bearer '+env.NEON_API_KEY};const info=await fetch(url,{headers});if(!info.ok)throw Error('No se pudo verificar la rama');
+const {branch}=await info.json();if(branch.name!=='verificacion-correcciones-20260913'||branch.parent_id!==test.parent)throw Error('Rama inesperada');
+const r=await fetch(url,{method:'DELETE',headers});if(!r.ok)throw Error('Limpieza fallida: '+r.status);console.log('Rama temporal eliminada; respaldo y demo conservados');

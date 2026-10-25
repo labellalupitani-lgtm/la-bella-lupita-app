@@ -1,0 +1,24 @@
+{
+  "alcance": "Cliente actual compilado en memoria; transporte simulado sin red",
+  "catalogoSinCamposAceptado": {
+    "ok": true,
+    "datos": {
+      "experiencias": [],
+      "zonas": [],
+      "bolsa": {},
+      "membresia": {}
+    }
+  },
+  "compraSinNumeroAceptada": {
+    "ok": true,
+    "datos": {
+      "saldo": {
+        "pagado": 1000,
+        "bono": 0,
+        "total": 1000
+      },
+      "cobrado": 89000
+    }
+  },
+  "numeroMostradoPorTienda": "undefined"
+}

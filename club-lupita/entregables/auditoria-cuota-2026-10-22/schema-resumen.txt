@@ -1,0 +1,349 @@
+[
+  {
+    "path": "/projects/{project_id}/operations/{operation_id}",
+    "methods": [
+      {
+        "id": "getProjectOperation"
+      }
+    ]
+  },
+  {
+    "path": "/projects/{project_id}/operations",
+    "methods": [
+      {
+        "id": "listProjectOperations",
+        "parameters": [
+          {
+            "name": "cursor",
+            "description": "Specify the cursor value from the previous response to get the next batch of operations",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Specify a value from 1 to 1000 to limit number of operations in the response",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000
+            }
+          },
+          {
+            "name": "project_id",
+            "in": "path",
+            "description": "The Neon project ID",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]{1,60}$"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/consumption_history/projects",
+    "methods": [
+      {
+        "id": "getConsumptionHistoryPerProject",
+        "parameters": [
+          {
+            "name": "cursor",
+            "description": "Specify the cursor value from the previous response to get the next batch of projects.",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Specify a value from 1 to 100 to limit number of projects in the response.",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 10,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "project_ids",
+            "description": "Specify a list of project IDs to filter the response.\nIf omitted, the response will contain all projects.\nA list of project IDs can be specified as an array of parameter values or as a comma-separated list in a single parameter value.\n- As an array of parameter values: `project_ids=cold-poetry-09157238%20&project_ids=quiet-snow-71788278`\n- As a comma-separated list in a single parameter value: `project_ids=cold-poetry-09157238,quiet-snow-71788278`\n",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "pattern": "^([a-z0-9-]{1,60}(,[a-z0-9-]{1,60}){0,99})?$",
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 100
+            }
+          },
+          {
+            "name": "from",
+            "description": "Specify the start `date-time` for the consumption period.\nThe `date-time` value is rounded according to the specified `granularity`.\nFor example, `2024-03-15T15:30:00Z` for `daily` granularity will be rounded to `2024-03-15T00:00:00Z`.\nThe specified `date-time` value must respect the specified `granularity`:\n- For `hourly`, consumption metrics are limited to the last 168 hours.\n- For `daily`, consumption metrics are limited to the last 60 days.\n- For `monthly`, consumption metrics are limited to the last year.\n\nThe consumption history is available starting from `March 1, 2024, at 00:00:00 UTC`.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "required": true
+          },
+          {
+            "name": "to",
+            "description": "Specify the end `date-time` for the consumption period.\nThe `date-time` value is rounded according to the specified granularity.\nFor example, `2024-03-15T15:30:00Z` for `daily` granularity will be rounded to `2024-03-15T00:00:00Z`.\nThe specified `date-time` value must respect the specified `granularity`:\n- For `hourly`, consumption metrics are limited to the last 168 hours.\n- For `daily`, consumption metrics are limited to the last 60 days.\n- For `monthly`, consumption metrics are limited to the last year.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "required": true
+          },
+          {
+            "name": "granularity",
+            "description": "Specify the granularity of consumption metrics.\nHourly, daily, and monthly metrics are available for the last 168 hours, 60 days,\nand 1 year, respectively.\n",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ConsumptionHistoryGranularity"
+            },
+            "required": true
+          },
+          {
+            "name": "org_id",
+            "description": "Specify the organization for which the project consumption metrics should be returned.\nIf this parameter is not provided, the endpoint will return the metrics for the\nauthenticated user's projects.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]{1,60}$"
+            }
+          },
+          {
+            "name": "include_v1_metrics",
+            "description": "The field is deprecated and no longer has any effect: the only metric it used to add\n(`data_storage_bytes_hour`) is retired and always returns 0. Please use `metrics` instead.\nIf `metrics` is specified, this field is ignored.\n",
+            "in": "query",
+            "deprecated": true,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "metrics",
+            "description": "Specify a list of metrics to include in the response.\nIf omitted, active_time, compute_time, written_data are returned.\nPossible values:\n- `active_time_seconds`\n- `compute_time_seconds`\n- `written_data_bytes`\n- `synthetic_storage_size_bytes` (deprecated: always returns 0; use the consumption history v2 endpoints instead)\n- `data_storage_bytes_hour` (deprecated: always returns 0; use the consumption history v2 endpoints instead)\n- `logical_size_bytes`\n- `logical_size_bytes_hour`\n\nA list of metrics can be specified as an array of parameter values or as a comma-separated list in a single parameter value.\n- As an array of parameter values: `metrics=cpu_seconds&metrics=ram_bytes`\n- As a comma-separated list in a single parameter value: `metrics=cpu_seconds,ram_bytes`\n",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ConsumptionHistoryQueryMetrics"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/consumption_history/v2/projects",
+    "methods": [
+      {
+        "id": "getConsumptionHistoryPerProjectV2",
+        "parameters": [
+          {
+            "name": "cursor",
+            "description": "Cursor from the previous response (`pagination.cursor`). Pass it to fetch the next page\nof projects. Pages are ordered by project creation order (newest first).\n",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Maximum number of projects per page. Allowed range: 1 to 100. Default: 10.\n",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 10,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "project_ids",
+            "description": "Optional project IDs to filter the response (up to 100). If omitted, projects in the\norganization are included across pages (use `cursor` and `limit`).\n\nPass multiple IDs as repeated query parameters or a comma-separated list:\n- `project_ids=cold-poetry-09157238&project_ids=quiet-snow-71788278`\n- `project_ids=cold-poetry-09157238,quiet-snow-71788278`\n",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "pattern": "^([a-z0-9-]{1,60}(,[a-z0-9-]{1,60}){0,99})?$",
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 100
+            }
+          },
+          {
+            "name": "from",
+            "description": "Specify the start `date-time` for the consumption period.\nThe `date-time` value is rounded according to the specified `granularity`.\nFor example, `2024-03-15T15:30:00Z` for `daily` granularity will be rounded to `2024-03-15T00:00:00Z`.\nThe specified `date-time` value must respect the specified `granularity`:\n- For `hourly`, consumption metrics are limited to the last 168 hours.\n- For `daily`, consumption metrics are limited to the last 60 days.\n- For `monthly`, consumption metrics are limited to the last year.\n\nThe earliest allowed `from` value is `March 1, 2024, at 00:00:00 UTC`.\nMetrics are returned from when the account upgraded to an eligible plan, which may be\nlater than that date.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "required": true
+          },
+          {
+            "name": "to",
+            "description": "Specify the end `date-time` for the consumption period.\nThe `date-time` value is rounded according to the specified `granularity`.\nFor example, `2024-03-15T15:30:00Z` for `daily` granularity will be rounded to `2024-03-15T00:00:00Z`.\nThe specified `date-time` value must respect the specified `granularity`:\n- For `hourly`, consumption metrics are limited to the last 168 hours.\n- For `daily`, consumption metrics are limited to the last 60 days.\n- For `monthly`, consumption metrics are limited to the last year.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "required": true
+          },
+          {
+            "name": "granularity",
+            "description": "Specify the granularity of consumption metrics.\nHourly, daily, and monthly metrics are available for the last 168 hours, 60 days,\nand 1 year, respectively.\n",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ConsumptionHistoryGranularity"
+            },
+            "required": true
+          },
+          {
+            "name": "org_id",
+            "description": "Organization ID. Metrics are returned for projects in this organization.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]{1,60}$"
+            },
+            "required": true
+          },
+          {
+            "name": "metrics",
+            "required": true,
+            "description": "Required. List the metrics to return. Supported values:\n- `compute_unit_seconds`\n- `root_branch_bytes_month`\n- `child_branch_bytes_month`\n- `instant_restore_bytes_month`\n- `public_network_transfer_bytes`\n- `private_network_transfer_bytes`\n- `extra_branches_month`\n- `snapshot_storage_bytes_month`\n- `functions_active_capacity_microseconds`\n- `functions_waiting_capacity_microseconds`\n- `functions_invocations`\n- `functions_egress_bytes`\n\nPass multiple values as repeated query parameters or a comma-separated list:\n- `metrics=compute_unit_seconds&metrics=extra_branches_month`\n- `metrics=compute_unit_seconds,extra_branches_month`\n",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ConsumptionHistoryQueryMetrics"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/consumption_history/v2/branches",
+    "methods": [
+      {
+        "id": "getConsumptionHistoryPerBranchV2",
+        "parameters": [
+          {
+            "name": "cursor",
+            "description": "Cursor from the previous response (`pagination.cursor`). Pass it to fetch the next page\nof branches. Pages are ordered by project ID, then branch ID.\n",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Maximum number of branches per page. Allowed range: 1 to 1000. Default: 100.\n",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 100,
+              "maximum": 1000
+            }
+          },
+          {
+            "name": "project_ids",
+            "description": "Project IDs to include (required, 1 to 100). Returns metrics for branches in these projects.\n\nPass multiple IDs as repeated query parameters or a comma-separated list:\n- `project_ids=cold-poetry-09157238&project_ids=quiet-snow-71788278`\n- `project_ids=cold-poetry-09157238,quiet-snow-71788278`\n",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "pattern": "^([a-z0-9-]{1,60}(,[a-z0-9-]{1,60}){0,99})?$",
+                "type": "string"
+              },
+              "minItems": 1,
+              "maxItems": 100
+            }
+          },
+          {
+            "name": "branch_ids",
+            "description": "Optional branch IDs to filter the response (up to 100). If omitted, all branches in the\nlisted projects are included.\n\nPass multiple IDs as repeated query parameters or a comma-separated list:\n- `branch_ids=br-aged-salad-637688&branch_ids=br-sweet-breeze-497520`\n- `branch_ids=br-aged-salad-637688,br-sweet-breeze-497520`\n",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "pattern": "^([a-z0-9-]{1,60}(,[a-z0-9-]{1,60}){0,99})?$",
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 100
+            }
+          },
+          {
+            "name": "from",
+            "description": "Specify the start `date-time` for the consumption period.\nThe `date-time` value is rounded according to the specified `granularity`.\nFor example, `2024-03-15T15:30:00Z` for `daily` granularity will be rounded to `2024-03-15T00:00:00Z`.\nThe specified `date-time` value must respect the specified `granularity`:\n- For `hourly`, consumption metrics are limited to the last 168 hours.\n- For `daily`, consumption metrics are limited to the last 60 days.\n- For `monthly`, consumption metrics are limited to the last year.\n\nBranch-level metrics are returned from when the account first ingests branch-level\nconsumption data. Periods before that time contain no branch metrics.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "required": true
+          },
+          {
+            "name": "to",
+            "description": "Specify the end `date-time` for the consumption period.\nThe `date-time` value is rounded according to the specified `granularity`.\nFor example, `2024-03-15T15:30:00Z` for `daily` granularity will be rounded to `2024-03-15T00:00:00Z`.\nThe specified `date-time` value must respect the specified `granularity`:\n- For `hourly`, consumption metrics are limited to the last 168 hours.\n- For `daily`, consumption metrics are limited to the last 60 days.\n- For `monthly`, consumption metrics are limited to the last year.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "required": true
+          },
+          {
+            "name": "granularity",
+            "description": "Specify the granularity of consumption metrics.\nHourly, daily, and monthly metrics are available for the last 168 hours, 60 days,\nand 1 year, respectively.\n",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ConsumptionHistoryGranularity"
+            },
+            "required": true
+          },
+          {
+            "name": "org_id",
+            "description": "Organization ID. Metrics are returned for projects in this organization.\n",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]{1,60}$"
+            },
+            "required": true
+          },
+          {
+            "name": "metrics",
+            "required": true,
+            "description": "Required. List the metrics to return. Only these values are supported:\n- `compute_unit_seconds`\n- `root_branch_bytes_month`\n- `child_branch_bytes_month`\n- `instant_restore_bytes_month`\n- `public_network_transfer_bytes`\n- `private_network_transfer_bytes`\n- `functions_active_capacity_microseconds`\n- `functions_waiting_capacity_microseconds`\n- `functions_invocations`\n- `functions_egress_bytes`\n\nNot supported on this endpoint: `extra_branches_month`, `snapshot_storage_bytes_month`.\nUse `GET /consumption_history/v2/projects` for those.\n\nPass multiple values as repeated query parameters or a comma-separated list:\n- `metrics=compute_unit_seconds&metrics=public_network_transfer_bytes`\n- `metrics=compute_unit_seconds,public_network_transfer_bytes`\n",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ConsumptionHistoryQueryMetrics"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
+{
+  "suspend": {
+    "$ref": "#/components/schemas/SuspendTimeoutSeconds",
+    "description": "Scale-to-zero idle timeout, in seconds, before the compute suspends. `0` means the plan default applies; `-1` means scale-to-zero is disabled (never suspends)."
+  }
+}

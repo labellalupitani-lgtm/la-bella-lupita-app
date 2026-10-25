@@ -1,0 +1,227 @@
+{
+  "motor": "firefox",
+  "version": "155.0",
+  "alcance": "Cliente local, teclado y árbol accesible automatizados; no certifica lector de pantalla ni zoom nativo.",
+  "ampliacion": {
+    "base": "1280x900",
+    "equivalente200": "640x450 CSS, deviceScaleFactor 2",
+    "texto200": "font-size raíz duplicado"
+  },
+  "results": [
+    {
+      "id": "A01-navegacion-teclado-foco",
+      "estado": "APROBADO",
+      "detalle": {
+        "tabs": 21,
+        "foco": "main del Perfil tras navegación SPA por Enter"
+      }
+    },
+    {
+      "id": "A02-modal-perfil",
+      "estado": "APROBADO",
+      "detalle": {
+        "tabs": 6,
+        "controles": 6,
+        "pasos": [
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"name\" required=\"\" minlength=\"2\" maxlength=\"80\" value=\"Prueba Regresión\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"off\" maxlength=\"120\" value=\"\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"off\" maxlength=\"240\" value=\"\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<button type=\"submit\" class=\"casa-boton inline-flex min-h-[44px] min-w-0 items-center justify-center gap-2 whitespace-normal text-center transition-transform duration-tactil ease-extraccion active:scale-95 rounded-troquel bg-banda text-papel hover:bg"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"date\" autocomplete=\"bday\" maxlength=\"10\" value=\"2000-09-14\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"off\" maxlength=\"240\" value=\"\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"off\" maxlength=\"120\" value=\"\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<input class=\"mt-2 min-h-12 w-full rounded-troquel border border-filete bg-papel px-3 py-2 font-texto text-cuerpo text-tinta\" type=\"text\" autocomplete=\"name\" required=\"\" minlength=\"2\" maxlength=\"80\" value=\"Prueba Regresión\">"
+          },
+          {
+            "tecla": "Shift+Tab",
+            "dentro": true,
+            "navegador": false,
+            "elemento": "<button type=\"button\" aria-label=\"Cerrar panel\" class=\"flex min-h-[44px] items-center gap-2 rounded-full border border-filete px-4 text-cuerpo text-tinta\">Cerrar <span aria-hidden=\"true\" class=\"ico  \" style=\"font-size: 20px;\">close</span></button>"
+          }
+        ],
+        "escape": "cerró y devolvió foco al origen"
+      }
+    },
+    {
+      "id": "A05-reflujo200-perfil",
+      "estado": "APROBADO",
+      "detalle": {
+        "viewportCSS": "640x450",
+        "captura": "1280x900",
+        "equivalente": "reflujo a 200 % sobre base de 1280x900"
+      }
+    },
+    {
+      "id": "A06-texto200-perfil",
+      "estado": "APROBADO",
+      "detalle": {
+        "fuente": {
+          "antes": 16,
+          "despues": 32
+        },
+        "controles": "botones visibles alcanzables mediante desplazamiento; Escape cierra"
+      }
+    }
+  ],
+  "capturas": [
+    {
+      "nombre": "A01-navegacion-teclado-foco",
+      "geometria": {
+        "ancho": 390,
+        "documento": 390,
+        "alto": 844,
+        "escalaCaptura": 1,
+        "fuenteRaiz": "16px"
+      },
+      "violaciones": []
+    },
+    {
+      "nombre": "A02-modal-perfil",
+      "geometria": {
+        "ancho": 390,
+        "documento": 390,
+        "alto": 844,
+        "escalaCaptura": 1,
+        "fuenteRaiz": "16px"
+      },
+      "violaciones": []
+    },
+    {
+      "nombre": "A05-reflujo200-perfil",
+      "geometria": {
+        "ancho": 640,
+        "documento": 640,
+        "alto": 450,
+        "escalaCaptura": 2,
+        "fuenteRaiz": "16px"
+      },
+      "violaciones": []
+    },
+    {
+      "nombre": "A06-texto200-perfil",
+      "geometria": {
+        "ancho": 640,
+        "documento": 640,
+        "alto": 900,
+        "escalaCaptura": 1,
+        "fuenteRaiz": "32px"
+      },
+      "violaciones": []
+    }
+  ],
+  "csp": [],
+  "pageErrors": [],
+  "solicitudesFallidas": [
+    {
+      "caso": "A01-navegacion-teclado-foco",
+      "url": "http://127.0.0.1:64411/api/yo",
+      "tipo": "fetch",
+      "error": "NS_BINDING_ABORTED"
+    },
+    {
+      "caso": "A01-navegacion-teclado-foco",
+      "url": "http://127.0.0.1:64411/api/catalogo",
+      "tipo": "fetch",
+      "error": "NS_BINDING_ABORTED"
+    },
+    {
+      "caso": "A01-navegacion-teclado-foco",
+      "url": "http://127.0.0.1:64411/api/cupos",
+      "tipo": "fetch",
+      "error": "NS_BINDING_ABORTED"
+    },
+    {
+      "caso": "A05-reflujo200-perfil",
+      "url": "http://127.0.0.1:64411/assets/libre-caslon-text-latin-400-normal-CfldDPV-.woff2",
+      "tipo": "font",
+      "error": "NS_BINDING_ABORTED"
+    },
+    {
+      "caso": "A06-texto200-perfil",
+      "url": "http://127.0.0.1:64411/brand/v3/retrato-original.png",
+      "tipo": "image",
+      "error": "NS_BINDING_ABORTED"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Portada más visual, con menos texto y cabecera
+
+El usuario rechazó extender la tercera propuesta y precisó: «Una portada más visual, con menos texto y cabecera». La dirección cambia la proporción entre fotografía, texto y utilidades; no autoriza otras páginas ni producción.
+
+Referencias: dos imágenes de cafetería aportadas. La portada de referencia concentra la mirada en el producto, contiene un titular breve y una acción clara. Las fotos existentes de la app, incluida `/images/latte-logo-mesa-960.webp`, permiten una composición alta sin generar ni inventar productos.
+
+1. En estado normal, la primera foto comienza a más tardar en y=200 en 390×844 y y=210 en 320×568, con aviso del preview visible. En escritorio 1440×1000 debe comenzar antes de y=260 (antes:384). La cabecera no repite saludo y nivel antes de la invitación; esos datos pueden acompañar la cuenta.
+2. La imagen ocupa al menos el 70% de la superficie del hero a 390 px y al menos el 65% en escritorio. En móvil su alto útil es de al menos 300 px. El producto se reconoce, sin deformación ni controles sobre su detalle central. Se permite elegir otra fotografía real del catálogo, con encuadre específico.
+3. La portada conserva un único h1 breve y una acción promocional explícita hacia Carta. Suprimir el antetítulo y párrafo promocional, y los enlaces promocionales duplicados a Carta; conservar su acceso global de navegación. No añadir categorías ni mensajes nuevos para llenar el espacio recuperado.
+4. «Mostrá tu pase» sigue siendo único y visible sin desplazamiento en 320/390; área mínima 44 px. Actualización mantiene señal visible y accesible, todas las funciones de cuenta/sellos/premio/recarga/privacidad siguen disponibles. Pedidos, reservas y errores conservan prioridad y acciones; los umbrales de portada normal no se exigen a estos estados.
+5. Mantener logo original completo, sin deformación y reserva H/4, paleta y tipografías del sistema. Una firma más compacta en escritorio es adaptación explícita al pedido de reducir cabecera; documentar tamaño, no tratar 280 px como una obligación que impida el ajuste solicitado.
+6. Los tres productos reales siguen inmediatamente después de la portada, con nombre, precio, foto y detalle funcional. Conservar el encuadre corregido del risotto. Marca, comida y café deben dominar la apertura y el primer desplazamiento.
+7. Orden visual y DOM coherentes; foco/teclado/retorno, texto 200%, anchos 320–1440, contraste y reduced-motion. No introducir saltos al actualizar, efectos continuos, dependencias ni activos externos. El usuario juzga la dirección después de las revisiones técnicas.
